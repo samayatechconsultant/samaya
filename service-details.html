@@ -28,12 +28,11 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-
+  <link href="assets/css/topic.css" rel="stylesheet">
 </head>
 
-<body class="index-page">
-   <!-- nav.html -->
+<body class="index-page Custombody">
+  <!-- nav.html -->
   <div id="nav-placeholder"></div>
   <script>
     fetch("nav.html")
@@ -41,239 +40,366 @@
       .then(data => {
         document.getElementById("nav-placeholder").innerHTML = data;
       });
-  </script> 
+  </script>
   <main class="main">
-    <!-- Hero Section --> 
+    <!-- Hero Section -->
     <!-- About Section -->
-    <section id="about" class="about section">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>API-First Architecture</h2>
-        <p>Interactive Interview Guide </p>
-      </div><!-- End Section Title -->
-     <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <section id="about" class="about section Custombody">
+      <div class="container " data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
 
-  <!-- API First Interactive Cards -->
-  <div class="accordion" id="apiFirstAccordion">
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">API First Architecture</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">APIs</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">GraphQL</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Microservices Architecture</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">RESTful APIs</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">WCF</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Web API</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">WPF</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Architecture</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Architecture Documentation & Diagrams</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Clean Architecture</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">DDD (Domain-Driven Design)</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Design Pattern</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Draw.io / Lucidchart</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Scalable & Maintainable Design Patterns</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Scalable Solution Design</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Visio QA</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Creatio CRM</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Payment Gateways</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Umbraco CMS</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Authorisation Cloud Security</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Kubernet</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Terraform</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Docker</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Azure App Services</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Azure DevOps</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Azure DevOps (Azure Pipelines)</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Azure Functions</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Azure Key Vault</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Azure Repos</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Azure Service Bus</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Microsoft Azure</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">.NET Core</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">SQL</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">MongoDB</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">PostgreSQL</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">SQL Server</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Angular</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">JavScript, jQuery & AJAX</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">TypeScript</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Node.js</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">React</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Webhook</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">ADO.NET</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">C#</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">LINQ</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Entity Framework</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">OOP</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">SOLID Principles</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Top 100 IQA</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Code Reviews</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Technical Leadership & Mentoring</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Loging & Monitoring</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Performence Optimization</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Agile methodology</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Git</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Jenkins</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Bitbucket</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">CI/CD</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Git Operations</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Git Tags & Releases</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">GitHub</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">GitHub Actions</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">GitLab</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">GitLab CI/CD</div>
+              </div>
+            </a></div>
+          <div class="card-grid col-md-3"><a href="topic.html" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">TeamCity</div>
+              </div>
+            </a></div>
 
-    <!-- Card 1 -->
-    <div class="card mb-3 shadow-sm">
-      <div class="card-header bg-dark text-white fw-bold"
-           data-bs-toggle="collapse"
-           data-bs-target="#apiFirst1"
-           style="cursor:pointer;">
-        1️⃣ What is API-First Architecture?
-      </div>
-      <div id="apiFirst1" class="collapse show" data-bs-parent="#apiFirstAccordion">
-        <div class="card-body">
-          API-First Architecture means <strong>designing the API contract before implementing business logic</strong>.
-          This enables consistency, reusability, and parallel development across teams.
 
-          <img class="img-fluid rounded mt-3"
-               src="https://upload.wikimedia.org/wikipedia/commons/9/9b/RESTful_API_diagram.png"
-               alt="API First Architecture Diagram">
+
+
+
+
+
         </div>
       </div>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="card mb-3 shadow-sm">
-      <div class="card-header bg-dark text-white fw-bold"
-           data-bs-toggle="collapse"
-           data-bs-target="#apiFirst2"
-           style="cursor:pointer;">
-        2️⃣ Advantages of API-First
       </div>
-      <div id="apiFirst2" class="collapse" data-bs-parent="#apiFirstAccordion">
-        <div class="card-body">
-          <span class="badge bg-secondary me-1">Consistency</span>
-          <span class="badge bg-secondary me-1">Reduced Rework</span>
-          <span class="badge bg-secondary me-1">Early Integration</span>
-          <span class="badge bg-secondary me-1">Microservices Ready</span>
-          <span class="badge bg-secondary">Multi-Platform</span>
+    </section>
 
-          <img class="img-fluid rounded mt-3"
-               src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Microservices_architecture.png"
-               alt="API First Benefits">
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="card mb-3 shadow-sm">
-      <div class="card-header bg-dark text-white fw-bold"
-           data-bs-toggle="collapse"
-           data-bs-target="#apiFirst3"
-           style="cursor:pointer;">
-        3️⃣ API Contract (OpenAPI / Swagger)
-      </div>
-      <div id="apiFirst3" class="collapse" data-bs-parent="#apiFirstAccordion">
-        <div class="card-body">
-          A formal definition of endpoints, request/response formats, schemas, and authentication.
-
-          <img class="img-fluid rounded mt-3"
-               src="https://upload.wikimedia.org/wikipedia/commons/7/73/Swagger_UI.png"
-               alt="OpenAPI Swagger">
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="card mb-3 shadow-sm">
-      <div class="card-header bg-dark text-white fw-bold"
-           data-bs-toggle="collapse"
-           data-bs-target="#apiFirst4"
-           style="cursor:pointer;">
-        4️⃣ API-First & Microservices
-      </div>
-      <div id="apiFirst4" class="collapse" data-bs-parent="#apiFirstAccordion">
-        <div class="card-body">
-          APIs act as <strong>contracts between microservices</strong>, enabling independent development and deployment.
-
-          <img class="img-fluid rounded mt-3"
-               src="https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/images/microservices-logical.png"
-               alt="Microservices API Contract">
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 5 -->
-    <div class="card mb-3 shadow-sm">
-      <div class="card-header bg-dark text-white fw-bold"
-           data-bs-toggle="collapse"
-           data-bs-target="#apiFirst5"
-           style="cursor:pointer;">
-        5️⃣ API Gateway
-      </div>
-      <div id="apiFirst5" class="collapse" data-bs-parent="#apiFirstAccordion">
-        <div class="card-body">
-          Handles routing, authentication, rate limiting, and logging.
-
-          <img class="img-fluid rounded mt-3"
-               src="https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/gateway.png"
-               alt="API Gateway Architecture">
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 6 -->
-    <div class="card mb-3 shadow-sm">
-      <div class="card-header bg-dark text-white fw-bold"
-           data-bs-toggle="collapse"
-           data-bs-target="#apiFirst6"
-           style="cursor:pointer;">
-        6️⃣ API-First vs Code-First
-      </div>
-      <div id="apiFirst6" class="collapse" data-bs-parent="#apiFirstAccordion">
-        <div class="card-body">
-          <table class="table table-bordered">
-            <thead class="table-light">
-              <tr>
-                <th>API-First</th>
-                <th>Code-First</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Contract designed first</td>
-                <td>Implementation first</td>
-              </tr>
-              <tr>
-                <td>Better governance</td>
-                <td>Risk of inconsistency</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 7 -->
-    <div class="card mb-3 shadow-sm">
-      <div class="card-header bg-dark text-white fw-bold"
-           data-bs-toggle="collapse"
-           data-bs-target="#apiFirst7"
-           style="cursor:pointer;">
-        7️⃣ REST vs GraphQL
-      </div>
-      <div id="apiFirst7" class="collapse" data-bs-parent="#apiFirstAccordion">
-        <div class="card-body">
-          REST exposes fixed endpoints, while GraphQL allows clients to query exactly what they need.
-
-          <img class="img-fluid rounded mt-3"
-               src="https://upload.wikimedia.org/wikipedia/commons/1/17/GraphQL_Logo.svg"
-               alt="REST vs GraphQL">
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 8 -->
-    <div class="card mb-3 shadow-sm">
-      <div class="card-header bg-dark text-white fw-bold"
-           data-bs-toggle="collapse"
-           data-bs-target="#apiFirst8"
-           style="cursor:pointer;">
-        8️⃣ Security in API-First
-      </div>
-      <div id="apiFirst8" class="collapse" data-bs-parent="#apiFirstAccordion">
-        <div class="card-body">
-          OAuth2, JWT, HTTPS, API Keys, Input Validation.
-
-          <img class="img-fluid rounded mt-3"
-               src="https://upload.wikimedia.org/wikipedia/commons/8/8a/OAuth_logo.svg"
-               alt="API Security">
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 9 -->
-    <div class="card mb-3 shadow-sm">
-      <div class="card-header bg-dark text-white fw-bold"
-           data-bs-toggle="collapse"
-           data-bs-target="#apiFirst9"
-           style="cursor:pointer;">
-        9️⃣ API Versioning
-      </div>
-      <div id="apiFirst9" class="collapse" data-bs-parent="#apiFirstAccordion">
-        <div class="card-body">
-          Versioning ensures backward compatibility while evolving APIs.
-
-          <img class="img-fluid rounded mt-3"
-               src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Software_versioning.svg"
-               alt="API Versioning">
-        </div>
-      </div>
-    </div>
-
-  </div>
-  <!-- End API First Interactive Cards -->
-
-</div>
-
-    </section><!-- /About Section -->
- 
 
   </main>
-
-  <footer id="footer" class="footer position-relative light-background">
-    <div class="container">
-      <h3 class="sitename">Jitendra Kumar Mishra</h3>
-      <p>Even those who escape such challenges receive no real benefit. People frequently avoid demanding work, choosing
-        instead what feels easier and more convenient.</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-skype"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Samaya</strong> <span>All Rights Reserved</span>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
@@ -324,7 +450,7 @@
         }
       });
     });
- 
+
   </script>
 </body>
 

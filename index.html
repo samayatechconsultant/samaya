@@ -28,12 +28,12 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
+  <link href="assets/css/topic.css" rel="stylesheet">
 
 </head>
 
 <body class="index-page">
-   <!-- nav.html -->
+  <!-- nav.html -->
   <div id="nav-placeholder"></div>
   <script>
     fetch("nav.html")
@@ -41,7 +41,7 @@
       .then(data => {
         document.getElementById("nav-placeholder").innerHTML = data;
       });
-  </script> 
+  </script>
   <main class="main">
     <!-- Hero Section -->
     <section id="hero" class="hero section ">
@@ -1509,26 +1509,15 @@
 
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
-    <div class="container">
-      <h3 class="sitename">Jitendra Kumar Mishra</h3>
-      <p>Even those who escape such challenges receive no real benefit. People frequently avoid demanding work, choosing
-        instead what feels easier and more convenient.</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-skype"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Samaya</strong> <span>All Rights Reserved</span>
-        </div>
-      </div>
-    </div>
-  </footer>
-
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
+  
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
