@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Service Details - MyResume Bootstrap Template</title>
+  <title>Samaya Tech Consultant</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,117 +29,237 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: MyResume
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
-<body class="service-details-page">
-
-  <header id="header" class="header d-flex flex-column justify-content-center">
-
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
-      </ul>
-    </nav>
-
-  </header>
-
+<body class="index-page">
+   <!-- nav.html -->
+  <div id="nav-placeholder"></div>
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+  </script> 
   <main class="main">
+    <!-- Hero Section --> 
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>API-First Architecture</h2>
+        <p>Interactive Interview Guide </p>
+      </div><!-- End Section Title -->
+     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-      <div class="container">
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Service Details</li>
-          </ol>
-        </nav>
-        <h1>Service Details</h1>
+  <!-- API First Interactive Cards -->
+  <div class="accordion" id="apiFirstAccordion">
+
+    <!-- Card 1 -->
+    <div class="card mb-3 shadow-sm">
+      <div class="card-header bg-dark text-white fw-bold"
+           data-bs-toggle="collapse"
+           data-bs-target="#apiFirst1"
+           style="cursor:pointer;">
+        1️⃣ What is API-First Architecture?
       </div>
-    </div><!-- End Page Title -->
+      <div id="apiFirst1" class="collapse show" data-bs-parent="#apiFirstAccordion">
+        <div class="card-body">
+          API-First Architecture means <strong>designing the API contract before implementing business logic</strong>.
+          This enables consistency, reusability, and parallel development across teams.
 
-    <!-- Service Details Section -->
-    <section id="service-details" class="service-details section">
-
-      <div class="container">
-
-        <div class="row gy-5">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="service-box">
-              <h4>Serices List</h4>
-              <div class="services-list">
-                <a href="#" class="active"><i class="bi bi-arrow-right-circle"></i><span>Web Design</span></a>
-                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Web Design</span></a>
-                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Product Management</span></a>
-                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Graphic Design</span></a>
-                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Marketing</span></a>
-              </div>
-            </div><!-- End Services List -->
-
-            <div class="service-box">
-              <h4>Download Catalog</h4>
-              <div class="download-catalog">
-                <a href="#"><i class="bi bi-filetype-pdf"></i><span>Catalog PDF</span></a>
-                <a href="#"><i class="bi bi-file-earmark-word"></i><span>Catalog DOC</span></a>
-              </div>
-            </div><!-- End Services List -->
-
-            <div class="help-box d-flex flex-column justify-content-center align-items-center">
-              <i class="bi bi-headset help-icon"></i>
-              <h4>Have a Question?</h4>
-              <p class="d-flex align-items-center mt-2 mb-0"><i class="bi bi-telephone me-2"></i> <span>+1 5589 55488 55</span></p>
-              <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a href="mailto:contact@example.com">contact@example.com</a></p>
-            </div>
-
-          </div>
-
-          <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-            <h3>Temporibus et in vero dicta aut eius lidero plastis trand lined voluptas dolorem ut voluptas</h3>
-            <p>
-              Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Aut eum totam accusantium voluptatem.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Assumenda et porro nisi nihil nesciunt voluptatibus.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea</span></li>
-            </ul>
-            <p>
-              Est reprehenderit voluptatem necessitatibus asperiores neque sed ea illo. Deleniti quam sequi optio iste veniam repellat odit. Aut pariatur itaque nesciunt fuga.
-            </p>
-            <p>
-              Sunt rem odit accusantium omnis perspiciatis officia. Laboriosam aut consequuntur recusandae mollitia doloremque est architecto cupiditate ullam. Quia est ut occaecati fuga. Distinctio ex repellendus eveniet velit sint quia sapiente cumque. Et ipsa perferendis ut nihil. Laboriosam vel voluptates tenetur nostrum. Eaque iusto cupiditate et totam et quia dolorum in. Sunt molestiae ipsum at consequatur vero. Architecto ut pariatur autem ad non cumque nesciunt qui maxime. Sunt eum quia impedit dolore alias explicabo ea.
-            </p>
-          </div>
-
+          <img class="img-fluid rounded mt-3"
+               src="https://upload.wikimedia.org/wikipedia/commons/9/9b/RESTful_API_diagram.png"
+               alt="API First Architecture Diagram">
         </div>
-
       </div>
+    </div>
 
-    </section><!-- /Service Details Section -->
+    <!-- Card 2 -->
+    <div class="card mb-3 shadow-sm">
+      <div class="card-header bg-dark text-white fw-bold"
+           data-bs-toggle="collapse"
+           data-bs-target="#apiFirst2"
+           style="cursor:pointer;">
+        2️⃣ Advantages of API-First
+      </div>
+      <div id="apiFirst2" class="collapse" data-bs-parent="#apiFirstAccordion">
+        <div class="card-body">
+          <span class="badge bg-secondary me-1">Consistency</span>
+          <span class="badge bg-secondary me-1">Reduced Rework</span>
+          <span class="badge bg-secondary me-1">Early Integration</span>
+          <span class="badge bg-secondary me-1">Microservices Ready</span>
+          <span class="badge bg-secondary">Multi-Platform</span>
+
+          <img class="img-fluid rounded mt-3"
+               src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Microservices_architecture.png"
+               alt="API First Benefits">
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card mb-3 shadow-sm">
+      <div class="card-header bg-dark text-white fw-bold"
+           data-bs-toggle="collapse"
+           data-bs-target="#apiFirst3"
+           style="cursor:pointer;">
+        3️⃣ API Contract (OpenAPI / Swagger)
+      </div>
+      <div id="apiFirst3" class="collapse" data-bs-parent="#apiFirstAccordion">
+        <div class="card-body">
+          A formal definition of endpoints, request/response formats, schemas, and authentication.
+
+          <img class="img-fluid rounded mt-3"
+               src="https://upload.wikimedia.org/wikipedia/commons/7/73/Swagger_UI.png"
+               alt="OpenAPI Swagger">
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card mb-3 shadow-sm">
+      <div class="card-header bg-dark text-white fw-bold"
+           data-bs-toggle="collapse"
+           data-bs-target="#apiFirst4"
+           style="cursor:pointer;">
+        4️⃣ API-First & Microservices
+      </div>
+      <div id="apiFirst4" class="collapse" data-bs-parent="#apiFirstAccordion">
+        <div class="card-body">
+          APIs act as <strong>contracts between microservices</strong>, enabling independent development and deployment.
+
+          <img class="img-fluid rounded mt-3"
+               src="https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/images/microservices-logical.png"
+               alt="Microservices API Contract">
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card mb-3 shadow-sm">
+      <div class="card-header bg-dark text-white fw-bold"
+           data-bs-toggle="collapse"
+           data-bs-target="#apiFirst5"
+           style="cursor:pointer;">
+        5️⃣ API Gateway
+      </div>
+      <div id="apiFirst5" class="collapse" data-bs-parent="#apiFirstAccordion">
+        <div class="card-body">
+          Handles routing, authentication, rate limiting, and logging.
+
+          <img class="img-fluid rounded mt-3"
+               src="https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/gateway.png"
+               alt="API Gateway Architecture">
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card mb-3 shadow-sm">
+      <div class="card-header bg-dark text-white fw-bold"
+           data-bs-toggle="collapse"
+           data-bs-target="#apiFirst6"
+           style="cursor:pointer;">
+        6️⃣ API-First vs Code-First
+      </div>
+      <div id="apiFirst6" class="collapse" data-bs-parent="#apiFirstAccordion">
+        <div class="card-body">
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>API-First</th>
+                <th>Code-First</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Contract designed first</td>
+                <td>Implementation first</td>
+              </tr>
+              <tr>
+                <td>Better governance</td>
+                <td>Risk of inconsistency</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="card mb-3 shadow-sm">
+      <div class="card-header bg-dark text-white fw-bold"
+           data-bs-toggle="collapse"
+           data-bs-target="#apiFirst7"
+           style="cursor:pointer;">
+        7️⃣ REST vs GraphQL
+      </div>
+      <div id="apiFirst7" class="collapse" data-bs-parent="#apiFirstAccordion">
+        <div class="card-body">
+          REST exposes fixed endpoints, while GraphQL allows clients to query exactly what they need.
+
+          <img class="img-fluid rounded mt-3"
+               src="https://upload.wikimedia.org/wikipedia/commons/1/17/GraphQL_Logo.svg"
+               alt="REST vs GraphQL">
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="card mb-3 shadow-sm">
+      <div class="card-header bg-dark text-white fw-bold"
+           data-bs-toggle="collapse"
+           data-bs-target="#apiFirst8"
+           style="cursor:pointer;">
+        8️⃣ Security in API-First
+      </div>
+      <div id="apiFirst8" class="collapse" data-bs-parent="#apiFirstAccordion">
+        <div class="card-body">
+          OAuth2, JWT, HTTPS, API Keys, Input Validation.
+
+          <img class="img-fluid rounded mt-3"
+               src="https://upload.wikimedia.org/wikipedia/commons/8/8a/OAuth_logo.svg"
+               alt="API Security">
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 9 -->
+    <div class="card mb-3 shadow-sm">
+      <div class="card-header bg-dark text-white fw-bold"
+           data-bs-toggle="collapse"
+           data-bs-target="#apiFirst9"
+           style="cursor:pointer;">
+        9️⃣ API Versioning
+      </div>
+      <div id="apiFirst9" class="collapse" data-bs-parent="#apiFirstAccordion">
+        <div class="card-body">
+          Versioning ensures backward compatibility while evolving APIs.
+
+          <img class="img-fluid rounded mt-3"
+               src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Software_versioning.svg"
+               alt="API Versioning">
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End API First Interactive Cards -->
+
+</div>
+
+    </section><!-- /About Section -->
+ 
 
   </main>
 
   <footer id="footer" class="footer position-relative light-background">
     <div class="container">
-      <h3 class="sitename">Brandon Johnson</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <h3 class="sitename">Jitendra Kumar Mishra</h3>
+      <p>Even those who escape such challenges receive no real benefit. People frequently avoid demanding work, choosing
+        instead what feels easier and more convenient.</p>
       <div class="social-links d-flex justify-content-center">
         <a href=""><i class="bi bi-twitter-x"></i></a>
         <a href=""><i class="bi bi-facebook"></i></a>
@@ -147,21 +269,15 @@
       </div>
       <div class="container">
         <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Alex Smith</strong> <span>All Rights Reserved</span>
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distribuited by <a href="https://themewagon.com">ThemeWagon</a>
+          <span>Copyright</span> <strong class="px-1 sitename">Samaya</strong> <span>All Rights Reserved</span>
         </div>
       </div>
     </div>
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -181,6 +297,35 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+
+  <!-- Mainage Popup behaviour -->
+  <script>
+
+    let lastFocusedElement = null;
+    let lastScrollPosition = 0;
+    function openProjectDetails(projectModal) {
+      lastFocusedElement = this;
+      lastScrollPosition = window.scrollY;
+      var modal = new bootstrap.Modal(document.getElementById(projectModal));
+      modal.show();
+      portfolio.focus();
+    };
+
+    document.querySelectorAll('.btn-close').forEach(btn => {
+      btn.addEventListener('click', function () {
+        window.scrollTo({
+          top: lastScrollPosition,
+          behavior: "smooth"
+        });
+
+
+        if (lastFocusedElement) {
+          lastFocusedElement.focus();
+        }
+      });
+    });
+ 
+  </script>
 </body>
 
 </html>

@@ -29,30 +29,19 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: MyResume
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body class="index-page">
-  <header id="header" class="header d-flex flex-column justify-content-center">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-        <li><a href="#skills"><i class="bi bi-file-earmark-text navicon"></i><span>Skills</span></a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
-        <!-- <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li> -->
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
-      </ul>
-    </nav>
-  </header>
+   <!-- nav.html -->
+  <div id="nav-placeholder"></div>
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+  </script> 
   <main class="main">
     <!-- Hero Section -->
     <section id="hero" class="hero section ">
@@ -61,7 +50,8 @@
         <div class="row justify-content-center">
           <div class="col-lg-9">
             <h2 style="color: floralwhite;">Jitendra Kumar Mishra</h2>
-            <p style="color: floralwhite;">I'm <span style="color: orangered;font-size: xx-large; font-weight: 900;text-transform: uppercase;" class="typed"
+            <p style="color: floralwhite;">I'm <span
+                style="color: orangered;font-size: xx-large; font-weight: 900;text-transform: uppercase;" class="typed"
                 data-typed-items="Associate Architect, Technical Lead, Creatio CRM Consultant, Enterprise .NET, Azure Cloud Architect">ASSOCIATE
                 ARCHITECT</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
             <div class="social-links">
@@ -127,14 +117,21 @@
                       Corporate Operation Digital Solutions </strong> </li>
                 </ul>
               </div>
-             
+
             </div>
-            
+
           </div>
-           <div  class="col-lg-12">
-                <p class="py-3">
-              <strong>Project Website :</strong> <fst-italic> coforgebps.creatio.com | gelosobeveragegroup.com | everwisecu.com | minnco.com | bayfed.com  | converge.aero | bacf-uat.converge.aero |  airarabia-uat.converge.aero | enterair-uat.converge.aero | devone.intuitivecare.net | intuitivecare.net | zerobs.com.au | blueskyhealthcare.com.au | brickandblockcareers.org.au | ingeniuminsurance.com.au  sportsperpetual.com  | www.nightline.ie | sununion.co.uk | Powertexgroup.Com | Encompass order management| NopCommerce plugin | cmms.valpm.com | valpm.com | skelligsrock.com | booking.skelligsrock.com | booking.skelligsrock.com/admin | choice-solutions.com </fst-italic> </p>
-              </div>
+          <div class="col-lg-12">
+            <p class="py-3">
+              <strong>Project Website :</strong> <fst-italic> coforgebps.creatio.com | gelosobeveragegroup.com |
+                everwisecu.com | minnco.com | bayfed.com | converge.aero | bacf-uat.converge.aero |
+                airarabia-uat.converge.aero | enterair-uat.converge.aero | devone.intuitivecare.net | intuitivecare.net
+                | zerobs.com.au | blueskyhealthcare.com.au | brickandblockcareers.org.au | ingeniuminsurance.com.au
+                sportsperpetual.com | www.nightline.ie | sununion.co.uk | Powertexgroup.Com | Encompass order
+                management| NopCommerce plugin | cmms.valpm.com | valpm.com | skelligsrock.com |
+                booking.skelligsrock.com | booking.skelligsrock.com/admin | choice-solutions.com </fst-italic>
+            </p>
+          </div>
         </div>
       </div>
     </section><!-- /About Section -->
@@ -1307,11 +1304,11 @@
     </section><!-- /Portfolio Section -->
 
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
+    <!-- clients Section -->
+    <section id="clients" class="clients section">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
+        <h2>clients</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
@@ -1336,25 +1333,8 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
-                          Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at
-                          semper.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Saul Goodman</h3>
-                      <h4>Ceo &amp; Founder</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                          class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
                   <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="">
+                    <img src="assets/img/clients/air4casts.png" class="img-fluid testimonial-img" alt="">
                   </div>
                 </div>
               </div>
@@ -1381,7 +1361,7 @@
                     </div>
                   </div>
                   <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="">
+                    <img src="assets/img/clients/clients-2.jpg" class="img-fluid testimonial-img" alt="">
                   </div>
                 </div>
               </div>
@@ -1407,7 +1387,7 @@
                     </div>
                   </div>
                   <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="">
+                    <img src="assets/img/clients/clients-3.jpg" class="img-fluid testimonial-img" alt="">
                   </div>
                 </div>
               </div>
@@ -1434,7 +1414,7 @@
                     </div>
                   </div>
                   <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-4.jpg" class="img-fluid testimonial-img" alt="">
+                    <img src="assets/img/clients/clients-4.jpg" class="img-fluid testimonial-img" alt="">
                   </div>
                 </div>
               </div>
@@ -1446,7 +1426,7 @@
 
       </div>
 
-    </section><!-- /Testimonials Section -->
+    </section><!-- /clients Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
