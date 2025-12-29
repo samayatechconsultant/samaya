@@ -156,64 +156,38 @@ Design APIs before implementation to enable:
   </textarea>
 
   <br>
-  <button onclick="postToLinkedIn()">Post to LinkedIn</button>
+  <button onclick="post()">Post to LinkedIn</button>
 
   <div id="status"></div>
 </div>
 
 <!-- ================= LINKEDIN SCRIPT ================= -->
 <script>
-  // 🔴 REPLACE THESE VALUES
-  const ACCESS_TOKEN = "WPL_AP1.yAlkmJ73Q2J3EAIF.1PEpWw==";
-  const AUTHOR_URN = "urn:li:person:86r4tr6y3oviex";
+function post() {
+  const text = document.getElementById("postText").value;
 
-  function postToLinkedIn() {
-    const text = document.getElementById("postText").value;
-
-    if (!text) {
-      alert("Please write something to post.");
-      return;
+  fetch("/api/post", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ text })
+  })
+  .then(res => {
+    if (res.status === 201) {
+      document.getElementById("status").innerText =
+        "✅ Posted successfully!";
+    } else {
+      return res.text().then(err => { throw err; });
     }
-
-    const payload = {
-      author: AUTHOR_URN,
-      lifecycleState: "PUBLISHED",
-      specificContent: {
-        "com.linkedin.ugc.ShareContent": {
-          shareCommentary: { text: text },
-          shareMediaCategory: "NONE"
-        }
-      },
-      visibility: {
-        "com.linkedin.ugc.MemberNetworkVisibility": "PUBLIC"
-      }
-    };
-
-    fetch("https://api.linkedin.com/v2/ugcPosts", {
-      method: "POST",
-      headers: {
-        "Authorization": "Bearer " + ACCESS_TOKEN,
-        "Content-Type": "application/json",
-        "X-Restli-Protocol-Version": "2.0.0"
-      },
-      body: JSON.stringify(payload)
-    })
-    .then(response => {
-      if (response.status === 201) {
-        document.getElementById("status").innerHTML =
-          "✅ Post published successfully!";
-      } else {
-        return response.text().then(err => { throw new Error(err); });
-      }
-    })
-    .catch(error => {
-      document.getElementById("status").innerHTML =
-        "❌ Error posting to LinkedIn. Check console.";
-      console.error(error);
-    });
-  }
+  })
+  .catch(err => {
+    console.error(err);
+    document.getElementById("status").innerText =
+      "❌ Failed to post (check console)";
+  });
+}   
 </script>
 
 </body>
 </html>
+
 
