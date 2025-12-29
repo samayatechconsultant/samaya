@@ -162,32 +162,33 @@ Design APIs before implementation to enable:
 </div>
 
 <!-- ================= LINKEDIN SCRIPT ================= -->
-<script>
-function post() {
-  const text = document.getElementById("postText").value;
+  <script>
+        function post() {
+            const text = document.getElementById("text").value;
 
-  fetch("/api/post", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ text })
-  })
-  .then(res => {
-    if (res.status === 201) {
-      document.getElementById("status").innerText =
-        "✅ Posted successfully!";
-    } else {
-      return res.text().then(err => { throw err; });
-    }
-  })
-  .catch(err => {
-    console.error(err);
-    document.getElementById("status").innerText =
-      "❌ Failed to post (check console)";
-  });
-}   
-</script>
+            fetch("/api/post", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ text })
+            })
+                .then(res => {
+                    if (res.status === 201) {
+                        document.getElementById("status").innerText =
+                            "✅ Posted successfully!";
+                    } else {
+                        return res.text().then(err => { throw err; });
+                    }
+                })
+                .catch(err => {
+                    console.error(err);
+                    document.getElementById("status").innerText =
+                        "❌ Failed to post (check console)";
+                });
+        }
+    </script>
 
 </body>
 </html>
+
 
 
