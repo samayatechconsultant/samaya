@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Samaya Tech Consultant</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/topic.css" rel="stylesheet">
+</head>
+
+<body class="index-page Custombody">
+  <!-- nav.html -->
+  <div id="nav-placeholder"></div>
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+  </script>
+  <main class="main">
+    <!-- Hero Section -->
+    <!-- About Section -->
+    <section id="about" class="about section Custombody">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 style="color: #ffffff;">API-First Architecture</h2>
+        <p>Interactive Interview Guide </p>
+      </div><!-- End Section Title -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- API First Interactive Cards -->
+
+        <div class="card-grid">
+
+          <!-- CARD 1 -->
+          <div class="topic-card">
+            <div class="topic-pill">API-First Architecture</div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/RESTful_API_diagram.png"
+              alt="API First Architecture">
+            <h4>About the Topic</h4>
+            <p>
+              API-First Architecture designs APIs before implementation, enabling
+              parallel development, strong contracts, and consistent integrations.
+            </p>
+            <h4>Image Explanation</h4>
+            <p>
+              The image shows how clients interact through a defined API layer,
+              ensuring scalability and loose coupling.
+            </p>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="topic-card">
+            <div class="topic-pill">Microservices Architecture</div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Microservices_architecture.png"
+              alt="Microservices Architecture">
+            <h4>About the Topic</h4>
+            <p>
+              Microservices break applications into independent services
+              that can be developed, deployed, and scaled separately.
+            </p>
+            <h4>Image Explanation</h4>
+            <p>
+              Each service communicates via APIs, reducing coupling and
+              improving system resilience.
+            </p>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="topic-card">
+            <div class="topic-pill">API Gateway</div>
+            <img src="https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/gateway.png"
+              alt="API Gateway">
+            <h4>About the Topic</h4>
+            <p>
+              An API Gateway acts as a single entry point for clients,
+              handling routing, security, and rate limiting.
+            </p>
+            <h4>Image Explanation</h4>
+            <p>
+              The diagram shows centralized request handling before
+              traffic reaches backend services.
+            </p>
+          </div>
+
+          <!-- CARD 4 -->
+          <div class="topic-card">
+            <div class="topic-pill">API Security</div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/OAuth_logo.svg" alt="API Security">
+            <h4>About the Topic</h4>
+            <p>
+              API security protects services using OAuth2, JWT,
+              HTTPS, and validation mechanisms.
+            </p>
+            <h4>Image Explanation</h4>
+            <p>
+              The image represents secure token-based access
+              to protected API resources.
+            </p>
+          </div>
+
+          <!-- CARD 4 -->
+          <div class="topic-card">
+            <div class="topic-pill">API-First & Microservices</div>
+            <img
+              src="https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/images/microservices-logical.png"
+              alt="API-First & Microservices">
+            <p>
+              APIs act as <strong>contracts between microservices</strong>, enabling independent development and
+              deployment.
+            </p>
+            <p>
+              The image represents secure token-based access
+              to protected API resources.
+            </p>
+          </div>
+        </div>
+
+
+
+        <!-- End API First Interactive Cards -->
+
+      </div>
+
+    </section><!-- /About Section -->
+
+
+  </main>
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+  <!-- Mainage Popup behaviour -->
+  <script>
+
+    let lastFocusedElement = null;
+    let lastScrollPosition = 0;
+    function openProjectDetails(projectModal) {
+      lastFocusedElement = this;
+      lastScrollPosition = window.scrollY;
+      var modal = new bootstrap.Modal(document.getElementById(projectModal));
+      modal.show();
+      portfolio.focus();
+    };
+
+    document.querySelectorAll('.btn-close').forEach(btn => {
+      btn.addEventListener('click', function () {
+        window.scrollTo({
+          top: lastScrollPosition,
+          behavior: "smooth"
+        });
+
+
+        if (lastFocusedElement) {
+          lastFocusedElement.focus();
+        }
+      });
+    });
+
+  </script>
+</body>
+
+</html>
