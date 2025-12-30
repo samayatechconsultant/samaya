@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Samaya Tech Consultant</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/topic.css" rel="stylesheet">
+</head>
+
+<body class="index-page Custombody">
+  <!-- nav.html -->
+  <div id="nav-placeholder"></div>
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+  </script>
+  <main class="main">
+    <!-- Hero Section -->
+    <!-- About Section -->
+    <section id="about" class="about section Custombody">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 style="color: #ffffff;">PostgreSQL</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-3">
+
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Concurrency managed?</div>
+              <p>PostgreSQL uses MVCC (Multi-Version Concurrency Control) to handle multiple transactions without locks,
+                ensuring consistency.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Constraints in PostgreSQL?</div>
+              <p>Constraints enforce rules on data. Examples: NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY, CHECK.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DiffBet DELETE and TRUNCATE in PostgreSQL?</div>
+              <p>DELETE removes selected rows and can be rolled back. TRUNCATE removes all rows, is faster, and cannot
+                be rolled back in older versions.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DiffBet INNER JOIN and LEFT JOIN in PostgreSQL?</div>
+              <p>INNER JOIN returns matched rows. LEFT JOIN returns all left table rows with NULL for unmatched right
+                rows.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DiffBet SERIAL and IDENTITY?</div>
+              <p>SERIAL is a pseudo-type for auto-increment integers. IDENTITY is SQL-standard and supported from
+                PostgreSQL 10+ for sequence-generated IDs.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DiffBet SQL Server and PostgreSQL?</div>
+              <p>SQL Server is proprietary, Windows-focused (though Linux is supported). PostgreSQL is open-source,
+                cross-platform, and supports advanced data types.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DiffBet temporary and unlogged tables?</div>
+              <p>Temporary tables exist per session and are cleared automatically. Unlogged tables skip WAL logging for
+                faster writes but are non-durable after crash.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">EXPLAIN in PostgreSQL?</div>
+              <p>EXPLAIN shows the query execution plan for optimization. EXPLAIN ANALYZE runs the query and shows
+                actual runtime stats.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Function in PostgreSQL?</div>
+              <p>A function is a reusable code block returning a value, similar to stored procedures. Supports PL/pgSQL,
+                SQL, and other procedural languages.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Indexes in PostgreSQL?</div>
+              <p>Indexes speed up query performance. Types: B-tree, Hash, GIN, GiST, BRIN.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">JSON support in PostgreSQL?</div>
+              <p>PostgreSQL supports JSON and JSONB types for storing and querying structured data efficiently.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Materialized view?</div>
+              <p>Materialized view stores the result of a query physically. Can be refreshed periodically for
+                performance optimization.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">pgAdmin?</div>
+              <p>pgAdmin is a web-based administration tool for PostgreSQL databases.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">PostgreSQL data types?</div>
+              <p>Common types: INTEGER, BIGINT, NUMERIC, VARCHAR, TEXT, BOOLEAN, DATE, JSON, UUID.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">PostgreSQL?</div>
+              <p>PostgreSQL is an open-source object-relational database system supporting SQL and advanced features
+                like JSON, indexing, and concurrency control.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Role in PostgreSQL?</div>
+              <p>A role can be a user or a group, controlling access to databases, schemas, and tables.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Schema in PostgreSQL?</div>
+              <p>A schema is a namespace to group database objects like tables, views, and functions. It allows object
+                organization and access control.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Sequences in PostgreSQL?</div>
+              <p>Sequences generate unique numeric identifiers, often used for auto-increment primary keys.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Triggers in PostgreSQL?</div>
+              <p>Triggers automatically execute a function when a table event occurs (INSERT, UPDATE, DELETE). Functions
+                are written in PL/pgSQL or other languages.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">WAL (Write-Ahead Log)?</div>
+              <p>WAL ensures durability and crash recovery. Changes are logged before being applied to data files.</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

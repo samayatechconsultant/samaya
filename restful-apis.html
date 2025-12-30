@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Samaya Tech Consultant</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/topic.css" rel="stylesheet">
+</head>
+
+<body class="index-page Custombody">
+  <!-- nav.html -->
+  <div id="nav-placeholder"></div>
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+  </script>
+  <main class="main">
+    <!-- Hero Section -->
+    <!-- About Section -->
+    <section id="about" class="about section Custombody">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 style="color: #ffffff;">RESTful APIs </h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-3">
+
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Api versioning?</div>
+              <p>API versioning allows changes without breaking existing clients. Versions may appear in headers, URLs,
+                or query parameters. It helps manage updates and backward compatibility.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Authentication in rest?</div>
+              <p>Authentication verifies user identity before accessing protected resources. Methods include OAuth, JWT,
+                and Basic Authentication. It ensures only authorized users access the API.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Authorization in rest?</div>
+              <p>Authorization determines what resources an authenticated user can access. it controls permissions and
+                roles. it works after successful authentication.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Crud?</div>
+              <p>CRUD stands for Create, Read, Update, and Delete. These operations map to HTTP methods in REST. CRUD is
+                fundamental for resource management in APIs.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Endpoint?</div>
+              <p>An endpoint is a specific URL where a resource can be accessed. Each endpoint corresponds to an
+                operation on a resource. It defines how the client interacts with the server.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Http status code 200?</div>
+              <p>HTTP 200 means the request was successful. It typically accompanies GET requests. The response usually
+                contains the requested resource.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Http status code 201?</div>
+              <p>201 means a resource has been successfully created. it is commonly returned after post requests. the
+                response may include the newly created resource or a location header.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Http status code 404?</div>
+              <p>404 means the requested resource is not found. it indicates an invalid endpoint or missing data. it is
+                part of rest error handling.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Http status code 500?</div>
+              <p>500 indicates a server error. it means the server failed to process the request due to an internal
+                issue. it signals the need for debugging and error handling.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Idempotency?</div>
+              <p>Idempotency means repeated requests produce the same result. HTTP methods like GET, PUT, and DELETE are
+                idempotent, while POST is not. It prevents unintended duplicate operations.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">J</div>
+              <p>JSON (JavaScript Object Notation) is a lightweight format for data exchange. It is human-readable and
+                easy for machines to parse. REST APIs commonly use JSON due to simplicity and speed.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Jwt?</div>
+              <p>JSON Web Token (JWT) is a secure token used for authentication and authorization. It contains encoded
+                claims digitally signed using a secret or certificate. The server does not store session state.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Main http methods used in rest?</div>
+              <p>REST commonly uses GET, POST, PUT, PATCH, and DELETE. GET retrieves data, POST creates, PUT updates
+                fully, PATCH updates partially, and DELETE removes a resource. These methods align with CRUD operations.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Oauth2?</div>
+              <p>OAuth2 is an authorization framework that allows delegated access. It enables third-party apps to
+                access APIs securely without sharing passwords. It is widely used by Google, Facebook, and Microsoft
+                services.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Pagination?</div>
+              <p>Pagination splits large datasets into smaller chunks. REST APIs use parameters like limit and page to
+                fetch data efficiently. It improves performance and user experience.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Rate limiting in rest apis?</div>
+              <p>Rate limiting restricts the number of requests allowed within a time window. It prevents abuse,
+                protects servers, and ensures fair usage. Often implemented with tokens or throttling rules.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Resource in rest?</div>
+              <p>A resource represents data or an entity exposed via an endpoint. Each resource is identified by a
+                unique URI. Resources are usually represented in formats like JSON or XML.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Rest api?</div>
+              <p>A REST API is an architectural style that uses HTTP methods to perform CRUD operations. It follows
+                stateless communication and represents resources using URIs. REST relies on representations like JSON or
+                XML. It is widely used for web and mobile services.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Stateless mean in rest?</div>
+              <p>Stateless means each request contains all necessary information to process it. The server does not
+                store client session data between requests. This improves scalability and simplifies server
+                architecture.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Xml in rest?</div>
+              <p>XML is a markup language used for structured data representation. It was widely used before JSON gained
+                popularity. REST can still support XML when needed for legacy systems.</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

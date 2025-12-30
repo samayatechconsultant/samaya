@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Samaya Tech Consultant</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/topic.css" rel="stylesheet">
+</head>
+
+<body class="index-page Custombody">
+  <!-- nav.html -->
+  <div id="nav-placeholder"></div>
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+  </script>
+  <main class="main">
+    <!-- Hero Section -->
+    <!-- About Section -->
+    <section id="about" class="about section Custombody">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 style="color: #ffffff;"> SQL</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-3">
+
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">ACID properties and PostgreSQL compliance</div>
+              <p>A: Atomicity, C: Consistency, I: Isolation, D: Durability, PostgreSQL is fully ACID-compliant, ensuring
+                reliable transactions.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Advantages and Disadvantages of Stored Procedure</div>
+              <p>Advantages: Improves performance, reusable, reduces network traffic, enhances security., Disadvantages:
+                Harder to debug, platform-dependent, maintenance overhead.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Aggregate and Scalar Functions</div>
+              <p>Aggregate Functions: Operate on multiple rows (e.g., SUM, AVG, COUNT)., Scalar Functions: Operate on a
+                single value and return a single result (e.g., UPPER, LEN).</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Aggregate and Scalar functions</div>
+              <p>Aggregate: Operate on multiple rows (SUM, AVG, COUNT)., Scalar: Operate on single value, return single
+                result (UPPER, ROUND).</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Alias command</div>
+              <p>Alias is a temporary name for a table or column in a query., Example: SELECT emp_name AS Name FROM
+                Employees., Helps in readability and formatting.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Alias in SQL</div>
+              <p>An alias is a temporary name for a table or column., Example: SELECT emp_name AS Name FROM Employee;,
+                Used to simplify queries and improve readability.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Architecture of PostgreSQL</div>
+              <p>Client-server architecture:, Client: Sends SQL queries., Server: Processes requests, manages storage,
+                handles transactions., Includes background processes for WAL, vacuuming, and replication.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Auto Increment?</div>
+              <p>Auto Increment automatically generates a unique numeric value for a column., Commonly used for primary
+                keys., Example in SQL: ID INT AUTO_INCREMENT PRIMARY KEY.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Backup of a PostgreSQL database</div>
+              <p>Use pg_dump for logical backup: pg_dump dbname > backup.sql., For full cluster backup, use
+                pg_basebackup., Backups can be restored using psql or pg_restore.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Capacity of a table in PostgreSQL</div>
+              <p>Theoretically, a table can store unlimited rows, limited by disk space., Maximum table size is 32 TB
+                per table in practice (depends on system).</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Case-insensitive searches using regex in PostgreSQL</div>
+              <p>Use the ~* operator instead of ~., Example: SELECT * FROM table WHERE column ~* 'pattern';, This
+                matches text regardless of case.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Change the datatype of a column</div>
+              <p>ALTER TABLE table_name ALTER COLUMN column_name TYPE new_datatype;, Used to modify existing column data
+                types safely.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Check rows affected in previous transactions</div>
+              <p>Use the SQL command GET DIAGNOSTICS variable = ROW_COUNT; after executing a DML statement., It returns
+                the number of rows affected by the last INSERT, UPDATE, or DELETE., Useful for transaction auditing and
+                validation.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Clause</div>
+              <p>A Clause is a component of SQL statement that performs a specific task., Examples: SELECT, WHERE, ORDER
+                BY, GROUP BY.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Collation</div>
+              <p>Collation defines rules for storing, comparing, and sorting strings in a database., It handles case
+                sensitivity, accent sensitivity, and character set.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Collation? Types of Collation Sensitivity</div>
+              <p>Collation defines rules for sorting and comparing text., Types of sensitivity:, Case-sensitive (CS),
+                Accent-sensitive (AS), Kana-sensitive (KS), Width-sensitive (WS)</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Command enable-debug</div>
+              <p>enable-debug is used to turn on debugging mode in PostgreSQL or related tools., It logs detailed
+                information about query execution and server operations., Useful for troubleshooting and performance
+                tuning., It should be disabled in production for security and performance reasons.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Command to create a database in PostgreSQL</div>
+              <p>CREATE DATABASE dbname;, Creates a new database with default settings.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Command to fetch first 5 characters of a string</div>
+              <p>Use the LEFT() function:, SELECT LEFT(column_name, 5) FROM table_name;, It extracts the first 5
+                characters from the specified column.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Common clauses used with SELECT query in SQL</div>
+              <p>SELECT retrieves data from tables. Common clauses:, WHERE (filter rows), GROUP BY (aggregate data),
+                ORDER BY (sort results), HAVING (filter aggregated data)</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Composite key in SQL?</div>
+              <p>A composite key is a primary key made up of two or more columns. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Constraint?</div>
+              <p>Constraints enforce rules on table columns to maintain data integrity., Examples: PRIMARY KEY, FOREIGN
+                KEY, UNIQUE, CHECK, NOT NULL., Prevents invalid data entry into the table.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Constraints in SQL?</div>
+              <p>Constraints enforce rules on table columns., Examples: PRIMARY KEY, FOREIGN KEY, UNIQUE, NOT NULL,
+                CHECK., Used to maintain data integrity.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Create an empty table from an existing table</div>
+              <p>Use: SELECT * INTO NewTable FROM ExistingTable WHERE 1=0;, Copies the structure but no data.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Create empty tables with the same structure as another
+                table?</div>
+              <p>Use:, CREATE TABLE new_table AS SELECT * FROM existing_table WHERE 1=0;, It copies the structure but
+                not the data.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Cross join in SQL?</div>
+              <p>A cross join returns Cartesian product of two tables. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Cross-Join</div>
+              <p>Cross-Join returns Cartesian product of two tables., Every row from the first table combines with every
+                row from the second., Used when all combinations are needed.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Cross-Join?</div>
+              <p>Returns Cartesian product of two tables., All rows from Table A are combined with all rows from Table
+                B., No join condition is used.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Cursor and its usage</div>
+              <p>A cursor allows row-by-row processing of query results., Used in stored procedures for iterative
+                operations., Steps: DECLARE cursor, OPEN cursor, FETCH row, CLOSE cursor.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Cursor in SQL?</div>
+              <p>A cursor allows row-by-row processing of query result. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Cursor?</div>
+              <p>A cursor allows row-by-row processing of query results., Useful for operations that cannot be done in a
+                single SQL statement., Types include Forward-Only, Static, Dynamic, and Keyset-driven cursors.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Data Integrity?</div>
+              <p>Data integrity ensures accuracy, consistency, and reliability of data in the database., Maintained
+                using constraints, normalization, and referential integrity., Critical for reliable database operations.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Data Integrity?</div>
+              <p>Ensures accuracy, consistency, and reliability of data in a database., Enforced using constraints like
+                PRIMARY KEY, FOREIGN KEY, UNIQUE, and CHECK., Prevents invalid or duplicate data entry.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Data Warehouse</div>
+              <p>A Data Warehouse is a central repository for integrated data from multiple sources., Used for
+                reporting, analysis, and decision-making., Data is structured, cleaned, and optimized for querying.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Database?</div>
+              <p>A database is an organized collection of related data., It allows easy storage, retrieval, and
+                management of information., Can be relational or non-relational (NoSQL).</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Database?</div>
+              <p>A database is a structured collection of data stored electronically., Supports easy access,
+                manipulation, and management of data., Used to store information for applications.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DBMS?</div>
+              <p>DBMS (Database Management System) manages data in a structured way., It allows storing, retrieving, and
+                manipulating data efficiently., Examples: MySQL, SQL Server, Oracle., Provides security, backup, and
+                concurrency control.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DBMS?</div>
+              <p>DBMS is software for storing, retrieving, and managing data., Examples: MS Access, Oracle, MySQL.,
+                Provides basic CRUD operations but may lack advanced relational features.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Deadlock in SQL?</div>
+              <p>A deadlock occurs when two or more transactions block each other, waiting for resources. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Define Indexes in PostgreSQL</div>
+              <p>Indexes improve query performance., CREATE INDEX idx_name ON table_name(column_name);, Supports B-tree,
+                Hash, GIN, GiST types.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Define sequence</div>
+              <p>A sequence generates unique numeric values automatically., Used for primary keys or auto-increment
+                fields., Example: CREATE SEQUENCE seq_name START 1;</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Define tokens in PostgreSQL</div>
+              <p>Tokens are basic language elements: keywords, identifiers, literals, operators., Used by the parser to
+                understand SQL statements.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Delete a database in PostgreSQL</div>
+              <p>DROP DATABASE dbname;, Removes the database and all its contents permanently.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Denormalization</div>
+              <p>Process of combining tables to improve query performance., It may introduce redundancy but speeds up
+                read-heavy operations., Used when normalization causes too many joins.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Denormalization in SQL?</div>
+              <p>Denormalization combines tables or adds redundant data for performance improvement. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Denormalization?</div>
+              <p>Denormalization combines tables to improve query performance., It may introduce redundancy but reduces
+                the need for complex joins., Used when read performance is prioritized over storage efficiency.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet a candidate key and alternate key?</div>
+              <p>Candidate key is a potential primary key; alternate key is a candidate key not selected as primary.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet a composite key and a compound key?</div>
+              <p>Composite key is primary key with multiple columns; compound key usually refers to multiple foreign
+                keys together. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet a database and schema?</div>
+              <p>Database is a container of schemas and data; schema is a namespace inside the database. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet a natural key and surrogate key?</div>
+              <p>Natural key is derived from business data; surrogate key is system-generated unique identifier. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet a primary key and candidate key?</div>
+              <p>Primary key uniquely identifies rows; candidate key is a column that can be a primary key but is not
+                chosen. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet a primary key and unique constraint?</div>
+              <p>Primary key cannot be NULL and uniquely identifies rows; unique constraint ensures uniqueness but can
+                have one NULL. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet a temporary table and a table variable?</div>
+              <p>Temporary table persists for the session or procedure; table variable is limited to scope and memory.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet a temporary table and permanent table?</div>
+              <p>Temporary table exists for session/procedure; permanent table persists in database. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet AFTER and INSTEAD OF trigger?</div>
+              <p>AFTER trigger executes after the event; INSTEAD OF trigger executes instead of the event. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet CHAR and NCHAR?</div>
+              <p>CHAR stores fixed-length ASCII; NCHAR stores fixed-length Unicode. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet CHAR and VARCHAR?</div>
+              <p>CHAR has fixed length; VARCHAR has variable length. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet CHAR, VARCHAR, and TEXT?</div>
+              <p>CHAR is fixed-length; VARCHAR is variable-length; TEXT stores large variable-length text. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet clustered and non-clustered index?</div>
+              <p>Clustered index defines physical order of data; non-clustered index is separate structure pointing to
+                data. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet clustered index and non-clustered index?</div>
+              <p>Clustered index orders data physically; non-clustered index is separate pointer structure. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet COALESCE and ISNULL?</div>
+              <p>COALESCE returns first non-NULL value among multiple; ISNULL checks one value and replaces if NULL.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet COMMIT and ROLLBACK?</div>
+              <p>COMMIT saves transaction changes; ROLLBACK undoes transaction changes. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet correlated and non-correlated subquery?</div>
+              <p>Correlated subquery depends on outer query values; non-correlated subquery runs independently. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet DCL and TCL?</div>
+              <p>DCL manages access and permissions (GRANT, REVOKE); TCL manages transactions (COMMIT, ROLLBACK). </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet DDL and DML?</div>
+              <p>DDL defines database structure (CREATE, ALTER, DROP); DML manipulates data (INSERT, UPDATE, DELETE).
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet DELETE and TRUNCATE?</div>
+              <p>DELETE removes rows with logging and WHERE clause; TRUNCATE removes all rows without logging individual
+                deletions. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet DELETE and UPDATE?</div>
+              <p>DELETE removes rows; UPDATE modifies existing rows. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet DELETE, DROP, and TRUNCATE?</div>
+              <p>DELETE removes data; DROP removes table or database; TRUNCATE removes all rows quickly. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet EXISTS and IN?</div>
+              <p>EXISTS checks for existence of rows; IN checks if value matches a list of values. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet EXISTS and IN?</div>
+              <p>EXISTS checks for existence of rows; IN checks if value matches a list of values. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet GROUP BY and ORDER BY?</div>
+              <p>GROUP BY aggregates data; ORDER BY sorts data. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet HAVING and WHERE?</div>
+              <p>WHERE filters before aggregation; HAVING filters after aggregation. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet implicit and explicit cursors?</div>
+              <p>Implicit cursors are automatically created for single-row queries; explicit cursors are manually
+                defined. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet INNER JOIN and CROSS JOIN?</div>
+              <p>INNER JOIN returns matching rows; CROSS JOIN returns Cartesian product. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet INNER JOIN and NATURAL JOIN?</div>
+              <p>INNER JOIN requires explicit condition; NATURAL JOIN automatically joins on columns with same name.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet inner join and natural join?</div>
+              <p>Inner join uses explicit condition; natural join uses all columns with same name. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet INNER JOIN and OUTER JOIN?</div>
+              <p>INNER JOIN returns matching rows; OUTER JOIN returns matching rows plus unmatched rows from one or both
+                tables. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet INTERSECT and EXCEPT?</div>
+              <p>INTERSECT returns common rows; EXCEPT returns rows in first query not in second. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet LEFT JOIN, RIGHT JOIN, and FULL OUTER JOIN?</div>
+              <p>LEFT JOIN returns all rows from left table and matches from right; RIGHT JOIN is opposite; FULL OUTER
+                JOIN returns all rows from both tables. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet local and global temporary table?</div>
+              <p>Local temporary table is visible only to current session; global temporary table is visible to all
+                sessions. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet NVARCHAR and VARCHAR?</div>
+              <p>NVARCHAR stores Unicode data; VARCHAR stores ASCII data. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet NVL and COALESCE?</div>
+              <p>NVL is Oracle-specific and handles two values; COALESCE is standard SQL and can handle multiple values.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet OLTP and OLAP?</div>
+              <p>OLTP is for transactional systems with frequent inserts/updates; OLAP is for analytics and reporting.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet pessimistic and optimistic concurrency control?</div>
+              <p>Pessimistic locks data to prevent conflicts; optimistic assumes no conflict and checks before
+                committing. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet RANK() and DENSE_RANK()?</div>
+              <p>RANK() skips ranks for ties; DENSE_RANK() does not skip ranks. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet RANK() and NTILE()?</div>
+              <p>RANK() assigns rank with gaps; NTILE() divides rows into specified number of buckets. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet ROLLUP and CUBE in SQL?</div>
+              <p>ROLLUP generates subtotals along a hierarchy; CUBE generates subtotals for all combinations of grouping
+                columns. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet ROW_NUMBER() and RANK()?</div>
+              <p>ROW_NUMBER() assigns unique sequential numbers; RANK() assigns same rank for ties. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet scalar function and table-valued function?</div>
+              <p>Scalar function returns single value; table-valued function returns table. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet SQL and NoSQL?</div>
+              <p>SQL is relational with structured schema; NoSQL is non-relational with flexible schema and designed for
+                scalability. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet SQL and PL/SQL?</div>
+              <p>SQL is a query language; PL/SQL is procedural language extension for SQL with loops, conditions, and
+                variables. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet stored procedure and function?</div>
+              <p>Procedure may not return value and can perform DML; function must return value and cannot perform
+                certain operations. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet TRUNCATE and DELETE?</div>
+              <p>TRUNCATE removes all rows quickly without logging individual deletions; DELETE removes rows with
+                logging and can have WHERE clause. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet TRUNCATE TABLE and DROP TABLE?</div>
+              <p>TRUNCATE removes all data but keeps structure; DROP deletes table structure and data. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet UNION and INTERSECT?</div>
+              <p>UNION combines results from multiple queries; INTERSECT returns common rows. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet UNION and JOIN?</div>
+              <p>UNION combines results vertically; JOIN combines tables horizontally. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet UNION and JOIN?</div>
+              <p>UNION combines queries vertically; JOIN combines tables horizontally. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet UNION and UNION ALL?</div>
+              <p>UNION removes duplicate rows; UNION ALL includes duplicates. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet UNIQUE and PRIMARY KEY?</div>
+              <p>PRIMARY KEY uniquely identifies rows and cannot be NULL; UNIQUE ensures uniqueness but allows one NULL.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet VARCHAR and NVARCHAR?</div>
+              <p>VARCHAR stores variable-length ASCII; NVARCHAR stores variable-length Unicode. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet VARCHAR and TEXT?</div>
+              <p>VARCHAR is for smaller strings with length limit; TEXT stores large variable-length strings. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet WHERE and HAVING?</div>
+              <p>WHERE filters rows before aggregation; HAVING filters groups after aggregation. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DiffBet Cluster and Non-Cluster Index</div>
+              <p>Clustered Index: Sorts and stores the actual data rows based on key values; only one per table.,
+                Non-Clustered Index: Creates a separate structure pointing to data rows; multiple per table., Clustered
+                is faster for range queries; Non-clustered is good for quick lookups.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DiffBet Clustered and Non-clustered index</div>
+              <p>Clustered index: Sorts and stores data physically in the table., Non-clustered index: Separate
+                structure pointing to table rows., Clustered = 1 per table; Non-clustered = multiple per table.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DiffBet Commit and Checkpoint</div>
+              <p>Commit: Saves changes of a transaction permanently to the database., Checkpoint: Forces all changes
+                from WAL to be flushed to disk., Commit is transaction-specific, checkpoint is system-level for
+                durability.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DiffBet DELETE and TRUNCATE</div>
+              <p>DELETE: Removes specific rows, can use WHERE, logs each row., TRUNCATE: Removes all rows, faster,
+                cannot use WHERE., DELETE can be rolled back; TRUNCATE is minimally logged.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DiffBet DELETE and TRUNCATE</div>
+              <p>DELETE: Row-by-row deletion, can use WHERE, slower., TRUNCATE: Deletes all rows, resets identity,
+                faster, cannot use WHERE.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DiffBet DROP and TRUNCATE</div>
+              <p>DROP: Removes table structure permanently., TRUNCATE: Removes all data but keeps structure intact.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DiffBet SQL and MySQL</div>
+              <p>SQL: Language used for querying databases., MySQL: Database management system using SQL language., SQL
+                is standard; MySQL is an implementation.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DiffBet TRUNCATE and DROP</div>
+              <p>TRUNCATE: Deletes all data but keeps table structure., DROP: Deletes the table and its structure
+                completely., TRUNCATE is faster; DROP is permanent.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Differences between OLTP and OLAP</div>
+              <p>OLTP: Transactional, real-time, normalized tables, fast insert/update/delete., OLAP: Analytical,
+                historical data, denormalized tables, complex queries., OLTP supports day-to-day operations; OLAP
+                supports decision-making.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Different types of Indexes</div>
+              <p>Clustered Index: Sorts and stores data physically in order., Non-Clustered Index: Stores pointers to
+                data, not physical order., Unique Index: Ensures all indexed values are unique., Composite Index: Index
+                on multiple columns.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Different types of Normalization</div>
+              <p>1NF (First Normal Form): No duplicate columns, atomic values., 2NF (Second Normal Form): 1NF + no
+                partial dependency., 3NF (Third Normal Form): 2NF + no transitive dependency., BCNF, 4NF, 5NF: Higher
+                forms for complex dependencies.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Different types of SQL statements?</div>
+              <p>Data Definition Language (DDL), Data Manipulation Language (DML), Data Control Language (DCL), and
+                Transaction Control Language (TCL). </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Disadvantage of DROP TABLE</div>
+              <p>DROP TABLE permanently deletes table structure and all data., Cannot be undone unless a backup exists.,
+                Caution is needed in production environments to prevent data loss.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Does PostgreSQL support full-text search?</div>
+              <p>Yes, PostgreSQL has built-in full-text search capabilities., It uses tsvector and tsquery for indexing
+                and querying text., Supports ranking, stemming, and language-specific dictionaries.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Entities and Relationships</div>
+              <p>Entity: Object or concept with stored data (e.g., Student)., Relationship: Association between entities
+                (e.g., Student enrolled in Course)., They form the basis of ER modeling in databases.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Fetch alternate records from a table</div>
+              <p>Use ROW_NUMBER() with modulo:, SELECT * FROM (, SELECT *, ROW_NUMBER() OVER (ORDER BY id) AS rn FROM
+                Table1, ) t WHERE rn % 2 = 1;</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Fetch common records from two tables</div>
+              <p>Use INNER JOIN or INTERSECT:, SELECT * FROM Table1 INTERSECT SELECT * FROM Table2;</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Foreign key in SQL?</div>
+              <p>A foreign key is a column or set of columns in one table that refers to the primary key of another
+                table. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Foreign key?</div>
+              <p>A foreign key links one table to another by referencing a primary key., Enforces referential integrity
+                between related tables., Example: Orders.CustomerID references Customers.CustomerID.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Foreign Key?</div>
+              <p>A Foreign Key links a column in one table to the Primary Key of another table., Ensures referential
+                integrity between tables., Prevents orphan records.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Forms of Normalization</div>
+              <p>1NF: Remove repeating groups., 2NF: Remove partial dependencies., 3NF: Remove transitive dependencies.,
+                BCNF, 4NF, 5NF: Advanced forms for complex designs.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Function in SQL?</div>
+              <p>A function is a reusable set of SQL statements that returns a single value or table. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Importance of TRUNCATE statement</div>
+              <p>Efficiently deletes all rows from a table., Faster than DELETE because it bypasses row-by-row
+                processing., Resets identity columns and frees storage space.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Index in SQL?</div>
+              <p>An index is a database object that improves query performance by allowing faster data retrieval. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Index?</div>
+              <p>An index improves the speed of data retrieval from a table., It works like an index in a book, pointing
+                to row locations., Reduces query execution time but may slow inserts/updates.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Index? Different types</div>
+              <p>An index improves query performance by providing fast lookup., Types:, Clustered, Non-clustered,
+                Unique, Composite, Full-text</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Isolation level in SQL?</div>
+              <p>Isolation level controls how and when the changes made by one transaction are visible to others. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Join?</div>
+              <p>A join combines rows from two or more tables based on a related column., It helps retrieve meaningful
+                data spread across multiple tables., Joins use keys like primary and foreign keys to match records.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Join? Types</div>
+              <p>Join combines rows from two or more tables., Types:, INNER JOIN, LEFT (OUTER) JOIN, RIGHT (OUTER) JOIN,
+                FULL OUTER JOIN, CROSS JOIN, SELF JOIN</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">List all databases in PostgreSQL</div>
+              <p>\l -- or \list, Displays all existing databases on the server.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Local and Global Variables and differences</div>
+              <p>Local Variable: Declared inside a procedure or function, accessible only there., Global Variable:
+                Declared outside, accessible across procedures., Local variables have limited scope; global variables
+                persist across sessions.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Multi-Version Concurrency Control (MVCC)</div>
+              <p>MVCC allows multiple transactions to access the database without locking., Each transaction sees a
+                snapshot of the database., Improves concurrency, reduces conflicts, and ensures consistency., PostgreSQL
+                & Database Questions</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Normal forms in SQL?</div>
+              <p>1NF, 2NF, 3NF, BCNF, 4NF, 5NF. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Normalization</div>
+              <p>Process of organizing data to reduce redundancy., Ensures data integrity and avoids anomalies.,
+                Involves dividing tables and establishing relationships using keys.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Normalization in SQL?</div>
+              <p>Normalization is the process of organizing database to reduce redundancy and improve integrity. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Normalization?</div>
+              <p>Normalization organizes data to reduce redundancy and improve integrity., It divides large tables into
+                smaller related tables., Ensures consistency and avoids anomalies in insert, update, delete operations.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">OLTP?</div>
+              <p>Online Transaction Processing (OLTP) handles real-time transactional operations., Examples: Banking
+                transactions, e-commerce orders., It focuses on speed, reliability, and consistency.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Online Transaction Processing (OLTP)</div>
+              <p>OLTP systems handle day-to-day transactions like banking or booking systems., Supports multiple
+                concurrent users with fast query processing., Data is normalized for efficiency.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Operator used in query for pattern matching</div>
+              <p>The LIKE operator is used., Example: WHERE column_name LIKE 'A%' matches all values starting with 'A'.,
+                Supports % for multiple characters and _ for a single character.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Parallel queries in PostgreSQL</div>
+              <p>Parallel queries use multiple CPU cores to execute a single query faster., Useful for large datasets
+                and complex aggregations., Controlled via max_parallel_workers_per_gather and planner settings.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Partitioned tables in PostgreSQL</div>
+              <p>Called partitioned tables, divided into child tables based on ranges, lists, or hashes., Improves query
+                performance on large datasets.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Pattern Matching in SQL?</div>
+              <p>Pattern matching is used to search data based on specific patterns., The LIKE operator is commonly
+                used., It helps filter results with partial matches or wildcard characters.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">PostgreSQL?</div>
+              <p>PostgreSQL is an open-source, object-relational database., Supports SQL, JSON, and advanced data
+                types., Known for stability, scalability, and ACID compliance.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Primary key in SQL?</div>
+              <p>A primary key is a column or set of columns that uniquely identifies each row in a table. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Primary key?</div>
+              <p>A primary key uniquely identifies each record in a table., Cannot contain NULL values., Ensures data
+                integrity and supports indexing.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Primary Key?</div>
+              <p>A column (or set of columns) that uniquely identifies each row in a table., Cannot be NULL and ensures
+                data integrity., Only one primary key allowed per table.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Properties of a transaction?</div>
+              <p>ACID: Atomicity, Consistency, Isolation, Durability. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Query?</div>
+              <p>A query is an SQL statement used to retrieve, insert, update, or delete data., It interacts with the
+                database to perform operations., Examples: SELECT, INSERT, UPDATE, DELETE.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Query?</div>
+              <p>A query is a request to retrieve or manipulate data from a database., Written in SQL using SELECT,
+                INSERT, UPDATE, or DELETE., Queries can include filters, joins, and aggregation.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">RDBMS?</div>
+              <p>RDBMS (Relational DBMS) stores data in tables with relationships., Supports SQL for querying., Enforces
+                constraints like primary key, foreign key, and unique key., Examples: SQL Server, MySQL, Oracle.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">RDBMS? Difference from DBMS</div>
+              <p>RDBMS stores data in tables with relationships., Supports SQL, keys, constraints, and normalization.,
+                DBMS may not support relationships or constraints.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Recursive Stored Procedure</div>
+              <p>A stored procedure that calls itself directly or indirectly., Useful for hierarchical or repetitive
+                tasks like calculating factorial., Needs proper termination condition to avoid infinite loop.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Recursive Stored Procedure?</div>
+              <p>A stored procedure that calls itself to solve repetitive tasks., Used in hierarchical or iterative
+                operations., Care must be taken to include a termination condition.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Relationship and types</div>
+              <p>A relationship defines how tables are linked via keys., Types:, One-to-One: One row in a table matches
+                one row in another., One-to-Many: One row matches multiple rows., Many-to-Many: Multiple rows in one
+                table match multiple rows in another.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Schema in SQL?</div>
+              <p>A schema is a logical collection of database objects like tables, views, indexes, and procedures. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">SELECT statement?</div>
+              <p>SELECT is used to retrieve data from one or more tables., Example: SELECT column1, column2 FROM
+                table_name;, It can include filters, joins, and aggregation.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Select unique records from a table</div>
+              <p>Use DISTINCT keyword:, SELECT DISTINCT column_name FROM Table1;, Removes duplicate rows from the result
+                set.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Self join in SQL?</div>
+              <p>A self join joins a table to itself using aliases. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Self-Join</div>
+              <p>Self-Join is a join of a table with itself., Useful to compare rows within the same table., Example:
+                Finding employees and their managers in the same table.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Self-Join?</div>
+              <p>A table joins with itself., Used to compare rows within the same table., Requires aliases for clarity.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">SQL?</div>
+              <p>SQL (Structured Query Language) is a standard language used to communicate with and manage relational
+                databases. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">SQL?</div>
+              <p>SQL (Structured Query Language) is used to query and manage databases., Supports CRUD operations:
+                SELECT, INSERT, UPDATE, DELETE., Standardized across relational databases.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">SQL?</div>
+              <p>SQL (Structured Query Language) is used to manage and manipulate relational databases., Supports
+                querying, inserting, updating, and deleting data., Used in DBMS and RDBMS.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Start, restart, and stop PostgreSQL server</div>
+              <p>Start: pg_ctl start or service command., Stop: pg_ctl stop., Restart: pg_ctl restart., Commands vary
+                slightly with OS (Linux/Windows).</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Stored procedure?</div>
+              <p>A stored procedure is a set of SQL statements stored in the database and executed as a program. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Stored Procedure?</div>
+              <p>A stored procedure is a precompiled SQL program stored in the database., It can accept parameters and
+                perform multiple SQL operations., Improves performance, security, and code reusability.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Stored Procedure?</div>
+              <p>A stored procedure is a precompiled SQL program stored in the database., It can accept parameters and
+                return results., Improves performance, security, and code reusability.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">String constants in PostgreSQL</div>
+              <p>Strings enclosed in single quotes ('text')., Used in queries, comparisons, and data insertion.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Subquery?</div>
+              <p>A subquery is a query nested inside another query., It can return a single value or a set of values for
+                the main query., Used in WHERE, FROM, or SELECT clauses.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Subquery? Types</div>
+              <p>A subquery is a query within another query., Types:, Single-row subquery, Multiple-row subquery,
+                Correlated subquery</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Surrogate key in SQL?</div>
+              <p>A surrogate key is an artificial key, usually auto-incremented, used as the primary key. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Tables and fields?</div>
+              <p>Table: Collection of rows (records) storing related data., Field (Column): Represents a specific
+                attribute of the table., Example: Table Students with fields Name, Age, RollNo.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Tables and Fields?</div>
+              <p>Table: Collection of related data organized in rows and columns., Field (Column): Defines a single type
+                of data within a table., Rows represent records.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Transaction in SQL?</div>
+              <p>A transaction is a unit of work that is executed completely or not at all. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Trigger in SQL?</div>
+              <p>A trigger is a set of SQL statements that automatically executes in response to certain events (INSERT,
+                UPDATE, DELETE). </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Trigger?</div>
+              <p>A trigger is a special procedure that automatically executes on INSERT, UPDATE, or DELETE., Used for
+                enforcing business rules or auditing changes., Cannot be called directly like a stored procedure.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">TRUNCATE, DELETE, and DROP statements</div>
+              <p>DELETE: Removes specific rows, supports WHERE, slower., TRUNCATE: Removes all rows, faster, cannot use
+                WHERE., DROP: Deletes entire table or database structure.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Types of Collation Sensitivity</div>
+              <p>1. Case-Sensitive (CS/CI) – A ≠ a, 2. Accent-Sensitive (AS/AI) – é ≠ e, 3. Kana-Sensitive – Japanese
+                Kana differences, 4. Width-Sensitive – Full-width ≠ Half-width characters</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Types of isolation levels?</div>
+              <p>READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ, SERIALIZABLE. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Types of Join and explanation</div>
+              <p>INNER JOIN: Returns matching rows from both tables., LEFT JOIN: Returns all rows from left table and
+                matched rows from right table., RIGHT JOIN: Returns all rows from right table and matched rows from left
+                table., FULL OUTER JOIN: Returns all rows from both tables, with NULLs for unmatched rows.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Types of relationships in SQL</div>
+              <p>One-to-One (1:1), One-to-Many (1:N), Many-to-Many (M:N), These define how tables relate to each other
+                using keys.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Types of Subquery</div>
+              <p>Single-row subquery: Returns one row., Multiple-row subquery: Returns multiple rows., Correlated
+                subquery: References columns from the outer query., Non-correlated subquery: Independent of outer query.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Types of User Defined Functions</div>
+              <p>1. Scalar Functions: Return a single value., 2. Inline Table-Valued Functions: Return a table via a
+                single SELECT., 3. Multi-Statement Table-Valued Functions: Return a table using multiple statements.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Union, Minus, and Intersect commands</div>
+              <p>Union: Combines results of two queries, removing duplicates., Minus (EXCEPT): Returns rows in first
+                query not in second., Intersect: Returns only rows common to both queries.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">UNION, MINUS, and INTERSECT commands</div>
+              <p>UNION: Combines results of two queries, removing duplicates., MINUS (EXCEPT in some DBs): Returns rows
+                in first query not in second., INTERSECT: Returns rows common to both queries.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">UNIQUE constraint?</div>
+              <p>Ensures that all values in a column are distinct., Helps maintain data integrity., Multiple UNIQUE
+                constraints can exist in a table.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Unique key?</div>
+              <p>A unique key ensures all values in a column are distinct., Can have one NULL value (unlike primary
+                key)., Used to enforce uniqueness constraints on data.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">User Defined Functions (UDFs)</div>
+              <p>UDFs are custom functions created by users in SQL., They return a value or table based on input
+                parameters., Used to encapsulate reusable logic.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">User-defined Function (UDF) and its types?</div>
+              <p>UDF is a custom function created by users in SQL., Types:, Scalar Function: Returns a single value.,
+                Table-valued Function: Returns a table.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">View in SQL?</div>
+              <p>A view is a virtual table based on the result of a SELECT query. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">View?</div>
+              <p>A view is a virtual table based on a query., It does not store data physically but displays results
+                from one or more tables., Helps simplify complex queries and secure sensitive data.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">View?</div>
+              <p>A View is a virtual table created from a query., It doesn’t store data physically but provides a
+                filtered or joined result., Useful for abstraction, security, and simplifying queries.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">WAL (Write Ahead Logging)</div>
+              <p>WAL ensures data integrity in PostgreSQL., Before changes are written to the main database, they are
+                recorded in a log file., This allows recovery after crashes and supports replication.</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

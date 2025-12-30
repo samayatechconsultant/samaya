@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Samaya Tech Consultant</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/topic.css" rel="stylesheet">
+</head>
+
+<body class="index-page Custombody">
+  <!-- nav.html -->
+  <div id="nav-placeholder"></div>
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+  </script>
+  <main class="main">
+    <!-- Hero Section -->
+    <!-- About Section -->
+    <section id="about" class="about section Custombody">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 style="color: #ffffff;"> Terraform </h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-3">
+
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;"> Best Practices in Terraform?</div>
+              <p>Use modules, remote state, version control, and least privilege access. Apply workspace separation and
+                use .tfvars files for automation. Use formatting, validation, and policy enforcement. Commit code
+                reviews for safety.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;"> Data Sources in Terraform?</div>
+              <p>Data sources fetch existing information from providers without creating a new resource. They are
+                read-only and useful for referencing available values. Example: fetching an existing VPC ID. Used with
+                data blocks.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;"> Input Variables?</div>
+              <p>Input variables allow parameterization of Terraform configurations. They help reuse modules across
+                multiple environments like dev, QA, and prod. Variables can be stored in .tfvars files. They support
+                type constraints like string, number, and map.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;"> Output Variables?</div>
+              <p>Output variables return values from configuration after execution. They help share information between
+                modules or display key results. Examples include IP addresses or resource IDs. They are defined using
+                output.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;"> Terraform Providers?</div>
+              <p>Providers act as plugins that enable Terraform to interact with cloud platforms or services. Examples
+                include AWS, Azure, GCP, Kubernetes, and GitHub. A provider must be initialized before use with
+                terraform init. It defines available resources and data sources.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">create_before_destroy?</div>
+              <p>Create_before_destroy ensures a new resource is created before destroying the old one. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Developed Terraform?</div>
+              <p>Terraform is developed by HashiCorp. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet immutable and mutable infrastructure?</div>
+              <p>Immutable infrastructure is replaced entirely for changes; mutable infrastructure is updated in place.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet local-exec and remote-exec?</div>
+              <p>Local-exec runs commands on the machine running Terraform; remote-exec runs commands on the target
+                resource. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet module and resource?</div>
+              <p>Module is a collection of resources; resource represents a single infrastructure component. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet Terraform and Ansible?</div>
+              <p>Terraform is declarative and focuses on provisioning infrastructure; Ansible is procedural and focuses
+                on configuration management. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet Terraform and CloudFormation?</div>
+              <p>Terraform is multi-cloud and open-source; CloudFormation is AWS-specific. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet Terraform and Pulumi?</div>
+              <p>Terraform uses HCL for declarative configurations; Pulumi uses programming languages for IaC. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet Terraform resource and data?</div>
+              <p>Resource creates or manages infrastructure; data fetches existing infrastructure information. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DiffBet Ansible and Terraform?</div>
+              <p>Terraform focuses on infrastructure provisioning while Ansible focuses on configuration management.
+                Terraform uses a declarative approach whereas Ansible is procedural. Terraform stores a state file
+                whereas Ansible does not.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Drift in Terraform?</div>
+              <p>Drift occurs when the actual infrastructure changes outside Terraform. Terraform detects drift during
+                terraform plan. Drift needs correction to maintain consistency. Best practice is managing infrastructure
+                only through Terraform.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">IaC (Infrastructure as Code)?</div>
+              <p>IaC is a method of managing and provisioning infrastructure through code instead of manual processes.
+                It increases consistency, automation, scalability, and repeatability. Tools like Terraform,
+                CloudFormation, and Ansible enable IaC. This approach helps eliminate configuration drift across
+                environments.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Immutable Infrastructure?</div>
+              <p>Immutable infrastructure treats launched resources as replaceable instead of modifying them. Terraform
+                supports this approach by recreating resources instead of modifying them. It improves stability and
+                reduces configuration drift.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Infrastructure as Code (IaC)?</div>
+              <p>IaC is the practice of managing and provisioning infrastructure using code instead of manual processes.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Infrastructure Provisioning?</div>
+              <p>Provisioning means creating, configuring, and deploying infrastructure resources. Terraform automates
+                provisioning using IaC. It helps in consistent and automated cloud resource deployment. Faster and
+                error-free process.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Main features of Terraform?</div>
+              <p>Features include declarative configuration execution plan resource graph multi-cloud support and state
+                management. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Policy as Code in Terraform?</div>
+              <p>Policy as Code enforces compliance rules using Sentinel in Terraform Enterprise or Cloud. It ensures
+                deployments follow organizational security and governance. Policies can allow, deny, or audit changes.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">prevent_destroy?</div>
+              <p>Prevent_destroy prevents accidental deletion of a resource. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Remote backend?</div>
+              <p>Remote backend stores Terraform state in a remote location for team collaboration. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Remote State?</div>
+              <p>Remote state stores the Terraform state file in a shared backend such as S3, Azure Blob, or Terraform
+                Cloud. It helps in collaboration among multiple users. Remote state also supports encryption, locking,
+                and versioning. This avoids conflicts and corrupt state files.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">State in Terraform?</div>
+              <p>Terraform state stores metadata and resource deployment details. It tracks resource mapping between
+                configuration and actual cloud infrastructure. The state file is critical for operations like update,
+                destroy, and plan. You can store it locally or remotely.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">State Locking in Terraform?</div>
+              <p>State locking prevents simultaneous modifications to the same state file by multiple users. It ensures
+                consistency during execution. Tools like DynamoDB or Terraform Cloud handle locking. Without locking,
+                infrastructure may become corrupted.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Tainting in Terraform?</div>
+              <p>Tainting marks a resource for forced recreation on the next apply. Use terraform taint <resource> to
+                  apply it. Useful for broken or manually modified infrastructure. It triggers destruction and
+                  recreation.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform apply -auto-approve?</div>
+              <p>Applies changes without prompting for user confirmation. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform apply?</div>
+              <p>Terraform apply executes the planned changes to provision or modify infrastructure. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">terraform apply?</div>
+              <p>terraform apply creates or updates resources as per configuration. It executes approved actions shown
+                from the plan. You may auto-approve using -auto-approve. It updates the Terraform state file after
+                execution.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform backend types?</div>
+              <p>Backend types include local S3 AzureRM GCS Consul and Terraform Cloud. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform backend?</div>
+              <p>Backend defines where Terraform stores state data e.g. local file S3 or remote storage. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform Backend?</div>
+              <p>A backend determines how state is loaded and where it is stored. Examples include local filesystem or
+                remote backends like S3 and Azure Blob. Backends also support locking and encryption. They improve
+                collaboration in teams.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform best practices?</div>
+              <p>Use modules version control remote state variables outputs and avoid hardcoding sensitive data. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform cloud agent?</div>
+              <p>Cloud agent allows Terraform Cloud to manage infrastructure in private networks. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform Cloud?</div>
+              <p>Terraform Cloud is a SaaS platform for collaborative Terraform workflows state management and policy
+                enforcement. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform count?</div>
+              <p>Count allows creating multiple instances of a resource based on a number. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform data source?</div>
+              <p>Data source fetches information about existing infrastructure for use in configurations. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform dependency graph?</div>
+              <p>Graph shows dependencies between resources for execution planning. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform dependency?</div>
+              <p>Dependency defines the order of resource creation based on references between resources. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform destroy -target vs apply -destroy?</div>
+              <p>Destroy-target removes specific resources; apply -destroy removes all resources. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform destroy?</div>
+              <p>Terraform destroy removes all resources managed by Terraform. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">terraform destroy?</div>
+              <p>terraform destroy removes resources managed by Terraform. It reads the state file and destroys the
+                corresponding cloud infrastructure. Useful for testing environments. It prevents leftover idle cloud
+                resources.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform destroy-target?</div>
+              <p>Destroy-target removes specific resources instead of the entire infrastructure. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform DifBet static and dynamic block?</div>
+              <p>Static block is manually written; dynamic block generates repeated nested blocks programmatically. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform drift detection?</div>
+              <p>Detects infrastructure changes made outside Terraform. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform drift?</div>
+              <p>Drift occurs when infrastructure changes outside Terraform causing state mismatch. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform dynamic block?</div>
+              <p>Dynamic block allows generating multiple nested blocks dynamically in a resource. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform Enterprise?</div>
+              <p>Terraform Enterprise is a self-managed version of Terraform Cloud for organizations. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform fmt?</div>
+              <p>Fmt formats Terraform configuration files according to standard style conventions. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">terraform fmt?</div>
+              <p>terraform fmt automatically formats Terraform code style. It ensures consistent formatting for
+                readability and maintainability. This command is especially useful in team environments. It follows
+                official formatting rules.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform for_each?</div>
+              <p>For_each iterates over a map or set to create multiple resources with unique identifiers. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform function types?</div>
+              <p>Function types include string numeric collection date encoding file and type conversion. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform functions?</div>
+              <p>Functions perform operations on strings numbers lists maps and other data types. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform graph?</div>
+              <p>Graph generates a visual representation of resources and their dependencies. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform HCL?</div>
+              <p>HCL stands for HashiCorp Configuration Language used to define infrastructure. It is human-readable and
+                JSON-compatible. It supports variables, modules, conditionals, and loops. Terraform scripts are written
+                in HCL.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform import limitations?</div>
+              <p>Import cannot automatically generate full configuration; manual resource definition is required. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform import state?</div>
+              <p>Terraform import updates state file to track existing resources. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform import?</div>
+              <p>Terraform import brings existing infrastructure under Terraform management. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform init?</div>
+              <p>Init initializes the working directory downloads providers and sets up backend. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">terraform init?</div>
+              <p>terraform init initializes a working directory with Terraform configuration files. It installs
+                necessary providers and modules. It must be run first before applying configuration. It ensures all
+                dependencies are downloaded.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform interpolate?</div>
+              <p>Interpolate computes expressions using variables resources or functions. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform interpolation functions?</div>
+              <p>Functions manipulate data e.g. concat join length lookup lower upper. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform interpolation syntax?</div>
+              <p>Syntax uses ${} to reference variables outputs or resource attributes. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform interpolation?</div>
+              <p>Interpolation allows using expressions variables and functions within configuration files. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform lifecycle?</div>
+              <p>Lifecycle allows customizing resource behavior including create_before_destroy and prevent_destroy.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform local values?</div>
+              <p>Local values store intermediate expressions or computed values for reuse. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform local-exec vs remote-exec?</div>
+              <p>Local-exec runs locally; remote-exec runs on the resource instance. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform main.tf?</div>
+              <p>Main.tf contains the main Terraform configuration for resources. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform module registry?</div>
+              <p>Module registry hosts reusable modules for public or private use. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform module source?</div>
+              <p>Source specifies the location of a module e.g. local path Git repository or registry. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform module?</div>
+              <p>Module is a reusable self-contained package of Terraform configurations. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform Module?</div>
+              <p>A module is a container for multiple Terraform resources used together. It promotes reusability,
+                structure, and automation. Modules can be local, public (Terraform Registry), or shared within a team.
+                They help maintain consistency across environments.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform nested modules?</div>
+              <p>Nested modules are modules called from within another module for hierarchical organization. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform null resource?</div>
+              <p>Null resource is a placeholder resource used for executing provisioners without creating actual
+                infrastructure. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform output sensitive?</div>
+              <p>Marks output as sensitive to hide values in CLI or UI. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform output?</div>
+              <p>Output defines values to display after Terraform apply often used for module outputs or sharing data.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform outputs vs locals?</div>
+              <p>Outputs expose data outside; locals store data internally for reuse. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform outputs.tf?</div>
+              <p>Outputs.tf defines output values to be displayed after apply. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform plan destroy?</div>
+              <p>Generates a plan to destroy all managed resources. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform plan -out?</div>
+              <p>Saves the execution plan to a file for later apply. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform plan vs apply?</div>
+              <p>Plan shows proposed changes; apply executes those changes. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform plan?</div>
+              <p>Terraform plan shows the execution plan of changes before applying them. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">terraform plan?</div>
+              <p>terraform plan previews the execution steps without making real changes. It shows additions, updates,
+                and deletions. It helps validate configuration before deployment. This step is recommended before
+                running terraform apply.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform provider alias?</div>
+              <p>Provider alias allows using multiple configurations of the same provider in a module. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform provider versioning?</div>
+              <p>Provider versioning specifies compatible versions of providers to avoid breaking changes. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform provider?</div>
+              <p>A provider is a plugin that allows Terraform to interact with APIs of cloud platforms and services.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform providers.lock?</div>
+              <p>Lock file records provider versions used to ensure consistent runs. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform providers.tf?</div>
+              <p>Providers.tf specifies which providers and versions to use in the configuration. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform provisioner order?</div>
+              <p>Provisioners run in the order defined after resource creation. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform provisioners?</div>
+              <p>Provisioners execute scripts or commands on a resource after creation. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform refresh vs plan?</div>
+              <p>Refresh updates state file from real infrastructure; plan shows planned changes based on state. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform refresh?</div>
+              <p>Refresh updates Terraform state with the real-world infrastructure state. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">terraform refresh?</div>
+              <p>terraform refresh updates the state file with real infrastructure values. It detects drift but does not
+                change actual infrastructure. Helps synchronize Terraform state with reality. Deprecated in newer
+                versions as terraform plan does similar work.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform Registry?</div>
+              <p>Terraform Registry is a public library of reusable modules and providers. It encourages best practices
+                by offering community and official modules. Users can search, download, and integrate modules easily.
+                This reduces development time and errors.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform remote state?</div>
+              <p>Remote state stores Terraform state in shared storage for team collaboration. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform resources?</div>
+              <p>Resources represent components of infrastructure like servers databases or network configurations. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform security practices?</div>
+              <p>Use remote state with encryption sensitive variables least privilege IAM and secret management. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform sensitive variable?</div>
+              <p>Sensitive variable hides its value in logs and outputs to protect secrets. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform Sentinel?</div>
+              <p>Sentinel is a policy-as-code framework to enforce compliance rules in Terraform Enterprise. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform state locking?</div>
+              <p>State locking prevents concurrent Terraform operations to avoid conflicts. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform state mv?</div>
+              <p>Moves a resource in state file for renaming or restructuring resources. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform state pull?</div>
+              <p>Pulls the current state from backend for inspection. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform state push?</div>
+              <p>Push updates state to remote backend manually (legacy). </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform state rm?</div>
+              <p>Removes a resource from state file without destroying infrastructure. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform state?</div>
+              <p>Terraform state stores metadata about deployed infrastructure and maps resources to real-world objects.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform support Multi-Cloud?</div>
+              <p>Terraform supports multiple cloud providers using provider plugins. One configuration can build
+                infrastructure across AWS, Azure, and GCP. It allows avoiding vendor lock-in and simplifies hybrid cloud
+                deployments.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform taint vs lifecycle replace?</div>
+              <p>Taint forces recreation; lifecycle replace customizes resource replacement behavior. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform taint?</div>
+              <p>Taint marks a resource for recreation during the next apply. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform terraform fmt -check?</div>
+              <p>Checks whether configuration files conform to Terraform style conventions. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform terraform validate -json?</div>
+              <p>Outputs validation results in JSON format for automated checks. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform untaint?</div>
+              <p>Untaint removes the taint and prevents resource recreation. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform upgrade?</div>
+              <p>Upgrade updates provider plugins to newer versions. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform validate?</div>
+              <p>Validate checks configuration files for syntax errors and consistency. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">terraform validate?</div>
+              <p>terraform validate checks the syntax correctness of configuration files. It doesn't check
+                authentication or existence of remote resources. It prevents applying invalid configuration. Use before
+                plan or apply.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform variable?</div>
+              <p>Variable is a way to parameterize Terraform configurations for flexibility. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform variables.tf?</div>
+              <p>Variables.tf defines variables and default values for Terraform configuration. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform version constraint?</div>
+              <p>Version constraint specifies the acceptable versions of Terraform or providers. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform workspace list?</div>
+              <p>Lists all available workspaces in Terraform. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform workspace new?</div>
+              <p>Creates a new workspace in Terraform for managing separate infrastructure instances. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform workspace select?</div>
+              <p>Select switches to an existing workspace for operations. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform workspace vs backend?</div>
+              <p>Workspace isolates instances of infrastructure; backend manages where state is stored. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform workspace vs environment?</div>
+              <p>Workspace manages multiple instances of the same infrastructure; environment often refers to dev
+                staging prod setups. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform workspace?</div>
+              <p>Workspace allows managing multiple instances of infrastructure using the same configuration. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform Workspace?</div>
+              <p>Workspaces allow managing multiple environments (dev, test, prod) with one configuration. Each
+                workspace has an independent state. Useful for modular and scalable management. Use local or remote
+                workspace management.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform workspaces default?</div>
+              <p>Default workspace is always created and cannot be deleted. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform?</div>
+              <p>Terraform is an open-source Infrastructure as Code (IaC) tool for building changing and versioning
+                infrastructure safely and efficiently. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Terraform?</div>
+              <p>Terraform is an open-source Infrastructure as Code (IaC) tool developed by HashiCorp. It allows you to
+                define, provision, and manage cloud resources using code. Configuration is written in HCL (HashiCorp
+                Configuration Language). It supports multiple cloud providers like AWS, Azure, and GCP.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Types of Terraform variables?</div>
+              <p>Types include string number bool list map and object. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">When should you use Terraform Cloud?</div>
+              <p>Terraform Cloud is used for collaboration, automation, versioning, and secure remote backends. It
+                supports policy-as-code, multi-user workflows, and state locking. Ideal for teams managing enterprise
+                infrastructure.</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

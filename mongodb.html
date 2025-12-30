@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Samaya Tech Consultant</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/topic.css" rel="stylesheet">
+</head>
+
+<body class="index-page Custombody">
+  <!-- nav.html -->
+  <div id="nav-placeholder"></div>
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+  </script>
+  <main class="main">
+    <!-- Hero Section -->
+    <!-- About Section -->
+    <section id="about" class="about section Custombody">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 style="color: #ffffff;">MongoDB</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-3">
+
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Access Control & Authentication</div>
+              <p>Authentication is implemented using SCRAM, LDAP, or x.509 certificates. Role-based access control
+                (RBAC) grants users permissions like read, readWrite, or admin.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Add Bonus</div>
+              <p>db.employees.updateMany({ department: "Engineering" }, { $set: { bonus: 5000 } });</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Aggregation</div>
+              <p>Aggregation pipeline processes data in stages (match, group, sort, project). It is used for reporting
+                and data transformation.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Aggregation in MongoDB?</div>
+              <p>Aggregation performs operations like grouping, filtering, sorting, and transformation on collections
+                using the aggregation pipeline.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Average Salary</div>
+              <p>db.employees.aggregate([{ $match: { department: "Engineering" } }, { $group: { _id: null, avg: { $avg:
+                "$salary" } } }])</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Backups & Recovery</div>
+              <p>Use mongodump/mongorestore, cloud Atlas backups, or filesystem snapshots. Point-in-time recovery is
+                supported in replica sets.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">BSON Significance</div>
+              <p>BSON extends JSON with additional datatypes like binary, ObjectId, and dates, improving storage
+                efficiency and performance.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Capped Collections</div>
+              <p>Capped collections have fixed size and automatically overwrite old documents. Useful for logs,
+                real-time analytics, and high-throughput writes.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Change Streams</div>
+              <p>Change streams allow real-time notifications of inserts, updates, deletes. Used in event-driven systems
+                and syncing applications.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Collection in MongoDB?</div>
+              <p>A collection is a group of MongoDB documents, similar to a table in RDBMS.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Connect MongoDB with Java?</div>
+              <p>Use MongoDB Java driver or Spring Data MongoDB. Connect using MongoClient and specify the database.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Consistency</div>
+              <p>MongoDB offers tunable consistency using write concern and read preferences.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Count per Department</div>
+              <p>db.employees.aggregate([{ $group: { _id: "$department", count: { $sum: 1 } } }])</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Create Database & Collection</div>
+              <p>Using command line:, use myDB, db.createCollection("users")</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">CRUD Syntax</div>
+              <p>MongoDB uses JavaScript-like syntax:, insert(), find(), update(), deleteOne().</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Dept With Highest Avg Salary</div>
+              <p>db.employees.aggregate([{ $group: { _id: "$department", avg: { $avg: "$salary" } } }, { $sort: { avg:
+                -1 } }, { $limit: 1 }])</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DiffBet capped and regular collections?</div>
+              <p>Capped collections have fixed size, maintain insertion order, and overwrite oldest data. Regular
+                collections grow dynamically.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DiffBet embedded and referenced documents?</div>
+              <p>Embedded documents store nested data in one document. References store relations via foreign IDs.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DiffBet find() and findOne()?</div>
+              <p>find() returns a cursor for multiple documents. findOne() returns a single document.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DiffBet MongoDB and PostgreSQL?</div>
+              <p>MongoDB is schema-less and document-oriented; PostgreSQL is relational with strict schemas. MongoDB
+                scales horizontally easily.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DiffBet SQL and NoSQL?</div>
+              <p>SQL uses relational tables with fixed schema. NoSQL uses flexible documents, key-value, or column
+                stores.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Difference from Relational DB</div>
+              <p>MongoDB is NoSQL and document-based, storing JSON-like structures. It doesn’t require fixed schema or
+                joins, unlike relational databases.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Document & Collection</div>
+              <p>A document is a JSON-like record, while a collection is a group of documents similar to a table.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Document in MongoDB?</div>
+              <p>A document is a BSON object containing key-value pairs, similar to a JSON object.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Employee with Highest Salary</div>
+              <p>db.employees.find().sort({ salary: -1 }).limit(1)</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Employees Hired Per Year</div>
+              <p>db.employees.aggregate([{ $group: { _id: { $year: "$hireDate" }, count: { $sum: 1 } } }])</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Employees in Engineering</div>
+              <p>db.employees.find({ department: "Engineering" })</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Ensure data consistency in MongoDB?</div>
+              <p>Use replica sets, write concerns, transactions, and validation rules to maintain consistency.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Full-Text Search</div>
+              <p>MongoDB supports text indexes with features like stemming, scoring, and language-based stop words using
+                $text queries.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Geospatial Indexes</div>
+              <p>Used for location-based queries like $near, $geoWithin. Supports 2D and 2D sphere indexing for
+                coordinates and mapping applications.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">GridFS?</div>
+              <p>GridFS is used to store and retrieve large files (>16MB) in MongoDB. It splits files into small chunks
+                and stores metadata separately. Used for storing videos, images, and large documents.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">GridFS?</div>
+              <p>GridFS stores large files by splitting them into chunks. Used for files exceeding 16MB BSON limit.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Handling Transactions</div>
+              <p>MongoDB supports ACID multi-document transactions since version 4.0. Transactions are used with replica
+                sets or sharded clusters and executed using session.startTransaction() and commitTransaction().</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Hashed Sharding Keys</div>
+              <p>Hashing distributes documents evenly across shards to avoid hotspots. Useful when values are sequential
+                like IDs or timestamps.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">High Availability & Scalability</div>
+              <p>MongoDB uses replication (replica sets) and sharding for horizontal scaling and redundancy.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Highest & Lowest Salary</div>
+              <p>db.employees.aggregate([, { $match: { department: "Engineering" } },, { $group: { _id: null, max: {
+                $max: "$salary" }, min: { $min: "$salary" } } }, ])</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Horizontal Scalability</div>
+              <p>MongoDB supports horizontal scaling through sharding where data is partitioned across multiple servers
+                for high availability and performance.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Import/Export</div>
+              <p>Tools include mongoimport and mongoexport for JSON, CSV, and BSON formats.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Index</div>
+              <p>Index improves query performance:, db.users.createIndex({name:1})</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Indexes in MongoDB?</div>
+              <p>Indexes improve query performance. Common types: single-field, compound, text, hashed, and geospatial.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Indexing different in MongoDB vs SQL?</div>
+              <p>MongoDB indexes are created on fields in JSON documents, support multikey and text indexes. SQL indexes
+                are table-column based.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Insert Data</div>
+              <p>Use:, db.collection.insertOne({name: "John"})</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Internal Storage</div>
+              <p>MongoDB stores data in BSON format on disk, allowing rich structured data and binary types.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Journaling</div>
+              <p>Journaling ensures durability by writing operations to a journal file before applying to storage. It
+                protects against crashes but slightly adds write overhead.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Map-Reduce</div>
+              <p>Map-reduce processes large data with map (process) and reduce (aggregate) stages. Used for complex
+                analytics but now mostly replaced by aggregation pipeline.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Migrating from RDBMS</div>
+              <p>Identify schema, flatten relationships, choose like embedding or referencing, migrate using tools like
+                MongoMirror or custom ETL.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">MongoDB Atlas vs Self-Hosted</div>
+              <p>MongoDB Atlas is a fully managed cloud database with automated backups, scaling, monitoring.
+                Self-hosted requires manual setup, maintenance, and scaling.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">MongoDB Atlas?</div>
+              <p>Atlas is a cloud-hosted MongoDB service with automated backup, scaling, and monitoring.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">MongoDB Compass</div>
+              <p>Compass is a GUI tool to visualize, query, index, analyze schema, and manage data. It helps understand
+                document structure, performance insights, and index efficiency.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">MongoDB transactions?</div>
+              <p>MongoDB supports multi-document ACID transactions in replica sets and sharded clusters from version
+                4.0+.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">MongoDB?</div>
+              <p>MongoDB is a NoSQL document database storing data in JSON-like BSON format. It is schema-less and
+                horizontally scalable.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Monitoring & Troubleshooting</div>
+              <p>Use MongoDB Cloud Manager, Atlas Monitoring, Compass, and commands like db.currentOp() and
+                serverStatus().</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">ObjectId?</div>
+              <p>ObjectId is a unique identifier for documents, containing timestamp, machine ID, and counter.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Perform CRUD operations in MongoDB?</div>
+              <p>Use insertOne, insertMany, find, updateOne, updateMany, deleteOne, and deleteMany methods.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Production Deployment Considerations</div>
+              <p>Enable replication, backup strategy, indexing, access control, monitoring, and choose proper
+                hardware/network configuration.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Query Optimization</div>
+              <p>Use proper indexes, avoid full scans, analyze queries with explain(), and denormalize or restructure
+                schema where needed.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Querying</div>
+              <p>Use find() with filters:, db.users.find({age:{$gt:30}})</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Replica set?</div>
+              <p>A replica set is a group of MongoDB servers providing redundancy and high availability. It has one
+                primary and multiple secondary nodes.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Replica Sets</div>
+              <p>Replica sets maintain redundant copies of data for failover and reliability.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Role of _id</div>
+              <p>_id uniquely identifies each document and acts like a primary key.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Schema Design in MongoDB</div>
+              <p>MongoDB uses flexible schema design based on application needs. Use embedding for related data
+                (1-to-few) and referencing for large or shared data. Proper indexing and avoiding unnecessary nesting
+                helps performance.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Sharding</div>
+              <p>Distributes large datasets across multiple machines using shard keys.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Sharding?</div>
+              <p>Sharding splits data across multiple servers for horizontal scaling, improving performance and storage.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Sort by Name Length</div>
+              <p>db.employees.aggregate([{ $addFields: { len: { $strLenCP: "$name" } } }, { $sort: { len: -1 } }])</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Supported Data Types</div>
+              <p>MongoDB supports strings, numbers, arrays, binary, ObjectId, dates, documents, and boolean values.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">TTL Indexes in MongoDB</div>
+              <p>TTL (Time-To-Live) indexes automatically delete expired documents after a specified time. They are
+                commonly used for logs, sessions, or temporary data. TTL works only on Date fields and runs cleanup
+                every 60 seconds.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Update Salary</div>
+              <p>db.employees.updateOne({ name: "John Doe" }, { $set: { salary: 90000 } })</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Upgrading MongoDB</div>
+              <p>Upgrade by checking compatibility matrix, backing up data, rolling update replica nodes, and testing
+                with latest drivers.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">WiredTiger vs MMAPv1</div>
+              <p>WiredTiger is MongoDB’s default engine offering compression, concurrency, and better performance.
+                MMAPv1 is older with limited concurrency and no compression. WiredTiger is recommended for production.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Write Concern</div>
+              <p>Write Concern defines acknowledgment level required from MongoDB before confirming a write. It ensures
+                durability and safety.</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

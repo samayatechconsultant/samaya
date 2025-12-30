@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Samaya Tech Consultant</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/topic.css" rel="stylesheet">
+</head>
+
+<body class="index-page Custombody">
+  <!-- nav.html -->
+  <div id="nav-placeholder"></div>
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+  </script>
+  <main class="main">
+    <!-- Hero Section -->
+    <!-- About Section -->
+    <section id="about" class="about section Custombody">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 style="color: #ffffff;">Entity Framework</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-3">
+
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Automatic and Manual Migrations in EF?</div>
+              <p>Automatic Migrations update database schema automatically; Manual Migrations require explicit creation
+                of migration files. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Code First Migrations?</div>
+              <p>Migrations help incrementally update the database schema as the model changes, preserving existing
+                data.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Code-First approach in EF?</div>
+              <p>Code-First approach allows creating domain classes first, and EF generates the database schema based on
+                the classes. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Database-First approach in EF?</div>
+              <p>Database-First approach generates the EF model from an existing database. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DbContext and ObjectContext?</div>
+              <p>DbContext is a lightweight EF context for querying and saving data; ObjectContext is a more
+                feature-rich context used in older EF versions. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DbContext.Database.ExecuteSqlRaw()?</div>
+              <p>ExecuteSqlRaw() executes raw SQL commands against the database directly. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DbContext?</div>
+              <p>DbContext is the primary EF class for querying, saving data, and managing entity objects.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DbSet in EF?</div>
+              <p>DbSet represents a collection of entities in the context and allows querying and saving operations.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DbSet?</div>
+              <p>DbSet represents a table or collection of entities in DbContext and provides LINQ query capabilities.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet Add(), Attach(), and Update() in EF?</div>
+              <p>Add() marks for insert; Attach() attaches existing entity; Update() marks entity as modified for
+                update. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet AsNoTracking() and default tracking queries?</div>
+              <p>AsNoTracking() improves performance for read-only queries by not tracking; default tracking tracks
+                entities for changes. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet Code-First Data Annotations and Fluent API?</div>
+              <p>Data Annotations decorate classes and properties with attributes; Fluent API provides configuration
+                using method calls in DbContext OnModelCreating. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet Database.EnsureCreated() and Database.Migrate() in EF
+                Core?</div>
+              <p>EnsureCreated() creates database if it does not exist, bypassing migrations; Migrate() applies pending
+                migrations. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet DbContext and ObjectContext?</div>
+              <p>DbContext is simpler, lightweight, and recommended; ObjectContext is more verbose and low-level. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet DbContext.Entry() and DbSet.Update()?</div>
+              <p>Entry() allows setting entity state explicitly; Update() marks entity as Modified for saving. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet DbContext.SaveChanges() and
+                DbContext.SaveChangesAsync()?</div>
+              <p>SaveChanges() is synchronous; SaveChangesAsync() is asynchronous and non-blocking. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet DbSet.Attach() and DbSet.Add()?</div>
+              <p>Attach() attaches an existing entity to the context without marking as Added; Add() marks the entity as
+                Added for insertion. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet DbSet.Remove() and DbContext.Entry().State =
+                EntityState.Deleted?</div>
+              <p>Remove() marks entity for deletion; setting State to Deleted explicitly marks entity for deletion. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet eager loading and projection in EF Core?</div>
+              <p>Eager loading retrieves full related entities; projection selects only required fields. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet eager loading with Include() and projection with
+                Select()?</div>
+              <p>Include() loads full entity and related data; Select() projects only specific fields, improving
+                performance. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet EF Core and EF6 performance-wise?</div>
+              <p>EF Core is generally faster and lightweight; EF6 has more features but heavier and Windows-only. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet EF migrations and database seeding?</div>
+              <p>Migrations modify database schema; Seeding populates database with initial or test data. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet EF6 and EF Core?</div>
+              <p>EF Core is cross-platform, lightweight, and modern; EF6 is mature, Windows-only, and full-featured.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet Entity and Complex Type in EF?</div>
+              <p>Entity has a key and can be tracked; Complex Type has no key and is used as a property inside an
+                entity. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet Find() and FirstOrDefault() in EF?</div>
+              <p>Find() searches by primary key and may return cached entity; FirstOrDefault() executes query on
+                database and returns first match or default. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet foreign key and navigation property in EF?</div>
+              <p>Foreign key holds the key value; navigation property allows navigation to related entity. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet FromSqlRaw() and FromSqlInterpolated()?</div>
+              <p>FromSqlRaw() executes raw SQL; FromSqlInterpolated() allows parameterized queries to prevent SQL
+                injection. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet Include() and ThenInclude() in EF Core?</div>
+              <p>Include() loads related entity; ThenInclude() loads nested related entities after Include(). </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet IQueryable and IEnumerable in EF?</div>
+              <p>IQueryable executes queries on the database and supports deferred execution; IEnumerable executes in
+                memory after fetching data. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet lazy loading and eager loading in EF?</div>
+              <p>Lazy loads on demand; eager loads related data immediately with Include(). </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet lazy loading and explicit loading?</div>
+              <p>Lazy loading loads when navigation property accessed; explicit loading requires manual Load() call.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet lazy loading proxies and manual lazy loading?</div>
+              <p>Lazy loading proxies automatically intercept navigation properties; manual lazy loading requires
+                explicit Load() calls. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet Lazy Loading, Eager Loading, and Explicit Loading?
+              </div>
+              <p>Lazy Loading loads on demand; Eager Loading loads with the initial query; Explicit Loading loads
+                manually when needed. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet LINQ to Entities and LINQ to Objects in EF?</div>
+              <p>LINQ to Entities translates queries to SQL for database; LINQ to Objects operates on in-memory objects.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet POCO and EntityObject?</div>
+              <p>POCO (Plain Old CLR Object) is a simple class without EF dependency; EntityObject derives from EF base
+                classes and is tightly coupled with EF. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet RowVersion/ConcurrencyToken and Timestamp in EF?
+              </div>
+              <p>Both are used for optimistic concurrency; Timestamp is SQL Server-specific byte array, ConcurrencyToken
+                can be any property marked for concurrency. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet SaveChanges() and SaveChangesAsync()?</div>
+              <p>SaveChanges() is synchronous; SaveChangesAsync() is asynchronous and non-blocking. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet SingleOrDefault() and FirstOrDefault() in EF?</div>
+              <p>SingleOrDefault() expects exactly one match and throws if multiple; FirstOrDefault() returns the first
+                match without error if multiple. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet TPH and TPT inheritance in EF?</div>
+              <p>TPH uses one table for all types; TPT uses separate table for each type. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet TPH, TPT, and Table-per-Concrete Class inheritance?
+              </div>
+              <p>TPH stores all types in one table; TPT stores each type in separate table; Table-per-Concrete stores
+                each concrete class in its own table. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DiffBet EF and ADO.NET?</div>
+              <p>EF abstracts SQL into objects (ORM), while ADO.NET requires manual SQL queries and dataset
+                manipulation.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Different approaches of Entity Framework?</div>
+              <p>Database-First, Model-First, and Code-First approaches. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Eager Loading in EF?</div>
+              <p>Eager Loading retrieves related data along with the main entity using Include() method. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Eager loading?</div>
+              <p>EF loads related entities immediately using Include() to reduce multiple database calls.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">EF Core async operations?</div>
+              <p>EF Core supports async versions of query and save methods, improving scalability and non-blocking I/O.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">EF Core batch operations?</div>
+              <p>Batch operations execute multiple insert, update, or delete commands in a single database round-trip.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">EF Core cascade delete?</div>
+              <p>Cascade delete automatically deletes dependent entities when principal entity is deleted. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">EF Core Change Tracker?</div>
+              <p>Change Tracker keeps track of entity changes in the context for insert, update, and delete operations.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">EF Core concurrency handling?</div>
+              <p>EF Core uses concurrency tokens or timestamps to detect conflicting updates and prevent data loss. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">EF Core connection pooling?</div>
+              <p>Connection pooling reuses database connections for performance optimization. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">EF Core database seeding?</div>
+              <p>Seeding populates database with initial or test data during migrations or startup. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">EF Core DbContext pooling?</div>
+              <p>DbContext pooling reuses context instances to reduce memory allocation and improve performance in
+                high-load applications. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">EF Core global query filter?</div>
+              <p>Global query filter applies conditions automatically to all queries for a given entity type. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">EF Core global query filter?</div>
+              <p>Applies automatic conditions to queries for a given entity type, like soft delete filters. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">EF Core migrations rollback?</div>
+              <p>Migrations rollback allows reverting database schema to previous state using Remove-Migration or
+                Update-Database commands. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">EF Core owned entity?</div>
+              <p>Owned entity is a dependent entity type whose lifecycle is tied to the owner and shares the same table.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">EF Core owned types vs complex types?</div>
+              <p>Owned types are dependent entities with lifecycle tied to owner; complex types in EF6 were similar but
+                without EF Core features. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">EF Core query types (keyless entity)?</div>
+              <p>Keyless entities represent database views or tables without primary keys, used for read-only queries.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">EF Core shadow key?</div>
+              <p>A key property not defined in CLR class but maintained in EF model for relationships. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">EF Core shadow property?</div>
+              <p>Shadow property is maintained by EF for relational mapping but not in CLR class. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">EF Core shadow property?</div>
+              <p>Property not defined in class but maintained in EF Core model for mapping or foreign keys. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">EF Core table splitting?</div>
+              <p>Table splitting stores multiple entity types in the same database table. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">EF Core tracking vs no-tracking queries?</div>
+              <p>Tracking queries track changes for update; no-tracking queries improve read performance without change
+                tracking. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">EF Core value conversion?</div>
+              <p>Value conversion transforms property values between CLR type and database type during read/write
+                operations. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Entity Framework?</div>
+              <p>Entity Framework (EF) is an Object-Relational Mapping (ORM) framework for .NET that allows developers
+                to work with databases using .NET objects. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Entity Framework?</div>
+              <p>EF is an ORM for .NET that maps database tables to C# classes, enabling developers to work with data as
+                objects without writing SQL.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Execute raw SQL in EF?</div>
+              <p>Use context.Database.SqlQuery<T>() for queries or context.Database.ExecuteSqlCommand() for commands.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Explicit Loading in EF?</div>
+              <p>Explicit Loading loads related data manually using Load() method on navigation properties. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Foreign key property in EF?</div>
+              <p>Foreign key property stores the key of a related entity to define relationships. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Keyless entity type in EF Core?</div>
+              <p>Keyless entity type does not have a primary key and is used for read-only queries like views. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Lazy Loading in EF?</div>
+              <p>Lazy Loading delays loading of related data until it is accessed for the first time. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Lazy loading?</div>
+              <p>EF loads related entities only when accessed, improving performance for large datasets.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Migration in EF Code-First?</div>
+              <p>Migration is a feature that allows updating the database schema incrementally when the model changes.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Model-First approach in EF?</div>
+              <p>Model-First approach allows creating the EF model visually, and EF generates the database schema from
+                it. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Navigation properties?</div>
+              <p>Properties in entities used to represent relationships between tables (one-to-one, one-to-many,
+                many-to-many).</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Navigation property in EF?</div>
+              <p>Navigation property represents a relationship between two entities, allowing navigation from one entity
+                to another. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">No-Tracking query in EF?</div>
+              <p>No-Tracking query does not track changes to entities and improves performance for read-only operations
+                using AsNoTracking(). </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Optimistic concurrency in EF?</div>
+              <p>Optimistic concurrency allows multiple users to work on data and checks for conflicts when saving
+                changes. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Owned entity type in EF Core?</div>
+              <p>Owned entity type shares the same table with owner entity and cannot exist independently. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Shadow property in EF Core?</div>
+              <p>A property maintained by EF model but not defined in CLR class, used for tracking or foreign keys. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Shadow property in EF?</div>
+              <p>Shadow property is a property in EF model not defined in CLR class but maintained in the EF model and
+                database. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Tracking query in EF?</div>
+              <p>A tracking query tracks changes to entities retrieved from the database so that changes can be
+                persisted back. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Types of EF approaches?</div>
+              <p>Database First: Generates classes from an existing DB, Model First: Create model, then generate DB,
+                Code First: Classes define schema, DB generated automatically</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

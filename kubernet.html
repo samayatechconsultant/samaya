@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Samaya Tech Consultant</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/topic.css" rel="stylesheet">
+</head>
+
+<body class="index-page Custombody">
+  <!-- nav.html -->
+  <div id="nav-placeholder"></div>
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+  </script>
+  <main class="main">
+    <!-- Hero Section -->
+    <!-- About Section -->
+    <section id="about" class="about section Custombody">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 style="color: #ffffff;"> Kubernet </h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-3">
+
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;"> Labels and Selectors?</div>
+              <p>Labels are key-value pairs attached to Kubernetes objects for identification and grouping. Selectors
+                query objects based on these labels. They are essential for service discovery and workload management.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Blue-Green Deployment in Kubernetes?</div>
+              <p>Blue-Green deployment creates two identical environments, allowing seamless switch-over during
+                releases. It reduces downtime and rollback risk. Kubernetes services route traffic between versions.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Blue-green deployment?</div>
+              <p>Blue-green deployment runs new version alongside old version and switches traffic after validation.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Canary deployment?</div>
+              <p>Canary deployment releases a new version to a small subset of users before full rollout. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Canary Deployment?</div>
+              <p>Canary deployment gradually exposes new versions to a subset of users. It helps validate performance
+                and stability before full rollout. It reduces deployment risks and improves release confidence.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Cluster Autoscaler?</div>
+              <p>Cluster Autoscaler automatically adjusts the number of nodes based on application demands. It adds
+                nodes when resources are insufficient and removes unused nodes. It works alongside HPA and VPA.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">ConfigMap?</div>
+              <p>ConfigMap stores configuration data as key-value pairs for use in pods. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">ConfigMap?</div>
+              <p>ConfigMap stores configuration data separate from application code. It helps manage environment
+                variables, config files, and parameters. It avoids rebuilding container images when configuration
+                changes.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Container Runtime in Kubernetes?</div>
+              <p>Container runtime executes and manages containers. Supported runtimes include Docker, containerd, and
+                CRI-O. Kubernetes interacts with runtimes using the Container Runtime Interface (CRI).</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Control plane?</div>
+              <p>The control plane manages the Kubernetes cluster including scheduling scaling and maintaining desired
+                states. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Cronjob?</div>
+              <p>CronJob runs jobs on a scheduled time like Unix cron. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Daemonset?</div>
+              <p>DaemonSet ensures a copy of a pod runs on all or selected nodes in the cluster. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DaemonSet?</div>
+              <p>A DaemonSet ensures a copy of a Pod is running on all or selected nodes. It is ideal for log
+                collectors, monitoring agents, or networking components. When new nodes are added, DaemonSet
+                automatically deploys the Pod.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Deployment?</div>
+              <p>Deployment manages pods and replicas ensuring the desired number of pod instances are running. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Deployment?</div>
+              <p>A Deployment defines how application Pods should be created, updated, and scaled. It provides rolling
+                updates, version control, and rollback capabilities. Deployments ensure the desired number of Pods are
+                always running.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet a pod and a container?</div>
+              <p>Pod can contain one or more containers sharing storage and network; container is a single runtime
+                instance. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet ClusterIP and NodePort?</div>
+              <p>ClusterIP exposes service inside cluster; NodePort exposes service on a static port on node IP. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet deployment and replicaSet?</div>
+              <p>Deployment manages replicaSets and allows rolling updates and rollback; replicaSet only ensures the
+                number of pod replicas. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet ephemeral and persistent storage?</div>
+              <p>Ephemeral storage lasts only for pod lifecycle; persistent storage persists independently. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet labels and annotations?</div>
+              <p>Labels are used for selection and organization; annotations store metadata for human or tool usage.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet statefulset and deployment?</div>
+              <p>StatefulSet maintains pod identity and order; Deployment manages stateless apps. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">etcd?</div>
+              <p>Etcd is a distributed key-value store used by Kubernetes to store cluster data and configuration. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">etcd?</div>
+              <p>etcd is a distributed key-value store used by Kubernetes to store cluster state and configuration. It
+                ensures consistency across control plane components. If etcd fails, the cluster loses state, making
+                backups critical.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">ExternalName service type?</div>
+              <p>ExternalName maps service to an external DNS name. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Headless service?</div>
+              <p>Headless service has no cluster IP and allows direct pod access. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Helm chart?</div>
+              <p>Helm chart is a package that contains Kubernetes manifests and templates for deploying apps. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Helm release?</div>
+              <p>Helm release is a deployed instance of a chart in the cluster. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Helm?</div>
+              <p>Helm is a package manager for Kubernetes applications. It uses Charts to define, install, upgrade, and
+                manage deployments. Helm simplifies repetitive configurations and environment consistency.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Horizontal Pod Autoscaler (HPA)?</div>
+              <p>HPA automatically scales the number of pods based on CPU usage or custom metrics. It ensures the
+                application can handle traffic spikes efficiently. It contributes to performance optimization and cost
+                savings.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Horizontal Pod Autoscaler?</div>
+              <p>HPA automatically scales pods based on CPU/memory or custom metrics. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Ingress controller?</div>
+              <p>Ingress controller manages ingress resources and implements routing rules. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Ingress?</div>
+              <p>Ingress manages external HTTP/HTTPS traffic to cluster services. It provides routing rules, SSL
+                termination, and domain-based access. Ingress replaces multiple load balancers with a single entry
+                point.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Init container?</div>
+              <p>Init container runs before app containers to perform initialization tasks. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Job in Kubernetes?</div>
+              <p>Job runs a batch task or process to completion. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubeconfig?</div>
+              <p>Kubeconfig is a configuration file that specifies cluster connection details and credentials. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubectl annotate?</div>
+              <p>Kubectl annotate adds or updates annotations on resources. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubectl apply vs create?</div>
+              <p>Apply creates or updates resources idempotently; create fails if resource exists. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubectl delete?</div>
+              <p>Kubectl delete removes resources from the cluster. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubectl describe?</div>
+              <p>Kubectl describe shows detailed information about a resource. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubectl exec?</div>
+              <p>Kubectl exec runs commands inside a container in a pod. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubectl get?</div>
+              <p>Kubectl get lists resources like pods services or nodes. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubectl label?</div>
+              <p>Kubectl label adds or updates labels on resources. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubectl logs?</div>
+              <p>Kubectl logs fetches logs from a container in a pod. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubectl port-forward?</div>
+              <p>Port-forward forwards a local port to a pod port for access. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubectl rollout?</div>
+              <p>Kubectl rollout manages deployment updates status undo and history. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubectl scale?</div>
+              <p>Kubectl scale changes the number of replicas in a deployment or replicaSet. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubectl top?</div>
+              <p>Kubectl top shows resource usage of nodes and pods. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubectl?</div>
+              <p>Kubectl is a command-line tool to interact with the Kubernetes API and manage resources. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubectl?</div>
+              <p>Kubectl is the command-line tool used to interact with Kubernetes clusters. It supports deployment,
+                debugging, scaling, and configuration management. Administrators use it for operational control.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubelet?</div>
+              <p>Kubelet is an agent running on each node that ensures containers are running in a pod. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubelet?</div>
+              <p>Kubelet runs on every worker node and ensures containers defined in Pod specs are running. It
+                communicates with the Kubernetes API server and manages local container runtime. It acts as the node
+                agent for Kubernetes.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kube-proxy?</div>
+              <p>Kube-proxy maintains network rules on nodes and enables communication to pods via services. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kube-proxy?</div>
+              <p>Kube-proxy handles network routing and load balancing for Kubernetes Services. It ensures correct
+                forwarding of traffic to Pods across the cluster. It uses iptables or IPVS for networking rules.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes admission controller?</div>
+              <p>Admission controllers intercept API requests for validation or mutation. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes API aggregation layer?</div>
+              <p>API aggregation layer allows extending Kubernetes API with additional APIs. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes API server?</div>
+              <p>API server exposes the Kubernetes API and handles requests from users controllers and nodes. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes best practices?</div>
+              <p>Best practices include using namespaces resource limits probes ConfigMaps secrets and monitoring. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">kubernetes cluster auto-scaling?</div>
+              <p>Cluster auto-scaling adjusts the number of nodes based on resource demand. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes cluster?</div>
+              <p>A Kubernetes cluster is a set of nodes that run containerized applications managed by Kubernetes. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes Cluster?</div>
+              <p>A Kubernetes cluster consists of Master (Control Plane) and Worker Nodes. The master manages
+                scheduling, orchestration, and cluster state, while worker nodes run the container workloads. Together
+                they provide a scalable and fault-tolerant environment.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes coredns?</div>
+              <p>CoreDNS is the default DNS service in Kubernetes for service discovery. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes CRD?</div>
+              <p>Custom Resource Definition allows creating custom resources in the cluster. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes dashboard?</div>
+              <p>Dashboard is a web-based UI to manage and monitor Kubernetes clusters. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes default service account?</div>
+              <p>Default service account is automatically assigned to pods without explicit service account. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes endpoint?</div>
+              <p>Endpoint represents a set of IPs and ports associated with a service. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes ephemeral container?</div>
+              <p>Ephemeral container is used for debugging running pods without modifying original containers. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes etcd cluster?</div>
+              <p>Etcd cluster stores configuration and state of Kubernetes reliably. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes event?</div>
+              <p>Event records state changes or errors in cluster resources. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes Helm?</div>
+              <p>Helm is a package manager for Kubernetes that deploys applications using charts. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes horizontal pod autoscaler metrics?</div>
+              <p>HPA metrics can include CPU memory or custom metrics. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes ingress?</div>
+              <p>Ingress exposes HTTP and HTTPS routes from outside the cluster to services. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes kubeadm?</div>
+              <p>Kubeadm is a tool to bootstrap Kubernetes clusters easily. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes kube-state-metrics?</div>
+              <p>Kube-state-metrics exports cluster state metrics for monitoring. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes labels?</div>
+              <p>Labels are key-value pairs used to organize select and manage resources. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes liveness probe?</div>
+              <p>Liveness probe checks if pod is alive and restarts it if unresponsive. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes logging?</div>
+              <p>Logging collects container and cluster logs for debugging and monitoring. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes monitoring?</div>
+              <p>Monitoring tracks cluster health performance and resource usage using tools like Prometheus. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes mutating vs validating webhook?</div>
+              <p>Mutating webhook can change API objects; validating webhook only approves or rejects. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes network policy?</div>
+              <p>Network policy defines rules for pod-to-pod or pod-to-external traffic communication. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes operator vs Helm?</div>
+              <p>Operator manages application lifecycle with automation; Helm simplifies deployment and upgrades. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes operator?</div>
+              <p>Operator extends Kubernetes functionality to manage complex applications using custom controllers. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes persistent volume types?</div>
+              <p>Types include hostPath NFS AWS EBS GCE Persistent Disk and more. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes pod disruption budget?</div>
+              <p>Pod disruption budget ensures minimum available pods during voluntary disruptions. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes proxy?</div>
+              <p>Proxy manages traffic routing to pods or services. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes RBAC?</div>
+              <p>Role-Based Access Control manages user and application permissions in the cluster. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes readiness probe?</div>
+              <p>Readiness probe checks if pod is ready to serve traffic. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes resource limits?</div>
+              <p>Resource limits define maximum CPU and memory a container can use. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes resource requests?</div>
+              <p>Resource requests define the minimum CPU and memory required for scheduling. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes role of kube-proxy?</div>
+              <p>Kube-proxy manages networking rules to route traffic to pods. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes scheduler default behavior?</div>
+              <p>Scheduler assigns pods to nodes based on resource availability affinity and taints. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes scheduler extender?</div>
+              <p>Scheduler extender allows custom scheduling decisions using external policies. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes scheduler?</div>
+              <p>Scheduler assigns pods to nodes based on resource availability and constraints. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes selectors?</div>
+              <p>Selectors are used to query and filter resources based on labels. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes service account?</div>
+              <p>Service account provides identity for pods to access Kubernetes API. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes startup probe?</div>
+              <p>Startup probe checks application startup status before other probes. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes storage class?</div>
+              <p>StorageClass defines storage type provisioner and parameters for dynamic provisioning. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes?</div>
+              <p>Kubernetes is an open-source container orchestration platform for automating deployment scaling and
+                management of containerized applications. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes?</div>
+              <p>Kubernetes is an open-source container orchestration platform used to automate deployment, scaling, and
+                management of containerized applications. It helps manage clusters of machines running containers and
+                ensures high availability. Kubernetes abstracts infrastructure complexity and supports both cloud and
+                on-prem environments.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">LoadBalancer service type?</div>
+              <p>LoadBalancer provisions an external load balancer to distribute traffic to pods. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Namespace?</div>
+              <p>Namespace provides a way to divide cluster resources between multiple users or projects. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Namespace?</div>
+              <p>Namespaces allow logical partitioning of Kubernetes resources. They help organize applications, enforce
+                resource limits, and apply access control. Clusters support multiple isolated environments like dev,
+                stage, and prod.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Node affinity?</div>
+              <p>Node affinity constrains pods to specific nodes based on labels. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Node in Kubernetes?</div>
+              <p>A node is a worker machine in Kubernetes that runs pods and is managed by the control plane. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Node?</div>
+              <p>A Node is a physical or virtual machine in a Kubernetes cluster that runs containers. Each node
+                contains Kubelet, container runtime, and Kube-proxy. Nodes execute workloads assigned by the control
+                plane.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Persistent Volume (PV)?</div>
+              <p>A PV is a cluster-level storage resource provisioned independently of pods. It can be cloud storage,
+                NFS, or local disk. PVs ensure data persists even if pods are recreated.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Persistent Volume Claim (PVC)?</div>
+              <p>A PVC is a request for storage by a pod. It binds to an available PV dynamically or statically. PVCs
+                decouple storage provisioning from application deployment.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">PersistentVolume (PV)?</div>
+              <p>PersistentVolume provides storage resources in a cluster independent of pods. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">PersistentVolumeClaim (PVC)?</div>
+              <p>PersistentVolumeClaim requests storage from a PersistentVolume. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">pod affinity and anti-affinity?</div>
+              <p>Pod affinity schedules pods close to other pods; anti-affinity avoids placing pods together. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Pod?</div>
+              <p>A pod is the smallest deployable unit in Kubernetes consisting of one or more containers sharing
+                storage network and specifications. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Pod?</div>
+              <p>A Pod is the smallest deployable unit in Kubernetes and can contain one or multiple containers.
+                Containers in a pod share network and storage resources. Pods are ephemeral, meaning they can be
+                recreated automatically if they fail.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">RBAC in Kubernetes?</div>
+              <p>RBAC (Role-Based Access Control) controls permissions for users, groups, and service accounts. It
+                defines what actions can be performed on which Kubernetes objects. RBAC helps secure production
+                environments.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">ReplicaSet?</div>
+              <p>ReplicaSet ensures a specified number of pod replicas are running at any time. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">ReplicaSet?</div>
+              <p>ReplicaSet ensures a specified number of pod replicas are always running. It replaces pods if they
+                crash or are deleted. Deployments use ReplicaSets internally for versioned upgrades.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Role and clusterrole?</div>
+              <p>Role defines permissions in a namespace; ClusterRole defines permissions cluster-wide. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Rolebinding and clusterrolebinding?</div>
+              <p>RoleBinding assigns Role to users in a namespace; ClusterRoleBinding assigns ClusterRole cluster-wide.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Rolling update?</div>
+              <p>Rolling update gradually updates pods in a deployment without downtime. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Secret in Kubernetes?</div>
+              <p>Secret stores sensitive information like passwords tokens or keys securely. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Secret?</div>
+              <p>Secrets store sensitive information like passwords, API keys, and tokens in encoded form. They are
+                mounted securely into Pods or passed as environment variables. Kubernetes helps restrict and encrypt
+                access to Secrets.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Service in Kubernetes?</div>
+              <p>Service provides stable network access to a set of pods and load balances traffic between them. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Service?</div>
+              <p>A Service provides stable networking and load balancing for Pods. Since Pods are dynamic, a service
+                exposes them using DNS names or IPs. It ensures traffic routing remains consistent even if underlying
+                pods restart.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Sidecar container?</div>
+              <p>Sidecar container runs alongside main container in a pod to provide supporting features like logging or
+                proxy. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Statefulset?</div>
+              <p>StatefulSet manages stateful applications with unique identities and persistent storage. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">StatefulSet?</div>
+              <p>StatefulSets manage stateful applications requiring stable network identities and persistent storage.
+                They ensure ordered deployment, scaling, and deletion of pods. Databases commonly use StatefulSets.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">StorageClass?</div>
+              <p>StorageClass provides dynamic provisioning of Persistent Volumes based on predefined storage policies.
+                It helps automate creating storage when PVC requests are made. Useful in cloud environments for fast
+                scaling.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Taint and toleration?</div>
+              <p>Taint marks nodes to repel certain pods; toleration allows pods to be scheduled on tainted nodes. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Types of Kubernetes services?</div>
+              <p>Types include ClusterIP NodePort LoadBalancer and ExternalName. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Use Kubernetes?</div>
+              <p>Kubernetes enables efficient scaling, automation, resilience, and portability of containerized
+                applications. It simplifies DevOps workflows, supports microservices, and optimizes infrastructure
+                usage. It is widely adopted for modern cloud-native architecture.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Vertical Pod Autoscaler (VPA)?</div>
+              <p>VPA adjusts CPU and memory resource requests/limits for pods based on usage patterns. It focuses on
+                optimizing resource allocation per pod rather than increasing pod count. It is ideal for workloads with
+                unpredictable resource needs.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Vertical Pod Autoscaler?</div>
+              <p>VPA adjusts resource requests and limits of pods automatically based on usage. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Volume in Kubernetes?</div>
+              <p>Volume provides a way for containers in a pod to access storage. </p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Samaya Tech Consultant</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/topic.css" rel="stylesheet">
+</head>
+
+<body class="index-page Custombody">
+  <!-- nav.html -->
+  <div id="nav-placeholder"></div>
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+  </script>
+  <main class="main">
+    <!-- Hero Section -->
+    <!-- About Section -->
+    <section id="about" class="about section Custombody">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 style="color: #ffffff;">Docker</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-3">
+
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Advantages of Kubernetes?</div>
+              <p>It provides automatic scaling, self-healing, load balancing, rolling updates, service discovery, and
+                multi-cloud support. Kubernetes enables highly available and scalable microservice deployments.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Bridge network?</div>
+              <p>Bridge network is the default Docker network for communication between containers on the same host.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Deploy multiple Microservices to Docker?</div>
+              <p>Use separate Dockerfiles and images for each microservice. Use Docker Compose or Kubernetes for
+                managing networking, scaling, and service discovery among multiple containers.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Deploy multiple microservices to Docker?</div>
+              <p>Containerize each service separately and manage them with Docker Compose or Kubernetes. Use service
+                discovery and networking to allow container-to-container communication.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Deploy multiple services across multiple host machines?
+              </div>
+              <p>Use Kubernetes, Docker Swarm, or cloud orchestration tools. They handle load balancing, service
+                discovery, networking, and scaling across multiple hosts.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Deploy Spring Boot JAR to Docker?</div>
+              <p>Create a Dockerfile with a JDK base image and copy the JAR. Expose the required port and run using
+                ENTRYPOINT ["java","-jar","app.jar"]. Build and run using Docker commands.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Deploy Spring Boot Microservice to Docker?</div>
+              <p>Package the microservice as a JAR and create a Dockerfile using a JDK base image. Copy the JAR file and
+                expose the service port. Build the Docker image and run the container using docker run -p <port>:<port>
+                    <image>.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Deploy Spring Boot WAR to Docker?</div>
+              <p>Create a Dockerfile using a Tomcat base image and copy the WAR file into the webapps folder. Build the
+                Docker image using docker build -t app . and run the container using docker run -p 8080:8080 app. This
+                deploys the WAR inside a Dockerized Tomcat environment.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet ADD and COPY in Dockerfile?</div>
+              <p>COPY copies local files; ADD can copy local files remote URLs and extract tar archives. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet CMD and ENTRYPOINT in Dockerfile?</div>
+              <p>CMD sets default arguments for a container; ENTRYPOINT configures the container to run as an
+                executable. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet Docker and virtual machines?</div>
+              <p>Docker containers share the host OS kernel and are lightweight; VMs have their own OS and are heavier.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet Docker bind mount and volume?</div>
+              <p>Bind mount maps host directories to containers; volumes are managed by Docker for persistence and
+                portability. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet Docker Compose and Docker Swarm?</div>
+              <p>Docker Compose manages multi-container applications locally; Docker Swarm is a container orchestration
+                tool for clustering and scaling containers. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet Docker image and container?</div>
+              <p>An image is a blueprint; a container is a running instance of that image. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet Docker image layer and container layer?</div>
+              <p>Image layers are read-only; container layer is read-write on top of image layers. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet Docker run and Docker service create?</div>
+              <p>Docker run creates a standalone container; service create deploys containers as a Swarm service with
+                scaling. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DifBet public and private Docker registries?</div>
+              <p>Public registry is accessible to everyone; private registry restricts access to specific users or
+                organizations. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">DiffBet Kubernetes and Docker Swarm?</div>
+              <p>Docker Swarm is simpler and tightly integrates with Docker, while Kubernetes is more powerful with
+                advanced scheduling, auto-scaling, and monitoring capabilities. Kubernetes is enterprise-grade, Swarm
+                suits smaller deployments.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker attach vs exec?</div>
+              <p>Attach connects to container stdin/stdout; exec runs a command in a running container. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker attach?</div>
+              <p>Docker attach connects to a running container’s standard input output and error streams. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker best practices?</div>
+              <p>Best practices include small images multi-stage builds volume usage environment variables and secure
+                secrets management. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker build ARG?</div>
+              <p>ARG defines a variable that can be passed during build time. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker build cache?</div>
+              <p>Build cache stores image layers to speed up subsequent builds. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker build?</div>
+              <p>Docker build creates an image from a Dockerfile. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker cache?</div>
+              <p>Docker cache stores previously built layers to speed up future builds. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker CLI?</div>
+              <p>Docker CLI is a command-line interface to manage Docker images containers networks and volumes. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker commit?</div>
+              <p>Docker commit creates a new image from a container’s current state. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker compose down?</div>
+              <p>Docker compose down stops and removes containers networks and volumes defined in a Compose file. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker compose logs?</div>
+              <p>Docker compose logs shows logs from all services in the Compose application. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker compose scale?</div>
+              <p>Compose scale adjusts the number of container instances for a service. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker compose up?</div>
+              <p>Docker compose up builds creates and starts containers defined in a Compose file. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker Compose?</div>
+              <p>Docker Compose is a tool to define and run multi-container Docker applications using a YAML file. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker Compose?</div>
+              <p>Docker Compose is a tool for defining and running multi-container applications using a
+                docker-compose.yml file. It automates container creation, networking, and scaling using simple commands
+                like docker compose up.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker config?</div>
+              <p>Docker config stores non-sensitive configuration data for containers in Swarm mode. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker container commit?</div>
+              <p>Container commit creates a new image from a running container. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker container restart?</div>
+              <p>Container restart stops and starts a container. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker container?</div>
+              <p>A Docker container is a lightweight standalone executable package that includes application code and
+                all dependencies. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker context use?</div>
+              <p>Context use switches the active Docker environment or endpoint. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker context?</div>
+              <p>Docker context allows switching between multiple Docker environments or endpoints. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker diff?</div>
+              <p>Diff shows changes made to container filesystem since creation. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker Engine?</div>
+              <p>Docker Engine is the core component of Docker that creates and runs Docker containers. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker ENTRYPOINT vs CMD combination?</div>
+              <p>ENTRYPOINT defines executable; CMD provides default arguments to ENTRYPOINT. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker ENV?</div>
+              <p>ENV sets environment variables inside a container at build or run time. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker exec?</div>
+              <p>Docker exec runs a command inside a running container. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker EXPOSE?</div>
+              <p>EXPOSE documents the port on which the container listens. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker health check?</div>
+              <p>Health check monitors container status and defines conditions for healthy or unhealthy states. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker healthcheck command?</div>
+              <p>Healthcheck defines a command in Dockerfile to monitor container status. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker Hub?</div>
+              <p>Docker Hub is a cloud-based registry to store and share Docker images. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker image prune?</div>
+              <p>Image prune removes dangling (unused) images. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker image?</div>
+              <p>A Docker image is a read-only template used to create Docker containers containing the application and
+                its dependencies. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker inspect format?</div>
+              <p>Inspect format uses Go templates to extract specific JSON fields. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker inspect?</div>
+              <p>Docker inspect returns detailed JSON information about containers images or networks. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker kill vs stop?</div>
+              <p>Kill forces container termination; stop gracefully stops and allows cleanup. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker layer?</div>
+              <p>Docker layer is a filesystem layer created for each Dockerfile instruction during image build. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker load vs import?</div>
+              <p>Load imports an image from a tar file; import creates an image from a filesystem archive. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker login?</div>
+              <p>Docker login authenticates a user with a Docker registry. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker logout?</div>
+              <p>Docker logout removes saved credentials for a Docker registry. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker logs -f?</div>
+              <p>Logs -f streams container logs in real-time. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker logs?</div>
+              <p>Docker logs display the standard output and error of a running or stopped container. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker multi-stage build?</div>
+              <p>Multi-stage build reduces image size by using multiple FROM statements in a Dockerfile for building and
+                final image creation. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker network create?</div>
+              <p>Docker network create creates a new Docker network. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker network inspect?</div>
+              <p>Docker network inspect shows detailed information about a network and connected containers. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker network ls?</div>
+              <p>Docker network ls lists all networks on the Docker host. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker network types?</div>
+              <p>Types include bridge host overlay macvlan and none. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker network?</div>
+              <p>Docker network allows containers to communicate with each other or with external networks. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker node?</div>
+              <p>Docker node is a Swarm cluster member (manager or worker) managed by Docker. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker overlay network in Swarm?</div>
+              <p>Overlay network allows services across multiple nodes to communicate securely. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker ports vs EXPOSE?</div>
+              <p>EXPOSE only documents; ports (-p) maps container ports to host. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker prune -a?</div>
+              <p>Docker prune -a removes all stopped containers unused networks images and optionally volumes. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker prune containers?</div>
+              <p>Prune containers removes stopped containers to free space. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker prune volume?</div>
+              <p>Docker prune volume removes unused volumes. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker prune?</div>
+              <p>Docker prune removes unused containers networks volumes or images. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker ps -a?</div>
+              <p>Docker ps -a lists all containers including stopped ones. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker ps?</div>
+              <p>Docker ps lists running containers and their details. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker pull?</div>
+              <p>Docker pull downloads a Docker image from a registry. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker push?</div>
+              <p>Docker push uploads a Docker image to a registry. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker registry?</div>
+              <p>Docker registry stores Docker images; Docker Hub is a public registry while private registries are also
+                supported. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker replica?</div>
+              <p>Replica is an instance of a service running in a Swarm cluster. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker restart always?</div>
+              <p>Restart always ensures the container restarts automatically if it stops. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker restart policy?</div>
+              <p>Restart policy defines when a container should restart e.g. always unless-stopped on-failure. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker rm?</div>
+              <p>Docker rm removes a stopped container. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker rmi?</div>
+              <p>Docker rmi removes a Docker image from the local system. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker save vs export?</div>
+              <p>Save exports an image as a tar file; export exports a container filesystem. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker secret vs config?</div>
+              <p>Secret stores sensitive data; config stores non-sensitive configuration data. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker secrets create?</div>
+              <p>Docker secrets create adds a secret to the Swarm cluster. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker secrets inspect?</div>
+              <p>Docker secrets inspect shows details of a specific secret. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker secrets ls?</div>
+              <p>Docker secrets ls lists all secrets in the Swarm cluster. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker secrets?</div>
+              <p>Docker secrets securely store sensitive data like passwords or API keys for use in containers. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker security?</div>
+              <p>Docker security includes using least privilege scanning images securing secrets and isolating
+                containers. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker service update?</div>
+              <p>Docker service update updates a running service in a Swarm cluster. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker service?</div>
+              <p>Docker service runs a container or group of containers across a Swarm cluster with scaling and update
+                capabilities. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker stack?</div>
+              <p>Docker stack deploys a group of services defined in a Compose file to a Swarm cluster. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker Stack?</div>
+              <p>Docker Stack is used in Docker Swarm to deploy and manage multi-service applications defined in a
+                Compose file. It supports scaling, rolling updates, and distributed deployment across nodes.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker stats?</div>
+              <p>Docker stats shows real-time resource usage (CPU memory network) for containers. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker stop and Docker kill?</div>
+              <p>Docker stop gracefully stops a container; Docker kill forces termination. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker swarm init?</div>
+              <p>Docker swarm init initializes a Docker host as a Swarm manager. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker swarm join?</div>
+              <p>Docker swarm join adds a node to a Swarm cluster. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker Swarm?</div>
+              <p>Docker Swarm is a native clustering and orchestration tool for Docker allowing management of multiple
+                Docker hosts. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker system df?</div>
+              <p>Docker system df shows disk usage of images containers volumes and build cache. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker tag?</div>
+              <p>Docker tag assigns a new name or version to an image. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker top vs exec?</div>
+              <p>Top shows running processes; exec runs a new command in container. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker top?</div>
+              <p>Docker top shows running processes inside a container. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker USER?</div>
+              <p>USER sets the username or UID to run the container process. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker volume create?</div>
+              <p>Docker volume create creates a new persistent volume for containers. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker volume ls?</div>
+              <p>Docker volume ls lists all Docker volumes on the host. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker volume?</div>
+              <p>A Docker volume is a persistent storage mechanism to store data outside the container filesystem. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker WORKDIR?</div>
+              <p>WORKDIR sets the working directory for container commands. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker?</div>
+              <p>Docker is a platform that allows developers to build ship and run applications in lightweight portable
+                containers. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Docker?</div>
+              <p>Docker is a containerization platform that packages applications and dependencies into lightweight,
+                portable containers. It ensures consistent environments across development, testing, and production.
+                Docker improves deployment speed, scalability, and resource utilization.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Dockerfile used for?</div>
+              <p>A Dockerfile contains a set of instructions to build a Docker image automatically. It defines the base
+                image, application code, dependencies, environment variables, and commands to run the app inside a
+                container.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Dockerfile?</div>
+              <p>A Dockerfile is a text file containing instructions to build a Docker image. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes Namespaces?</div>
+              <p>Namespaces logically isolate clusters into multiple virtual environments. They help manage resources,
+                security policies, and team separation in large applications.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Kubernetes?</div>
+              <p>Kubernetes is an open-source container orchestration system for automating deployment, scaling, and
+                management of containerized applications across clusters.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Node in Kubernetes?</div>
+              <p>A node is a physical or virtual machine in the Kubernetes cluster that runs application workloads. It
+                contains kubelet, container runtime, and networking components.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Overlay network?</div>
+              <p>Overlay network connects containers across multiple Docker hosts in a Swarm cluster. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Pod in Kubernetes?</div>
+              <p>A pod is the smallest deployable unit containing one or more containers sharing storage, networking,
+                and lifecycle. Kubernetes schedules and manages pods rather than individual containers.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Rolling update in Docker?</div>
+              <p>Rolling update updates service replicas gradually to avoid downtime. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Scenarios where Java developers use Docker?</div>
+              <p>Docker is used for creating consistent dev environments, Microservices deployment, CI/CD pipelines,
+                testing distributed systems, isolating services, and running different Java versions without conflicts.
+              </p>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

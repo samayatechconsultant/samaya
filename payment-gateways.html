@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Samaya Tech Consultant</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/topic.css" rel="stylesheet">
+</head>
+
+<body class="index-page Custombody">
+  <!-- nav.html -->
+  <div id="nav-placeholder"></div>
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+  </script>
+  <main class="main">
+    <!-- Hero Section -->
+    <!-- About Section -->
+    <section id="about" class="about section Custombody">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 style="color: #ffffff;">Payment Gateways</h2>
+        <p>Interactive Interview Guide </p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-3">
+
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">3d secure authentication?</div>
+              <p>An extra layer of cardholder authentication during payment (e.g., OTP) to reduce fraud.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">3d secure?</div>
+              <p>3D Secure is an authentication protocol that adds an extra security layer for online card transactions.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Advanced & best practices</div>
+              <p>Implement versioned webhook endpoints for backward compatibility., Use async queue workers to handle
+                heavy webhook loads., Test webhook failures and retries in the sandbox., Validate currency, amount, and
+                order IDs in payload., Secure API keys and secrets in environment variables., For microservices, use
+                message queues for webhook events., Reconciliation ensures all payments are matched with orders.,
+                Webhooks can notify external systems (CRM, ERP)., Always log errors and successes for auditing., Monitor
+                webhooks for missed events to maintain system integrity.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Authorization hold?</div>
+              <p>Authorization hold temporarily reserves funds on a card before final settlement. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Avs?</div>
+              <p>Address Verification System (AVS) checks the billing address against card issuer records to prevent
+                fraud. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Card authentication?</div>
+              <p>Process of verifying cardholder’s identity using CVV OTP or 3D Secure. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Card bin?</div>
+              <p>Bank Identification Number is the first 6 digits of a card number identifying the issuing bank. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Card-on-file?</div>
+              <p>Card-on-file stores customer card details securely for future payments with tokenization. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Chargeback ratio?</div>
+              <p>Chargeback ratio is the percentage of transactions disputed by customers over total transactions. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Chargeback representment?</div>
+              <p>Representment is when a merchant disputes a chargeback with evidence to reverse it. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Chargeback representment?</div>
+              <p>Merchant disputes a chargeback by providing evidence to reverse the transaction. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Chargeback?</div>
+              <p>Chargeback occurs when a customer disputes a transaction and funds are returned to the customer by the
+                bank. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Common webhook & gateway questions</div>
+              <p>Webhooks ensure real-time updates without polling., HMAC or secret tokens secure payloads., Payment
+                gateway supports multiple methods (cards, wallets, UPI)., API endpoints require HTTPS and proper error
+                handling., Webhooks should respond with 200 OK to acknowledge., Retry logic handles network issues., Use
+                logging for debugging events., Idempotency ensures single transaction updates., Refunds are often
+                asynchronous; handled via webhook., Versioning of webhook endpoints avoids breaking integrations</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Contactless payment?</div>
+              <p>Contactless payment allows transactions via NFC or RFID without inserting the card. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Cross-border payment?</div>
+              <p>Cross-border payment is a transaction between payer and payee in different countries and currencies.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Cvv?</div>
+              <p>Card Verification Value (CVV) is a security code on cards used to verify possession. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Delayed capture?</div>
+              <p>Capture performed after authorization typically within a predefined window. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Diffbet 3d secure 1.0 and 2.0?</div>
+              <p>3D Secure 2.0 improves user experience supports mobile devices and reduces friction in authentication.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Diffbet a payment gateway and a payment processor?</div>
+              <p>Gateway is the interface for online payments; processor handles the actual transaction with the bank
+                networks. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Diffbet ach and card payments?</div>
+              <p>ACH is bank-to-bank transfer; card payments are processed through card networks. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Diffbet aggregator and gateway?</div>
+              <p>Aggregator provides merchant account + gateway; gateway only processes payments for existing accounts.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Diffbet authorization and capture?</div>
+              <p>Authorization approves the transaction; capture completes the payment and transfers funds. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Diffbet authorization and pre-authorization?</div>
+              <p>Pre-authorization holds funds temporarily; authorization finalizes transaction approval. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Diffbet credit, debit, and net banking transactions?</div>
+              <p>Credit: borrowed funds; Debit: direct from account; Net banking: online banking transfer. Gateways
+                handle all securely.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Diffbet debit authorization and capture?</div>
+              <p>Debit authorization holds funds; capture deducts funds from customer account. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Diffbet debit card and credit card transactions?</div>
+              <p>Debit card deducts funds immediately; credit card uses a line of credit and requires monthly repayment.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Diffbet hosted and api-based payment gateway?</div>
+              <p>Hosted redirects customers to a provider page for payment. API-based allows payments directly on
+                merchant site while ensuring PCI compliance.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Diffbet hosted and integrated payment gateways?</div>
+              <p>Hosted redirects users to the gateway page; integrated processes payments within the merchant’s site
+                using API. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Diffbet online and offline payment processing?</div>
+              <p>Online requires real-time authorization; offline may batch and process later. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Diffbet payment gateway and acquiring bank?</div>
+              <p>Gateway facilitates the transaction; acquiring bank receives funds on behalf of the merchant. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Diffbet payment gateway and payment facilitator?</div>
+              <p>Gateway processes payments; facilitator onboard merchants and manage payments under their license. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Diffbet payment gateway and payment processor?</div>
+              <p>Gateway handles the authorization interface for payments. Processor moves the funds between banks.
+                Gateway is the “front door,” processor is the “backend.”</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Diffbet payment gateway and pos?</div>
+              <p>Gateway processes online payments; POS handles in-store card transactions. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Diffbet payment gateway and wallet?</div>
+              <p>Gateway processes card/bank payments; wallet stores funds digitally for transactions. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Diffbet payment token and card number?</div>
+              <p>Token is a substitute for card number to prevent exposure of sensitive data. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Diffbet refund and chargeback?</div>
+              <p>Refund is initiated by the merchant; chargeback is initiated by the customer through the bank. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Diffbet sca and 3d secure?</div>
+              <p>SCA: regulatory requirement; 3D Secure: technical implementation for customer authentication. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Diffbet void and refund?</div>
+              <p>Void cancels before settlement; refund returns funds after settlement. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Diffbet white-label and off-the-shelf payment gateway?</div>
+              <p>White-label allows branding by the merchant; off-the-shelf is standard and prebuilt by the provider.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Does a payment gateway work?</div>
+              <p>It encrypts payment information authorizes transactions through banks and sends approval or decline
+                responses to the merchant. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Does payment gateway integration work?</div>
+              <p>The customer enters payment info → Gateway encrypts and forwards → Bank authorizes → Gateway returns
+                status → Server updates order/payment.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Dynamic currency conversion?</div>
+              <p>Dynamic currency conversion allows customers to pay in their preferred currency with automatic exchange
+                rate calculation. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Emv chip?</div>
+              <p>EMV chip is a secure microprocessor on cards that reduces fraud compared to magnetic stripe. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Encryption in payment gateways?</div>
+              <p>Encryption protects cardholder data during transmission between the customer merchant and bank. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">End-to-end encryption in payments?</div>
+              <p>Encrypting sensitive payment data from customer entry point to payment processor. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Fraud detection in payment gateways?</div>
+              <p>Fraud detection identifies suspicious transactions using rules AI or machine learning. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Fraud prevention tool?</div>
+              <p>Tools or algorithms to detect and prevent unauthorized or high-risk transactions. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Fraud scoring?</div>
+              <p>Fraud scoring assigns risk scores to transactions based on patterns to prevent fraud. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Gateway fee?</div>
+              <p>Fee charged by the payment gateway for transaction handling separate from bank fees. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Gateway response code?</div>
+              <p>Gateway response code indicates transaction success failure or reason for decline. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Hosted checkout page?</div>
+              <p>A checkout page hosted by the gateway to handle payment securely without passing card data through
+                merchant servers. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Instant payment notification (ipn)?</div>
+              <p>IPN is a notification sent by the gateway to inform merchant about payment status in real-time. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Integration & security</div>
+              <p>Always validate payload signature before processing., Store minimal sensitive information; rely on
+                tokens., Use SSL/TLS for all endpoints., Webhook logging aids in troubleshooting failed events., Payment
+                gateway returns transaction IDs for reconciliation., For refunds, partial or full amounts can be
+                specified., Implement error handling for invalid payloads., Idempotent endpoints prevent
+                double-processing., Integrate webhook events into your database or ERP system., Keep webhook URLs hidden
+                to prevent abuse.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Interchange fee?</div>
+              <p>Fee paid by the acquiring bank to card issuing bank for processing a transaction. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Live api key?</div>
+              <p>Production credentials used for processing real payments. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Live environment?</div>
+              <p>Live environment is the production system where real transactions occur. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Major components of a payment gateway?</div>
+              <p>Components include merchant account payment gateway software payment processor and secure communication
+                protocols. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Merchant account?</div>
+              <p>A merchant account is a bank account that allows businesses to accept card payments. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Merchant callback url?</div>
+              <p>URL where the gateway sends transaction status updates to notify the merchant system. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Merchant fee?</div>
+              <p>Fee charged by the payment gateway or acquiring bank for processing transactions. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Merchant identification number (mid)?</div>
+              <p>MID uniquely identifies a merchant account for processing transactions. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Merchant onboarding?</div>
+              <p>Process of registering and verifying a merchant with the payment gateway to start accepting payments.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Merchant portal?</div>
+              <p>Web interface provided by gateways to manage transactions reports refunds and settlements. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Mobile payment integration?</div>
+              <p>Integration of payment gateways into mobile apps for in-app or mobile web payments. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Mobile wallet payment?</div>
+              <p>Payment made using a digital wallet app like Apple Pay Google Pay or PayPal. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Multi-currency support in payment gateways?</div>
+              <p>Ability to accept payments in multiple currencies and handle conversion automatically. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Online payment fraud?</div>
+              <p>Unauthorized or fraudulent transaction performed online using stolen or fake card information. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Payment aggregator?</div>
+              <p>Payment aggregator allows multiple merchants to accept payments under a single merchant account. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Payment gateway api?</div>
+              <p>A payment gateway API allows merchants to integrate payment processing into their website or
+                application. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Payment gateway response code?</div>
+              <p>Response code indicates success decline or error reason for a transaction. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Payment gateway sdk?</div>
+              <p>SDK allows integration of gateway features into mobile or web applications with prebuilt functions.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Payment gateway?</div>
+              <p>A payment gateway is a service that processes online payment transactions between a merchant and a
+                customer securely. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Payment gateway?</div>
+              <p>A payment gateway is a service that authorizes and processes online payments securely between
+                merchants, banks, and customers.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Payment link?</div>
+              <p>A secure URL generated by merchants to receive payment from customers. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Payment reconciliation?</div>
+              <p>Payment reconciliation ensures transactions recorded by the merchant match bank/gateway records. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Payment token vault?</div>
+              <p>Vault securely stores payment tokens or card details to simplify recurring payments. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Payment token?</div>
+              <p>Payment token is a secure representation of card or bank details used for processing without exposing
+                actual data. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Payment transaction lifecycle?</div>
+              <p>Lifecycle includes authorization capture settlement and potential refund or chargeback. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Payout in payment gateways?</div>
+              <p>Payout transfers money from merchant to vendors suppliers or customers. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Pci dss compliance?</div>
+              <p>Payment Card Industry Data Security Standard (PCI DSS) ensures secure handling of cardholder data. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Pci dss level 1?</div>
+              <p>Highest compliance level for merchants processing over 6 million transactions per year. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Pci dss saq?</div>
+              <p>Self-Assessment Questionnaire used by merchants to verify PCI compliance level. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Pci scope?</div>
+              <p>PCI scope is the environment and systems that handle cardholder data and need compliance. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Pci tokenization?</div>
+              <p>PCI tokenization replaces sensitive card details with non-sensitive tokens to minimize PCI scope. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Pci-dss compliance?</div>
+              <p>A set of security standards ensuring safe handling of cardholder data. Compliance is mandatory for
+                merchants accepting payments.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Real-time payment?</div>
+              <p>Real-time payment is processed immediately and funds are available instantly. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Recurring billing api?</div>
+              <p>API for managing subscription payments programmatically including renewals cancellations and updates.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Recurring billing cycle?</div>
+              <p>Recurring billing cycle defines the time interval for subscription charges (weekly monthly annually).
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Recurring billing failure?</div>
+              <p>When an automatic subscription payment fails due to insufficient funds card expiry or network issues.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Recurring billing model?</div>
+              <p>A billing model that charges customers automatically at predefined intervals commonly used for
+                subscriptions. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Recurring payment retry?</div>
+              <p>Automatic attempt to process failed recurring payments in subscription systems. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Recurring payment schedule?</div>
+              <p>Predefined dates and frequency for automatic subscription payments. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Recurring payment token?</div>
+              <p>Token stored to process subsequent recurring payments without storing card details. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Recurring payment?</div>
+              <p>Recurring payment is an automatic transaction at regular intervals for subscriptions or services. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Recurring subscription?</div>
+              <p>A subscription with automatic payments at regular intervals. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Refund api?</div>
+              <p>A refund API allows merchants to initiate refunds programmatically through the gateway. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Refund policy?</div>
+              <p>Rules defined by merchants to handle partial or full refunds for transactions. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Risk management in payment gateways?</div>
+              <p>Risk management evaluates transaction risk and prevents fraudulent or high-risk payments. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Sandbox api key?</div>
+              <p>Test credentials provided to integrate and simulate payments in a sandbox environment. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Sandbox environment?</div>
+              <p>Sandbox is a testing environment provided by gateways to simulate transactions without real money. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Sandbox environment?</div>
+              <p>A test environment provided by payment gateways to simulate transactions without using real money.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Sca?</div>
+              <p>Strong Customer Authentication (SCA) is a regulatory requirement in Europe to verify customer identity
+                for online payments. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Settlement batching?</div>
+              <p>Settlement batching groups multiple transactions for processing at once to reduce costs and simplify
+                reconciliation. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Settlement in payment processing?</div>
+              <p>Settlement is the process where authorized funds are transferred from the customer's bank to the
+                merchant's account. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Settlement period?</div>
+              <p>Settlement period is the time taken for funds to be transferred from the customer’s bank to the
+                merchant account. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Settlement reconciliation?</div>
+              <p>Ensuring all settled transactions match with funds received in merchant account. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Split payment?</div>
+              <p>Split payment distributes a single transaction amount between multiple parties or accounts. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Ssl/tls in payment gateways?</div>
+              <p>SSL/TLS encrypts communication between the customer and gateway to secure sensitive information. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Technical questions</div>
+              <p>Payment gateways use JSON or form-encoded requests., Webhooks payloads include event type and
+                timestamp., Test using sandbox keys and dummy cards., Webhooks can be signed to verify authenticity.,
+                API rate limits must be handled., Payment gateway errors must be mapped to human-readable messages.,
+                Webhook URLs should not be public., Use retry headers to implement exponential backoff., For recurring
+                payments, tokenization reduces PCI scope., Implement async processing to handle high traffic webhook
+                events.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">To handle asynchronous payment events?</div>
+              <p>Use Webhooks for real-time notification of events like successful payment, refunds, or chargebacks.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Token lifecycle management?</div>
+              <p>Managing creation storage expiration and deletion of payment tokens. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Tokenization in payment gateways?</div>
+              <p>Tokenization replaces sensitive card data with a unique token to enhance security. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Tokenization in payment gateways?</div>
+              <p>Converts sensitive card details into a secure, unique token for processing transactions without storing
+                card data.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Velocity check?</div>
+              <p>Velocity check limits transactions based on frequency or volume to prevent abuse. </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="topic-card" style="padding: 5px;">
+              <div class="topic-pill" style="padding: 6px;">Void transaction?</div>
+              <p>Void cancels a transaction before it is settled usually within the same day. </p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

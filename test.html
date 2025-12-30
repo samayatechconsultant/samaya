@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Creatio CRM – Workflow & AI Overview</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ========== GLOBAL ========== */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, sans-serif;
+      background: radial-gradient(circle at top, #0b1d2e, #020b13);
+      color: #eaf2f8;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 48px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 32px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #2ecc71, #f39c12);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* ========== GRID ========== */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    /* ========== CARD ========== */
+    .topic-card {
+      background: linear-gradient(
+        180deg,
+        rgba(255,255,255,0.07),
+        rgba(255,255,255,0.02)
+      );
+      border-radius: 20px;
+      padding: 22px;
+      height: 100%;
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.45);
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .topic-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 45px rgba(0,0,0,0.6);
+    }
+
+    /* ========== TITLE PILL ========== */
+    .topic-pill {
+      display: inline-block;
+      padding: 8px 18px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 14px;
+      background: linear-gradient(135deg, #2ecc71, #f39c12);
+      color: #ffffff;
+    }
+
+    /* ========== CONTENT ========== */
+    .topic-card p {
+      font-size: 14.5px;
+      line-height: 1.65;
+      margin: 0;
+      color: #d6eaf8;
+    }
+
+    .topic-card ul {
+      margin: 10px 0 0;
+      padding-left: 18px;
+      color: #d6eaf8;
+      font-size: 14.5px;
+      line-height: 1.6;
+    }
+
+    .topic-card ul li {
+      margin-bottom: 6px;
+    }
+
+    /* ========== FOOTER NOTE ========== */
+    .footer-note {
+      text-align: center;
+      margin-top: 48px;
+      font-size: 13px;
+      color: #9fb3c8;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Creatio CRM – Workflow, AI & Integration Essentials</h1>
+
+    <div class="card-grid">
+
+      <div class="topic-card">
+        <div class="topic-pill">Actions in a Creatio Workflow</div> 
+      </div>
+
+      <div class="topic-card">
+        <div class="topic-pill">Conditions & Rules</div>
+        <p>
+          Logical criteria used to control workflow paths.  
+          Example: If amount &gt; X → route to manager, else continue.
+        </p>
+      </div>
+
+      <div class="topic-card">
+        <div class="topic-pill">360° Customer View</div>
+        <p>
+          A unified profile containing contact details, interaction history,
+          orders, cases, and contracts — enabling cross-team visibility.
+        </p>
+      </div>
+
+      <div class="topic-card">
+        <div class="topic-pill">Workflow Automation Benefits</div>
+        <ul>
+          <li>Consistency & fewer errors</li>
+          <li>Faster execution</li>
+          <li>Auditability & scalability</li>
+          <li>More time for strategic work</li>
+        </ul>
+      </div>
+
+      <div class="topic-card">
+        <div class="topic-pill">AI-Native CRM</div>
+        <p>
+          AI is embedded at the core of Creatio, enabling predictive,
+          generative, and agentic capabilities to automate CRM operations.
+        </p>
+      </div>
+
+      <div class="topic-card">
+        <div class="topic-pill">AI-Powered Lead Scoring</div>
+        <p>
+          AI analyzes lead behavior and history to assign scores,
+          helping sales teams focus on high-potential opportunities.
+        </p>
+      </div>
+
+      <div class="topic-card">
+        <div class="topic-pill">API Integrations</div>
+        <p>
+          Creatio exposes REST APIs for integration with ERP systems,
+          e-commerce platforms, telephony services, and webhooks.
+        </p>
+      </div>
+
+      <div class="topic-card">
+        <div class="topic-pill">API Performance Considerations</div>
+        <p>
+          Monitor request rates, data volume, and trigger load
+          to prevent throttling and ensure system stability.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-note">
+      Designed for eye comfort • Optimized for LinkedIn visuals • Dark UI friendly
+    </div>
+  </div>
+</body>
+</html>
