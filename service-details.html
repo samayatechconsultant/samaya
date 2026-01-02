@@ -21,6 +21,45 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/topic.css" rel="stylesheet">
+  <style>
+    iframe {
+      width: 100%;
+      height: calc(100vh - 60px);
+      border: none;
+      background: #fff;
+    }
+    /* Modal Overlay */
+  .modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 999;
+  }
+
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    margin: 3% auto;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  /* Close Button */
+  .close {
+    position: absolute;
+    top: 8px;
+    right: 14px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    z-index: 10;
+  }
+  </style>
 </head>
 
 <body class="index-page Custombody">
@@ -59,8 +98,8 @@
                 <div class="topic-pill">Advanced Microservices Architecture Images</div>
               </div>
             </a></div>
-            <div class="card-grid col-md-3"><a href="advanced-principal-architect-interview-guide-dotnet-azure-images.html"
-              style="color: antiquewhite;">
+          <div class="card-grid col-md-3"><a
+              href="advanced-principal-architect-interview-guide-dotnet-azure-images.html" style="color: antiquewhite;">
               <div style="padding: 0px;">
                 <div class="topic-pill">Advanced Principal Architect Interview Guide DotNet Azure Images</div>
               </div>
@@ -225,7 +264,7 @@
         </div>
       </div>
     </section>
-    
+
     <section class="section Custombody">
       <div class="container section-title" data-aos="fade-up">
         <h2 style="color:#fff;">⚙️ DevOps, CI/CD & Automation</h2>
@@ -280,11 +319,11 @@
                 <div class="topic-pill">Kubernet</div>
               </div>
             </a></div>
-            
+
         </div>
       </div>
     </section>
-    
+
     <section class="section Custombody">
       <div class="container section-title" data-aos="fade-up">
         <h2 style="color:#fff;">🧑‍💻 Programming Languages & Frameworks</h2>
@@ -315,11 +354,11 @@
                 <div class="topic-pill">WPF</div>
               </div>
             </a></div>
-            
+
         </div>
       </div>
     </section>
-    
+
     <section class="section Custombody">
       <div class="container section-title" data-aos="fade-up">
         <h2 style="color:#fff;">🌐 Frontend Technologies</h2>
@@ -356,11 +395,11 @@
                 <div class="topic-pill">Node.js</div>
               </div>
             </a></div>
-            
+
         </div>
       </div>
     </section>
-    
+
     <section class="section Custombody">
       <div class="container section-title" data-aos="fade-up">
         <h2 style="color:#fff;">🗄️ Databases & Data Access</h2>
@@ -409,11 +448,11 @@
                 <div class="topic-pill">LINQ</div>
               </div>
             </a></div>
-            
+
         </div>
       </div>
     </section>
-    
+
     <section class="section Custombody">
       <div class="container section-title" data-aos="fade-up">
         <h2 style="color:#fff;">🔐 Security</h2>
@@ -426,11 +465,11 @@
                 <div class="topic-pill">Authorisation Cloud Security</div>
               </div>
             </a></div>
-            
+
         </div>
       </div>
     </section>
-    
+
     <section class="section Custombody">
       <div class="container section-title" data-aos="fade-up">
         <h2 style="color:#fff;">📊 Monitoring, Performance & Quality</h2>
@@ -467,11 +506,11 @@
                 <div class="topic-pill">Visio QA</div>
               </div>
             </a></div>
-            
+
         </div>
       </div>
     </section>
-    
+
     <section class="section Custombody">
       <div class="container section-title" data-aos="fade-up">
         <h2 style="color:#fff;">🔧 Version Control & Collaboration</h2>
@@ -490,7 +529,7 @@
                 <div class="topic-pill">Git Operations</div>
               </div>
             </a></div>
-            
+
           <div class="card-grid col-md-3"><a href="github-actions.html" style="color: antiquewhite;">
               <div style="padding: 0px;">
                 <div class="topic-pill">Git Tags & Releases</div>
@@ -518,7 +557,7 @@
         </div>
       </div>
     </section>
-    
+
     <section class="section Custombody">
       <div class="container section-title" data-aos="fade-up">
         <h2 style="color:#fff;">🧩 Development Practices & Methodologies</h2>
@@ -547,7 +586,7 @@
         </div>
       </div>
     </section>
-    
+
     <section class="section Custombody">
       <div class="container section-title" data-aos="fade-up">
         <h2 style="color:#fff;">📐 Diagramming,Documentation Tools & CRM</h2>
@@ -566,7 +605,7 @@
                 <div class="topic-pill">Creatio CRM</div>
               </div>
             </a></div>
-            
+
           <div class="card-grid col-md-3"><a href="umbraco-cms.html" style="color: antiquewhite;">
               <div style="padding: 0px;">
                 <div class="topic-pill">Umbraco CMS</div>
@@ -577,6 +616,94 @@
       </div>
     </section>
 
+    <section class="section Custombody">
+      <div class="container section-title" data-aos="fade-up">
+        <h2 style="color:#fff;">🧩IQAs PDF</h2>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-3">
+
+          <div class="card-grid col-md-3"><span  onclick="openPdf(this)" data-pdf="assets/pdf/100+-devops-essential-concepts.pdf" style="color: antiquewhite;" >
+              <div style="padding: 0px;">
+                <div class="topic-pill">100+ Devops Essential Concepts </div>
+              </div>
+            </span></div>
+          <div class="card-grid col-md-3"><span onclick="openPdf(this)" data-pdf="assets/pdf/api-gateways-explained.pdf" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Api Gateways Explained.pdf</div>
+              </div>
+            </button></div>
+          <div class="card-grid col-md-3"><span   onclick="openPdf(this)" data-pdf="assets/pdf/bash.pdf" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Bash</div>
+              </div>
+            </span></div>
+          <div class="card-grid col-md-3"><span onclick="openPdf(this)" data-pdf="assets/pdf/devops-commands.pdf" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Devops Commands </div>
+              </div>
+            </span></div>
+          <div class="card-grid col-md-3"><span onclick="openPdf(this)" data-pdf="assets/pdf/devops-interview-questions.pdf" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Devops Interview Questions </div>
+              </div>
+            </span></div>
+         
+          <div class="card-grid col-md-3"><span onclick="openPdf(this)" data-pdf="assets/pdf/devops.pdf" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Devops</div>
+              </div>
+            </span></div>
+          <div class="card-grid col-md-3"><span onclick="openPdf(this)" data-pdf="assets/pdf/docker.pdf" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Docker</div>
+              </div>
+            </span></div>
+          <div class="card-grid col-md-3"><span onclick="openPdf(this)" data-pdf="assets/pdf/kubernetes.pdf" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Kubernetes </div>
+              </div>
+            </span></div>
+          <div class="card-grid col-md-3"><span onclick="openPdf(this)" data-pdf="assets/pdf/kubernetes-commands.pdf" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Kubernetes Commands </div>
+              </div>
+            </span></div>
+          <div class="card-grid col-md-3"><span onclick="openPdf(this)" data-pdf="assets/pdf/llms.pdf" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Llms</div>
+              </div>
+            </span></div>
+          <div class="card-grid col-md-3"><span onclick="openPdf(this)" data-pdf="assets/pdf/prometheus-notes.pdf" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Prometheus Notes</div>
+              </div>
+            </span></div>
+          <div class="card-grid col-md-3"><span onclick="openPdf(this)" data-pdf="assets/pdf/security-basics.pdf" style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Security Basics </div>
+              </div>
+            </span></div>
+          <div class="card-grid col-md-3"><span onclick="openPdf(this)" data-pdf="assets/pdf/techzone-iv-principal-ma'am-greetings.pdf"
+              style="color: antiquewhite;">
+              <div style="padding: 0px;">
+                <div class="topic-pill">Techzone Iv Principal Ma'am Greetings</div>
+              </div>
+            </button></div>
+
+
+
+
+        </div>
+      </div>
+    </section>
+    <!-- Modal -->
+<div id="pdfModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closePdf()">&times;</span>
+    <iframe id="pdfFrame"></iframe>
+  </div>
+</div>
   </main>
   <div id="footer-placeholder"></div>
   <script>
@@ -612,6 +739,27 @@
 
   <!-- Mainage Popup behaviour -->
   <script>
+
+    function openPdf(btn) {
+    const pdfUrl = btn.getAttribute("data-pdf");
+    const iframe = document.getElementById("pdfFrame");
+
+    iframe.src = pdfUrl + "#toolbar=0&navpanes=0";
+    document.getElementById("pdfModal").style.display = "block";
+  }
+
+  function closePdf() {
+    document.getElementById("pdfFrame").src = "";
+    document.getElementById("pdfModal").style.display = "none";
+  }
+
+  // Close modal when clicking outside
+  window.onclick = function(e) {
+    const modal = document.getElementById("pdfModal");
+    if (e.target === modal) {
+      closePdf();
+    }
+  };
 
     let lastFocusedElement = null;
     let lastScrollPosition = 0;
