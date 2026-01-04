@@ -34,12 +34,7 @@
 <body class="index-page Custombody">
   <!-- nav.html -->
   <div id="nav-placeholder"></div>
-  <script>
-    fetch("nav.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
-      });
+
   </script>
   <main class="main">
     <!-- Hero Section -->
@@ -53,137 +48,155 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-3">
 
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Concurrency managed?</div>
-              <p>PostgreSQL uses MVCC (Multi-Version Concurrency Control) to handle multiple transactions without locks,
-                ensuring consistency.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Concurrency managed?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">PostgreSQL uses MVCC (Multi-Version Concurrency Control) to handle multiple
+              transactions without locks,
+              ensuring consistency.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Constraints in PostgreSQL?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Constraints enforce rules on data. Examples: NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN
+              KEY, CHECK.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DiffBet DELETE and TRUNCATE in PostgreSQL?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">DELETE removes selected rows and can be rolled back. TRUNCATE removes all rows, is
+              faster, and cannot
+              be rolled back in older versions.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DiffBet INNER JOIN and LEFT JOIN in PostgreSQL?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">INNER JOIN returns matched rows. LEFT JOIN returns all left table rows with NULL for
+              unmatched right
+              rows.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DiffBet SERIAL and IDENTITY?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">SERIAL is a pseudo-type for auto-increment integers. IDENTITY is SQL-standard and
+              supported from
+              PostgreSQL 10+ for sequence-generated IDs.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DiffBet SQL Server and PostgreSQL?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">SQL Server is proprietary, Windows-focused (though Linux is supported). PostgreSQL
+              is open-source,
+              cross-platform, and supports advanced data types.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DiffBet temporary and unlogged tables?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Temporary tables exist per session and are cleared automatically. Unlogged tables
+              skip WAL logging for
+              faster writes but are non-durable after crash.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>EXPLAIN in PostgreSQL?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">EXPLAIN shows the query execution plan for optimization. EXPLAIN ANALYZE runs the
+              query and shows
+              actual runtime stats.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Function in PostgreSQL?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">A function is a reusable code block returning a value, similar to stored procedures.
+              Supports PL/pgSQL,
+              SQL, and other procedural languages.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Indexes in PostgreSQL?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Indexes speed up query performance. Types: B-tree, Hash, GIN, GiST, BRIN.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>JSON support in PostgreSQL?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">PostgreSQL supports JSON and JSONB types for storing and querying structured data
+              efficiently.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Materialized view?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Materialized view stores the result of a query physically. Can be refreshed
+              periodically for
+              performance optimization.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>pgAdmin?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">pgAdmin is a web-based administration tool for PostgreSQL databases.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>PostgreSQL data types?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Common types: INTEGER, BIGINT, NUMERIC, VARCHAR, TEXT, BOOLEAN, DATE, JSON, UUID.
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Constraints in PostgreSQL?</div>
-              <p>Constraints enforce rules on data. Examples: NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY, CHECK.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>PostgreSQL?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">PostgreSQL is an open-source object-relational database system supporting SQL and
+              advanced features
+              like JSON, indexing, and concurrency control.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DiffBet DELETE and TRUNCATE in PostgreSQL?</div>
-              <p>DELETE removes selected rows and can be rolled back. TRUNCATE removes all rows, is faster, and cannot
-                be rolled back in older versions.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Role in PostgreSQL?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A role can be a user or a group, controlling access to databases, schemas, and
+              tables.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DiffBet INNER JOIN and LEFT JOIN in PostgreSQL?</div>
-              <p>INNER JOIN returns matched rows. LEFT JOIN returns all left table rows with NULL for unmatched right
-                rows.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Schema in PostgreSQL?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A schema is a namespace to group database objects like tables, views, and functions.
+              It allows object
+              organization and access control.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DiffBet SERIAL and IDENTITY?</div>
-              <p>SERIAL is a pseudo-type for auto-increment integers. IDENTITY is SQL-standard and supported from
-                PostgreSQL 10+ for sequence-generated IDs.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Sequences in PostgreSQL?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Sequences generate unique numeric identifiers, often used for auto-increment primary
+              keys.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DiffBet SQL Server and PostgreSQL?</div>
-              <p>SQL Server is proprietary, Windows-focused (though Linux is supported). PostgreSQL is open-source,
-                cross-platform, and supports advanced data types.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Triggers in PostgreSQL?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Triggers automatically execute a function when a table event occurs (INSERT, UPDATE,
+              DELETE). Functions
+              are written in PL/pgSQL or other languages.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DiffBet temporary and unlogged tables?</div>
-              <p>Temporary tables exist per session and are cleared automatically. Unlogged tables skip WAL logging for
-                faster writes but are non-durable after crash.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>WAL (Write-Ahead Log)?</span>
+              <div class="icon">+</div>
             </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">EXPLAIN in PostgreSQL?</div>
-              <p>EXPLAIN shows the query execution plan for optimization. EXPLAIN ANALYZE runs the query and shows
-                actual runtime stats.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Function in PostgreSQL?</div>
-              <p>A function is a reusable code block returning a value, similar to stored procedures. Supports PL/pgSQL,
-                SQL, and other procedural languages.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Indexes in PostgreSQL?</div>
-              <p>Indexes speed up query performance. Types: B-tree, Hash, GIN, GiST, BRIN.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">JSON support in PostgreSQL?</div>
-              <p>PostgreSQL supports JSON and JSONB types for storing and querying structured data efficiently.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Materialized view?</div>
-              <p>Materialized view stores the result of a query physically. Can be refreshed periodically for
-                performance optimization.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">pgAdmin?</div>
-              <p>pgAdmin is a web-based administration tool for PostgreSQL databases.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">PostgreSQL data types?</div>
-              <p>Common types: INTEGER, BIGINT, NUMERIC, VARCHAR, TEXT, BOOLEAN, DATE, JSON, UUID.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">PostgreSQL?</div>
-              <p>PostgreSQL is an open-source object-relational database system supporting SQL and advanced features
-                like JSON, indexing, and concurrency control.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Role in PostgreSQL?</div>
-              <p>A role can be a user or a group, controlling access to databases, schemas, and tables.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Schema in PostgreSQL?</div>
-              <p>A schema is a namespace to group database objects like tables, views, and functions. It allows object
-                organization and access control.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Sequences in PostgreSQL?</div>
-              <p>Sequences generate unique numeric identifiers, often used for auto-increment primary keys.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Triggers in PostgreSQL?</div>
-              <p>Triggers automatically execute a function when a table event occurs (INSERT, UPDATE, DELETE). Functions
-                are written in PL/pgSQL or other languages.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">WAL (Write-Ahead Log)?</div>
-              <p>WAL ensures durability and crash recovery. Changes are logged before being applied to data files.</p>
-            </div>
+            <div class="faq-answer">WAL ensures durability and crash recovery. Changes are logged before being applied
+              to data files.</div>
           </div>
 
 
@@ -193,13 +206,7 @@
     </section>
   </main>
   <div id="footer-placeholder"></div>
-  <script>
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i

@@ -34,13 +34,7 @@
 <body class="index-page Custombody">
   <!-- nav.html -->
   <div id="nav-placeholder"></div>
-  <script>
-    fetch("nav.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
-      });
-  </script>
+
   <main class="main">
     <!-- Hero Section -->
     <!-- About Section -->
@@ -53,39 +47,44 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-3">
 
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet gitlab and github?</div>
-              <p>GitLab offers built-in CI/CD, pipelines, and issue management, while GitHub focuses on code hosting and
-                GitHub Actions for CI/CD.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet gitlab and github?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">GitLab offers built-in CI/CD, pipelines, and issue management, while GitHub focuses
+              on code hosting and
+              GitHub Actions for CI/CD.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Gitlab runners?</div>
-              <p>GitLab Runners execute CI/CD jobs defined in .gitlab-ci.yml. They can be shared or specific to a
-                project.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Gitlab runners?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">GitLab Runners execute CI/CD jobs defined in .gitlab-ci.yml. They can be shared or
+              specific to a
+              project.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Gitlab?</div>
-              <p>GitLab is a web-based Git repository manager providing CI/CD, issue tracking, project management, and
-                DevOps features in one platform.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Gitlab?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">GitLab is a web-based Git repository manager providing CI/CD, issue tracking,
+              project management, and
+              DevOps features in one platform.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Merge request in gitlab?</div>
-              <p>Equivalent of pull requests, merge requests let you review and merge code from a feature branch into
-                the main branch.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Merge request in gitlab?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Equivalent of pull requests, merge requests let you review and merge code from a
+              feature branch into
+              the main branch.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">To secure gitlab repositories?</div>
-              <p>Use branch protection, access controls, MFA, deploy keys, and GitLab CI/CD secrets for security.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>To secure gitlab repositories?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Use branch protection, access controls, MFA, deploy keys, and GitLab CI/CD secrets
+              for security.</div>
           </div>
 
 
@@ -95,13 +94,7 @@
     </section>
   </main>
   <div id="footer-placeholder"></div>
-  <script>
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i

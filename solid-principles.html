@@ -34,13 +34,7 @@
 <body class="index-page Custombody">
   <!-- nav.html -->
   <div id="nav-placeholder"></div>
-  <script>
-    fetch("nav.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
-      });
-  </script>
+
   <main class="main">
     <!-- Hero Section -->
     <!-- About Section -->
@@ -53,75 +47,85 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-3">
 
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Benefits of solid principles?</div>
-              <p>Enhances code maintainability, testability, scalability, and reduces bugs. Supports clean, modular, and
-                extensible architecture.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Benefits of solid principles?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Enhances code maintainability, testability, scalability, and reduces bugs. Supports
+              clean, modular, and
+              extensible architecture.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet oop and solid?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">OOP provides structure using objects and classes. SOLID defines principles for
+              better object-oriented
+              design.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Dip (dependency inversion principle)?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">High-level modules should not depend on low-level modules; both should depend on
+              abstractions. Reduces
+              coupling and improves flexibility.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Does srp help testing?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">By isolating responsibilities, classes are easier to test individually, enabling
+              simpler unit tests.
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet oop and solid?</div>
-              <p>OOP provides structure using objects and classes. SOLID defines principles for better object-oriented
-                design.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Example of dip in c#</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Use interfaces for dependencies:, public class Service { private IRepository repo;
+              public
+              Service(IRepository r) { repo = r; } }</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Dip (dependency inversion principle)?</div>
-              <p>High-level modules should not depend on low-level modules; both should depend on abstractions. Reduces
-                coupling and improves flexibility.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Isp (interface segregation principle)?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Clients should not be forced to depend on methods they do not use. Promotes small,
+              specific interfaces
+              rather than large general-purpose ones.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Does srp help testing?</div>
-              <p>By isolating responsibilities, classes are easier to test individually, enabling simpler unit tests.
-              </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Lsp (liskov substitution principle)?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Derived classes should be substitutable for their base classes without breaking
+              behavior. Supports
+              polymorphism safely.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Example of dip in c#</div>
-              <p>Use interfaces for dependencies:, public class Service { private IRepository repo; public
-                Service(IRepository r) { repo = r; } }</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Ocp (open/closed principle)?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Software entities should be open for extension but closed for modification. Enables
+              adding new features
+              without changing existing code.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Isp (interface segregation principle)?</div>
-              <p>Clients should not be forced to depend on methods they do not use. Promotes small, specific interfaces
-                rather than large general-purpose ones.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Solid?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">SOLID is a set of five object-oriented design principles (SRP, OCP, LSP, ISP, DIP)
+              that improve
+              maintainability, flexibility, and scalability of software.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Lsp (liskov substitution principle)?</div>
-              <p>Derived classes should be substitutable for their base classes without breaking behavior. Supports
-                polymorphism safely.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Srp (single responsibility principle)?</span>
+              <div class="icon">+</div>
             </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Ocp (open/closed principle)?</div>
-              <p>Software entities should be open for extension but closed for modification. Enables adding new features
-                without changing existing code.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Solid?</div>
-              <p>SOLID is a set of five object-oriented design principles (SRP, OCP, LSP, ISP, DIP) that improve
-                maintainability, flexibility, and scalability of software.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Srp (single responsibility principle)?</div>
-              <p>A class should have only one reason to change. It focuses on doing one task well, improving readability
-                and maintainability.</p>
-            </div>
+            <div class="faq-answer">A class should have only one reason to change. It focuses on doing one task well,
+              improving readability
+              and maintainability.</div>
           </div>
 
 
@@ -131,13 +135,7 @@
     </section>
   </main>
   <div id="footer-placeholder"></div>
-  <script>
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i

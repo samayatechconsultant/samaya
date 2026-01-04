@@ -34,13 +34,7 @@
 <body class="index-page Custombody">
   <!-- nav.html -->
   <div id="nav-placeholder"></div>
-  <script>
-    fetch("nav.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
-      });
-  </script>
+
   <main class="main">
     <!-- Hero Section -->
     <!-- About Section -->
@@ -53,133 +47,150 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-3">
 
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Access Key Vault from code?</div>
-              <p>Use Azure SDK, REST API, or managed identity for authentication.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Access Key Vault from code?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Use Azure SDK, REST API, or managed identity for authentication.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Azure Key Vault?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Cloud service to securely store secrets, keys, and certificates. Helps centralize
+              and manage sensitive
+              information.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Backup and restore Key Vault?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Azure provides APIs and PowerShell commands to backup keys, secrets, and
+              certificates and restore in
+              another vault.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Control access to Key Vault?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Use Access Policies or Azure RBAC to assign read/write permissions to users or
+              services.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DiffBet Function App Plan types?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Consumption: serverless, auto-scale, pay per execution. Premium: pre-warmed
+              instances, VNET support.
+              Dedicated: fixed resources, always on.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DiffBet secrets and keys?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Secrets store sensitive info (passwords), keys are for cryptographic operations
+              (encryption, signing).
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Azure Key Vault?</div>
-              <p>Cloud service to securely store secrets, keys, and certificates. Helps centralize and manage sensitive
-                information.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DiffBet soft-delete and purge protection?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Soft-delete allows recovery of deleted objects. Purge protection prevents permanent
+              deletion until
+              explicitly disabled.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DiffBet Standard and Premium tiers in Service Bus?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Premium provides dedicated resources, higher throughput, low latency, and advanced
+              features like
+              sessions and transactions.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DiffBet topics and queues in Service Bus?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Queues are one-to-one messaging; topics allow one-to-many messaging via
+              subscriptions.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Ensure message ordering in Service Bus?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Use message sessions or partitioned queues to maintain FIFO processing.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Integrate Service Bus with Azure Functions?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Use Service Bus trigger in Functions to automatically execute code when a message
+              arrives in
+              queue/topic.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Key Vault improves security in cloud applications?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Centralized secrets management, reduces hardcoding credentials, integrates with
+              managed identities, and
+              ensures compliance.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Managed Identity with Key Vault?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Enables secure access from Azure resources without storing credentials in code.
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Backup and restore Key Vault?</div>
-              <p>Azure provides APIs and PowerShell commands to backup keys, secrets, and certificates and restore in
-                another vault.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>monitor Key Vault access?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Enable diagnostic logs to Azure Monitor or Event Hub for auditing access and usage.
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Control access to Key Vault?</div>
-              <p>Use Access Policies or Azure RBAC to assign read/write permissions to users or services.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Multiple functions share a Key Vault?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Yes, multiple Function Apps can access the same Key Vault via managed identities.
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DiffBet Function App Plan types?</div>
-              <p>Consumption: serverless, auto-scale, pay per execution. Premium: pre-warmed instances, VNET support.
-                Dedicated: fixed resources, always on.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Objects can be stored in Key Vault?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Secrets (passwords), Keys (encryption), Certificates (SSL/TLS).</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Purpose of Key Vault in DevOps pipelines?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Securely inject secrets, certificates, and keys into CI/CD pipelines without
+              exposing credentials.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Rotate secrets in Key Vault?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Use automatic or manual rotation to periodically update keys/secrets without
+              downtime.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Scale Azure App Service?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Scale up (bigger instance) or scale out (more instances). Autoscale can respond to
+              CPU/memory metrics.
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DiffBet secrets and keys?</div>
-              <p>Secrets store sensitive info (passwords), keys are for cryptographic operations (encryption, signing).
-              </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>soft-delete in Key Vault?</span>
+              <div class="icon">+</div>
             </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DiffBet soft-delete and purge protection?</div>
-              <p>Soft-delete allows recovery of deleted objects. Purge protection prevents permanent deletion until
-                explicitly disabled.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DiffBet Standard and Premium tiers in Service Bus?</div>
-              <p>Premium provides dedicated resources, higher throughput, low latency, and advanced features like
-                sessions and transactions.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DiffBet topics and queues in Service Bus?</div>
-              <p>Queues are one-to-one messaging; topics allow one-to-many messaging via subscriptions.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Ensure message ordering in Service Bus?</div>
-              <p>Use message sessions or partitioned queues to maintain FIFO processing.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Integrate Service Bus with Azure Functions?</div>
-              <p>Use Service Bus trigger in Functions to automatically execute code when a message arrives in
-                queue/topic.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Key Vault improves security in cloud applications?</div>
-              <p>Centralized secrets management, reduces hardcoding credentials, integrates with managed identities, and
-                ensures compliance.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Managed Identity with Key Vault?</div>
-              <p>Enables secure access from Azure resources without storing credentials in code.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">monitor Key Vault access?</div>
-              <p>Enable diagnostic logs to Azure Monitor or Event Hub for auditing access and usage.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Multiple functions share a Key Vault?</div>
-              <p>Yes, multiple Function Apps can access the same Key Vault via managed identities.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Objects can be stored in Key Vault?</div>
-              <p>Secrets (passwords), Keys (encryption), Certificates (SSL/TLS).</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Purpose of Key Vault in DevOps pipelines?</div>
-              <p>Securely inject secrets, certificates, and keys into CI/CD pipelines without exposing credentials.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Rotate secrets in Key Vault?</div>
-              <p>Use automatic or manual rotation to periodically update keys/secrets without downtime.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Scale Azure App Service?</div>
-              <p>Scale up (bigger instance) or scale out (more instances). Autoscale can respond to CPU/memory metrics.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">soft-delete in Key Vault?</div>
-              <p>Allows recovery of deleted secrets/keys for a retention period (default 90 days).</p>
+            <div class="faq-answer">Allows recovery of deleted secrets/keys for a retention period (default 90 days).
             </div>
           </div>
 
@@ -190,13 +201,7 @@
     </section>
   </main>
   <div id="footer-placeholder"></div>
-  <script>
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i

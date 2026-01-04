@@ -34,13 +34,7 @@
 <body class="index-page Custombody">
   <!-- nav.html -->
   <div id="nav-placeholder"></div>
-  <script>
-    fetch("nav.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
-      });
-  </script>
+
   <main class="main">
     <!-- Hero Section -->
     <!-- About Section -->
@@ -53,70 +47,79 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-3">
 
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Api throttling?</div>
-              <p>Limits API usage to maintain performance and avoid abuse.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Api throttling?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Limits API usage to maintain performance and avoid abuse.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Circuit breaker pattern?</div>
-              <p>Prevents cascading failures in microservices by detecting failures and stopping requests to unhealthy
-                services temporarily.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Circuit breaker pattern?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Prevents cascading failures in microservices by detecting failures and stopping
+              requests to unhealthy
+              services temporarily.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet monolithic and microservices?</div>
-              <p>Monolith is a single deployable unit; microservices are independently deployable services focusing on
-                single business capabilities.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet monolithic and microservices?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Monolith is a single deployable unit; microservices are independently deployable
+              services focusing on
+              single business capabilities.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Event-driven architecture?</div>
-              <p>Systems communicate via events asynchronously, decoupling services and improving scalability.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Event-driven architecture?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Systems communicate via events asynchronously, decoupling services and improving
+              scalability.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Hateoas?</div>
-              <p>Hypermedia as the engine of application state; REST responses contain links to navigate API
-                dynamically.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Hateoas?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Hypermedia as the engine of application state; REST responses contain links to
+              navigate API
+              dynamically.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Rate limiting?</div>
-              <p>Controls the number of requests a client can make in a time window to prevent overload.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Rate limiting?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Controls the number of requests a client can make in a time window to prevent
+              overload.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Retry mechanism?</div>
-              <p>Automatically retries failed operations to handle transient errors in distributed systems.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Retry mechanism?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Automatically retries failed operations to handle transient errors in distributed
+              systems.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Service discovery?</div>
-              <p>Allows services to find each other dynamically in distributed architecture without hardcoding
-                endpoints.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Service discovery?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Allows services to find each other dynamically in distributed architecture without
+              hardcoding
+              endpoints.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Solid, ddd, and clean architecture work together?</div>
-              <p>SOLID ensures clean OOP design, DDD aligns domain with business rules, Clean Architecture isolates
-                layers; together they build scalable, maintainable, testable solutions.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Solid, ddd, and clean architecture work together?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">SOLID ensures clean OOP design, DDD aligns domain with business rules, Clean
+              Architecture isolates
+              layers; together they build scalable, maintainable, testable solutions.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Swagger ui?</div>
-              <p>Interactive documentation interface for REST APIs, allowing developers to test endpoints.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Swagger ui?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Interactive documentation interface for REST APIs, allowing developers to test
+              endpoints.</div>
           </div>
 
 
@@ -126,13 +129,7 @@
     </section>
   </main>
   <div id="footer-placeholder"></div>
-  <script>
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i

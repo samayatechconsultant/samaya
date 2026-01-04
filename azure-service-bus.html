@@ -34,13 +34,7 @@
 <body class="index-page Custombody">
   <!-- nav.html -->
   <div id="nav-placeholder"></div>
-  <script>
-    fetch("nav.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
-      });
-  </script>
+
   <main class="main">
     <!-- Hero Section -->
     <!-- About Section -->
@@ -53,69 +47,77 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-3">
 
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Azure Service Bus?</div>
-              <p>A messaging platform for asynchronous communication between services using queues and topics.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Azure Service Bus?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">A messaging platform for asynchronous communication between services using queues
+              and topics.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Dead-letter queues (DLQ)?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Sub-queues to store messages that cannot be delivered or processed. Helps error
+              handling and retries.
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Dead-letter queues (DLQ)?</div>
-              <p>Sub-queues to store messages that cannot be delivered or processed. Helps error handling and retries.
-              </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DiffBet Service Bus and Storage Queue?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Service Bus supports advanced messaging features (pub/sub, sessions, DLQ), Storage
+              Queue is simpler and
+              cost-effective.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Duplicate detection?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Service Bus can detect and ignore duplicate messages based on MessageId within a
+              defined time window.
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DiffBet Service Bus and Storage Queue?</div>
-              <p>Service Bus supports advanced messaging features (pub/sub, sessions, DLQ), Storage Queue is simpler and
-                cost-effective.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Enable auto-forwarding?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Forward messages from one queue/subscription to another automatically for workflow
+              chaining.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Message lock duration?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Time a message is locked for processing. Prevents multiple consumers from processing
+              simultaneously.
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Duplicate detection?</div>
-              <p>Service Bus can detect and ignore duplicate messages based on MessageId within a defined time window.
-              </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Message session in Service Bus?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Used to group related messages for ordered processing by the same consumer.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Peek-lock?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Locks the message while reading but does not delete it until explicitly completed.
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Enable auto-forwarding?</div>
-              <p>Forward messages from one queue/subscription to another automatically for workflow chaining.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Queue in Service Bus?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">FIFO message storage where one consumer reads messages at a time.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Message lock duration?</div>
-              <p>Time a message is locked for processing. Prevents multiple consumers from processing simultaneously.
-              </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Topic and Subscription?</span>
+              <div class="icon">+</div>
             </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Message session in Service Bus?</div>
-              <p>Used to group related messages for ordered processing by the same consumer.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Peek-lock?</div>
-              <p>Locks the message while reading but does not delete it until explicitly completed.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Queue in Service Bus?</div>
-              <p>FIFO message storage where one consumer reads messages at a time.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Topic and Subscription?</div>
-              <p>Topics allow multiple subscribers to receive copies of a message. Useful for pub/sub patterns.</p>
-            </div>
+            <div class="faq-answer">Topics allow multiple subscribers to receive copies of a message. Useful for pub/sub
+              patterns.</div>
           </div>
 
 
@@ -125,13 +127,7 @@
     </section>
   </main>
   <div id="footer-placeholder"></div>
-  <script>
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i

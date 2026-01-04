@@ -34,13 +34,7 @@
 <body class="index-page Custombody">
   <!-- nav.html -->
   <div id="nav-placeholder"></div>
-  <script>
-    fetch("nav.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
-      });
-  </script>
+
   <main class="main">
     <!-- Hero Section -->
     <!-- About Section -->
@@ -53,75 +47,85 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-3">
 
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Architecture documentation important?</div>
-              <p>Provides clarity, supports communication with stakeholders, enables consistency, reduces technical
-                debt, and assists onboarding new developers.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Architecture documentation important?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Provides clarity, supports communication with stakeholders, enables consistency,
+              reduces technical
+              debt, and assists onboarding new developers.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Architecture documentation?</div>
-              <p>It is a set of artifacts describing software systems’ structure, components, interactions, and design
-                decisions. Helps teams understand, maintain, and scale the system.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Architecture documentation?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">It is a set of artifacts describing software systems’ structure, components,
+              interactions, and design
+              decisions. Helps teams understand, maintain, and scale the system.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Architecture review?</div>
-              <p>A structured assessment of architecture artifacts to ensure design meets requirements, quality
-                standards, and scalability needs.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Architecture review?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A structured assessment of architecture artifacts to ensure design meets
+              requirements, quality
+              standards, and scalability needs.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Component diagram?</div>
-              <p>A component diagram shows modular parts of a system and their dependencies. Useful to illustrate
-                service boundaries in Microservices or layered architecture.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Component diagram?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A component diagram shows modular parts of a system and their dependencies. Useful
+              to illustrate
+              service boundaries in Microservices or layered architecture.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Deployment diagram?</div>
-              <p>Shows how software artifacts are deployed on physical nodes or infrastructure. Important for cloud or
-                on-premise planning.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Deployment diagram?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Shows how software artifacts are deployed on physical nodes or infrastructure.
+              Important for cloud or
+              on-premise planning.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet erd and uml?</div>
-              <p>ERD focuses on database entities and relationships, UML covers broader software architecture including
-                behavior, structure, and interactions.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet erd and uml?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">ERD focuses on database entities and relationships, UML covers broader software
+              architecture including
+              behavior, structure, and interactions.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet logical, physical, and deployment diagrams?</div>
-              <p>Logical diagrams show functional components and relationships, physical diagrams show actual hardware
-                or servers, deployment diagrams show how software is distributed across nodes.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet logical, physical, and deployment diagrams?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Logical diagrams show functional components and relationships, physical diagrams
+              show actual hardware
+              or servers, deployment diagrams show how software is distributed across nodes.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Sequence diagram?</div>
-              <p>Sequence diagrams depict interactions between objects or components over time. Shows method calls,
-                responses, and process flow.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Sequence diagram?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Sequence diagrams depict interactions between objects or components over time. Shows
+              method calls,
+              responses, and process flow.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Uml?</div>
-              <p>Unified Modeling Language (UML) is a standard to visualize system design using diagrams like class,
-                sequence, use case, and activity diagrams.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Uml?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Unified Modeling Language (UML) is a standard to visualize system design using
+              diagrams like class,
+              sequence, use case, and activity diagrams.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Use case diagram?</div>
-              <p>It shows system functionality and actors interacting with the system. Helps define requirements from a
-                user perspective.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Use case diagram?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">It shows system functionality and actors interacting with the system. Helps define
+              requirements from a
+              user perspective.</div>
           </div>
 
 
@@ -131,13 +135,7 @@
     </section>
   </main>
   <div id="footer-placeholder"></div>
-  <script>
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i

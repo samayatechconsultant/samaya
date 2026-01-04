@@ -34,13 +34,7 @@
 <body class="index-page Custombody">
   <!-- nav.html -->
   <div id="nav-placeholder"></div>
-  <script>
-    fetch("nav.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
-      });
-  </script>
+
   <main class="main">
     <!-- Hero Section -->
     <!-- About Section -->
@@ -53,72 +47,82 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-3">
 
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Advantage of ddd?</div>
-              <p>Aligns software design with business rules, improves maintainability, and supports complex domains
-                effectively.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Advantage of ddd?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Aligns software design with business rules, improves maintainability, and supports
+              complex domains
+              effectively.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Aggregate?</div>
-              <p>A cluster of related entities and value objects treated as a single unit for consistency.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Aggregate?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A cluster of related entities and value objects treated as a single unit for
+              consistency.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Bounded context?</div>
-              <p>A boundary defining where a specific domain model applies. Prevents ambiguity in large systems with
-                multiple models.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Bounded context?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A boundary defining where a specific domain model applies. Prevents ambiguity in
+              large systems with
+              multiple models.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Ddd supports microservices?</div>
-              <p>By defining bounded contexts, each microservice can own its domain model and database, reducing
-                coupling.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Ddd supports microservices?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">By defining bounded contexts, each microservice can own its domain model and
+              database, reducing
+              coupling.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Ddd?</div>
-              <p>DDD is an approach to software design focusing on core domain logic, modeling real-world business
-                processes, and aligning software structure with business needs.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Ddd?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">DDD is an approach to software design focusing on core domain logic, modeling
+              real-world business
+              processes, and aligning software structure with business needs.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet ddd and traditional layered architecture?</div>
-              <p>DDD emphasizes domain and business logic first, while traditional layers often prioritize technical
-                layers like UI, DB, and service.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet ddd and traditional layered architecture?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">DDD emphasizes domain and business logic first, while traditional layers often
+              prioritize technical
+              layers like UI, DB, and service.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Domain event?</div>
-              <p>An event representing something significant that happens in the domain, triggering reactions in other
-                parts of the system.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Domain event?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">An event representing something significant that happens in the domain, triggering
+              reactions in other
+              parts of the system.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Entity in ddd?</div>
-              <p>An object with a unique identity that persists over time, e.g., Customer with a unique ID.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Entity in ddd?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">An object with a unique identity that persists over time, e.g., Customer with a
+              unique ID.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Repository in ddd?</div>
-              <p>A pattern for persisting and retrieving aggregates while abstracting data storage details.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Repository in ddd?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A pattern for persisting and retrieving aggregates while abstracting data storage
+              details.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Value object?</div>
-              <p>An object defined by attributes rather than identity. Immutable and used to describe aspects of
-                entities, e.g., Address.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Value object?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">An object defined by attributes rather than identity. Immutable and used to describe
+              aspects of
+              entities, e.g., Address.</div>
           </div>
 
 
@@ -128,13 +132,7 @@
     </section>
   </main>
   <div id="footer-placeholder"></div>
-  <script>
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i

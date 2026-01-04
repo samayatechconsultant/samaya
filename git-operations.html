@@ -34,13 +34,7 @@
 <body class="index-page Custombody">
   <!-- nav.html -->
   <div id="nav-placeholder"></div>
-  <script>
-    fetch("nav.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
-      });
-  </script>
+
   <main class="main">
     <!-- Hero Section -->
     <!-- About Section -->
@@ -53,36 +47,39 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-3">
 
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet soft, mixed, hard reset?</div>
-              <p>Soft keeps changes staged, mixed unstages them, hard deletes all changes in working tree.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet soft, mixed, hard reset?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Soft keeps changes staged, mixed unstages them, hard deletes all changes in working
+              tree.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>To revert a merge?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Use git revert -m 1 <merge_commit> to undo a merged commit safely.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>To squash commits?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Use interactive rebase: git rebase -i HEAD~n and mark commits as squash or fixup.
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">To revert a merge?</div>
-              <p>Use git revert -m 1 <merge_commit> to undo a merged commit safely.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>To view changes before committing?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Use git status and git diff to inspect changes in files.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">To squash commits?</div>
-              <p>Use interactive rebase: git rebase -i HEAD~n and mark commits as squash or fixup.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>To view git commit history?</span>
+              <div class="icon">+</div>
             </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">To view changes before committing?</div>
-              <p>Use git status and git diff to inspect changes in files.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">To view git commit history?</div>
-              <p>Use git log or git log --oneline for concise history. Tools like GitKraken or GitHub history visualize
-                commits.</p>
-            </div>
+            <div class="faq-answer">Use git log or git log --oneline for concise history. Tools like GitKraken or GitHub
+              history visualize
+              commits.</div>
           </div>
 
 
@@ -92,13 +89,7 @@
     </section>
   </main>
   <div id="footer-placeholder"></div>
-  <script>
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i

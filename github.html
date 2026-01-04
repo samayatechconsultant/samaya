@@ -34,13 +34,7 @@
 <body class="index-page Custombody">
   <!-- nav.html -->
   <div id="nav-placeholder"></div>
-  <script>
-    fetch("nav.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
-      });
-  </script>
+
   <main class="main">
     <!-- Hero Section -->
     <!-- About Section -->
@@ -53,40 +47,45 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-3">
 
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet github and gitlab?</div>
-              <p>GitHub focuses on public and private repo hosting with Actions for CI/CD. GitLab is devops lifecycle
-                complete, offering CI/CD, issue tracking, and container registry.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet github and gitlab?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">GitHub focuses on public and private repo hosting with Actions for CI/CD. GitLab is
+              devops lifecycle
+              complete, offering CI/CD, issue tracking, and container registry.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Fork in github?</div>
-              <p>A fork is a personal copy of someone else’s repository. Changes can be pushed to your fork and later
-                submitted as a pull request to the original repo.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Fork in github?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A fork is a personal copy of someone else’s repository. Changes can be pushed to
+              your fork and later
+              submitted as a pull request to the original repo.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Github actions?</div>
-              <p>A CI/CD workflow tool integrated with GitHub. Actions automate tasks like build, test, and deploy on
-                events such as push or PR.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Github actions?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A CI/CD workflow tool integrated with GitHub. Actions automate tasks like build,
+              test, and deploy on
+              events such as push or PR.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Github?</div>
-              <p>GitHub is a cloud-based Git repository hosting service. It provides version control, collaboration,
-                pull requests, issues, and CI/CD via GitHub Actions.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Github?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">GitHub is a cloud-based Git repository hosting service. It provides version control,
+              collaboration,
+              pull requests, issues, and CI/CD via GitHub Actions.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">To create a github repository?</div>
-              <p>Sign in → Click New Repository → Provide name, description, visibility → Initialize with README →
-                Create.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>To create a github repository?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Sign in → Click New Repository → Provide name, description, visibility → Initialize
+              with README →
+              Create.</div>
           </div>
 
 
@@ -96,13 +95,7 @@
     </section>
   </main>
   <div id="footer-placeholder"></div>
-  <script>
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i

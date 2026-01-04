@@ -34,13 +34,7 @@
 <body class="index-page Custombody">
   <!-- nav.html -->
   <div id="nav-placeholder"></div>
-  <script>
-    fetch("nav.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
-      });
-  </script>
+
   <main class="main">
     <!-- Hero Section -->
     <!-- About Section -->
@@ -53,72 +47,82 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-3">
 
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Caching in scalable design?</div>
-              <p>Stores frequently accessed data closer to users to reduce database load and improve performance.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Caching in scalable design?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Stores frequently accessed data closer to users to reduce database load and improve
+              performance.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Cqrs?</div>
-              <p>Command Query Responsibility Segregation separates read and write operations to optimize performance
-                and scalability.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Cqrs?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Command Query Responsibility Segregation separates read and write operations to
+              optimize performance
+              and scalability.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet horizontal and vertical scaling?</div>
-              <p>Vertical scaling adds resources to existing servers; horizontal scaling adds more servers/nodes.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet horizontal and vertical scaling?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Vertical scaling adds resources to existing servers; horizontal scaling adds more
+              servers/nodes.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet synchronous and asynchronous communication?</div>
-              <p>Synchronous waits for response, can block. Asynchronous allows parallel processing, improving
-                throughput.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet synchronous and asynchronous communication?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Synchronous waits for response, can block. Asynchronous allows parallel processing,
+              improving
+              throughput.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Eventual consistency?</div>
-              <p>A model where updates propagate asynchronously; systems achieve consistency over time, common in
-                distributed architectures.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Eventual consistency?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A model where updates propagate asynchronously; systems achieve consistency over
+              time, common in
+              distributed architectures.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Load balancing?</div>
-              <p>Distributes client requests across multiple servers to optimize resource use, availability, and
-                responsiveness.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Load balancing?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Distributes client requests across multiple servers to optimize resource use,
+              availability, and
+              responsiveness.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Scalable solution design?</div>
-              <p>Designing software that can handle increasing load efficiently by scaling horizontally (more machines)
-                or vertically (stronger machines).</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Scalable solution design?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Designing software that can handle increasing load efficiently by scaling
+              horizontally (more machines)
+              or vertically (stronger machines).</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Stateless vs stateful design?</div>
-              <p>Stateless services don’t store client state, aiding scaling; stateful services retain state and require
-                careful replication.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Stateless vs stateful design?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Stateless services don’t store client state, aiding scaling; stateful services
+              retain state and require
+              careful replication.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">To design database for scalability?</div>
-              <p>Use sharding, replication, indexing, and read/write separation to handle large data volumes
-                efficiently.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>To design database for scalability?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Use sharding, replication, indexing, and read/write separation to handle large data
+              volumes
+              efficiently.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">To scale microservices?</div>
-              <p>Deploy multiple instances, use service discovery, load balancing, and container orchestration.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>To scale microservices?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Deploy multiple instances, use service discovery, load balancing, and container
+              orchestration.</div>
           </div>
 
 
@@ -128,13 +132,7 @@
     </section>
   </main>
   <div id="footer-placeholder"></div>
-  <script>
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i

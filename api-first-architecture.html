@@ -34,13 +34,7 @@
 <body class="index-page Custombody">
   <!-- nav.html -->
   <div id="nav-placeholder"></div>
-  <script>
-    fetch("nav.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
-      });
-  </script>
+
   <main class="main">
     <!-- Hero Section -->
     <!-- About Section -->
@@ -53,71 +47,80 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-3">
 
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Advantages of api first?</div>
-              <p>Improves consistency, reduces rework, enables early integration, supports microservices and
-                multi-platform clients.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Advantages of api first?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Improves consistency, reduces rework, enables early integration, supports
+              microservices and
+              multi-platform clients.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Api contract?</div>
-              <p>A formal definition of endpoints, request/response formats, data types, and authentication mechanisms,
-                usually via OpenAPI/Swagger.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Api contract?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A formal definition of endpoints, request/response formats, data types, and
+              authentication mechanisms,
+              usually via OpenAPI/Swagger.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Api first architecture?</div>
-              <p>Designs the API before implementing business logic, ensuring consistency, reusability, and
-                collaboration with front-end and third-party teams.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Api first architecture?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Designs the API before implementing business logic, ensuring consistency,
+              reusability, and
+              collaboration with front-end and third-party teams.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Api first supports microservices?</div>
-              <p>APIs act as contracts between services, enabling independent development, testing, and deployment.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Api first supports microservices?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">APIs act as contracts between services, enabling independent development, testing,
+              and deployment.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Api gateway?</div>
-              <p>A gateway handles routing, authentication, rate-limiting, and logging for microservice APIs.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Api gateway?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A gateway handles routing, authentication, rate-limiting, and logging for
+              microservice APIs.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet api first and code-first design?</div>
-              <p>API-first designs API before coding, focusing on contracts. Code-first generates APIs from
-                implementation, which may lack consistency.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet api first and code-first design?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">API-first designs API before coding, focusing on contracts. Code-first generates
+              APIs from
+              implementation, which may lack consistency.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet rest and graphql?</div>
-              <p>Rest exposes fixed endpoints; graphql allows clients to query exactly what they need. both can follow
-                api-first design.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet rest and graphql?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Rest exposes fixed endpoints; graphql allows clients to query exactly what they
+              need. both can follow
+              api-first design.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Openapi (swagger)?</div>
-              <p>A specification for defining REST APIs, including endpoints, payloads, responses, and authentication,
-                supporting documentation and code generation.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Openapi (swagger)?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A specification for defining REST APIs, including endpoints, payloads, responses,
+              and authentication,
+              supporting documentation and code generation.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">To handle security in api-first design?</div>
-              <p>Use OAuth2, JWT, API keys, TLS/HTTPS, and input validation.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>To handle security in api-first design?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Use OAuth2, JWT, API keys, TLS/HTTPS, and input validation.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Versioning in api design?</div>
-              <p>Maintains backward compatibility while introducing new features, often via URL or header versioning.
-              </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Versioning in api design?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Maintains backward compatibility while introducing new features, often via URL or
+              header versioning.
             </div>
           </div>
 
@@ -128,13 +131,7 @@
     </section>
   </main>
   <div id="footer-placeholder"></div>
-  <script>
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i

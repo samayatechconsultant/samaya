@@ -53,876 +53,1148 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-3">
 
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">.ts vs .tsx</div>
-              <p>.ts is standard TypeScript, .tsx supports JSX for React projects.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                .ts vs .tsx </span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">
+              .ts is standard TypeScript, .tsx supports JSX for React projects.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Access modifiers in TypeScript?</div>
-              <p>public, private, protected specify visibility of class members. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Access modifiers in TypeScript? </span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">
+              public, private, protected specify visibility of class members. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Advantages of TypeScript </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Strong typing, better tooling, compile-time error checking, and improved maintainability.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Advantages of TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Static typing, better tooling, early error detection, improved readability, and support for modern JS
+              features. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Advantages of TypeScript</div>
-              <p>Strong typing, better tooling, compile-time error checking, and improved maintainability.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Ambient declarations in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Ambient declarations (declare) describe the types of code that exists elsewhere, like JS libraries.
             </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Advantages of TypeScript?</div>
-              <p>Static typing, better tooling, early error detection, improved readability, and support for modern JS
-                features. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Ambient declarations in TypeScript?</div>
-              <p>Ambient declarations (declare) describe the types of code that exists elsewhere, like JS libraries.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Ambient module declaration?</div>
-              <p>declare module 'moduleName' defines types for external libraries without implementation. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Anonymous functions and uses.</div>
-              <p>Anonymous functions have no name and are assigned to variables or used as callbacks. Example:, const
-                sum = function(a,b){ return a+b };, They support functional programming and event handling.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Any type in TypeScript?</div>
-              <p>any allows a variable to hold values of any type and disables type checking. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Any type?</div>
-              <p>any disables type checking and allows storing any value. Useful during migration from JavaScript.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Arrays behavior</div>
-              <p>Arrays must use defined element types:, let numbers: number[] = [1,2,3];</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Basic data types in TypeScript?</div>
-              <p>number, string, boolean, array, tuple, enum, any, void, null, undefined, never, unknown. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Child class call base constructor?</div>
-              <p>Yes, using super() inside the child constructor. It must be called before accessing this.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Classes in TypeScript?</div>
-              <p>Classes are templates for creating objects with properties and methods. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Combine multiple TS files into one JS file.</div>
-              <p>Use tsconfig.json settings like "outFile": "bundle.js", and set "module": "amd" or "system". Then
-                compile using tsc.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Compile TypeScript</div>
-              <p>Run: tsc filename.ts</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Compile TypeScript file?</div>
-              <p>Use the command:, tsc filename.ts, If using a project, simply run tsc.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Conditional types in TypeScript?</div>
-              <p>Conditional types select type based on condition: T extends U ? X : Y. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Conditional typing.</div>
-              <p>Conditional types evaluate types based on conditions using syntax:, T extends U ? X : Y, Used in mapped
-                types and generics.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">ConstructorParameters<T> utility type?</div>
-              <p>Infers types of constructor parameters of class T. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Contextual typing in TypeScript?</div>
-              <p>Type is inferred from the context, such as function argument or assignment. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Convert .ts to .d.ts.</div>
-              <p>Use tsc --declaration option in compiler settings or CLI. It generates type definition files.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Data types in TypeScript</div>
-              <p>TypeScript has built-in types (string, number, boolean, void, null), and user-defined types (enums,
-                classes, interfaces, and tuples). These enforce type safety at compile time.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Debug TypeScript?</div>
-              <p>Compile TypeScript with sourceMap enabled in tsconfig.json. Debug using browser dev tools, VS Code, or
-                Node with breakpoints mapped to TypeScript instead of generated JavaScript.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Declaration merging in TypeScript?</div>
-              <p>Multiple declarations with same name (interface or namespace) are merged into a single definition. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Declare a class?</div>
-              <p>class Person {, constructor(public name: string) {}, }</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Declare a typed function</div>
-              <p>function add(a: number, b: number): number {, return a + b;, }</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Declare an arrow function in TypeScript?</div>
-              <p>Arrow functions use the => syntax. Example:, const add = (a: number, b: number): number => a + b;, They
-                maintain lexical this binding and provide a concise function expression style.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Decorators in TypeScript?</div>
-              <p>Decorators are annotations for classes, methods, or properties providing metadata or modifying
-                behavior. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Decorators?</div>
-              <p>Decorators are metadata annotations applied to classes, methods, parameters, or properties. They enable
-                features like dependency injection and runtime behavior modification. Common in Angular.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Define a function with optional parameters?</div>
-              <p>Use ? after the parameter name. Example:, function greet(name: string, age?: number) {}, Optional
-                parameters must appear after required ones.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet abstract class and concrete class?</div>
-              <p>Abstract class cannot be instantiated and can have abstract methods; concrete class can be
-                instantiated. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet abstract class and interface?</div>
-              <p>Abstract class can have implementation; interface cannot. Classes can implement multiple interfaces but
-                extend only one abstract class. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet any and unknown?</div>
-              <p>any disables type checking; unknown requires type check before usage. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet const and readonly in TypeScript?</div>
-              <p>const prevents reassignment; readonly prevents property modification after initialization. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet const enum and enum?</div>
-              <p>const enum is inlined at compile-time, reducing generated JS; enum generates an object at runtime. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet export = and export default?</div>
-              <p>export = is compatible with CommonJS; export default is ES6 module default export. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet export and export default?</div>
-              <p>export allows multiple named exports; export default allows one default export per file. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet function overloading in TypeScript and JavaScript?
-              </div>
-              <p>TypeScript allows multiple function signatures; JavaScript does not support overloading natively. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet generic constraints and type parameters?</div>
-              <p>Constraints limit types that can be used; type parameters are placeholders for types. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet import * as and import {}?</div>
-              <p>import * as imports the entire module as an object; import {} imports specific named exports. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet interface and abstract class?</div>
-              <p>Interface only defines structure; abstract class can provide implementation. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet interface and class in TypeScript?</div>
-              <p>Interface defines shape; class defines structure and implementation. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet interface and type alias for object shapes?</div>
-              <p>interface can be extended or merged; type alias cannot be merged but can define unions or tuples. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet interface extending class and class implementing
-                interface?</div>
-              <p>Interface can extend class to inherit public members; class implements interface to enforce structure.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet interface extending interface and class implementing
-                interface?</div>
-              <p>Interface extends interface to inherit shape; class implements interface to enforce implementation.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet interface merging and type alias merging?</div>
-              <p>Interfaces can be merged; type aliases cannot. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet interface with index signature and Record type?</div>
-              <p>Index signature allows flexible keys; Record enforces key-value mapping. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet keyof operator and typeof operator?</div>
-              <p>keyof returns union of keys; typeof returns type of a variable or property. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet literal type and enum?</div>
-              <p>Literal type restricts value to specific literals; enum creates named constants. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet mapped types and conditional types?</div>
-              <p>Mapped types transform existing types; conditional types select types based on conditions. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet namespaces and modules?</div>
-              <p>Namespaces are internal modules; modules are external and use import/export. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet never and void?</div>
-              <p>void represents no return value; never represents no possible value (e.g., function throws). </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet null and undefined in TypeScript?</div>
-              <p>undefined is default uninitialized value; null is explicitly assigned empty value. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet optional chaining and non-null assertion?</div>
-              <p>Optional chaining (?.) safely accesses properties; non-null assertion (!) tells compiler value is not
-                null/undefined. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet optional parameters and default parameters?</div>
-              <p>Optional parameters may be undefined; default parameters have default values if not provided. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet Partial<T> and Required<T>?</div>
-              <p>Partial makes all properties optional; Required makes all properties required. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet private and protected members in class?</div>
-              <p>private accessible only in class; protected accessible in class and subclasses. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet public, private, and protected in TypeScript?</div>
-              <p>public: accessible anywhere; private: accessible within class; protected: accessible in class and
-                subclasses. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet public, private, protected shorthand in constructor?
-              </div>
-              <p>Parameters with access modifiers automatically create properties with visibility. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet readonly and const?</div>
-              <p>const is for variables; readonly is for object properties. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet Readonly<T> and mutable type?</div>
-              <p>Readonly prevents reassignment of properties; mutable allows changes. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet strictNullChecks and noImplicitAny?</div>
-              <p>strictNullChecks enforces null/undefined handling; noImplicitAny enforces explicit typing instead of
-                implicit any. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet structural typing and nominal typing?</div>
-              <p>TypeScript uses structural typing (types compatible if shapes match) instead of nominal typing (based
-                on names). </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet tuple and array in TypeScript?</div>
-              <p>Tuple has fixed length and types; array can have variable length and same type elements. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet tuple with rest elements and regular tuple?</div>
-              <p>Tuple with rest elements allows variable-length elements of specific type at the end. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet type alias and interface for functions?</div>
-              <p>Both can define function types; interface can be merged, type cannot. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet type and interface in TypeScript?</div>
-              <p>type can define unions, intersections, and primitives; interface is mainly for object shapes and can be
-                extended. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet type assertion and type casting in JSX/TSX?</div>
-              <p>Use 'as' syntax for type assertion in TSX instead of angle brackets. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet type assertion and type casting?</div>
-              <p>Type assertion is compile-time only; type casting in other languages may affect runtime. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet type assertion and type casting?</div>
-              <p>Type assertion tells compiler to treat value as type; type casting may also convert runtime value (in
-                other languages). </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet type assertion and type predicate?</div>
-              <p>Type assertion tells compiler type; type predicate defines a function to narrow type (param is Type).
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet TypeScript and JavaScript?</div>
-              <p>TypeScript adds static typing, interfaces, enums, and advanced features; JavaScript is dynamically
-                typed. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet unknown[], any[], and Array<T>?</div>
-              <p>unknown[] enforces type check before usage; any[] disables checks; Array<T> is generic array type. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet void and undefined?</div>
-              <p>void indicates no return value; undefined is a type representing uninitialized variable. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Differences between classes and interfaces.</div>
-              <p>Classes contain implementation, constructors, and runtime behavior. Interfaces define structure only
-                and exist only at compile time.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Disadvantages</div>
-              <p>Compilation required, complexity increases, and sometimes over-strict typing.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Enum in TypeScript?</div>
-              <p>Enum allows defining a set of named constants. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Enums in TypeScript.</div>
-              <p>Enums are used to define named constants in numeric or string form. Example:, enum Role { Admin, User
-                }, They provide readability and maintainability for fixed constant sets.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Exclude<T, U> utility type?</div>
-              <p>Excludes types in U from T. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Explicit variable declaration</div>
-              <p>Explicit typing is done like:, let age: number = 25;</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Extract<T, U> utility type?</div>
-              <p>Extracts types in T that are assignable to U. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Generics in TypeScript?</div>
-              <p>Generics allow creating reusable components that work with multiple types. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Immutable object properties.</div>
-              <p>Yes, using readonly keyword. Example:, readonly id: number;</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">In operator?</div>
-              <p>Used to check if a property exists in an object:, "age" in user;</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Inheritance in TypeScript.</div>
-              <p>Use extends keyword to derive one class from another. It supports method overriding and multiple
-                interfaces.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Inheritance in TypeScript?</div>
-              <p>Classes can extend other classes, inheriting their properties and methods using extends. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">InstanceType<T> utility type?</div>
-              <p>Infers instance type of class constructor T. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Interfaces in TypeScript?</div>
-              <p>Interfaces define object shapes, function signatures, and can be implemented by classes. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Interfaces in TypeScript?</div>
-              <p>Interfaces define the structure of an object, describing properties and method signatures. They support
-                extension, optional properties, and readonly fields. They enforce shape-based type checking.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Intersection type in TypeScript?</div>
-              <p>Intersection type combines multiple types into one: type A = B & C. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Is template literal supported in TypeScript?</div>
-              <p>Yes, TypeScript supports template literals similar to JavaScript. They allow embedding expressions and
-                multi-line strings using backticks (`). They are useful for creating dynamic strings and advanced types
-                like template literal types introduced in TS 4.1.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Is TypeScript strictly statically typed language?</div>
-              <p>TypeScript is gradually typed, not strictly typed. You can enable strict typing mode using compiler
-                options like strict or noImplicitAny. By default, it allows dynamic typing when types are not specified.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Mapped types in TypeScript?</div>
-              <p>Mapped types create new types by transforming properties of existing types. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Mixins.</div>
-              <p>Mixins allow combining behaviors from multiple classes without classical inheritance. They enable
-                reusable functionality sharing.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Modules in TypeScript?</div>
-              <p>Modules are files that export and import code to organize applications. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Modules in TypeScript?</div>
-              <p>Modules help divide code into reusable components using import and export. Each file with an export
-                becomes a module. They improve maintainability and organization.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Namespaces in TypeScript?</div>
-              <p>Namespaces organize code internally, providing scope and preventing global pollution. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Never type in TypeScript?</div>
-              <p>represents values that never occur, e.g., a function that always throws or never returns. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Never type?</div>
-              <p>never represents values that never occur, such as functions that throw errors or never return. Example:
-                function error(message): never { throw new Error(message); }. It ensures unreachable code is type
-                validated.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">NoImplicitAny in TypeScript.</div>
-              <p>noImplicitAny is a compiler setting in tsconfig.json. When enabled, it prevents TypeScript from
-                assigning the type any implicitly. It forces developers to specify explicit types, improving type
-                safety.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">NonNullable<T> utility type?</div>
-              <p>Removes null and undefined from type T. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Omit<T, K> utility type?</div>
-              <p>Creates new type by removing subset of properties K from type T. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">OOP principles supported by TypeScript.</div>
-              <p>TypeScript supports Encapsulation, Inheritance, Abstraction, and Polymorphism through classes,
-                interfaces, and visibility modifiers.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Optional properties</div>
-              <p>Use ? in object type definition:, {name?: string}</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Parameter destructuring in TypeScript.</div>
-              <p>Parameter destructuring extracts object or array values inside function parameters. Example:, function
-                print({name, age}: {name: string, age: number}) {}, It simplifies parameter access and improves
-                readability.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Parameters<T> utility type?</div>
-              <p>Infers parameters type of function T as a tuple. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Pick<T, K> utility type?</div>
-              <p>Creates new type by picking subset of properties K from type T. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Record<K, T> utility type?</div>
-              <p>Creates type with keys K and values of type T. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">ReturnType<T> utility type?</div>
-              <p>Infers return type of function T. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Static typing?</div>
-              <p>Type checking done at compile-time rather than runtime. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Syntax for object</div>
-              <p>let user: {name: string, age: number} = {name: "John", age: 25};</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Syntax of generics?</div>
-              <p>function identity<T>(arg: T): T { return arg; } </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Tuple in TypeScript?</div>
-              <p>Tuple is an array with fixed number of elements and specific types for each element. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Type alias in TypeScript.</div>
-              <p>Type alias assigns a custom name to a type using the type keyword. It can represent primitive, union,
-                object, or function types. Example: type ID = string | number;. It improves readability and reusability
-                in complex type definitions.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Type alias in TypeScript?</div>
-              <p>Type alias gives a name to a type using type keyword. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Type assertion in TypeScript?</div>
-              <p>Type assertion tells the compiler to treat a value as a specific type using <Type> or as syntax. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Type guards in TypeScript?</div>
-              <p>Type guards narrow types using runtime checks like typeof or instanceof. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Type inference in TypeScript?</div>
-              <p>Compiler automatically infers variable types when explicit type is not provided. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Type inference.</div>
-              <p>TypeScript automatically infers types when variables are assigned. Example: let x = 10; infers type
-                number. It reduces required annotations while keeping type safety.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Type null</div>
-              <p>Represents the absence of value. It can be assigned when strict null checks are disabled.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Typeof operator.</div>
-              <p>typeof retrieves the runtime type of a variable. Example: typeof 10 // 'number'. Useful in type
-                narrowing with conditional types.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Types of decorators in TypeScript?</div>
-              <p>Class, property, method, accessor, and parameter decorators. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">TypeScript create static classes?</div>
-              <p>TypeScript doesn’t support true static classes, but a class with all static members behaves similarly.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">TypeScript?</div>
-              <p>TypeScript is a strongly typed superset of JavaScript that compiles to plain JavaScript. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Undefined type</div>
-              <p>Indicates a variable declared but not assigned a value.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Union type in TypeScript?</div>
-              <p>Union type allows a variable to hold one of several types: type A = string | number. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Union types in TypeScript.</div>
-              <p>Union types allow a variable to store more than one data type. They are declared using the | symbol.
-                Example: let value: string | number;. They help create flexible and type-safe code. Union types avoid
-                unnecessary overuse of any.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Unknown type in TypeScript?</div>
-              <p>unknown is safer than any; you must check type before performing operations. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Use class vs interface?</div>
-              <p>Use interfaces for structure definition and type checking. Use classes to create objects with state,
-                methods, and behavior.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Use of tsconfig.json.</div>
-              <p>It configures TypeScript compilation settings such as module system, target JS version, strict rules,
-                include/exclude paths. It controls project-wide compilation behavior.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Use the for loop in TypeScript?</div>
-              <p>You can use for, for...of, for...in, and forEach() loops. for...of iterates values, for...in iterates
-                keys, and forEach() is used for arrays. All work similarly to JavaScript with type safety.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Utility types in TypeScript?</div>
-              <p>Built-in generic types like Partial, Readonly, Pick, Omit, Record, Exclude, Extract. </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Void type</div>
-              <p>Used when a function returns nothing:, function log(): void {}</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Ways to classify modules.</div>
-              <p>Modules are classified into internal (namespace) and external (ES modules). Internal modules use
-                namespace, external modules use import/export.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Ways to control member visibility.</div>
-              <p>Use access modifiers: public, private, protected, and readonly.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Ways to declare variables</div>
-              <p>Variables can be declared using var, let, and const, depending on scope and mutability requirements.
-              </p>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Ambient module declaration? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              declare module 'moduleName' defines types for external libraries without implementation. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Anonymous functions and uses. </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Anonymous functions have no name and are assigned to variables or used as callbacks. Example:, const
+              sum = function(a,b){ return a+b };, They support functional programming and event handling.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Any type in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              any allows a variable to hold values of any type and disables type checking. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Any type? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              any disables type checking and allows storing any value. Useful during migration from JavaScript.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Arrays behavior </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Arrays must use defined element types:, let numbers: number[] = [1,2,3];</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Basic data types in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              number, string, boolean, array, tuple, enum, any, void, null, undefined, never, unknown. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Child class call base constructor? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Yes, using super() inside the child constructor. It must be called before accessing this.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Classes in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Classes are templates for creating objects with properties and methods. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Combine multiple TS files into one JS file. </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Use tsconfig.json settings like "outFile": "bundle.js", and set "module": "amd" or "system". Then
+              compile using tsc.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Compile TypeScript </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Run: tsc filename.ts</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Compile TypeScript file? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Use the command:, tsc filename.ts, If using a project, simply run tsc.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Conditional types in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Conditional types select type based on condition: T extends U ? X : Y. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Conditional typing. </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Conditional types evaluate types based on conditions using syntax:, T extends U ? X : Y, Used in mapped
+              types and generics.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                ConstructorParameters<T> utility type? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Infers types of constructor parameters of class T. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Contextual typing in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Type is inferred from the context, such as function argument or assignment. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Convert .ts to .d.ts. </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Use tsc --declaration option in compiler settings or CLI. It generates type definition files.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Data types in TypeScript </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              TypeScript has built-in types (string, number, boolean, void, null), and user-defined types (enums,
+              classes, interfaces, and tuples). These enforce type safety at compile time.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Debug TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Compile TypeScript with sourceMap enabled in tsconfig.json. Debug using browser dev tools, VS Code, or
+              Node with breakpoints mapped to TypeScript instead of generated JavaScript.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Declaration merging in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Multiple declarations with same name (interface or namespace) are merged into a single definition. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Declare a class? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              class Person {, constructor(public name: string) {}, }</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Declare a typed function </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              function add(a: number, b: number): number {, return a + b;, }</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Declare an arrow function in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Arrow functions use the => syntax. Example:, const add = (a: number, b: number): number => a + b;, They
+              maintain lexical this binding and provide a concise function expression style.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Decorators in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Decorators are annotations for classes, methods, or properties providing metadata or modifying
+              behavior. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Decorators? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Decorators are metadata annotations applied to classes, methods, parameters, or properties. They enable
+              features like dependency injection and runtime behavior modification. Common in Angular.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Define a function with optional parameters? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Use ? after the parameter name. Example:, function greet(name: string, age?: number) {}, Optional
+              parameters must appear after required ones.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet abstract class and concrete class? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Abstract class cannot be instantiated and can have abstract methods; concrete class can be
+              instantiated. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet abstract class and interface? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Abstract class can have implementation; interface cannot. Classes can implement multiple interfaces but
+              extend only one abstract class. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet any and unknown? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              any disables type checking; unknown requires type check before usage. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet const and readonly in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              const prevents reassignment; readonly prevents property modification after initialization. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet const enum and enum? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              const enum is inlined at compile-time, reducing generated JS; enum generates an object at runtime. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet export = and export default? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              export = is compatible with CommonJS; export default is ES6 module default export. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet export and export default? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              export allows multiple named exports; export default allows one default export per file. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet function overloading in TypeScript and JavaScript?
+              </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              TypeScript allows multiple function signatures; JavaScript does not support overloading natively. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet generic constraints and type parameters? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Constraints limit types that can be used; type parameters are placeholders for types. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet import * as and import {}? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              import * as imports the entire module as an object; import {} imports specific named exports. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet interface and abstract class? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Interface only defines structure; abstract class can provide implementation. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet interface and class in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Interface defines shape; class defines structure and implementation. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet interface and type alias for object shapes? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              interface can be extended or merged; type alias cannot be merged but can define unions or tuples. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet interface extending class and class implementing
+                interface? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Interface can extend class to inherit public members; class implements interface to enforce structure.
+            </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet interface extending interface and class implementing
+                interface? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Interface extends interface to inherit shape; class implements interface to enforce implementation.
+            </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet interface merging and type alias merging? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Interfaces can be merged; type aliases cannot. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet interface with index signature and Record type? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Index signature allows flexible keys; Record enforces key-value mapping. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet keyof operator and typeof operator? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              keyof returns union of keys; typeof returns type of a variable or property. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet literal type and enum? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Literal type restricts value to specific literals; enum creates named constants. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet mapped types and conditional types? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Mapped types transform existing types; conditional types select types based on conditions. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet namespaces and modules? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Namespaces are internal modules; modules are external and use import/export. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet never and void? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              void represents no return value; never represents no possible value (e.g., function throws). </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet null and undefined in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              undefined is default uninitialized value; null is explicitly assigned empty value. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet optional chaining and non-null assertion? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Optional chaining (?.) safely accesses properties; non-null assertion (!) tells compiler value is not
+              null/undefined. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet optional parameters and default parameters? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Optional parameters may be undefined; default parameters have default values if not provided. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet Partial<T> and Required<T>? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Partial makes all properties optional; Required makes all properties required. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet private and protected members in class? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              private accessible only in class; protected accessible in class and subclasses. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet public, private, and protected in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              public: accessible anywhere; private: accessible within class; protected: accessible in class and
+              subclasses. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet public, private, protected shorthand in constructor?
+              </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Parameters with access modifiers automatically create properties with visibility. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet readonly and const? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              const is for variables; readonly is for object properties. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet Readonly<T> and mutable type? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Readonly prevents reassignment of properties; mutable allows changes. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet strictNullChecks and noImplicitAny? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              strictNullChecks enforces null/undefined handling; noImplicitAny enforces explicit typing instead of
+              implicit any. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet structural typing and nominal typing? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              TypeScript uses structural typing (types compatible if shapes match) instead of nominal typing (based
+              on names). </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet tuple and array in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Tuple has fixed length and types; array can have variable length and same type elements. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet tuple with rest elements and regular tuple? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Tuple with rest elements allows variable-length elements of specific type at the end. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet type alias and interface for functions? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Both can define function types; interface can be merged, type cannot. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet type and interface in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              type can define unions, intersections, and primitives; interface is mainly for object shapes and can be
+              extended. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet type assertion and type casting in JSX/TSX? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Use 'as' syntax for type assertion in TSX instead of angle brackets. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet type assertion and type casting? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Type assertion is compile-time only; type casting in other languages may affect runtime. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet type assertion and type casting? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Type assertion tells compiler to treat value as type; type casting may also convert runtime value (in
+              other languages). </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet type assertion and type predicate? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Type assertion tells compiler type; type predicate defines a function to narrow type (param is Type).
+            </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet TypeScript and JavaScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              TypeScript adds static typing, interfaces, enums, and advanced features; JavaScript is dynamically
+              typed. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet unknown[], any[], and Array<T>? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              unknown[] enforces type check before usage; any[] disables checks; Array<T> is generic array type. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                DifBet void and undefined? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              void indicates no return value; undefined is a type representing uninitialized variable. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Differences between classes and interfaces. </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Classes contain implementation, constructors, and runtime behavior. Interfaces define structure only
+              and exist only at compile time.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Disadvantages </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Compilation required, complexity increases, and sometimes over-strict typing.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Enum in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Enum allows defining a set of named constants. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Enums in TypeScript. </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Enums are used to define named constants in numeric or string form. Example:, enum Role { Admin, User
+              }, They provide readability and maintainability for fixed constant sets.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Exclude<T, U> utility type? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Excludes types in U from T. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Explicit variable declaration </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Explicit typing is done like:, let age: number = 25;</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Extract<T, U> utility type? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Extracts types in T that are assignable to U. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Generics in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Generics allow creating reusable components that work with multiple types. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Immutable object properties. </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Yes, using readonly keyword. Example:, readonly id: number;</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                In operator? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Used to check if a property exists in an object:, "age" in user;</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Inheritance in TypeScript. </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Use extends keyword to derive one class from another. It supports method overriding and multiple
+              interfaces.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Inheritance in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Classes can extend other classes, inheriting their properties and methods using extends. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                InstanceType<T> utility type? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Infers instance type of class constructor T. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Interfaces in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Interfaces define object shapes, function signatures, and can be implemented by classes. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Interfaces in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Interfaces define the structure of an object, describing properties and method signatures. They support
+              extension, optional properties, and readonly fields. They enforce shape-based type checking.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Intersection type in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Intersection type combines multiple types into one: type A = B & C. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Is template literal supported in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Yes, TypeScript supports template literals similar to JavaScript. They allow embedding expressions and
+              multi-line strings using backticks (`). They are useful for creating dynamic strings and advanced types
+              like template literal types introduced in TS 4.1.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Is TypeScript strictly statically typed language? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              TypeScript is gradually typed, not strictly typed. You can enable strict typing mode using compiler
+              options like strict or noImplicitAny. By default, it allows dynamic typing when types are not specified.
+            </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Mapped types in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Mapped types create new types by transforming properties of existing types. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Mixins. </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Mixins allow combining behaviors from multiple classes without classical inheritance. They enable
+              reusable functionality sharing.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Modules in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Modules are files that export and import code to organize applications. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Modules in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Modules help divide code into reusable components using import and export. Each file with an export
+              becomes a module. They improve maintainability and organization.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Namespaces in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Namespaces organize code internally, providing scope and preventing global pollution. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Never type in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              represents values that never occur, e.g., a function that always throws or never returns. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Never type? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              never represents values that never occur, such as functions that throw errors or never return. Example:
+              function error(message): never { throw new Error(message); }. It ensures unreachable code is type
+              validated.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                NoImplicitAny in TypeScript. </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              noImplicitAny is a compiler setting in tsconfig.json. When enabled, it prevents TypeScript from
+              assigning the type any implicitly. It forces developers to specify explicit types, improving type
+              safety.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                NonNullable<T> utility type? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Removes null and undefined from type T. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Omit<T, K> utility type? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Creates new type by removing subset of properties K from type T. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                OOP principles supported by TypeScript. </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              TypeScript supports Encapsulation, Inheritance, Abstraction, and Polymorphism through classes,
+              interfaces, and visibility modifiers.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Optional properties </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Use ? in object type definition:, {name?: string}</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Parameter destructuring in TypeScript. </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Parameter destructuring extracts object or array values inside function parameters. Example:, function
+              print({name, age}: {name: string, age: number}) {}, It simplifies parameter access and improves
+              readability.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Parameters<T> utility type? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Infers parameters type of function T as a tuple. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Pick<T, K> utility type? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Creates new type by picking subset of properties K from type T. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Record<K, T> utility type? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Creates type with keys K and values of type T. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                ReturnType<T> utility type? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Infers return type of function T. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Static typing? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Type checking done at compile-time rather than runtime. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Syntax for object </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              let user: {name: string, age: number} = {name: "John", age: 25};</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Syntax of generics? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              function identity<T>(arg: T): T { return arg; } </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Tuple in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Tuple is an array with fixed number of elements and specific types for each element. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Type alias in TypeScript. </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Type alias assigns a custom name to a type using the type keyword. It can represent primitive, union,
+              object, or function types. Example: type ID = string | number;. It improves readability and reusability
+              in complex type definitions.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Type alias in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Type alias gives a name to a type using type keyword. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Type assertion in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Type assertion tells the compiler to treat a value as a specific type using <Type> or as syntax. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Type guards in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Type guards narrow types using runtime checks like typeof or instanceof. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Type inference in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Compiler automatically infers variable types when explicit type is not provided. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Type inference. </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              TypeScript automatically infers types when variables are assigned. Example: let x = 10; infers type
+              number. It reduces required annotations while keeping type safety.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Type null </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Represents the absence of value. It can be assigned when strict null checks are disabled.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Typeof operator. </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              typeof retrieves the runtime type of a variable. Example: typeof 10 // 'number'. Useful in type
+              narrowing with conditional types.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Types of decorators in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Class, property, method, accessor, and parameter decorators. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                TypeScript create static classes? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              TypeScript doesn’t support true static classes, but a class with all static members behaves similarly.
+            </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              TypeScript is a strongly typed superset of JavaScript that compiles to plain JavaScript. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Undefined type </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Indicates a variable declared but not assigned a value.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Union type in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Union type allows a variable to hold one of several types: type A = string | number. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Union types in TypeScript. </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Union types allow a variable to store more than one data type. They are declared using the | symbol.
+              Example: let value: string | number;. They help create flexible and type-safe code. Union types avoid
+              unnecessary overuse of any.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Unknown type in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              unknown is safer than any; you must check type before performing operations. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Use class vs interface? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Use interfaces for structure definition and type checking. Use classes to create objects with state,
+              methods, and behavior.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Use of tsconfig.json. </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              It configures TypeScript compilation settings such as module system, target JS version, strict rules,
+              include/exclude paths. It controls project-wide compilation behavior.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Use the for loop in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              You can use for, for...of, for...in, and forEach() loops. for...of iterates values, for...in iterates
+              keys, and forEach() is used for arrays. All work similarly to JavaScript with type safety.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Utility types in TypeScript? </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Built-in generic types like Partial, Readonly, Pick, Omit, Record, Exclude, Extract. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Void type </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Used when a function returns nothing:, function log(): void {}</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Ways to classify modules. </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Modules are classified into internal (namespace) and external (ES modules). Internal modules use
+              namespace, external modules use import/export.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Ways to control member visibility. </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Use access modifiers: public, private, protected, and readonly.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>
+                Ways to declare variables </span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">
+              Variables can be declared using var, let, and const, depending on scope and mutability requirements.
             </div>
           </div>
 

@@ -28,691 +28,443 @@
       border: none;
       background: #fff;
     }
+
     /* Modal Overlay */
-  .modal {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.7);
-    z-index: 999;
-  }
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 999;
+    }
 
-  /* Modal Content */
-  .modal-content {
-    position: relative;
-    width: 90%;
-    height: 90%;
-    margin: 3% auto;
-    background: #fff;
-    border-radius: 6px;
-    overflow: hidden;
-  }
+    /* Modal Content */
+    .modal-content {
+      position: relative;
+      width: 90%;
+      height: 90%;
+      margin: 3% auto;
+      background: #fff;
+      border-radius: 6px;
+      overflow: hidden;
+    }
 
-  /* Close Button */
-  .close {
-    position: absolute;
-    top: 8px;
-    right: 14px;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-    color: #333;
-    z-index: 10;
-  }
+    /* Close Button */
+    .close {
+      position: absolute;
+      top: 8px;
+      right: 14px;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #333;
+      z-index: 10;
+    }
   </style>
 </head>
 
 <body class="index-page Custombody">
   <div id="nav-placeholder"></div>
-  <script>
-    fetch("nav.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
-      });
-  </script>
+
   <main class="main">
 
     <section class="section Custombody">
       <div class="container section-title" data-aos="fade-up">
-        <h2 style="color:#fff;">🧠 Architecture & Design</h2>
+        <h2 style="color:#fff;">Topics </h2>
       </div>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-3">
-
-          <div class="card-grid col-md-3"><a href="architecture.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Architecture</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="microservices-architecture.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Microservices Architecture</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="advanced-microservices-architecture-images.html"
-              style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Advanced Microservices Architecture Images</div>
-              </div>
-            </a></div>
-          <div class="card-grid col-md-3"><a
-              href="advanced-principal-architect-interview-guide-dotnet-azure-images.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Advanced Principal Architect Interview Guide DotNet Azure Images</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="api-first-architecture.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">API First Architecture</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="clean-architecture.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Clean Architecture</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="scalable-solution-design.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Scalable Solution Design</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="scalable-maintainable-design-patterns.html"
-              style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Scalable & Maintainable Design Patterns</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="design-pattern.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Design Pattern</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="ddd-domain-driven-design.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">DDD (Domain-Driven Design)</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="solid-principles.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">SOLID Principles</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="architecture-documentation-diagrams.html"
-              style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Architecture Documentation & Diagrams</div>
-              </div>
-            </a></div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="section Custombody">
-      <div class="container section-title" data-aos="fade-up">
-        <h2 style="color:#fff;">🔌 API & Integration Technologies</h2>
-      </div>
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-3">
-
-          <div class="card-grid col-md-3"><a href="apis.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">APIs</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="restful-apis.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">RESTful APIs</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="web-api.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Web API</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="graphql.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">GraphQL</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="webhook.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Webhook</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="payment-gateways.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Payment Gateways</div>
-              </div>
-            </a></div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="section Custombody">
-      <div class="container section-title" data-aos="fade-up">
-        <h2 style="color:#fff;">☁️ Cloud & Microsoft Azure</h2>
-      </div>
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-3">
-
-          <div class="card-grid col-md-3"><a href="microsoft-azure.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Microsoft Azure</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="azure-app-services.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Azure App Services</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="azure-functions.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Azure Functions</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="azure-devops.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Azure DevOps</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="azure-devops-azure-pipelines.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Azure DevOps (Azure Pipelines)</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="azure-repos.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Azure Repos</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="azure-service-bus.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Azure Service Bus</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="azure-key-vault.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Azure Key Vault</div>
-              </div>
-            </a></div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="section Custombody">
-      <div class="container section-title" data-aos="fade-up">
-        <h2 style="color:#fff;">⚙️ DevOps, CI/CD & Automation</h2>
-      </div>
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-3">
-
-          <div class="card-grid col-md-3"><a href="ci-cd.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">CI/CD</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="jenkins.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Jenkins</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="gitlab-ci-cd.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">GitHub Actions</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="git-tags-releases.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">GitLab CI/CD</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="teamcity.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">TeamCity</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="terraform.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Terraform</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="docker.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Docker</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="kubernet.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Kubernet</div>
-              </div>
-            </a></div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="section Custombody">
-      <div class="container section-title" data-aos="fade-up">
-        <h2 style="color:#fff;">🧑‍💻 Programming Languages & Frameworks</h2>
-      </div>
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-3">
-
-          <div class="card-grid col-md-3"><a href="dot-net-core.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">.NET Core</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="c#.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">C#</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="wcf.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">WCF</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="wpf.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">WPF</div>
-              </div>
-            </a></div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="section Custombody">
-      <div class="container section-title" data-aos="fade-up">
-        <h2 style="color:#fff;">🌐 Frontend Technologies</h2>
-      </div>
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-3">
-
-          <div class="card-grid col-md-3"><a href="angular.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Angular</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="react.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">React</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="javscript-jquery-ajax.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">JavScript, jQuery & AJAX</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="typescript.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">TypeScript</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="node.js.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Node.js</div>
-              </div>
-            </a></div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="section Custombody">
-      <div class="container section-title" data-aos="fade-up">
-        <h2 style="color:#fff;">🗄️ Databases & Data Access</h2>
-      </div>
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-3">
-
-          <div class="card-grid col-md-3"><a href="sql.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">SQL</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="sql-server.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">SQL Server</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="postgresql.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">PostgreSQL</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="mongodb.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">MongoDB</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="entity-framework.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Entity Framework</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="ado.net.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">ADO.NET</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="linq.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">LINQ</div>
-              </div>
-            </a></div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="section Custombody">
-      <div class="container section-title" data-aos="fade-up">
-        <h2 style="color:#fff;">🔐 Security</h2>
-      </div>
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-3">
-
-          <div class="card-grid col-md-3"><a href="authorisation-cloud-security.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Authorisation Cloud Security</div>
-              </div>
-            </a></div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="section Custombody">
-      <div class="container section-title" data-aos="fade-up">
-        <h2 style="color:#fff;">📊 Monitoring, Performance & Quality</h2>
-      </div>
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-3">
-
-          <div class="card-grid col-md-3"><a href="loging-monitoring.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Loging & Monitoring</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="performence-optimization.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Performence Optimization</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="code-reviews.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Code Reviews</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="top-100-iqa.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Top 100 IQA</div>
+          <div class="col-md-6">
+            <div class="faq-item active">
+              <div class="faq-question"><span>
+                  <h5 style="color:#fff;">🧠 Architecture & Design</h5>
+                </span>
+                <div class="icon">+</div>
+              </div>
+              <div class="faq-answer" style="padding: 0 20px 0 45px;">
+                <p><a href="architecture.html" style="color: antiquewhite;"> Architecture </a></p>
+
+                <p><a href="microservices-architecture.html" style="color: antiquewhite;">Microservices Architecture
+                  </a></p>
+                <p><a href="advanced-microservices-architecture-images.html" style="color: antiquewhite;">Advanced
+                    Microservices Architecture Images
+                  </a></p>
+                <p><a href="advanced-principal-architect-interview-guide-dotnet-azure-images.html"
+                    style="color: antiquewhite;">Advanced Principal Architect Interview Guide DotNet Azure Images
+                  </a></p>
+                <p><a href="api-first-architecture.html" style="color: antiquewhite;">API First Architecture
+                  </a></p>
+                <p><a href="clean-architecture.html" style="color: antiquewhite;">Clean Architecture
+                  </a></p>
+                <p><a href="scalable-solution-design.html" style="color: antiquewhite;">Scalable Solution Design
+                  </a></p>
+                <p><a href="scalable-maintainable-design-patterns.html" style="color: antiquewhite;">Scalable &
+                    Maintainable Design Patterns
+                  </a></p>
+                <p><a href="design-pattern.html" style="color: antiquewhite;">Design Pattern
+                  </a></p>
+                <p><a href="ddd-domain-driven-design.html" style="color: antiquewhite;">DDD (Domain-Driven Design)
+                  </a></p>
+                <p><a href="solid-principles.html" style="color: antiquewhite;">SOLID Principles
+                  </a></p>
+                <p><a href="architecture-documentation-diagrams.html" style="color: antiquewhite;">Architecture
+                    Documentation & Diagrams
+                  </a></p>
               </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="visio-qa.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Visio QA</div>
-              </div>
-            </a></div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="section Custombody">
-      <div class="container section-title" data-aos="fade-up">
-        <h2 style="color:#fff;">🔧 Version Control & Collaboration</h2>
-      </div>
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-3">
-
-          <div class="card-grid col-md-3"><a href="git.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Git</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="github.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Git Operations</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="github-actions.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Git Tags & Releases</div>
-              </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="gitlab.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">GitHub</div>
+            </div>
+
+            <div class="faq-item active">
+              <div class="faq-question"><span>
+                  <h5 style="color:#fff;">API & Integration Technologies</h5>
+                </span>
+                <div class="icon">+</div>
               </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="git-operations.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">GitLab</div>
+              <div class="faq-answer" style="padding: 0 20px 0 45px;">
+
+                <p><a href="apis.html" style="color: antiquewhite;">
+                    APIs</a></p>
+
+                <p><a href="restful-apis.html" style="color: antiquewhite;">
+                    RESTful APIs</a></p>
+
+                <p><a href="web-api.html" style="color: antiquewhite;">
+                    Web API</a></p>
+
+                <p><a href="graphql.html" style="color: antiquewhite;">
+                    GraphQL</a></p>
+
+                <p><a href="webhook.html" style="color: antiquewhite;">
+                    Webhook</a></p>
+
+                <p><a href="payment-gateways.html" style="color: antiquewhite;">
+                    Payment Gateways</a></p>
+
               </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="bitbucket.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Bitbucket</div>
+            </div>
+
+            <div class="faq-item active">
+              <div class="faq-question"><span>
+                  <h5 style="color:#fff;">☁️ Cloud & Microsoft Azure</h5>
+                </span>
+                <div class="icon">+</div>
               </div>
-            </a></div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="section Custombody">
-      <div class="container section-title" data-aos="fade-up">
-        <h2 style="color:#fff;">🧩 Development Practices & Methodologies</h2>
-      </div>
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-3">
-
-          <div class="card-grid col-md-3"><a href="agile-methodology.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Agile methodology</div>
+              <div class="faq-answer" style="padding: 0 20px 0 45px;">
+
+                <p><a href="microsoft-azure.html" style="color: antiquewhite;">
+                    Microsoft Azure</a></p>
+
+                <p><a href="azure-app-services.html" style="color: antiquewhite;">
+                    Azure App Services</a></p>
+
+                <p><a href="azure-functions.html" style="color: antiquewhite;">
+                    Azure Functions</a></p>
+
+                <p><a href="azure-devops.html" style="color: antiquewhite;">
+                    Azure DevOps</a></p>
+
+                <p><a href="azure-devops-azure-pipelines.html" style="color: antiquewhite;">
+                    Azure DevOps (Azure Pipelines)</a></p>
+
+                <p><a href="azure-repos.html" style="color: antiquewhite;">
+                    Azure Repos</a></p>
+
+                <p><a href="azure-service-bus.html" style="color: antiquewhite;">
+                    Azure Service Bus</a></p>
+
+                <p><a href="azure-key-vault.html" style="color: antiquewhite;">
+                    Azure Key Vault</a></p>
+
               </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="oop.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">OOP</div>
+            </div>
+
+            <div class="faq-item active">
+              <div class="faq-question"><span>
+                  <h5 style="color:#fff;">⚙️ DevOps, CI/CD & Automation</h5>
+                </span>
+                <div class="icon">+</div>
               </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="technical-leadership-mentoring.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Technical Leadership & Mentoring</div>
+              <div class="faq-answer" style="padding: 0 20px 0 45px;">
+
+                <p><a href="ci-cd.html" style="color: antiquewhite;">
+                    CI/CD</a></p>
+
+                <p><a href="jenkins.html" style="color: antiquewhite;">
+                    Jenkins</a></p>
+
+                <p><a href="gitlab-ci-cd.html" style="color: antiquewhite;">
+                    GitHub Actions</a></p>
+
+                <p><a href="git-tags-releases.html" style="color: antiquewhite;">
+                    GitLab CI/CD</a></p>
+
+                <p><a href="teamcity.html" style="color: antiquewhite;">
+                    TeamCity</a></p>
+
+                <p><a href="terraform.html" style="color: antiquewhite;">
+                    Terraform</a></p>
+
+                <p><a href="docker.html" style="color: antiquewhite;">
+                    Docker</a></p>
+
+                <p><a href="kubernet.html" style="color: antiquewhite;">
+                    Kubernet</a></p>
+
               </div>
-            </a></div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="section Custombody">
-      <div class="container section-title" data-aos="fade-up">
-        <h2 style="color:#fff;">📐 Diagramming,Documentation Tools & CRM</h2>
-      </div>
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-3">
-
-          <div class="card-grid col-md-3"><a href="draw.io-lucidchart.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Draw.io / Lucidchart</div>
+            </div>
+
+            <div class="faq-item active">
+              <div class="faq-question"><span>
+                  <h5 style="color:#fff;">🧑‍💻 Programming Languages & Frameworks</h5>
+                </span>
+                <div class="icon">+</div>
               </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="creatio-crm.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Creatio CRM</div>
+              <div class="faq-answer" style="padding: 0 20px 0 45px;">
+
+                <p><a href="dot-net-core.html" style="color: antiquewhite;">
+                    .NET Core</a></p>
+
+                <p><a href="c#.html" style="color: antiquewhite;">
+                    C#</a></p>
+
+                <p><a href="wcf.html" style="color: antiquewhite;">
+                    WCF</a></p>
+
+                <p><a href="wpf.html" style="color: antiquewhite;">
+                    WPF</a></p>
+
               </div>
-            </a></div>
-
-          <div class="card-grid col-md-3"><a href="umbraco-cms.html" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Umbraco CMS</div>
+            </div>
+
+            <div class="faq-item active">
+              <div class="faq-question"><span>
+                  <h5 style="color:#fff;">🌐 Frontend Technologies</h5>
+                </span>
+                <div class="icon">+</div>
               </div>
-            </a></div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="section Custombody">
-      <div class="container section-title" data-aos="fade-up">
-        <h2 style="color:#fff;">🧩IQAs PDF</h2>
-      </div>
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-3">
-
-          <div class="card-grid col-md-3"><span  onclick="openPdf(this)" data-pdf="assets/pdf/100+-devops-essential-concepts.pdf" style="color: antiquewhite;" >
-              <div style="padding: 0px;">
-                <div class="topic-pill">100+ Devops Essential Concepts </div>
+              <div class="faq-answer" style="padding: 0 20px 0 45px;">
+
+                <p><a href="angular.html" style="color: antiquewhite;">
+                    Angular</a></p>
+
+                <p><a href="react.html" style="color: antiquewhite;">
+                    React</a></p>
+
+                <p><a href="javscript-jquery-ajax.html" style="color: antiquewhite;">
+                    JavScript, jQuery & AJAX</a></p>
+
+                <p><a href="typescript.html" style="color: antiquewhite;">
+                    TypeScript</a></p>
+
+                <p><a href="node.js.html" style="color: antiquewhite;">
+                    Node.js</a></p>
+                <p><a href="webhook.html" style="color: antiquewhite;">
+                    Webhook</a></p>
               </div>
-            </span></div>
-          <div class="card-grid col-md-3"><span onclick="openPdf(this)" data-pdf="assets/pdf/api-gateways-explained.pdf" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Api Gateways Explained.pdf</div>
+            </div>
+ </div>
+          <div class="col-md-6">
+            <div class="faq-item active">
+              <div class="faq-question"><span>
+                  <h5 style="color:#fff;">🗄️ Databases & Data Access</h5>
+                </span>
+                <div class="icon">+</div>
               </div>
-            </button></div>
-          <div class="card-grid col-md-3"><span   onclick="openPdf(this)" data-pdf="assets/pdf/bash.pdf" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Bash</div>
+              <div class="faq-answer" style="padding: 0 20px 0 45px;">
+
+                <p><a href="sql.html" style="color: antiquewhite;">
+                    SQL</a></p>
+
+                <p><a href="sql-server.html" style="color: antiquewhite;">
+                    SQL Server</a></p>
+
+                <p><a href="postgresql.html" style="color: antiquewhite;">
+                    PostgreSQL</a></p>
+
+                <p><a href="mongodb.html" style="color: antiquewhite;">
+                    MongoDB</a></p>
+
+                <p><a href="entity-framework.html" style="color: antiquewhite;">
+                    Entity Framework</a></p>
+
+                <p><a href="ado.net.html" style="color: antiquewhite;">
+                    ADO.NET</a></p>
+
+                <p><a href="linq.html" style="color: antiquewhite;">
+                    LINQ</a></p>
+
               </div>
-            </span></div>
-          <div class="card-grid col-md-3"><span onclick="openPdf(this)" data-pdf="assets/pdf/devops-commands.pdf" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Devops Commands </div>
+            </div>
+
+            <div class="faq-item active">
+              <div class="faq-question"><span>
+                  <h5 style="color:#fff;">🔐 Security</h5>
+                </span>
+                <div class="icon">+</div>
               </div>
-            </span></div>
-          <div class="card-grid col-md-3"><span onclick="openPdf(this)" data-pdf="assets/pdf/devops-interview-questions.pdf" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Devops Interview Questions </div>
+              <div class="faq-answer" style="padding: 0 20px 0 45px;">
+
+                <p><a href="authorisation-cloud-security.html" style="color: antiquewhite;">
+                    Authorisation Cloud Security</a></p>
+
               </div>
-            </span></div>
+            </div>
          
-          <div class="card-grid col-md-3"><span onclick="openPdf(this)" data-pdf="assets/pdf/devops.pdf" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Devops</div>
+            <div class="faq-item active">
+              <div class="faq-question"><span>
+                  <h5 style="color:#fff;">📊 Monitoring, Performance & Quality</h5>
+                </span>
+                <div class="icon">+</div>
               </div>
-            </span></div>
-          <div class="card-grid col-md-3"><span onclick="openPdf(this)" data-pdf="assets/pdf/docker.pdf" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Docker</div>
-              </div>
-            </span></div>
-          <div class="card-grid col-md-3"><span onclick="openPdf(this)" data-pdf="assets/pdf/kubernetes.pdf" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Kubernetes </div>
-              </div>
-            </span></div>
-          <div class="card-grid col-md-3"><span onclick="openPdf(this)" data-pdf="assets/pdf/kubernetes-commands.pdf" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Kubernetes Commands </div>
-              </div>
-            </span></div>
-          <div class="card-grid col-md-3"><span onclick="openPdf(this)" data-pdf="assets/pdf/llms.pdf" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Llms</div>
-              </div>
-            </span></div>
-          <div class="card-grid col-md-3"><span onclick="openPdf(this)" data-pdf="assets/pdf/prometheus-notes.pdf" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Prometheus Notes</div>
-              </div>
-            </span></div>
-          <div class="card-grid col-md-3"><span onclick="openPdf(this)" data-pdf="assets/pdf/security-basics.pdf" style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Security Basics </div>
-              </div>
-            </span></div>
-          <div class="card-grid col-md-3"><span onclick="openPdf(this)" data-pdf="assets/pdf/techzone-iv-principal-ma'am-greetings.pdf"
-              style="color: antiquewhite;">
-              <div style="padding: 0px;">
-                <div class="topic-pill">Techzone Iv Principal Ma'am Greetings</div>
-              </div>
-            </button></div>
+              <div class="faq-answer" style="padding: 0 20px 0 45px;">
 
+                <p><a href="loging-monitoring.html" style="color: antiquewhite;">
+                    Loging & Monitoring</a></p>
 
+                <p><a href="performence-optimization.html" style="color: antiquewhite;">
+                    Performence Optimization</a></p>
 
+                <p><a href="code-reviews.html" style="color: antiquewhite;">
+                    Code Reviews</a></p>
 
+                <p><a href="top-100-iqa.html" style="color: antiquewhite;">
+                    Top 100 IQA</a></p>
+
+                <p><a href="visio-qa.html" style="color: antiquewhite;">
+                    Visio QA</a></p>
+
+              </div>
+            </div>
+
+            <div class="faq-item active">
+              <div class="faq-question"><span>
+                  <h5 style="color:#fff;">🔧 Version Control & Collaboration</h5>
+                </span>
+                <div class="icon">+</div>
+              </div>
+              <div class="faq-answer" style="padding: 0 20px 0 45px;">
+
+                <p><a href="git.html" style="color: antiquewhite;">
+                    Git</a></p>
+
+                <p><a href="github.html" style="color: antiquewhite;">
+                    Git Operations</a></p>
+
+                <p><a href="github-actions.html" style="color: antiquewhite;">
+                    Git Tags & Releases</a></p>
+
+                <p><a href="gitlab.html" style="color: antiquewhite;">
+                    GitHub</a></p>
+
+                <p><a href="git-operations.html" style="color: antiquewhite;">
+                    GitLab</a></p>
+
+                <p><a href="bitbucket.html" style="color: antiquewhite;">
+                    Bitbucket</a></p>
+
+              </div>
+            </div>
+
+            <div class="faq-item active">
+              <div class="faq-question"><span>
+                  <h5 style="color:#fff;">🧩 Development Practices & Methodologies</h5>
+                </span>
+                <div class="icon">+</div>
+              </div>
+              <div class="faq-answer" style="padding: 0 20px 0 45px;">
+
+                <p><a href="agile-methodology.html" style="color: antiquewhite;">
+                    Agile methodology</a></p>
+
+                <p><a href="oop.html" style="color: antiquewhite;">
+                    OOP</a></p>
+
+                <p><a href="technical-leadership-mentoring.html" style="color: antiquewhite;">
+                    Technical Leadership & Mentoring</a></p>
+
+              </div>
+            </div>
+
+            <div class="faq-item active">
+              <div class="faq-question"><span>
+                  <h5 style="color:#fff;">📐 Diagramming,Documentation Tools & CRM</h5>
+                </span>
+                <div class="icon">+</div>
+              </div>
+              <div class="faq-answer" style="padding: 0 20px 0 45px;">
+
+                <p><a href="draw.io-lucidchart.html" style="color: antiquewhite;">
+                    Draw.io / Lucidchart</a></p>
+
+                <p><a href="creatio-crm.html" style="color: antiquewhite;">
+                    Creatio CRM</a></p>
+
+                <p><a href="umbraco-cms.html" style="color: antiquewhite;">
+                    Umbraco CMS</a></p>
+
+              </div>
+            </div>
+
+            <div class="faq-item active">
+              <div class="faq-question"><span>
+                  <h5 style="color:#fff;">🧩IQAs PDF</h5>
+                </span>
+                <div class="icon">+</div>
+              </div>
+              <div class="faq-answer" style="padding: 0 20px 0 45px;">
+
+                <p><span onclick="openPdf(this)" data-pdf="assets/pdf/100+-devops-essential-concepts.pdf"
+                    style="color: antiquewhite;">
+                    100+ Devops Essential Concepts</span></p>
+
+                <p><span onclick="openPdf(this)" data-pdf="assets/pdf/api-gateways-explained.pdf"
+                    style="color: antiquewhite;">
+                    Api Gateways Explained.pdf</span></p>
+                <p><span onclick="openPdf(this)" data-pdf="assets/pdf/bash.pdf" style="color: antiquewhite;">
+                    Bash</span></p>
+                <p><span onclick="openPdf(this)" data-pdf="assets/pdf/devops-commands.pdf" style="color: antiquewhite;">
+                    Devops Commands </span></p>
+                <p><span onclick="openPdf(this)" data-pdf="assets/pdf/devops-interview-questions.pdf"
+                    style="color: antiquewhite;">
+                    Devops Interview Questions </span></p>
+
+                <p><span onclick="openPdf(this)" data-pdf="assets/pdf/devops.pdf" style="color: antiquewhite;">
+                    Devops</span></p>
+                <p><span onclick="openPdf(this)" data-pdf="assets/pdf/docker.pdf" style="color: antiquewhite;">
+                    Docker</span></p>
+                <p><span onclick="openPdf(this)" data-pdf="assets/pdf/kubernetes.pdf" style="color: antiquewhite;">
+                    Kubernetes </span></p>
+                <p><span onclick="openPdf(this)" data-pdf="assets/pdf/kubernetes-commands.pdf"
+                    style="color: antiquewhite;">
+                    Kubernetes Commands </span></p>
+                <p><span onclick="openPdf(this)" data-pdf="assets/pdf/llms.pdf" style="color: antiquewhite;">
+                    Llms</span></p>
+                <p><span onclick="openPdf(this)" data-pdf="assets/pdf/prometheus-notes.pdf"
+                    style="color: antiquewhite;">
+                    Prometheus Notes</span></p>
+                <p><span onclick="openPdf(this)" data-pdf="assets/pdf/security-basics.pdf" style="color: antiquewhite;">
+                    Security Basics </span></p>
+                <p><span onclick="openPdf(this)" data-pdf="assets/pdf/techzone-iv-principal-ma'am-greetings.pdf"
+                    style="color: antiquewhite;">
+                    Techzone Iv Principal Ma'am Greetings</span></p>
+
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+
     </section>
     <!-- Modal -->
-<div id="pdfModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closePdf()">&times;</span>
-    <iframe id="pdfFrame"></iframe>
-  </div>
-</div>
+    <div id="pdfModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closePdf()">&times;</span>
+        <iframe id="pdfFrame"></iframe>
+      </div>
+    </div>
   </main>
   <div id="footer-placeholder"></div>
-  <script>
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
@@ -741,25 +493,25 @@
   <script>
 
     function openPdf(btn) {
-    const pdfUrl = btn.getAttribute("data-pdf");
-    const iframe = document.getElementById("pdfFrame");
+      const pdfUrl = btn.getAttribute("data-pdf");
+      const iframe = document.getElementById("pdfFrame");
 
-    iframe.src = pdfUrl + "#toolbar=0&navpanes=0";
-    document.getElementById("pdfModal").style.display = "block";
-  }
-
-  function closePdf() {
-    document.getElementById("pdfFrame").src = "";
-    document.getElementById("pdfModal").style.display = "none";
-  }
-
-  // Close modal when clicking outside
-  window.onclick = function(e) {
-    const modal = document.getElementById("pdfModal");
-    if (e.target === modal) {
-      closePdf();
+      iframe.src = pdfUrl + "#toolbar=0&navpanes=0";
+      document.getElementById("pdfModal").style.display = "block";
     }
-  };
+
+    function closePdf() {
+      document.getElementById("pdfFrame").src = "";
+      document.getElementById("pdfModal").style.display = "none";
+    }
+
+    // Close modal when clicking outside
+    window.onclick = function (e) {
+      const modal = document.getElementById("pdfModal");
+      if (e.target === modal) {
+        closePdf();
+      }
+    };
 
     let lastFocusedElement = null;
     let lastScrollPosition = 0;

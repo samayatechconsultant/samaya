@@ -34,13 +34,7 @@
 <body class="index-page Custombody">
   <!-- nav.html -->
   <div id="nav-placeholder"></div>
-  <script>
-    fetch("nav.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
-      });
-  </script>
+
   <main class="main">
     <!-- Hero Section -->
     <!-- About Section -->
@@ -53,64 +47,69 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-3">
 
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Agent pool?</div>
-              <p>A collection of machines where pipeline jobs are executed.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Agent pool?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">A collection of machines where pipeline jobs are executed.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Artifacts in Azure DevOps?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Build outputs stored for deployment, sharing, or consumption in releases.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Azure DevOps?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">A cloud-based DevOps platform with boards, repos, pipelines, artifacts, and test
+              plans.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Azure Pipelines?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">CI/CD service in Azure DevOps for building, testing, and deploying applications.
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Artifacts in Azure DevOps?</div>
-              <p>Build outputs stored for deployment, sharing, or consumption in releases.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DiffBet Classic and YAML pipelines?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Classic uses a visual editor; YAML pipelines are code-based and versioned in the
+              repo.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Azure DevOps?</div>
-              <p>A cloud-based DevOps platform with boards, repos, pipelines, artifacts, and test plans.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Handle secrets in Azure Pipelines?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Use Azure Key Vault integration or pipeline variables marked as secret.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Azure Pipelines?</div>
-              <p>CI/CD service in Azure DevOps for building, testing, and deploying applications.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Release pipeline?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Defines deployment to multiple environments with approvals, gates, and artifact
+              consumption.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DiffBet Classic and YAML pipelines?</div>
-              <p>Classic uses a visual editor; YAML pipelines are code-based and versioned in the repo.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Schedule pipelines in Azure DevOps?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Use triggers like scheduled pipelines with CRON expressions.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Handle secrets in Azure Pipelines?</div>
-              <p>Use Azure Key Vault integration or pipeline variables marked as secret.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Stages in Azure Pipelines?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Logical phases like Build, Test, and Deploy, which contain jobs and tasks.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Release pipeline?</div>
-              <p>Defines deployment to multiple environments with approvals, gates, and artifact consumption.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Task in Azure Pipeline?</span>
+              <div class="icon">+</div>
             </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Schedule pipelines in Azure DevOps?</div>
-              <p>Use triggers like scheduled pipelines with CRON expressions.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Stages in Azure Pipelines?</div>
-              <p>Logical phases like Build, Test, and Deploy, which contain jobs and tasks.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Task in Azure Pipeline?</div>
-              <p>Predefined operations like build, deploy, test, or script execution within a job.</p>
+            <div class="faq-answer">Predefined operations like build, deploy, test, or script execution within a job.
             </div>
           </div>
 
@@ -121,13 +120,7 @@
     </section>
   </main>
   <div id="footer-placeholder"></div>
-  <script>
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i

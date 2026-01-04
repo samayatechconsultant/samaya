@@ -34,13 +34,7 @@
 <body class="index-page Custombody">
   <!-- nav.html -->
   <div id="nav-placeholder"></div>
-  <script>
-    fetch("nav.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
-      });
-  </script>
+
   <main class="main">
     <!-- Hero Section -->
     <!-- About Section -->
@@ -53,684 +47,715 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-3">
 
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Branching in git?</div>
-              <p>Branching allows multiple lines of development in the same repo. It enables feature development without
-                affecting the main branch.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Branching in git?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Branching allows multiple lines of development in the same repo. It enables feature
+              development without
+              affecting the main branch.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Conflict in git?</div>
-              <p>A conflict occurs when multiple changes in the same file/line cannot be merged automatically. Manual
-                resolution is required.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Conflict in git?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A conflict occurs when multiple changes in the same file/line cannot be merged
+              automatically. Manual
+              resolution is required.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Detached head in git?</div>
-              <p>Detached HEAD occurs when HEAD points directly to a commit not a branch. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Detached head in git?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Detached HEAD occurs when HEAD points directly to a commit not a branch. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet a local and a remote repository?</div>
-              <p>Local repository exists on your machine; remote repository exists on a server (like GitHub) for
-                collaboration. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet a local and a remote repository?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Local repository exists on your machine; remote repository exists on a server (like
+              GitHub) for
+              collaboration. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet feature branch and main/master branch?</div>
-              <p>Feature branch is for new work; main/master is stable production-ready code.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet feature branch and main/master branch?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Feature branch is for new work; main/master is stable production-ready code.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet git and svn?</div>
-              <p>Git is distributed allowing full local repositories and offline work; SVN is centralized and requires
-                server access for most operations. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet git and svn?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git is distributed allowing full local repositories and offline work; SVN is
+              centralized and requires
+              server access for most operations. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet git fetch and git pull?</div>
-              <p>Git fetch downloads updates from remote but doesn’t merge; Git pull downloads and merges changes. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet git fetch and git pull?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git fetch downloads updates from remote but doesn’t merge; Git pull downloads and
+              merges changes. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet git fetch and git pull?</div>
-              <p>git fetch downloads changes but doesn’t merge, while git pull fetches and merges into the current
-                branch.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet git fetch and git pull?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">git fetch downloads changes but doesn’t merge, while git pull fetches and merges
+              into the current
+              branch.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet git merge and git cherry-pick?</div>
-              <p>Merge combines branches; cherry-pick applies a specific commit to the current branch. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet git merge and git cherry-pick?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Merge combines branches; cherry-pick applies a specific commit to the current
+              branch. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet git merge and git rebase?</div>
-              <p>Merge combines branches with a merge commit; rebase applies changes on top of another branch creating a
-                linear history. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet git merge and git rebase?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Merge combines branches with a merge commit; rebase applies changes on top of
+              another branch creating a
+              linear history. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet git merge and git rebase?</div>
-              <p>Merge combines branches into one with a merge commit. Rebase applies commits linearly, creating a
-                cleaner history.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet git merge and git rebase?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Merge combines branches into one with a merge commit. Rebase applies commits
+              linearly, creating a
+              cleaner history.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet git pull request and merge request?</div>
-              <p>Pull request is GitHub terminology; merge request is GitLab/Bitbucket terminology. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet git pull request and merge request?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Pull request is GitHub terminology; merge request is GitLab/Bitbucket terminology.
+            </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet git push and git pull?</div>
-              <p>Push uploads changes; pull downloads and merges changes from remote. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet git push and git pull?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Push uploads changes; pull downloads and merges changes from remote. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet git reset --soft</div>
-              <p> --mixed and --hard? --soft moves HEAD without touching staging/working; --mixed resets staging; --hard
-                resets staging and working directory. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet git reset --soft</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer"> --mixed and --hard? --soft moves HEAD without touching staging/working; --mixed
+              resets staging; --hard
+              resets staging and working directory. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet git submodule and subtree?</div>
-              <p>Submodule links external repo separately; subtree integrates the external repo into the main repo. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet git submodule and subtree?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Submodule links external repo separately; subtree integrates the external repo into
+              the main repo. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet github and gitlab?</div>
-              <p>GitHub focuses on Git hosting and community; GitLab offers Git hosting plus integrated CI/CD and DevOps
-                tools. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet github and gitlab?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">GitHub focuses on Git hosting and community; GitLab offers Git hosting plus
+              integrated CI/CD and DevOps
+              tools. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet global and local git config?</div>
-              <p>Global config applies to all repositories; local config applies to a specific repository. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet global and local git config?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Global config applies to all repositories; local config applies to a specific
+              repository. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet lightweight and annotated tags?</div>
-              <p>Lightweight tag is just a pointer; annotated tag contains metadata like author date and message. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet lightweight and annotated tags?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Lightweight tag is just a pointer; annotated tag contains metadata like author date
+              and message. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git add?</div>
-              <p>Git add stages changes in the working directory to be included in the next commit. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git add?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Git add stages changes in the working directory to be included in the next commit.
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git archive --format=zip?</div>
-              <p>Creates a zip file of repository content at a specific commit. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git archive --format=zip?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Creates a zip file of repository content at a specific commit. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git archive?</div>
-              <p>Git archive creates a zip or tar of a specific commit or branch. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git archive?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git archive creates a zip or tar of a specific commit or branch. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git bisect bad?</div>
-              <p>Marks a commit as bad during bisect. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git bisect bad?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Marks a commit as bad during bisect. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git bisect good?</div>
-              <p>Marks a commit as good during bisect. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git bisect good?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Marks a commit as good during bisect. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git bisect start?</div>
-              <p>Begins a bisect session to find a bad commit. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git bisect start?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Begins a bisect session to find a bad commit. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git bisect?</div>
-              <p>Git bisect finds the commit that introduced a bug using binary search. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git bisect?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git bisect finds the commit that introduced a bug using binary search. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git blame -l?</div>
-              <p>Shows annotations for a specific line range in a file. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git blame -l?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Shows annotations for a specific line range in a file. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git blame?</div>
-              <p>Git blame shows which user last modified each line of a file. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git blame?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git blame shows which user last modified each line of a file. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git branch?</div>
-              <p>Git branch is a pointer to a commit used to develop features independently. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git branch?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git branch is a pointer to a commit used to develop features independently. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git checkout -b?</div>
-              <p>Creates a new branch and switches to it. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git checkout -b?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Creates a new branch and switches to it. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git checkout?</div>
-              <p>Git checkout switches branches or restores files in the working directory. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git checkout?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git checkout switches branches or restores files in the working directory. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git cherry?</div>
-              <p>Git cherry shows commits in one branch that are not in another. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git cherry?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git cherry shows commits in one branch that are not in another. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git clean?</div>
-              <p>Git clean removes untracked files from the working directory. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git clean?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git clean removes untracked files from the working directory. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git clone?</div>
-              <p>Git clone creates a copy of a remote repository on your local machine. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git clone?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git clone creates a copy of a remote repository on your local machine. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git commit --amend?</div>
-              <p>Modifies the last commit with new changes or message. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git commit --amend?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Modifies the last commit with new changes or message. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git commit?</div>
-              <p>Git commit saves changes in the local repository with a descriptive message. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git commit?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git commit saves changes in the local repository with a descriptive message. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git config --list?</div>
-              <p>Displays all Git configuration settings. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git config --list?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Displays all Git configuration settings. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git config?</div>
-              <p>Git config sets configuration values like username email and editor. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git config?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git config sets configuration values like username email and editor. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git describe?</div>
-              <p>Git describe generates a human-readable name for a commit using nearest tag. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git describe?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git describe generates a human-readable name for a commit using nearest tag. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git diff head?</div>
-              <p>Shows differences between working directory and last commit. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git diff head?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Shows differences between working directory and last commit. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git diff origin/main?</div>
-              <p>Shows differences between local and remote main branch. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git diff origin/main?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Shows differences between local and remote main branch. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git diff --staged?</div>
-              <p>Shows differences between staged changes and the last commit. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git diff --staged?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Shows differences between staged changes and the last commit. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git diff?</div>
-              <p>Git diff shows differences between working directory staging area and commits. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git diff?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git diff shows differences between working directory staging area and commits.
+            </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git fast-forward merge?</div>
-              <p>Fast-forward merge moves the branch pointer forward when no divergent commits exist. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git fast-forward merge?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Fast-forward merge moves the branch pointer forward when no divergent commits exist.
+            </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git fetch --all?</div>
-              <p>Fetches all branches from all remotes. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git fetch --all?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Fetches all branches from all remotes. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git fetch origin branch_name?</div>
-              <p>Fetches a specific branch from a remote. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git fetch origin branch_name?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Fetches a specific branch from a remote. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git filter-branch?</div>
-              <p>Rewrites Git history typically for removing sensitive data. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git filter-branch?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Rewrites Git history typically for removing sensitive data. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git gc?</div>
-              <p>Git garbage collection cleans unnecessary files and optimizes repository. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git gc?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git garbage collection cleans unnecessary files and optimizes repository. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git head?</div>
-              <p>HEAD points to the current branch’s latest commit. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git head?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">HEAD points to the current branch’s latest commit. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git hook?</div>
-              <p>Git hooks are scripts that run automatically at certain Git events (pre-commit post-commit etc.). </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git hook?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git hooks are scripts that run automatically at certain Git events (pre-commit
+              post-commit etc.). </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git ignore?</div>
-              <p>.gitignore specifies files or directories Git should ignore. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git ignore?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">.gitignore specifies files or directories Git should ignore. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git log --graph?</div>
-              <p>Displays commit history as an ASCII graph. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git log --graph?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Displays commit history as an ASCII graph. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git log --oneline?</div>
-              <p>Shows commit history in a concise one-line format per commit. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git log --oneline?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Shows commit history in a concise one-line format per commit. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git log --stat?</div>
-              <p>Shows commit history with file changes statistics. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git log --stat?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Shows commit history with file changes statistics. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git log?</div>
-              <p>Git log shows the commit history in a repository. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git log?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git log shows the commit history in a repository. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git ls-files?</div>
-              <p>Lists tracked files in the repository. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git ls-files?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Lists tracked files in the repository. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git merge conflict?</div>
-              <p>Merge conflict occurs when Git cannot automatically reconcile differences between branches. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git merge conflict?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Merge conflict occurs when Git cannot automatically reconcile differences between
+              branches. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git mv?</div>
-              <p>Git mv moves or renames a file and stages the change. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git mv?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git mv moves or renames a file and stages the change. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git notes?</div>
-              <p>Git notes attach arbitrary metadata to commits. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git notes?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git notes attach arbitrary metadata to commits. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git origin?</div>
-              <p>Origin is the default name for a remote repository when cloned. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git origin?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Origin is the default name for a remote repository when cloned. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git prune?</div>
-              <p>Git prune removes unreachable objects from the repository. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git prune?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git prune removes unreachable objects from the repository. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git pull --ff-only?</div>
-              <p>Pulls changes only if a fast-forward merge is possible. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git pull --ff-only?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Pulls changes only if a fast-forward merge is possible. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git pull --rebase?</div>
-              <p>Pulls remote changes and rebases local commits on top. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git pull --rebase?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Pulls remote changes and rebases local commits on top. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git pull request?</div>
-              <p>Pull request is a method to propose changes from one branch to another reviewed before merging. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git pull request?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Pull request is a method to propose changes from one branch to another reviewed
+              before merging. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git push origin --delete?</div>
-              <p>Deletes a remote branch or tag. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git push origin --delete?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Deletes a remote branch or tag. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git push?</div>
-              <p>Git push uploads commits from local repository to a remote repository. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git push?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git push uploads commits from local repository to a remote repository. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git rebase interactive?</div>
-              <p>Interactive rebase allows editing reordering squashing or removing commits. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git rebase interactive?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Interactive rebase allows editing reordering squashing or removing commits. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git reflog delete?</div>
-              <p>Removes specific entries from reflog. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git reflog delete?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Removes specific entries from reflog. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git reflog expire?</div>
-              <p>Cleans old entries from the reflog. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git reflog expire?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Cleans old entries from the reflog. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git reflog s--all?</div>
-              <p>Shows reflog for all references. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git reflog s--all?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Shows reflog for all references. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git reflog show?</div>
-              <p>Displays reference log of commits. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git reflog show?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Displays reference log of commits. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git reflog?</div>
-              <p>Git reflog shows the history of HEAD and branch updates including resets. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git reflog?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git reflog shows the history of HEAD and branch updates including resets. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git remote add?</div>
-              <p>Adds a new remote repository reference. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git remote add?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Adds a new remote repository reference. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git remote remove?</div>
-              <p>Removes a remote repository reference. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git remote remove?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Removes a remote repository reference. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git remote set-url?</div>
-              <p>Changes the URL of a remote repository. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git remote set-url?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Changes the URL of a remote repository. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git remote -v?</div>
-              <p>Shows URLs of remote repositories for fetch and push operations. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git remote -v?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Shows URLs of remote repositories for fetch and push operations. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git remote?</div>
-              <p>Git remote is a reference to a remote repository. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git remote?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git remote is a reference to a remote repository. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git repository?</div>
-              <p>A repository (repo) is a directory that contains your project files and a .git folder tracking changes.
-              </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git repository?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">A repository (repo) is a directory that contains your project files and a .git
+              folder tracking changes.
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git reset head?</div>
-              <p>Unstages changes from staging area. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git reset head?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Unstages changes from staging area. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git reset?</div>
-              <p>Git reset undoes commits or changes optionally moving the HEAD pointer. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git reset?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git reset undoes commits or changes optionally moving the HEAD pointer. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git revert -n?</div>
-              <p>Reverts changes without committing immediately. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git revert -n?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Reverts changes without committing immediately. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git revert?</div>
-              <p>Git revert creates a new commit that undoes changes from a previous commit. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git revert?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git revert creates a new commit that undoes changes from a previous commit. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git rev-parse?</div>
-              <p>Resolves Git revisions to SHA-1 hashes. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git rev-parse?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Resolves Git revisions to SHA-1 hashes. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git rm?</div>
-              <p>Git rm removes files from working directory and staging area. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git rm?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git rm removes files from working directory and staging area. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git shortlog -n?</div>
-              <p>Shows authors ranked by commit count. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git shortlog -n?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Shows authors ranked by commit count. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git shortlog -s?</div>
-              <p>Displays commit count per author. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git shortlog -s?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Displays commit count per author. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git shortlog?</div>
-              <p>Git shortlog summarizes commits by author. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git shortlog?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git shortlog summarizes commits by author. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git sparse-checkout?</div>
-              <p>Sparse checkout allows checking out only part of a repository. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git sparse-checkout?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Sparse checkout allows checking out only part of a repository. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git squash?</div>
-              <p>Squash combines multiple commits into one for cleaner history. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git squash?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Squash combines multiple commits into one for cleaner history. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git stash apply?</div>
-              <p>Git stash apply restores stashed changes without removing them from the stash list. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git stash apply?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git stash apply restores stashed changes without removing them from the stash list.
+            </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git stash branch?</div>
-              <p>Creates a new branch from a stash. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git stash branch?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Creates a new branch from a stash. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git stash list?</div>
-              <p>Lists all stashed changes. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git stash list?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Lists all stashed changes. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git stash pop?</div>
-              <p>Git stash pop restores stashed changes and removes them from the stash list. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git stash pop?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git stash pop restores stashed changes and removes them from the stash list. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git stash?</div>
-              <p>Git stash temporarily shelves changes in the working directory to clean the workspace. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git stash?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git stash temporarily shelves changes in the working directory to clean the
+              workspace. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git stash?</div>
-              <p>git stash temporarily saves uncommitted changes to apply later without committing.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git stash?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">git stash temporarily saves uncommitted changes to apply later without committing.
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git status?</div>
-              <p>Git status shows the current state of the working directory and staging area. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git status?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git status shows the current state of the working directory and staging area. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git submodule?</div>
-              <p>Submodule allows including one Git repository inside another. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git submodule?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Submodule allows including one Git repository inside another. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git tag -a?</div>
-              <p>Creates an annotated tag with metadata. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git tag -a?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Creates an annotated tag with metadata. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git tag -d?</div>
-              <p>Deletes a local tag. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git tag -d?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Deletes a local tag. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git tag --list?</div>
-              <p>Lists all tags in the repository. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git tag --list?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Lists all tags in the repository. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git tag?</div>
-              <p>Git tag marks specific commits as important often used for releases. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git tag?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git tag marks specific commits as important often used for releases. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git tag?</div>
-              <p>Tags mark specific points in history, usually used for releases or milestones.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git tag?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Tags mark specific points in history, usually used for releases or milestones.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git workflow?</div>
-              <p>Git workflow is a set of rules or practices for managing branches and collaboration. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git workflow?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git workflow is a set of rules or practices for managing branches and collaboration.
+            </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git worktree?</div>
-              <p>Git worktree allows multiple working directories for the same repository. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git worktree?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git worktree allows multiple working directories for the same repository. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git?</div>
-              <p>Git is a distributed version control system used to track changes in source code during software
-                development. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git is a distributed version control system used to track changes in source code
+              during software
+              development. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git?</div>
-              <p>Git is a distributed version control system for tracking code changes, supporting branching, merging,
-                and collaboration.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git is a distributed version control system for tracking code changes, supporting
+              branching, merging,
+              and collaboration.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Github?</div>
-              <p>GitHub is a web-based platform for hosting Git repositories and collaboration. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Github?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">GitHub is a web-based platform for hosting Git repositories and collaboration.
+            </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Gitlab?</div>
-              <p>GitLab is a web-based DevOps platform with Git repository hosting CI/CD and more. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Gitlab?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">GitLab is a web-based DevOps platform with Git repository hosting CI/CD and more.
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Popular git workflows?</div>
-              <p>Git Flow GitHub Flow and GitLab Flow. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Popular git workflows?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git Flow GitHub Flow and GitLab Flow. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Pull request workflow?</div>
-              <p>Developers push changes → create PR → reviewers approve → merge into main branch. Ensures code quality
-                and collaboration.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Pull request workflow?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Developers push changes → create PR → reviewers approve → merge into main branch.
+              Ensures code quality
+              and collaboration.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">To resolve git conflicts?</div>
-              <p>Open conflicting files → edit changes → git add resolved files → git commit.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>To resolve git conflicts?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Open conflicting files → edit changes → git add resolved files → git commit.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">You resolve merge conflicts in git?</div>
-              <p>Manually edit files mark as resolved then commit the changes. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>You resolve merge conflicts in git?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Manually edit files mark as resolved then commit the changes. </div>
           </div>
 
 
@@ -740,13 +765,7 @@
     </section>
   </main>
   <div id="footer-placeholder"></div>
-  <script>
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i

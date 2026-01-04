@@ -34,13 +34,7 @@
 <body class="index-page Custombody">
   <!-- nav.html -->
   <div id="nav-placeholder"></div>
-  <script>
-    fetch("nav.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
-      });
-  </script>
+
   <main class="main">
     <!-- Hero Section -->
     <!-- About Section -->
@@ -53,36 +47,40 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-3">
 
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet lightweight and annotated tags?</div>
-              <p>Lightweight is just a pointer; annotated has metadata, tagger info, and can be signed.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet lightweight and annotated tags?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Lightweight is just a pointer; annotated has metadata, tagger info, and can be
+              signed.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git lfs?</div>
-              <p>Git Large File Storage handles large files (images, videos) by storing pointers in Git while actual
-                files reside elsewhere.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git lfs?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git Large File Storage handles large files (images, videos) by storing pointers in
+              Git while actual
+              files reside elsewhere.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Git submodules?</div>
-              <p>Submodules allow embedding one Git repo inside another while keeping histories separate.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Git submodules?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Submodules allow embedding one Git repo inside another while keeping histories
+              separate.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">To create and push tags?</div>
-              <p>git tag -a v1.0 -m "Release" → git push origin v1.0</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>To create and push tags?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">git tag -a v1.0 -m "Release" → git push origin v1.0</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">To revert a pushed commit?</div>
-              <p>Use git revert <commit> to create a new commit that undoes changes without rewriting history.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>To revert a pushed commit?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Use git revert <commit> to create a new commit that undoes changes without rewriting
+                history.</div>
           </div>
 
 
@@ -92,13 +90,7 @@
     </section>
   </main>
   <div id="footer-placeholder"></div>
-  <script>
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i

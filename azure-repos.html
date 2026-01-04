@@ -34,13 +34,7 @@
 <body class="index-page Custombody">
   <!-- nav.html -->
   <div id="nav-placeholder"></div>
-  <script>
-    fetch("nav.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
-      });
-  </script>
+
   <main class="main">
     <!-- Hero Section -->
     <!-- About Section -->
@@ -53,102 +47,114 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-3">
 
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;"> Pull Requests in Azure Repos?</div>
-              <p>They enable code review and enforce branch policies before merging code into protected branches.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span> Pull Requests in Azure Repos?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">They enable code review and enforce branch policies before merging code into
+              protected branches.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Azure Repos?</div>
-              <p>Azure Repos is part of Azure DevOps providing Git repositories and TFVC (Team Foundation Version
-                Control) for collaborative development.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Azure Repos?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Azure Repos is part of Azure DevOps providing Git repositories and TFVC (Team
+              Foundation Version
+              Control) for collaborative development.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Branch policy in Azure Repos?</div>
-              <p>Policies enforce code quality, mandatory reviews, builds, and checks before merging into protected
-                branches.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Branch policy in Azure Repos?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Policies enforce code quality, mandatory reviews, builds, and checks before merging
+              into protected
+              branches.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Branching strategy?</div>
-              <p>Defines rules for feature, release, hotfix, and main branches to ensure clean development workflow
-                (e.g., GitFlow, trunk-based).</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Branching strategy?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Defines rules for feature, release, hotfix, and main branches to ensure clean
+              development workflow
+              (e.g., GitFlow, trunk-based).</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Create a repo in Azure Repos?</div>
-              <p>Azure DevOps → Repos → New repository → Git or TFVC → Initialize with README → Create.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Create a repo in Azure Repos?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Azure DevOps → Repos → New repository → Git or TFVC → Initialize with README →
+              Create.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DiffBet Azure Repos and GitHub?</div>
-              <p>Azure Repos integrates tightly with Azure DevOps pipelines and boards, while GitHub is more widely used
-                for public repos and community collaboration.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DiffBet Azure Repos and GitHub?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Azure Repos integrates tightly with Azure DevOps pipelines and boards, while GitHub
+              is more widely used
+              for public repos and community collaboration.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DiffBet Git and TFVC in Azure Repos?</div>
-              <p>Git is distributed VCS; TFVC is centralized. Git supports branching/merging; TFVC uses workspace
-                checkouts.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DiffBet Git and TFVC in Azure Repos?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Git is distributed VCS; TFVC is centralized. Git supports branching/merging; TFVC
+              uses workspace
+              checkouts.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DiffBet GitHub, GitLab, Bitbucket, Azure Repos?</div>
-              <p>All host Git repos. GitHub focuses on public collaboration, GitLab on DevOps lifecycle, Bitbucket
-                integrates with Jira, Azure Repos integrates with Azure DevOps ecosystem.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DiffBet GitHub, GitLab, Bitbucket, Azure Repos?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">All host Git repos. GitHub focuses on public collaboration, GitLab on DevOps
+              lifecycle, Bitbucket
+              integrates with Jira, Azure Repos integrates with Azure DevOps ecosystem.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Enforce branch policies?</div>
-              <p>Use required reviewers, build validations, and limit who can merge.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Enforce branch policies?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Use required reviewers, build validations, and limit who can merge.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Handle merge conflicts in multi-developer environment?</div>
-              <p>Use feature branches, PRs/MRs, communicate changes, and resolve conflicts manually when they arise.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Handle merge conflicts in multi-developer environment?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Use feature branches, PRs/MRs, communicate changes, and resolve conflicts manually
+              when they arise.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Integrate Azure Repos with CI/CD?</div>
-              <p>Connect with Azure Pipelines to automatically build, test, and deploy on push or PR events.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Integrate Azure Repos with CI/CD?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Connect with Azure Pipelines to automatically build, test, and deploy on push or PR
+              events.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Integrate Azure Repos with pipelines?</div>
-              <p>Link repo to Azure Pipelines and trigger CI/CD pipelines on push or PR events.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Integrate Azure Repos with pipelines?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Link repo to Azure Pipelines and trigger CI/CD pipelines on push or PR events.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Manage secrets in CI/CD pipelines?</div>
-              <p>Use GitHub secrets, GitLab CI variables, Bitbucket secured variables, or Azure Key Vault.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Manage secrets in CI/CD pipelines?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Use GitHub secrets, GitLab CI variables, Bitbucket secured variables, or Azure Key
+              Vault.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Monitor repository activity?</div>
-              <p>Use webhooks, built-in analytics, CI/CD logs, audit logs, or integration tools like SonarQube for code
-                quality monitoring.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Monitor repository activity?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Use webhooks, built-in analytics, CI/CD logs, audit logs, or integration tools like
+              SonarQube for code
+              quality monitoring.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Rollback a PR in Azure Repos?</div>
-              <p>Revert the merged PR using the revert button or manually revert commits.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Rollback a PR in Azure Repos?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Revert the merged PR using the revert button or manually revert commits.</div>
           </div>
 
 
@@ -158,13 +164,7 @@
     </section>
   </main>
   <div id="footer-placeholder"></div>
-  <script>
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i

@@ -34,13 +34,7 @@
 <body class="index-page Custombody">
   <!-- nav.html -->
   <div id="nav-placeholder"></div>
-  <script>
-    fetch("nav.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
-      });
-  </script>
+
   <main class="main">
     <!-- Hero Section -->
     <!-- About Section -->
@@ -53,616 +47,694 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-3">
 
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Advantages of using webhooks?</div>
-              <p>Real-time updates, reduced server load, simpler architecture, and automation of workflows. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Advantages of using webhooks?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Real-time updates, reduced server load, simpler architecture, and automation of
+              workflows. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Common use case for webhooks?</div>
-              <p>Payment notifications, CI/CD pipelines, chatbots, form submissions, and third-party integrations. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Common use case for webhooks?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Payment notifications, CI/CD pipelines, chatbots, form submissions, and third-party
+              integrations. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet a webhook and a callback function in programming?
-              </div>
-              <p>Callback functions are used locally within code; webhooks are HTTP callbacks sent over the internet
-                between applications. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DifBet a webhook and a callback function in programming?
+              </span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Callback functions are used locally within code; webhooks are HTTP callbacks sent
+              over the internet
+              between applications. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet a webhook and a callback URL?</div>
-              <p>A webhook is a type of callback URL used for event notifications; callback URL can be used in many
-                contexts, not just webhooks. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DifBet a webhook and a callback URL?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A webhook is a type of callback URL used for event notifications; callback URL can
+              be used in many
+              contexts, not just webhooks. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet a webhook and an API?</div>
-              <p>APIs require polling to get updates; webhooks push updates automatically when events occur. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DifBet a webhook and an API?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">APIs require polling to get updates; webhooks push updates automatically when events
+              occur. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet GET and POST in webhooks?</div>
-              <p>POST sends a payload to the endpoint; GET is rarely used but can fetch data or confirm delivery. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DifBet GET and POST in webhooks?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">POST sends a payload to the endpoint; GET is rarely used but can fetch data or
+              confirm delivery. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet HMAC and basic token verification in webhooks?</div>
-              <p>HMAC uses a secret and hashing algorithm for payload verification; token verification checks a static
-                token in the request. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DifBet HMAC and basic token verification in webhooks?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">HMAC uses a secret and hashing algorithm for payload verification; token
+              verification checks a static
+              token in the request. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet inbound and outbound webhooks?</div>
-              <p>Inbound webhooks receive data from external sources; outbound webhooks send data to external endpoints.
-              </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DifBet inbound and outbound webhooks?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Inbound webhooks receive data from external sources; outbound webhooks send data to
+              external endpoints.
+            </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet JSON and XML webhooks?</div>
-              <p>JSON is lightweight and commonly used; XML is more verbose but sometimes required by legacy systems.
-              </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DifBet JSON and XML webhooks?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">JSON is lightweight and commonly used; XML is more verbose but sometimes required by
+              legacy systems.
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet JSON schema validation and signature verification in
-                webhooks?</div>
-              <p>JSON schema checks payload structure and data types; signature verification checks authenticity. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DifBet JSON schema validation and signature verification in
+                webhooks?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">JSON schema checks payload structure and data types; signature verification checks
+              authenticity. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet one-way and two-way webhooks?</div>
-              <p>One-way webhooks send data from source to target; two-way webhooks allow target to respond with data or
-                actions. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DifBet one-way and two-way webhooks?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">One-way webhooks send data from source to target; two-way webhooks allow target to
+              respond with data or
+              actions. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet polling and webhooks?</div>
-              <p>Polling repeatedly requests updates from the server; webhooks push updates when events occur, reducing
-                unnecessary requests. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DifBet polling and webhooks?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Polling repeatedly requests updates from the server; webhooks push updates when
+              events occur, reducing
+              unnecessary requests. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet public and private webhooks?</div>
-              <p>Public webhooks can be accessed by anyone with the URL; private webhooks are protected by
-                authentication or secret tokens. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DifBet public and private webhooks?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Public webhooks can be accessed by anyone with the URL; private webhooks are
+              protected by
+              authentication or secret tokens. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet push and pull webhooks?</div>
-              <p>Push webhooks send data automatically; pull webhooks require the receiver to request data from the
-                source. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DifBet push and pull webhooks?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Push webhooks send data automatically; pull webhooks require the receiver to request
+              data from the
+              source. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet REST API and webhook?</div>
-              <p>REST API requires client requests to fetch data; webhooks push data automatically on event triggers.
-              </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DifBet REST API and webhook?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">REST API requires client requests to fetch data; webhooks push data automatically on
+              event triggers.
+            </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet synchronous and asynchronous processing of webhooks?
-              </div>
-              <p>Synchronous processing completes before responding to the sender; asynchronous processes payload later,
-                often in a queue. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DifBet synchronous and asynchronous processing of webhooks?
+              </span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Synchronous processing completes before responding to the sender; asynchronous
+              processes payload later,
+              often in a queue. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet synchronous and asynchronous webhooks?</div>
-              <p>Synchronous webhooks require immediate processing and response; asynchronous webhooks queue or retry
-                delivery without blocking the sender. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DifBet synchronous and asynchronous webhooks?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Synchronous webhooks require immediate processing and response; asynchronous
+              webhooks queue or retry
+              delivery without blocking the sender. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet webhook and cron job?</div>
-              <p>Webhook triggers on events; cron job triggers on scheduled time. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DifBet webhook and cron job?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Webhook triggers on events; cron job triggers on scheduled time. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet webhook and event-driven architecture?</div>
-              <p>Webhooks are a mechanism in event-driven architecture; event-driven architecture is the broader design
-                principle. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DifBet webhook and event-driven architecture?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Webhooks are a mechanism in event-driven architecture; event-driven architecture is
+              the broader design
+              principle. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet webhook and polling?</div>
-              <p>Webhook pushes events automatically; polling repeatedly requests updates at intervals. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DifBet webhook and polling?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Webhook pushes events automatically; polling repeatedly requests updates at
+              intervals. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet webhook and server-sent events (SSE)?</div>
-              <p>Webhooks push data from server to server; SSE pushes data from server to browser over HTTP connection.
-              </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DifBet webhook and server-sent events (SSE)?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Webhooks push data from server to server; SSE pushes data from server to browser
+              over HTTP connection.
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet webhook and WebSocket?</div>
-              <p>Webhooks are HTTP callbacks triggered by events; WebSocket provides persistent, bidirectional
-                connection. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DifBet webhook and WebSocket?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Webhooks are HTTP callbacks triggered by events; WebSocket provides persistent,
+              bidirectional
+              connection. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet webhook endpoint and webhook consumer?</div>
-              <p>Endpoint is the URL that receives events; consumer is the application or code that processes them. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DifBet webhook endpoint and webhook consumer?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Endpoint is the URL that receives events; consumer is the application or code that
+              processes them. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet webhook ping and webhook test?</div>
-              <p>Ping checks endpoint availability; test sends sample payload to verify processing logic. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DifBet webhook ping and webhook test?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Ping checks endpoint availability; test sends sample payload to verify processing
+              logic. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet webhook retries and dead-letter queues?</div>
-              <p>Retries attempt to resend failed events; dead-letter queues store undeliverable events for analysis.
-              </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DifBet webhook retries and dead-letter queues?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Retries attempt to resend failed events; dead-letter queues store undeliverable
+              events for analysis.
+            </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DifBet webhook signing and encryption?</div>
-              <p>Signing verifies authenticity; encryption ensures confidentiality of the payload. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DifBet webhook signing and encryption?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Signing verifies authenticity; encryption ensures confidentiality of the payload.
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DiffBet Webhook and API?</div>
-              <p>APIs require clients to poll data on demand. Webhooks push data automatically when events occur.
-                Webhooks are event-driven, APIs are request-driven.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DiffBet Webhook and API?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">APIs require clients to poll data on demand. Webhooks push data automatically when
+              events occur.
+              Webhooks are event-driven, APIs are request-driven. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Disadvantages of webhooks?</div>
-              <p>Security risks if not authenticated, debugging difficulty, potential for missing events if downtime
-                occurs. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Disadvantages of webhooks?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Security risks if not authenticated, debugging difficulty, potential for missing
+              events if downtime
+              occurs. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Handle idempotency in Webhooks?</div>
-              <p>Use unique event IDs to avoid processing the same webhook multiple times, ensuring operations like
-                payment updates are executed once.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Handle idempotency in Webhooks?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Use unique event IDs to avoid processing the same webhook multiple times, ensuring
+              operations like
+              payment updates are executed once. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">HTTP method commonly used in webhooks?</div>
-              <p>POST is the most common HTTP method for sending webhook payloads. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>HTTP method commonly used in webhooks?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">POST is the most common HTTP method for sending webhook payloads. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">HTTP methods do Webhooks use?</div>
-              <p>Mostly POST, occasionally GET. POST is preferred for sending payload data.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>HTTP methods do Webhooks use?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Mostly POST, occasionally GET. POST is preferred for sending payload data. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Idempotency in webhooks?</div>
-              <p>Idempotency ensures that processing the same webhook payload multiple times does not have unintended
-                side effects. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Idempotency in webhooks?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Idempotency ensures that processing the same webhook payload multiple times does not
+              have unintended
+              side effects. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Ngrok in webhook development?</div>
-              <p>Ngrok exposes local servers to public URLs for testing webhook endpoints during development. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Ngrok in webhook development?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Ngrok exposes local servers to public URLs for testing webhook endpoints during
+              development. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Retry logic in webhooks?</div>
-              <p>Retry logic is the process of resending failed webhook events after a failure or timeout. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Retry logic in webhooks?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Retry logic is the process of resending failed webhook events after a failure or
+              timeout. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Retry schedule in webhook delivery?</div>
-              <p>A retry schedule defines how and when failed webhook attempts are retried, often with exponential
-                backoff. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Retry schedule in webhook delivery?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A retry schedule defines how and when failed webhook attempts are retried, often
+              with exponential
+              backoff. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Secure Webhooks?</div>
-              <p>Use signatures, tokens, or HMAC hashing to verify payload authenticity. HTTPS is mandatory for secure
-                transmission.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Secure Webhooks?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Use signatures, tokens, or HMAC hashing to verify payload authenticity. HTTPS is
+              mandatory for secure
+              transmission. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Test Webhooks locally?</div>
-              <p>Use tools like ngrok or Postman’s Webhook feature to expose your local server to the internet and
-                receive webhook requests.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Test Webhooks locally?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Use tools like ngrok or Postman’s Webhook feature to expose your local server to the
+              internet and
+              receive webhook requests. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Use of Webhooks in payment systems?</div>
-              <p>Webhooks notify your server in real-time about payment events like successful transactions, refunds, or
-                failed payments. They automate updates in your application or database.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Use of Webhooks in payment systems?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Webhooks notify your server in real-time about payment events like successful
+              transactions, refunds, or
+              failed payments. They automate updates in your application or database. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook analytics?</div>
-              <p>Tracking delivery success, latency, failures, retries, and processing metrics. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook analytics?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Tracking delivery success, latency, failures, retries, and processing metrics.
+            </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook authentication?</div>
-              <p>Authentication verifies that the webhook request is from a trusted source, commonly using HMAC, tokens,
-                or basic auth. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook authentication?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Authentication verifies that the webhook request is from a trusted source, commonly
+              using HMAC, tokens,
+              or basic auth. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook backoff strategy?</div>
-              <p>Backoff strategy defines increasing delay between retries to reduce load on failing endpoints. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook backoff strategy?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Backoff strategy defines increasing delay between retries to reduce load on failing
+              endpoints. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook batching vs individual delivery?</div>
-              <p>Batching sends multiple events in a single request; individual delivery sends each event separately.
-              </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook batching vs individual delivery?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Batching sends multiple events in a single request; individual delivery sends each
+              event separately.
+            </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook batching?</div>
-              <p>Batching groups multiple webhook events into a single HTTP request to reduce the number of requests.
-              </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook batching?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Batching groups multiple webhook events into a single HTTP request to reduce the
+              number of requests.
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook callback?</div>
-              <p>A webhook callback is the function or endpoint that handles incoming webhook data. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook callback?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A webhook callback is the function or endpoint that handles incoming webhook data.
+            </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook concurrency?</div>
-              <p>Concurrency is handling multiple webhook events at the same time without conflicts or errors. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook concurrency?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Concurrency is handling multiple webhook events at the same time without conflicts
+              or errors. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook dead-letter handling?</div>
-              <p>Storing undelivered or failed webhook events for inspection and retry. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook dead-letter handling?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Storing undelivered or failed webhook events for inspection and retry. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook dead-letter queue vs retry queue?</div>
-              <p>Retry queue holds temporarily failed events; dead-letter queue holds permanently undeliverable events.
-              </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook dead-letter queue vs retry queue?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Retry queue holds temporarily failed events; dead-letter queue holds permanently
+              undeliverable events.
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook de-duplication?</div>
-              <p>De-duplication ensures the same event is processed only once. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook de-duplication?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">De-duplication ensures the same event is processed only once. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook delivery report?</div>
-              <p>A delivery report shows the status of webhook events, whether delivered, failed, or retried. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook delivery report?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A delivery report shows the status of webhook events, whether delivered, failed, or
+              retried. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook documentation?</div>
-              <p>Documentation describes events, payload format, authentication, and usage guidelines for webhooks. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook documentation?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Documentation describes events, payload format, authentication, and usage guidelines
+              for webhooks. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook endpoint idempotency?</div>
-              <p>Ensures multiple deliveries of the same event do not create duplicate side effects. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook endpoint idempotency?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Ensures multiple deliveries of the same event do not create duplicate side effects.
+            </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook endpoint?</div>
-              <p>The URL or server route where a webhook sends its payload. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook endpoint?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">The URL or server route where a webhook sends its payload. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook event enrichment?</div>
-              <p>Adding additional context or metadata to payload before delivery. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook event enrichment?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Adding additional context or metadata to payload before delivery. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook event filtering?</div>
-              <p>Event filtering ensures only specific types of events trigger a webhook. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook event filtering?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Event filtering ensures only specific types of events trigger a webhook. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook event ID?</div>
-              <p>A unique identifier for each webhook event to prevent duplicate processing. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook event ID?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A unique identifier for each webhook event to prevent duplicate processing. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook event subscription?</div>
-              <p>Subscription allows users to select which events trigger webhooks. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook event subscription?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Subscription allows users to select which events trigger webhooks. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook failover?</div>
-              <p>Redirecting failed webhook events to an alternate endpoint or backup server. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook failover?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Redirecting failed webhook events to an alternate endpoint or backup server. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook framework?</div>
-              <p>A framework provides reusable tools and patterns for building, managing, and securing webhooks. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook framework?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A framework provides reusable tools and patterns for building, managing, and
+              securing webhooks. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook gateway?</div>
-              <p>A webhook gateway handles event distribution, retries, filtering, and authentication for multiple
-                webhooks. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook gateway?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A webhook gateway handles event distribution, retries, filtering, and authentication
+              for multiple
+              webhooks. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook latency?</div>
-              <p>The time delay between the event occurring and the webhook being delivered. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook latency?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">The time delay between the event occurring and the webhook being delivered. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook listener?</div>
-              <p>A webhook listener is the server or endpoint that receives and processes webhook events. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook listener?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A webhook listener is the server or endpoint that receives and processes webhook
+              events. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook logging?</div>
-              <p>Logging records all received webhook events for monitoring, debugging, and auditing. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook logging?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Logging records all received webhook events for monitoring, debugging, and auditing.
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook monitoring?</div>
-              <p>Monitoring tracks the delivery, success, and failure of webhook events in real time. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook monitoring?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Monitoring tracks the delivery, success, and failure of webhook events in real time.
+            </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook orchestration vs workflow automation?</div>
-              <p>Orchestration coordinates multiple webhooks; workflow automation executes sequences of tasks triggered
-                by events. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook orchestration vs workflow automation?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Orchestration coordinates multiple webhooks; workflow automation executes sequences
+              of tasks triggered
+              by events. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook orchestration?</div>
-              <p>Orchestration coordinates multiple webhooks and services to achieve complex workflows. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook orchestration?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Orchestration coordinates multiple webhooks and services to achieve complex
+              workflows. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook payload compression?</div>
-              <p>Compressing payload (e.g., gzip) to reduce bandwidth usage. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook payload compression?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Compressing payload (e.g., gzip) to reduce bandwidth usage. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook payload size limit?</div>
-              <p>Maximum size of payload accepted by the webhook provider; depends on service and HTTP constraints. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook payload size limit?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Maximum size of payload accepted by the webhook provider; depends on service and
+              HTTP constraints. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook payload?</div>
-              <p>The payload is the data sent from the source application to the target application when a webhook event
-                occurs. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook payload?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">The payload is the data sent from the source application to the target application
+              when a webhook event
+              occurs. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook payload?</div>
-              <p>The data sent in a webhook request. It usually contains event type, timestamp, and resource data like
-                transaction ID or customer details.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook payload?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">The data sent in a webhook request. It usually contains event type, timestamp, and
+              resource data like
+              transaction ID or customer details. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook ping event?</div>
-              <p>A ping event is a test webhook sent by the provider to verify the endpoint is reachable. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook ping event?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A ping event is a test webhook sent by the provider to verify the endpoint is
+              reachable. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook queue vs direct delivery?</div>
-              <p>Queue stores events for reliable delivery; direct delivery sends immediately without persistence. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook queue vs direct delivery?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Queue stores events for reliable delivery; direct delivery sends immediately without
+              persistence. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook queue?</div>
-              <p>A queue temporarily stores webhook events to ensure delivery even if the endpoint is temporarily
-                unavailable. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook queue?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A queue temporarily stores webhook events to ensure delivery even if the endpoint is
+              temporarily
+              unavailable. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook rate limiting?</div>
-              <p>Rate limiting restricts the number of webhook events sent per time period to avoid overloading the
-                receiver. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook rate limiting?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Rate limiting restricts the number of webhook events sent per time period to avoid
+              overloading the
+              receiver. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook replay attack prevention?</div>
-              <p>Using signatures, timestamps, and unique IDs to prevent malicious resending of events. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook replay attack prevention?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Using signatures, timestamps, and unique IDs to prevent malicious resending of
+              events. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook replay attack?</div>
-              <p>A replay attack is when a malicious actor resends a valid webhook request to trigger unintended
-                actions. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook replay attack?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A replay attack is when a malicious actor resends a valid webhook request to trigger
+              unintended
+              actions. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook replay prevention?</div>
-              <p>Techniques like unique event IDs or timestamps to prevent processing the same webhook multiple times.
-              </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook replay prevention?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Techniques like unique event IDs or timestamps to prevent processing the same
+              webhook multiple times.
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook replay window?</div>
-              <p>Time frame in which replayed events are considered valid or invalid. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook replay window?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Time frame in which replayed events are considered valid or invalid. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook retries?</div>
-              <p>If a webhook delivery fails, the provider retries sending payloads based on a retry policy. Helps
-                ensure reliable communication.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook retries?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">If a webhook delivery fails, the provider retries sending payloads based on a retry
+              policy. Helps
+              ensure reliable communication. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook secret key?</div>
-              <p>A secret key is used to sign or encrypt the payload to ensure that requests are from a trusted source.
-              </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook secret key?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A secret key is used to sign or encrypt the payload to ensure that requests are from
+              a trusted source.
+            </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook security best practices?</div>
-              <p>Use HTTPS, verify signatures, validate payload, rate limit, rotate secrets, log events. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook security best practices?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Use HTTPS, verify signatures, validate payload, rate limit, rotate secrets, log
+              events. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook signature?</div>
-              <p>A signature is a hash or token sent along with the payload to verify authenticity. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook signature?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A signature is a hash or token sent along with the payload to verify authenticity.
+            </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook simulator?</div>
-              <p>A tool that sends sample webhook payloads to test endpoints without triggering real events. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook simulator?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A tool that sends sample webhook payloads to test endpoints without triggering real
+              events. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook subscription management?</div>
-              <p>Creating, updating, or deleting webhook subscriptions and configuring event triggers. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook subscription management?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Creating, updating, or deleting webhook subscriptions and configuring event
+              triggers. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook testing?</div>
-              <p>Testing verifies that webhook endpoints receive and process events correctly, often using tools like
-                Postman or ngrok. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook testing?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Testing verifies that webhook endpoints receive and process events correctly, often
+              using tools like
+              Postman or ngrok. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook throttling vs rate limiting?</div>
-              <p>Throttling delays events to manage load; rate limiting enforces maximum event delivery rate. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook throttling vs rate limiting?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Throttling delays events to manage load; rate limiting enforces maximum event
+              delivery rate. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook throttling?</div>
-              <p>Throttling limits the rate at which webhook events are delivered to avoid overloading the target
-                server. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook throttling?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Throttling limits the rate at which webhook events are delivered to avoid
+              overloading the target
+              server. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook timeout?</div>
-              <p>Time duration the sender waits for a response from the webhook endpoint before considering it failed.
-              </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook timeout?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Time duration the sender waits for a response from the webhook endpoint before
+              considering it failed.
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook transformation?</div>
-              <p>Modifying the payload format or content before sending to the consumer. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook transformation?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Modifying the payload format or content before sending to the consumer. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook validation?</div>
-              <p>Validation ensures the payload structure, signature, and source are correct before processing. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook validation?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Validation ensures the payload structure, signature, and source are correct before
+              processing. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook version compatibility?</div>
-              <p>Ensuring older endpoints can handle newer webhook payloads without breaking. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook version compatibility?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Ensuring older endpoints can handle newer webhook payloads without breaking. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook versioning?</div>
-              <p>Versioning allows changes in webhook payload or behavior without breaking existing consumers. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook versioning?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Versioning allows changes in webhook payload or behavior without breaking existing
+              consumers. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook work?</div>
-              <p>When an event occurs, the source system makes an HTTP POST request to the subscriber’s URL with a
-                payload. The receiver processes the payload and responds, usually with HTTP 200.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook work?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">When an event occurs, the source system makes an HTTP POST request to the
+              subscriber’s URL with a
+              payload. The receiver processes the payload and responds, usually with HTTP 200. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook?</div>
-              <p>A webhook is a way for an app to provide other applications with real-time information by sending an
-                HTTP request when a specific event occurs. </p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A webhook is a way for an app to provide other applications with real-time
+              information by sending an
+              HTTP request when a specific event occurs. </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Webhook?</div>
-              <p>A webhook is an HTTP callback triggered by an event in a system, sending real-time data to a URL
-                endpoint. It allows services to communicate instantly without polling.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Webhook?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A webhook is an HTTP callback triggered by an event in a system, sending real-time
+              data to a URL
+              endpoint. It allows services to communicate instantly without polling. </div>
           </div>
 
 
@@ -672,13 +744,6 @@
     </section>
   </main>
   <div id="footer-placeholder"></div>
-  <script>
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i

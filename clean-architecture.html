@@ -34,13 +34,7 @@
 <body class="index-page Custombody">
   <!-- nav.html -->
   <div id="nav-placeholder"></div>
-  <script>
-    fetch("nav.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
-      });
-  </script>
+
   <main class="main">
     <!-- Hero Section -->
     <!-- About Section -->
@@ -56,85 +50,99 @@
 
           <div class="col-md-3 col-sm-6">
             <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Clean architecture?</div>
-              <p>A design pattern where dependencies flow inward, separating core business logic from frameworks, UI,
-                and infrastructure.</p>
+              <div class="topic-pill" style="padding: 6px;">Clean architecture?</span>
+                <div class="icon">+</div>
+              </div>
+              <div class="faq-answer">A design pattern where dependencies flow inward, separating core business logic
+                from frameworks, UI,
+                and infrastructure.</div>
             </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Dependency rule?</div>
-              <p>Dependencies should always point inward toward high-level policies, not toward external frameworks or
-                infrastructure.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet entity and dto?</div>
-              <p>Entity represents domain data with behavior; DTO is a simple data carrier between layers or services.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet layered and clean architecture?</div>
-              <p>Layered architecture is strictly horizontal; Clean Architecture emphasizes dependency inversion and
-                decouples business logic from external concerns.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Does clean architecture support testing?</div>
-              <p>Business rules are isolated from UI and DB, allowing unit tests without mocking infrastructure.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Does it handle frameworks?</div>
-              <p>Frameworks are plug-ins; the core domain does not depend on frameworks, enabling easy replacement.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Example: using clean architecture in c#</div>
-              <p>Domain → core entities, Application → services/use cases, Infrastructure → DB, API → controllers.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Key layers?</div>
-              <p>Entities (core business), Use Cases (application logic), Interface Adapters (controllers/gateways), and
-                Frameworks/Drivers (DB, UI).</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Use case interactor?</div>
-              <p>An application service that orchestrates business rules for a specific use case.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Use clean architecture?</div>
-              <p>It improves testability, maintainability, decoupling, and allows technology changes without impacting
-                core logic.</p>
-            </div>
-          </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="topic-card" style="padding: 5px;">
+                <div class="topic-pill" style="padding: 6px;">Dependency rule?</span>
+                  <div class="icon">+</div>
+                </div>
+                <div class="faq-answer">Dependencies should always point inward toward high-level policies, not toward
+                  external frameworks or
+                  infrastructure.</div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="topic-card" style="padding: 5px;">
+                  <div class="topic-pill" style="padding: 6px;">Diffbet entity and dto?</span>
+                    <div class="icon">+</div>
+                  </div>
+                  <div class="faq-answer">Entity represents domain data with behavior; DTO is a simple data carrier
+                    between layers or services.
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="topic-card" style="padding: 5px;">
+                    <div class="topic-pill" style="padding: 6px;">Diffbet layered and clean architecture?</span>
+                      <div class="icon">+</div>
+                    </div>
+                    <div class="faq-answer">Layered architecture is strictly horizontal; Clean Architecture emphasizes
+                      dependency inversion and
+                      decouples business logic from external concerns.</div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="topic-card" style="padding: 5px;">
+                      <div class="topic-pill" style="padding: 6px;">Does clean architecture support testing?</span>
+                        <div class="icon">+</div>
+                      </div>
+                      <div class="faq-answer">Business rules are isolated from UI and DB, allowing unit tests without
+                        mocking infrastructure.</div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                      <div class="topic-card" style="padding: 5px;">
+                        <div class="topic-pill" style="padding: 6px;">Does it handle frameworks?</span>
+                          <div class="icon">+</div>
+                        </div>
+                        <div class="faq-answer">Frameworks are plug-ins; the core domain does not depend on frameworks,
+                          enabling easy replacement.</div>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                        <div class="topic-card" style="padding: 5px;">
+                          <div class="topic-pill" style="padding: 6px;">Example: using clean architecture in c#</span>
+                            <div class="icon">+</div>
+                          </div>
+                          <div class="faq-answer">Domain → core entities, Application → services/use cases,
+                            Infrastructure → DB, API → controllers.</div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                          <div class="topic-card" style="padding: 5px;">
+                            <div class="topic-pill" style="padding: 6px;">Key layers?</span>
+                              <div class="icon">+</div>
+                            </div>
+                            <div class="faq-answer">Entities (core business), Use Cases (application logic), Interface
+                              Adapters (controllers/gateways), and
+                              Frameworks/Drivers (DB, UI).</div>
+                          </div>
+                          <div class="col-md-3 col-sm-6">
+                            <div class="topic-card" style="padding: 5px;">
+                              <div class="topic-pill" style="padding: 6px;">Use case interactor?</span>
+                                <div class="icon">+</div>
+                              </div>
+                              <div class="faq-answer">An application service that orchestrates business rules for a
+                                specific use case.</div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                              <div class="topic-card" style="padding: 5px;">
+                                <div class="topic-pill" style="padding: 6px;">Use clean architecture?</span>
+                                  <div class="icon">+</div>
+                                </div>
+                                <div class="faq-answer">It improves testability, maintainability, decoupling, and allows
+                                  technology changes without impacting
+                                  core logic.</div>
+                              </div>
 
 
-        </div>
-      </div>
+                            </div>
+                          </div>
 
     </section>
   </main>
   <div id="footer-placeholder"></div>
-  <script>
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i

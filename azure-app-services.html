@@ -34,13 +34,7 @@
 <body class="index-page Custombody">
   <!-- nav.html -->
   <div id="nav-placeholder"></div>
-  <script>
-    fetch("nav.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
-      });
-  </script>
+
   <main class="main">
     <!-- Hero Section -->
     <!-- About Section -->
@@ -53,67 +47,74 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-3">
 
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Azure Functions?</div>
-              <p>Serverless compute service to run event-driven code. Charges based on execution time and resources.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Azure Functions?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Serverless compute service to run event-driven code. Charges based on execution time
+              and resources.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Cold start in Azure Functions?</div>
-              <p>Delay when a function is triggered after idle. Mitigated using Premium Plan or Always On.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Cold start in Azure Functions?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Delay when a function is triggered after idle. Mitigated using Premium Plan or
+              Always On.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">DiffBet Function App and Function?</div>
-              <p>Function App is the container for multiple functions sharing runtime and configuration. Functions are
-                individual tasks.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>DiffBet Function App and Function?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Function App is the container for multiple functions sharing runtime and
+              configuration. Functions are
+              individual tasks.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Durable Function?</div>
-              <p>Extension to Functions for stateful, orchestrated workflows over long-running processes.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Durable Function?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Extension to Functions for stateful, orchestrated workflows over long-running
+              processes.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Hosting plans for Azure Functions?</div>
-              <p>Consumption Plan (serverless), Premium Plan (pre-warmed instances), Dedicated (App Service Plan).</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Hosting plans for Azure Functions?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Consumption Plan (serverless), Premium Plan (pre-warmed instances), Dedicated (App
+              Service Plan).</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Input and output binding in Functions?</div>
-              <p>Bindings simplify connecting functions to external services (storage, queues, DBs) without explicit
-                code.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Input and output binding in Functions?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Bindings simplify connecting functions to external services (storage, queues, DBs)
+              without explicit
+              code.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Languages are supported in Azure Functions?</div>
-              <p>C#, JavaScript, Python, Java, PowerShell, TypeScript, and custom handlers.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Languages are supported in Azure Functions?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">C#, JavaScript, Python, Java, PowerShell, TypeScript, and custom handlers.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Monitor Azure Functions?</div>
-              <p>Use Application Insights to track execution, failures, performance, and logs.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Monitor Azure Functions?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Use Application Insights to track execution, failures, performance, and logs.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Secure Azure Functions?</div>
-              <p>Use API keys, OAuth, managed identities, or Azure AD integration.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Secure Azure Functions?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Use API keys, OAuth, managed identities, or Azure AD integration.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Triggers Azure Functions?</div>
-              <p>HTTP requests, timers, Blob storage changes, Service Bus, Event Hubs, and Cosmos DB triggers.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Triggers Azure Functions?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">HTTP requests, timers, Blob storage changes, Service Bus, Event Hubs, and Cosmos DB
+              triggers.</div>
           </div>
 
 
@@ -123,13 +124,7 @@
     </section>
   </main>
   <div id="footer-placeholder"></div>
-  <script>
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i

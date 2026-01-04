@@ -34,13 +34,7 @@
 <body class="index-page Custombody">
   <!-- nav.html -->
   <div id="nav-placeholder"></div>
-  <script>
-    fetch("nav.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
-      });
-  </script>
+
   <main class="main">
     <!-- Hero Section -->
     <!-- About Section -->
@@ -53,73 +47,82 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-3">
 
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Benefit of using cloud-based diagram tools?</div>
-              <p>No installation required, supports remote collaboration, version history, and easy sharing.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Benefit of using cloud-based diagram tools?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">No installation required, supports remote collaboration, version history, and easy
+              sharing.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Can draw.io integrate with jira or confluence?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Yes, via plugins, Draw.io diagrams can be embedded in Jira issues and Confluence
+              pages for
+              collaborative documentation.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet draw.io and lucidchart?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Draw.io is free and open-source; Lucidchart is paid with advanced collaboration,
+              templates, and
+              integration features.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Draw.io?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Draw.io is a free web-based diagramming tool for flowcharts, org charts, network,
+              and architecture
+              diagrams.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Lucidchart?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Lucidchart is a cloud-based diagramming tool similar to Visio, with collaboration,
+              real-time editing,
+              and integration with apps like Google Workspace.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Shape formatting in draw.io or lucidchart?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Shapes can be customized with colors, borders, shadows, and labels to improve
+              clarity and visual
+              hierarchy.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>To collaborate in lucidchart?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Real-time editing, commenting, and version control allow multiple users to work
+              together on diagrams.
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Can draw.io integrate with jira or confluence?</div>
-              <p>Yes, via plugins, Draw.io diagrams can be embedded in Jira issues and Confluence pages for
-                collaborative documentation.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>To export diagrams in draw.io?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Diagrams can be exported as PNG, JPG, PDF, SVG, or VSDX for offline use.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Diffbet draw.io and lucidchart?</div>
-              <p>Draw.io is free and open-source; Lucidchart is paid with advanced collaboration, templates, and
-                integration features.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>You link diagrams to live data?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Some tools allow linking shapes to data sources like Google Sheets, Excel, or
+              databases to reflect
+              dynamic information.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Draw.io?</div>
-              <p>Draw.io is a free web-based diagramming tool for flowcharts, org charts, network, and architecture
-                diagrams.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>You maintain version history in lucidchart?</span>
+              <div class="icon">+</div>
             </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Lucidchart?</div>
-              <p>Lucidchart is a cloud-based diagramming tool similar to Visio, with collaboration, real-time editing,
-                and integration with apps like Google Workspace.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Shape formatting in draw.io or lucidchart?</div>
-              <p>Shapes can be customized with colors, borders, shadows, and labels to improve clarity and visual
-                hierarchy.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">To collaborate in lucidchart?</div>
-              <p>Real-time editing, commenting, and version control allow multiple users to work together on diagrams.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">To export diagrams in draw.io?</div>
-              <p>Diagrams can be exported as PNG, JPG, PDF, SVG, or VSDX for offline use.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">You link diagrams to live data?</div>
-              <p>Some tools allow linking shapes to data sources like Google Sheets, Excel, or databases to reflect
-                dynamic information.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">You maintain version history in lucidchart?</div>
-              <p>Lucidchart automatically tracks changes; you can restore or view previous versions via the revision
-                history panel.</p>
-            </div>
+            <div class="faq-answer">Lucidchart automatically tracks changes; you can restore or view previous versions
+              via the revision
+              history panel.</div>
           </div>
 
 
@@ -129,13 +132,7 @@
     </section>
   </main>
   <div id="footer-placeholder"></div>
-  <script>
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i

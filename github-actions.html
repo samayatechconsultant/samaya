@@ -34,13 +34,7 @@
 <body class="index-page Custombody">
   <!-- nav.html -->
   <div id="nav-placeholder"></div>
-  <script>
-    fetch("nav.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
-      });
-  </script>
+
   <main class="main">
     <!-- Hero Section -->
     <!-- About Section -->
@@ -53,65 +47,67 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-3">
 
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Action?</div>
-              <p>Reusable code that performs a specific task in a workflow step.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Action?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Reusable code that performs a specific task in a workflow step.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Github actions?</div>
-              <p>GitHub’s native CI/CD platform to automate workflows on Git events.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Github actions?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">GitHub’s native CI/CD platform to automate workflows on Git events.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Job in github actions?</div>
-              <p>A unit of work in a workflow, which can run on specified runners.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Job in github actions?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A unit of work in a workflow, which can run on specified runners.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Matrix builds?</div>
-              <p>Run a job in parallel across multiple OS, language, or dependency versions.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Matrix builds?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Run a job in parallel across multiple OS, language, or dependency versions.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Runner in github actions?</div>
-              <p>Server that executes workflows. Can be GitHub-hosted or self-hosted.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Runner in github actions?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Server that executes workflows. Can be GitHub-hosted or self-hosted.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Step in github actions?</div>
-              <p>An individual task inside a job, like running a script or command.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Step in github actions?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">An individual task inside a job, like running a script or command.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Workflow syntax in github actions?</div>
-              <p>Workflows are YAML files defining on, jobs, steps, and runs-on properties.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Workflow syntax in github actions?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Workflows are YAML files defining on, jobs, steps, and runs-on properties.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Workflow?</div>
-              <p>A set of automated steps triggered by events in the repository (push, pull request, schedule).</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Workflow?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">A set of automated steps triggered by events in the repository (push, pull request,
+              schedule).</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">You trigger github actions?</div>
-              <p>On push, pull requests, schedule, release, or manual dispatch events.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>You trigger github actions?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">On push, pull requests, schedule, release, or manual dispatch events.</div>
           </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">You use secrets in github actions?</div>
-              <p>Store credentials in repository secrets and access them as environment variables in workflows.</p>
+          <div class="faq-item active">
+            <div class="faq-question"><span>You use secrets in github actions?</span>
+              <div class="icon">+</div>
             </div>
+            <div class="faq-answer">Store credentials in repository secrets and access them as environment variables in
+              workflows.</div>
           </div>
 
 
@@ -122,13 +118,7 @@
     </section>
   </main>
   <div id="footer-placeholder"></div>
-  <script>
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
