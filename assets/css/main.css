@@ -1469,10 +1469,10 @@ section,
 
 
 .faq-item {
-  background: #198754;
+   background: #198754; 
   border-radius: 6px;
   overflow: hidden;
-  position: relative;
+  position: relative;display: flex;
 }
 
 .faq-item::before {
@@ -1480,9 +1480,9 @@ section,
   position: absolute;
   left: 0;
   top: 0;
-  width: 6px;
+  width: 10px;
   height: 100%;
-  background: #ff4013;
+  background: #198754;*/background: #ff1313;
 }
 
 .faq-question {
@@ -1491,11 +1491,11 @@ section,
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  color: #fff;
+  color: #fff;font-weight: 500;
 }
 
 .faq-question span {
-  font-size: 16px;
+  font-size: 15px;COLOR: var(--bs-black);
 }
 
 .icon {
@@ -1521,7 +1521,7 @@ section,
 }
 
 .faq-item.active .icon {
-  transform: rotate(45deg);
+  transform: rotate(45deg);    DISPLAY: NONE;
 }
 
 .client-logo-img-div {
