@@ -1477,7 +1477,7 @@ section,
 
 .faq-item::before {
   content: "";
-  position: absolute;
+  position: relative;*/absolute;
   left: 0;
   top: 0;
   width: 10px;
@@ -1495,7 +1495,7 @@ section,
 }
 
 .faq-question span {
-  font-size: 15px;COLOR: var(--bs-black);
+  font-size: 15px; color:#fff;
 }
 
 .icon {
