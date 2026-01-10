@@ -267,6 +267,7 @@ h6 {
 .navmenu a i,
 .navmenu a:focus i {
   font-size: 20px;
+    color: var(--bs-orange);
 }
 
 .navmenu a span,
