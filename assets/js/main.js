@@ -9,6 +9,12 @@
 (function () {
   "use strict";
 
+  fetch("nav.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("nav-placeholder").innerHTML = data;
+    });
+  
   /**
    * Header toggle
    */
@@ -230,11 +236,7 @@
 
  
 
-  fetch("nav.html")
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById("nav-placeholder").innerHTML = data;
-    });
+  
   document.querySelectorAll(".faq-question").forEach(q => {
     q.addEventListener("click", () => {
       q.parentElement.classList.toggle("active");
