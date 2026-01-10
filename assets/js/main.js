@@ -172,6 +172,8 @@
    */
   function initSwiper() {
     document.querySelectorAll(".init-swiper").forEach(function (swiperElement) {
+      const configEl = swiperElement.querySelector(".swiper-config");
+      if (configEl) {
       let config = JSON.parse(
         swiperElement.querySelector(".swiper-config")?.innerHTML.trim()
       );
@@ -180,7 +182,7 @@
         initSwiperWithCustomPagination(swiperElement, config);
       } else {
         new Swiper(swiperElement, config);
-      }
+      }}
     });
   }
 
