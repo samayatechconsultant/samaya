@@ -1562,31 +1562,4 @@ section,
 
 }
 
-/* Base (Mobile) */
-nav ul {
-  display: none;     /* hidden by default */
-  flex-direction: column;
-}
-
-nav ul.show {
-  display: flex;
-}
-
-.menu-toggle {
-  display: block;
-  font-size: 24px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-/* Desktop (Large screens) */
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;   /* hide button on desktop */
-  }
-  nav ul {
-    display: flex !important;   /* always show menu */
-    flex-direction: row;        /* horizontal on desktop */
-  }
-}
+ 
