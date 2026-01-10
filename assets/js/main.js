@@ -1,9 +1,5 @@
-/**
-* Template Name: MyResume
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+/** 
+* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ 
 */
 
 (function () {
@@ -13,47 +9,43 @@
     .then(res => res.text())
     .then(data => {
       document.getElementById("nav-placeholder").innerHTML = data;
-    });
-  
-  /**
-   * Header toggle
-   */
-  const headerToggleBtn = document.querySelector('.header-toggle');
 
-  function headerToggle() {
-    document.querySelector('#header').classList.toggle('header-show');
-    headerToggleBtn.classList.toggle('bi-list');
-    headerToggleBtn.classList.toggle('bi-x');
-  }
-  headerToggleBtn?.addEventListener('click', headerToggle);
+      /** * Header toggle */
+      const headerToggleBtn = document.querySelector('.header-toggle');
 
-  /**
-   * Hide mobile nav on same-page/hash links
-   */
-  document.querySelectorAll('#navmenu a').forEach(navmenu => {
-    navmenu.addEventListener('click', () => {
-      if (document.querySelector('.header-show')) {
-        headerToggle();
+      function headerToggle() {
+        document.querySelector('#header').classList.toggle('header-show');
+        headerToggleBtn.classList.toggle('bi-list');
+        headerToggleBtn.classList.toggle('bi-x');
       }
-    });
+      headerToggleBtn?.addEventListener('click', headerToggle);
 
-  });
+      /**
+       * Hide mobile nav on same-page/hash links
+       */
+      document.querySelectorAll('#navmenu a').forEach(navmenu => {
+        navmenu.addEventListener('click', () => {
+          if (document.querySelector('.header-show')) {
+            headerToggle();
+          }
+        });
 
-  /**
-   * Toggle mobile nav dropdowns
-   */
-  document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
-    navmenu.addEventListener('click', function (e) {
-      e.preventDefault();
-      this.parentNode.classList.toggle('active');
-      this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
-      e.stopImmediatePropagation();
-    });
-  });
+      });
 
-  /**
-   * Preloader
-   */
+      /** * Toggle mobile nav dropdowns  */
+      document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
+        navmenu.addEventListener('click', function (e) {
+          e.preventDefault();
+          this.parentNode.classList.toggle('active');
+          this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
+          e.stopImmediatePropagation();
+        });
+      });
+    }).catch(err => console.error("Nav load failed", err));
+
+
+
+  /** * Preloader  */
   const preloader = document.querySelector('#preloader');
   if (preloader) {
     window.addEventListener('load', () => {
@@ -61,9 +53,7 @@
     });
   }
 
-  /**
-   * Scroll top button
-   */
+  /**  * Scroll top button  */
   let scrollTop = document.querySelector('.scroll-top');
 
   function toggleScrollTop() {
@@ -82,9 +72,7 @@
   window.addEventListener('load', toggleScrollTop);
   document.addEventListener('scroll', toggleScrollTop);
 
-  /**
-   * Animation on scroll function and init
-   */
+  /**  * Animation on scroll function and init  */
   function aosInit() {
     AOS.init({
       duration: 600,
@@ -95,9 +83,7 @@
   }
   window.addEventListener('load', aosInit);
 
-  /**
-   * Init typed.js
-   */
+  /**  * Init typed.js  */
   const selectTyped = document.querySelector('.typed');
   if (selectTyped) {
     let typed_strings = selectTyped.getAttribute('data-typed-items');
@@ -180,15 +166,16 @@
     document.querySelectorAll(".init-swiper").forEach(function (swiperElement) {
       const configEl = swiperElement.querySelector(".swiper-config");
       if (configEl) {
-      let config = JSON.parse(
-        swiperElement.querySelector(".swiper-config")?.innerHTML.trim()
-      );
+        let config = JSON.parse(
+          swiperElement.querySelector(".swiper-config")?.innerHTML.trim()
+        );
 
-      if (swiperElement.classList.contains("swiper-tab")) {
-        initSwiperWithCustomPagination(swiperElement, config);
-      } else {
-        new Swiper(swiperElement, config);
-      }}
+        if (swiperElement.classList.contains("swiper-tab")) {
+          initSwiperWithCustomPagination(swiperElement, config);
+        } else {
+          new Swiper(swiperElement, config);
+        }
+      }
     });
   }
 
@@ -234,9 +221,9 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
- 
 
-  
+
+
   document.querySelectorAll(".faq-question").forEach(q => {
     q.addEventListener("click", () => {
       q.parentElement.classList.toggle("active");
