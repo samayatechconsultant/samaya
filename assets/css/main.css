@@ -391,6 +391,7 @@ h6 {
   }
 }
 
+
 /*-------------------------------------------------------------- # Scroll Top Button --------------------------------------------------------------*/
 .scroll-top {
   position: fixed;
@@ -2289,6 +2290,7 @@ iframe {
 
   /* footer */
   /* footer */
+  .single-line-footer{text-align: center;}
   .single-line-footer {
     display: flex;
     flex-wrap: wrap;
