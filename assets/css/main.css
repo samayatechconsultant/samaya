@@ -600,7 +600,7 @@ section,
 
 /*-------------------------------------------------------------- # About Section --------------------------------------------------------------*/
 .content ul {
-   margin-top: 10px;
+  margin-top: 10px;
 }
 
 .about .content h2 {
@@ -681,7 +681,7 @@ section,
   margin: 0 0 6px 0;
   text-transform: uppercase;
   display: block;
-  font-weight: 600; 
+  font-weight: 600;
 }
 
 .skills .progress .skill .val {
@@ -776,7 +776,7 @@ section,
   line-height: 1;
   margin-bottom: 5px;
   border-radius: 50px;
-  transition: all 0.3s ease-in-out; 
+  transition: all 0.3s ease-in-out;
 }
 
 .portfolio .portfolio-filters li:hover,
@@ -1628,7 +1628,7 @@ section,
   padding: 30px;
 }
 
-.h3-white { 
+.h3-white {
   font-size: 24px;
   font-weight: 700;
   color: var(--primary-color);
@@ -1970,6 +1970,14 @@ iframe {
   font-size: 28px;
 }
 
+.single-line-footer {
+  text-align: center;
+}
+
+.single-line-footer a {
+  color: #fff;
+}
+
 /* Gallery Grid */
 .gallery {
   display: grid;
@@ -2056,7 +2064,7 @@ iframe {
 .risk-table {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  border: 1px solid #ddd; 
+  border: 1px solid #ddd;
   font-size: 14px;
 }
 
@@ -2129,7 +2137,7 @@ iframe {
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
 .container {
@@ -2193,7 +2201,7 @@ iframe {
 .risk-table {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  border: 1px solid #ddd; 
+  border: 1px solid #ddd;
   font-size: 14px;
 }
 
@@ -2290,7 +2298,7 @@ iframe {
 
   /* footer */
   /* footer */
-  .single-line-footer{text-align: center;}
+
   .single-line-footer {
     display: flex;
     flex-wrap: wrap;
@@ -2320,4 +2328,63 @@ iframe {
   .divider {
     opacity: 0.6;
   }
+}
+
+/* ===============================
+       CSS VARIABLES (Brand Colors)
+       =============================== */
+:root {
+  --bi-facebook: #1877F2;
+
+  --bi-instagram-purple: #833AB4;
+  --bi-instagram-pink: #FD1D1D;
+  --bi-instagram-orange: #F56040;
+  --bi-instagram-yellow: #FCAF45;
+
+  --bi-skype: #00AFF0;
+  --bi-linkedin: #0A66C2;
+}
+
+/* ===============================
+       COMMON ICON STYLES
+       =============================== */
+.social-icons { 
+    gap: 20px;
+    font-size: 15px;
+}
+
+.social-icon {
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.15);
+  opacity: 0.9;
+}
+
+/* ===============================
+       BRAND COLORS
+       =============================== */
+.bi-facebook {
+  color: var(--bi-facebook);
+}
+
+.bi-skype {
+  color: var(--bi-skype);
+}
+
+.bi-linkedin {
+  color: var(--bi-linkedin);
+}
+
+/* Instagram Gradient */
+.bi-instagram {
+  background: linear-gradient(45deg,
+      var(--bi-instagram-purple),
+      var(--bi-instagram-pink),
+      var(--bi-instagram-orange),
+      var(--bi-instagram-yellow));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
