@@ -1,6 +1,6 @@
 /** 
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ 
-*/
+ * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ 
+ */
 
 (function () {
   "use strict";
@@ -234,4 +234,58 @@
     .then(data => {
       document.getElementById("footer-placeholder").innerHTML = data;
     });
+
+
 })();
+
+ /**
+   * Page Functions Code
+   */
+
+function openPdf(btn) {
+  const pdfUrl = btn.getAttribute("data-pdf");
+  const iframe = document.getElementById("pdfFrame");
+  iframe.src = pdfUrl + "#toolbar=0&navpanes=0";
+  document.getElementById("pdfModal").style.display = "block";
+}
+
+function closePdf() {
+  document.getElementById("pdfFrame").src = "";
+  document.getElementById("pdfModal").style.display = "none";
+} // Close modal when clicking outside 
+window.onclick = function (e) {
+  const modal = document.getElementById("pdfModal");
+  if (e.target === modal) {
+    closePdf();
+  }
+};
+let lastFocusedElement = null;
+let lastScrollPosition = 0;
+
+function openProjectDetails(projectModal) {
+  lastFocusedElement = this;
+  lastScrollPosition = window.scrollY;
+  var modal = new bootstrap.Modal(document.getElementById(projectModal));
+  modal.show();
+  portfolio.focus();
+};
+document.querySelectorAll('.btn-close').forEach(btn => {
+  btn.addEventListener('click', function () {
+    window.scrollTo({
+      top: lastScrollPosition,
+      behavior: "smooth"
+    });
+    if (lastFocusedElement) {
+      lastFocusedElement.focus();
+    }
+  });
+});
+
+function openImage(img) {
+  document.getElementById("imageModal").style.display = "flex";
+  document.getElementById("modalImg").src = img.src;
+}
+
+function closeImage() {
+  document.getElementById("imageModal").style.display = "none";
+}
