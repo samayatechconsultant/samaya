@@ -6,152 +6,111 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Samaya Tech Consultant</title>
   <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
+  <meta content="" name="keywords"> <!-- Favicons -->
   <link href="/assets/img/favicon.png" rel="icon">
-  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
+  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon"> <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
+    rel="stylesheet"> <!-- Vendor CSS Files -->
   <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
+  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> <!-- Main CSS File -->
   <link href="/assets/css/main.css" rel="stylesheet">
   <link href="/assets/css/topic.css" rel="stylesheet">
 </head>
 
-<body class="index-page Custombody">
-  <!-- nav.html -->
+<body class="index-page Custombody"> <!-- nav.html -->
   <div id="nav-placeholder"></div>
-
-  <main class="main">
-    <!-- Hero Section -->
-    <!-- About Section -->
-    <section id="about" class="about section Custombody">
-      <!-- Section Title -->
+  <main class="main"> <!-- Hero Section --> <!-- About Section -->
+    <section id="about" class="about section Custombody"> <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2  >Clean Architecture</h2>
-        <p>Interactive Interview Guide </p>
+        <h2>Clean Architecture</h2>
       </div><!-- End Section Title -->
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-3">
 
-          <div class="col-md-3 col-sm-6">
-            <div class="topic-card" style="padding: 5px;">
-              <div class="topic-pill" style="padding: 6px;">Clean architecture?</span>
-                <div class="icon">+</div>
-              </div>
-              <div class="faq-answer">A design pattern where dependencies flow inward, separating core business logic
-                from frameworks, UI,
-                and infrastructure.</div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Clean architecture?</span>
+              <div class="icon">+</div>
             </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="topic-card" style="padding: 5px;">
-                <div class="topic-pill" style="padding: 6px;">Dependency rule?</span>
-                  <div class="icon">+</div>
-                </div>
-                <div class="faq-answer">Dependencies should always point inward toward high-level policies, not toward
-                  external frameworks or
-                  infrastructure.</div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="topic-card" style="padding: 5px;">
-                  <div class="topic-pill" style="padding: 6px;">Diffbet entity and dto?</span>
-                    <div class="icon">+</div>
-                  </div>
-                  <div class="faq-answer">Entity represents domain data with behavior; DTO is a simple data carrier
-                    between layers or services.
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="topic-card" style="padding: 5px;">
-                    <div class="topic-pill" style="padding: 6px;">Diffbet layered and clean architecture?</span>
-                      <div class="icon">+</div>
-                    </div>
-                    <div class="faq-answer">Layered architecture is strictly horizontal; Clean Architecture emphasizes
-                      dependency inversion and
-                      decouples business logic from external concerns.</div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                    <div class="topic-card" style="padding: 5px;">
-                      <div class="topic-pill" style="padding: 6px;">Does clean architecture support testing?</span>
-                        <div class="icon">+</div>
-                      </div>
-                      <div class="faq-answer">Business rules are isolated from UI and DB, allowing unit tests without
-                        mocking infrastructure.</div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                      <div class="topic-card" style="padding: 5px;">
-                        <div class="topic-pill" style="padding: 6px;">Does it handle frameworks?</span>
-                          <div class="icon">+</div>
-                        </div>
-                        <div class="faq-answer">Frameworks are plug-ins; the core domain does not depend on frameworks,
-                          enabling easy replacement.</div>
-                      </div>
-                      <div class="col-md-3 col-sm-6">
-                        <div class="topic-card" style="padding: 5px;">
-                          <div class="topic-pill" style="padding: 6px;">Example: using clean architecture in c#</span>
-                            <div class="icon">+</div>
-                          </div>
-                          <div class="faq-answer">Domain → core entities, Application → services/use cases,
-                            Infrastructure → DB, API → controllers.</div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                          <div class="topic-card" style="padding: 5px;">
-                            <div class="topic-pill" style="padding: 6px;">Key layers?</span>
-                              <div class="icon">+</div>
-                            </div>
-                            <div class="faq-answer">Entities (core business), Use Cases (application logic), Interface
-                              Adapters (controllers/gateways), and
-                              Frameworks/Drivers (DB, UI).</div>
-                          </div>
-                          <div class="col-md-3 col-sm-6">
-                            <div class="topic-card" style="padding: 5px;">
-                              <div class="topic-pill" style="padding: 6px;">Use case interactor?</span>
-                                <div class="icon">+</div>
-                              </div>
-                              <div class="faq-answer">An application service that orchestrates business rules for a
-                                specific use case.</div>
-                            </div>
-                            <div class="col-md-3 col-sm-6">
-                              <div class="topic-card" style="padding: 5px;">
-                                <div class="topic-pill" style="padding: 6px;">Use clean architecture?</span>
-                                  <div class="icon">+</div>
-                                </div>
-                                <div class="faq-answer">It improves testability, maintainability, decoupling, and allows
-                                  technology changes without impacting
-                                  core logic.</div>
-                              </div>
-
-
-                            </div>
-                          </div>
-
+            <div class="faq-answer">A design pattern where dependencies flow inward, separating core business logic
+              from frameworks, UI, and infrastructure.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Dependency rule?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Dependencies should always point inward toward high-level policies, not toward
+              external frameworks or infrastructure.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet entity and dto?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Entity represents domain data with behavior; DTO is a simple data carrier
+              between layers or services. </div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Diffbet layered and clean architecture?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Layered architecture is strictly horizontal; Clean Architecture emphasizes
+              dependency inversion and decouples business logic from external concerns.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Does clean architecture support testing?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Business rules are isolated from UI and DB, allowing unit tests without
+              mocking infrastructure.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Does it handle frameworks?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Frameworks are plug-ins; the core domain does not depend on frameworks,
+              enabling easy replacement.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Example: using clean architecture in c#</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Domain → core entities, Application → services/use cases,
+              Infrastructure → DB, API → controllers.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Key layers?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">Entities (core business), Use Cases (application logic), Interface
+              Adapters (controllers/gateways), and Frameworks/Drivers (DB, UI).</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Use case interactor?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">An application service that orchestrates business rules for a
+              specific use case.</div>
+          </div>
+          <div class="faq-item active">
+            <div class="faq-question"><span>Use clean architecture?</span>
+              <div class="icon">+</div>
+            </div>
+            <div class="faq-answer">It improves testability, maintainability, decoupling, and allows
+              technology changes without impacting core logic.</div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
-  <div id="footer-placeholder"></div>
-
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
+  <div id="footer-placeholder"></div> <!-- Scroll Top --> <a href="#" id="scroll-top"
+    class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
+  <div id="preloader"></div> <!-- Vendor JS Files -->
   <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="/assets/vendor/php-email-form/validate.js"></script>
   <script src="/assets/vendor/aos/aos.js"></script>
@@ -161,11 +120,8 @@
   <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
+  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script> <!-- Main JS File -->
   <script src="/assets/js/main.js"></script>
-
 </body>
 
 </html>
