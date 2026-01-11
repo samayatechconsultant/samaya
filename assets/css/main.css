@@ -1442,7 +1442,7 @@ section,
 
 /*-------------------------------------------------------------- #FAQ Template --------------------------------------------------------------*/
 .faq-item {
-  background: #3d444d;
+  background: #212529; /*#3d444d;*/
   border-radius: 6px;
   overflow: hidden;
   position: relative;
