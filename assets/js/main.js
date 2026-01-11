@@ -5,7 +5,7 @@
 (function () {
   "use strict";
 
-  fetch("nav.html")
+  fetch("/nav.html")
     .then(res => res.text())
     .then(data => {
       document.getElementById("nav-placeholder").innerHTML = data;
@@ -229,7 +229,7 @@
       q.parentElement.classList.toggle("active");
     });
   });
-  fetch("footer.html")
+  fetch("/footer.html")
     .then(res => res.text())
     .then(data => {
       document.getElementById("footer-placeholder").innerHTML = data;
