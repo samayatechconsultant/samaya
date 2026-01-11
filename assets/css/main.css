@@ -248,11 +248,12 @@ h6 {
   margin-bottom: 8px;
   font-size: 15px;
   border-radius: 50px;
-  background: color-mix(in srgb, var(--default-color), transparent 92%);
-  height: 56px;
+  background: var(--bs-gray);
+  height: 30px;
   width: 100%;
   overflow: hidden;
   transition: 0.3s;
+  border: 2px solid #fd7e14;
 }
 
 .navmenu a i,
@@ -264,6 +265,7 @@ h6 {
 .navmenu a span,
 .navmenu a:focus span {
   padding: 0 5px 0 7px;
+  color: var(--contrast-color);
 }
 
 @media (min-width: 992px) {
@@ -1442,7 +1444,7 @@ section,
 
 /*-------------------------------------------------------------- #FAQ Template --------------------------------------------------------------*/
 .faq-item {
-  background: #212529; /*#3d444d;*/
+  background: #3d444d;
   border-radius: 6px;
   overflow: hidden;
   position: relative;
@@ -2348,9 +2350,9 @@ iframe {
 /* ===============================
        COMMON ICON STYLES
        =============================== */
-.social-icons { 
-    gap: 20px;
-    font-size: 15px;
+.social-icons {
+  gap: 20px;
+  font-size: 15px;
 }
 
 .social-icon {
