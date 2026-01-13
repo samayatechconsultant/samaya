@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+   <title>Samaya Tech Consultant</title>
+   <meta content="" name="description">
+   <meta content="" name="keywords">
+   <link href="/assets/img/favicon.png" rel="icon">
+   <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+   <link href="https://fonts.googleapis.com" rel="preconnect">
+   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+   <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+   <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+   <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+   <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+   <link href="/assets/css/main.css" rel="stylesheet">
+   <link href="/assets/css/topic.css" rel="stylesheet">
+   <style>
+      .faq-answer p {
+         border: 0px solid var(--nav-mobile-background-color);
+      }
+   </style>
+</head>
+
+<body class="index-page Custombody">
+   <div id="nav-placeholder"></div>
+   <main class="main">
+      <section id="about" class="about section Custombody">
+         <div class="container section-title" data-aos="fade-up">
+            <h2>Kubernetes Commands</h2>
+         </div>
+         <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="row g-4">
+               <div class="faq-item active">
+                  <div class="faq-question"><span> Working with Pods </span>
+                     <div class="icon">+</div>
+                  </div>
+                  <div class="faq-answer">
+                     <p> kubectl get pods -> # Lists all pods in the current namespace </p>
+                     <p> kubectl get pods -A -> # Lists all pods across all namespaces </p>
+                     <p> kubectl describe pod -> # Displays detailed info about a specific pod </p>
+                     <p> kubectl delete pod -> # Deletes a specific pod </p>
+                     <p> kubectl logs -> # Displays logs for a specific pod </p>
+                     <p> kubectl exec -it -- /bin/sh -> # Executes a shell inside a running pod </p>
+                  </div>
+               </div>
+               <div class="faq-item active">
+                  <div class="faq-question"><span> Working with Deployments </span>
+                     <div class="icon">+</div>
+                  </div>
+                  <div class="faq-answer">
+                     <p> kubectl get deployments -> # Lists all deployments </p>
+                     <p> kubectl create deployment --image= -> # Creates a deployment </p>
+                     <p> kubectl scale deployment --replicas= -> # Scales a deployment </p>
+                     <p> kubectl rollout status deployment -> # Checks rollout status </p>
+                     <p> kubectl rollout undo deployment -> # Rolls back the last deployment </p>
+                  </div>
+               </div>
+               <div class="faq-item active">
+                  <div class="faq-question"><span> Working with Services </span>
+                     <div class="icon">+</div>
+                  </div>
+                  <div class="faq-answer">
+                     <p> kubectl get services -> # Lists all services </p>
+                     <p> kubectl describe svc -> # Displays detailed info about a service </p>
+                     <p> kubectl expose deployment --port= --type= -> # Exposes a deployment as a service </p>
+                     <p> kubectl delete svc -> # Deletes a specific service </p>
+                  </div>
+               </div>
+               <div class="faq-item active">
+                  <div class="faq-question"><span> Working with ConflgMaps and Secrets </span>
+                     <div class="icon">+</div>
+                  </div>
+                  <div class="faq-answer">
+                     <p> kubectl create configmap --from-literal=key=value -> # Creates a ConfigMap </p>
+                     <p> kubectl get configmaps -> # Lists all ConfigMaps </p>
+                     <p> kubectl describe configmap -> # Describes a ConfigMap </p>
+                     <p> kubectl create secret generic --from-literal=key=value -> # Creates a secret </p>
+                     <p> kubectl get secrets -> # Lists all secrets </p>
+                     <p> kubectl describe secret -> # Describes a secret </p>
+                  </div>
+               </div>
+               <div class="faq-item active">
+                  <div class="faq-question"><span> Working with Namespaces </span>
+                     <div class="icon">+</div>
+                  </div>
+                  <div class="faq-answer">
+                     <p> kubectl get namespaces -> # Lists all namespaces </p>
+                     <p> kubectl create namespace -> # Creates a new namespace </p>
+                     <p> kubectl delete namespace -> # Deletes a namespace </p>
+                     <p> kubectl config set-context --current --namespace= -> # Sets default namespace for current
+                        context </p>
+                  </div>
+               </div>
+               <div class="faq-item active">
+                  <div class="faq-question"><span> Managing Nodes </span>
+                     <div class="icon">+</div>
+                  </div>
+                  <div class="faq-answer">
+                     <p> kubectl get nodes -> # Lists all nodes in the cluster </p>
+                     <p> kubectl describe node -> # Displays detailed info about a node </p>
+                     <p> kubectl drain -> # Safely evicts pods from a node (for maintenance) </p>
+                     <p> kubectl cordon -> # Marks node as unschedulable </p>
+                     <p> kubectl uncordon -> # Marks node as schedulable again </p>
+                  </div>
+               </div>
+               <div class="faq-item active">
+                  <div class="faq-question"><span> Working with Persistent Volumes (PV) and Claims (PVC) </span>
+                     <div class="icon">+</div>
+                  </div>
+                  <div class="faq-answer">
+                     <p> kubectl get pv -> # Lists all persistent volumes </p>
+                     <p> kubectl get pvc -> # Lists all persistent volume claims </p>
+                     <p> kubectl describe pv -> # Displays info about a persistent volume </p>
+                     <p> kubectl describe pvc -> # Displays info about a persistent volume claim </p>
+                     <p> kubectl d T elete pvc -> # Deletes a specific PVC </p>
+                  </div>
+               </div>
+               <div class="faq-item active">
+                  <div class="faq-question"><span> Conflguring and Viewing Contexts </span>
+                     <div class="icon">+</div>
+                  </div>
+                  <div class="faq-answer">
+                     <p> kubectl config get-contexts -> # Lists all available contexts </p>
+                     <p> kubectl config use-context -> # Switches to a specific context </p>
+                     <p> kubectl config current-context -> # Displays the current context </p>
+                     <p> kubectl config delete-context -> # Deletes a specific context </p>
+                  </div>
+               </div>
+               <div class="faq-item active">
+                  <div class="faq-question"><span> Debugging Resources </span>
+                     <div class="icon">+</div>
+                  </div>
+                  <div class="faq-answer">
+                     <p> kubectl describe -> # Describes any Kubernetes resource </p>
+                     <p> kubectl logs -> # Displays logs of a pod </p>
+                     <p> kubectl logs -f -> # Follows pod logs in real-time </p>
+                     <p> kubectl get events -> # Lists cluster events </p>
+                     <p> kubectl debug -> # Debugs a running pod </p>
+                  </div>
+               </div>
+               <div class="faq-item active">
+                  <div class="faq-question"><span> Managing Jobs and CronJobs </span>
+                     <div class="icon">+</div>
+                  </div>
+                  <div class="faq-answer">
+                     <p> kubectl get jobs -> # Lists all jobs </p>
+                     <p> kubectl delete job -> # Deletes a specific job </p>
+                     <p> kubectl get cronjobs -> # Lists all cronjobs </p>
+                     <p> kubectl delete cronjob -> # Deletes a specific cronjob </p>
+                  </div>
+               </div>
+               <div class="faq-item active">
+                  <div class="faq-question"><span> Applying and Deleting Manifests </span>
+                     <div class="icon">+</div>
+                  </div>
+                  <div class="faq-answer">
+                     <p> kubectl apply -f -> # Applies configuration from a YAML file </p>
+                     <p> kubectl delete -f -> # Deletes resources defined in a YAML file </p>
+                     <p> kubectl diff -f -> # Shows differences before applying a YAML file </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+   <div id="footer-placeholder"></div> <a href="#" id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+   <div id="preloader"></div>
+   <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="/assets/vendor/php-email-form/validate.js"></script>
+   <script src="/assets/vendor/aos/aos.js"></script>
+   <script src="/assets/vendor/typed.js/typed.umd.js"></script>
+   <script src="/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+   <script src="/assets/vendor/waypoints/noframework.waypoints.js"></script>
+   <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+   <script src="/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+   <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+   <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+   <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

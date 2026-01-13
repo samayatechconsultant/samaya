@@ -7,53 +7,37 @@
       <title>Samaya Tech Consultant</title>
       <meta content="" name="description">
       <meta content="" name="keywords">
-
-      <!-- Favicons -->
       <link href="/assets/img/favicon.png" rel="icon">
       <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-      <!-- Fonts -->
       <link href="https://fonts.googleapis.com" rel="preconnect">
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet">
-
-      <!-- Vendor CSS Files -->
       <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
       <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
       <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
       <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-      <!-- Main CSS File -->
       <link href="/assets/css/main.css" rel="stylesheet">
       <link href="/assets/css/topic.css" rel="stylesheet">
 </head>
 
 <body class="index-page Custombody">
-      <!-- nav.html -->
       <div id="nav-placeholder"></div>
-       
       <main class="main">
-            <!-- Hero Section -->
-            <!-- About Section -->
             <section id="about" class="about section Custombody">
-                  <!-- Section Title -->
                   <div class="container section-title" data-aos="fade-up">
-                        <h2  > Kubernet </h2>
-                  </div><!-- End Section Title -->
-
+                        <h2> Kubernet </h2>
+                  </div>
                   <div class="container" data-aos="fade-up" data-aos-delay="100">
                         <div class="row g-3">
-
                               <div class="faq-item active">
                                     <div class="faq-question"><span> Labels and Selectors?</span>
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">Labels are key-value pairs attached to Kubernetes objects
-                                          for identification and grouping. Selectors
-                                          query objects based on these labels. They are essential for service discovery
-                                          and workload management.
+                                          for identification and grouping. Selectors query objects based on these
+                                          labels. They are essential for service discovery and workload management.
                                     </div>
                               </div>
                               <div class="faq-item active">
@@ -61,17 +45,15 @@
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">Blue-Green deployment creates two identical environments,
-                                          allowing seamless switch-over during
-                                          releases. It reduces downtime and rollback risk. Kubernetes services route
-                                          traffic between versions.</div>
+                                          allowing seamless switch-over during releases. It reduces downtime and
+                                          rollback risk. Kubernetes services route traffic between versions.</div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>Blue-green deployment?</span>
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">Blue-green deployment runs new version alongside old version
-                                          and switches traffic after validation.
-                                    </div>
+                                          and switches traffic after validation. </div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>Canary deployment?</span>
@@ -85,18 +67,16 @@
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">Canary deployment gradually exposes new versions to a subset
-                                          of users. It helps validate performance
-                                          and stability before full rollout. It reduces deployment risks and improves
-                                          release confidence.</div>
+                                          of users. It helps validate performance and stability before full rollout. It
+                                          reduces deployment risks and improves release confidence.</div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>Cluster Autoscaler?</span>
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">Cluster Autoscaler automatically adjusts the number of nodes
-                                          based on application demands. It adds
-                                          nodes when resources are insufficient and removes unused nodes. It works
-                                          alongside HPA and VPA.</div>
+                                          based on application demands. It adds nodes when resources are insufficient
+                                          and removes unused nodes. It works alongside HPA and VPA.</div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>ConfigMap?</span>
@@ -110,27 +90,24 @@
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">ConfigMap stores configuration data separate from
-                                          application code. It helps manage environment
-                                          variables, config files, and parameters. It avoids rebuilding container images
-                                          when configuration
-                                          changes.</div>
+                                          application code. It helps manage environment variables, config files, and
+                                          parameters. It avoids rebuilding container images when configuration changes.
+                                    </div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>Container Runtime in Kubernetes?</span>
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">Container runtime executes and manages containers. Supported
-                                          runtimes include Docker, containerd, and
-                                          CRI-O. Kubernetes interacts with runtimes using the Container Runtime
-                                          Interface (CRI).</div>
+                                          runtimes include Docker, containerd, and CRI-O. Kubernetes interacts with
+                                          runtimes using the Container Runtime Interface (CRI).</div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>Control plane?</span>
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">The control plane manages the Kubernetes cluster including
-                                          scheduling scaling and maintaining desired
-                                          states. </div>
+                                          scheduling scaling and maintaining desired states. </div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>Cronjob?</span>
@@ -150,10 +127,9 @@
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">A DaemonSet ensures a copy of a Pod is running on all or
-                                          selected nodes. It is ideal for log
-                                          collectors, monitoring agents, or networking components. When new nodes are
-                                          added, DaemonSet
-                                          automatically deploys the Pod.</div>
+                                          selected nodes. It is ideal for log collectors, monitoring agents, or
+                                          networking components. When new nodes are added, DaemonSet automatically
+                                          deploys the Pod.</div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>Deployment?</span>
@@ -167,9 +143,8 @@
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">A Deployment defines how application Pods should be created,
-                                          updated, and scaled. It provides rolling
-                                          updates, version control, and rollback capabilities. Deployments ensure the
-                                          desired number of Pods are
+                                          updated, and scaled. It provides rolling updates, version control, and
+                                          rollback capabilities. Deployments ensure the desired number of Pods are
                                           always running.</div>
                               </div>
                               <div class="faq-item active">
@@ -177,8 +152,7 @@
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">Pod can contain one or more containers sharing storage and
-                                          network; container is a single runtime
-                                          instance. </div>
+                                          network; container is a single runtime instance. </div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>DifBet ClusterIP and NodePort?</span>
@@ -192,8 +166,7 @@
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">Deployment manages replicaSets and allows rolling updates
-                                          and rollback; replicaSet only ensures the
-                                          number of pod replicas. </div>
+                                          and rollback; replicaSet only ensures the number of pod replicas. </div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>DifBet ephemeral and persistent storage?</span>
@@ -207,8 +180,7 @@
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">Labels are used for selection and organization; annotations
-                                          store metadata for human or tool usage.
-                                    </div>
+                                          store metadata for human or tool usage. </div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>DifBet statefulset and deployment?</span>
@@ -229,10 +201,9 @@
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">etcd is a distributed key-value store used by Kubernetes to
-                                          store cluster state and configuration. It
-                                          ensures consistency across control plane components. If etcd fails, the
-                                          cluster loses state, making
-                                          backups critical.</div>
+                                          store cluster state and configuration. It ensures consistency across control
+                                          plane components. If etcd fails, the cluster loses state, making backups
+                                          critical.</div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>ExternalName service type?</span>
@@ -266,19 +237,17 @@
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">Helm is a package manager for Kubernetes applications. It
-                                          uses Charts to define, install, upgrade, and
-                                          manage deployments. Helm simplifies repetitive configurations and environment
-                                          consistency.</div>
+                                          uses Charts to define, install, upgrade, and manage deployments. Helm
+                                          simplifies repetitive configurations and environment consistency.</div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>Horizontal Pod Autoscaler (HPA)?</span>
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">HPA automatically scales the number of pods based on CPU
-                                          usage or custom metrics. It ensures the
-                                          application can handle traffic spikes efficiently. It contributes to
-                                          performance optimization and cost
-                                          savings.</div>
+                                          usage or custom metrics. It ensures the application can handle traffic spikes
+                                          efficiently. It contributes to performance optimization and cost savings.
+                                    </div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>Horizontal Pod Autoscaler?</span>
@@ -299,10 +268,8 @@
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">Ingress manages external HTTP/HTTPS traffic to cluster
-                                          services. It provides routing rules, SSL
-                                          termination, and domain-based access. Ingress replaces multiple load balancers
-                                          with a single entry
-                                          point.</div>
+                                          services. It provides routing rules, SSL termination, and domain-based access.
+                                          Ingress replaces multiple load balancers with a single entry point.</div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>Init container?</span>
@@ -416,9 +383,8 @@
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">Kubectl is the command-line tool used to interact with
-                                          Kubernetes clusters. It supports deployment,
-                                          debugging, scaling, and configuration management. Administrators use it for
-                                          operational control.</div>
+                                          Kubernetes clusters. It supports deployment, debugging, scaling, and
+                                          configuration management. Administrators use it for operational control.</div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>Kubelet?</span>
@@ -432,10 +398,9 @@
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">Kubelet runs on every worker node and ensures containers
-                                          defined in Pod specs are running. It
-                                          communicates with the Kubernetes API server and manages local container
-                                          runtime. It acts as the node
-                                          agent for Kubernetes.</div>
+                                          defined in Pod specs are running. It communicates with the Kubernetes API
+                                          server and manages local container runtime. It acts as the node agent for
+                                          Kubernetes.</div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>Kube-proxy?</span>
@@ -449,9 +414,8 @@
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">Kube-proxy handles network routing and load balancing for
-                                          Kubernetes Services. It ensures correct
-                                          forwarding of traffic to Pods across the cluster. It uses iptables or IPVS for
-                                          networking rules.</div>
+                                          Kubernetes Services. It ensures correct forwarding of traffic to Pods across
+                                          the cluster. It uses iptables or IPVS for networking rules.</div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>Kubernetes admission controller?</span>
@@ -500,10 +464,9 @@
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">A Kubernetes cluster consists of Master (Control Plane) and
-                                          Worker Nodes. The master manages
-                                          scheduling, orchestration, and cluster state, while worker nodes run the
-                                          container workloads. Together
-                                          they provide a scalable and fault-tolerant environment.</div>
+                                          Worker Nodes. The master manages scheduling, orchestration, and cluster state,
+                                          while worker nodes run the container workloads. Together they provide a
+                                          scalable and fault-tolerant environment.</div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>Kubernetes coredns?</span>
@@ -760,20 +723,18 @@
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">Kubernetes is an open-source container orchestration
-                                          platform for automating deployment scaling and
-                                          management of containerized applications. </div>
+                                          platform for automating deployment scaling and management of containerized
+                                          applications. </div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>Kubernetes?</span>
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">Kubernetes is an open-source container orchestration
-                                          platform used to automate deployment, scaling, and
-                                          management of containerized applications. It helps manage clusters of machines
-                                          running containers and
+                                          platform used to automate deployment, scaling, and management of containerized
+                                          applications. It helps manage clusters of machines running containers and
                                           ensures high availability. Kubernetes abstracts infrastructure complexity and
-                                          supports both cloud and
-                                          on-prem environments.</div>
+                                          supports both cloud and on-prem environments.</div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>LoadBalancer service type?</span>
@@ -794,9 +755,8 @@
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">Namespaces allow logical partitioning of Kubernetes
-                                          resources. They help organize applications, enforce
-                                          resource limits, and apply access control. Clusters support multiple isolated
-                                          environments like dev,
+                                          resources. They help organize applications, enforce resource limits, and apply
+                                          access control. Clusters support multiple isolated environments like dev,
                                           stage, and prod.</div>
                               </div>
                               <div class="faq-item active">
@@ -818,26 +778,24 @@
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">A Node is a physical or virtual machine in a Kubernetes
-                                          cluster that runs containers. Each node
-                                          contains Kubelet, container runtime, and Kube-proxy. Nodes execute workloads
-                                          assigned by the control
-                                          plane.</div>
+                                          cluster that runs containers. Each node contains Kubelet, container runtime,
+                                          and Kube-proxy. Nodes execute workloads assigned by the control plane.</div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>Persistent Volume (PV)?</span>
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">A PV is a cluster-level storage resource provisioned
-                                          independently of pods. It can be cloud storage,
-                                          NFS, or local disk. PVs ensure data persists even if pods are recreated.</div>
+                                          independently of pods. It can be cloud storage, NFS, or local disk. PVs ensure
+                                          data persists even if pods are recreated.</div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>Persistent Volume Claim (PVC)?</span>
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">A PVC is a request for storage by a pod. It binds to an
-                                          available PV dynamically or statically. PVCs
-                                          decouple storage provisioning from application deployment.</div>
+                                          available PV dynamically or statically. PVCs decouple storage provisioning
+                                          from application deployment.</div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>PersistentVolume (PV)?</span>
@@ -865,28 +823,25 @@
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">A pod is the smallest deployable unit in Kubernetes
-                                          consisting of one or more containers sharing
-                                          storage network and specifications. </div>
+                                          consisting of one or more containers sharing storage network and
+                                          specifications. </div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>Pod?</span>
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">A Pod is the smallest deployable unit in Kubernetes and can
-                                          contain one or multiple containers.
-                                          Containers in a pod share network and storage resources. Pods are ephemeral,
-                                          meaning they can be
-                                          recreated automatically if they fail.</div>
+                                          contain one or multiple containers. Containers in a pod share network and
+                                          storage resources. Pods are ephemeral, meaning they can be recreated
+                                          automatically if they fail.</div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>RBAC in Kubernetes?</span>
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">RBAC (Role-Based Access Control) controls permissions for
-                                          users, groups, and service accounts. It
-                                          defines what actions can be performed on which Kubernetes objects. RBAC helps
-                                          secure production
-                                          environments.</div>
+                                          users, groups, and service accounts. It defines what actions can be performed
+                                          on which Kubernetes objects. RBAC helps secure production environments.</div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>ReplicaSet?</span>
@@ -900,9 +855,8 @@
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">ReplicaSet ensures a specified number of pod replicas are
-                                          always running. It replaces pods if they
-                                          crash or are deleted. Deployments use ReplicaSets internally for versioned
-                                          upgrades.</div>
+                                          always running. It replaces pods if they crash or are deleted. Deployments use
+                                          ReplicaSets internally for versioned upgrades.</div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>Role and clusterrole?</span>
@@ -916,8 +870,7 @@
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">RoleBinding assigns Role to users in a namespace;
-                                          ClusterRoleBinding assigns ClusterRole cluster-wide.
-                                    </div>
+                                          ClusterRoleBinding assigns ClusterRole cluster-wide. </div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>Rolling update?</span>
@@ -938,10 +891,9 @@
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">Secrets store sensitive information like passwords, API
-                                          keys, and tokens in encoded form. They are
-                                          mounted securely into Pods or passed as environment variables. Kubernetes
-                                          helps restrict and encrypt
-                                          access to Secrets.</div>
+                                          keys, and tokens in encoded form. They are mounted securely into Pods or
+                                          passed as environment variables. Kubernetes helps restrict and encrypt access
+                                          to Secrets.</div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>Service in Kubernetes?</span>
@@ -955,18 +907,16 @@
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">A Service provides stable networking and load balancing for
-                                          Pods. Since Pods are dynamic, a service
-                                          exposes them using DNS names or IPs. It ensures traffic routing remains
-                                          consistent even if underlying
-                                          pods restart.</div>
+                                          Pods. Since Pods are dynamic, a service exposes them using DNS names or IPs.
+                                          It ensures traffic routing remains consistent even if underlying pods restart.
+                                    </div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>Sidecar container?</span>
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">Sidecar container runs alongside main container in a pod to
-                                          provide supporting features like logging or
-                                          proxy. </div>
+                                          provide supporting features like logging or proxy. </div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>Statefulset?</span>
@@ -980,18 +930,16 @@
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">StatefulSets manage stateful applications requiring stable
-                                          network identities and persistent storage.
-                                          They ensure ordered deployment, scaling, and deletion of pods. Databases
-                                          commonly use StatefulSets.</div>
+                                          network identities and persistent storage. They ensure ordered deployment,
+                                          scaling, and deletion of pods. Databases commonly use StatefulSets.</div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>StorageClass?</span>
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">StorageClass provides dynamic provisioning of Persistent
-                                          Volumes based on predefined storage policies.
-                                          It helps automate creating storage when PVC requests are made. Useful in cloud
-                                          environments for fast
+                                          Volumes based on predefined storage policies. It helps automate creating
+                                          storage when PVC requests are made. Useful in cloud environments for fast
                                           scaling.</div>
                               </div>
                               <div class="faq-item active">
@@ -1013,20 +961,18 @@
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">Kubernetes enables efficient scaling, automation,
-                                          resilience, and portability of containerized
-                                          applications. It simplifies DevOps workflows, supports microservices, and
-                                          optimizes infrastructure
-                                          usage. It is widely adopted for modern cloud-native architecture.</div>
+                                          resilience, and portability of containerized applications. It simplifies
+                                          DevOps workflows, supports microservices, and optimizes infrastructure usage.
+                                          It is widely adopted for modern cloud-native architecture.</div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>Vertical Pod Autoscaler (VPA)?</span>
                                           <div class="icon">+</div>
                                     </div>
                                     <div class="faq-answer">VPA adjusts CPU and memory resource requests/limits for pods
-                                          based on usage patterns. It focuses on
-                                          optimizing resource allocation per pod rather than increasing pod count. It is
-                                          ideal for workloads with
-                                          unpredictable resource needs.</div>
+                                          based on usage patterns. It focuses on optimizing resource allocation per pod
+                                          rather than increasing pod count. It is ideal for workloads with unpredictable
+                                          resource needs.</div>
                               </div>
                               <div class="faq-item active">
                                     <div class="faq-question"><span>Vertical Pod Autoscaler?</span>
@@ -1042,24 +988,13 @@
                                     <div class="faq-answer">Volume provides a way for containers in a pod to access
                                           storage. </div>
                               </div>
-
-
                         </div>
                   </div>
-
             </section>
       </main>
-      <div id="footer-placeholder"></div>
-       
-
-      <!-- Scroll Top -->
-      <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-                  class="bi bi-arrow-up-short"></i></a>
-
-      <!-- Preloader -->
+      <div id="footer-placeholder"></div> <a href="#" id="scroll-top"
+            class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
       <div id="preloader"></div>
-
-      <!-- Vendor JS Files -->
       <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
       <script src="/assets/vendor/php-email-form/validate.js"></script>
       <script src="/assets/vendor/aos/aos.js"></script>
@@ -1070,10 +1005,7 @@
       <script src="/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
       <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
       <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-      <!-- Main JS File -->
       <script src="/assets/js/main.js"></script>
-
 </body>
 
 </html>
