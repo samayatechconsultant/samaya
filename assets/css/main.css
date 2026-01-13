@@ -1444,7 +1444,7 @@ section,
 
 /*-------------------------------------------------------------- #FAQ Template --------------------------------------------------------------*/
 .faq-item {
-  background: #212529;
+ background: var(--bs-gray-600);/* background: #212529;*/
   border-radius: 6px;
   overflow: hidden;
   position: relative;
@@ -1514,8 +1514,7 @@ section,
 }
 
 .faq-item.active .icon {
-  transform: rotate(45deg);
-  DISPLAY: NONE;
+  transform: rotate(45deg); 
 }
 
 .box-color {
