@@ -224,7 +224,12 @@
 
 
 
-  document.querySelectorAll(".faq-question").forEach(q => {
+  document.querySelectorAll(".faq-question-icon").forEach(q => {
+    q.addEventListener("click", () => {
+      q.parentElement.classList.toggle("active");
+    });
+  });
+   document.querySelectorAll(".faq-question").forEach(q => {
     q.addEventListener("click", () => {
       q.parentElement.classList.toggle("active");
     });
@@ -283,7 +288,7 @@ document.querySelectorAll('.btn-close').forEach(btn => {
 
 function openImage(img) {
   document.getElementById("imageModal").style.display = "flex";
-  document.getElementById("modalImg").src = img.src;
+  document.getElementById("modalImg").src = img.src; 
 }
 
 function closeImage() {
