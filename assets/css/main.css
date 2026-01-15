@@ -61,7 +61,7 @@
 /*-------------------------------------------------------------- # General Styling & Shared Classes --------------------------------------------------------------*/
 body {
   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
- font-family: "Poppins", sans-serif; 
+  font-family: "Poppins", sans-serif;
   background: #3d444d !important;
   color: #eaeaea;
   line-height: 1.7;
@@ -492,7 +492,7 @@ section,
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-   color: #0d6efd;
+  color: #0d6efd;
 }
 
 .section-title h2:before {
@@ -523,7 +523,7 @@ section,
 
 .section-title p {
   margin-bottom: 0;
-      color: #000 !important;
+  color: #000 !important;
 }
 
 /*-------------------------------------------------------------- # Hero Section --------------------------------------------------------------*/
@@ -1447,10 +1447,10 @@ section,
 
 /*-------------------------------------------------------------- #FAQ Template --------------------------------------------------------------*/
 .faq-item-title {
- background: var(--bs-white);
+  background: var(--bs-white);
   border-radius: 6px;
   overflow: hidden;
-  position: relative; 
+  position: relative;
   border: 1px solid #a1aab6;
   border-radius: 10px;
   padding: 5px;
@@ -1463,24 +1463,58 @@ section,
   top: 0;
   width: 5px;
   height: 100%;
- background: #0d6efd;
+  background: #0d6efd;
 }
- .faq-item-title > .faq-question { display: block !important; }
-  .faq-item-title > .faq-question > .faq-answer {   padding: 0 0px 0 0px !important;}
-.faq-item-title.active .faq-answer {
+
+.faq-question-title {
+  padding: 1px 0px 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: #0d6efd !important;
+  font-weight: 500;
+}
+
+.faq-answer-title {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px 0 26px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.faq-item-title.active .faq-answer-title {
   max-height: 100%;
-  color:var(--bs-black);
+  color: var(--bs-black);
 }
 
 .faq-item-title.active .icon {
-  transform: rotate(45deg); 
+  transform: rotate(45deg);
+}
+
+.faq-item-title>.faq-question-title {
+  display: block !important;
+}
+
+.faq-item-title>.faq-question>.faq-answer-title {
+  padding: 0 0px 0 0px !important;
+}
+
+.faq-item-title.active .faq-answer-title {
+  max-height: 100%;
+  color: var(--bs-black);
+}
+
+.faq-item-title.active .icon {
+  transform: rotate(45deg);
 }
 
 .faq-item {
- background: var(--bs-white);
+  background: var(--bs-white);
   border-radius: 6px;
   overflow: hidden;
-  position: relative; 
+  position: relative;
   border: 1px solid #a1aab6;
   border-radius: 10px;
   padding: 5px;
@@ -1506,14 +1540,19 @@ section,
   font-weight: 500;
 }
 
-.faq-question span, p {
+.faq-question span,
+p {
   font-size: 15px;
-  color: #0d6efd !important;display: contents;
+  color: #0d6efd !important;
+  display: contents;
 }
-.faq-question span> p {
+
+.faq-question span>p {
   font-size: 15px;
-  color: #0d6efd !important;display: contents;
+  color: #0d6efd !important;
+  display: contents;
 }
+
 .icon {
   font-size: 22px;
   color: #0d6efd;
@@ -1528,9 +1567,11 @@ section,
   transition: all 0.3s ease;
 }
 
-.faq-answer span, p {
+.faq-answer span,
+p {
   margin-bottom: 0px;
-  color: #000 !important;display: block;
+  color: #000 !important;
+  display: block;
 }
 
 .faq-answer a {
@@ -1540,16 +1581,17 @@ section,
   border-radius: 10px;
   padding: 5px;
   margin-bottom: 5px;
-  display: flex;display: block;
+  display: flex;
+  display: block;
 }
 
 .faq-item.active .faq-answer {
   max-height: 100%;
-  color:var(--bs-black);
+  color: var(--bs-black);
 }
 
 .faq-item.active .icon {
-  transform: rotate(45deg); 
+  transform: rotate(45deg);
 }
 
 .box-color {
@@ -2083,9 +2125,9 @@ iframe {
   margin: 5px 0px 5px 40px;
 }
 
- 
 
- 
+
+
 @media (max-width: 600px) {
   .header h1 {
     font-size: 26px;
@@ -2179,7 +2221,7 @@ iframe {
   margin: auto;
 }
 
- 
+
 .risk-table {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -2370,4 +2412,17 @@ iframe {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.container-info-image{background-color: var(--bs-white);} table{margin-left: 30px;}
+
+.container-info-image {
+  background-color: var(--bs-white);
+}
+
+table {
+  margin-left: 30px;
+}
+
+.zoomable {
+  height: 30px;
+  border: 2px solid orange;
+  margin-bottom: 5px;
+}
