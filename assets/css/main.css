@@ -60,7 +60,8 @@
 
 /*-------------------------------------------------------------- # General Styling & Shared Classes --------------------------------------------------------------*/
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
+ font-family: "Poppins", sans-serif; 
   background: #3d444d !important;
   color: #eaeaea;
   line-height: 1.7;
@@ -491,6 +492,7 @@ section,
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+   color: #0d6efd;
 }
 
 .section-title h2:before {
@@ -521,6 +523,7 @@ section,
 
 .section-title p {
   margin-bottom: 0;
+      color: #000 !important;
 }
 
 /*-------------------------------------------------------------- # Hero Section --------------------------------------------------------------*/
@@ -659,13 +662,13 @@ section,
   font-size: 36px;
   display: block;
   font-weight: 700;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: #fff;
 }
 
 .stats .stats-item p {
   padding: 0;
   margin: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: #fff;
   font-size: 16px;
 }
 
@@ -1443,12 +1446,41 @@ section,
 }
 
 /*-------------------------------------------------------------- #FAQ Template --------------------------------------------------------------*/
-.faq-item {
- background: var(--bs-gray-600);/* background: #212529;*/
+.faq-item-title {
+ background: var(--bs-white);
   border-radius: 6px;
   overflow: hidden;
-  position: relative;
-  /* display: flex;*/
+  position: relative; 
+  border: 1px solid #a1aab6;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.faq-item-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+ background: #0d6efd;
+}
+ .faq-item-title > .faq-question { display: block !important; }
+  .faq-item-title > .faq-question > .faq-answer {   padding: 0 0px 0 0px !important;}
+.faq-item-title.active .faq-answer {
+  max-height: 100%;
+  color:var(--bs-black);
+}
+
+.faq-item-title.active .icon {
+  transform: rotate(45deg); 
+}
+
+.faq-item {
+ background: var(--bs-white);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative; 
   border: 1px solid #a1aab6;
   border-radius: 10px;
   padding: 5px;
@@ -1461,7 +1493,7 @@ section,
   top: 0;
   width: 10px;
   height: 100%;
-  background: var(--nav-hover-color);
+  background: #fd7e14;
 }
 
 .faq-question {
@@ -1470,19 +1502,21 @@ section,
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  color: #fff;
+  color: #0d6efd !important;
   font-weight: 500;
 }
 
-.faq-question span {
+.faq-question span, p {
   font-size: 15px;
-  COLOR: #fff;
-  ;
+  color: #0d6efd !important;display: contents;
 }
-
+.faq-question span> p {
+  font-size: 15px;
+  color: #0d6efd !important;display: contents;
+}
 .icon {
   font-size: 22px;
-  color: var(--accent);
+  color: #0d6efd;
   transition: transform 0.3s ease;
 }
 
@@ -1494,23 +1528,24 @@ section,
   transition: all 0.3s ease;
 }
 
-.faq-answer p {
+.faq-answer span, p {
   margin-bottom: 0px;
+  color: #000 !important;display: block;
 }
 
 .faq-answer a {
-  color: antiquewhite;
+  color: var(--bs-black);
   margin-bottom: 0px;
   border: 1px solid var(--nav-mobile-background-color);
   border-radius: 10px;
   padding: 5px;
   margin-bottom: 5px;
-  display: flex;
+  display: flex;display: block;
 }
 
 .faq-item.active .faq-answer {
   max-height: 100%;
-  color: #fff;
+  color:var(--bs-black);
 }
 
 .faq-item.active .icon {
@@ -1993,7 +2028,7 @@ iframe {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .gallery img {
@@ -2048,51 +2083,9 @@ iframe {
   margin: 5px 0px 5px 40px;
 }
 
-/* Gallery Grid */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  margin-top: 40px;
-}
+ 
 
-.gallery img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
-  background-color: white;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-}
-
-.risk-table {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  border: 1px solid #ddd;
-  font-size: 14px;
-}
-
-.risk-header {
-  background: none;
-  font-weight: bold;
-  text-align: center;
-}
-
-.risk-cell {
-  padding: 8px;
-  border: 1px solid #ddd;
-}
-
-.center {
-  text-align: center;
-}
-
+ 
 @media (max-width: 600px) {
   .header h1 {
     font-size: 26px;
@@ -2186,28 +2179,7 @@ iframe {
   margin: auto;
 }
 
-/* Gallery Grid */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  margin-top: 40px;
-}
-
-.gallery img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-}
-
+ 
 .risk-table {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -2398,4 +2370,4 @@ iframe {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.container-info-image{background-color: #45505b;} table{margin-left: 30px;}
+.container-info-image{background-color: var(--bs-white);} table{margin-left: 30px;}
