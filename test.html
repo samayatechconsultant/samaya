@@ -18,7 +18,7 @@
         <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
         <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
         <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-        <link href="/assets/css/main.css" rel="stylesheet"> 
+        <link href="/assets/css/main.css" rel="stylesheet">
         <style>
                 .faq-answer p a {
                         border: 0px solid var(--nav-mobile-background-color);
@@ -51,6 +51,39 @@
                         color: red
                 }
         </style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+        <style>
+                body {
+                        font-family: Arial, sans-serif;
+                        background: #0f172a;
+                        color: #fff;
+                        padding: 20px;
+                }
+
+                h2 {
+                        margin-top: 30px;
+                        color: #38bdf8;
+                }
+
+                ul {
+                        list-style: none;
+                        padding: 0;
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                        gap: 8px;
+                }
+
+                li {
+                        background: #1e293b;
+                        padding: 8px 12px;
+                        border-radius: 6px;
+                }
+
+                li i {
+                        margin-right: 8px;
+                        color: #22c55e;
+                }
+        </style>
 </head>
 
 <body class="index-page Custombody">
@@ -62,323 +95,106 @@
                         </div>
                         <div class="container" data-aos="fade-up" data-aos-delay="100">
                                 <div class="row g-3">
-                                        <div class="faq-item active">
-                                                <div class="faq-question col-md-6"> <span>
-                                                                <h5>🧠 Consolidates</h5>
-                                                        </span>
-                                                        <div class="icon">+</div>
+                                        <h2>Architecture / API</h2>
+                                        <ul>
+                                                <li><i class="bi bi-diagram-3"></i> Engineer to Architect</li>
+                                                <li><i class="bi bi-boxes"></i> Microservices Architecture (.NET +
+                                                        Azure)</li>
+                                                <li><i class="bi bi-plug"></i> API First Architecture</li>
+                                                <li><i class="bi bi-door-open"></i> API Gateways Explained</li>
+                                                <li><i class="bi bi-braces"></i> APIs</li>
+                                                <li><i class="bi bi-building"></i> Architecture</li>
+                                                <li><i class="bi bi-file-earmark-text"></i> Architecture Documentation &
+                                                        Diagrams</li>
+                                                <li><i class="bi bi-layers"></i> Clean Architecture</li>
+                                                <li><i class="bi bi-bounding-box"></i> DDD (Domain-Driven Design)</li>
+                                                <li><i class="bi bi-grid"></i> Design Pattern</li>
+                                                <li><i class="bi bi-pencil-square"></i> Draw.io / Lucidchart</li>
+                                                <li><i class="bi bi-diagram-2"></i> Microservices Architecture</li>
+                                                <li><i class="bi bi-speedometer2"></i> Performance Optimization</li>
+                                                <li><i class="bi bi-arrow-left-right"></i> RESTful APIs</li>
+                                                <li><i class="bi bi-arrows-expand"></i> Scalable & Maintainable Design
+                                                        Patterns</li>
+                                                <li><i class="bi bi-graph-up-arrow"></i> Scalable Solution Design</li>
+                                                <li><i class="bi bi-bezier2"></i> Scenario Based Microservices</li>
+                                                <li><i class="bi bi-gem"></i> SOLID Principles</li>
+                                                <li><i class="bi bi-globe"></i> Web API</li>
+                                                <li><i class="bi bi-node-plus"></i> GraphQL</li>
+                                                <li><i class="bi bi-lightning"></i> Webhook</li>
+                                        </ul>
+
+                                        <h2>Azure / Cloud</h2>
+                                        <ul>
+                                                <li><i class="bi bi-cloud"></i> Microsoft Azure</li>
+                                                <li><i class="bi bi-cpu"></i> Azure Functions</li>
+                                                <li><i class="bi bi-infinity"></i> Azure DevOps</li>
+                                                <li><i class="bi bi-shield-lock"></i> Azure Key Vault</li>
+                                                <li><i class="bi bi-folder"></i> Azure Repos</li>
+                                                <li><i class="bi bi-truck"></i> Azure Service Bus</li>
+                                                <li><i class="bi bi-cloud-arrow-up"></i> Scenario Based Azure & Azure
+                                                        Functions</li>
+                                        </ul>
+
+                                        <h2>DevOps / Git</h2>
+                                        <ul>
+                                                <li><i class="bi bi-git"></i> Git</li>
+                                                <li><i class="bi bi-github"></i> GitHub</li>
+                                                <li><i class="bi bi-lightning-charge"></i> GitHub Actions</li>
+                                                <li><i class="bi bi-gitlab"></i> GitLab</li>
+                                                <li><i class="bi bi-arrow-repeat"></i> CI/CD</li>
+                                                <li><i class="bi bi-box-seam"></i> Docker</li>
+                                                <li><i class="bi bi-terminal"></i> Kubernetes Commands</li>
+                                        </ul>
+
+                                        <h2>.NET / Development</h2>
+                                        <ul>
+                                                <li><i class="bi bi-code-slash"></i> C#</li>
+                                                <li><i class="bi bi-filter"></i> LINQ</li>
+                                                <li><i class="bi bi-database"></i> Entity Framework</li>
+                                                <li><i class="bi bi-window"></i> WPF</li>
+                                                <li><i class="bi bi-filetype-js"></i> JavaScript / jQuery / AJAX</li>
+                                                <li><i class="bi bi-bootstrap"></i> React</li>
+                                        </ul>
+
+                                        <h2>Database / Process</h2>
+                                        <ul>
+                                                <li><i class="bi bi-database"></i> SQL</li>
+                                                <li><i class="bi bi-activity"></i> Logging & Monitoring</li>
+                                                <li><i class="bi bi-kanban"></i> Agile Methodology</li>
+                                                <li><i class="bi bi-people"></i> Technical Leadership & Mentoring</li>
+                                                <li><i class="bi bi-eye"></i> Code Reviews</li>
+                                                <li><i class="bi bi-award"></i> Technical Architect IQAs (.NET + Azure)
+                                                </li>
+                                        </ul>
+
+                                        <!-- Bootstrap Tabs with Icons -->
+                                        <ul class="nav nav-tabs" id="iqasTab" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                        <button class="nav-link active" id="overview-tab"
+                                                                data-bs-toggle="tab" data-bs-target="#overview"
+                                                                type="button" role="tab">
+                                                                <i class="bi bi-info-circle"></i> Overview
+                                                        </button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="services-tab" data-bs-toggle="tab"
+                                                                data-bs-target="#services" type="button" role="tab">
+                                                                <i class="bi bi-briefcase"></i> Services
+                                                        </button>
+                                                </li>
+                                                <!-- more tabs -->
+                                        </ul>
+
+                                        <div class="tab-content" id="iqasTabContent">
+                                                <div class="tab-pane fade show active" id="overview" role="tabpanel">
+                                                        Overview HTML here
                                                 </div>
-                                                <div class="faq-answer" style="padding: 0 20px 0 45px;">
-                                                        <p class="file-item"><a href="dot-net-core.html"
-                                                                        class="text-color"> .NET Core</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a
-                                                                        href="100+ devops essential concepts.html"
-                                                                        class="text-color"> 100+ Devops Essential
-                                                                        Concepts</a><i class="bi bi-file-text-fill"></i>
-                                                        </p>
-                                                        <p class="file-item"><a href="ado.net.html" class="text-color">
-                                                                        ADO.NET</a><i class="bi bi-file-text-fill"></i>
-                                                        </p>
-                                                        <p class="file-item"><a
-                                                                        href="advanced-microservices-architecture-images.html"
-                                                                        class="text-color">Advanced Microservices
-                                                                        Architecture Images </a><i
-                                                                        class="bi bi-file-image-fill"></i></p>
-                                                        <p class="file-item"><a
-                                                                        href="advanced-principal-architect-interview-guide-dotnet-azure-images.html"
-                                                                        class="text-color">Advanced Principal Architect
-                                                                        Interview Guide DotNet Azure Images </a><i
-                                                                        class="bi bi-file-image-fill"></i></p>
-                                                        <p class="file-item"><a href="agile-methodology.html"
-                                                                        class="text-color"> Agile methodology</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="angular.html" class="text-color">
-                                                                        Angular</a><i class="bi bi-file-text-fill"></i>
-                                                        </p>
-                                                        <p class="file-item"><a href="api-first-architecture.html"
-                                                                        class="text-color">API First Architecture </a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="api-gateways-explained.html"
-                                                                        class="text-color"> Api Gateways Explained</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><span onclick="openPdf(this)"
-                                                                        data-pdf="/assets/pdf/api-gateways-explained.pdf"
-                                                                        class="text-color"> Api Gateways
-                                                                        Explained.pdf</span><i
-                                                                        class="bi bi-file-pdf-fill"></i></p>
-                                                        <p class="file-item"><a href="apis.html" class="text-color">
-                                                                        APIs</a><i class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="architecture.html"
-                                                                        class="text-color"> Architecture </a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a
-                                                                        href="architecture-documentation-diagrams.html"
-                                                                        class="text-color">Architecture Documentation &
-                                                                        Diagrams </a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="azure-app-services.html"
-                                                                        class="text-color"> Azure App Services</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="azure-devops.html"
-                                                                        class="text-color"> Azure DevOps</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="azure-devops-azure-pipelines.html"
-                                                                        class="text-color"> Azure DevOps (Azure
-                                                                        Pipelines)</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="azure-functions.html"
-                                                                        class="text-color"> Azure Functions</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="azure-key-vault.html"
-                                                                        class="text-color"> Azure Key Vault</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="azure-repos.html"
-                                                                        class="text-color"> Azure Repos</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="azure-service-bus.html"
-                                                                        class="text-color"> Azure Service Bus</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><span onclick="openPdf(this)"
-                                                                        data-pdf="/assets/pdf/bash.pdf"
-                                                                        class="text-color"> Bash</span><i
-                                                                        class="bi bi-file-pdf-fill"></i> </p>
-                                                        <p class="file-item"><a href="bitbucket.html"
-                                                                        class="text-color"> Bitbucket</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="csharp.html" class="text-color">
-                                                                        C#</a><i class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="ci-cd.html" class="text-color">
-                                                                        CI/CD</a><i class="bi bi-file-text-fill"></i>
-                                                        </p>
-                                                        <p class="file-item"><a href="clean-architecture.html"
-                                                                        class="text-color">Clean Architecture </a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="code-reviews.html"
-                                                                        class="text-color"> Code Reviews</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="creatio-crm.html"
-                                                                        class="text-color"> Creatio CRM</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="ddd-domain-driven-design.html"
-                                                                        class="text-color">DDD (Domain-Driven Design)
-                                                                </a><i class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="design-pattern.html"
-                                                                        class="text-color">Design Pattern </a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><span onclick="openPdf(this)"
-                                                                        data-pdf="/assets/pdf/devops.pdf"
-                                                                        class="text-color"> Devops</span><i
-                                                                        class="bi bi-file-pdf-fill"></i></p>
-                                                        <p class="file-item"><span onclick="openPdf(this)"
-                                                                        data-pdf="/assets/pdf/devops-commands.pdf"
-                                                                        class="text-color"> Devops Commands </span><i
-                                                                        class="bi bi-file-pdf-fill"></i></p>
-                                                        <p class="file-item"><a href="devops-commands-cheat-sheet.html"
-                                                                        class="text-color"> Devops Commands Cheat
-                                                                        Sheet</a><i class="bi bi-file-text-fill"></i>
-                                                        </p>
-                                                        <p class="file-item"><span onclick="openPdf(this)"
-                                                                        data-pdf="/assets/pdf/devops-interview-questions.pdf"
-                                                                        class="text-color"> Devops Interview Questions
-                                                                </span><i class="bi bi-file-pdf-fill"></i></p>
-                                                        <p class="file-item"><a
-                                                                        href="devops-interviews-question-and-answer.html"
-                                                                        class="text-color"> Devops Interviews Question
-                                                                        And Answer</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a
-                                                                        href="devops-shack-200-jenkins-scenario-based-question-and-answer.html"
-                                                                        class="text-color"> DevOps Shack 200 Jenkins
-                                                                        Scenario Based Question and Answer</a><i
-                                                                        class="bi bi-file-text-fill"></i> </p>
-                                                        <p class="file-item"><a href="docker.html" class="text-color">
-                                                                        Docker</a><i class="bi bi-file-text-fill"></i>
-                                                        </p>
-                                                        <p class="file-item"><span onclick="openPdf(this)"
-                                                                        data-pdf="/assets/pdf/docker.pdf"
-                                                                        class="text-color"> Docker</span><i
-                                                                        class="bi bi-file-pdf-fill"></i></p>
-                                                        <p class="file-item"><a href="draw.io-lucidchart.html"
-                                                                        class="text-color"> Draw.io / Lucidchart</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="entity-framework.html"
-                                                                        class="text-color"> Entity Framework</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="everything-about-devops.html"
-                                                                        class="text-color"> Everything About
-                                                                        Devops</a><i class="bi bi-file-text-fill"></i>
-                                                        </p>
-                                                        <p class="file-item"><a href="git.html" class="text-color">
-                                                                        Git</a><i class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="github.html" class="text-color">
-                                                                        Git Operations</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="github-actions.html"
-                                                                        class="text-color"> Git Tags & Releases</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="gitlab.html" class="text-color">
-                                                                        GitHub</a><i class="bi bi-file-text-fill"></i>
-                                                        </p>
-                                                        <p class="file-item"><a href="gitlab-ci-cd.html"
-                                                                        class="text-color"> GitHub Actions</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="git-operations.html"
-                                                                        class="text-color"> GitLab</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="git-tags-releases.html"
-                                                                        class="text-color"> GitLab CI/CD</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="graphql.html" class="text-color">
-                                                                        GraphQL</a><i class="bi bi-file-text-fill"></i>
-                                                        </p>
-                                                        <p class="file-item"><a href="image-notes.html"
-                                                                        class="text-color"> Image Notes </a><i
-                                                                        class="bi bi-file-image-fill"></i></p>
-                                                        <p class="file-item"><a href="javscript-jquery-ajax.html"
-                                                                        class="text-color"> JavScript, jQuery &
-                                                                        AJAX</a><i class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="jenkins.html" class="text-color">
-                                                                        Jenkins</a><i class="bi bi-file-text-fill"></i>
-                                                        </p>
-                                                        <p class="file-item"><a href="kubernet.html" class="text-color">
-                                                                        Kubernet</a><i class="bi bi-file-text-fill"></i>
-                                                        </p>
-                                                        <p class="file-item"><span onclick="openPdf(this)"
-                                                                        data-pdf="/assets/pdf/kubernetes.pdf"
-                                                                        class="text-color"> Kubernetes </span><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="kubernetes-commands.html"
-                                                                        class="text-color"> Kubernetes Commands</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><span onclick="openPdf(this)"
-                                                                        data-pdf="/assets/pdf/kubernetes-commands.pdf"
-                                                                        class="text-color"> Kubernetes Commands
-                                                                </span><i class="bi bi-file-pdf-fill"></i></p>
-                                                        <p class="file-item"><a href="linq.html" class="text-color">
-                                                                        LINQ</a><i class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><span onclick="openPdf(this)"
-                                                                        data-pdf="/assets/pdf/llms.pdf"
-                                                                        class="text-color"> Llms</span><i
-                                                                        class="bi bi-file-pdf-fill"></i> </p>
-                                                        <p class="file-item"><a href="loging-monitoring.html"
-                                                                        class="text-color"> Loging & Monitoring</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="microservices-architecture.html"
-                                                                        class="text-color">Microservices Architecture
-                                                                </a><i class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="microsoft-azure.html"
-                                                                        class="text-color"> Microsoft Azure</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="mongodb.html" class="text-color">
-                                                                        MongoDB</a><i class="bi bi-file-text-fill"></i>
-                                                        </p>
-                                                        <p class="file-item"><a href="node.js.html" class="text-color">
-                                                                        Node.js</a><i class="bi bi-file-text-fill"></i>
-                                                        </p>
-                                                        <p class="file-item"><a href="oop.html" class="text-color">
-                                                                        OOP</a><i class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="payment-gateways.html"
-                                                                        class="text-color"> Payment Gateways</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="performence-optimization.html"
-                                                                        class="text-color"> Performence
-                                                                        Optimization</a><i
-                                                                        class="bi bi-file-text-fill"></i> </p>
-                                                        <p class="file-item"><a href="postgresql.html"
-                                                                        class="text-color"> PostgreSQL</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="project-management-details.html"
-                                                                        class="text-color">Project Management Details
-                                                                </a><i class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><span onclick="openPdf(this)"
-                                                                        data-pdf="/assets/pdf/prometheus-notes.pdf"
-                                                                        class="text-color"> Prometheus Notes</span><i
-                                                                        class="bi bi-file-pdf-fill"></i></p>
-                                                        <p class="file-item"><a href="react.html" class="text-color">
-                                                                        React</a><i class="bi bi-file-text-fill"></i>
-                                                        </p>
-                                                        <p class="file-item"><a href="restful-apis.html"
-                                                                        class="text-color"> RESTful APIs</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a
-                                                                        href="scalable-maintainable-design-patterns.html"
-                                                                        class="text-color">Scalable & Maintainable
-                                                                        Design Patterns </a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="scalable-solution-design.html"
-                                                                        class="text-color">Scalable Solution Design
-                                                                </a><i class="bi bi-file-text-fill"></i> </p>
-                                                        <p class="file-item"><a
-                                                                        href="scenario-based-azure -azure-function-scenario.html"
-                                                                        class="text-color"> Scenario Based Azure & Azure
-                                                                        Functions</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="scenario-based-csharp-oops.html"
-                                                                        class="text-color"> Scenario Based C# &
-                                                                        OOPS</a><i class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a
-                                                                        href="scenario-based_linq_entity_ framework_sql.html"
-                                                                        class="text-color"> Scenario Based LINQ
-                                                                        Framework SQL</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="scenario-based_microservices.html"
-                                                                        class="text-color"> Scenario Based
-                                                                        Microservices</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><span onclick="openPdf(this)"
-                                                                        data-pdf="/assets/pdf/security-basics.pdf"
-                                                                        class="text-color"> Security Basics </span><i
-                                                                        class="bi bi-file-pdf-fill"></i></p>
-                                                        <p class="file-item"><a href="solid-principles.html"
-                                                                        class="text-color">SOLID Principles </a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="sql.html" class="text-color">
-                                                                        SQL</a><i class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="sql-server.html"
-                                                                        class="text-color"> SQL Server</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="teamcity.html" class="text-color">
-                                                                        TeamCity</a><i class="bi bi-file-text-fill"></i>
-                                                        </p>
-                                                        <p class="file-item"><a
-                                                                        href="technical-leadership-mentoring.html"
-                                                                        class="text-color"> Technical Leadership &
-                                                                        Mentoring</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="terraform.html"
-                                                                        class="text-color"> Terraform</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="top-100-iqa.html"
-                                                                        class="text-color"> Top 100 IQA</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="services/topic.html"
-                                                                        class="text-color"> Topics </a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="typescript.html"
-                                                                        class="text-color"> TypeScript</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="umbraco-cms.html"
-                                                                        class="text-color"> Umbraco CMS</a><i
-                                                                        class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="visio-qa.html" class="text-color">
-                                                                        Visio QA</a><i class="bi bi-file-text-fill"></i>
-                                                        </p>
-                                                        <p class="file-item"><a href="wcf.html" class="text-color">
-                                                                        WCF</a><i class="bi bi-file-text-fill"></i></p>
-                                                        <p class="file-item"><a href="web-api.html" class="text-color">
-                                                                        Web API</a><i class="bi bi-file-text-fill"></i>
-                                                        </p>
-                                                        <p class="file-item"><a href="webhook.html" class="text-color">
-                                                                        Webhook</a><i class="bi bi-file-text-fill"></i>
-                                                        </p>
-                                                        <p class="file-item"><a href="webhook.html" class="text-color">
-                                                                        Webhook</a><i class="bi bi-file-text-fill"></i>
-                                                        </p>
-                                                        <p class="file-item"><a href="wpf.html" class="text-color">
-                                                                        WPF</a><i class="bi bi-file-text-fill"></i></p>
+                                                <div class="tab-pane fade" id="services" role="tabpanel">
+                                                        -- Services HTML here
                                                 </div>
+                                                <!-- more content panes -->
                                         </div>
+
                                 </div>
                         </div>
                 </section>
