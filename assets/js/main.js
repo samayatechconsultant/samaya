@@ -224,7 +224,7 @@
 
 
 
-  document.querySelectorAll(".faq-question-icon").forEach(q => {
+  document.querySelectorAll(".faq-question-title").forEach(q => {
     q.addEventListener("click", () => {
       q.parentElement.classList.toggle("active");
     });
