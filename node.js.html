@@ -22,743 +22,900 @@
   <link href="/assets/css/main.css" rel="stylesheet"> 
 </head>
 
-<body class="index-page Custombody">
+<body>
   <div id="nav-placeholder"></div>
-  <main class="main">
-    <section id="about" class="about section Custombody">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Node.js</h2>
-      </div>
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-3">
-          <div class="faq-item active">
-            <div class="faq-question"><span>Advantages of Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Asynchronous, event-driven, high performance, scalable, uses JavaScript on both
-              client and server, large ecosystem of npm packages. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Async/await in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Syntactic sugar over Promises to write asynchronous code in a synchronous style.
-              </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Body-parser in Express?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Middleware to parse incoming request bodies in JSON, URL-encoded, or raw format.
-              </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Callback in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">A function passed as an argument to another function to execute after an
-              asynchronous operation completes. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Cluster module in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Cluster module allows creating multiple worker processes sharing the same port to
-              utilize multiple CPU cores. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Clustering in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Cluster module allows running multiple Node processes to use multi-core CPU,
-              improving scalability and performance.</p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Cookie in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Cookie is data stored in client browser sent with HTTP requests. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Core modules in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Built-in modules like fs, http, path, os, events, stream. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>CORS in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Cross-Origin Resource Sharing allows server to control which domains can access its
-              resources. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet __dirname and __filename?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">__dirname returns the directory of the current module; __filename returns the full
-              path of the current module. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet app.listen() and server.listen()?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">app.listen() is shorthand for creating HTTP server and listening; server.listen() is
-              low-level HTTP server. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet app.use() and app.get() in Express?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">app.use() applies middleware to all requests; app.get() handles HTTP GET requests to
-              specific path. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet app.use() and router.use() in Express?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">app.use() applies middleware globally; router.use() applies middleware to specific
-              router. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet async_hooks and events module?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">async_hooks tracks asynchronous resources lifecycle; events module provides
-              event-driven programming. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet Buffer and Stream?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Buffer stores data in memory; Stream reads/writes data piece by piece, useful for
-              large datasets. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet Buffer.alloc() and Buffer.from()?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Buffer.alloc() creates zero-filled buffer; Buffer.from() creates buffer from
-              existing data. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet callback and promise?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Callback executes function after completion; Promise represents future value and
-              allows chaining with .then() and .catch(). </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet child_process.exec() and child_process.spawn()?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">exec() runs command and buffers output; spawn() streams output in real-time. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet cluster and child_process in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">cluster allows running multiple processes sharing server ports; child_process spawns
-              independent processes. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet cluster and worker_threads in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">cluster creates multiple processes; worker_threads creates threads within same
-              process. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet cluster.fork() and child_process.fork()?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">cluster.fork() creates worker sharing server ports; child_process.fork() spawns new
-              independent process. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet console.log and process.stdout.write?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">console.log adds newline automatically; process.stdout.write does not. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet domain and try-catch in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Domain handles multiple asynchronous errors; try-catch only handles synchronous
-              errors. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet 'error' event and try-catch in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">'error' event handles asynchronous errors; try-catch handles synchronous errors.
-              </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet error-first callback and regular callback?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Error-first passes error as first argument to callback; regular may not. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet event loop and thread pool in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Event loop handles async callbacks; thread pool handles CPU-intensive or blocking
-              operations. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet event-driven and multithreaded in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Node.js uses single-threaded event loop for async operations; multithreaded uses
-              multiple threads. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet EventEmitter and streams in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">EventEmitter emits events; streams are a specialized type of EventEmitter for
-              reading/writing data. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet Express and Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Node.js is runtime; Express is web framework built on Node.js to simplify server
-              creation. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet fork() and spawn()?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">fork() spawns new Node.js process with IPC channel; spawn() spawns new process
-              without Node.js environment. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet fs.readFile and fs.readFileSync?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">fs.readFile is asynchronous; fs.readFileSync is synchronous. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet GET, POST, PUT, DELETE requests in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">GET retrieves data; POST creates data; PUT updates data; DELETE removes data. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet global object and process object?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">global is global namespace; process provides info about current Node.js process.
-              </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet HTTP and HTTPS in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">HTTPS uses TLS/SSL for secure communication; HTTP is unencrypted. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet JWT and session-based authentication?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">JWT is stateless, stored on client; session-based stores data on server and
-              maintains session ID. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet middleware and route handler in Express?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Middleware modifies request/response or executes logic; route handler responds to a
-              specific route. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet module.exports and exports in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">module.exports defines what require() returns; exports is shorthand but cannot be
-              reassigned directly. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet module.exports and exports?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">module.exports defines the object returned by require; exports is a shortcut to
-              module.exports but cannot be reassigned directly. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet Node.js and JavaScript in the browser?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Node.js runs on server; browser JS runs on client. Node.js provides APIs for file
-              system, network, etc. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet Node.js and JavaScript?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">JavaScript is the language; Node.js is a runtime environment to run JS on server.
-              </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet Node.js and PHP?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Node.js is asynchronous, event-driven, non-blocking; PHP is synchronous and
-              request-based. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet Node.js callback and event emitter pattern?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Callback executes once after async operation; EventEmitter can emit multiple events
-              to multiple listeners. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet npm install and npm install --save?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">npm install installs packages locally; --save also adds the package to dependencies
-              in package.json. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet npm install --save and npm install --save-dev?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">--save installs production dependencies; --save-dev installs development-only
-              dependencies. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet path.join() and path.resolve()?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">path.join() joins paths; path.resolve() resolves absolute path from relative. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet process.env and dotenv?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">process.env stores environment variables; dotenv loads variables from .env file into
-              process.env. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet process.exit() and process.kill()?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">process.exit() exits current process; process.kill() sends signal to any process.
-              </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet process.nextTick() and setImmediate()?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">process.nextTick executes before the next event loop iteration; setImmediate
-              executes on the next iteration of the event loop. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet process.nextTick() and setTimeout(fn,0)?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">process.nextTick runs before event loop continues; setTimeout(fn,0) runs in next
-              iteration. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet process.nextTick(), setImmediate(), and setTimeout()? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">process.nextTick executes immediately after current operation; setImmediate executes
-              on next event loop; setTimeout executes after delay. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet process.stdin and process.stdout?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">process.stdin is input stream; process.stdout is output stream. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet PUT and PATCH in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">PUT replaces entire resource; PATCH updates part of resource. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet readFile and createReadStream?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">readFile reads entire file into memory; createReadStream reads file in chunks for
-              efficiency. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet require() and import in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">require() is CommonJS syntax; import is ES6 module syntax. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet require() and import() in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">require() is synchronous CommonJS; import() is asynchronous ES module syntax. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet require.cache and module caching?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">require.cache stores cached modules; Node.js caches modules by default to improve
-              performance. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet require.resolve() and require.cache?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">require.resolve() returns resolved module path; require.cache stores loaded modules.
-              </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet res.send() and res.end() in Express?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">res.send() sends response and sets headers; res.end() ends response without setting
-              content type automatically. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet res.send() and res.json() in Express?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">res.send() sends response as string, buffer, or object; res.json() sends
-              JSON-formatted response. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet session and cookie?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Session stored on server, client has session ID; cookie stored on client, sent with
-              requests. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet setImmediate() and nextTick()?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">nextTick executes before I/O events; setImmediate executes after I/O events. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet setTimeout and setImmediate?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">setTimeout schedules after specified delay; setImmediate executes immediately after
-              I/O events in the current cycle. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet socket.io and ws in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">socket.io provides higher-level API with fallback and rooms; ws is a simple
-              WebSocket implementation. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet streams.pipe() and streams.on('data')?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">pipe() automatically forwards data to destination; on('data') listens and manually
-              handles chunks. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet synchronous and asynchronous database queries in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Synchronous blocks event loop; asynchronous executes in background allowing other
-              operations. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet synchronous and asynchronous DNS lookup in Node.js? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Synchronous blocks execution; asynchronous uses callback and does not block. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet synchronous and asynchronous file I/O in Node.js? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Synchronous blocks code execution; asynchronous executes in background with
-              callback. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet synchronous and asynchronous functions in Node.js? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Synchronous blocks execution until completion; asynchronous allows other code to run
-              while waiting for completion. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet synchronous and asynchronous logging in Node.js? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Synchronous logging blocks event loop; asynchronous logging does not. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet synchronous and asynchronous require()?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Synchronous require blocks until module is loaded; asynchronous import() does not.
-              </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet TCP server and HTTP server in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">TCP server handles raw TCP connections; HTTP server handles HTTP protocol requests.
-              </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet unhandledRejection and uncaughtException?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">unhandledRejection handles rejected Promises; uncaughtException handles synchronous
-              exceptions not caught. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DiffBet require() and import?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">require() is CommonJS module syntax; import is ES6 module syntax. Node supports both
-              with configuration.</p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DiffBet synchronous and asynchronous in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Synchronous blocks execution until task completes. Asynchronous uses callbacks,
-              promises, or async/await to continue execution without blocking.</p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Event Loop in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">The event loop handles asynchronous callbacks and allows Node.js to perform
-              non-blocking I/O operations. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Event Loop?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Core of Node.js that handles async operations. It checks the callback queue and
-              executes tasks non-blockingly.</p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Express.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">A minimal web framework for Node.js. Simplifies routing, middleware, and HTTP
-              handling for REST APIs. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Handle errors in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Use try/catch for synchronous code, and .catch() or error-first callbacks for async
-              code. Handle uncaught exceptions globally if needed.</p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>JWT (JSON Web Token) in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">JWT is a compact token format for securely transmitting information between client
-              and server. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Middleware in Express?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Functions that process requests before reaching route handlers. Used for logging,
-              authentication, parsing, or error handling.</p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Middleware in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Middleware is a function that executes during request-response cycle in frameworks
-              like Express. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Modules in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Modules are reusable blocks of code that can be exported and imported into other
-              files. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Node.js is a JavaScript runtime built on Chrome's V8 engine that allows running
-              JavaScript on the server side. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Node.js is a runtime to execute JavaScript on the server. Uses an event-driven,
-              non-blocking I/O model for scalable applications.</p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Npm?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Node Package Manager, used to install and manage packages for Node.js applications.
-              </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Npm?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Node Package Manager (npm) is used to install, manage, and publish Node.js packages.
-              It supports dependency management.</p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Package.json in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Configuration file containing metadata about the project and its dependencies. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Phases of Node.js Event Loop?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Timers, I/O callbacks, idle/prepare, poll, check, close callbacks. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Routing in Express.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Routing defines endpoints (paths) and methods to handle client requests. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Session in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Session stores data across multiple requests from same client, usually in memory or
-              database. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>streams in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Streams are objects for reading/writing data in chunks, useful for handling large
-              files efficiently. </p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>streams in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Streams handle reading/writing large data efficiently in chunks. Types: Readable,
-              Writable, Duplex, Transform.</p>
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Types of streams in Node.js?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Readable, Writable, Duplex, Transform. </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+  <main class="container" id="tab_content_48">
+        <section class="iqas-section">
+            <div class="faq-item-title active">
+                <div class="faq-question-title">
+                    <div class="container section-title" data-aos="fade-up">
+                        <div class="faq-question-title">
+                            <h2 class="heading-title">Node.js</h2>
+                            <div class="title-icon">+</div>
+                        </div>
+                        <div class="faq-answer-title">
+                            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                                <div class="row">
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Advantages of Node.js? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Asynchronous, event-driven, high performance, scalable,
+                                            uses
+                                            JavaScript on both client and server, large ecosystem of npm packages. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Async/await in Node.js? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Syntactic sugar over Promises to write asynchronous code
+                                            in
+                                            a
+                                            synchronous style. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Body-parser in Express? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Middleware to parse incoming request bodies in JSON,
+                                            URL-encoded, or
+                                            raw format. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Callback in Node.js? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A function passed as an argument to another function to
+                                            execute after
+                                            an asynchronous operation completes. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Cluster module in Node.js? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Cluster module allows creating multiple worker processes
+                                            sharing the
+                                            same port to utilize multiple CPU cores. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Clustering in Node.js? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Cluster module allows running multiple Node processes to
+                                            use
+                                            multi-core CPU, improving scalability and performance.</p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Cookie in Node.js? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Cookie is data stored in client browser sent with HTTP
+                                            requests. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Core modules in Node.js? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Built-in modules like fs, http, path, os, events,
+                                            stream.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">CORS in Node.js? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Cross-Origin Resource Sharing allows server to control
+                                            which
+                                            domains
+                                            can access its resources. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet __dirname and __filename? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">__dirname returns the directory of the current module;
+                                            __filename
+                                            returns the full path of the current module. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet app.listen() and server.listen()? <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">app.listen() is shorthand for creating HTTP server and
+                                            listening;
+                                            server.listen() is low-level HTTP server. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet app.use() and app.get() in Express? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">app.use() applies middleware to all requests; app.get()
+                                            handles HTTP
+                                            GET requests to specific path. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet app.use() and router.use() in Express? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">app.use() applies middleware globally; router.use()
+                                            applies
+                                            middleware to specific router. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet async_hooks and events module? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">async_hooks tracks asynchronous resources lifecycle;
+                                            events
+                                            module
+                                            provides event-driven programming. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Buffer and Stream? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Buffer stores data in memory; Stream reads/writes data
+                                            piece
+                                            by
+                                            piece, useful for large datasets. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Buffer.alloc() and Buffer.from()? <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Buffer.alloc() creates zero-filled buffer; Buffer.from()
+                                            creates
+                                            buffer from existing data. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet callback and promise? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Callback executes function after completion; Promise
+                                            represents
+                                            future value and allows chaining with .then() and .catch(). </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet child_process.exec() and child_process.spawn()?
+                                            <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">exec() runs command and buffers output; spawn() streams
+                                            output in
+                                            real-time. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet cluster and child_process in Node.js? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">cluster allows running multiple processes sharing server
+                                            ports;
+                                            child_process spawns independent processes. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet cluster and worker_threads in Node.js? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">cluster creates multiple processes; worker_threads
+                                            creates
+                                            threads
+                                            within same process. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet cluster.fork() and child_process.fork()? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">cluster.fork() creates worker sharing server ports;
+                                            child_process.fork() spawns new independent process. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet console.log and process.stdout.write? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">console.log adds newline automatically;
+                                            process.stdout.write
+                                            does
+                                            not. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet domain and try-catch in Node.js? <div
+                                                class="icon">
+                                                +</div>
+                                        </div>
+                                        <div class="faq-answer">Domain handles multiple asynchronous errors; try-catch
+                                            only
+                                            handles
+                                            synchronous errors. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet 'error' event and try-catch in Node.js? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">'error' event handles asynchronous errors; try-catch
+                                            handles
+                                            synchronous errors. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet error-first callback and regular callback? <div
+                                                class="icon">+ </div>
+                                        </div>
+                                        <div class="faq-answer">Error-first passes error as first argument to callback;
+                                            regular may
+                                            not. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet event loop and thread pool in Node.js? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Event loop handles async callbacks; thread pool handles
+                                            CPU-intensive
+                                            or blocking operations. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet event-driven and multithreaded in Node.js? <div
+                                                class="icon">+ </div>
+                                        </div>
+                                        <div class="faq-answer">Node.js uses single-threaded event loop for async
+                                            operations;
+                                            multithreaded uses multiple threads. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet EventEmitter and streams in Node.js? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">EventEmitter emits events; streams are a specialized
+                                            type of
+                                            EventEmitter for reading/writing data. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Express and Node.js? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Node.js is runtime; Express is web framework built on
+                                            Node.js to
+                                            simplify server creation. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet fork() and spawn()? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">fork() spawns new Node.js process with IPC channel;
+                                            spawn()
+                                            spawns
+                                            new process without Node.js environment. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet fs.readFile and fs.readFileSync? <div
+                                                class="icon">
+                                                +</div>
+                                        </div>
+                                        <div class="faq-answer">fs.readFile is asynchronous; fs.readFileSync is
+                                            synchronous.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet GET, POST, PUT, DELETE requests in Node.js?
+                                            <div class="icon">+ </div>
+                                        </div>
+                                        <div class="faq-answer">GET retrieves data; POST creates data; PUT updates data;
+                                            DELETE
+                                            removes data. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet global object and process object? <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">global is global namespace; process provides info about
+                                            current
+                                            Node.js process. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet HTTP and HTTPS in Node.js? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">HTTPS uses TLS/SSL for secure communication; HTTP is
+                                            unencrypted.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet JWT and session-based authentication? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">JWT is stateless, stored on client; session-based stores
+                                            data on
+                                            server and maintains session ID. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet middleware and route handler in Express? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Middleware modifies request/response or executes logic;
+                                            route handler
+                                            responds to a specific route. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet module.exports and exports in Node.js? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">module.exports defines what require() returns; exports
+                                            is
+                                            shorthand
+                                            but cannot be reassigned directly. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet module.exports and exports? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">module.exports defines the object returned by require;
+                                            exports is a
+                                            shortcut to module.exports but cannot be reassigned directly. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Node.js and JavaScript in the browser? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Node.js runs on server; browser JS runs on client.
+                                            Node.js
+                                            provides
+                                            APIs for file system, network, etc. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Node.js and JavaScript? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">JavaScript is the language; Node.js is a runtime
+                                            environment
+                                            to run
+                                            JS on server. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Node.js and PHP? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Node.js is asynchronous, event-driven, non-blocking; PHP
+                                            is
+                                            synchronous and request-based. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Node.js callback and event emitter pattern?
+                                            <div class="icon">+ </div>
+                                        </div>
+                                        <div class="faq-answer">Callback executes once after async operation;
+                                            EventEmitter
+                                            can emit
+                                            multiple events to multiple listeners. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet npm install and npm install --save? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">npm install installs packages locally; --save also adds
+                                            the
+                                            package
+                                            to dependencies in package.json. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet npm install --save and npm install --save-dev?
+                                            <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">--save installs production dependencies; --save-dev
+                                            installs
+                                            development-only dependencies. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet path.join() and path.resolve()? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">path.join() joins paths; path.resolve() resolves
+                                            absolute
+                                            path from
+                                            relative. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet process.env and dotenv? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">process.env stores environment variables; dotenv loads
+                                            variables from
+                                            .env file into process.env. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet process.exit() and process.kill()? <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">process.exit() exits current process; process.kill()
+                                            sends
+                                            signal to
+                                            any process. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet process.nextTick() and setImmediate()? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">process.nextTick executes before the next event loop
+                                            iteration;
+                                            setImmediate executes on the next iteration of the event loop. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet process.nextTick() and setTimeout(fn,0)? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">process.nextTick runs before event loop continues;
+                                            setTimeout(fn,0)
+                                            runs in next iteration. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet process.nextTick(), setImmediate(), and
+                                            setTimeout()? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">process.nextTick executes immediately after current
+                                            operation;
+                                            setImmediate executes on next event loop; setTimeout executes after delay.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet process.stdin and process.stdout? <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">process.stdin is input stream; process.stdout is output
+                                            stream. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet PUT and PATCH in Node.js? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">PUT replaces entire resource; PATCH updates part of
+                                            resource. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet readFile and createReadStream? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">readFile reads entire file into memory; createReadStream
+                                            reads file
+                                            in chunks for efficiency. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet require() and import in Node.js? <div
+                                                class="icon">
+                                                +</div>
+                                        </div>
+                                        <div class="faq-answer">require() is CommonJS syntax; import is ES6 module
+                                            syntax.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet require() and import() in Node.js? <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">require() is synchronous CommonJS; import() is
+                                            asynchronous
+                                            ES module
+                                            syntax. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet require.cache and module caching? <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">require.cache stores cached modules; Node.js caches
+                                            modules
+                                            by
+                                            default to improve performance. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet require.resolve() and require.cache? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">require.resolve() returns resolved module path;
+                                            require.cache stores
+                                            loaded modules. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet res.send() and res.end() in Express? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">res.send() sends response and sets headers; res.end()
+                                            ends
+                                            response
+                                            without setting content type automatically. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet res.send() and res.json() in Express? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">res.send() sends response as string, buffer, or object;
+                                            res.json()
+                                            sends JSON-formatted response. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet session and cookie? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Session stored on server, client has session ID; cookie
+                                            stored on
+                                            client, sent with requests. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet setImmediate() and nextTick()? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">nextTick executes before I/O events; setImmediate
+                                            executes
+                                            after I/O
+                                            events. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet setTimeout and setImmediate? <div class="icon">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">setTimeout schedules after specified delay; setImmediate
+                                            executes
+                                            immediately after I/O events in the current cycle. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet socket.io and ws in Node.js? <div class="icon">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">socket.io provides higher-level API with fallback and
+                                            rooms;
+                                            ws is a
+                                            simple WebSocket implementation. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet streams.pipe() and streams.on('data')? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">pipe() automatically forwards data to destination;
+                                            on('data') listens
+                                            and manually handles chunks. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet synchronous and asynchronous database queries
+                                            in
+                                            Node.js?
+                                            <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Synchronous blocks event loop; asynchronous executes in
+                                            background
+                                            allowing other operations. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet synchronous and asynchronous DNS lookup in
+                                            Node.js?
+                                            <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Synchronous blocks execution; asynchronous uses callback
+                                            and
+                                            does not
+                                            block. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet synchronous and asynchronous file I/O in
+                                            Node.js?
+                                            <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Synchronous blocks code execution; asynchronous executes
+                                            in
+                                            background with callback. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet synchronous and asynchronous functions in
+                                            Node.js?
+                                            <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Synchronous blocks execution until completion;
+                                            asynchronous
+                                            allows
+                                            other code to run while waiting for completion. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet synchronous and asynchronous logging in
+                                            Node.js?
+                                            <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Synchronous logging blocks event loop; asynchronous
+                                            logging
+                                            does not.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet synchronous and asynchronous require()? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Synchronous require blocks until module is loaded;
+                                            asynchronous
+                                            import() does not. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet TCP server and HTTP server in Node.js? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">TCP server handles raw TCP connections; HTTP server
+                                            handles
+                                            HTTP
+                                            protocol requests. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet unhandledRejection and uncaughtException? <div
+                                                class="icon">
+                                                + </div>
+                                        </div>
+                                        <div class="faq-answer">unhandledRejection handles rejected Promises;
+                                            uncaughtException
+                                            handles synchronous exceptions not caught. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DiffBet require() and import? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">require() is CommonJS module syntax; import is ES6
+                                            module
+                                            syntax.
+                                            Node supports both with configuration.</p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DiffBet synchronous and asynchronous in Node.js? <div
+                                                class="icon">
+                                                + </div>
+                                        </div>
+                                        <div class="faq-answer">Synchronous blocks execution until task completes.
+                                            Asynchronous uses
+                                            callbacks, promises, or async/await to continue execution without blocking.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Event Loop in Node.js? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">The event loop handles asynchronous callbacks and allows
+                                            Node.js to
+                                            perform non-blocking I/O operations. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Event Loop? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Core of Node.js that handles async operations. It checks
+                                            the
+                                            callback
+                                            queue and executes tasks non-blockingly.</p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Express.js? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A minimal web framework for Node.js. Simplifies routing,
+                                            middleware,
+                                            and HTTP handling for REST APIs. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Handle errors in Node.js? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Use try/catch for synchronous code, and .catch() or
+                                            error-first
+                                            callbacks for async code. Handle uncaught exceptions globally if needed.</p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">JWT (JSON Web Token) in Node.js? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">JWT is a compact token format for securely transmitting
+                                            information
+                                            between client and server. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Middleware in Express? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Functions that process requests before reaching route
+                                            handlers. Used
+                                            for logging, authentication, parsing, or error handling.</p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Middleware in Node.js? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Middleware is a function that executes during
+                                            request-response cycle
+                                            in frameworks like Express. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Modules in Node.js? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Modules are reusable blocks of code that can be exported
+                                            and
+                                            imported
+                                            into other files. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Node.js? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Node.js is a JavaScript runtime built on Chrome's V8
+                                            engine
+                                            that
+                                            allows running JavaScript on the server side. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Node.js? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Node.js is a runtime to execute JavaScript on the
+                                            server.
+                                            Uses an
+                                            event-driven, non-blocking I/O model for scalable applications.</p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Npm? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Node Package Manager, used to install and manage
+                                            packages
+                                            for Node.js
+                                            applications. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Npm? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Node Package Manager (npm) is used to install, manage,
+                                            and
+                                            publish
+                                            Node.js packages. It supports dependency management.</p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Package.json in Node.js? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Configuration file containing metadata about the project
+                                            and
+                                            its
+                                            dependencies. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Phases of Node.js Event Loop? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Timers, I/O callbacks, idle/prepare, poll, check, close
+                                            callbacks.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Routing in Express.js? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Routing defines endpoints (paths) and methods to handle
+                                            client
+                                            requests. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Session in Node.js? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Session stores data across multiple requests from same
+                                            client,
+                                            usually in memory or database. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">streams in Node.js? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Streams are objects for reading/writing data in chunks,
+                                            useful for
+                                            handling large files efficiently. </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">streams in Node.js? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Streams handle reading/writing large data efficiently in
+                                            chunks.
+                                            Types: Readable, Writable, Duplex, Transform.</p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Types of streams in Node.js? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Readable, Writable, Duplex, Transform. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
   <div id="footer-placeholder"></div> <a href="#" id="scroll-top"
     class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>

@@ -21,527 +21,583 @@
       <link href="/assets/css/main.css" rel="stylesheet"> 
 </head>
 
-<body class="index-page Custombody">
+<body>
       <div id="nav-placeholder"></div>
-      <main class="main">
-            <section id="about" class="about section Custombody">
-                  <div class="container section-title" data-aos="fade-up">
-                        <h2>MongoDB</h2>
-                  </div>
-                  <div class="container" data-aos="fade-up" data-aos-delay="100">
-                        <div class="row g-3">
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Access Control & Authentication</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Authentication is implemented using SCRAM, LDAP, or x.509
-                                          certificates. Role-based access control (RBAC) grants users permissions like
-                                          read, readWrite, or admin.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Add Bonus</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">db.employees.updateMany({ department: "Engineering" }, {
-                                          $set: { bonus: 5000 } });</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Aggregation</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Aggregation pipeline processes data in stages (match, group,
-                                          sort, project). It is used for reporting and data transformation.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Aggregation in MongoDB?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Aggregation performs operations like grouping, filtering,
-                                          sorting, and transformation on collections using the aggregation pipeline.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Average Salary</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">db.employees.aggregate([{ $match: { department:
-                                          "Engineering" } }, { $group: { _id: null, avg: { $avg: "$salary" } } }])</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Backups & Recovery</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Use mongodump/mongorestore, cloud Atlas backups, or
-                                          filesystem snapshots. Point-in-time recovery is supported in replica sets.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>BSON Significance</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">BSON extends JSON with additional datatypes like binary,
-                                          ObjectId, and dates, improving storage efficiency and performance.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Capped Collections</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Capped collections have fixed size and automatically
-                                          overwrite old documents. Useful for logs, real-time analytics, and
-                                          high-throughput writes.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Change Streams</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Change streams allow real-time notifications of inserts,
-                                          updates, deletes. Used in event-driven systems and syncing applications.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Collection in MongoDB?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A collection is a group of MongoDB documents, similar to a
-                                          table in RDBMS.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Connect MongoDB with Java?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Use MongoDB Java driver or Spring Data MongoDB. Connect
-                                          using MongoClient and specify the database.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Consistency</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">MongoDB offers tunable consistency using write concern and
-                                          read preferences.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Count per Department</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">db.employees.aggregate([{ $group: { _id: "$department",
-                                          count: { $sum: 1 } } }])</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Create Database & Collection</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Using command line:, use myDB, db.createCollection("users")
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>CRUD Syntax</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">MongoDB uses JavaScript-like syntax:, insert(), find(),
-                                          update(), deleteOne().</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Dept With Highest Avg Salary</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">db.employees.aggregate([{ $group: { _id: "$department", avg:
-                                          { $avg: "$salary" } } }, { $sort: { avg: -1 } }, { $limit: 1 }])</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DiffBet capped and regular collections?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Capped collections have fixed size, maintain insertion
-                                          order, and overwrite oldest data. Regular collections grow dynamically.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DiffBet embedded and referenced documents?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Embedded documents store nested data in one document.
-                                          References store relations via foreign IDs.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DiffBet find() and findOne()?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">find() returns a cursor for multiple documents. findOne()
-                                          returns a single document.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DiffBet MongoDB and PostgreSQL?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">MongoDB is schema-less and document-oriented; PostgreSQL is
-                                          relational with strict schemas. MongoDB scales horizontally easily.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DiffBet SQL and NoSQL?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">SQL uses relational tables with fixed schema. NoSQL uses
-                                          flexible documents, key-value, or column stores.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Difference from Relational DB</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">MongoDB is NoSQL and document-based, storing JSON-like
-                                          structures. It doesn’t require fixed schema or joins, unlike relational
-                                          databases.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Document & Collection</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A document is a JSON-like record, while a collection is a
-                                          group of documents similar to a table.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Document in MongoDB?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A document is a BSON object containing key-value pairs,
-                                          similar to a JSON object.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Employee with Highest Salary</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">db.employees.find().sort({ salary: -1 }).limit(1)</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Employees Hired Per Year</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">db.employees.aggregate([{ $group: { _id: { $year:
-                                          "$hireDate" }, count: { $sum: 1 } } }])</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Employees in Engineering</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">db.employees.find({ department: "Engineering" })</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Ensure data consistency in MongoDB?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Use replica sets, write concerns, transactions, and
-                                          validation rules to maintain consistency.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Full-Text Search</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">MongoDB supports text indexes with features like stemming,
-                                          scoring, and language-based stop words using $text queries.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Geospatial Indexes</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Used for location-based queries like $near, $geoWithin.
-                                          Supports 2D and 2D sphere indexing for coordinates and mapping applications.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>GridFS?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">GridFS is used to store and retrieve large files (>16MB) in
-                                          MongoDB. It splits files into small chunks and stores metadata separately.
-                                          Used for storing videos, images, and large documents.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>GridFS?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">GridFS stores large files by splitting them into chunks.
-                                          Used for files exceeding 16MB BSON limit.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Handling Transactions</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">MongoDB supports ACID multi-document transactions since
-                                          version 4.0. Transactions are used with replica sets or sharded clusters and
-                                          executed using session.startTransaction() and commitTransaction().</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Hashed Sharding Keys</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Hashing distributes documents evenly across shards to avoid
-                                          hotspots. Useful when values are sequential like IDs or timestamps.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>High Availability & Scalability</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">MongoDB uses replication (replica sets) and sharding for
-                                          horizontal scaling and redundancy.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Highest & Lowest Salary</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">db.employees.aggregate([, { $match: { department:
-                                          "Engineering" } },, { $group: { _id: null, max: { $max: "$salary" }, min: {
-                                          $min: "$salary" } } }, ])</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Horizontal Scalability</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">MongoDB supports horizontal scaling through sharding where
-                                          data is partitioned across multiple servers for high availability and
-                                          performance.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Import/Export</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Tools include mongoimport and mongoexport for JSON, CSV, and
-                                          BSON formats.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Index</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Index improves query performance:,
-                                          db.users.createIndex({name:1})</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Indexes in MongoDB?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Indexes improve query performance. Common types:
-                                          single-field, compound, text, hashed, and geospatial. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Indexing different in MongoDB vs SQL?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">MongoDB indexes are created on fields in JSON documents,
-                                          support multikey and text indexes. SQL indexes are table-column based.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Insert Data</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Use:, db.collection.insertOne({name: "John"})</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Internal Storage</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">MongoDB stores data in BSON format on disk, allowing rich
-                                          structured data and binary types.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Journaling</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Journaling ensures durability by writing operations to a
-                                          journal file before applying to storage. It protects against crashes but
-                                          slightly adds write overhead.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Map-Reduce</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Map-reduce processes large data with map (process) and
-                                          reduce (aggregate) stages. Used for complex analytics but now mostly replaced
-                                          by aggregation pipeline.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Migrating from RDBMS</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Identify schema, flatten relationships, choose like
-                                          embedding or referencing, migrate using tools like MongoMirror or custom ETL.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>MongoDB Atlas vs Self-Hosted</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">MongoDB Atlas is a fully managed cloud database with
-                                          automated backups, scaling, monitoring. Self-hosted requires manual setup,
-                                          maintenance, and scaling.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>MongoDB Atlas?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Atlas is a cloud-hosted MongoDB service with automated
-                                          backup, scaling, and monitoring.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>MongoDB Compass</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Compass is a GUI tool to visualize, query, index, analyze
-                                          schema, and manage data. It helps understand document structure, performance
-                                          insights, and index efficiency.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>MongoDB transactions?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">MongoDB supports multi-document ACID transactions in replica
-                                          sets and sharded clusters from version 4.0+.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>MongoDB?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">MongoDB is a NoSQL document database storing data in
-                                          JSON-like BSON format. It is schema-less and horizontally scalable.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Monitoring & Troubleshooting</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Use MongoDB Cloud Manager, Atlas Monitoring, Compass, and
-                                          commands like db.currentOp() and serverStatus().</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>ObjectId?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">ObjectId is a unique identifier for documents, containing
-                                          timestamp, machine ID, and counter.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Perform CRUD operations in MongoDB?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Use insertOne, insertMany, find, updateOne, updateMany,
-                                          deleteOne, and deleteMany methods.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Production Deployment Considerations</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Enable replication, backup strategy, indexing, access
-                                          control, monitoring, and choose proper hardware/network configuration.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Query Optimization</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Use proper indexes, avoid full scans, analyze queries with
-                                          explain(), and denormalize or restructure schema where needed.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Querying</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Use find() with filters:, db.users.find({age:{$gt:30}})
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Replica set?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A replica set is a group of MongoDB servers providing
-                                          redundancy and high availability. It has one primary and multiple secondary
-                                          nodes.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Replica Sets</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Replica sets maintain redundant copies of data for failover
-                                          and reliability.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Role of _id</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">_id uniquely identifies each document and acts like a
-                                          primary key.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Schema Design in MongoDB</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">MongoDB uses flexible schema design based on application
-                                          needs. Use embedding for related data (1-to-few) and referencing for large or
-                                          shared data. Proper indexing and avoiding unnecessary nesting helps
-                                          performance.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Sharding</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Distributes large datasets across multiple machines using
-                                          shard keys.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Sharding?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Sharding splits data across multiple servers for horizontal
-                                          scaling, improving performance and storage. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Sort by Name Length</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">db.employees.aggregate([{ $addFields: { len: { $strLenCP:
-                                          "$name" } } }, { $sort: { len: -1 } }])</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Supported Data Types</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">MongoDB supports strings, numbers, arrays, binary, ObjectId,
-                                          dates, documents, and boolean values.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>TTL Indexes in MongoDB</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">TTL (Time-To-Live) indexes automatically delete expired
-                                          documents after a specified time. They are commonly used for logs, sessions,
-                                          or temporary data. TTL works only on Date fields and runs cleanup every 60
-                                          seconds.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Update Salary</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">db.employees.updateOne({ name: "John Doe" }, { $set: {
-                                          salary: 90000 } })</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Upgrading MongoDB</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Upgrade by checking compatibility matrix, backing up data,
-                                          rolling update replica nodes, and testing with latest drivers.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>WiredTiger vs MMAPv1</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">WiredTiger is MongoDB’s default engine offering compression,
-                                          concurrency, and better performance. MMAPv1 is older with limited concurrency
-                                          and no compression. WiredTiger is recommended for production. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Write Concern</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Write Concern defines acknowledgment level required from
-                                          MongoDB before confirming a write. It ensures durability and safety.</div>
-                              </div>
+      <main class="container" id="tab_content_47">
+        <section class="iqas-section">
+            <div class="faq-item-title active">
+                <div class="faq-question-title">
+                    <div class="container section-title" data-aos="fade-up">
+                        <div class="faq-question-title">
+                            <h2 class="heading-title">MongoDB</h2>
+                            <div class="title-icon">+</div>
                         </div>
-                  </div>
-            </section>
-      </main>
+                        <div class="faq-answer-title">
+                            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                                <div class="row">
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Access Control & Authentication <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Authentication is implemented using SCRAM, LDAP, or
+                                            x.509
+                                            certificates. Role-based access control (RBAC) grants users permissions like
+                                            read,
+                                            readWrite, or admin. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Add Bonus <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">db.employees.updateMany({ department: "Engineering" }, {
+                                            $set: {
+                                            bonus: 5000 } });</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Aggregation <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Aggregation pipeline processes data in stages (match,
+                                            group,
+                                            sort,
+                                            project). It is used for reporting and data transformation.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Aggregation in MongoDB? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Aggregation performs operations like grouping,
+                                            filtering,
+                                            sorting,
+                                            and transformation on collections using the aggregation pipeline. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Average Salary <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">db.employees.aggregate([{ $match: { department:
+                                            "Engineering" } }, {
+                                            $group: { _id: null, avg: { $avg: "$salary" } } }])</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Backups & Recovery <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Use mongodump/mongorestore, cloud Atlas backups, or
+                                            filesystem
+                                            snapshots. Point-in-time recovery is supported in replica sets. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">BSON Significance <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">BSON extends JSON with additional datatypes like binary,
+                                            ObjectId,
+                                            and dates, improving storage efficiency and performance.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Capped Collections <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Capped collections have fixed size and automatically
+                                            overwrite old
+                                            documents. Useful for logs, real-time analytics, and high-throughput writes.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Change Streams <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Change streams allow real-time notifications of inserts,
+                                            updates,
+                                            deletes. Used in event-driven systems and syncing applications.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Collection in MongoDB? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A collection is a group of MongoDB documents, similar to
+                                            a
+                                            table in
+                                            RDBMS. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Connect MongoDB with Java? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Use MongoDB Java driver or Spring Data MongoDB. Connect
+                                            using
+                                            MongoClient and specify the database.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Consistency <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">MongoDB offers tunable consistency using write concern
+                                            and
+                                            read
+                                            preferences. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Count per Department <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">db.employees.aggregate([{ $group: { _id: "$department",
+                                            count: {
+                                            $sum: 1 } } }])</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Create Database & Collection <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Using command line:, use myDB,
+                                            db.createCollection("users")
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">CRUD Syntax <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">MongoDB uses JavaScript-like syntax:, insert(), find(),
+                                            update(),
+                                            deleteOne(). </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Dept With Highest Avg Salary <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">db.employees.aggregate([{ $group: { _id: "$department",
+                                            avg:
+                                            { $avg:
+                                            "$salary" } } }, { $sort: { avg: -1 } }, { $limit: 1 }])</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DiffBet capped and regular collections? <div
+                                                class="icon">
+                                                +</div>
+                                        </div>
+                                        <div class="faq-answer">Capped collections have fixed size, maintain insertion
+                                            order, and
+                                            overwrite oldest data. Regular collections grow dynamically.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DiffBet embedded and referenced documents? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Embedded documents store nested data in one document.
+                                            References
+                                            store relations via foreign IDs.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DiffBet find() and findOne()? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">find() returns a cursor for multiple documents.
+                                            findOne()
+                                            returns a
+                                            single document.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DiffBet MongoDB and PostgreSQL? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">MongoDB is schema-less and document-oriented; PostgreSQL
+                                            is
+                                            relational with strict schemas. MongoDB scales horizontally easily.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DiffBet SQL and NoSQL? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">SQL uses relational tables with fixed schema. NoSQL uses
+                                            flexible
+                                            documents, key-value, or column stores.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Difference from Relational DB <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">MongoDB is NoSQL and document-based, storing JSON-like
+                                            structures. It
+                                            doesn’t require fixed schema or joins, unlike relational databases.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Document & Collection <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A document is a JSON-like record, while a collection is
+                                            a
+                                            group of
+                                            documents similar to a table.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Document in MongoDB? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A document is a BSON object containing key-value pairs,
+                                            similar to a
+                                            JSON object.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Employee with Highest Salary <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">db.employees.find().sort({ salary: -1 }).limit(1)</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Employees Hired Per Year <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">db.employees.aggregate([{ $group: { _id: { $year:
+                                            "$hireDate" },
+                                            count: { $sum: 1 } } }])</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Employees in Engineering <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">db.employees.find({ department: "Engineering" })</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Ensure data consistency in MongoDB? <div class="icon">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Use replica sets, write concerns, transactions, and
+                                            validation rules
+                                            to maintain consistency.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Full-Text Search <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">MongoDB supports text indexes with features like
+                                            stemming,
+                                            scoring,
+                                            and language-based stop words using $text queries.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Geospatial Indexes <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Used for location-based queries like $near, $geoWithin.
+                                            Supports 2D
+                                            and 2D sphere indexing for coordinates and mapping applications. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">GridFS? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">GridFS is used to store and retrieve large files (>16MB)
+                                            in
+                                            MongoDB.
+                                            It splits files into small chunks and stores metadata separately. Used for
+                                            storing videos,
+                                            images, and large documents.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">GridFS? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">GridFS stores large files by splitting them into chunks.
+                                            Used for
+                                            files exceeding 16MB BSON limit.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Handling Transactions <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">MongoDB supports ACID multi-document transactions since
+                                            version 4.0.
+                                            Transactions are used with replica sets or sharded clusters and executed
+                                            using
+                                            session.startTransaction() and commitTransaction().</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Hashed Sharding Keys <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Hashing distributes documents evenly across shards to
+                                            avoid
+                                            hotspots.
+                                            Useful when values are sequential like IDs or timestamps.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">High Availability & Scalability <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">MongoDB uses replication (replica sets) and sharding for
+                                            horizontal
+                                            scaling and redundancy.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Highest & Lowest Salary <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">db.employees.aggregate([, { $match: { department:
+                                            "Engineering" } },,
+                                            { $group: { _id: null, max: { $max: "$salary" }, min: { $min: "$salary" } }
+                                            },
+                                            ])</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Horizontal Scalability <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">MongoDB supports horizontal scaling through sharding
+                                            where
+                                            data is
+                                            partitioned across multiple servers for high availability and performance.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Import/Export <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Tools include mongoimport and mongoexport for JSON, CSV,
+                                            and
+                                            BSON
+                                            formats. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Index <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Index improves query performance:,
+                                            db.users.createIndex({name:1})
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Indexes in MongoDB? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Indexes improve query performance. Common types:
+                                            single-field,
+                                            compound, text, hashed, and geospatial. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Indexing different in MongoDB vs SQL? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">MongoDB indexes are created on fields in JSON documents,
+                                            support
+                                            multikey and text indexes. SQL indexes are table-column based.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Insert Data <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Use:, db.collection.insertOne({name: "John"})</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Internal Storage <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">MongoDB stores data in BSON format on disk, allowing
+                                            rich
+                                            structured
+                                            data and binary types.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Journaling <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Journaling ensures durability by writing operations to a
+                                            journal file
+                                            before applying to storage. It protects against crashes but slightly adds
+                                            write
+                                            overhead.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Map-Reduce <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Map-reduce processes large data with map (process) and
+                                            reduce
+                                            (aggregate) stages. Used for complex analytics but now mostly replaced by
+                                            aggregation
+                                            pipeline. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Migrating from RDBMS <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Identify schema, flatten relationships, choose like
+                                            embedding or
+                                            referencing, migrate using tools like MongoMirror or custom ETL. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">MongoDB Atlas vs Self-Hosted <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">MongoDB Atlas is a fully managed cloud database with
+                                            automated
+                                            backups, scaling, monitoring. Self-hosted requires manual setup,
+                                            maintenance,
+                                            and scaling.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">MongoDB Atlas? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Atlas is a cloud-hosted MongoDB service with automated
+                                            backup,
+                                            scaling, and monitoring.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">MongoDB Compass <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Compass is a GUI tool to visualize, query, index,
+                                            analyze
+                                            schema, and
+                                            manage data. It helps understand document structure, performance insights,
+                                            and
+                                            index
+                                            efficiency.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">MongoDB transactions? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">MongoDB supports multi-document ACID transactions in
+                                            replica
+                                            sets and
+                                            sharded clusters from version 4.0+.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">MongoDB? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">MongoDB is a NoSQL document database storing data in
+                                            JSON-like BSON
+                                            format. It is schema-less and horizontally scalable.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Monitoring & Troubleshooting <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Use MongoDB Cloud Manager, Atlas Monitoring, Compass,
+                                            and
+                                            commands
+                                            like db.currentOp() and serverStatus().</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">ObjectId? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">ObjectId is a unique identifier for documents,
+                                            containing
+                                            timestamp,
+                                            machine ID, and counter.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Perform CRUD operations in MongoDB? <div class="icon">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Use insertOne, insertMany, find, updateOne, updateMany,
+                                            deleteOne,
+                                            and deleteMany methods.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Production Deployment Considerations <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Enable replication, backup strategy, indexing, access
+                                            control,
+                                            monitoring, and choose proper hardware/network configuration.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Query Optimization <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Use proper indexes, avoid full scans, analyze queries
+                                            with
+                                            explain(),
+                                            and denormalize or restructure schema where needed.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Querying <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Use find() with filters:, db.users.find({age:{$gt:30}})
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Replica set? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A replica set is a group of MongoDB servers providing
+                                            redundancy and
+                                            high availability. It has one primary and multiple secondary nodes.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Replica Sets <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Replica sets maintain redundant copies of data for
+                                            failover
+                                            and
+                                            reliability. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Role of _id <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">_id uniquely identifies each document and acts like a
+                                            primary key.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Schema Design in MongoDB <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">MongoDB uses flexible schema design based on application
+                                            needs. Use
+                                            embedding for related data (1-to-few) and referencing for large or shared
+                                            data.
+                                            Proper
+                                            indexing and avoiding unnecessary nesting helps performance.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Sharding <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Distributes large datasets across multiple machines
+                                            using
+                                            shard keys.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Sharding? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Sharding splits data across multiple servers for
+                                            horizontal
+                                            scaling,
+                                            improving performance and storage. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Sort by Name Length <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">db.employees.aggregate([{ $addFields: { len: {
+                                            $strLenCP:
+                                            "$name" } }
+                                            }, { $sort: { len: -1 } }])</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Supported Data Types <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">MongoDB supports strings, numbers, arrays, binary,
+                                            ObjectId,
+                                            dates,
+                                            documents, and boolean values.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">TTL Indexes in MongoDB <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">TTL (Time-To-Live) indexes automatically delete expired
+                                            documents
+                                            after a specified time. They are commonly used for logs, sessions, or
+                                            temporary
+                                            data. TTL
+                                            works only on Date fields and runs cleanup every 60 seconds.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Update Salary <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">db.employees.updateOne({ name: "John Doe" }, { $set: {
+                                            salary: 90000
+                                            } }) </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Upgrading MongoDB <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Upgrade by checking compatibility matrix, backing up
+                                            data,
+                                            rolling
+                                            update replica nodes, and testing with latest drivers.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">WiredTiger vs MMAPv1 <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">WiredTiger is MongoDB’s default engine offering
+                                            compression,
+                                            concurrency, and better performance. MMAPv1 is older with limited
+                                            concurrency
+                                            and no
+                                            compression. WiredTiger is recommended for production. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Write Concern <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Write Concern defines acknowledgment level required from
+                                            MongoDB
+                                            before confirming a write. It ensures durability and safety.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
       <div id="footer-placeholder"></div> <a href="#" id="scroll-top"
             class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
       <div id="preloader"></div>

@@ -22,698 +22,829 @@
   <link href="/assets/css/main.css" rel="stylesheet"> 
 </head>
 
-<body class="index-page Custombody">
+<body>
   <div id="nav-placeholder"></div>
-  <main class="main">
-    <section id="about" class="about section Custombody">
-      <div class="container section-title" data-aos="fade-up">
-        <h2> Jenkins</h2>
-      </div>
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-3">
-          <div class="faq-item active">
-            <div class="faq-question"><span>Build trigger in jenkins?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">A build trigger is an event that starts a Jenkins job e.g. code commit schedule or
-              upstream project. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Ci/cd?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">CI/CD stands for Continuous Integration and Continuous Deployment/Delivery practices
-              Jenkins supports. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Diffbet blue ocean and classic jenkins ui?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Blue Ocean provides visual pipeline representation; Classic UI is older and
-              menu-driven. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Diffbet build and deploy in jenkins?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Build compiles code and produces artifacts; deploy moves artifacts to target
-              environments. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Diffbet build parameter and environment variable?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Build parameters are input values provided at job start; environment variables are
-              runtime values. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Diffbet declarative and scripted pipeline?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Declarative pipeline uses a structured easy-to-read syntax; Scripted pipeline uses
-              Groovy scripting for flexibility. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Diffbet freestyle and pipeline jobs?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Freestyle jobs are simple pre-defined tasks; Pipeline jobs allow defining complex
-              workflows as code. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Diffbet global and job-specific environment variables?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Global variables are accessible to all jobs; job-specific variables are limited to
-              that job. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins agent vs node?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Agent is a machine to run jobs; node is a generic term for master or agent machine.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins artifact?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Artifact is the output of a build such as binaries JARs or WAR files. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins audit trail?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Audit trail tracks user actions and changes in Jenkins for security and compliance.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins authorization strategy?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Authorization strategy defines what authenticated users can do in Jenkins. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins backup and restore?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Backup and restore preserve Jenkins configurations jobs and plugins in case of
-              failure. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins best practices?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Best practices include using pipeline as code automated tests secure credentials
-              distributed builds and monitoring. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins blue ocean vs classic ui?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Blue Ocean provides modern pipeline visualization; Classic UI is traditional
-              interface. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins blue ocean?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Blue Ocean is a modern user interface for Jenkins focused on pipeline visualization
-              and usability. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins build artifact archiving?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Artifact archiving saves build outputs for later use or download. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins build artifact storage?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Artifact storage keeps build outputs for sharing or deployment in subsequent stages.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins build failure?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Build failure occurs when compilation tests or scripts return errors. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins build history?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Build history lists all previous builds of a job with their status and logs. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins build notification?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Build notification alerts teams about job status via email Slack or other
-              integrations. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins build pipeline view?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Build pipeline view visualizes multiple jobs in a pipeline and their sequence.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins build promotion process?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Promotion marks successful builds for deployment to higher environments. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins build promotion?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Build promotion marks a build as suitable for deployment to environments like
-              staging or production. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins build success?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Build success indicates all tasks in the job completed successfully without errors.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins build timeout?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Build timeout stops a job if it exceeds a specified duration. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins build trigger types?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Trigger types include SCM polling webhook schedule (cron) and manual trigger. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins build unstable?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Build unstable indicates tests or quality checks failed but compilation succeeded.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins code coverage?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Code coverage measures the percentage of code executed during tests. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins console output?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Console output shows real-time build logs and messages for a job. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins credentials binding?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Credentials binding injects credentials securely into build environment for jobs or
-              pipelines. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins credentials?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Credentials store authentication information like usernames passwords SSH keys and
-              tokens securely. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins cron syntax?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Cron syntax schedules jobs in Jenkins at specific times or intervals. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins distributed architecture?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Distributed architecture uses master to manage jobs and agents to execute them.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins distributed build?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Distributed build runs Jenkins jobs across multiple nodes to improve performance and
-              scalability. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins docker pipeline?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Docker pipeline builds runs and deploys Docker images using pipeline steps. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins docker plugin?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Docker plugin allows building running and deploying Docker containers in Jenkins
-              pipelines. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins email notification?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Email notification sends build results failures or approvals to designated
-              recipients. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins environment injection?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Environment injection sets environment variables dynamically during a build or
-              pipeline. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins environment variable?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Environment variable stores configuration information accessible to jobs during
-              execution. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins executor?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Executor is a thread or slot on which Jenkins runs jobs on a master or slave node.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins freestyle project?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Freestyle project is a flexible Jenkins job type for simple builds and automation.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins freestyle vs pipeline project?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Freestyle is simple GUI-driven; pipeline is code-driven and supports complex
-              workflows. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins git plugin?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Git plugin integrates Jenkins with Git repositories for SCM triggering builds on
-              commits. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins groovy script?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Groovy script automates tasks configures jobs and manipulates Jenkins
-              programmatically. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins job queue?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Job queue is a list of pending jobs waiting to be executed by available executors.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins job?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">A Jenkins job is a task or process that Jenkins executes such as build test or
-              deployment. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins junit plugin?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">JUnit plugin integrates test reports into Jenkins showing pass/fail trends. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins ldap integration?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">LDAP integration authenticates users against an LDAP server like Active Directory.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins logs?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Logs contain detailed information about build execution errors and warnings. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins matrix project?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Matrix project allows running the same job across multiple configurations like OS or
-              environment. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins matrix-based security?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Matrix-based security allows assigning permissions to users or groups in a matrix
-              format. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins maven plugin?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Maven plugin allows building Maven projects and executing goals in Jenkins. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins multibranch pipeline vs single pipeline?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Multibranch automatically handles branches in repository; single pipeline is
-              configured for a single branch. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins multibranch pipeline?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Multibranch pipeline automatically creates pipelines for each branch in a
-              repository. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins node label?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Node label identifies a group of nodes to run specific jobs. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins node?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Node is a machine that Jenkins master can use to run jobs also called agent or
-              slave. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins parameterized build?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Parameterized build allows passing inputs or parameters to customize job execution.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins parameterized pipeline?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Parameterized pipeline allows input values to control pipeline execution
-              dynamically. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins pipeline as code?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Pipeline as code allows defining pipeline configuration in a Jenkinsfile stored in
-              the repository. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins pipeline environment?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Pipeline environment stores variables and settings accessible during the pipeline
-              run. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins pipeline monitoring?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Pipeline monitoring tracks status duration and results of pipeline executions.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins pipeline parallel execution?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Parallel execution runs multiple pipeline steps simultaneously to reduce build time.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins pipeline parallelism?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Pipeline parallelism executes multiple steps simultaneously to reduce execution
-              time. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins pipeline retry?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Pipeline retry reruns failed steps or stages automatically. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins pipeline sequential execution?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Sequential execution runs pipeline steps one after another in order. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins pipeline stage?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Stage defines a major phase in a pipeline like Build Test or Deploy. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins pipeline step?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Step is a single task within a stage like compiling code or running tests. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins pipeline syntax generator?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Pipeline syntax generator helps generate Groovy pipeline code for steps and stages.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins pipeline?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Jenkins Pipeline is a suite of plugins that supports implementing and integrating
-              continuous delivery pipelines. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins plugin manager?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Plugin manager installs updates and removes Jenkins plugins. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins plugin?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">A plugin extends Jenkins functionality like integrating SCMs build tools or
-              notifications. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins post-build action?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Post-build actions are tasks executed after a job completes like emailing reports or
-              archiving artifacts. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins pre-build action?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Pre-build actions are tasks executed before a job starts such as environment setup.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins project-based security?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Project-based security sets permissions at the individual job level. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins quiet period?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Quiet period delays build start to allow multiple commits to accumulate before
-              triggering a build. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins rollback?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Rollback reverts to a previous stable build in case of deployment failure. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins scm integration?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">SCM integration connects Jenkins with source control tools like Git SVN or
-              Mercurial. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins script console?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Script console executes Groovy scripts for administration and job management. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins secret file?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Secret file is a type of credential for storing sensitive files used in jobs or
-              pipelines. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins secret text?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Secret text is a type of credential used for storing sensitive strings like API
-              keys. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins security realm?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Security realm manages authentication of users in Jenkins. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins shared library?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Shared library contains reusable pipeline code that can be imported into multiple
-              pipelines. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins slack integration?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Slack integration sends build status notifications to Slack channels. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins sonarqube integration?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">SonarQube integration allows Jenkins to analyze code quality technical debt and
-              vulnerabilities. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins sso?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Single Sign-On allows users to authenticate into Jenkins using existing credentials
-              from another system. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins test reporting?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Test reporting shows results of automated tests executed during a build. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins throttling?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Throttling limits the number of concurrent builds on nodes or jobs. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins upgrade process?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Upgrade process updates Jenkins core and plugins while preserving jobs and
-              configurations. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins upstream and downstream project?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Upstream triggers downstream builds; downstream runs after upstream completion.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins webhook vs polling?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Webhook triggers jobs instantly on events; polling checks periodically for changes.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins webhook vs scm polling?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Webhook pushes events to Jenkins immediately; SCM polling checks periodically for
-              changes. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins webhook?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Webhook triggers Jenkins jobs automatically when events like commits or pull
-              requests occur. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins workspace cleanup?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Workspace cleanup deletes files in workspace before or after a job to avoid
-              conflicts. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkins?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Jenkins is an open-source automation server used to automate building testing and
-              deploying software. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Jenkinsfile?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Jenkinsfile is a text file that contains the definition of a Jenkins Pipeline.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Key features of jenkins?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Key features include easy installation distributed builds extensible via plugins and
-              pipeline automation. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Scm polling in jenkins?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">SCM polling checks source code repositories periodically to trigger builds when
-              changes are detected. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Some popular jenkins plugins?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Popular plugins include Git Maven Pipeline Slack Notification and Docker plugins.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Use of jenkins master and slave?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Master coordinates jobs and manages the Jenkins environment; slaves (agents) execute
-              jobs for distributed builds. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Use of jenkins workspace?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Workspace is a directory where Jenkins checks out source code and executes jobs.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+ <main class="container" id="tab_content_39">
+        <section class="iqas-section">
+            <div class="faq-item-title active">
+                <div class="faq-question-title">
+                    <div class="container section-title" data-aos="fade-up">
+                        <div class="faq-question-title">
+                            <h2 class="heading-title"> Jenkins</h2>
+                            <div class="title-icon">+</div>
+                        </div>
+                        <div class="faq-answer-title">
+                            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                                <div class="row">
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Build trigger in jenkins? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A build trigger is an event that starts a Jenkins job
+                                            e.g.
+                                            code
+                                            commit schedule or upstream project. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">CI/CD stands for Continuous Integration and Continuous
+                                            Deployment/Delivery practices Jenkins supports. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Diffbet blue ocean and classic jenkins ui? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Blue Ocean provides visual pipeline representation;
+                                            Classic
+                                            UI is
+                                            older and menu-driven. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Diffbet build and deploy in jenkins? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Build compiles code and produces artifacts; deploy moves
+                                            artifacts to
+                                            target environments. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Diffbet build parameter and environment variable? <div
+                                                class="icon">+ </div>
+                                        </div>
+                                        <div class="faq-answer">Build parameters are input values provided at job start;
+                                            environment
+                                            variables are runtime values. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Diffbet declarative and scripted pipeline? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Declarative pipeline uses a structured easy-to-read
+                                            syntax;
+                                            Scripted
+                                            pipeline uses Groovy scripting for flexibility. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Diffbet freestyle and pipeline jobs? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Freestyle jobs are simple pre-defined tasks; Pipeline
+                                            jobs
+                                            allow
+                                            defining complex workflows as code. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Diffbet global and job-specific environment variables?
+                                            <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Global variables are accessible to all jobs;
+                                            job-specific
+                                            variables
+                                            are limited to that job. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins agent vs node? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Agent is a machine to run jobs; node is a generic term
+                                            for
+                                            master or
+                                            agent machine. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins artifact? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Artifact is the output of a build such as binaries JARs
+                                            or
+                                            WAR files.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins audit trail? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Audit trail tracks user actions and changes in Jenkins
+                                            for
+                                            security
+                                            and compliance. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins authorization strategy? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Authorization strategy defines what authenticated users
+                                            can
+                                            do in
+                                            Jenkins. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins backup and restore? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Backup and restore preserve Jenkins configurations jobs
+                                            and
+                                            plugins
+                                            in case of failure. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins best practices? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Best practices include using pipeline as code automated
+                                            tests secure
+                                            credentials distributed builds and monitoring. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins blue ocean vs classic ui? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Blue Ocean provides modern pipeline visualization;
+                                            Classic
+                                            UI is
+                                            traditional interface. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins blue ocean? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Blue Ocean is a modern user interface for Jenkins
+                                            focused on
+                                            pipeline
+                                            visualization and usability. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins build artifact archiving? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Artifact archiving saves build outputs for later use or
+                                            download.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins build artifact storage? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Artifact storage keeps build outputs for sharing or
+                                            deployment in
+                                            subsequent stages. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins build failure? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Build failure occurs when compilation tests or scripts
+                                            return errors.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins build history? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Build history lists all previous builds of a job with
+                                            their
+                                            status
+                                            and logs. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins build notification? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Build notification alerts teams about job status via
+                                            email
+                                            Slack or
+                                            other integrations. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins build pipeline view? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Build pipeline view visualizes multiple jobs in a
+                                            pipeline
+                                            and their
+                                            sequence. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins build promotion process? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Promotion marks successful builds for deployment to
+                                            higher
+                                            environments. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins build promotion? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Build promotion marks a build as suitable for deployment
+                                            to
+                                            environments like staging or production. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins build success? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Build success indicates all tasks in the job completed
+                                            successfully
+                                            without errors. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins build timeout? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Build timeout stops a job if it exceeds a specified
+                                            duration. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins build trigger types? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Trigger types include SCM polling webhook schedule
+                                            (cron)
+                                            and manual
+                                            trigger. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins build unstable? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Build unstable indicates tests or quality checks failed
+                                            but
+                                            compilation succeeded. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins code coverage? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Code coverage measures the percentage of code executed
+                                            during tests.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins console output? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Console output shows real-time build logs and messages
+                                            for a
+                                            job.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins credentials binding? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Credentials binding injects credentials securely into
+                                            build
+                                            environment for jobs or pipelines. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins credentials? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Credentials store authentication information like
+                                            usernames
+                                            passwords
+                                            SSH keys and tokens securely. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins cron syntax? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Cron syntax schedules jobs in Jenkins at specific times
+                                            or
+                                            intervals.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins distributed architecture? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Distributed architecture uses master to manage jobs and
+                                            agents to
+                                            execute them. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins distributed build? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Distributed build runs Jenkins jobs across multiple
+                                            nodes to
+                                            improve
+                                            performance and scalability. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins docker pipeline? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker pipeline builds runs and deploys Docker images
+                                            using
+                                            pipeline
+                                            steps. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins docker plugin? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker plugin allows building running and deploying
+                                            Docker
+                                            containers
+                                            in Jenkins pipelines. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins email notification? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Email notification sends build results failures or
+                                            approvals
+                                            to
+                                            designated recipients. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins environment injection? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Environment injection sets environment variables
+                                            dynamically
+                                            during a
+                                            build or pipeline. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins environment variable? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Environment variable stores configuration information
+                                            accessible to
+                                            jobs during execution. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins executor? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Executor is a thread or slot on which Jenkins runs jobs
+                                            on a
+                                            master
+                                            or slave node. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins freestyle project? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Freestyle project is a flexible Jenkins job type for
+                                            simple
+                                            builds
+                                            and automation. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins freestyle vs pipeline project? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Freestyle is simple GUI-driven; pipeline is code-driven
+                                            and
+                                            supports
+                                            complex workflows. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins git plugin? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Git plugin integrates Jenkins with Git repositories for
+                                            SCM
+                                            triggering builds on commits. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins groovy script? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Groovy script automates tasks configures jobs and
+                                            manipulates Jenkins
+                                            programmatically. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins job queue? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Job queue is a list of pending jobs waiting to be
+                                            executed
+                                            by
+                                            available executors. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins job? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A Jenkins job is a task or process that Jenkins executes
+                                            such as
+                                            build test or deployment. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins junit plugin? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">JUnit plugin integrates test reports into Jenkins
+                                            showing
+                                            pass/fail
+                                            trends. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins ldap integration? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">LDAP integration authenticates users against an LDAP
+                                            server
+                                            like
+                                            Active Directory. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins logs? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Logs contain detailed information about build execution
+                                            errors and
+                                            warnings. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins matrix project? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Matrix project allows running the same job across
+                                            multiple
+                                            configurations like OS or environment. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins matrix-based security? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Matrix-based security allows assigning permissions to
+                                            users
+                                            or groups
+                                            in a matrix format. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins maven plugin? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Maven plugin allows building Maven projects and
+                                            executing
+                                            goals in
+                                            Jenkins. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins multibranch pipeline vs single pipeline? <div
+                                                class="icon">
+                                                + </div>
+                                        </div>
+                                        <div class="faq-answer">Multibranch automatically handles branches in
+                                            repository;
+                                            single
+                                            pipeline is configured for a single branch. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins multibranch pipeline? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Multibranch pipeline automatically creates pipelines for
+                                            each branch
+                                            in a repository. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins node label? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Node label identifies a group of nodes to run specific
+                                            jobs.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins node? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Node is a machine that Jenkins master can use to run
+                                            jobs
+                                            also called
+                                            agent or slave. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins parameterized build? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Parameterized build allows passing inputs or parameters
+                                            to
+                                            customize
+                                            job execution. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins parameterized pipeline? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Parameterized pipeline allows input values to control
+                                            pipeline
+                                            execution dynamically. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins pipeline as code? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Pipeline as code allows defining pipeline configuration
+                                            in a
+                                            Jenkinsfile stored in the repository. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins pipeline environment? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Pipeline environment stores variables and settings
+                                            accessible during
+                                            the pipeline run. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins pipeline monitoring? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Pipeline monitoring tracks status duration and results
+                                            of
+                                            pipeline
+                                            executions. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins pipeline parallel execution? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Parallel execution runs multiple pipeline steps
+                                            simultaneously to
+                                            reduce build time. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins pipeline parallelism? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Pipeline parallelism executes multiple steps
+                                            simultaneously
+                                            to reduce
+                                            execution time. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins pipeline retry? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Pipeline retry reruns failed steps or stages
+                                            automatically.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins pipeline sequential execution? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Sequential execution runs pipeline steps one after
+                                            another
+                                            in order.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins pipeline stage? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Stage defines a major phase in a pipeline like Build
+                                            Test or
+                                            Deploy.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins pipeline step? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Step is a single task within a stage like compiling code
+                                            or
+                                            running
+                                            tests. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins pipeline syntax generator? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Pipeline syntax generator helps generate Groovy pipeline
+                                            code for
+                                            steps and stages. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins pipeline? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Jenkins Pipeline is a suite of plugins that supports
+                                            implementing and
+                                            integrating continuous delivery pipelines. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins plugin manager? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Plugin manager installs updates and removes Jenkins
+                                            plugins.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins plugin? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A plugin extends Jenkins functionality like integrating
+                                            SCMs
+                                            build
+                                            tools or notifications. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins post-build action? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Post-build actions are tasks executed after a job
+                                            completes
+                                            like
+                                            emailing reports or archiving artifacts. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins pre-build action? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Pre-build actions are tasks executed before a job starts
+                                            such as
+                                            environment setup. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins project-based security? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Project-based security sets permissions at the
+                                            individual
+                                            job level.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins quiet period? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Quiet period delays build start to allow multiple
+                                            commits to
+                                            accumulate before triggering a build. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins rollback? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Rollback reverts to a previous stable build in case of
+                                            deployment
+                                            failure. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins scm integration? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">SCM integration connects Jenkins with source control
+                                            tools
+                                            like Git
+                                            SVN or Mercurial. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins script console? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Script console executes Groovy scripts for
+                                            administration
+                                            and job
+                                            management. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins secret file? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Secret file is a type of credential for storing
+                                            sensitive
+                                            files used
+                                            in jobs or pipelines. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins secret text? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Secret text is a type of credential used for storing
+                                            sensitive
+                                            strings like API keys. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins security realm? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Security realm manages authentication of users in
+                                            Jenkins.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins shared library? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Shared library contains reusable pipeline code that can
+                                            be
+                                            imported
+                                            into multiple pipelines. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins slack integration? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Slack integration sends build status notifications to
+                                            Slack
+                                            channels.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins sonarqube integration? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">SonarQube integration allows Jenkins to analyze code
+                                            quality
+                                            technical debt and vulnerabilities. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins sso? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Single Sign-On allows users to authenticate into Jenkins
+                                            using
+                                            existing credentials from another system. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins test reporting? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Test reporting shows results of automated tests executed
+                                            during a
+                                            build. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins throttling? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Throttling limits the number of concurrent builds on
+                                            nodes
+                                            or jobs.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins upgrade process? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Upgrade process updates Jenkins core and plugins while
+                                            preserving
+                                            jobs and configurations. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins upstream and downstream project? <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Upstream triggers downstream builds; downstream runs
+                                            after
+                                            upstream
+                                            completion. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins webhook vs polling? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Webhook triggers jobs instantly on events; polling
+                                            checks
+                                            periodically for changes. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins webhook vs scm polling? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Webhook pushes events to Jenkins immediately; SCM
+                                            polling
+                                            checks
+                                            periodically for changes. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins webhook? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Webhook triggers Jenkins jobs automatically when events
+                                            like
+                                            commits
+                                            or pull requests occur. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins workspace cleanup? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Workspace cleanup deletes files in workspace before or
+                                            after
+                                            a job to
+                                            avoid conflicts. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Jenkins is an open-source automation server used to
+                                            automate
+                                            building
+                                            testing and deploying software. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkinsfile? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Jenkinsfile is a text file that contains the definition
+                                            of a
+                                            Jenkins
+                                            Pipeline. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Key features of jenkins? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Key features include easy installation distributed
+                                            builds
+                                            extensible
+                                            via plugins and pipeline automation. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Scm polling in jenkins? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">SCM polling checks source code repositories periodically
+                                            to
+                                            trigger
+                                            builds when changes are detected. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Some popular jenkins plugins? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Popular plugins include Git Maven Pipeline Slack
+                                            Notification and
+                                            Docker plugins. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Use of jenkins master and slave? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Master coordinates jobs and manages the Jenkins
+                                            environment;
+                                            slaves
+                                            (agents) execute jobs for distributed builds. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Use of jenkins workspace? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Workspace is a directory where Jenkins checks out source
+                                            code and
+                                            executes jobs. </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
   <div id="footer-placeholder"></div> <a href="#" id="scroll-top"
     class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>

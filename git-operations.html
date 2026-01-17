@@ -22,52 +22,67 @@
   <link href="/assets/css/main.css" rel="stylesheet"> 
 </head>
 
-<body class="index-page Custombody">
+<body>
   <div id="nav-placeholder"></div>
-  <main class="main">
-    <section id="about" class="about section Custombody">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Git Operations</h2>
-      </div>
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-3">
-          <div class="faq-item active">
-            <div class="faq-question"><span>Diffbet soft, mixed, hard reset?</span>
-              <div class="icon">+</div>
+    <main class="container" id="tab_content_31">
+        <section class="iqas-section">
+            <div class="faq-item-title active">
+                <div class="faq-question-title">
+                    <div class="container section-title" data-aos="fade-up">
+                        <div class="faq-question-title">
+                            <h2 class="heading-title">Git Operations</h2>
+                            <div class="title-icon">+</div>
+                        </div>
+                        <div class="faq-answer-title">
+                            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                                <div class="row">
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Diffbet soft, mixed, hard reset? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Soft keeps changes staged, mixed unstages them, hard
+                                            deletes
+                                            all
+                                            changes in working tree.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">To revert a merge? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Use git revert -m 1 <merge_commit> to undo a merged
+                                                commit
+                                                safely.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">To squash commits? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Use interactive rebase: git rebase -i HEAD~n and mark
+                                            commits as
+                                            squash or fixup. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">To view changes before committing? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Use git status and git diff to inspect changes in files.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">To view git commit history? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Use git log or git log --oneline for concise history.
+                                            Tools
+                                            like
+                                            GitKraken or GitHub history visualize commits.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="faq-answer">Soft keeps changes staged, mixed unstages them, hard deletes all changes in working
-              tree.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>To revert a merge?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Use git revert -m 1 <merge_commit> to undo a merged commit safely.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>To squash commits?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Use interactive rebase: git rebase -i HEAD~n and mark commits as squash or fixup.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>To view changes before committing?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Use git status and git diff to inspect changes in files.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>To view git commit history?</span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Use git log or git log --oneline for concise history. Tools like GitKraken or GitHub
-              history visualize commits.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+        </section>
+    </main>
   <div id="footer-placeholder"></div> <a href="#" id="scroll-top"
     class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>

@@ -22,1057 +22,1279 @@
   <link href="/assets/css/main.css" rel="stylesheet"> 
 </head>
 
-<body class="index-page Custombody">
+<body>
   <div id="nav-placeholder"></div>
-  <main class="main">
-    <section id="about" class="about section Custombody">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Microservices Architecture</h2>
-      </div>
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-3">
-          <div class="faq-item active">
-            <div class="faq-question"><span>API Gateway vs Service Mesh? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">API Gateway handles north-south traffic (client to services); Service Mesh handles
-              east-west traffic (service-to-service) inside the cluster. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>API Gateway? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">API Gateway is a single entry point that routes requests to multiple microservices
-              and handles cross-cutting concerns like authentication and throttling. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>API Gateway? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">API Gateway is a server that acts as a single entry point for all microservices,
-              handling request routing, load balancing, authentication, and response aggregation.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>API throttling? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">API throttling limits the number of requests a client can make in a time window to
-              prevent overload. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>API Throttling? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Limits the number of requests a client can make to a service in a defined time
-              window to prevent overload.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>API versioning? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">API versioning manages changes in API contracts without breaking clients using URL
-              versioning headers or query params. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>API versioning? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">API versioning allows updating services without breaking existing clients. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Benefits of Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Benefits include scalability independent deployment fault isolation technology
-              diversity and better maintainability. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Benefits of Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Scalability, independent deployment, fault isolation, technology flexibility, faster
-              development cycles, and easier maintenance are key benefits.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Blue-green deployment? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Blue-green deployment runs two production environments to switch traffic without
-              downtime. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Blue-Green Deployment? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Deploy new version alongside the old version and switch traffic gradually. Reduces
-              downtime and rollback risk.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Bounded context in DDD? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Bounded context defines a boundary within which a particular domain model is valid
-              and consistent. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Bulkhead pattern? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Bulkhead isolates resources to prevent failures in one service from affecting
-              others. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Bulkhead pattern? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Isolates resources of different services to prevent cascading failures and improve
-              system resilience. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Canary deployment? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Canary deployment releases new version to a subset of users to test stability before
-              full rollout. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Canary Deployment? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Release new features to a small subset of users first. Monitor performance before
-              full rollout to production.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Challenges of Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Distributed system complexity, debugging, network latency, data consistency, and
-              operational overhead. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Circuit breaker in Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Circuit breaker prevents cascading failures by stopping calls to a failing service
-              and providing fallback. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Circuit Breaker in Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Circuit breaker prevents cascading failures by stopping calls to a failing service.
-              It improves resilience and system stability.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Circuit Breaker Library in Java? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Hystrix or Resilience4j provides circuit breaker patterns to improve resilience in
-              microservices.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Circuit breaker pattern? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Circuit breaker prevents repeated calls to failing services to avoid cascading
-              failures. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Common communication methods between microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Synchronous HTTP/REST gRPC asynchronous messaging via queues (RabbitMQ Kafka) and
-              event-driven communication. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Common databases used in Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Each service may use its own database (SQL, NoSQL, MongoDB, PostgreSQL) to maintain
-              loose coupling and autonomy.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Common patterns for microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Patterns include API Gateway Service Registry Circuit Breaker Event Sourcing CQRS
-              Saga and Bulkhead. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Container orchestration? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Container orchestration automates deployment scaling and management of containers
-              using tools like Kubernetes. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Container Orchestration? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Manages deployment, scaling, networking, and lifecycle of containers. Kubernetes is
-              a popular orchestration tool.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Containerization in Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Containerization packages a service and its dependencies into a portable container
-              (Docker), enabling consistent deployment across environments.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>CQRS (Command Query Responsibility Segregation)? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">CQRS separates read and write operations into different models to improve
-              performance, scalability, and maintainability.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>CQRS? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">CQRS (Command Query Responsibility Segregation) separates read and write operations
-              for better scalability. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Deploy multiple microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Use Docker Compose or Kubernetes to manage multiple containers, networking, scaling,
-              and service discovery.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet 2PC and Saga? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">2PC: atomic distributed transactions; Saga: sequence of local transactions with
-              compensating actions. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet a monolith and microservices in terms of deployment? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Monolith: single deployment; Microservices: each service can be deployed
-              independently. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet a service and a pod in Kubernetes? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Pod is a running instance; Service is a stable endpoint to access pods. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet API Gateway and Service Mesh? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">API Gateway: handles client-to-service (north-south); Service Mesh: handles
-              service-to-service (east-west) communication. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet authentication and authorization? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Authentication: verify identity; Authorization: check permissions for actions.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet client-side and server-side service discovery? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Client-side: client queries registry to find service; Server-side: API gateway or
-              load balancer routes request automatically. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet container and virtual machine? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Containers share OS kernel and are lightweight; VMs include full OS and are heavier.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet CQRS and CRUD? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">CQRS separates read/write logic; CRUD combines both operations in one service.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet Docker Compose and Kubernetes? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Compose: local/development orchestration; Kubernetes: production-grade
-              orchestration. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet Docker image and container? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Image is a template; container is a running instance of an image. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet Kafka and RabbitMQ? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Kafka: event streaming high throughput; RabbitMQ: message queue lower latency
-              complex routing. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet local cache and distributed cache? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Local: in-memory per instance; Distributed: shared across multiple instances for
-              consistency. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet logging and monitoring? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Logging: record events; Monitoring: analyze metrics and health status. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet logging and tracing? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Logging records events; tracing tracks request flows across services. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet microservices and SOA? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">SOA: larger enterprise services often with an ESB; Microservices: smaller
-              independently deployable services with lightweight communication. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet monolith decomposition and greenfield microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Decomposition: split existing monolith; Greenfield: build microservices from
-              scratch. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet Monolithic and Microservices architecture? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Monolithic is a single unified application; Microservices splits functionality into
-              multiple independent services. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet Monolithic CI/CD and Microservices CI/CD? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Monolith: single build/deploy pipeline; Microservices: independent pipelines per
-              service. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet orchestration and choreography in microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Orchestration: central coordinator; Choreography: services react to events
-              independently. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet orchestration and choreography patterns? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Orchestration: central coordinator; Choreography: decentralized event-driven
-              approach. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet orchestration and choreography? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Orchestration: central service coordinates actions; Choreography: services react to
-              events independently. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet point-to-point and publish-subscribe messaging? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Point-to-point: message to single consumer; Pub/Sub: message broadcast to multiple
-              subscribers. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet REST and GraphQL? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">REST: fixed endpoints; GraphQL: single endpoint with flexible queries for data
-              fetching. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet REST and gRPC? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">REST: HTTP/JSON text-based; gRPC: HTTP/2 binary faster communication. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet service cohesion and coupling? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Cohesion: how related functions within a service are; Coupling: how dependent a
-              service is on others. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet service instance and service type? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Instance: running copy; Type: service definition/implementation. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet shared database and database per service? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Shared DB couples services and may cause conflicts; separate DB ensures service
-              independence but may require eventual consistency. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet stateful and stateless microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Stateful maintains session/state; Stateless does not and is easier to scale. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet stateless and stateful services? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Stateless does not store client state; stateful maintains session data across
-              requests. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet strong consistency and eventual consistency? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Strong: immediate consistency across services; Eventual: updates propagate
-              asynchronously. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet strong consistency and eventual consistency? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Strong: immediate; Eventual: delayed consistency across services. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet synchronous and asynchronous communication? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Synchronous waits for response; Asynchronous does not block the sender and uses
-              messages or events. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet synchronous and asynchronous microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Synchronous waits for response; asynchronous uses queues/events without blocking.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet synchronous API and asynchronous messaging? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Synchronous API waits for response; asynchronous messaging is non-blocking. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet synchronous HTTP and asynchronous messaging? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">HTTP waits for response; messaging uses queues/events and processes asynchronously.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet synchronous REST API and asynchronous messaging? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Synchronous: client waits for response; asynchronous: service responds via events or
-              queues later. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet synchronous RPC and asynchronous messaging? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">RPC waits for response; messaging decouples services and processes asynchronously.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet tight coupling and loose coupling? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Tight coupling: services highly dependent; Loose coupling: services independent and
-              communicate via contracts. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet vertical and horizontal scaling in microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Vertical: add resources to one instance; Horizontal: add more instances to scale.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DifBet vertical scaling and horizontal scaling? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Vertical: add resources to a single server; Horizontal: add more instances to handle
-              load. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DiffBet API Gateway and Load Balancer? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Load balancer distributes traffic to service instances. API Gateway handles routing,
-              authentication, aggregation, and throttling.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DiffBet API Gateway and Service Mesh? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">API Gateway manages client-to-service communication. Service Mesh manages
-              service-to-service communication, often handling traffic, security, and observability between services.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DiffBet Containers and VMs? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">VMs virtualize hardware and are heavier. Containers virtualize OS and are
-              lightweight, fast, and easier to scale.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DiffBet Docker and Kubernetes? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Docker is for containerization. Kubernetes orchestrates containers across clusters
-              for deployment, scaling, and management.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DiffBet Microservices and Serverless? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Microservices run in containers/VMs and need infrastructure management. Serverless
-              abstracts infrastructure; functions run on-demand with auto-scaling.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DiffBet Microservices and SOA? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">SOA is enterprise-focused with shared resources and ESB. Microservices are
-              decentralized, independently deployable, and lightweight.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DiffBet Monolith DB and Microservices DB? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Monolith uses a single shared database. Microservices use independent databases per
-              service to ensure decoupling and autonomy.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DiffBet Monolithic and Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Monolithic apps are single, tightly coupled units. Microservices are modular,
-              independently deployable services. Microservices offer scalability, flexibility, and fault isolation,
-              unlike monoliths.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DiffBet Stateful and Stateless Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Stateless services do not maintain client state, making scaling easier. Stateful
-              services store session or transactional data.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DiffBet Synchronous and Asynchronous communication? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Synchronous communication waits for a response (REST/gRPC). Asynchronous uses
-              message queues (Kafka, RabbitMQ) and doesn’t block the client.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>DiffBet synchronous and asynchronous microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Synchronous calls block and wait for response (REST). Asynchronous uses
-              events/messages (Kafka, RabbitMQ) for decoupling.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Distributed log? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Distributed log records events/messages across services for audit analytics and
-              replay. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Distributed tracing? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Distributed tracing tracks requests across multiple services to diagnose latency and
-              failures. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>distributed tracing? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Distributed tracing tracks requests across multiple services to identify
-              bottlenecks. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Distributed Tracing? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Tracking a request’s path across multiple microservices to debug performance issues
-              and understand system flow.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Distributed transaction? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">A distributed transaction spans multiple services and databases with atomicity
-              ensured via patterns like Saga. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Domain-driven design (DDD)? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">DDD is an approach to design software based on business domains and subdomains to
-              improve maintainability and clarity. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Drawbacks of Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Complex service management, network latency, distributed transactions, debugging
-              challenges, and operational overhead are primary challenges.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Eureka or Consul? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Eureka (Netflix) and Consul are service discovery tools that maintain registry of
-              microservices for dynamic lookup and load balancing.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Event sourcing? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Event sourcing stores all changes to application state as a sequence of events.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Event Sourcing? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Store all changes as events instead of current state. Allows rebuilding state,
-              auditing, and eventual consistency.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Event-driven architecture? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Architecture where services communicate by publishing and subscribing to events
-              asynchronously. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Event-Driven Architecture? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Services communicate using events/messages rather than direct API calls. It supports
-              asynchronous workflows and decoupling.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Eventual consistency? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Eventual consistency means that data across microservices may not be instantly
-              consistent but will converge over time. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>eventual consistency? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Eventual consistency ensures all services will converge to the same data state over
-              time. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Fallback in Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Fallback provides alternative responses when a service fails. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Feature toggle in microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Feature toggle enables/disables features dynamically without deploying new code.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Handle data consistency in Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Use patterns like Saga, Event Sourcing, or eventual consistency mechanisms.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Handle logging in Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Centralized logging using ELK Stack (Elasticsearch, Logstash, Kibana) or Splunk for
-              aggregated logs and analysis.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Handle Service Failure? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Use retry policies, circuit breakers, fallbacks, bulkheads, and proper monitoring to
-              manage failures gracefully.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Handle Versioning in Microservices APIs? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Use URI versioning (/v1/service), request header versioning, or content negotiation
-              to support backward compatibility.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Health check in Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Health check verifies the status of a service allowing orchestrators to restart or
-              replace failing instances. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Idempotency in Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Idempotent operations produce the same result if executed multiple times. Ensures
-              reliability in retries and distributed systems.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Idempotent REST API? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Repeated calls produce the same result without side effects. Important for retries
-              in distributed systems.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Implement authentication in Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Centralized auth service (OAuth2, Keycloak) issues tokens (JWT) verified by each
-              service.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Implement communication between Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Via REST APIs, gRPC, message brokers (Kafka, RabbitMQ), or event streaming for
-              asynchronous interactions.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>JWT and how is it used? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">JWT (JSON Web Token) is a compact, URL-safe token used for authentication and
-              authorization between services and clients.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Kubernetes? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Kubernetes is a platform for automating container deployment scaling and operations.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Load Balancing in Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Distributes incoming requests among service instances to ensure availability,
-              scalability, and efficient resource utilization.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Message queue? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Message queue stores and delivers messages asynchronously between services. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Microservice anti-pattern? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Anti-patterns include shared database tight coupling chatty services and lack of
-              monitoring. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Microservice boundary? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Boundary defines the scope and responsibility of a service. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Microservice dashboard? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Dashboard visualizes service metrics logs and health status. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Microservice registry? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Registry keeps track of service instances and locations for discovery and routing.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Microservices Architecture? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Microservices architecture is an approach where an application is built as a
-              collection of small, loosely coupled services. Each service handles a specific business capability, is
-              independently deployable, and communicates via APIs.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Microservices communicate? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">They communicate via lightweight protocols like HTTP/REST, gRPC, or message queues
-              for asynchronous communication.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Microservices Testing Strategy? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Unit testing, integration testing, contract testing, end-to-end testing, and
-              performance testing are required for reliability.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Microservices is an architectural style where an application is composed of small
-              independently deployable services that communicate over APIs. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Monitor Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Use centralized logging, metrics (Prometheus), tracing (Jaeger, Zipkin), and
-              dashboards (Grafana) to monitor health and performance.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>OAuth2 in microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">OAuth2 is an authorization framework that provides access tokens for secure API
-              access. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>OpenID Connect? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">OpenID Connect is an authentication layer on top of OAuth2 for user identity
-              verification. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Pod in Kubernetes? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Pod is the smallest deployable unit in Kubernetes containing one or more containers.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Rate limiting? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Rate limiting enforces usage limits per client or IP to protect services. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Reverse proxy? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Reverse proxy routes client requests to appropriate backend services and can provide
-              caching load balancing and SSL termination. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Role of a database per service in Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Each microservice can have its own database to ensure loose coupling and
-              independence. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Role of a message broker? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Message brokers (Kafka RabbitMQ) enable asynchronous communication and decouple
-              producers and consumers. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Role of caching in microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Caching improves performance by reducing repeated calls to services or databases.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Role of Consul or Eureka in Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">They provide service discovery registration and health checking. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Role of containers in Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Containers (Docker) provide isolated environments for each microservice and simplify
-              deployment and scaling. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Role of DevOps in microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">DevOps automates CI/CD monitoring scaling and deployments of microservices. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Role of Docker Compose? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Docker Compose defines multi-container services and networks for development. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Role of Docker in Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Docker containerizes services for consistent deployment and isolation. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Role of Docker in Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Docker containerizes each microservice for consistency, portability, and scalable
-              deployment.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Role of JWT in microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">JWT provides stateless authentication and authorization between services and
-              clients. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Role of load balancing in Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Load balancing distributes incoming requests across service instances to ensure high
-              availability and scalability. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Role of service mesh? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Service mesh manages service-to-service communication with features like load
-              balancing retries and security. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Role of service monitoring? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Monitoring tracks health performance errors and usage of services. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Saga in Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Saga is a pattern to manage distributed transactions with compensating actions
-              across multiple services. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Saga orchestrator? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Saga orchestrator coordinates steps and compensations in a distributed transaction.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Saga participant? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Saga participant executes local transaction and triggers events for orchestration.
-            </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Saga Pattern? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Saga manages distributed transactions by breaking them into a sequence of local
-              transactions, coordinated using events or orchestrators.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Secure Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Use authentication (OAuth2, JWT), API Gateway security, TLS, and service-to-service
-              mutual TLS for secure communication.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Service contract? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Service contract defines the API exposed by a microservice. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Service coupling? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Service coupling measures how dependent services are on each other; low coupling is
-              preferred. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Service discovery? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Service discovery dynamically detects service instances and their endpoints to
-              enable communication between microservices. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>service discovery? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Enables microservices to find each other dynamically using tools like Eureka,
-              Consul, or Kubernetes DNS.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Service in Microservices? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">A service is a self-contained unit that performs a specific business function and
-              can be deployed independently. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Service Mesh? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">A dedicated infrastructure layer (Istio, Linkerd) managing service-to-service
-              communication, security, and observability without changing code.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Service Registry? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">A service registry is a database of microservices instances, enabling services to
-              discover each other dynamically at runtime.</div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Sidecar pattern? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Sidecar runs auxiliary services alongside the main service often for logging proxy
-              or monitoring. </div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question"><span>Strangler pattern? </span>
-              <div class="icon">+</div>
-            </div>
-            <div class="faq-answer">Strangler pattern incrementally replaces parts of a monolith with microservices.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+  <main class="container" id="tab_content_44">
+        <section class="iqas-section">
+            <div class="faq-item-title active">
+                <div class="faq-question-title">
+                    <div class="container section-title" data-aos="fade-up">
+                        <div class="faq-question-title">
+                            <h2 class="heading-title">Microservices Architecture</h2>
+                            <div class="title-icon">+</div>
+                        </div>
+                        <div class="faq-answer-title">
+                            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                                <div class="row">
+                                    <div class="faq-item active">
+                                        <div class="faq-question">API Gateway vs Service Mesh? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">API Gateway handles north-south traffic (client to
+                                            services); Service
+                                            Mesh handles east-west traffic (service-to-service) inside the cluster.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">API Gateway? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">API Gateway is a single entry point that routes requests
+                                            to
+                                            multiple
+                                            microservices and handles cross-cutting concerns like authentication and
+                                            throttling.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">API Gateway? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">API Gateway is a server that acts as a single entry
+                                            point
+                                            for all
+                                            microservices, handling request routing, load balancing, authentication, and
+                                            response
+                                            aggregation. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">API throttling? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">API throttling limits the number of requests a client
+                                            can
+                                            make in a
+                                            time window to prevent overload. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">API Throttling? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Limits the number of requests a client can make to a
+                                            service
+                                            in a
+                                            defined time window to prevent overload.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">API versioning? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">API versioning manages changes in API contracts without
+                                            breaking
+                                            clients using URL versioning headers or query params. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">API versioning? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">API versioning allows updating services without breaking
+                                            existing
+                                            clients. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Benefits of Microservices? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Benefits include scalability independent deployment
+                                            fault
+                                            isolation
+                                            technology diversity and better maintainability. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Benefits of Microservices? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Scalability, independent deployment, fault isolation,
+                                            technology
+                                            flexibility, faster development cycles, and easier maintenance are key
+                                            benefits.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Blue-green deployment? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Blue-green deployment runs two production environments
+                                            to
+                                            switch
+                                            traffic without downtime. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Blue-Green Deployment? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Deploy new version alongside the old version and switch
+                                            traffic
+                                            gradually. Reduces downtime and rollback risk.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Bounded context in DDD? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Bounded context defines a boundary within which a
+                                            particular
+                                            domain
+                                            model is valid and consistent. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Bulkhead pattern? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Bulkhead isolates resources to prevent failures in one
+                                            service from
+                                            affecting others. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Bulkhead pattern? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Isolates resources of different services to prevent
+                                            cascading
+                                            failures and improve system resilience. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Canary deployment? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Canary deployment releases new version to a subset of
+                                            users
+                                            to test
+                                            stability before full rollout. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Canary Deployment? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Release new features to a small subset of users first.
+                                            Monitor
+                                            performance before full rollout to production.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Challenges of Microservices? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Distributed system complexity, debugging, network
+                                            latency,
+                                            data
+                                            consistency, and operational overhead. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Circuit breaker in Microservices? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Circuit breaker prevents cascading failures by stopping
+                                            calls to a
+                                            failing service and providing fallback. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Circuit Breaker in Microservices? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Circuit breaker prevents cascading failures by stopping
+                                            calls to a
+                                            failing service. It improves resilience and system stability.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Circuit Breaker Library in Java? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Hystrix or Resilience4j provides circuit breaker
+                                            patterns to
+                                            improve
+                                            resilience in microservices.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Circuit breaker pattern? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Circuit breaker prevents repeated calls to failing
+                                            services
+                                            to avoid
+                                            cascading failures. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Common communication methods between microservices?
+                                            <div class="icon"> +</div>
+                                        </div>
+                                        <div class="faq-answer">Synchronous HTTP/REST gRPC asynchronous messaging via
+                                            queues
+                                            (RabbitMQ Kafka) and event-driven communication. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Common databases used in Microservices? <div
+                                                class="icon">
+                                                +</div>
+                                        </div>
+                                        <div class="faq-answer">Each service may use its own database (SQL, NoSQL,
+                                            MongoDB,
+                                            PostgreSQL) to maintain loose coupling and autonomy.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Common patterns for microservices? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Patterns include API Gateway Service Registry Circuit
+                                            Breaker Event
+                                            Sourcing CQRS Saga and Bulkhead. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Container orchestration? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Container orchestration automates deployment scaling and
+                                            management
+                                            of containers using tools like Kubernetes. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Container Orchestration? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Manages deployment, scaling, networking, and lifecycle
+                                            of
+                                            containers.
+                                            Kubernetes is a popular orchestration tool.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Containerization in Microservices? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Containerization packages a service and its dependencies
+                                            into a
+                                            portable container (Docker), enabling consistent deployment across
+                                            environments.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">CQRS (Command Query Responsibility Segregation)? <div
+                                                class="icon">
+                                                + </div>
+                                        </div>
+                                        <div class="faq-answer">CQRS separates read and write operations into different
+                                            models to
+                                            improve performance, scalability, and maintainability.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">CQRS? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">CQRS (Command Query Responsibility Segregation)
+                                            separates
+                                            read and
+                                            write operations for better scalability. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Deploy multiple microservices? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Use Docker Compose or Kubernetes to manage multiple
+                                            containers,
+                                            networking, scaling, and service discovery.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet 2PC and Saga? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">2PC: atomic distributed transactions; Saga: sequence of
+                                            local
+                                            transactions with compensating actions. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet a monolith and microservices in terms of
+                                            deployment? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Monolith: single deployment; Microservices: each service
+                                            can
+                                            be
+                                            deployed independently. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet a service and a pod in Kubernetes? <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Pod is a running instance; Service is a stable endpoint
+                                            to
+                                            access
+                                            pods. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet API Gateway and Service Mesh? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">API Gateway: handles client-to-service (north-south);
+                                            Service Mesh:
+                                            handles service-to-service (east-west) communication. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet authentication and authorization? <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Authentication: verify identity; Authorization: check
+                                            permissions for
+                                            actions. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet client-side and server-side service discovery?
+                                            <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Client-side: client queries registry to find service;
+                                            Server-side:
+                                            API gateway or load balancer routes request automatically. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet container and virtual machine? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Containers share OS kernel and are lightweight; VMs
+                                            include
+                                            full OS
+                                            and are heavier. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet CQRS and CRUD? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">CQRS separates read/write logic; CRUD combines both
+                                            operations in one
+                                            service. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Docker Compose and Kubernetes? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Compose: local/development orchestration; Kubernetes:
+                                            production-grade orchestration. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Docker image and container? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Image is a template; container is a running instance of
+                                            an
+                                            image.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Kafka and RabbitMQ? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Kafka: event streaming high throughput; RabbitMQ:
+                                            message
+                                            queue lower
+                                            latency complex routing. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet local cache and distributed cache? <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Local: in-memory per instance; Distributed: shared
+                                            across
+                                            multiple
+                                            instances for consistency. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet logging and monitoring? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Logging: record events; Monitoring: analyze metrics and
+                                            health
+                                            status. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet logging and tracing? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Logging records events; tracing tracks request flows
+                                            across
+                                            services.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet microservices and SOA? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">SOA: larger enterprise services often with an ESB;
+                                            Microservices:
+                                            smaller independently deployable services with lightweight communication.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet monolith decomposition and greenfield
+                                            microservices? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Decomposition: split existing monolith; Greenfield:
+                                            build
+                                            microservices from scratch. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Monolithic and Microservices architecture? <div
+                                                class="icon">+ </div>
+                                        </div>
+                                        <div class="faq-answer">Monolithic is a single unified application;
+                                            Microservices
+                                            splits
+                                            functionality into multiple independent services. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Monolithic CI/CD and Microservices CI/CD? <div
+                                                class="icon">
+                                                + </div>
+                                        </div>
+                                        <div class="faq-answer">Monolith: single build/deploy pipeline; Microservices:
+                                            independent
+                                            pipelines per service. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet orchestration and choreography in
+                                            microservices?
+                                            <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Orchestration: central coordinator; Choreography:
+                                            services
+                                            react to
+                                            events independently. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet orchestration and choreography patterns? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Orchestration: central coordinator; Choreography:
+                                            decentralized
+                                            event-driven approach. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet orchestration and choreography? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Orchestration: central service coordinates actions;
+                                            Choreography:
+                                            services react to events independently. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet point-to-point and publish-subscribe messaging?
+                                            <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Point-to-point: message to single consumer; Pub/Sub:
+                                            message
+                                            broadcast to multiple subscribers. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet REST and GraphQL? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">REST: fixed endpoints; GraphQL: single endpoint with
+                                            flexible queries
+                                            for data fetching. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet REST and gRPC? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">REST: HTTP/JSON text-based; gRPC: HTTP/2 binary faster
+                                            communication.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet service cohesion and coupling? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Cohesion: how related functions within a service are;
+                                            Coupling: how
+                                            dependent a service is on others. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet service instance and service type? <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Instance: running copy; Type: service
+                                            definition/implementation.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet shared database and database per service? <div
+                                                class="icon">
+                                                + </div>
+                                        </div>
+                                        <div class="faq-answer">Shared DB couples services and may cause conflicts;
+                                            separate
+                                            DB
+                                            ensures service independence but may require eventual consistency. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet stateful and stateless microservices? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Stateful maintains session/state; Stateless does not and
+                                            is
+                                            easier to
+                                            scale. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet stateless and stateful services? <div
+                                                class="icon">
+                                                +</div>
+                                        </div>
+                                        <div class="faq-answer">Stateless does not store client state; stateful
+                                            maintains
+                                            session
+                                            data across requests. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet strong consistency and eventual consistency?
+                                            <div class="icon"> +</div>
+                                        </div>
+                                        <div class="faq-answer">Strong: immediate consistency across services; Eventual:
+                                            updates
+                                            propagate asynchronously. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet strong consistency and eventual consistency?
+                                            <div class="icon"> +</div>
+                                        </div>
+                                        <div class="faq-answer">Strong: immediate; Eventual: delayed consistency across
+                                            services.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet synchronous and asynchronous communication?
+                                            <div class="icon">+ </div>
+                                        </div>
+                                        <div class="faq-answer">Synchronous waits for response; Asynchronous does not
+                                            block
+                                            the
+                                            sender and uses messages or events. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet synchronous and asynchronous microservices?
+                                            <div class="icon">+ </div>
+                                        </div>
+                                        <div class="faq-answer">Synchronous waits for response; asynchronous uses
+                                            queues/events
+                                            without blocking. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet synchronous API and asynchronous messaging?
+                                            <div class="icon">+ </div>
+                                        </div>
+                                        <div class="faq-answer">Synchronous API waits for response; asynchronous
+                                            messaging
+                                            is
+                                            non-blocking. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet synchronous HTTP and asynchronous messaging?
+                                            <div class="icon"> +</div>
+                                        </div>
+                                        <div class="faq-answer">HTTP waits for response; messaging uses queues/events
+                                            and
+                                            processes
+                                            asynchronously. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet synchronous REST API and asynchronous
+                                            messaging?
+                                            <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Synchronous: client waits for response; asynchronous:
+                                            service
+                                            responds via events or queues later. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet synchronous RPC and asynchronous messaging?
+                                            <div class="icon">+ </div>
+                                        </div>
+                                        <div class="faq-answer">RPC waits for response; messaging decouples services and
+                                            processes
+                                            asynchronously. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet tight coupling and loose coupling? <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Tight coupling: services highly dependent; Loose
+                                            coupling:
+                                            services
+                                            independent and communicate via contracts. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet vertical and horizontal scaling in
+                                            microservices?
+                                            <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Vertical: add resources to one instance; Horizontal: add
+                                            more
+                                            instances to scale. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet vertical scaling and horizontal scaling? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Vertical: add resources to a single server; Horizontal:
+                                            add
+                                            more
+                                            instances to handle load. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DiffBet API Gateway and Load Balancer? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Load balancer distributes traffic to service instances.
+                                            API
+                                            Gateway
+                                            handles routing, authentication, aggregation, and throttling.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DiffBet API Gateway and Service Mesh? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">API Gateway manages client-to-service communication.
+                                            Service
+                                            Mesh
+                                            manages service-to-service communication, often handling traffic, security,
+                                            and
+                                            observability between services. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DiffBet Containers and VMs? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">VMs virtualize hardware and are heavier. Containers
+                                            virtualize OS and
+                                            are lightweight, fast, and easier to scale.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DiffBet Docker and Kubernetes? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Docker is for containerization. Kubernetes orchestrates
+                                            containers
+                                            across clusters for deployment, scaling, and management.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DiffBet Microservices and Serverless? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Microservices run in containers/VMs and need
+                                            infrastructure
+                                            management. Serverless abstracts infrastructure; functions run on-demand
+                                            with
+                                            auto-scaling.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DiffBet Microservices and SOA? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">SOA is enterprise-focused with shared resources and ESB.
+                                            Microservices are decentralized, independently deployable, and lightweight.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DiffBet Monolith DB and Microservices DB? <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Monolith uses a single shared database. Microservices
+                                            use
+                                            independent
+                                            databases per service to ensure decoupling and autonomy.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DiffBet Monolithic and Microservices? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Monolithic apps are single, tightly coupled units.
+                                            Microservices are
+                                            modular, independently deployable services. Microservices offer scalability,
+                                            flexibility,
+                                            and fault isolation, unlike monoliths.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DiffBet Stateful and Stateless Microservices? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Stateless services do not maintain client state, making
+                                            scaling
+                                            easier. Stateful services store session or transactional data.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DiffBet Synchronous and Asynchronous communication?
+                                            <div class="icon"> +</div>
+                                        </div>
+                                        <div class="faq-answer">Synchronous communication waits for a response
+                                            (REST/gRPC).
+                                            Asynchronous uses message queues (Kafka, RabbitMQ) and doesn’t block the
+                                            client.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DiffBet synchronous and asynchronous microservices?
+                                            <div class="icon"> +</div>
+                                        </div>
+                                        <div class="faq-answer">Synchronous calls block and wait for response (REST).
+                                            Asynchronous
+                                            uses events/messages (Kafka, RabbitMQ) for decoupling.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Distributed log? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Distributed log records events/messages across services
+                                            for
+                                            audit
+                                            analytics and replay. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Distributed tracing? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Distributed tracing tracks requests across multiple
+                                            services
+                                            to
+                                            diagnose latency and failures. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">distributed tracing? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Distributed tracing tracks requests across multiple
+                                            services
+                                            to
+                                            identify bottlenecks. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Distributed Tracing? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Tracking a request’s path across multiple microservices
+                                            to
+                                            debug
+                                            performance issues and understand system flow.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Distributed transaction? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A distributed transaction spans multiple services and
+                                            databases with
+                                            atomicity ensured via patterns like Saga. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Domain-driven design (DDD)? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">DDD is an approach to design software based on business
+                                            domains and
+                                            subdomains to improve maintainability and clarity. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Drawbacks of Microservices? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Complex service management, network latency, distributed
+                                            transactions, debugging challenges, and operational overhead are primary
+                                            challenges.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Eureka or Consul? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Eureka (Netflix) and Consul are service discovery tools
+                                            that
+                                            maintain
+                                            registry of microservices for dynamic lookup and load balancing.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Event sourcing? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Event sourcing stores all changes to application state
+                                            as a
+                                            sequence
+                                            of events. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Event Sourcing? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Store all changes as events instead of current state.
+                                            Allows
+                                            rebuilding state, auditing, and eventual consistency.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Event-driven architecture? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Architecture where services communicate by publishing
+                                            and
+                                            subscribing
+                                            to events asynchronously. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Event-Driven Architecture? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Services communicate using events/messages rather than
+                                            direct API
+                                            calls. It supports asynchronous workflows and decoupling.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Eventual consistency? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Eventual consistency means that data across
+                                            microservices
+                                            may not be
+                                            instantly consistent but will converge over time. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">eventual consistency? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Eventual consistency ensures all services will converge
+                                            to
+                                            the same
+                                            data state over time. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Fallback in Microservices? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Fallback provides alternative responses when a service
+                                            fails. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Feature toggle in microservices? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Feature toggle enables/disables features dynamically
+                                            without
+                                            deploying new code. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Handle data consistency in Microservices? <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Use patterns like Saga, Event Sourcing, or eventual
+                                            consistency
+                                            mechanisms. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Handle logging in Microservices? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Centralized logging using ELK Stack (Elasticsearch,
+                                            Logstash, Kibana)
+                                            or Splunk for aggregated logs and analysis.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Handle Service Failure? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Use retry policies, circuit breakers, fallbacks,
+                                            bulkheads,
+                                            and
+                                            proper monitoring to manage failures gracefully.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Handle Versioning in Microservices APIs? <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Use URI versioning (/v1/service), request header
+                                            versioning,
+                                            or
+                                            content negotiation to support backward compatibility.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Health check in Microservices? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Health check verifies the status of a service allowing
+                                            orchestrators
+                                            to restart or replace failing instances. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Idempotency in Microservices? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Idempotent operations produce the same result if
+                                            executed
+                                            multiple
+                                            times. Ensures reliability in retries and distributed systems.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Idempotent REST API? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Repeated calls produce the same result without side
+                                            effects.
+                                            Important for retries in distributed systems.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Implement authentication in Microservices? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Centralized auth service (OAuth2, Keycloak) issues
+                                            tokens
+                                            (JWT)
+                                            verified by each service.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Implement communication between Microservices? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Via REST APIs, gRPC, message brokers (Kafka, RabbitMQ),
+                                            or
+                                            event
+                                            streaming for asynchronous interactions.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">JWT and how is it used? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">JWT (JSON Web Token) is a compact, URL-safe token used
+                                            for
+                                            authentication and authorization between services and clients.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Kubernetes? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Kubernetes is a platform for automating container
+                                            deployment
+                                            scaling
+                                            and operations. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Load Balancing in Microservices? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Distributes incoming requests among service instances to
+                                            ensure
+                                            availability, scalability, and efficient resource utilization.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Message queue? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Message queue stores and delivers messages
+                                            asynchronously
+                                            between
+                                            services. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Microservice anti-pattern? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Anti-patterns include shared database tight coupling
+                                            chatty
+                                            services
+                                            and lack of monitoring. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Microservice boundary? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Boundary defines the scope and responsibility of a
+                                            service.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Microservice dashboard? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Dashboard visualizes service metrics logs and health
+                                            status.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Microservice registry? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Registry keeps track of service instances and locations
+                                            for
+                                            discovery
+                                            and routing. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Microservices Architecture? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Microservices architecture is an approach where an
+                                            application is
+                                            built as a collection of small, loosely coupled services. Each service
+                                            handles a
+                                            specific
+                                            business capability, is independently deployable, and communicates via APIs.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Microservices communicate? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">They communicate via lightweight protocols like
+                                            HTTP/REST,
+                                            gRPC, or
+                                            message queues for asynchronous communication.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Microservices Testing Strategy? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Unit testing, integration testing, contract testing,
+                                            end-to-end
+                                            testing, and performance testing are required for reliability.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Microservices? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Microservices is an architectural style where an
+                                            application
+                                            is
+                                            composed of small independently deployable services that communicate over
+                                            APIs.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Monitor Microservices? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Use centralized logging, metrics (Prometheus), tracing
+                                            (Jaeger,
+                                            Zipkin), and dashboards (Grafana) to monitor health and performance.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">OAuth2 in microservices? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">OAuth2 is an authorization framework that provides
+                                            access
+                                            tokens for
+                                            secure API access. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">OpenID Connect? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">OpenID Connect is an authentication layer on top of
+                                            OAuth2
+                                            for user
+                                            identity verification. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Pod in Kubernetes? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Pod is the smallest deployable unit in Kubernetes
+                                            containing
+                                            one or
+                                            more containers. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Rate limiting? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Rate limiting enforces usage limits per client or IP to
+                                            protect
+                                            services. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Reverse proxy? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Reverse proxy routes client requests to appropriate
+                                            backend
+                                            services
+                                            and can provide caching load balancing and SSL termination. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Role of a database per service in Microservices? <div
+                                                class="icon">
+                                                + </div>
+                                        </div>
+                                        <div class="faq-answer">Each microservice can have its own database to ensure
+                                            loose
+                                            coupling
+                                            and independence. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Role of a message broker? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Message brokers (Kafka RabbitMQ) enable asynchronous
+                                            communication
+                                            and decouple producers and consumers. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Role of caching in microservices? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Caching improves performance by reducing repeated calls
+                                            to
+                                            services
+                                            or databases. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Role of Consul or Eureka in Microservices? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">They provide service discovery registration and health
+                                            checking.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Role of containers in Microservices? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Containers (Docker) provide isolated environments for
+                                            each
+                                            microservice and simplify deployment and scaling. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Role of DevOps in microservices? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">DevOps automates CI/CD monitoring scaling and
+                                            deployments of
+                                            microservices. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Role of Docker Compose? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker Compose defines multi-container services and
+                                            networks
+                                            for
+                                            development. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Role of Docker in Microservices? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Docker containerizes services for consistent deployment
+                                            and
+                                            isolation. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Role of Docker in Microservices? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Docker containerizes each microservice for consistency,
+                                            portability,
+                                            and scalable deployment.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Role of JWT in microservices? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">JWT provides stateless authentication and authorization
+                                            between
+                                            services and clients. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Role of load balancing in Microservices? <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Load balancing distributes incoming requests across
+                                            service
+                                            instances
+                                            to ensure high availability and scalability. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Role of service mesh? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Service mesh manages service-to-service communication
+                                            with
+                                            features
+                                            like load balancing retries and security. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Role of service monitoring? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Monitoring tracks health performance errors and usage of
+                                            services.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Saga in Microservices? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Saga is a pattern to manage distributed transactions
+                                            with
+                                            compensating actions across multiple services. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Saga orchestrator? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Saga orchestrator coordinates steps and compensations in
+                                            a
+                                            distributed transaction. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Saga participant? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Saga participant executes local transaction and triggers
+                                            events for
+                                            orchestration. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Saga Pattern? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Saga manages distributed transactions by breaking them
+                                            into
+                                            a
+                                            sequence of local transactions, coordinated using events or orchestrators.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Secure Microservices? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Use authentication (OAuth2, JWT), API Gateway security,
+                                            TLS,
+                                            and
+                                            service-to-service mutual TLS for secure communication.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Service contract? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Service contract defines the API exposed by a
+                                            microservice.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Service coupling? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Service coupling measures how dependent services are on
+                                            each
+                                            other;
+                                            low coupling is preferred. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Service discovery? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Service discovery dynamically detects service instances
+                                            and
+                                            their
+                                            endpoints to enable communication between microservices. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">service discovery? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Enables microservices to find each other dynamically
+                                            using
+                                            tools like
+                                            Eureka, Consul, or Kubernetes DNS.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Service in Microservices? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A service is a self-contained unit that performs a
+                                            specific
+                                            business
+                                            function and can be deployed independently. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Service Mesh? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A dedicated infrastructure layer (Istio, Linkerd)
+                                            managing
+                                            service-to-service communication, security, and observability without
+                                            changing
+                                            code.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Service Registry? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A service registry is a database of microservices
+                                            instances,
+                                            enabling
+                                            services to discover each other dynamically at runtime.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Sidecar pattern? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Sidecar runs auxiliary services alongside the main
+                                            service
+                                            often for
+                                            logging proxy or monitoring. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Strangler pattern? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Strangler pattern incrementally replaces parts of a
+                                            monolith
+                                            with
+                                            microservices. </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
   <div id="footer-placeholder"></div> <a href="#" id="scroll-top"
     class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>

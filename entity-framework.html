@@ -21,626 +21,724 @@
       <link href="/assets/css/main.css" rel="stylesheet"> 
 </head>
 
-<body class="index-page Custombody">
+<body>
       <div id="nav-placeholder"></div>
-      <main class="main">
-            <section id="about" class="about section Custombody">
-                  <div class="container section-title" data-aos="fade-up">
-                        <h2>Entity Framework</h2>
-                  </div>
-                  <div class="container" data-aos="fade-up" data-aos-delay="100">
-                        <div class="row g-3">
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Automatic and Manual Migrations in EF?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Automatic Migrations update database schema automatically;
-                                          Manual Migrations require explicit creation of migration files. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Code First Migrations?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Migrations help incrementally update the database schema as
-                                          the model changes, preserving existing data.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Code-First approach in EF?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Code-First approach allows creating domain classes first,
-                                          and EF generates the database schema based on the classes. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Database-First approach in EF?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Database-First approach generates the EF model from an
-                                          existing database. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DbContext and ObjectContext?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">DbContext is a lightweight EF context for querying and
-                                          saving data; ObjectContext is a more feature-rich context used in older EF
-                                          versions. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DbContext.Database.ExecuteSqlRaw()?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">ExecuteSqlRaw() executes raw SQL commands against the
-                                          database directly. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DbContext?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">DbContext is the primary EF class for querying, saving data,
-                                          and managing entity objects.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DbSet in EF?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">DbSet represents a collection of entities in the context and
-                                          allows querying and saving operations. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DbSet?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">DbSet represents a table or collection of entities in
-                                          DbContext and provides LINQ query capabilities. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet Add(), Attach(), and Update() in EF?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Add() marks for insert; Attach() attaches existing entity;
-                                          Update() marks entity as modified for update. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet AsNoTracking() and default tracking
-                                                queries?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">AsNoTracking() improves performance for read-only queries by
-                                          not tracking; default tracking tracks entities for changes. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet Code-First Data Annotations and Fluent
-                                                API?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Data Annotations decorate classes and properties with
-                                          attributes; Fluent API provides configuration using method calls in DbContext
-                                          OnModelCreating. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet Database.EnsureCreated() and
-                                                Database.Migrate() in EF Core?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">EnsureCreated() creates database if it does not exist,
-                                          bypassing migrations; Migrate() applies pending migrations. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet DbContext and ObjectContext?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">DbContext is simpler, lightweight, and recommended;
-                                          ObjectContext is more verbose and low-level. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet DbContext.Entry() and DbSet.Update()?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Entry() allows setting entity state explicitly; Update()
-                                          marks entity as Modified for saving. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet DbContext.SaveChanges() and
-                                                DbContext.SaveChangesAsync()?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">SaveChanges() is synchronous; SaveChangesAsync() is
-                                          asynchronous and non-blocking. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet DbSet.Attach() and DbSet.Add()?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Attach() attaches an existing entity to the context without
-                                          marking as Added; Add() marks the entity as Added for insertion. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet DbSet.Remove() and DbContext.Entry().State =
-                                                EntityState.Deleted?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Remove() marks entity for deletion; setting State to Deleted
-                                          explicitly marks entity for deletion. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet eager loading and projection in EF
-                                                Core?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Eager loading retrieves full related entities; projection
-                                          selects only required fields. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet eager loading with Include() and projection
-                                                with Select()?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Include() loads full entity and related data; Select()
-                                          projects only specific fields, improving performance. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet EF Core and EF6 performance-wise?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">EF Core is generally faster and lightweight; EF6 has more
-                                          features but heavier and Windows-only. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet EF migrations and database seeding?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Migrations modify database schema; Seeding populates
-                                          database with initial or test data. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet EF6 and EF Core?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">EF Core is cross-platform, lightweight, and modern; EF6 is
-                                          mature, Windows-only, and full-featured. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet Entity and Complex Type in EF?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Entity has a key and can be tracked; Complex Type has no key
-                                          and is used as a property inside an entity. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet Find() and FirstOrDefault() in EF?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Find() searches by primary key and may return cached entity;
-                                          FirstOrDefault() executes query on database and returns first match or
-                                          default. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet foreign key and navigation property in
-                                                EF?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Foreign key holds the key value; navigation property allows
-                                          navigation to related entity. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet FromSqlRaw() and
-                                                FromSqlInterpolated()?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">FromSqlRaw() executes raw SQL; FromSqlInterpolated() allows
-                                          parameterized queries to prevent SQL injection. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet Include() and ThenInclude() in EF
-                                                Core?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Include() loads related entity; ThenInclude() loads nested
-                                          related entities after Include(). </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet IQueryable and IEnumerable in EF?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">IQueryable executes queries on the database and supports
-                                          deferred execution; IEnumerable executes in memory after fetching data. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet lazy loading and eager loading in EF?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Lazy loads on demand; eager loads related data immediately
-                                          with Include(). </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet lazy loading and explicit loading?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Lazy loading loads when navigation property accessed;
-                                          explicit loading requires manual Load() call. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet lazy loading proxies and manual lazy
-                                                loading?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Lazy loading proxies automatically intercept navigation
-                                          properties; manual lazy loading requires explicit Load() calls. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet Lazy Loading, Eager Loading, and Explicit
-                                                Loading? </span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Lazy Loading loads on demand; Eager Loading loads with the
-                                          initial query; Explicit Loading loads manually when needed. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet LINQ to Entities and LINQ to Objects in
-                                                EF?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">LINQ to Entities translates queries to SQL for database;
-                                          LINQ to Objects operates on in-memory objects. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet POCO and EntityObject?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">POCO (Plain Old CLR Object) is a simple class without EF
-                                          dependency; EntityObject derives from EF base classes and is tightly coupled
-                                          with EF. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet RowVersion/ConcurrencyToken and Timestamp in
-                                                EF? </span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Both are used for optimistic concurrency; Timestamp is SQL
-                                          Server-specific byte array, ConcurrencyToken can be any property marked for
-                                          concurrency. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet SaveChanges() and SaveChangesAsync()?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">SaveChanges() is synchronous; SaveChangesAsync() is
-                                          asynchronous and non-blocking. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet SingleOrDefault() and FirstOrDefault() in
-                                                EF?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">SingleOrDefault() expects exactly one match and throws if
-                                          multiple; FirstOrDefault() returns the first match without error if multiple.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet TPH and TPT inheritance in EF?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">TPH uses one table for all types; TPT uses separate table
-                                          for each type. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet TPH, TPT, and Table-per-Concrete Class
-                                                inheritance? </span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">TPH stores all types in one table; TPT stores each type in
-                                          separate table; Table-per-Concrete stores each concrete class in its own
-                                          table. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DiffBet EF and ADO.NET?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">EF abstracts SQL into objects (ORM), while ADO.NET requires
-                                          manual SQL queries and dataset manipulation.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Different approaches of Entity Framework?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Database-First, Model-First, and Code-First approaches.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Eager Loading in EF?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Eager Loading retrieves related data along with the main
-                                          entity using Include() method. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Eager loading?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">EF loads related entities immediately using Include() to
-                                          reduce multiple database calls.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>EF Core async operations?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">EF Core supports async versions of query and save methods,
-                                          improving scalability and non-blocking I/O. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>EF Core batch operations?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Batch operations execute multiple insert, update, or delete
-                                          commands in a single database round-trip. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>EF Core cascade delete?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Cascade delete automatically deletes dependent entities when
-                                          principal entity is deleted. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>EF Core Change Tracker?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Change Tracker keeps track of entity changes in the context
-                                          for insert, update, and delete operations. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>EF Core concurrency handling?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">EF Core uses concurrency tokens or timestamps to detect
-                                          conflicting updates and prevent data loss. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>EF Core connection pooling?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Connection pooling reuses database connections for
-                                          performance optimization. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>EF Core database seeding?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Seeding populates database with initial or test data during
-                                          migrations or startup. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>EF Core DbContext pooling?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">DbContext pooling reuses context instances to reduce memory
-                                          allocation and improve performance in high-load applications. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>EF Core global query filter?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Global query filter applies conditions automatically to all
-                                          queries for a given entity type. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>EF Core global query filter?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Applies automatic conditions to queries for a given entity
-                                          type, like soft delete filters. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>EF Core migrations rollback?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Migrations rollback allows reverting database schema to
-                                          previous state using Remove-Migration or Update-Database commands. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>EF Core owned entity?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Owned entity is a dependent entity type whose lifecycle is
-                                          tied to the owner and shares the same table. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>EF Core owned types vs complex types?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Owned types are dependent entities with lifecycle tied to
-                                          owner; complex types in EF6 were similar but without EF Core features. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>EF Core query types (keyless entity)?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Keyless entities represent database views or tables without
-                                          primary keys, used for read-only queries. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>EF Core shadow key?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A key property not defined in CLR class but maintained in EF
-                                          model for relationships. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>EF Core shadow property?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Shadow property is maintained by EF for relational mapping
-                                          but not in CLR class. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>EF Core shadow property?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Property not defined in class but maintained in EF Core
-                                          model for mapping or foreign keys. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>EF Core table splitting?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Table splitting stores multiple entity types in the same
-                                          database table. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>EF Core tracking vs no-tracking queries?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Tracking queries track changes for update; no-tracking
-                                          queries improve read performance without change tracking. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>EF Core value conversion?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Value conversion transforms property values between CLR type
-                                          and database type during read/write operations. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Entity Framework?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Entity Framework (EF) is an Object-Relational Mapping (ORM)
-                                          framework for .NET that allows developers to work with databases using .NET
-                                          objects. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Entity Framework?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">EF is an ORM for .NET that maps database tables to C#
-                                          classes, enabling developers to work with data as objects without writing SQL.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Execute raw SQL in EF?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Use context.Database.SqlQuery<T>() for queries or
-                                                context.Database.ExecuteSqlCommand() for commands. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explicit Loading in EF?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Explicit Loading loads related data manually using Load()
-                                          method on navigation properties. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Foreign key property in EF?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Foreign key property stores the key of a related entity to
-                                          define relationships. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Keyless entity type in EF Core?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Keyless entity type does not have a primary key and is used
-                                          for read-only queries like views. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Lazy Loading in EF?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Lazy Loading delays loading of related data until it is
-                                          accessed for the first time. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Lazy loading?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">EF loads related entities only when accessed, improving
-                                          performance for large datasets.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Migration in EF Code-First?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Migration is a feature that allows updating the database
-                                          schema incrementally when the model changes. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Model-First approach in EF?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Model-First approach allows creating the EF model visually,
-                                          and EF generates the database schema from it. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Navigation properties?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Properties in entities used to represent relationships
-                                          between tables (one-to-one, one-to-many, many-to-many).</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Navigation property in EF?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Navigation property represents a relationship between two
-                                          entities, allowing navigation from one entity to another. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>No-Tracking query in EF?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">No-Tracking query does not track changes to entities and
-                                          improves performance for read-only operations using AsNoTracking(). </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Optimistic concurrency in EF?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Optimistic concurrency allows multiple users to work on data
-                                          and checks for conflicts when saving changes. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Owned entity type in EF Core?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Owned entity type shares the same table with owner entity
-                                          and cannot exist independently. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Shadow property in EF Core?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A property maintained by EF model but not defined in CLR
-                                          class, used for tracking or foreign keys. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Shadow property in EF?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Shadow property is a property in EF model not defined in CLR
-                                          class but maintained in the EF model and database. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Tracking query in EF?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A tracking query tracks changes to entities retrieved from
-                                          the database so that changes can be persisted back. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Types of EF approaches?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Database First: Generates classes from an existing DB, Model
-                                          First: Create model, then generate DB, Code First: Classes define schema, DB
-                                          generated automatically</div>
-                              </div>
+          <main class="container" id="tab_content_28">
+        <section class="iqas-section">
+            <div class="faq-item-title active">
+                <div class="faq-question-title">
+                    <div class="container section-title" data-aos="fade-up">
+                        <div class="faq-question-title">
+                            <h2 class="heading-title">Entity Framework</h2>
+                            <div class="title-icon">+</div>
                         </div>
-                  </div>
-            </section>
-      </main>
+                        <div class="faq-answer-title">
+                            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                                <div class="row">
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Automatic and Manual Migrations in EF? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Automatic Migrations update database schema
+                                            automatically;
+                                            Manual
+                                            Migrations require explicit creation of migration files. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Code First Migrations? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Migrations help incrementally update the database schema
+                                            as
+                                            the model
+                                            changes, preserving existing data.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Code-First approach in EF? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Code-First approach allows creating domain classes
+                                            first,
+                                            and EF
+                                            generates the database schema based on the classes. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Database-First approach in EF? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Database-First approach generates the EF model from an
+                                            existing
+                                            database. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DbContext and ObjectContext? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">DbContext is a lightweight EF context for querying and
+                                            saving data;
+                                            ObjectContext is a more feature-rich context used in older EF versions.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DbContext.Database.ExecuteSqlRaw()? <div class="icon">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">ExecuteSqlRaw() executes raw SQL commands against the
+                                            database
+                                            directly. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DbContext? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">DbContext is the primary EF class for querying, saving
+                                            data,
+                                            and
+                                            managing entity objects.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DbSet in EF? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">DbSet represents a collection of entities in the context
+                                            and
+                                            allows
+                                            querying and saving operations. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DbSet? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">DbSet represents a table or collection of entities in
+                                            DbContext and
+                                            provides LINQ query capabilities. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Add(), Attach(), and Update() in EF? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Add() marks for insert; Attach() attaches existing
+                                            entity;
+                                            Update()
+                                            marks entity as modified for update. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet AsNoTracking() and default tracking queries?
+                                            <div class="icon"> +</div>
+                                        </div>
+                                        <div class="faq-answer">AsNoTracking() improves performance for read-only
+                                            queries by
+                                            not
+                                            tracking; default tracking tracks entities for changes. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Code-First Data Annotations and Fluent API?
+                                            <div class="icon">+ </div>
+                                        </div>
+                                        <div class="faq-answer">Data Annotations decorate classes and properties with
+                                            attributes;
+                                            Fluent API provides configuration using method calls in DbContext
+                                            OnModelCreating. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Database.EnsureCreated() and Database.Migrate()
+                                            in
+                                            EF Core?
+                                            <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">EnsureCreated() creates database if it does not exist,
+                                            bypassing
+                                            migrations; Migrate() applies pending migrations. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet DbContext and ObjectContext? <div class="icon">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">DbContext is simpler, lightweight, and recommended;
+                                            ObjectContext is
+                                            more verbose and low-level. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet DbContext.Entry() and DbSet.Update()? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Entry() allows setting entity state explicitly; Update()
+                                            marks entity
+                                            as Modified for saving. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet DbContext.SaveChanges() and
+                                            DbContext.SaveChangesAsync()?
+                                            <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">SaveChanges() is synchronous; SaveChangesAsync() is
+                                            asynchronous and
+                                            non-blocking. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet DbSet.Attach() and DbSet.Add()? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Attach() attaches an existing entity to the context
+                                            without
+                                            marking
+                                            as Added; Add() marks the entity as Added for insertion. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet DbSet.Remove() and DbContext.Entry().State =
+                                            EntityState.Deleted? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Remove() marks entity for deletion; setting State to
+                                            Deleted
+                                            explicitly marks entity for deletion. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet eager loading and projection in EF Core? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Eager loading retrieves full related entities;
+                                            projection
+                                            selects
+                                            only required fields. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet eager loading with Include() and projection
+                                            with
+                                            Select()?
+                                            <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Include() loads full entity and related data; Select()
+                                            projects only
+                                            specific fields, improving performance. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet EF Core and EF6 performance-wise? <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">EF Core is generally faster and lightweight; EF6 has
+                                            more
+                                            features
+                                            but heavier and Windows-only. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet EF migrations and database seeding? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Migrations modify database schema; Seeding populates
+                                            database with
+                                            initial or test data. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet EF6 and EF Core? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">EF Core is cross-platform, lightweight, and modern; EF6
+                                            is
+                                            mature,
+                                            Windows-only, and full-featured. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Entity and Complex Type in EF? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Entity has a key and can be tracked; Complex Type has no
+                                            key
+                                            and is
+                                            used as a property inside an entity. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Find() and FirstOrDefault() in EF? <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Find() searches by primary key and may return cached
+                                            entity;
+                                            FirstOrDefault() executes query on database and returns first match or
+                                            default.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet foreign key and navigation property in EF? <div
+                                                class="icon">+ </div>
+                                        </div>
+                                        <div class="faq-answer">Foreign key holds the key value; navigation property
+                                            allows
+                                            navigation to related entity. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet FromSqlRaw() and FromSqlInterpolated()? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">FromSqlRaw() executes raw SQL; FromSqlInterpolated()
+                                            allows
+                                            parameterized queries to prevent SQL injection. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Include() and ThenInclude() in EF Core? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Include() loads related entity; ThenInclude() loads
+                                            nested
+                                            related
+                                            entities after Include(). </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet IQueryable and IEnumerable in EF? <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">IQueryable executes queries on the database and supports
+                                            deferred
+                                            execution; IEnumerable executes in memory after fetching data. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet lazy loading and eager loading in EF? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Lazy loads on demand; eager loads related data
+                                            immediately
+                                            with
+                                            Include(). </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet lazy loading and explicit loading? <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Lazy loading loads when navigation property accessed;
+                                            explicit
+                                            loading requires manual Load() call. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet lazy loading proxies and manual lazy loading?
+                                            <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Lazy loading proxies automatically intercept navigation
+                                            properties;
+                                            manual lazy loading requires explicit Load() calls. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Lazy Loading, Eager Loading, and Explicit
+                                            Loading?
+                                            <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Lazy Loading loads on demand; Eager Loading loads with
+                                            the
+                                            initial
+                                            query; Explicit Loading loads manually when needed. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet LINQ to Entities and LINQ to Objects in EF?
+                                            <div class="icon">+ </div>
+                                        </div>
+                                        <div class="faq-answer">LINQ to Entities translates queries to SQL for database;
+                                            LINQ to
+                                            Objects operates on in-memory objects. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet POCO and EntityObject? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">POCO (Plain Old CLR Object) is a simple class without EF
+                                            dependency;
+                                            EntityObject derives from EF base classes and is tightly coupled with EF.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet RowVersion/ConcurrencyToken and Timestamp in
+                                            EF?
+                                            <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Both are used for optimistic concurrency; Timestamp is
+                                            SQL
+                                            Server-specific byte array, ConcurrencyToken can be any property marked for
+                                            concurrency.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet SaveChanges() and SaveChangesAsync()? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">SaveChanges() is synchronous; SaveChangesAsync() is
+                                            asynchronous and
+                                            non-blocking. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet SingleOrDefault() and FirstOrDefault() in EF?
+                                            <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">SingleOrDefault() expects exactly one match and throws
+                                            if
+                                            multiple;
+                                            FirstOrDefault() returns the first match without error if multiple. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet TPH and TPT inheritance in EF? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">TPH uses one table for all types; TPT uses separate
+                                            table
+                                            for each
+                                            type. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet TPH, TPT, and Table-per-Concrete Class
+                                            inheritance?
+                                            <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">TPH stores all types in one table; TPT stores each type
+                                            in
+                                            separate
+                                            table; Table-per-Concrete stores each concrete class in its own table.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DiffBet EF and ADO.NET? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">EF abstracts SQL into objects (ORM), while ADO.NET
+                                            requires
+                                            manual
+                                            SQL queries and dataset manipulation.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Different approaches of Entity Framework? <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Database-First, Model-First, and Code-First approaches.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Eager Loading in EF? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Eager Loading retrieves related data along with the main
+                                            entity using
+                                            Include() method. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Eager loading? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">EF loads related entities immediately using Include() to
+                                            reduce
+                                            multiple database calls.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">EF Core async operations? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">EF Core supports async versions of query and save
+                                            methods,
+                                            improving
+                                            scalability and non-blocking I/O. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">EF Core batch operations? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Batch operations execute multiple insert, update, or
+                                            delete
+                                            commands
+                                            in a single database round-trip. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">EF Core cascade delete? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Cascade delete automatically deletes dependent entities
+                                            when
+                                            principal entity is deleted. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">EF Core Change Tracker? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Change Tracker keeps track of entity changes in the
+                                            context
+                                            for
+                                            insert, update, and delete operations. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">EF Core concurrency handling? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">EF Core uses concurrency tokens or timestamps to detect
+                                            conflicting
+                                            updates and prevent data loss. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">EF Core connection pooling? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Connection pooling reuses database connections for
+                                            performance
+                                            optimization. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">EF Core database seeding? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Seeding populates database with initial or test data
+                                            during
+                                            migrations or startup. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">EF Core DbContext pooling? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">DbContext pooling reuses context instances to reduce
+                                            memory
+                                            allocation and improve performance in high-load applications. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">EF Core global query filter? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Global query filter applies conditions automatically to
+                                            all
+                                            queries
+                                            for a given entity type. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">EF Core global query filter? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Applies automatic conditions to queries for a given
+                                            entity
+                                            type, like
+                                            soft delete filters. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">EF Core migrations rollback? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Migrations rollback allows reverting database schema to
+                                            previous
+                                            state using Remove-Migration or Update-Database commands. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">EF Core owned entity? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Owned entity is a dependent entity type whose lifecycle
+                                            is
+                                            tied to
+                                            the owner and shares the same table. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">EF Core owned types vs complex types? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Owned types are dependent entities with lifecycle tied
+                                            to
+                                            owner;
+                                            complex types in EF6 were similar but without EF Core features. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">EF Core query types (keyless entity)? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Keyless entities represent database views or tables
+                                            without
+                                            primary
+                                            keys, used for read-only queries. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">EF Core shadow key? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A key property not defined in CLR class but maintained
+                                            in EF
+                                            model
+                                            for relationships. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">EF Core shadow property? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Shadow property is maintained by EF for relational
+                                            mapping
+                                            but not in
+                                            CLR class. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">EF Core shadow property? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Property not defined in class but maintained in EF Core
+                                            model for
+                                            mapping or foreign keys. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">EF Core table splitting? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Table splitting stores multiple entity types in the same
+                                            database
+                                            table. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">EF Core tracking vs no-tracking queries? <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Tracking queries track changes for update; no-tracking
+                                            queries
+                                            improve read performance without change tracking. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">EF Core value conversion? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Value conversion transforms property values between CLR
+                                            type
+                                            and
+                                            database type during read/write operations. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Entity Framework? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Entity Framework (EF) is an Object-Relational Mapping
+                                            (ORM)
+                                            framework
+                                            for .NET that allows developers to work with databases using .NET objects.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Entity Framework? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">EF is an ORM for .NET that maps database tables to C#
+                                            classes,
+                                            enabling developers to work with data as objects without writing SQL. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Execute raw SQL in EF? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Use context.Database.SqlQuery<T>() for queries or
+                                                context.Database.ExecuteSqlCommand() for commands. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explicit Loading in EF? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Explicit Loading loads related data manually using
+                                            Load()
+                                            method on
+                                            navigation properties. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Foreign key property in EF? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Foreign key property stores the key of a related entity
+                                            to
+                                            define
+                                            relationships. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Keyless entity type in EF Core? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Keyless entity type does not have a primary key and is
+                                            used
+                                            for
+                                            read-only queries like views. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Lazy Loading in EF? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Lazy Loading delays loading of related data until it is
+                                            accessed for
+                                            the first time. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Lazy loading? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">EF loads related entities only when accessed, improving
+                                            performance
+                                            for large datasets.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Migration in EF Code-First? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Migration is a feature that allows updating the database
+                                            schema
+                                            incrementally when the model changes. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Model-First approach in EF? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Model-First approach allows creating the EF model
+                                            visually,
+                                            and EF
+                                            generates the database schema from it. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Navigation properties? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Properties in entities used to represent relationships
+                                            between tables
+                                            (one-to-one, one-to-many, many-to-many).</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Navigation property in EF? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Navigation property represents a relationship between
+                                            two
+                                            entities,
+                                            allowing navigation from one entity to another. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">No-Tracking query in EF? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">No-Tracking query does not track changes to entities and
+                                            improves
+                                            performance for read-only operations using AsNoTracking(). </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Optimistic concurrency in EF? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Optimistic concurrency allows multiple users to work on
+                                            data
+                                            and
+                                            checks for conflicts when saving changes. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Owned entity type in EF Core? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Owned entity type shares the same table with owner
+                                            entity
+                                            and cannot
+                                            exist independently. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Shadow property in EF Core? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A property maintained by EF model but not defined in CLR
+                                            class, used
+                                            for tracking or foreign keys. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Shadow property in EF? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Shadow property is a property in EF model not defined in
+                                            CLR
+                                            class
+                                            but maintained in the EF model and database. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Tracking query in EF? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A tracking query tracks changes to entities retrieved
+                                            from
+                                            the
+                                            database so that changes can be persisted back. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Types of EF approaches? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Database First: Generates classes from an existing DB,
+                                            Model
+                                            First:
+                                            Create model, then generate DB, Code First: Classes define schema, DB
+                                            generated
+                                            automatically </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
       <div id="footer-placeholder"></div> <a href="#" id="scroll-top"
             class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
       <div id="preloader"></div>

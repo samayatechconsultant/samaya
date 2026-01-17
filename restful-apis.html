@@ -21,181 +21,219 @@
       <link href="/assets/css/main.css" rel="stylesheet"> 
 </head>
 
-<body class="index-page Custombody">
+<body>
       <div id="nav-placeholder"></div>
-      <main class="main">
-            <section id="about" class="about section Custombody">
-                  <div class="container section-title" data-aos="fade-up">
-                        <h2>RESTful APIs </h2>
-                  </div>
-                  <div class="container" data-aos="fade-up" data-aos-delay="100">
-                        <div class="row g-3">
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Api versioning?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">API versioning allows changes without breaking existing
-                                          clients. Versions may appear in headers, URLs, or query parameters. It helps
-                                          manage updates and backward compatibility.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Authentication in rest?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Authentication verifies user identity before accessing
-                                          protected resources. Methods include OAuth, JWT, and Basic Authentication. It
-                                          ensures only authorized users access the API. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Authorization in rest?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Authorization determines what resources an authenticated
-                                          user can access. it controls permissions and roles. it works after successful
-                                          authentication.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Crud?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">CRUD stands for Create, Read, Update, and Delete. These
-                                          operations map to HTTP methods in REST. CRUD is fundamental for resource
-                                          management in APIs.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Endpoint?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">An endpoint is a specific URL where a resource can be
-                                          accessed. Each endpoint corresponds to an operation on a resource. It defines
-                                          how the client interacts with the server. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Http status code 200?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">HTTP 200 means the request was successful. It typically
-                                          accompanies GET requests. The response usually contains the requested
-                                          resource.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Http status code 201?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">201 means a resource has been successfully created. it is
-                                          commonly returned after post requests. the response may include the newly
-                                          created resource or a location header.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Http status code 404?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">404 means the requested resource is not found. it indicates
-                                          an invalid endpoint or missing data. it is part of rest error handling.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Http status code 500?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">500 indicates a server error. it means the server failed to
-                                          process the request due to an internal issue. it signals the need for
-                                          debugging and error handling.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Idempotency?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Idempotency means repeated requests produce the same result.
-                                          HTTP methods like GET, PUT, and DELETE are idempotent, while POST is not. It
-                                          prevents unintended duplicate operations. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>J</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">JSON (JavaScript Object Notation) is a lightweight format
-                                          for data exchange. It is human-readable and easy for machines to parse. REST
-                                          APIs commonly use JSON due to simplicity and speed.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Jwt?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">JSON Web Token (JWT) is a secure token used for
-                                          authentication and authorization. It contains encoded claims digitally signed
-                                          using a secret or certificate. The server does not store session state.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Main http methods used in rest?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">REST commonly uses GET, POST, PUT, PATCH, and DELETE. GET
-                                          retrieves data, POST creates, PUT updates fully, PATCH updates partially, and
-                                          DELETE removes a resource. These methods align with CRUD operations. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Oauth2?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">OAuth2 is an authorization framework that allows delegated
-                                          access. It enables third-party apps to access APIs securely without sharing
-                                          passwords. It is widely used by Google, Facebook, and Microsoft services.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Pagination?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Pagination splits large datasets into smaller chunks. REST
-                                          APIs use parameters like limit and page to fetch data efficiently. It improves
-                                          performance and user experience.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Rate limiting in rest apis?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Rate limiting restricts the number of requests allowed
-                                          within a time window. It prevents abuse, protects servers, and ensures fair
-                                          usage. Often implemented with tokens or throttling rules.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Resource in rest?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A resource represents data or an entity exposed via an
-                                          endpoint. Each resource is identified by a unique URI. Resources are usually
-                                          represented in formats like JSON or XML. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Rest api?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A REST API is an architectural style that uses HTTP methods
-                                          to perform CRUD operations. It follows stateless communication and represents
-                                          resources using URIs. REST relies on representations like JSON or XML. It is
-                                          widely used for web and mobile services.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Stateless mean in rest?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Stateless means each request contains all necessary
-                                          information to process it. The server does not store client session data
-                                          between requests. This improves scalability and simplifies server
-                                          architecture.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Xml in rest?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">XML is a markup language used for structured data
-                                          representation. It was widely used before JSON gained popularity. REST can
-                                          still support XML when needed for legacy systems.</div>
-                              </div>
+      <main class="container" id="tab_content_54">
+        <section class="iqas-section">
+            <div class="faq-item-title active">
+                <div class="faq-question-title">
+                    <div class="container section-title" data-aos="fade-up">
+                        <div class="faq-question-title">
+                            <h2 class="heading-title">RESTful APIs </h2>
+                            <div class="title-icon">+</div>
                         </div>
-                  </div>
-            </section>
-      </main>
+                        <div class="faq-answer-title">
+                            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                                <div class="row">
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Api versioning? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">API versioning allows changes without breaking existing
+                                            clients.
+                                            Versions may appear in headers, URLs, or query parameters. It helps manage
+                                            updates and
+                                            backward compatibility. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Authentication in rest? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Authentication verifies user identity before accessing
+                                            protected
+                                            resources. Methods include OAuth, JWT, and Basic Authentication. It ensures
+                                            only
+                                            authorized users access the API. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Authorization in rest? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Authorization determines what resources an authenticated
+                                            user can
+                                            access. it controls permissions and roles. it works after successful
+                                            authentication.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Crud? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">CRUD stands for Create, Read, Update, and Delete. These
+                                            operations
+                                            map to HTTP methods in REST. CRUD is fundamental for resource management in
+                                            APIs.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Endpoint? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">An endpoint is a specific URL where a resource can be
+                                            accessed. Each
+                                            endpoint corresponds to an operation on a resource. It defines how the
+                                            client
+                                            interacts
+                                            with the server. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Http status code 200? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">HTTP 200 means the request was successful. It typically
+                                            accompanies
+                                            GET requests. The response usually contains the requested resource.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Http status code 201? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">201 means a resource has been successfully created. it
+                                            is
+                                            commonly
+                                            returned after post requests. the response may include the newly created
+                                            resource or a
+                                            location header. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Http status code 404? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">404 means the requested resource is not found. it
+                                            indicates
+                                            an
+                                            invalid endpoint or missing data. it is part of rest error handling.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Http status code 500? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">500 indicates a server error. it means the server failed
+                                            to
+                                            process
+                                            the request due to an internal issue. it signals the need for debugging and
+                                            error
+                                            handling. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Idempotency? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Idempotency means repeated requests produce the same
+                                            result.
+                                            HTTP
+                                            methods like GET, PUT, and DELETE are idempotent, while POST is not. It
+                                            prevents
+                                            unintended duplicate operations. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">J <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">JSON (JavaScript Object Notation) is a lightweight
+                                            format
+                                            for data
+                                            exchange. It is human-readable and easy for machines to parse. REST APIs
+                                            commonly use JSON
+                                            due to simplicity and speed.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jwt? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">JSON Web Token (JWT) is a secure token used for
+                                            authentication and
+                                            authorization. It contains encoded claims digitally signed using a secret or
+                                            certificate.
+                                            The server does not store session state.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Main http methods used in rest? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">REST commonly uses GET, POST, PUT, PATCH, and DELETE.
+                                            GET
+                                            retrieves
+                                            data, POST creates, PUT updates fully, PATCH updates partially, and DELETE
+                                            removes a
+                                            resource. These methods align with CRUD operations. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Oauth2? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">OAuth2 is an authorization framework that allows
+                                            delegated
+                                            access. It
+                                            enables third-party apps to access APIs securely without sharing passwords.
+                                            It
+                                            is widely
+                                            used by Google, Facebook, and Microsoft services. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Pagination? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Pagination splits large datasets into smaller chunks.
+                                            REST
+                                            APIs use
+                                            parameters like limit and page to fetch data efficiently. It improves
+                                            performance and user
+                                            experience.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Rate limiting in rest apis? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Rate limiting restricts the number of requests allowed
+                                            within a time
+                                            window. It prevents abuse, protects servers, and ensures fair usage. Often
+                                            implemented
+                                            with tokens or throttling rules.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Resource in rest? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A resource represents data or an entity exposed via an
+                                            endpoint. Each
+                                            resource is identified by a unique URI. Resources are usually represented in
+                                            formats like
+                                            JSON or XML. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Rest api? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A REST API is an architectural style that uses HTTP
+                                            methods
+                                            to
+                                            perform CRUD operations. It follows stateless communication and represents
+                                            resources using
+                                            URIs. REST relies on representations like JSON or XML. It is widely used for
+                                            web
+                                            and
+                                            mobile services. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Stateless mean in rest? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Stateless means each request contains all necessary
+                                            information to
+                                            process it. The server does not store client session data between requests.
+                                            This
+                                            improves
+                                            scalability and simplifies server architecture.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Xml in rest? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">XML is a markup language used for structured data
+                                            representation. It
+                                            was widely used before JSON gained popularity. REST can still support XML
+                                            when
+                                            needed for
+                                            legacy systems.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
       <div id="footer-placeholder"></div> <a href="#" id="scroll-top"
             class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
       <div id="preloader"></div>

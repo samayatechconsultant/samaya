@@ -21,992 +21,1111 @@
       <link href="/assets/css/main.css" rel="stylesheet"> 
 </head>
 
-<body class="index-page Custombody">
+<body>
       <div id="nav-placeholder"></div>
-      <main class="main">
-            <section id="about" class="about section Custombody">
-                  <div class="container section-title" data-aos="fade-up">
-                        <h2> Terraform </h2>
-                  </div>
-                  <div class="container" data-aos="fade-up" data-aos-delay="100">
-                        <div class="row g-3">
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span> Best Practices in Terraform?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Use modules, remote state, version control, and least
-                                          privilege access. Apply workspace separation and use .tfvars files for
-                                          automation. Use formatting, validation, and policy enforcement. Commit code
-                                          reviews for safety.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span> Data Sources in Terraform?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Data sources fetch existing information from providers
-                                          without creating a new resource. They are read-only and useful for referencing
-                                          available values. Example: fetching an existing VPC ID. Used with data blocks.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span> Input Variables?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Input variables allow parameterization of Terraform
-                                          configurations. They help reuse modules across multiple environments like dev,
-                                          QA, and prod. Variables can be stored in .tfvars files. They support type
-                                          constraints like string, number, and map.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span> Output Variables?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Output variables return values from configuration after
-                                          execution. They help share information between modules or display key results.
-                                          Examples include IP addresses or resource IDs. They are defined using output.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span> Terraform Providers?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Providers act as plugins that enable Terraform to interact
-                                          with cloud platforms or services. Examples include AWS, Azure, GCP,
-                                          Kubernetes, and GitHub. A provider must be initialized before use with
-                                          terraform init. It defines available resources and data sources.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>create_before_destroy?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Create_before_destroy ensures a new resource is created
-                                          before destroying the old one. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Developed Terraform?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Terraform is developed by HashiCorp. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet immutable and mutable infrastructure?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Immutable infrastructure is replaced entirely for changes;
-                                          mutable infrastructure is updated in place. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet local-exec and remote-exec?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Local-exec runs commands on the machine running Terraform;
-                                          remote-exec runs commands on the target resource. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet module and resource?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Module is a collection of resources; resource represents a
-                                          single infrastructure component. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet Terraform and Ansible?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Terraform is declarative and focuses on provisioning
-                                          infrastructure; Ansible is procedural and focuses on configuration management.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet Terraform and CloudFormation?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Terraform is multi-cloud and open-source; CloudFormation is
-                                          AWS-specific. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet Terraform and Pulumi?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Terraform uses HCL for declarative configurations; Pulumi
-                                          uses programming languages for IaC. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet Terraform resource and data?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Resource creates or manages infrastructure; data fetches
-                                          existing infrastructure information. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DiffBet Ansible and Terraform?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Terraform focuses on infrastructure provisioning while
-                                          Ansible focuses on configuration management. Terraform uses a declarative
-                                          approach whereas Ansible is procedural. Terraform stores a state file whereas
-                                          Ansible does not.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Drift in Terraform?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Drift occurs when the actual infrastructure changes outside
-                                          Terraform. Terraform detects drift during terraform plan. Drift needs
-                                          correction to maintain consistency. Best practice is managing infrastructure
-                                          only through Terraform.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>IaC (Infrastructure as Code)?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">IaC is a method of managing and provisioning infrastructure
-                                          through code instead of manual processes. It increases consistency,
-                                          automation, scalability, and repeatability. Tools like Terraform,
-                                          CloudFormation, and Ansible enable IaC. This approach helps eliminate
-                                          configuration drift across environments.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Immutable Infrastructure?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Immutable infrastructure treats launched resources as
-                                          replaceable instead of modifying them. Terraform supports this approach by
-                                          recreating resources instead of modifying them. It improves stability and
-                                          reduces configuration drift.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Infrastructure as Code (IaC)?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">IaC is the practice of managing and provisioning
-                                          infrastructure using code instead of manual processes. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Infrastructure Provisioning?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Provisioning means creating, configuring, and deploying
-                                          infrastructure resources. Terraform automates provisioning using IaC. It helps
-                                          in consistent and automated cloud resource deployment. Faster and error-free
-                                          process.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Main features of Terraform?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Features include declarative configuration execution plan
-                                          resource graph multi-cloud support and state management. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Policy as Code in Terraform?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Policy as Code enforces compliance rules using Sentinel in
-                                          Terraform Enterprise or Cloud. It ensures deployments follow organizational
-                                          security and governance. Policies can allow, deny, or audit changes. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>prevent_destroy?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Prevent_destroy prevents accidental deletion of a resource.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Remote backend?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Remote backend stores Terraform state in a remote location
-                                          for team collaboration. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Remote State?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Remote state stores the Terraform state file in a shared
-                                          backend such as S3, Azure Blob, or Terraform Cloud. It helps in collaboration
-                                          among multiple users. Remote state also supports encryption, locking, and
-                                          versioning. This avoids conflicts and corrupt state files.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>State in Terraform?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Terraform state stores metadata and resource deployment
-                                          details. It tracks resource mapping between configuration and actual cloud
-                                          infrastructure. The state file is critical for operations like update,
-                                          destroy, and plan. You can store it locally or remotely.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>State Locking in Terraform?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">State locking prevents simultaneous modifications to the
-                                          same state file by multiple users. It ensures consistency during execution.
-                                          Tools like DynamoDB or Terraform Cloud handle locking. Without locking,
-                                          infrastructure may become corrupted.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Tainting in Terraform?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Tainting marks a resource for forced recreation on the next
-                                          apply. Use terraform taint <resource> to apply it. Useful for broken or
-                                                manually modified infrastructure. It triggers destruction and
-                                                recreation.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform apply -auto-approve?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Applies changes without prompting for user confirmation.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform apply?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Terraform apply executes the planned changes to provision or
-                                          modify infrastructure. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>terraform apply?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">terraform apply creates or updates resources as per
-                                          configuration. It executes approved actions shown from the plan. You may
-                                          auto-approve using -auto-approve. It updates the Terraform state file after
-                                          execution.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform backend types?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Backend types include local S3 AzureRM GCS Consul and
-                                          Terraform Cloud. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform backend?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Backend defines where Terraform stores state data e.g. local
-                                          file S3 or remote storage. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform Backend?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A backend determines how state is loaded and where it is
-                                          stored. Examples include local filesystem or remote backends like S3 and Azure
-                                          Blob. Backends also support locking and encryption. They improve collaboration
-                                          in teams.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform best practices?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Use modules version control remote state variables outputs
-                                          and avoid hardcoding sensitive data. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform cloud agent?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Cloud agent allows Terraform Cloud to manage infrastructure
-                                          in private networks. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform Cloud?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Terraform Cloud is a SaaS platform for collaborative
-                                          Terraform workflows state management and policy enforcement. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform count?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Count allows creating multiple instances of a resource based
-                                          on a number. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform data source?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Data source fetches information about existing
-                                          infrastructure for use in configurations. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform dependency graph?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Graph shows dependencies between resources for execution
-                                          planning. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform dependency?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Dependency defines the order of resource creation based on
-                                          references between resources. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform destroy -target vs apply -destroy?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Destroy-target removes specific resources; apply -destroy
-                                          removes all resources. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform destroy?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Terraform destroy removes all resources managed by
-                                          Terraform. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>terraform destroy?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">terraform destroy removes resources managed by Terraform. It
-                                          reads the state file and destroys the corresponding cloud infrastructure.
-                                          Useful for testing environments. It prevents leftover idle cloud resources.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform destroy-target?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Destroy-target removes specific resources instead of the
-                                          entire infrastructure. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform DifBet static and dynamic block?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Static block is manually written; dynamic block generates
-                                          repeated nested blocks programmatically. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform drift detection?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Detects infrastructure changes made outside Terraform.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform drift?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Drift occurs when infrastructure changes outside Terraform
-                                          causing state mismatch. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform dynamic block?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Dynamic block allows generating multiple nested blocks
-                                          dynamically in a resource. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform Enterprise?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Terraform Enterprise is a self-managed version of Terraform
-                                          Cloud for organizations. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform fmt?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Fmt formats Terraform configuration files according to
-                                          standard style conventions. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>terraform fmt?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">terraform fmt automatically formats Terraform code style. It
-                                          ensures consistent formatting for readability and maintainability. This
-                                          command is especially useful in team environments. It follows official
-                                          formatting rules.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform for_each?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">For_each iterates over a map or set to create multiple
-                                          resources with unique identifiers. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform function types?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Function types include string numeric collection date
-                                          encoding file and type conversion. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform functions?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Functions perform operations on strings numbers lists maps
-                                          and other data types. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform graph?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Graph generates a visual representation of resources and
-                                          their dependencies. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform HCL?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">HCL stands for HashiCorp Configuration Language used to
-                                          define infrastructure. It is human-readable and JSON-compatible. It supports
-                                          variables, modules, conditionals, and loops. Terraform scripts are written in
-                                          HCL.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform import limitations?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Import cannot automatically generate full configuration;
-                                          manual resource definition is required. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform import state?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Terraform import updates state file to track existing
-                                          resources. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform import?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Terraform import brings existing infrastructure under
-                                          Terraform management. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform init?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Init initializes the working directory downloads providers
-                                          and sets up backend. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>terraform init?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">terraform init initializes a working directory with
-                                          Terraform configuration files. It installs necessary providers and modules. It
-                                          must be run first before applying configuration. It ensures all dependencies
-                                          are downloaded.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform interpolate?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Interpolate computes expressions using variables resources
-                                          or functions. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform interpolation functions?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Functions manipulate data e.g. concat join length lookup
-                                          lower upper. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform interpolation syntax?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Syntax uses ${} to reference variables outputs or resource
-                                          attributes. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform interpolation?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Interpolation allows using expressions variables and
-                                          functions within configuration files. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform lifecycle?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Lifecycle allows customizing resource behavior including
-                                          create_before_destroy and prevent_destroy. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform local values?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Local values store intermediate expressions or computed
-                                          values for reuse. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform local-exec vs remote-exec?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Local-exec runs locally; remote-exec runs on the resource
-                                          instance. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform main.tf?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Main.tf contains the main Terraform configuration for
-                                          resources. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform module registry?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Module registry hosts reusable modules for public or private
-                                          use. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform module source?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Source specifies the location of a module e.g. local path
-                                          Git repository or registry. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform module?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Module is a reusable self-contained package of Terraform
-                                          configurations. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform Module?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A module is a container for multiple Terraform resources
-                                          used together. It promotes reusability, structure, and automation. Modules can
-                                          be local, public (Terraform Registry), or shared within a team. They help
-                                          maintain consistency across environments.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform nested modules?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Nested modules are modules called from within another module
-                                          for hierarchical organization. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform null resource?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Null resource is a placeholder resource used for executing
-                                          provisioners without creating actual infrastructure. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform output sensitive?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Marks output as sensitive to hide values in CLI or UI.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform output?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Output defines values to display after Terraform apply often
-                                          used for module outputs or sharing data. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform outputs vs locals?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Outputs expose data outside; locals store data internally
-                                          for reuse. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform outputs.tf?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Outputs.tf defines output values to be displayed after
-                                          apply. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform plan destroy?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Generates a plan to destroy all managed resources. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform plan -out?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Saves the execution plan to a file for later apply. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform plan vs apply?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Plan shows proposed changes; apply executes those changes.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform plan?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Terraform plan shows the execution plan of changes before
-                                          applying them. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>terraform plan?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">terraform plan previews the execution steps without making
-                                          real changes. It shows additions, updates, and deletions. It helps validate
-                                          configuration before deployment. This step is recommended before running
-                                          terraform apply.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform provider alias?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Provider alias allows using multiple configurations of the
-                                          same provider in a module. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform provider versioning?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Provider versioning specifies compatible versions of
-                                          providers to avoid breaking changes. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform provider?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A provider is a plugin that allows Terraform to interact
-                                          with APIs of cloud platforms and services. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform providers.lock?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Lock file records provider versions used to ensure
-                                          consistent runs. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform providers.tf?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Providers.tf specifies which providers and versions to use
-                                          in the configuration. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform provisioner order?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Provisioners run in the order defined after resource
-                                          creation. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform provisioners?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Provisioners execute scripts or commands on a resource after
-                                          creation. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform refresh vs plan?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Refresh updates state file from real infrastructure; plan
-                                          shows planned changes based on state. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform refresh?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Refresh updates Terraform state with the real-world
-                                          infrastructure state. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>terraform refresh?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">terraform refresh updates the state file with real
-                                          infrastructure values. It detects drift but does not change actual
-                                          infrastructure. Helps synchronize Terraform state with reality. Deprecated in
-                                          newer versions as terraform plan does similar work.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform Registry?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Terraform Registry is a public library of reusable modules
-                                          and providers. It encourages best practices by offering community and official
-                                          modules. Users can search, download, and integrate modules easily. This
-                                          reduces development time and errors.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform remote state?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Remote state stores Terraform state in shared storage for
-                                          team collaboration. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform resources?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Resources represent components of infrastructure like
-                                          servers databases or network configurations. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform security practices?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Use remote state with encryption sensitive variables least
-                                          privilege IAM and secret management. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform sensitive variable?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Sensitive variable hides its value in logs and outputs to
-                                          protect secrets. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform Sentinel?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Sentinel is a policy-as-code framework to enforce compliance
-                                          rules in Terraform Enterprise. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform state locking?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">State locking prevents concurrent Terraform operations to
-                                          avoid conflicts. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform state mv?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Moves a resource in state file for renaming or restructuring
-                                          resources. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform state pull?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Pulls the current state from backend for inspection. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform state push?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Push updates state to remote backend manually (legacy).
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform state rm?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Removes a resource from state file without destroying
-                                          infrastructure. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform state?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Terraform state stores metadata about deployed
-                                          infrastructure and maps resources to real-world objects. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform support Multi-Cloud?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Terraform supports multiple cloud providers using provider
-                                          plugins. One configuration can build infrastructure across AWS, Azure, and
-                                          GCP. It allows avoiding vendor lock-in and simplifies hybrid cloud
-                                          deployments.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform taint vs lifecycle replace?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Taint forces recreation; lifecycle replace customizes
-                                          resource replacement behavior. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform taint?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Taint marks a resource for recreation during the next apply.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform terraform fmt -check?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Checks whether configuration files conform to Terraform
-                                          style conventions. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform terraform validate -json?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Outputs validation results in JSON format for automated
-                                          checks. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform untaint?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Untaint removes the taint and prevents resource recreation.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform upgrade?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Upgrade updates provider plugins to newer versions. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform validate?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Validate checks configuration files for syntax errors and
-                                          consistency. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>terraform validate?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">terraform validate checks the syntax correctness of
-                                          configuration files. It doesn't check authentication or existence of remote
-                                          resources. It prevents applying invalid configuration. Use before plan or
-                                          apply.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform variable?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Variable is a way to parameterize Terraform configurations
-                                          for flexibility. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform variables.tf?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Variables.tf defines variables and default values for
-                                          Terraform configuration. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform version constraint?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Version constraint specifies the acceptable versions of
-                                          Terraform or providers. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform workspace list?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Lists all available workspaces in Terraform. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform workspace new?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Creates a new workspace in Terraform for managing separate
-                                          infrastructure instances. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform workspace select?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Select switches to an existing workspace for operations.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform workspace vs backend?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Workspace isolates instances of infrastructure; backend
-                                          manages where state is stored. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform workspace vs environment?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Workspace manages multiple instances of the same
-                                          infrastructure; environment often refers to dev staging prod setups. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform workspace?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Workspace allows managing multiple instances of
-                                          infrastructure using the same configuration. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform Workspace?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Workspaces allow managing multiple environments (dev, test,
-                                          prod) with one configuration. Each workspace has an independent state. Useful
-                                          for modular and scalable management. Use local or remote workspace management.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform workspaces default?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Default workspace is always created and cannot be deleted.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Terraform is an open-source Infrastructure as Code (IaC)
-                                          tool for building changing and versioning infrastructure safely and
-                                          efficiently. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Terraform is an open-source Infrastructure as Code (IaC)
-                                          tool developed by HashiCorp. It allows you to define, provision, and manage
-                                          cloud resources using code. Configuration is written in HCL (HashiCorp
-                                          Configuration Language). It supports multiple cloud providers like AWS, Azure,
-                                          and GCP.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Types of Terraform variables?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Types include string number bool list map and object. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>When should you use Terraform Cloud?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Terraform Cloud is used for collaboration, automation,
-                                          versioning, and secure remote backends. It supports policy-as-code, multi-user
-                                          workflows, and state locking. Ideal for teams managing enterprise
-                                          infrastructure.</div>
-                              </div>
+    <main class="container" id="tab_content_66">
+        <section class="iqas-section">
+            <div class="faq-item-title active">
+                <div class="faq-question-title">
+                    <div class="container section-title" data-aos="fade-up">
+                        <div class="faq-question-title">
+                            <h2 class="heading-title"> Terraform </h2>
+                            <div class="title-icon">+</div>
                         </div>
-                  </div>
-            </section>
-      </main>
+                        <div class="faq-answer-title">
+                            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                                <div class="row">
+                                    <div class="faq-item active">
+                                        <div class="faq-question"> Best Practices in Terraform? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Use modules, remote state, version control, and least
+                                            privilege
+                                            access. Apply workspace separation and use .tfvars files for automation. Use
+                                            formatting,
+                                            validation, and policy enforcement. Commit code reviews for safety.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question"> Data Sources in Terraform? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Data sources fetch existing information from providers
+                                            without
+                                            creating a new resource. They are read-only and useful for referencing
+                                            available
+                                            values.
+                                            Example: fetching an existing VPC ID. Used with data blocks. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question"> Input Variables? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Input variables allow parameterization of Terraform
+                                            configurations.
+                                            They help reuse modules across multiple environments like dev, QA, and prod.
+                                            Variables can
+                                            be stored in .tfvars files. They support type constraints like string,
+                                            number,
+                                            and map.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question"> Output Variables? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Output variables return values from configuration after
+                                            execution.
+                                            They help share information between modules or display key results. Examples
+                                            include IP
+                                            addresses or resource IDs. They are defined using output. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question"> Terraform Providers? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Providers act as plugins that enable Terraform to
+                                            interact
+                                            with cloud
+                                            platforms or services. Examples include AWS, Azure, GCP, Kubernetes, and
+                                            GitHub.
+                                            A
+                                            provider must be initialized before use with terraform init. It defines
+                                            available
+                                            resources and data sources.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">create_before_destroy? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Create_before_destroy ensures a new resource is created
+                                            before
+                                            destroying the old one. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Developed Terraform? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Terraform is developed by HashiCorp. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet immutable and mutable infrastructure? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Immutable infrastructure is replaced entirely for
+                                            changes;
+                                            mutable
+                                            infrastructure is updated in place. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet local-exec and remote-exec? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Local-exec runs commands on the machine running
+                                            Terraform;
+                                            remote-exec runs commands on the target resource. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet module and resource? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Module is a collection of resources; resource represents
+                                            a
+                                            single
+                                            infrastructure component. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Terraform and Ansible? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Terraform is declarative and focuses on provisioning
+                                            infrastructure;
+                                            Ansible is procedural and focuses on configuration management. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Terraform and CloudFormation? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Terraform is multi-cloud and open-source; CloudFormation
+                                            is
+                                            AWS-specific. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Terraform and Pulumi? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Terraform uses HCL for declarative configurations;
+                                            Pulumi
+                                            uses
+                                            programming languages for IaC. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Terraform resource and data? <div class="icon">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Resource creates or manages infrastructure; data fetches
+                                            existing
+                                            infrastructure information. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DiffBet Ansible and Terraform? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Terraform focuses on infrastructure provisioning while
+                                            Ansible
+                                            focuses on configuration management. Terraform uses a declarative approach
+                                            whereas Ansible
+                                            is procedural. Terraform stores a state file whereas Ansible does not.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Drift in Terraform? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Drift occurs when the actual infrastructure changes
+                                            outside
+                                            Terraform. Terraform detects drift during terraform plan. Drift needs
+                                            correction
+                                            to
+                                            maintain consistency. Best practice is managing infrastructure only through
+                                            Terraform.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">IaC (Infrastructure as Code)? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">IaC is a method of managing and provisioning
+                                            infrastructure
+                                            through
+                                            code instead of manual processes. It increases consistency, automation,
+                                            scalability, and
+                                            repeatability. Tools like Terraform, CloudFormation, and Ansible enable IaC.
+                                            This approach
+                                            helps eliminate configuration drift across environments.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Immutable Infrastructure? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Immutable infrastructure treats launched resources as
+                                            replaceable
+                                            instead of modifying them. Terraform supports this approach by recreating
+                                            resources
+                                            instead of modifying them. It improves stability and reduces configuration
+                                            drift.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Infrastructure as Code (IaC)? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">IaC is the practice of managing and provisioning
+                                            infrastructure using
+                                            code instead of manual processes. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Infrastructure Provisioning? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Provisioning means creating, configuring, and deploying
+                                            infrastructure resources. Terraform automates provisioning using IaC. It
+                                            helps
+                                            in
+                                            consistent and automated cloud resource deployment. Faster and error-free
+                                            process.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Main features of Terraform? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Features include declarative configuration execution
+                                            plan
+                                            resource
+                                            graph multi-cloud support and state management. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Policy as Code in Terraform? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Policy as Code enforces compliance rules using Sentinel
+                                            in
+                                            Terraform
+                                            Enterprise or Cloud. It ensures deployments follow organizational security
+                                            and
+                                            governance.
+                                            Policies can allow, deny, or audit changes. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">prevent_destroy? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Prevent_destroy prevents accidental deletion of a
+                                            resource.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Remote backend? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Remote backend stores Terraform state in a remote
+                                            location
+                                            for team
+                                            collaboration. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Remote State? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Remote state stores the Terraform state file in a shared
+                                            backend such
+                                            as S3, Azure Blob, or Terraform Cloud. It helps in collaboration among
+                                            multiple
+                                            users.
+                                            Remote state also supports encryption, locking, and versioning. This avoids
+                                            conflicts and
+                                            corrupt state files.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">State in Terraform? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Terraform state stores metadata and resource deployment
+                                            details. It
+                                            tracks resource mapping between configuration and actual cloud
+                                            infrastructure.
+                                            The state
+                                            file is critical for operations like update, destroy, and plan. You can
+                                            store it
+                                            locally
+                                            or remotely. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">State Locking in Terraform? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">State locking prevents simultaneous modifications to the
+                                            same state
+                                            file by multiple users. It ensures consistency during execution. Tools like
+                                            DynamoDB or
+                                            Terraform Cloud handle locking. Without locking, infrastructure may become
+                                            corrupted.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Tainting in Terraform? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Tainting marks a resource for forced recreation on the
+                                            next
+                                            apply.
+                                            Use terraform taint <resource> to apply it. Useful for broken or manually
+                                                modified
+                                                infrastructure. It triggers destruction and recreation.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform apply -auto-approve? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Applies changes without prompting for user confirmation.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform apply? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Terraform apply executes the planned changes to
+                                            provision or
+                                            modify
+                                            infrastructure. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">terraform apply? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">terraform apply creates or updates resources as per
+                                            configuration. It
+                                            executes approved actions shown from the plan. You may auto-approve using
+                                            -auto-approve.
+                                            It updates the Terraform state file after execution.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform backend types? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Backend types include local S3 AzureRM GCS Consul and
+                                            Terraform
+                                            Cloud. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform backend? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Backend defines where Terraform stores state data e.g.
+                                            local
+                                            file S3
+                                            or remote storage. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform Backend? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A backend determines how state is loaded and where it is
+                                            stored.
+                                            Examples include local filesystem or remote backends like S3 and Azure Blob.
+                                            Backends also
+                                            support locking and encryption. They improve collaboration in teams.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform best practices? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Use modules version control remote state variables
+                                            outputs
+                                            and avoid
+                                            hardcoding sensitive data. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform cloud agent? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Cloud agent allows Terraform Cloud to manage
+                                            infrastructure
+                                            in
+                                            private networks. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform Cloud? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Terraform Cloud is a SaaS platform for collaborative
+                                            Terraform
+                                            workflows state management and policy enforcement. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform count? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Count allows creating multiple instances of a resource
+                                            based
+                                            on a
+                                            number. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform data source? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Data source fetches information about existing
+                                            infrastructure for use
+                                            in configurations. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform dependency graph? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Graph shows dependencies between resources for execution
+                                            planning.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform dependency? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Dependency defines the order of resource creation based
+                                            on
+                                            references
+                                            between resources. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform destroy -target vs apply -destroy? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Destroy-target removes specific resources; apply
+                                            -destroy
+                                            removes all
+                                            resources. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform destroy? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Terraform destroy removes all resources managed by
+                                            Terraform. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">terraform destroy? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">terraform destroy removes resources managed by
+                                            Terraform. It
+                                            reads
+                                            the state file and destroys the corresponding cloud infrastructure. Useful
+                                            for
+                                            testing
+                                            environments. It prevents leftover idle cloud resources. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform destroy-target? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Destroy-target removes specific resources instead of the
+                                            entire
+                                            infrastructure. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform DifBet static and dynamic block? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Static block is manually written; dynamic block
+                                            generates
+                                            repeated
+                                            nested blocks programmatically. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform drift detection? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Detects infrastructure changes made outside Terraform.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform drift? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Drift occurs when infrastructure changes outside
+                                            Terraform
+                                            causing
+                                            state mismatch. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform dynamic block? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Dynamic block allows generating multiple nested blocks
+                                            dynamically in
+                                            a resource. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform Enterprise? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Terraform Enterprise is a self-managed version of
+                                            Terraform
+                                            Cloud for
+                                            organizations. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform fmt? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Fmt formats Terraform configuration files according to
+                                            standard style
+                                            conventions. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">terraform fmt? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">terraform fmt automatically formats Terraform code
+                                            style. It
+                                            ensures
+                                            consistent formatting for readability and maintainability. This command is
+                                            especially
+                                            useful in team environments. It follows official formatting rules.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform for_each? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">For_each iterates over a map or set to create multiple
+                                            resources with
+                                            unique identifiers. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform function types? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Function types include string numeric collection date
+                                            encoding file
+                                            and type conversion. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform functions? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Functions perform operations on strings numbers lists
+                                            maps
+                                            and other
+                                            data types. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform graph? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Graph generates a visual representation of resources and
+                                            their
+                                            dependencies. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform HCL? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">HCL stands for HashiCorp Configuration Language used to
+                                            define
+                                            infrastructure. It is human-readable and JSON-compatible. It supports
+                                            variables,
+                                            modules,
+                                            conditionals, and loops. Terraform scripts are written in HCL.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform import limitations? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Import cannot automatically generate full configuration;
+                                            manual
+                                            resource definition is required. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform import state? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Terraform import updates state file to track existing
+                                            resources.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform import? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Terraform import brings existing infrastructure under
+                                            Terraform
+                                            management. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform init? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Init initializes the working directory downloads
+                                            providers
+                                            and sets
+                                            up backend. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">terraform init? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">terraform init initializes a working directory with
+                                            Terraform
+                                            configuration files. It installs necessary providers and modules. It must be
+                                            run
+                                            first
+                                            before applying configuration. It ensures all dependencies are downloaded.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform interpolate? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Interpolate computes expressions using variables
+                                            resources
+                                            or
+                                            functions. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform interpolation functions? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Functions manipulate data e.g. concat join length lookup
+                                            lower upper.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform interpolation syntax? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Syntax uses ${} to reference variables outputs or
+                                            resource
+                                            attributes. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform interpolation? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Interpolation allows using expressions variables and
+                                            functions within
+                                            configuration files. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform lifecycle? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Lifecycle allows customizing resource behavior including
+                                            create_before_destroy and prevent_destroy. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform local values? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Local values store intermediate expressions or computed
+                                            values for
+                                            reuse. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform local-exec vs remote-exec? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Local-exec runs locally; remote-exec runs on the
+                                            resource
+                                            instance.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform main.tf? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Main.tf contains the main Terraform configuration for
+                                            resources.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform module registry? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Module registry hosts reusable modules for public or
+                                            private
+                                            use.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform module source? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Source specifies the location of a module e.g. local
+                                            path
+                                            Git
+                                            repository or registry. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform module? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Module is a reusable self-contained package of Terraform
+                                            configurations. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform Module? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A module is a container for multiple Terraform resources
+                                            used
+                                            together. It promotes reusability, structure, and automation. Modules can be
+                                            local, public
+                                            (Terraform Registry), or shared within a team. They help maintain
+                                            consistency
+                                            across
+                                            environments. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform nested modules? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Nested modules are modules called from within another
+                                            module
+                                            for
+                                            hierarchical organization. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform null resource? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Null resource is a placeholder resource used for
+                                            executing
+                                            provisioners without creating actual infrastructure. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform output sensitive? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Marks output as sensitive to hide values in CLI or UI.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform output? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Output defines values to display after Terraform apply
+                                            often
+                                            used for
+                                            module outputs or sharing data. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform outputs vs locals? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Outputs expose data outside; locals store data
+                                            internally
+                                            for reuse.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform outputs.tf? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Outputs.tf defines output values to be displayed after
+                                            apply. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform plan destroy? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Generates a plan to destroy all managed resources.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform plan -out? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Saves the execution plan to a file for later apply.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform plan vs apply? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Plan shows proposed changes; apply executes those
+                                            changes.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform plan? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Terraform plan shows the execution plan of changes
+                                            before
+                                            applying
+                                            them. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">terraform plan? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">terraform plan previews the execution steps without
+                                            making
+                                            real
+                                            changes. It shows additions, updates, and deletions. It helps validate
+                                            configuration
+                                            before deployment. This step is recommended before running terraform apply.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform provider alias? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Provider alias allows using multiple configurations of
+                                            the
+                                            same
+                                            provider in a module. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform provider versioning? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Provider versioning specifies compatible versions of
+                                            providers to
+                                            avoid breaking changes. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform provider? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A provider is a plugin that allows Terraform to interact
+                                            with APIs of
+                                            cloud platforms and services. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform providers.lock? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Lock file records provider versions used to ensure
+                                            consistent runs.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform providers.tf? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Providers.tf specifies which providers and versions to
+                                            use
+                                            in the
+                                            configuration. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform provisioner order? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Provisioners run in the order defined after resource
+                                            creation. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform provisioners? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Provisioners execute scripts or commands on a resource
+                                            after
+                                            creation. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform refresh vs plan? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Refresh updates state file from real infrastructure;
+                                            plan
+                                            shows
+                                            planned changes based on state. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform refresh? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Refresh updates Terraform state with the real-world
+                                            infrastructure
+                                            state. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">terraform refresh? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">terraform refresh updates the state file with real
+                                            infrastructure
+                                            values. It detects drift but does not change actual infrastructure. Helps
+                                            synchronize
+                                            Terraform state with reality. Deprecated in newer versions as terraform plan
+                                            does similar
+                                            work.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform Registry? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Terraform Registry is a public library of reusable
+                                            modules
+                                            and
+                                            providers. It encourages best practices by offering community and official
+                                            modules. Users
+                                            can search, download, and integrate modules easily. This reduces development
+                                            time and
+                                            errors. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform remote state? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Remote state stores Terraform state in shared storage
+                                            for
+                                            team
+                                            collaboration. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform resources? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Resources represent components of infrastructure like
+                                            servers
+                                            databases or network configurations. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform security practices? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Use remote state with encryption sensitive variables
+                                            least
+                                            privilege
+                                            IAM and secret management. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform sensitive variable? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Sensitive variable hides its value in logs and outputs
+                                            to
+                                            protect
+                                            secrets. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform Sentinel? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Sentinel is a policy-as-code framework to enforce
+                                            compliance
+                                            rules in
+                                            Terraform Enterprise. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform state locking? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">State locking prevents concurrent Terraform operations
+                                            to
+                                            avoid
+                                            conflicts. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform state mv? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Moves a resource in state file for renaming or
+                                            restructuring
+                                            resources. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform state pull? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Pulls the current state from backend for inspection.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform state push? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Push updates state to remote backend manually (legacy).
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform state rm? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Removes a resource from state file without destroying
+                                            infrastructure.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform state? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Terraform state stores metadata about deployed
+                                            infrastructure and
+                                            maps resources to real-world objects. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform support Multi-Cloud? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Terraform supports multiple cloud providers using
+                                            provider
+                                            plugins.
+                                            One configuration can build infrastructure across AWS, Azure, and GCP. It
+                                            allows
+                                            avoiding
+                                            vendor lock-in and simplifies hybrid cloud deployments.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform taint vs lifecycle replace? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Taint forces recreation; lifecycle replace customizes
+                                            resource
+                                            replacement behavior. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform taint? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Taint marks a resource for recreation during the next
+                                            apply.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform terraform fmt -check? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Checks whether configuration files conform to Terraform
+                                            style
+                                            conventions. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform terraform validate -json? <div class="icon">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Outputs validation results in JSON format for automated
+                                            checks.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform untaint? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Untaint removes the taint and prevents resource
+                                            recreation.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform upgrade? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Upgrade updates provider plugins to newer versions.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform validate? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Validate checks configuration files for syntax errors
+                                            and
+                                            consistency. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">terraform validate? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">terraform validate checks the syntax correctness of
+                                            configuration
+                                            files. It doesn't check authentication or existence of remote resources. It
+                                            prevents
+                                            applying invalid configuration. Use before plan or apply.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform variable? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Variable is a way to parameterize Terraform
+                                            configurations
+                                            for
+                                            flexibility. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform variables.tf? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Variables.tf defines variables and default values for
+                                            Terraform
+                                            configuration. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform version constraint? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Version constraint specifies the acceptable versions of
+                                            Terraform or
+                                            providers. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform workspace list? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Lists all available workspaces in Terraform. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform workspace new? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Creates a new workspace in Terraform for managing
+                                            separate
+                                            infrastructure instances. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform workspace select? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Select switches to an existing workspace for operations.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform workspace vs backend? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Workspace isolates instances of infrastructure; backend
+                                            manages where
+                                            state is stored. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform workspace vs environment? <div class="icon">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Workspace manages multiple instances of the same
+                                            infrastructure;
+                                            environment often refers to dev staging prod setups. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform workspace? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Workspace allows managing multiple instances of
+                                            infrastructure using
+                                            the same configuration. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform Workspace? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Workspaces allow managing multiple environments (dev,
+                                            test,
+                                            prod)
+                                            with one configuration. Each workspace has an independent state. Useful for
+                                            modular and
+                                            scalable management. Use local or remote workspace management. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform workspaces default? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Default workspace is always created and cannot be
+                                            deleted.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Terraform is an open-source Infrastructure as Code (IaC)
+                                            tool for
+                                            building changing and versioning infrastructure safely and efficiently.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Terraform is an open-source Infrastructure as Code (IaC)
+                                            tool
+                                            developed by HashiCorp. It allows you to define, provision, and manage cloud
+                                            resources
+                                            using code. Configuration is written in HCL (HashiCorp Configuration
+                                            Language).
+                                            It
+                                            supports multiple cloud providers like AWS, Azure, and GCP.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Types of Terraform variables? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Types include string number bool list map and object.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">When should you use Terraform Cloud? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Terraform Cloud is used for collaboration, automation,
+                                            versioning,
+                                            and secure remote backends. It supports policy-as-code, multi-user
+                                            workflows,
+                                            and state
+                                            locking. Ideal for teams managing enterprise infrastructure.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
       <div id="footer-placeholder"></div> <a href="#" id="scroll-top"
             class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
       <div id="preloader"></div>
