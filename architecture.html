@@ -21,955 +21,1065 @@
       <link href="/assets/css/main.css" rel="stylesheet"> 
 </head>
 
-<body class="index-page Custombody">
+<body>
       <div id="nav-placeholder"></div>
-      <main class="main">
-            <section id="about" class="about section Custombody">
-                  <div class="container section-title" data-aos="fade-up">
-                        <h2>Architecture </h2>
-                  </div>
-                  <div class="container" data-aos="fade-up" data-aos-delay="100">
-                        <div class="row g-3">
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Advantages of microservices?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Microservices offer scalability flexibility independent
-                                          deployment fault isolation and easier maintenance. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Api gateway in microservices?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">API Gateway is a single entry point for microservices
-                                          handling routing authentication and monitoring. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Api?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">An API (Application Programming Interface) allows software
-                                          systems to communicate using defined interfaces. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Api-first design?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">APIs are designed before implementation to ensure
-                                          consistency, reusability, and integration readiness. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Architecture patterns?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Patterns like MVC, Microservices, Layered, and Event-Driven
-                                          provide reusable solutions for common design problems and enforce consistency.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Base?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">BASE is an alternative to ACID for distributed systems:
-                                          Basically Available Soft state Eventually consistent. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Blue-green deployment?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Blue-green deployment uses two identical environments to
-                                          switch traffic safely during releases. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Builder pattern?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Builder pattern separates the construction of a complex
-                                          object from its representation. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Caching?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Caching stores frequently used data temporarily for faster
-                                          access. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Cap theorem trade-off?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">In distributed systems you can guarantee only two of
-                                          Consistency Availability and Partition tolerance simultaneously. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Cap theorem?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">CAP theorem states that a distributed system can provide
-                                          only two of three: consistency availability partition tolerance. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Cdn?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A CDN (Content Delivery Network) delivers content via
-                                          geographically distributed servers to improve performance. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Circuit breaker?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Circuit breaker prevents cascading failures in distributed
-                                          systems by halting requests to failing services. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Client-server architecture?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Client-server architecture separates clients (users) and
-                                          servers (service providers) communicating over a network. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Cloud-native architecture?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Designing applications to leverage cloud features like
-                                          elasticity, microservices, containers, and managed services.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Component-based architecture?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">It divides a system into modular, reusable components with
-                                          defined interfaces, simplifying maintenance and scalability.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Container?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A container packages an application and its dependencies to
-                                          run consistently across environments. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Containerization in architecture?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Using containers (like Docker) to package apps with
-                                          dependencies for consistent deployment and scaling. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Cqrs (command query responsibility
-                                                segregation)?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Separates read and write operations for scalability and
-                                          performance, commonly used with event sourcing. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Cqrs?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">CQRS (Command Query Responsibility Segregation) separates
-                                          read and write operations for better scalability and performance. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Data lake?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A data lake stores structured and unstructured data at scale
-                                          for analytics. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Data warehouse?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A data warehouse stores structured processed data optimized
-                                          for reporting and analysis. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Database shard?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Database sharding splits data across multiple databases for
-                                          scalability. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Denormalization?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Denormalization adds redundancy for improved read
-                                          performance at the cost of storage and complexity. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Design for security in architecture?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Incorporates authentication, authorization, encryption, and
-                                          secure coding practices from the start.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Design pattern in architecture?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A design pattern is a repeatable solution to a common
-                                          software problem within a specific context. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Design patterns?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Design patterns are reusable solutions to common software
-                                          design problems. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Diffbet architecture and design?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Architecture defines system structure and principles; design
-                                          focuses on implementation details within that structure.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Diffbet monolithic and microservices
-                                                architecture?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Monolithic combines all features in one codebase;
-                                          microservices decouple services for independent deployment and scaling.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Diffbet stateless and stateful services?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Stateless services do not retain client information between
-                                          requests; stateful services maintain client state. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Diffbet synchronous and asynchronous
-                                                communication?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Synchronous waits for a response; asynchronous allows
-                                          independent execution, improving scalability and responsiveness.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Disadvantages of microservices?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Challenges include increased complexity distributed system
-                                          management network latency and testing difficulty. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Distributed system?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A distributed system consists of multiple independent
-                                          computers working together as a single system. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker is a platform to build ship and run applications in
-                                          containers. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Domain-driven design (ddd)?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">DDD is a design approach focusing on modeling software based
-                                          on complex business domains. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Domain-driven design (ddd)?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">DDD aligns software design with business domains,
-                                          emphasizing entities, aggregates, and bounded contexts.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Event sourcing?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Event sourcing stores state changes as a sequence of events
-                                          rather than the current state. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Event sourcing?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Stores system state as a sequence of events instead of
-                                          current snapshots, enabling auditability and replay.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Event-driven architecture?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Architecture where components communicate by producing and
-                                          consuming events, improving decoupling and scalability.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Eventual consistency?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Eventual consistency ensures that over time all nodes in a
-                                          distributed system converge to the same state. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain acid properties.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">ACID ensures database reliability: Atomicity Consistency
-                                          Isolation Durability. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain adapter pattern.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Adapter pattern allows incompatible interfaces to work
-                                          together by converting one interface to another. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain api throttling.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">API throttling limits the number of requests a client can
-                                          make to prevent overload. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain bounded context in ddd.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A bounded context defines a boundary within which a
-                                          particular domain model applies. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain canary deployment.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Canary deployment releases a new version to a small subset
-                                          of users to monitor impact before full rollout. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain cap theorem.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">CAP theorem states that a distributed system can only
-                                          guarantee two of: Consistency Availability Partition tolerance. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain cdn caching.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">CDN caching stores content at edge servers near users for
-                                          faster delivery. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain circuit breaker pattern.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Circuit breaker prevents repeated failures in distributed
-                                          systems by stopping requests to failing services temporarily. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain database normalization.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Normalization organizes database tables to reduce redundancy
-                                          and improve data integrity. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain decorator pattern.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Decorator pattern adds behavior to objects dynamically
-                                          without modifying their structure. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain dependency injection.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Dependency injection provides components with their
-                                          dependencies from external sources instead of creating them internally. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain eager loading.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Eager loading retrieves all related data upfront to avoid
-                                          multiple queries. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain etl.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">ETL (Extract Transform Load) is a process of moving and
-                                          transforming data from source systems to a data warehouse. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain event-driven architecture.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Event-driven architecture uses events to trigger and
-                                          communicate between decoupled services or components. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain eventual consistency vs strong
-                                                consistency.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Eventual consistency allows temporary discrepancies
-                                          converging later; strong consistency ensures immediate consistency across
-                                          nodes. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain eventual consistency.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Eventual consistency allows data replicas to converge over
-                                          time without guaranteeing immediate consistency. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain idempotency.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Idempotency ensures that multiple identical requests produce
-                                          the same result without side effects. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain layered vs hexagonal architecture.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Layered architecture has rigid layers; hexagonal promotes
-                                          testable decoupled core business logic. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain message queue.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A message queue allows asynchronous communication between
-                                          components using messages. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain modular monolith.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A modular monolith organizes a single application into
-                                          independent modules to gain maintainability without full microservices
-                                          complexity. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain mvc architecture.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">MVC (Model-View-Controller) separates application logic:
-                                          Model handles data View handles UI and Controller handles input. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain mvc vs mvvm.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">MVC separates Model View Controller; MVVM binds ViewModel
-                                          with View using data binding reducing Controller logic. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain oauth.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">OAuth is an authorization protocol allowing third-party
-                                          applications to access user data without sharing credentials. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain polling vs webhooks.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Polling repeatedly checks for updates; webhooks notify
-                                          automatically when an event occurs. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain retry pattern.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Retry pattern resends failed requests with delays to handle
-                                          transient failures. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain rolling deployment.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Rolling deployment gradually replaces old instances with new
-                                          versions without downtime. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain rolling vs blue-green deployment.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Rolling deployment updates instances gradually; blue-green
-                                          deployment switches traffic between two identical environments. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain serverless architecture.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Serverless architecture runs code without managing servers;
-                                          the cloud provider handles infrastructure automatically. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain service discovery.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Service discovery automatically detects services and their
-                                          endpoints in dynamic environments. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain singleton pattern.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Singleton pattern ensures a class has only one instance and
-                                          provides a global access point. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain soap service.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">SOAP service uses XML-based messages and strict protocols
-                                          for communication. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain sticky sessions.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Sticky sessions bind a client to a specific server instance
-                                          to maintain state across multiple requests. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain sticky vs stateless sessions.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Sticky sessions bind users to a server; stateless sessions
-                                          allow requests to be handled by any server. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain strategy pattern.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Strategy pattern defines a family of algorithms encapsulates
-                                          each and makes them interchangeable. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain synchronous vs asynchronous apis.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Synchronous APIs wait for a response; asynchronous APIs
-                                          allow processing in the background without waiting. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain the diffbet layered and microservices
-                                                architectures. </span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Layered architecture is monolithic with multiple layers;
-                                          microservices split functionality into independently deployable services.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain the diffbet soa and microservices.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">SOA is an enterprise-level architecture with larger
-                                          services; microservices break services into smaller independently deployable
-                                          units. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain the diffbet synchronous and asynchronous
-                                                communication.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Synchronous communication waits for a response immediately;
-                                          asynchronous communication does not. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain the repository pattern.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">The repository pattern abstracts data access logic providing
-                                          a clean interface to query and manipulate data. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Explain vertical vs horizontal scaling.</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Vertical scaling adds resources to a single machine;
-                                          horizontal scaling adds more machines. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Façade pattern?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Façade pattern provides a simplified interface to a complex
-                                          subsystem. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Fault tolerance?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Fault-tolerant systems continue functioning correctly even
-                                          when components fail, minimizing downtime and data loss.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Graphql?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">GraphQL is a query language for APIs allowing clients to
-                                          request exactly the data they need. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Hexagonal architecture?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Hexagonal architecture (Ports & Adapters) isolates core
-                                          logic from external systems through adapters. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>High availability?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">High availability ensures a system remains operational and
-                                          accessible despite failures, often using redundancy and failover.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Jwt?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">JWT (JSON Web Token) is a compact self-contained token used
-                                          for securely transmitting information between parties. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Kafka?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Kafka is a distributed streaming platform for building
-                                          real-time data pipelines and applications. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Kubernetes?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Kubernetes is an orchestration platform to deploy scale and
-                                          manage containerized applications. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Layered architecture?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Layered architecture organizes code into layers such as
-                                          presentation business and data access. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Layered architecture?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Layers (Presentation, Business, Data) separate concerns,
-                                          making systems easier to develop, maintain, and test.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Lazy loading?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Lazy loading delays loading of resources until they are
-                                          needed. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Load balancer?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A load balancer distributes network or application traffic
-                                          across multiple servers to optimize resource use and uptime. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Load balancer?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A load balancer distributes traffic across servers to ensure
-                                          high availability and performance. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Load balancing?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Load balancing distributes incoming traffic across multiple
-                                          servers to improve performance and reliability. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Maintainability in architecture?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Maintainability is ease of making changes, fixing bugs, or
-                                          adding features without affecting other parts of the system.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Message broker?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A message broker facilitates communication between services
-                                          by routing and transforming messages. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Microkernel architecture?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Microkernel architecture provides a minimal core system with
-                                          plug-in modules for extended functionality. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Microservices anti-pattern?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Microservices anti-patterns include tight coupling shared
-                                          databases and improper service boundaries. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Microservices architecture?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Microservices architecture breaks an application into small
-                                          independent services that communicate over APIs. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Microservices architecture?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Microservices split an application into independent,
-                                          deployable services communicating via APIs, enhancing flexibility and
-                                          scalability.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Monolith vs microservices?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Monolith is a single deployable application; microservices
-                                          break functionality into independently deployable services. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Monolithic architecture?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Monolithic architecture is a single unified application
-                                          where all components are tightly coupled. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Non-functional requirements (nfrs)?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">NFRs define system qualities like performance, scalability,
-                                          reliability, and security rather than features.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Observer pattern?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Observer pattern allows objects to subscribe and get
-                                          notified when another object changes state. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Openid connect?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">OpenID Connect is an authentication layer on top of OAuth
-                                          2.0 to verify user identity. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Orchestration in microservices?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Automated management of containers or services using tools
-                                          like Kubernetes for scaling, networking, and fault tolerance.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Performance optimization?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Designing systems for low latency, efficient resource usage,
-                                          and fast response times under load.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Proxy pattern?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Proxy pattern provides a placeholder or surrogate to control
-                                          access to another object. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Proxy server?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A proxy server acts as an intermediary between a client and
-                                          server for requests caching and security. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Rabbitmq?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">RabbitMQ is a message broker that uses queues to enable
-                                          asynchronous communication between services. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Reference architecture?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A reference architecture is a standardized template or
-                                          blueprint for building systems within a domain, promoting best practices.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Rest vs soap?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">REST is lightweight uses HTTP and stateless; SOAP is
-                                          protocol-based heavier and supports strict contracts. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Restful architecture?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">RESTful architecture uses stateless HTTP requests to
-                                          manipulate resources following REST principles. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Restful service?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A RESTful service follows REST principles using standard
-                                          HTTP methods for communication. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Reverse proxy?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A reverse proxy receives requests on behalf of servers and
-                                          forwards them often for load balancing or security. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Reverse proxy?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A reverse proxy forwards requests from clients to backend
-                                          servers often for load balancing. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Role of architecture documentation?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Communicates system structure, decisions, and rationale to
-                                          stakeholders, enabling clarity and informed decision-making.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Role of architecture in devops?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Ensures system design supports CI/CD pipelines, automated
-                                          testing, monitoring, and fast deployment cycles.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Scalability in architecture?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Scalability is a system’s ability to handle growing
-                                          workloads by adding resources vertically or horizontally.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Service mesh?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A service mesh manages communication between microservices
-                                          providing features like routing security and observability. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Service registry?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A service registry keeps track of all available services and
-                                          their endpoints for dynamic discovery in microservices. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Service-oriented architecture (soa)?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">SOA organizes software as interoperable services with
-                                          standard communication protocols, promoting reuse across systems.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Sharding vs partitioning?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Sharding splits data horizontally across databases;
-                                          partitioning divides tables within a database for management and performance.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Software architecture?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Software architecture defines the high-level structure of a
-                                          system including its components their relationships and how they interact.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Software architecture?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Software architecture defines the high-level structure of a
-                                          system, its components, and their interactions. It ensures scalability,
-                                          maintainability, and alignment with business goals.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Solid principles?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">SOLID principles guide object-oriented design: Single
-                                          responsibility Open/closed Liskov substitution Interface segregation
-                                          Dependency inversion. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Solution architecture vs enterprise
-                                                architecture?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Solution architecture focuses on a specific project or
-                                          system; enterprise architecture aligns all IT systems with business strategy.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Strangler pattern?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Strangler pattern gradually replaces legacy systems with new
-                                          services over time. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Technical debt?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Accumulated shortcuts in design or code that require future
-                                          rework, impacting maintainability and quality.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Token-based authentication?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Token-based authentication uses tokens to authenticate users
-                                          without storing session state on the server. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Trade-off in architecture?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Balancing conflicting requirements like performance vs cost
-                                          or flexibility vs simplicity to make informed design decisions.</div>
-                              </div>
+       <main class="container" id="tab_content_8">
+        <section class="iqas-section">
+            <div class="faq-item-title active">
+                <div class="faq-question-title">
+                    <div class="container section-title" data-aos="fade-up">
+                        <div class="faq-question-title">
+                            <h2 class="heading-title">Architecture </h2>
+                            <div class="title-icon">+</div>
                         </div>
-                  </div>
-            </section>
-      </main>
+                        <div class="faq-answer-title">
+                            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                                <div class="row">
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Advantages of microservices? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Microservices offer scalability flexibility independent
+                                            deployment
+                                            fault isolation and easier maintenance. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Api gateway in microservices? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">API Gateway is a single entry point for microservices
+                                            handling
+                                            routing authentication and monitoring. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Api? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">An API (Application Programming Interface) allows
+                                            software
+                                            systems to
+                                            communicate using defined interfaces. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Api-first design? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">APIs are designed before implementation to ensure
+                                            consistency,
+                                            reusability, and integration readiness. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Architecture patterns? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Patterns like MVC, Microservices, Layered, and
+                                            Event-Driven
+                                            provide
+                                            reusable solutions for common design problems and enforce consistency.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Base? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">BASE is an alternative to ACID for distributed systems:
+                                            Basically
+                                            Available Soft state Eventually consistent. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Blue-green deployment? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Blue-green deployment uses two identical environments to
+                                            switch
+                                            traffic safely during releases. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Builder pattern? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Builder pattern separates the construction of a complex
+                                            object from
+                                            its representation. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Caching? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Caching stores frequently used data temporarily for
+                                            faster
+                                            access.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Cap theorem trade-off? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">In distributed systems you can guarantee only two of
+                                            Consistency
+                                            Availability and Partition tolerance simultaneously. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Cap theorem? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">CAP theorem states that a distributed system can provide
+                                            only two of
+                                            three: consistency availability partition tolerance. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Cdn? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A CDN (Content Delivery Network) delivers content via
+                                            geographically
+                                            distributed servers to improve performance. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Circuit breaker? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Circuit breaker prevents cascading failures in
+                                            distributed
+                                            systems by
+                                            halting requests to failing services. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Client-server architecture? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Client-server architecture separates clients (users) and
+                                            servers
+                                            (service providers) communicating over a network. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Cloud-native architecture? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Designing applications to leverage cloud features like
+                                            elasticity,
+                                            microservices, containers, and managed services.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Component-based architecture? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">It divides a system into modular, reusable components
+                                            with
+                                            defined
+                                            interfaces, simplifying maintenance and scalability.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Container? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A container packages an application and its dependencies
+                                            to
+                                            run
+                                            consistently across environments. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Containerization in architecture? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Using containers (like Docker) to package apps with
+                                            dependencies for
+                                            consistent deployment and scaling. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Cqrs (command query responsibility segregation)? <div
+                                                class="icon">
+                                                + </div>
+                                        </div>
+                                        <div class="faq-answer">Separates read and write operations for scalability and
+                                            performance,
+                                            commonly used with event sourcing. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Cqrs? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">CQRS (Command Query Responsibility Segregation)
+                                            separates
+                                            read and
+                                            write operations for better scalability and performance. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Data lake? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A data lake stores structured and unstructured data at
+                                            scale
+                                            for
+                                            analytics. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Data warehouse? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A data warehouse stores structured processed data
+                                            optimized
+                                            for
+                                            reporting and analysis. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Database shard? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Database sharding splits data across multiple databases
+                                            for
+                                            scalability. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Denormalization? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Denormalization adds redundancy for improved read
+                                            performance at the
+                                            cost of storage and complexity. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Design for security in architecture? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Incorporates authentication, authorization, encryption,
+                                            and
+                                            secure
+                                            coding practices from the start.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Design pattern in architecture? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">A design pattern is a repeatable solution to a common
+                                            software
+                                            problem within a specific context. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Design patterns? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Design patterns are reusable solutions to common
+                                            software
+                                            design
+                                            problems. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Diffbet architecture and design? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Architecture defines system structure and principles;
+                                            design
+                                            focuses
+                                            on implementation details within that structure.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Diffbet monolithic and microservices architecture?
+                                            <div class="icon">+ </div>
+                                        </div>
+                                        <div class="faq-answer">Monolithic combines all features in one codebase;
+                                            microservices
+                                            decouple services for independent deployment and scaling.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Diffbet stateless and stateful services? <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Stateless services do not retain client information
+                                            between
+                                            requests;
+                                            stateful services maintain client state. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Diffbet synchronous and asynchronous communication?
+                                            <div class="icon"> +</div>
+                                        </div>
+                                        <div class="faq-answer">Synchronous waits for a response; asynchronous allows
+                                            independent
+                                            execution, improving scalability and responsiveness.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Disadvantages of microservices? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Challenges include increased complexity distributed
+                                            system
+                                            management
+                                            network latency and testing difficulty. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Distributed system? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A distributed system consists of multiple independent
+                                            computers
+                                            working together as a single system. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker is a platform to build ship and run applications
+                                            in
+                                            containers. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Domain-driven design (ddd)? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">DDD is a design approach focusing on modeling software
+                                            based
+                                            on
+                                            complex business domains. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Domain-driven design (ddd)? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">DDD aligns software design with business domains,
+                                            emphasizing
+                                            entities, aggregates, and bounded contexts.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Event sourcing? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Event sourcing stores state changes as a sequence of
+                                            events
+                                            rather
+                                            than the current state. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Event sourcing? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Stores system state as a sequence of events instead of
+                                            current
+                                            snapshots, enabling auditability and replay.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Event-driven architecture? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Architecture where components communicate by producing
+                                            and
+                                            consuming
+                                            events, improving decoupling and scalability.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Eventual consistency? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Eventual consistency ensures that over time all nodes in
+                                            a
+                                            distributed system converge to the same state. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain acid properties. <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">ACID ensures database reliability: Atomicity Consistency
+                                            Isolation
+                                            Durability. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain adapter pattern. <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Adapter pattern allows incompatible interfaces to work
+                                            together by
+                                            converting one interface to another. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain api throttling. <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">API throttling limits the number of requests a client
+                                            can
+                                            make to
+                                            prevent overload. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain bounded context in ddd. <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">A bounded context defines a boundary within which a
+                                            particular domain
+                                            model applies. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain canary deployment. <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Canary deployment releases a new version to a small
+                                            subset
+                                            of users
+                                            to monitor impact before full rollout. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain cap theorem. <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">CAP theorem states that a distributed system can only
+                                            guarantee two
+                                            of: Consistency Availability Partition tolerance. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain cdn caching. <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">CDN caching stores content at edge servers near users
+                                            for
+                                            faster
+                                            delivery. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain circuit breaker pattern. <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Circuit breaker prevents repeated failures in
+                                            distributed
+                                            systems by
+                                            stopping requests to failing services temporarily. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain database normalization. <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Normalization organizes database tables to reduce
+                                            redundancy
+                                            and
+                                            improve data integrity. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain decorator pattern. <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Decorator pattern adds behavior to objects dynamically
+                                            without
+                                            modifying their structure. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain dependency injection. <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Dependency injection provides components with their
+                                            dependencies from
+                                            external sources instead of creating them internally. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain eager loading. <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Eager loading retrieves all related data upfront to
+                                            avoid
+                                            multiple
+                                            queries. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain etl. <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">ETL (Extract Transform Load) is a process of moving and
+                                            transforming
+                                            data from source systems to a data warehouse. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain event-driven architecture. <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Event-driven architecture uses events to trigger and
+                                            communicate
+                                            between decoupled services or components. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain eventual consistency vs strong consistency.
+                                            <div class="icon"> +</div>
+                                        </div>
+                                        <div class="faq-answer">Eventual consistency allows temporary discrepancies
+                                            converging later;
+                                            strong consistency ensures immediate consistency across nodes. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain eventual consistency. <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Eventual consistency allows data replicas to converge
+                                            over
+                                            time
+                                            without guaranteeing immediate consistency. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain idempotency. <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Idempotency ensures that multiple identical requests
+                                            produce
+                                            the same
+                                            result without side effects. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain layered vs hexagonal architecture. <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Layered architecture has rigid layers; hexagonal
+                                            promotes
+                                            testable
+                                            decoupled core business logic. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain message queue. <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A message queue allows asynchronous communication
+                                            between
+                                            components
+                                            using messages. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain modular monolith. <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A modular monolith organizes a single application into
+                                            independent
+                                            modules to gain maintainability without full microservices complexity.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain mvc architecture. <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">MVC (Model-View-Controller) separates application logic:
+                                            Model
+                                            handles data View handles UI and Controller handles input. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain mvc vs mvvm. <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">MVC separates Model View Controller; MVVM binds
+                                            ViewModel
+                                            with View
+                                            using data binding reducing Controller logic. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain oauth. <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">OAuth is an authorization protocol allowing third-party
+                                            applications
+                                            to access user data without sharing credentials. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain polling vs webhooks. <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Polling repeatedly checks for updates; webhooks notify
+                                            automatically
+                                            when an event occurs. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain retry pattern. <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Retry pattern resends failed requests with delays to
+                                            handle
+                                            transient
+                                            failures. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain rolling deployment. <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Rolling deployment gradually replaces old instances with
+                                            new
+                                            versions
+                                            without downtime. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain rolling vs blue-green deployment. <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Rolling deployment updates instances gradually;
+                                            blue-green
+                                            deployment
+                                            switches traffic between two identical environments. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain serverless architecture. <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Serverless architecture runs code without managing
+                                            servers;
+                                            the cloud
+                                            provider handles infrastructure automatically. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain service discovery. <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Service discovery automatically detects services and
+                                            their
+                                            endpoints
+                                            in dynamic environments. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain singleton pattern. <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Singleton pattern ensures a class has only one instance
+                                            and
+                                            provides
+                                            a global access point. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain soap service. <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">SOAP service uses XML-based messages and strict
+                                            protocols
+                                            for
+                                            communication. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain sticky sessions. <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Sticky sessions bind a client to a specific server
+                                            instance
+                                            to
+                                            maintain state across multiple requests. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain sticky vs stateless sessions. <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Sticky sessions bind users to a server; stateless
+                                            sessions
+                                            allow
+                                            requests to be handled by any server. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain strategy pattern. <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Strategy pattern defines a family of algorithms
+                                            encapsulates
+                                            each and
+                                            makes them interchangeable. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain synchronous vs asynchronous apis. <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Synchronous APIs wait for a response; asynchronous APIs
+                                            allow
+                                            processing in the background without waiting. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain the diffbet layered and microservices
+                                            architectures. <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Layered architecture is monolithic with multiple layers;
+                                            microservices split functionality into independently deployable services.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain the diffbet soa and microservices. <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">SOA is an enterprise-level architecture with larger
+                                            services;
+                                            microservices break services into smaller independently deployable units.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain the diffbet synchronous and asynchronous
+                                            communication.
+                                            <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Synchronous communication waits for a response
+                                            immediately;
+                                            asynchronous communication does not. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain the repository pattern. <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">The repository pattern abstracts data access logic
+                                            providing
+                                            a clean
+                                            interface to query and manipulate data. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Explain vertical vs horizontal scaling. <div
+                                                class="icon">
+                                                +</div>
+                                        </div>
+                                        <div class="faq-answer">Vertical scaling adds resources to a single machine;
+                                            horizontal
+                                            scaling adds more machines. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Façade pattern? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Façade pattern provides a simplified interface to a
+                                            complex
+                                            subsystem. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Fault tolerance? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Fault-tolerant systems continue functioning correctly
+                                            even
+                                            when
+                                            components fail, minimizing downtime and data loss.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Graphql? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">GraphQL is a query language for APIs allowing clients to
+                                            request
+                                            exactly the data they need. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Hexagonal architecture? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Hexagonal architecture (Ports & Adapters) isolates core
+                                            logic from
+                                            external systems through adapters. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">High availability? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">High availability ensures a system remains operational
+                                            and
+                                            accessible
+                                            despite failures, often using redundancy and failover.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jwt? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">JWT (JSON Web Token) is a compact self-contained token
+                                            used
+                                            for
+                                            securely transmitting information between parties. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Kafka? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Kafka is a distributed streaming platform for building
+                                            real-time data
+                                            pipelines and applications. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Kubernetes? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Kubernetes is an orchestration platform to deploy scale
+                                            and
+                                            manage
+                                            containerized applications. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Layered architecture? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Layered architecture organizes code into layers such as
+                                            presentation
+                                            business and data access. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Layered architecture? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Layers (Presentation, Business, Data) separate concerns,
+                                            making
+                                            systems easier to develop, maintain, and test.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Lazy loading? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Lazy loading delays loading of resources until they are
+                                            needed.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Load balancer? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A load balancer distributes network or application
+                                            traffic
+                                            across
+                                            multiple servers to optimize resource use and uptime. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Load balancer? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A load balancer distributes traffic across servers to
+                                            ensure
+                                            high
+                                            availability and performance. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Load balancing? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Load balancing distributes incoming traffic across
+                                            multiple
+                                            servers
+                                            to improve performance and reliability. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Maintainability in architecture? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Maintainability is ease of making changes, fixing bugs,
+                                            or
+                                            adding
+                                            features without affecting other parts of the system.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Message broker? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A message broker facilitates communication between
+                                            services
+                                            by
+                                            routing and transforming messages. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Microkernel architecture? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Microkernel architecture provides a minimal core system
+                                            with
+                                            plug-in
+                                            modules for extended functionality. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Microservices anti-pattern? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Microservices anti-patterns include tight coupling
+                                            shared
+                                            databases
+                                            and improper service boundaries. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Microservices architecture? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Microservices architecture breaks an application into
+                                            small
+                                            independent services that communicate over APIs. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Microservices architecture? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Microservices split an application into independent,
+                                            deployable
+                                            services communicating via APIs, enhancing flexibility and scalability.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Monolith vs microservices? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Monolith is a single deployable application;
+                                            microservices
+                                            break
+                                            functionality into independently deployable services. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Monolithic architecture? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Monolithic architecture is a single unified application
+                                            where all
+                                            components are tightly coupled. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Non-functional requirements (nfrs)? <div class="icon">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">NFRs define system qualities like performance,
+                                            scalability,
+                                            reliability, and security rather than features.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Observer pattern? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Observer pattern allows objects to subscribe and get
+                                            notified when
+                                            another object changes state. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Openid connect? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">OpenID Connect is an authentication layer on top of
+                                            OAuth
+                                            2.0 to
+                                            verify user identity. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Orchestration in microservices? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Automated management of containers or services using
+                                            tools
+                                            like
+                                            Kubernetes for scaling, networking, and fault tolerance.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Performance optimization? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Designing systems for low latency, efficient resource
+                                            usage,
+                                            and fast
+                                            response times under load.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Proxy pattern? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Proxy pattern provides a placeholder or surrogate to
+                                            control
+                                            access
+                                            to another object. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Proxy server? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A proxy server acts as an intermediary between a client
+                                            and
+                                            server
+                                            for requests caching and security. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Rabbitmq? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">RabbitMQ is a message broker that uses queues to enable
+                                            asynchronous
+                                            communication between services. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Reference architecture? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A reference architecture is a standardized template or
+                                            blueprint for
+                                            building systems within a domain, promoting best practices. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Rest vs soap? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">REST is lightweight uses HTTP and stateless; SOAP is
+                                            protocol-based
+                                            heavier and supports strict contracts. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Restful architecture? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">RESTful architecture uses stateless HTTP requests to
+                                            manipulate
+                                            resources following REST principles. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Restful service? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A RESTful service follows REST principles using standard
+                                            HTTP methods
+                                            for communication. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Reverse proxy? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A reverse proxy receives requests on behalf of servers
+                                            and
+                                            forwards
+                                            them often for load balancing or security. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Reverse proxy? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A reverse proxy forwards requests from clients to
+                                            backend
+                                            servers
+                                            often for load balancing. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Role of architecture documentation? <div class="icon">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Communicates system structure, decisions, and rationale
+                                            to
+                                            stakeholders, enabling clarity and informed decision-making.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Role of architecture in devops? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Ensures system design supports CI/CD pipelines,
+                                            automated
+                                            testing,
+                                            monitoring, and fast deployment cycles.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Scalability in architecture? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Scalability is a system’s ability to handle growing
+                                            workloads by
+                                            adding resources vertically or horizontally.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Service mesh? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A service mesh manages communication between
+                                            microservices
+                                            providing
+                                            features like routing security and observability. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Service registry? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A service registry keeps track of all available services
+                                            and
+                                            their
+                                            endpoints for dynamic discovery in microservices. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Service-oriented architecture (soa)? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">SOA organizes software as interoperable services with
+                                            standard
+                                            communication protocols, promoting reuse across systems.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Sharding vs partitioning? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Sharding splits data horizontally across databases;
+                                            partitioning
+                                            divides tables within a database for management and performance. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Software architecture? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Software architecture defines the high-level structure
+                                            of a
+                                            system
+                                            including its components their relationships and how they interact. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Software architecture? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Software architecture defines the high-level structure
+                                            of a
+                                            system,
+                                            its components, and their interactions. It ensures scalability,
+                                            maintainability,
+                                            and
+                                            alignment with business goals.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Solid principles? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">SOLID principles guide object-oriented design: Single
+                                            responsibility
+                                            Open/closed Liskov substitution Interface segregation Dependency inversion.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Solution architecture vs enterprise architecture? <div
+                                                class="icon">+ </div>
+                                        </div>
+                                        <div class="faq-answer">Solution architecture focuses on a specific project or
+                                            system;
+                                            enterprise architecture aligns all IT systems with business strategy. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Strangler pattern? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Strangler pattern gradually replaces legacy systems with
+                                            new
+                                            services
+                                            over time. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Technical debt? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Accumulated shortcuts in design or code that require
+                                            future
+                                            rework,
+                                            impacting maintainability and quality.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Token-based authentication? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Token-based authentication uses tokens to authenticate
+                                            users
+                                            without
+                                            storing session state on the server. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Trade-off in architecture? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Balancing conflicting requirements like performance vs
+                                            cost
+                                            or
+                                            flexibility vs simplicity to make informed design decisions.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
       <div id="footer-placeholder"></div> <a href="#" id="scroll-top"
             class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
       <div id="preloader"></div>

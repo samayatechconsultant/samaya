@@ -21,871 +21,955 @@
       <link href="/assets/css/main.css" rel="stylesheet"> 
 </head>
 
-<body class="index-page Custombody">
+<body>
       <div id="nav-placeholder"></div>
-      <main class="main">
-            <section id="about" class="about section Custombody">
-                  <div class="container section-title" data-aos="fade-up">
-                        <h2>CI/CD </h2>
-                  </div>
-                  <div class="container" data-aos="fade-up" data-aos-delay="100">
-                        <div class="row g-3">
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>A/b testing in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A/B testing compares two versions of an application to
-                                          evaluate performance or user engagement. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Ansible in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Ansible automates configuration management provisioning and
-                                          application deployment. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Artifact promotion?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Artifact promotion moves build artifacts from development or
-                                          staging to production environments. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Artifact repository?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Artifact repository stores build outputs libraries and
-                                          packages for reuse such as Nexus or Artifactory. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Artifact repository?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Central storage for build outputs like binaries, Docker
-                                          images, or NuGet packages.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Automated deployment in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Automated deployment delivers application changes to
-                                          environments without manual intervention. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Automated testing in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Automated testing runs tests automatically to validate code
-                                          functionality and quality during CI/CD pipelines. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Azure devops pipelines?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Azure DevOps Pipelines automates builds tests and
-                                          deployments in Azure DevOps environment. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Benefits of ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Faster delivery improved code quality early bug detection
-                                          reduced integration issues and automated workflows. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Bitbucket pipelines?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Bitbucket Pipelines is a CI/CD service integrated with
-                                          Bitbucket repositories for automated builds tests and deployments. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Blue-green deployment?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Blue-green deployment switches traffic between two identical
-                                          environments to minimize downtime during release. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Blue-green deployment?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Deploy a new version in parallel with the old one and switch
-                                          traffic once validated.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Build artifact?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Build artifact is the output of a build process such as
-                                          compiled binaries Docker images or packages. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Build in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A build compiles source code into executable artifacts often
-                                          including dependency resolution and packaging. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Build matrix?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Build matrix runs pipeline jobs across multiple environments
-                                          configurations or versions. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Build pipeline stage?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A stage in a pipeline represents a major step such as build
-                                          test or deploy. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Build trigger?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Build trigger automatically starts a pipeline based on
-                                          events like commit merge request or schedule. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Canary deployment?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Canary deployment releases new changes to a small subset of
-                                          users to monitor behavior before full rollout. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Canary deployment?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Deploy a new version to a small subset of users to monitor
-                                          stability before full release.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Canary monitoring?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Canary monitoring observes new releases for errors or
-                                          performance issues before full rollout. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Chef in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Chef is an automation tool for managing infrastructure and
-                                          deployments. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Ci/cd best practice?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Best practices include version control automated tests code
-                                          review fast feedback secure secrets and monitoring. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Ci/cd metrics?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">CI/CD metrics track build duration success rate deployment
-                                          frequency mean time to recovery and failure rate. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Ci/cd pipeline?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A CI/CD pipeline is an automated sequence of stages that
-                                          code goes through from commit to deployment. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Ci/cd security?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">CI/CD security ensures secure code pipeline configuration
-                                          secrets management and deployment. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">CI/CD stands for Continuous Integration and Continuous
-                                          Deployment/Delivery a practice to automate software development testing and
-                                          deployment. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">CI (Continuous Integration) automatically builds and tests
-                                          code on commit. CD (Continuous Deployment/Delivery) deploys it to staging or
-                                          production.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Circleci?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">CircleCI is a cloud-based CI/CD platform that automates
-                                          build test and deployment workflows. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Code quality analysis in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Code quality analysis checks code for bugs vulnerabilities
-                                          style and maintainability using tools like SonarQube. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Configuration file in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Configuration file defines the pipeline steps environment
-                                          variables triggers and deployment settings. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Containerization in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Containerization packages software and dependencies into a
-                                          portable container often using Docker. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Continuous delivery (cd)?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">CD is the practice of automatically preparing code changes
-                                          for release to production. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Continuous deployment?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Continuous Deployment automatically deploys code changes to
-                                          production after passing tests without manual intervention. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Continuous integration (ci)?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">CI is the practice of frequently integrating code changes
-                                          into a shared repository with automated builds and tests. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Continuous monitoring in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Continuous monitoring tracks application performance errors
-                                          and metrics post-deployment. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Dependency management in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Dependency management ensures required libraries packages
-                                          and modules are available during builds and deployments. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Deployment frequency?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Deployment frequency measures how often software changes are
-                                          deployed to production. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Deployment pipeline?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Deployment pipeline automates the process of delivering
-                                          software to different environments like dev test and production. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Devops?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">DevOps is a culture and set of practices combining
-                                          development and operations to deliver software faster and reliably. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Diffbet a pipeline and a workflow?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Pipeline refers to a sequence of automated steps; workflow
-                                          includes branching approvals and manual triggers in CI/CD. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Diffbet ci and cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">CI (Continuous Integration) merges code frequently, builds,
-                                          and tests automatically., CD (Continuous Delivery/Deployment) deploys tested
-                                          code to environments automatically.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Diffbet ci and nightly builds?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">CI triggers builds on each commit; nightly builds run at
-                                          scheduled times typically once per day. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Diffbet ci/cd and devops?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">CI/CD is a subset of DevOps practices focused on automation;
-                                          DevOps includes culture collaboration and infrastructure practices. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Diffbet continuous delivery and continuous
-                                                deployment?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Continuous Delivery requires manual approval for deployment;
-                                          Continuous Deployment is fully automated to production. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Diffbet declarative and scripted jenkins
-                                                pipelines?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Declarative pipelines use a structured readable syntax;
-                                          scripted pipelines use Groovy scripts with more flexibility. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker is a platform to build ship and run applications in
-                                          containers. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Dynamic code analysis in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Dynamic code analysis inspects running code to detect
-                                          runtime errors or performance issues. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Feature branching in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Feature branching involves developing new features in
-                                          isolated branches to prevent conflicts in the main branch. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Fork vs clone?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Fork is a copy on the server; clone is a local copy of a
-                                          repo. Fork enables collaboration via PRs.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Gitlab ci file?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">.gitlab-ci.yml defines GitLab CI/CD pipeline stages jobs and
-                                          configurations. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Gitlab ci/cd pipeline?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Pipeline defines jobs, stages, and scripts to automate
-                                          build, test, and deploy.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Gitlab ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">GitLab CI/CD is a tool integrated with GitLab for automating
-                                          builds tests and deployments. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Gitlab runner?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A GitLab runner executes CI/CD jobs defined in GitLab
-                                          pipelines. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Immutable infrastructure in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Immutable infrastructure involves replacing servers or
-                                          environments rather than modifying them. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Infrastructure as code (iac)?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">IaC automates infrastructure provisioning using code such as
-                                          Terraform or Ansible. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Integration test?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Integration test checks the interaction between multiple
-                                          components or systems. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Is ci/cd implemented in azure repos?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Using Azure Pipelines linked to repos, automatically
-                                          triggering builds and deployments.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Is ci/cd implemented in bitbucket?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Using Bitbucket Pipelines defined in
-                                          bitbucket-pipelines.yml.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Is ci/cd implemented in github?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Using GitHub Actions defined in .yml workflows, triggered on
-                                          push, PR, or schedule.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Is ci/cd implemented in gitlab?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Using .gitlab-ci.yml and GitLab Runners to automate builds,
-                                          tests, and deployments.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Jenkins job?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A Jenkins job defines tasks such as build test or deploy
-                                          within a CI/CD pipeline. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Jenkins pipeline?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Jenkins pipeline is a set of instructions defining the
-                                          stages and steps for automated build test and deployment. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Jenkins?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Jenkins is an open-source automation server used for
-                                          building testing and deploying software in CI/CD pipelines. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Jenkinsfile?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Jenkinsfile defines a Jenkins pipeline using code specifying
-                                          stages steps and agents. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Key components of ci/cd pipeline?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Source code management build automation automated testing
-                                          artifact management deployment automation monitoring. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Kubernetes in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Kubernetes is a container orchestration platform used to
-                                          deploy scale and manage containers in CI/CD pipelines. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Lead time for changes?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Lead time measures the duration from code commit to
-                                          deployment in production. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Manual trigger?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Manual trigger requires user action to start a pipeline or
-                                          deploy a release. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Mean time to recovery (mttr)?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">MTTR measures the average time to recover from failures in
-                                          deployment or production. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Pipeline approval?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Pipeline approval requires manual authorization before
-                                          proceeding to deployment stages. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Pipeline artifact vs build artifact?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Pipeline artifacts are shared between jobs/stages; build
-                                          artifacts are outputs of a single build.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Pipeline artifact?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Pipeline artifact is an output from a job or stage such as
-                                          binaries or reports used in later stages. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Pipeline as code?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Pipeline as code defines CI/CD pipelines using code or
-                                          configuration files enabling version control and automation. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Pipeline as code?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Defining CI/CD pipelines in versioned files (YAML,
-                                          Jenkinsfile) to track changes and standardize workflows.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Pipeline caching?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Pipeline caching stores dependencies or artifacts to speed
-                                          up build times. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Pipeline concurrency?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Pipeline concurrency allows multiple pipelines or jobs to
-                                          run simultaneously. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Pipeline drift?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Pipeline drift occurs when pipelines are inconsistent across
-                                          environments or teams. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Pipeline environment variable?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Environment variable stores configuration values used by
-                                          pipeline jobs. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Pipeline failure?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Pipeline failure occurs when a job or stage fails due to
-                                          code errors test failures or configuration issues. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Pipeline job?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A job is a specific task executed in a pipeline stage like
-                                          running tests or building artifacts. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Pipeline notifications?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Pipeline notifications alert teams about build or deployment
-                                          status via email Slack or other channels. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Pipeline observability?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Pipeline observability monitors pipeline performance
-                                          failures and bottlenecks. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Pipeline optimization?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Pipeline optimization improves speed reliability and
-                                          efficiency of CI/CD processes. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Pipeline retry?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Pipeline retry reruns failed jobs automatically or manually.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Pipeline scheduling?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Pipeline scheduling triggers builds or deployments at
-                                          specified times. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Pipeline visualization?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Pipeline visualization shows the flow of stages jobs and
-                                          results graphically. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Post-deployment testing?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Post-deployment testing validates functionality performance
-                                          and monitoring after deployment. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Pre-deployment testing?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Pre-deployment testing validates changes in staging or test
-                                          environments before production deployment. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Production environment?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Production environment is where the live application runs
-                                          and is accessible to end users. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Puppet in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Puppet automates infrastructure configuration management and
-                                          compliance. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Regression test?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Regression test ensures that new changes do not break
-                                          existing functionality. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Release in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Release is a version of the software ready to be deployed to
-                                          production or other environments. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Role of a build server in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Build server automates compiling testing and packaging code
-                                          changes for integration and deployment. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Role of automation in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Automation reduces manual intervention improves consistency
-                                          speeds up delivery and ensures quality. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Rollback automation?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Rollback automation automatically reverts deployments when
-                                          failures are detected. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Rollback in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Rollback is reverting a deployment to a previous stable
-                                          version in case of issues. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Rollback strategy in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Rollback strategy defines procedures to revert deployments
-                                          safely in case of failures. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Rollback testing?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Rollback testing validates the rollback process and ensures
-                                          previous versions work correctly. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Rolling deployment?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Rolling deployment gradually replaces old versions with new
-                                          ones across servers or pods. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Rolling deployment?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Deploying updates gradually to reduce downtime and risk.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Secrets management in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Secrets management securely stores sensitive information
-                                          like passwords API keys or certificates. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Shift-left testing in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Shift-left testing moves testing earlier in the development
-                                          lifecycle to catch defects sooner. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Smoke test?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Smoke test is a preliminary test to check basic
-                                          functionality before detailed testing. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Sonarqube in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">SonarQube analyzes code quality technical debt and
-                                          vulnerabilities integrating into CI/CD pipelines. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Staging environment?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Staging environment mimics production to test releases
-                                          before deployment. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Static code analysis in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Static code analysis inspects code without execution to find
-                                          errors security issues or style violations. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>System test?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">System test validates the complete and integrated software
-                                          system against requirements. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Terraform in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Terraform is an IaC tool used to define provision and manage
-                                          infrastructure declaratively. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Test environment?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Test environment is a setup where testing is performed to
-                                          validate software functionality and quality. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>To handle secrets in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Use encrypted variables, secret management tools, or vault
-                                          integration to store credentials securely. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>To protect branches in github?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Use branch protection rules: require PR reviews, status
-                                          checks, and restrict who can push.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>To roll back commits in git?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Use git revert (creates a new commit) or git reset (rewinds
-                                          history) depending on requirement.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Travis ci?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Travis CI is a hosted CI/CD service for building and testing
-                                          software projects hosted on GitHub. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Trunk-based development?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Trunk-based development involves frequent commits to the
-                                          main branch with short-lived feature branches. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Unit test?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Unit test verifies the functionality of individual
-                                          components or functions in isolation. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Vault in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Vault is a tool for securely storing and managing secrets
-                                          and sensitive data. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Version control in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Version control is the management of code changes using
-                                          tools like Git or SVN for tracking and collaboration. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Version control integration?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">CI/CD tools integrate with Git, SVN, or Mercurial to detect
-                                          code changes and trigger pipelines.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Webhooks in github/bitbucket/gitlab?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Webhooks trigger external services when events occur, like
-                                          push, PR, or merge events, enabling CI/CD and integrations.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Yaml in ci/cd?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">YAML is a human-readable format used to define CI/CD
-                                          pipeline configurations. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>You monitor ci/cd pipelines?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Using dashboards, logs, notifications, or metrics for build
-                                          health and performance.</div>
-                              </div>
+      <main class="container" id="tab_content_18">
+        <section class="iqas-section">
+            <div class="faq-item-title active">
+                <div class="faq-question-title">
+                    <div class="container section-title" data-aos="fade-up">
+                        <div class="faq-question-title">
+                            <h2 class="heading-title">CI/CD </h2>
+                            <div class="title-icon">+</div>
                         </div>
-                  </div>
-            </section>
-      </main>
+                        <div class="faq-answer-title">
+                            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                                <div class="row">
+                                    <div class="faq-item active">
+                                        <div class="faq-question">A/b testing in ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A/B testing compares two versions of an application to
+                                            evaluate
+                                            performance or user engagement. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Ansible in ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Ansible automates configuration management provisioning
+                                            and
+                                            application deployment. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Artifact promotion? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Artifact promotion moves build artifacts from
+                                            development or
+                                            staging
+                                            to production environments. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Artifact repository? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Artifact repository stores build outputs libraries and
+                                            packages for
+                                            reuse such as Nexus or Artifactory. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Artifact repository? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Central storage for build outputs like binaries, Docker
+                                            images, or
+                                            NuGet packages.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Automated deployment in ci/cd? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Automated deployment delivers application changes to
+                                            environments
+                                            without manual intervention. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Automated testing in ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Automated testing runs tests automatically to validate
+                                            code
+                                            functionality and quality during CI/CD pipelines. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Azure devops pipelines? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Azure DevOps Pipelines automates builds tests and
+                                            deployments in
+                                            Azure DevOps environment. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Benefits of ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Faster delivery improved code quality early bug
+                                            detection
+                                            reduced
+                                            integration issues and automated workflows. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Bitbucket pipelines? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Bitbucket Pipelines is a CI/CD service integrated with
+                                            Bitbucket
+                                            repositories for automated builds tests and deployments. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Blue-green deployment? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Blue-green deployment switches traffic between two
+                                            identical
+                                            environments to minimize downtime during release. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Blue-green deployment? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Deploy a new version in parallel with the old one and
+                                            switch
+                                            traffic
+                                            once validated.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Build artifact? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Build artifact is the output of a build process such as
+                                            compiled
+                                            binaries Docker images or packages. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Build in ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A build compiles source code into executable artifacts
+                                            often
+                                            including dependency resolution and packaging. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Build matrix? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Build matrix runs pipeline jobs across multiple
+                                            environments
+                                            configurations or versions. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Build pipeline stage? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A stage in a pipeline represents a major step such as
+                                            build
+                                            test or
+                                            deploy. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Build trigger? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Build trigger automatically starts a pipeline based on
+                                            events like
+                                            commit merge request or schedule. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Canary deployment? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Canary deployment releases new changes to a small subset
+                                            of
+                                            users to
+                                            monitor behavior before full rollout. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Canary deployment? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Deploy a new version to a small subset of users to
+                                            monitor
+                                            stability
+                                            before full release.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Canary monitoring? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Canary monitoring observes new releases for errors or
+                                            performance
+                                            issues before full rollout. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Chef in ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Chef is an automation tool for managing infrastructure
+                                            and
+                                            deployments. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Ci/cd best practice? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Best practices include version control automated tests
+                                            code
+                                            review
+                                            fast feedback secure secrets and monitoring. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Ci/cd metrics? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">CI/CD metrics track build duration success rate
+                                            deployment
+                                            frequency
+                                            mean time to recovery and failure rate. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Ci/cd pipeline? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A CI/CD pipeline is an automated sequence of stages that
+                                            code goes
+                                            through from commit to deployment. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Ci/cd security? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">CI/CD security ensures secure code pipeline
+                                            configuration
+                                            secrets
+                                            management and deployment. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">CI/CD stands for Continuous Integration and Continuous
+                                            Deployment/Delivery a practice to automate software development testing and
+                                            deployment.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">CI (Continuous Integration) automatically builds and
+                                            tests
+                                            code on
+                                            commit. CD (Continuous Deployment/Delivery) deploys it to staging or
+                                            production.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Circleci? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">CircleCI is a cloud-based CI/CD platform that automates
+                                            build test
+                                            and deployment workflows. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Code quality analysis in ci/cd? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Code quality analysis checks code for bugs
+                                            vulnerabilities
+                                            style and
+                                            maintainability using tools like SonarQube. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Configuration file in ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Configuration file defines the pipeline steps
+                                            environment
+                                            variables
+                                            triggers and deployment settings. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Containerization in ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Containerization packages software and dependencies into
+                                            a
+                                            portable
+                                            container often using Docker. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Continuous delivery (cd)? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">CD is the practice of automatically preparing code
+                                            changes
+                                            for
+                                            release to production. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Continuous deployment? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Continuous Deployment automatically deploys code changes
+                                            to
+                                            production after passing tests without manual intervention. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Continuous integration (ci)? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">CI is the practice of frequently integrating code
+                                            changes
+                                            into a
+                                            shared repository with automated builds and tests. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Continuous monitoring in ci/cd? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Continuous monitoring tracks application performance
+                                            errors
+                                            and
+                                            metrics post-deployment. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Dependency management in ci/cd? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Dependency management ensures required libraries
+                                            packages
+                                            and modules
+                                            are available during builds and deployments. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Deployment frequency? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Deployment frequency measures how often software changes
+                                            are
+                                            deployed
+                                            to production. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Deployment pipeline? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Deployment pipeline automates the process of delivering
+                                            software to
+                                            different environments like dev test and production. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Devops? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">DevOps is a culture and set of practices combining
+                                            development and
+                                            operations to deliver software faster and reliably. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Diffbet a pipeline and a workflow? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Pipeline refers to a sequence of automated steps;
+                                            workflow
+                                            includes
+                                            branching approvals and manual triggers in CI/CD. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Diffbet ci and cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">CI (Continuous Integration) merges code frequently,
+                                            builds,
+                                            and tests
+                                            automatically., CD (Continuous Delivery/Deployment) deploys tested code to
+                                            environments
+                                            automatically.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Diffbet ci and nightly builds? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">CI triggers builds on each commit; nightly builds run at
+                                            scheduled
+                                            times typically once per day. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Diffbet ci/cd and devops? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">CI/CD is a subset of DevOps practices focused on
+                                            automation;
+                                            DevOps
+                                            includes culture collaboration and infrastructure practices. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Diffbet continuous delivery and continuous deployment?
+                                            <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Continuous Delivery requires manual approval for
+                                            deployment;
+                                            Continuous Deployment is fully automated to production. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Diffbet declarative and scripted jenkins pipelines?
+                                            <div class="icon"> +</div>
+                                        </div>
+                                        <div class="faq-answer">Declarative pipelines use a structured readable syntax;
+                                            scripted
+                                            pipelines use Groovy scripts with more flexibility. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker in ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker is a platform to build ship and run applications
+                                            in
+                                            containers. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Dynamic code analysis in ci/cd? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Dynamic code analysis inspects running code to detect
+                                            runtime errors
+                                            or performance issues. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Feature branching in ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Feature branching involves developing new features in
+                                            isolated
+                                            branches to prevent conflicts in the main branch. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Fork vs clone? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Fork is a copy on the server; clone is a local copy of a
+                                            repo. Fork
+                                            enables collaboration via PRs.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Gitlab ci file? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">.gitlab-ci.yml defines GitLab CI/CD pipeline stages jobs
+                                            and
+                                            configurations. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Gitlab ci/cd pipeline? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Pipeline defines jobs, stages, and scripts to automate
+                                            build, test,
+                                            and deploy.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Gitlab ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">GitLab CI/CD is a tool integrated with GitLab for
+                                            automating
+                                            builds
+                                            tests and deployments. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Gitlab runner? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A GitLab runner executes CI/CD jobs defined in GitLab
+                                            pipelines.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Immutable infrastructure in ci/cd? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Immutable infrastructure involves replacing servers or
+                                            environments
+                                            rather than modifying them. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Infrastructure as code (iac)? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">IaC automates infrastructure provisioning using code
+                                            such as
+                                            Terraform or Ansible. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Integration test? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Integration test checks the interaction between multiple
+                                            components
+                                            or systems. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Is ci/cd implemented in azure repos? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Using Azure Pipelines linked to repos, automatically
+                                            triggering
+                                            builds and deployments.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Is ci/cd implemented in bitbucket? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Using Bitbucket Pipelines defined in
+                                            bitbucket-pipelines.yml. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Is ci/cd implemented in github? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Using GitHub Actions defined in .yml workflows,
+                                            triggered on
+                                            push,
+                                            PR, or schedule.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Is ci/cd implemented in gitlab? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Using .gitlab-ci.yml and GitLab Runners to automate
+                                            builds,
+                                            tests,
+                                            and deployments.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins job? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A Jenkins job defines tasks such as build test or deploy
+                                            within a
+                                            CI/CD pipeline. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins pipeline? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Jenkins pipeline is a set of instructions defining the
+                                            stages and
+                                            steps for automated build test and deployment. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkins? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Jenkins is an open-source automation server used for
+                                            building testing
+                                            and deploying software in CI/CD pipelines. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Jenkinsfile? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Jenkinsfile defines a Jenkins pipeline using code
+                                            specifying
+                                            stages
+                                            steps and agents. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Key components of ci/cd pipeline? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Source code management build automation automated
+                                            testing
+                                            artifact
+                                            management deployment automation monitoring. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Kubernetes in ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Kubernetes is a container orchestration platform used to
+                                            deploy scale
+                                            and manage containers in CI/CD pipelines. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Lead time for changes? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Lead time measures the duration from code commit to
+                                            deployment in
+                                            production. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Manual trigger? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Manual trigger requires user action to start a pipeline
+                                            or
+                                            deploy a
+                                            release. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Mean time to recovery (mttr)? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">MTTR measures the average time to recover from failures
+                                            in
+                                            deployment
+                                            or production. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Pipeline approval? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Pipeline approval requires manual authorization before
+                                            proceeding to
+                                            deployment stages. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Pipeline artifact vs build artifact? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Pipeline artifacts are shared between jobs/stages; build
+                                            artifacts
+                                            are outputs of a single build.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Pipeline artifact? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Pipeline artifact is an output from a job or stage such
+                                            as
+                                            binaries
+                                            or reports used in later stages. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Pipeline as code? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Pipeline as code defines CI/CD pipelines using code or
+                                            configuration
+                                            files enabling version control and automation. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Pipeline as code? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Defining CI/CD pipelines in versioned files (YAML,
+                                            Jenkinsfile) to
+                                            track changes and standardize workflows.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Pipeline caching? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Pipeline caching stores dependencies or artifacts to
+                                            speed
+                                            up build
+                                            times. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Pipeline concurrency? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Pipeline concurrency allows multiple pipelines or jobs
+                                            to
+                                            run
+                                            simultaneously. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Pipeline drift? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Pipeline drift occurs when pipelines are inconsistent
+                                            across
+                                            environments or teams. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Pipeline environment variable? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Environment variable stores configuration values used by
+                                            pipeline
+                                            jobs. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Pipeline failure? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Pipeline failure occurs when a job or stage fails due to
+                                            code errors
+                                            test failures or configuration issues. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Pipeline job? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A job is a specific task executed in a pipeline stage
+                                            like
+                                            running
+                                            tests or building artifacts. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Pipeline notifications? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Pipeline notifications alert teams about build or
+                                            deployment
+                                            status
+                                            via email Slack or other channels. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Pipeline observability? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Pipeline observability monitors pipeline performance
+                                            failures and
+                                            bottlenecks. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Pipeline optimization? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Pipeline optimization improves speed reliability and
+                                            efficiency of
+                                            CI/CD processes. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Pipeline retry? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Pipeline retry reruns failed jobs automatically or
+                                            manually.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Pipeline scheduling? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Pipeline scheduling triggers builds or deployments at
+                                            specified
+                                            times. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Pipeline visualization? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Pipeline visualization shows the flow of stages jobs and
+                                            results
+                                            graphically. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Post-deployment testing? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Post-deployment testing validates functionality
+                                            performance
+                                            and
+                                            monitoring after deployment. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Pre-deployment testing? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Pre-deployment testing validates changes in staging or
+                                            test
+                                            environments before production deployment. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Production environment? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Production environment is where the live application
+                                            runs
+                                            and is
+                                            accessible to end users. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Puppet in ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Puppet automates infrastructure configuration management
+                                            and
+                                            compliance. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Regression test? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Regression test ensures that new changes do not break
+                                            existing
+                                            functionality. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Release in ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Release is a version of the software ready to be
+                                            deployed to
+                                            production or other environments. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Role of a build server in ci/cd? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Build server automates compiling testing and packaging
+                                            code
+                                            changes
+                                            for integration and deployment. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Role of automation in ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Automation reduces manual intervention improves
+                                            consistency
+                                            speeds up
+                                            delivery and ensures quality. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Rollback automation? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Rollback automation automatically reverts deployments
+                                            when
+                                            failures
+                                            are detected. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Rollback in ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Rollback is reverting a deployment to a previous stable
+                                            version in
+                                            case of issues. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Rollback strategy in ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Rollback strategy defines procedures to revert
+                                            deployments
+                                            safely in
+                                            case of failures. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Rollback testing? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Rollback testing validates the rollback process and
+                                            ensures
+                                            previous
+                                            versions work correctly. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Rolling deployment? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Rolling deployment gradually replaces old versions with
+                                            new
+                                            ones
+                                            across servers or pods. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Rolling deployment? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Deploying updates gradually to reduce downtime and risk.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Secrets management in ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Secrets management securely stores sensitive information
+                                            like
+                                            passwords API keys or certificates. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Shift-left testing in ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Shift-left testing moves testing earlier in the
+                                            development
+                                            lifecycle
+                                            to catch defects sooner. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Smoke test? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Smoke test is a preliminary test to check basic
+                                            functionality before
+                                            detailed testing. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Sonarqube in ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">SonarQube analyzes code quality technical debt and
+                                            vulnerabilities
+                                            integrating into CI/CD pipelines. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Staging environment? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Staging environment mimics production to test releases
+                                            before
+                                            deployment. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Static code analysis in ci/cd? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Static code analysis inspects code without execution to
+                                            find
+                                            errors
+                                            security issues or style violations. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">System test? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">System test validates the complete and integrated
+                                            software
+                                            system
+                                            against requirements. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Terraform in ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Terraform is an IaC tool used to define provision and
+                                            manage
+                                            infrastructure declaratively. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Test environment? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Test environment is a setup where testing is performed
+                                            to
+                                            validate
+                                            software functionality and quality. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">To handle secrets in ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Use encrypted variables, secret management tools, or
+                                            vault
+                                            integration to store credentials securely. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">To protect branches in github? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Use branch protection rules: require PR reviews, status
+                                            checks, and
+                                            restrict who can push.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">To roll back commits in git? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Use git revert (creates a new commit) or git reset
+                                            (rewinds
+                                            history)
+                                            depending on requirement.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Travis ci? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Travis CI is a hosted CI/CD service for building and
+                                            testing
+                                            software
+                                            projects hosted on GitHub. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Trunk-based development? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Trunk-based development involves frequent commits to the
+                                            main branch
+                                            with short-lived feature branches. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Unit test? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Unit test verifies the functionality of individual
+                                            components or
+                                            functions in isolation. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Vault in ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Vault is a tool for securely storing and managing
+                                            secrets
+                                            and
+                                            sensitive data. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Version control in ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Version control is the management of code changes using
+                                            tools like
+                                            Git or SVN for tracking and collaboration. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Version control integration? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">CI/CD tools integrate with Git, SVN, or Mercurial to
+                                            detect
+                                            code
+                                            changes and trigger pipelines.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Webhooks in github/bitbucket/gitlab? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Webhooks trigger external services when events occur,
+                                            like
+                                            push, PR,
+                                            or merge events, enabling CI/CD and integrations.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Yaml in ci/cd? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">YAML is a human-readable format used to define CI/CD
+                                            pipeline
+                                            configurations. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">You monitor ci/cd pipelines? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Using dashboards, logs, notifications, or metrics for
+                                            build
+                                            health
+                                            and performance.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
       <div id="footer-placeholder"></div> <a href="#" id="scroll-top"
             class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
       <div id="preloader"></div>

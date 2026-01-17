@@ -26,1172 +26,1312 @@
       </style>
 </head>
 
-<body class="index-page Custombody">
+<body>
       <div id="nav-placeholder"></div>
-      <main class="main">
-            <section id="about" class="about section Custombody">
-                  <div class="container section-title" data-aos="fade-up">
-                        <h2>Docker</h2>
-                  </div>
-                  <div class="container" data-aos="fade-up" data-aos-delay="100">
-                        <div class="row g-3">
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Advantages of Kubernetes?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">It provides automatic scaling, self-healing, load balancing,
-                                          rolling updates, service discovery, and multi-cloud support. Kubernetes
-                                          enables highly available and scalable microservice deployments.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Bridge network?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Bridge network is the default Docker network for
-                                          communication between containers on the same host. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Deploy multiple Microservices to Docker?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Use separate Dockerfiles and images for each microservice.
-                                          Use Docker Compose or Kubernetes for managing networking, scaling, and service
-                                          discovery among multiple containers. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Deploy multiple microservices to Docker?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Containerize each service separately and manage them with
-                                          Docker Compose or Kubernetes. Use service discovery and networking to allow
-                                          container-to-container communication.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Deploy multiple services across multiple host
-                                                machines? </span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Use Kubernetes, Docker Swarm, or cloud orchestration tools.
-                                          They handle load balancing, service discovery, networking, and scaling across
-                                          multiple hosts.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Deploy Spring Boot JAR to Docker?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Create a Dockerfile with a JDK base image and copy the JAR.
-                                          Expose the required port and run using ENTRYPOINT ["java","-jar","app.jar"].
-                                          Build and run using Docker commands. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Deploy Spring Boot Microservice to Docker?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Package the microservice as a JAR and create a Dockerfile
-                                          using a JDK base image. Copy the JAR file and expose the service port. Build
-                                          the Docker image and run the container using docker run -p <port>:<port>
-                                                      <image>.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Deploy Spring Boot WAR to Docker?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Create a Dockerfile using a Tomcat base image and copy the
-                                          WAR file into the webapps folder. Build the Docker image using docker build -t
-                                          app . and run the container using docker run -p 8080:8080 app. This deploys
-                                          the WAR inside a Dockerized Tomcat environment.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet ADD and COPY in Dockerfile?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">COPY copies local files; ADD can copy local files remote
-                                          URLs and extract tar archives. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet CMD and ENTRYPOINT in Dockerfile?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">CMD sets default arguments for a container; ENTRYPOINT
-                                          configures the container to run as an executable. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet Docker and virtual machines?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker containers share the host OS kernel and are
-                                          lightweight; VMs have their own OS and are heavier. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet Docker bind mount and volume?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Bind mount maps host directories to containers; volumes are
-                                          managed by Docker for persistence and portability. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet Docker Compose and Docker Swarm?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker Compose manages multi-container applications locally;
-                                          Docker Swarm is a container orchestration tool for clustering and scaling
-                                          containers. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet Docker image and container?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">An image is a blueprint; a container is a running instance
-                                          of that image. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet Docker image layer and container
-                                                layer?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Image layers are read-only; container layer is read-write on
-                                          top of image layers. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet Docker run and Docker service create?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker run creates a standalone container; service create
-                                          deploys containers as a Swarm service with scaling. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DifBet public and private Docker registries?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Public registry is accessible to everyone; private registry
-                                          restricts access to specific users or organizations. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>DiffBet Kubernetes and Docker Swarm?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker Swarm is simpler and tightly integrates with Docker,
-                                          while Kubernetes is more powerful with advanced scheduling, auto-scaling, and
-                                          monitoring capabilities. Kubernetes is enterprise-grade, Swarm suits smaller
-                                          deployments.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker attach vs exec?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Attach connects to container stdin/stdout; exec runs a
-                                          command in a running container. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker attach?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker attach connects to a running container’s standard
-                                          input output and error streams. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker best practices?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Best practices include small images multi-stage builds
-                                          volume usage environment variables and secure secrets management. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker build ARG?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">ARG defines a variable that can be passed during build time.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker build cache?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Build cache stores image layers to speed up subsequent
-                                          builds. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker build?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker build creates an image from a Dockerfile. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker cache?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker cache stores previously built layers to speed up
-                                          future builds. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker CLI?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker CLI is a command-line interface to manage Docker
-                                          images containers networks and volumes. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker commit?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker commit creates a new image from a container’s current
-                                          state. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker compose down?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker compose down stops and removes containers networks
-                                          and volumes defined in a Compose file. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker compose logs?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker compose logs shows logs from all services in the
-                                          Compose application. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker compose scale?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Compose scale adjusts the number of container instances for
-                                          a service. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker compose up?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker compose up builds creates and starts containers
-                                          defined in a Compose file. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker Compose?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker Compose is a tool to define and run multi-container
-                                          Docker applications using a YAML file. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker Compose?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker Compose is a tool for defining and running
-                                          multi-container applications using a docker-compose.yml file. It automates
-                                          container creation, networking, and scaling using simple commands like docker
-                                          compose up.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker config?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker config stores non-sensitive configuration data for
-                                          containers in Swarm mode. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker container commit?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Container commit creates a new image from a running
-                                          container. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker container restart?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Container restart stops and starts a container. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker container?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A Docker container is a lightweight standalone executable
-                                          package that includes application code and all dependencies. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker context use?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Context use switches the active Docker environment or
-                                          endpoint. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker context?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker context allows switching between multiple Docker
-                                          environments or endpoints. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker diff?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Diff shows changes made to container filesystem since
-                                          creation. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker Engine?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker Engine is the core component of Docker that creates
-                                          and runs Docker containers. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker ENTRYPOINT vs CMD combination?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">ENTRYPOINT defines executable; CMD provides default
-                                          arguments to ENTRYPOINT. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker ENV?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">ENV sets environment variables inside a container at build
-                                          or run time. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker exec?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker exec runs a command inside a running container.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker EXPOSE?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">EXPOSE documents the port on which the container listens.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker health check?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Health check monitors container status and defines
-                                          conditions for healthy or unhealthy states. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker healthcheck command?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Healthcheck defines a command in Dockerfile to monitor
-                                          container status. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker Hub?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker Hub is a cloud-based registry to store and share
-                                          Docker images. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker image prune?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Image prune removes dangling (unused) images. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker image?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A Docker image is a read-only template used to create Docker
-                                          containers containing the application and its dependencies. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker inspect format?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Inspect format uses Go templates to extract specific JSON
-                                          fields. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker inspect?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker inspect returns detailed JSON information about
-                                          containers images or networks. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker kill vs stop?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Kill forces container termination; stop gracefully stops and
-                                          allows cleanup. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker layer?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker layer is a filesystem layer created for each
-                                          Dockerfile instruction during image build. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker load vs import?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Load imports an image from a tar file; import creates an
-                                          image from a filesystem archive. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker login?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker login authenticates a user with a Docker registry.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker logout?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker logout removes saved credentials for a Docker
-                                          registry. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker logs -f?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Logs -f streams container logs in real-time. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker logs?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker logs display the standard output and error of a
-                                          running or stopped container. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker multi-stage build?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Multi-stage build reduces image size by using multiple FROM
-                                          statements in a Dockerfile for building and final image creation. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker network create?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker network create creates a new Docker network. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker network inspect?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker network inspect shows detailed information about a
-                                          network and connected containers. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker network ls?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker network ls lists all networks on the Docker host.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker network types?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Types include bridge host overlay macvlan and none. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker network?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker network allows containers to communicate with each
-                                          other or with external networks. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker node?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker node is a Swarm cluster member (manager or worker)
-                                          managed by Docker. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker overlay network in Swarm?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Overlay network allows services across multiple nodes to
-                                          communicate securely. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker ports vs EXPOSE?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">EXPOSE only documents; ports (-p) maps container ports to
-                                          host. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker prune -a?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker prune -a removes all stopped containers unused
-                                          networks images and optionally volumes. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker prune containers?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Prune containers removes stopped containers to free space.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker prune volume?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker prune volume removes unused volumes. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker prune?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker prune removes unused containers networks volumes or
-                                          images. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker ps -a?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker ps -a lists all containers including stopped ones.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker ps?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker ps lists running containers and their details. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker pull?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker pull downloads a Docker image from a registry. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker push?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker push uploads a Docker image to a registry. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker registry?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker registry stores Docker images; Docker Hub is a public
-                                          registry while private registries are also supported. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker replica?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Replica is an instance of a service running in a Swarm
-                                          cluster. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker restart always?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Restart always ensures the container restarts automatically
-                                          if it stops. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker restart policy?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Restart policy defines when a container should restart e.g.
-                                          always unless-stopped on-failure. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker rm?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker rm removes a stopped container. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker rmi?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker rmi removes a Docker image from the local system.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker save vs export?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Save exports an image as a tar file; export exports a
-                                          container filesystem. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker secret vs config?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Secret stores sensitive data; config stores non-sensitive
-                                          configuration data. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker secrets create?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker secrets create adds a secret to the Swarm cluster.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker secrets inspect?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker secrets inspect shows details of a specific secret.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker secrets ls?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker secrets ls lists all secrets in the Swarm cluster.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker secrets?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker secrets securely store sensitive data like passwords
-                                          or API keys for use in containers. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker security?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker security includes using least privilege scanning
-                                          images securing secrets and isolating containers. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker service update?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker service update updates a running service in a Swarm
-                                          cluster. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker service?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker service runs a container or group of containers
-                                          across a Swarm cluster with scaling and update capabilities. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker stack?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker stack deploys a group of services defined in a
-                                          Compose file to a Swarm cluster. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker Stack?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker Stack is used in Docker Swarm to deploy and manage
-                                          multi-service applications defined in a Compose file. It supports scaling,
-                                          rolling updates, and distributed deployment across nodes.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker stats?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker stats shows real-time resource usage (CPU memory
-                                          network) for containers. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker stop and Docker kill?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker stop gracefully stops a container; Docker kill forces
-                                          termination. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker swarm init?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker swarm init initializes a Docker host as a Swarm
-                                          manager. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker swarm join?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker swarm join adds a node to a Swarm cluster. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker Swarm?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker Swarm is a native clustering and orchestration tool
-                                          for Docker allowing management of multiple Docker hosts. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker system df?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker system df shows disk usage of images containers
-                                          volumes and build cache. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker tag?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker tag assigns a new name or version to an image. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker top vs exec?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Top shows running processes; exec runs a new command in
-                                          container. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker top?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker top shows running processes inside a container.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker USER?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">USER sets the username or UID to run the container process.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker volume create?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker volume create creates a new persistent volume for
-                                          containers. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker volume ls?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker volume ls lists all Docker volumes on the host.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker volume?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A Docker volume is a persistent storage mechanism to store
-                                          data outside the container filesystem. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker WORKDIR?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">WORKDIR sets the working directory for container commands.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker is a platform that allows developers to build ship
-                                          and run applications in lightweight portable containers. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Docker?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker is a containerization platform that packages
-                                          applications and dependencies into lightweight, portable containers. It
-                                          ensures consistent environments across development, testing, and production.
-                                          Docker improves deployment speed, scalability, and resource utilization.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Dockerfile used for?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A Dockerfile contains a set of instructions to build a
-                                          Docker image automatically. It defines the base image, application code,
-                                          dependencies, environment variables, and commands to run the app inside a
-                                          container.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Dockerfile?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A Dockerfile is a text file containing instructions to build
-                                          a Docker image. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Kubernetes Namespaces?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Namespaces logically isolate clusters into multiple virtual
-                                          environments. They help manage resources, security policies, and team
-                                          separation in large applications.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Kubernetes?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Kubernetes is an open-source container orchestration system
-                                          for automating deployment, scaling, and management of containerized
-                                          applications across clusters.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Node in Kubernetes?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A node is a physical or virtual machine in the Kubernetes
-                                          cluster that runs application workloads. It contains kubelet, container
-                                          runtime, and networking components.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Overlay network?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Overlay network connects containers across multiple Docker
-                                          hosts in a Swarm cluster. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Pod in Kubernetes?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">A pod is the smallest deployable unit containing one or more
-                                          containers sharing storage, networking, and lifecycle. Kubernetes schedules
-                                          and manages pods rather than individual containers.</div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Rolling update in Docker?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Rolling update updates service replicas gradually to avoid
-                                          downtime. </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"><span>Scenarios where Java developers use Docker?</span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">Docker is used for creating consistent dev environments,
-                                          Microservices deployment, CI/CD pipelines, testing distributed systems,
-                                          isolating services, and running different Java versions without conflicts.
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"> <span> What is Docker? </span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">
-                                          <p> ® Docker is a open-source platform that allows you to build ,ship ,and run
-                                                applications inside containers. </p>
-                                          <p> · A container is a lightweight, standalone and portable environment that
-                                                include everything your application needs to run --&gt; like code,
-                                                runtime, librraies and dependencies. </p>
-                                          <p> · With docker, developers can ensure their applications runs the same way
-                                                everywhere – whether on their laptop, a testing server or in the cloud.
-                                          </p>
-                                          <p> · It solves the problem of “It works on my machine” , </p>
-                                          <p>because containers carry all dependencies with them. </p>
-                                          <p> In Short </p>
-                                          <p> · Docker = Platform to create and manage containers. </p>
-                                          <p> · Container = Small, portable environment to run applications with all
-                                                dependencies. </p>
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"> <span> Restart Policy </span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">
-                                          <p>In Docker, when we talk about policy, it usually refers to the restart
-                                                policies of containers.</p>
-                                          <p>These policies define what should happen to a container when it stops,
-                                                crashes, or when Docker itself restarts. </p>
-                                          <p> Types of restart Policy </p>
-                                          <p> 1. No (default) </p>
-                                          <p> 2. Always </p>
-                                          <p> 3. On- failure </p>
-                                          <p> 4. Unless- stopped </p>
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"> <span> Always policy:- </span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">
-                                          <p> If container manual is off and always policy is set to on then container
-                                                will only start when &quot;docker daemon restart&quot; </p>
-                                          <p> Command-- &gt; </p>
-                                          <p> docker container run –d –-restart always httpd </p>
-                                          <p> Always Policy </p>
-                                          <p> <img width=620 height=223 id="Image 2"
-                                                      src="assets/img/docker/image002.webp"> </p>
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"> <span> Unless-stopped:- </span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">
-                                          <p> If a container is down due to an error and has an Unless-stopped policy,
-                                                it will only restart when you &quot;restart docker daemon&quot; </p>
-                                          <p> Command -- &gt; </p>
-                                          <p> docker container run –d –-restart unless-stopped httpd </p>
-                                          <p> Unless-stopped policy </p>
-                                          <p> <img width=629 height=225 src="assets/img/docker/image003.webp">
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"> <span> On-failure:- </span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">
-                                          <p> When a container shuts down due to an error and has a no-failure policy,
-                                                the container will restart itself. </p>
-                                          <p> Command -- &gt; </p>
-                                          <p> Docker container run –d –-restart on-failure httpd </p>
-                                          <p> On –failure police </p>
-                                          <p> <img width=624 height=82 src="assets/img/docker/image004.webp"> </p>
-                                          <p> <img width=620 height=132 id="Image 5"
-                                                      src="assets/img/docker/image005.webp">
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"> <span> Max Retry in on-failure Policy (English) </span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">
-                                          <p> When you use the on-failure restart policy in Docker, you can set a
-                                                maximum retry count. </p>
-                                          <p> · This tells Docker how many times it should try to restart a failed
-                                                container before giving up. </p>
-                                          <p> · If the container keeps failing and reaches the retry limit, Docker will
-                                                stop trying. </p>
-                                          <p> docker run -d --restart=on-failure:5 myapp </p>
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"> <span> Port Mapping </span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">
-                                          <p> ® Every Docker container has its own network namespace (like a
-                                                mini-computer). </p>
-                                          <p> ® By default, services inside a container are not accessible from outside
-                                                the host machine. </p>
-                                          <p> ® Port Mapping is the process of exposing a container’s internal port to
-                                                the host machine’s port so that external users can access it.</p>
-                                          <p> It uses the -p or --publish option:- </p>
-                                          <p> docker container run –d –p &lt;host port&gt;:&lt;container port&gt; httpd
-                                          </p>
-                                          <p> <img width=615 height=199 src="assets/img/docker/image006.webp"> </p>
-                                          <p> <img width=591 height=128 id="Group 7"
-                                                      src="assets/img/docker/image007.webp"> </p>
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"> <span> Networking </span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">
-                                          <p>Docker networking is how containers communicate with each other, with the
-                                                host machine, and with the outside world (internet). </p>
-                                          <p> When Docker is installed, it creates some default networks. Containers can
-                                                be attached to these networks depending on how you want them to
-                                                communicate. </p>
-                                          <p> Default Docker Networks </p>
-                                          <p> 1. bridge (default) </p>
-                                          <p> a. If you run a container without specifying a network, it connects to the
-                                                bridge network. </p>
-                                          <p> b. Containers on the same bridge network can communicate using IP
-                                                addresses. </p>
-                                          <p> c. You can also create your own user-defined bridge for name-based
-                                                communication. </p>
-                                          <p> 2. host </p>
-                                          <p> a. Removes the isolation between the container and the host network. </p>
-                                          <p> b. Container uses the host’s network directly. </p>
-                                          <p> c. Example: If container exposes port 80, it will be directly available on
-                                                host port 80. </p>
-                                          <p> 3. none </p>
-                                          <p> a. Completely isolates the container from all networks. </p>
-                                          <p> b. No internet, no container-to-container communication. </p>
-                                          <p> How Containers Communicate </p>
-                                          <p> · Container ↔ Container (same bridge network) → via </p>
-                                          <p>container name or IP. </p>
-                                          <p> · Container ↔ Host → via port mapping ( -p hostPort:containerPort ). </p>
-                                          <p> · Container ↔ Internet → via NAT (Network Address </p>
-                                          <p>Translation) on the host. </p>
-                                          <p> Command --&gt; docker network ls </p>
-                                          <p> <img width=378 height=139 id="Image 10"
-                                                      src="assets/img/docker/image008.webp"> </p>
-                                          <p> Create a network-- &gt; </p>
-                                          <p> docker network create – -driver bridge network name </p>
-                                          <p> <img width=587 height=197 id="Image 11"
-                                                      src="assets/img/docker/image009.webp"> </p>
-                                          <p> Docker network create – -driver bridge – -subnet 1G8.68.0.0/16 mynetwork
-                                          </p>
-                                          <p> <img width=624 height=274 src="assets/img/docker/image010.webp">
-                                          <p> Craete a container in our custom network </p>
-                                          <p> <img width=625 height=104 src="assets/img/docker/image011.webp">
-                                          <p> docker container inspect container name </p>
-                                          <p> <img width=624 height=245 id="Group 14"
-                                                      src="assets/img/docker/image012.webp"> </p>
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"> <span> Volume </span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">
-                                          <p> ® By default, anything you save inside a container is temporary. </p>
-                                          <p> ® If the container is deleted, all data inside it is lost. </p>
-                                          <p> ® Volumes are Docker’s way to store data permanently </p>
-                                          <p>(persistent storage). </p>
-                                          <p>A Docker Volume is a storage location outside the container’s </p>
-                                          <p>filesystem but managed by Docker. </p>
-                                          <p>This way, data remains safe even if the container is removed or recreated.
-                                          </p>
-                                          <p> Why Use Volumes? </p>
-                                          <p> 1. Data Persistence → Data won’t be lost if the container is </p>
-                                          <p> deleted. </p>
-                                          <p> 2. Sharing Data → Multiple containers can share the same </p>
-                                          <p> volume. </p>
-                                          <p> 3. Performance → Better than bind mounts for production </p>
-                                          <p> workloads. </p>
-                                          <p> Types of volume:- </p>
-                                          <p> 1 Bind volume </p>
-                                          <p> 2 Local Mount/ Volume mount </p>
-                                          <p> Bind Mount:- </p>
-                                          <p> ® A Bind Mount directly connects a host machine’s directory/file to a
-                                                container’s directory. </p>
-                                          <p> ® This means whatever changes you make inside the container will reflect
-                                                on the host, and vice versa. </p>
-                                          <p> ® It’s different from a Volume because: </p>
-                                          <p> ® Volumes are managed by Docker (stored in </p>
-                                          <p> /var/lib/assets/img/docker/volumes/... ) </p>
-                                          <p> ® Bind mounts are managed by you (stored anywhere on your host). </p>
-                                          <p> Command :- </p>
-                                          <p> docker container run –d –p 80:80 –v </p>
-                                          <p> /directory_name:/usr/local/apache2/htdocs </p>
-                                          <p> <img width=626 height=201 id="Image 18"
-                                                      src="assets/img/docker/image013.webp"> </p>
-                                          <p> <img width=626 height=85 id="Group 19"
-                                                      src="assets/img/docker/image014.webp"> </p>
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"> <span> Local mount Create a Volume </span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">
-                                          <p> Command:- </p>
-                                          <p> docker volume create my- vol </p>
-                                          <p> <img width=617 height=137 src="assets/img/docker/image015.webp"> </p>
-                                          <p> <img width=640 height=218 id="Group 24"
-                                                      src="assets/img/docker/image016.webp"> </p>
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"> <span> Docker Image </span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">
-                                          <p> ® A Docker Image is a blueprint (template) used to create Docker
-                                                containers.</p>
-                                          <p> ® It contains: </p>
-                                          <p> ® Application code </p>
-                                          <p> ® Dependencies (libraries, packages) </p>
-                                          <p> ® Configuration files </p>
-                                          <p> ® Environment settings </p>
-                                          <p> ® You can think of an image like a snapshot or read-only template. </p>
-                                          <p> ® When you run an image → it becomes a container. </p>
-                                          <p> Docker pull nginx </p>
-                                          <p> <img width=620 height=241 id="Image 28"
-                                                      src="assets/img/docker/image017.webp"> </p>
-                                          <p> Types of Image Creation </p>
-                                          <p> 1 Commit Method </p>
-                                          <p> 2 Dockerfile Method </p>
-                                          <p> Commit mehtod:- </p>
-                                          <p> ® The docker commit command is used to create a new image from an existing
-                                                container. </p>
-                                          <p> ® This is helpful when you: </p>
-                                          <p> ® Run a container </p>
-                                          <p> ® Make changes inside it (install packages, edit files, configure apps)
-                                          </p>
-                                          <p> ® Then save those changes as a new Docker Image. </p>
-                                          <p> Push the Image on your DockerHub Command :- </p>
-                                          <p> <img width=624 height=153 src="assets/img/docker/image018.webp"> docker
-                                                login –u username(dockerHub username) </p>
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"> <span> Create a Image for Docker Commit Method Commands
-                                                :- </span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">
-                                          <p>Vim index.html </p>
-                                          <p>--&gt; this is my commit method </p>
-                                          <p> · Docker container run –d – name web httpd </p>
-                                          <p> · Docker container cp index.html web:/usr/local/apache2/htdocs </p>
-                                          <p> · Docker container commit –a “grras” web team:latest( team=image name )
-                                          </p>
-                                          <p> <img width=627 height=158 src="assets/img/docker/image019.webp"> </p>
-                                          <p> Create a new container from custom image and hit the IP on browser and
-                                                show the contant </p>
-                                          <p> <img width=623 height=96 src="assets/img/docker/image020.webp">
-                                          <p> <img width=626 height=76 id="Group 33"
-                                                      src="assets/img/docker/image021.webp"> </p>
-                                          <p> Push the Image on DockerHub Command :- </p>
-                                          <p> docker image tag team:latest username/team </p>
-                                          <p> docker image push username/team:latest </p>
-                                          <p> <img width=622 height=180 src="assets/img/docker/image022.webp"> </p>
-                                          <p> <img width=629 height=229 id="Image 37"
-                                                      src="assets/img/docker/image023.webp"> </p>
-                                          <p> <img width=624 height=219 src="assets/img/docker/image024.webp">
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"> <span> Dockerfile </span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">
-                                          <p> ® A Dockerfile is a text file that contains a set of instructions to build
-                                                a Docker Image. </p>
-                                          <p> ® Instead of making changes in a container and committing (using docker
-                                                commit ), we write instructions </p>
-                                          <p> in a Dockerfile → so the image can be </p>
-                                          <p> built automatically and repeatedly. </p>
-                                          <p> ® It ensures consistency (same image every time you build). </p>
-                                          <p> Common Instructions in Dockerfile: </p>
-                                          <p> · FROM → Base image (e.g., ubuntu, alpine, </p>
-                                          <p> nginx) </p>
-                                          <p> · RUN → Run commands (install packages) </p>
-                                          <p> · COPY → Copy files from host to image </p>
-                                          <p> · WORKDIR → Set working directory </p>
-                                          <p> · CMD → Default command to run when </p>
-                                          <p> container starts </p>
-                                          <p> · EXPOSE → Inform which port container </p>
-                                          <p> will use </p>
-                                          <p> mkdir docker </p>
-                                          <p> cd docker </p>
-                                          <p> Vim index.html </p>
-                                          <p> <img width=599 height=207 src="assets/img/docker/image025.webp">
-                                          <p> Docker image build . tag web Docker container run –d web:test</p>
-                                          <p> <img width=622 height=116 id="Image 42"
-                                                      src="assets/img/docker/image026.webp"> </p>
-                                    </div>
-                              </div>
-                              <div class="faq-item active">
-                                    <div class="faq-question"> <span> Complete Docker </span>
-                                          <div class="icon">+</div>
-                                    </div>
-                                    <div class="faq-answer">
-                                          <p> <img width=296 height=174 src="assets/img/docker/image027.webp"> </p>
-                                    </div>
-                              </div>
+      <main class="container" id="tab_content_25">
+        <section class="iqas-section">
+            <div class="faq-item-title active">
+                <div class="faq-question-title">
+                    <div class="container section-title" data-aos="fade-up">
+                        <div class="faq-question-title">
+                            <h2 class="heading-title">Docker</h2>
+                            <div class="title-icon">+</div>
                         </div>
-                  </div>
-            </section>
-      </main>
+                        <div class="faq-answer-title">
+                            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                                <div class="row">
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Advantages of Kubernetes? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">It provides automatic scaling, self-healing, load
+                                            balancing,
+                                            rolling
+                                            updates, service discovery, and multi-cloud support. Kubernetes enables
+                                            highly
+                                            available
+                                            and scalable microservice deployments.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Bridge network? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Bridge network is the default Docker network for
+                                            communication
+                                            between containers on the same host. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Deploy multiple Microservices to Docker? <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Use separate Dockerfiles and images for each
+                                            microservice.
+                                            Use Docker
+                                            Compose or Kubernetes for managing networking, scaling, and service
+                                            discovery
+                                            among
+                                            multiple containers. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Deploy multiple microservices to Docker? <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Containerize each service separately and manage them
+                                            with
+                                            Docker
+                                            Compose or Kubernetes. Use service discovery and networking to allow
+                                            container-to-container communication. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Deploy multiple services across multiple host
+                                            machines?
+                                            <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Use Kubernetes, Docker Swarm, or cloud orchestration
+                                            tools.
+                                            They
+                                            handle load balancing, service discovery, networking, and scaling across
+                                            multiple hosts.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Deploy Spring Boot JAR to Docker? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Create a Dockerfile with a JDK base image and copy the
+                                            JAR.
+                                            Expose
+                                            the required port and run using ENTRYPOINT ["java","-jar","app.jar"]. Build
+                                            and
+                                            run using
+                                            Docker commands. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Deploy Spring Boot Microservice to Docker? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Package the microservice as a JAR and create a
+                                            Dockerfile
+                                            using a JDK
+                                            base image. Copy the JAR file and expose the service port. Build the Docker
+                                            image and run
+                                            the container using docker run -p <port>:<port>
+                                                    <image>.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Deploy Spring Boot WAR to Docker? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Create a Dockerfile using a Tomcat base image and copy
+                                            the
+                                            WAR file
+                                            into the webapps folder. Build the Docker image using docker build -t app .
+                                            and
+                                            run the
+                                            container using docker run -p 8080:8080 app. This deploys the WAR inside a
+                                            Dockerized
+                                            Tomcat environment.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet ADD and COPY in Dockerfile? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">COPY copies local files; ADD can copy local files remote
+                                            URLs and
+                                            extract tar archives. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet CMD and ENTRYPOINT in Dockerfile? <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">CMD sets default arguments for a container; ENTRYPOINT
+                                            configures the
+                                            container to run as an executable. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Docker and virtual machines? <div class="icon">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Docker containers share the host OS kernel and are
+                                            lightweight; VMs
+                                            have their own OS and are heavier. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Docker bind mount and volume? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Bind mount maps host directories to containers; volumes
+                                            are
+                                            managed
+                                            by Docker for persistence and portability. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Docker Compose and Docker Swarm? <div
+                                                class="icon">
+                                                +</div>
+                                        </div>
+                                        <div class="faq-answer">Docker Compose manages multi-container applications
+                                            locally;
+                                            Docker
+                                            Swarm is a container orchestration tool for clustering and scaling
+                                            containers.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Docker image and container? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">An image is a blueprint; a container is a running
+                                            instance
+                                            of that
+                                            image. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Docker image layer and container layer? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Image layers are read-only; container layer is
+                                            read-write on
+                                            top of
+                                            image layers. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet Docker run and Docker service create? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Docker run creates a standalone container; service
+                                            create
+                                            deploys
+                                            containers as a Swarm service with scaling. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DifBet public and private Docker registries? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Public registry is accessible to everyone; private
+                                            registry
+                                            restricts
+                                            access to specific users or organizations. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">DiffBet Kubernetes and Docker Swarm? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Docker Swarm is simpler and tightly integrates with
+                                            Docker,
+                                            while
+                                            Kubernetes is more powerful with advanced scheduling, auto-scaling, and
+                                            monitoring
+                                            capabilities. Kubernetes is enterprise-grade, Swarm suits smaller
+                                            deployments.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker attach vs exec? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Attach connects to container stdin/stdout; exec runs a
+                                            command in a
+                                            running container. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker attach? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker attach connects to a running container’s standard
+                                            input output
+                                            and error streams. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker best practices? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Best practices include small images multi-stage builds
+                                            volume usage
+                                            environment variables and secure secrets management. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker build ARG? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">ARG defines a variable that can be passed during build
+                                            time.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker build cache? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Build cache stores image layers to speed up subsequent
+                                            builds. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker build? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker build creates an image from a Dockerfile. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker cache? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker cache stores previously built layers to speed up
+                                            future
+                                            builds. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker CLI? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker CLI is a command-line interface to manage Docker
+                                            images
+                                            containers networks and volumes. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker commit? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker commit creates a new image from a container’s
+                                            current
+                                            state.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker compose down? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker compose down stops and removes containers
+                                            networks
+                                            and volumes
+                                            defined in a Compose file. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker compose logs? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker compose logs shows logs from all services in the
+                                            Compose
+                                            application. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker compose scale? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Compose scale adjusts the number of container instances
+                                            for
+                                            a
+                                            service. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker compose up? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker compose up builds creates and starts containers
+                                            defined in a
+                                            Compose file. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker Compose? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker Compose is a tool to define and run
+                                            multi-container
+                                            Docker
+                                            applications using a YAML file. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker Compose? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker Compose is a tool for defining and running
+                                            multi-container
+                                            applications using a docker-compose.yml file. It automates container
+                                            creation,
+                                            networking,
+                                            and scaling using simple commands like docker compose up.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker config? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker config stores non-sensitive configuration data
+                                            for
+                                            containers
+                                            in Swarm mode. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker container commit? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Container commit creates a new image from a running
+                                            container. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker container restart? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Container restart stops and starts a container. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker container? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A Docker container is a lightweight standalone
+                                            executable
+                                            package
+                                            that includes application code and all dependencies. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker context use? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Context use switches the active Docker environment or
+                                            endpoint.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker context? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker context allows switching between multiple Docker
+                                            environments
+                                            or endpoints. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker diff? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Diff shows changes made to container filesystem since
+                                            creation.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker Engine? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker Engine is the core component of Docker that
+                                            creates
+                                            and runs
+                                            Docker containers. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker ENTRYPOINT vs CMD combination? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">ENTRYPOINT defines executable; CMD provides default
+                                            arguments to
+                                            ENTRYPOINT. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker ENV? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">ENV sets environment variables inside a container at
+                                            build
+                                            or run
+                                            time. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker exec? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker exec runs a command inside a running container.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker EXPOSE? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">EXPOSE documents the port on which the container
+                                            listens.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker health check? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Health check monitors container status and defines
+                                            conditions for
+                                            healthy or unhealthy states. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker healthcheck command? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Healthcheck defines a command in Dockerfile to monitor
+                                            container
+                                            status. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker Hub? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker Hub is a cloud-based registry to store and share
+                                            Docker
+                                            images. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker image prune? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Image prune removes dangling (unused) images. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker image? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A Docker image is a read-only template used to create
+                                            Docker
+                                            containers containing the application and its dependencies. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker inspect format? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Inspect format uses Go templates to extract specific
+                                            JSON
+                                            fields.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker inspect? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker inspect returns detailed JSON information about
+                                            containers
+                                            images or networks. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker kill vs stop? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Kill forces container termination; stop gracefully stops
+                                            and
+                                            allows
+                                            cleanup. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker layer? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker layer is a filesystem layer created for each
+                                            Dockerfile
+                                            instruction during image build. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker load vs import? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Load imports an image from a tar file; import creates an
+                                            image from a
+                                            filesystem archive. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker login? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker login authenticates a user with a Docker
+                                            registry.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker logout? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker logout removes saved credentials for a Docker
+                                            registry. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker logs -f? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Logs -f streams container logs in real-time. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker logs? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker logs display the standard output and error of a
+                                            running or
+                                            stopped container. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker multi-stage build? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Multi-stage build reduces image size by using multiple
+                                            FROM
+                                            statements in a Dockerfile for building and final image creation. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker network create? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker network create creates a new Docker network.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker network inspect? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker network inspect shows detailed information about
+                                            a
+                                            network and
+                                            connected containers. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker network ls? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker network ls lists all networks on the Docker host.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker network types? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Types include bridge host overlay macvlan and none.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker network? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker network allows containers to communicate with
+                                            each
+                                            other or
+                                            with external networks. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker node? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker node is a Swarm cluster member (manager or
+                                            worker)
+                                            managed by
+                                            Docker. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker overlay network in Swarm? <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Overlay network allows services across multiple nodes to
+                                            communicate
+                                            securely. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker ports vs EXPOSE? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">EXPOSE only documents; ports (-p) maps container ports
+                                            to
+                                            host.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker prune -a? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker prune -a removes all stopped containers unused
+                                            networks images
+                                            and optionally volumes. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker prune containers? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Prune containers removes stopped containers to free
+                                            space.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker prune volume? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker prune volume removes unused volumes. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker prune? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker prune removes unused containers networks volumes
+                                            or
+                                            images.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker ps -a? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker ps -a lists all containers including stopped
+                                            ones.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker ps? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker ps lists running containers and their details.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker pull? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker pull downloads a Docker image from a registry.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker push? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker push uploads a Docker image to a registry. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker registry? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker registry stores Docker images; Docker Hub is a
+                                            public
+                                            registry
+                                            while private registries are also supported. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker replica? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Replica is an instance of a service running in a Swarm
+                                            cluster.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker restart always? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Restart always ensures the container restarts
+                                            automatically
+                                            if it
+                                            stops. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker restart policy? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Restart policy defines when a container should restart
+                                            e.g.
+                                            always
+                                            unless-stopped on-failure. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker rm? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker rm removes a stopped container. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker rmi? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker rmi removes a Docker image from the local system.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker save vs export? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Save exports an image as a tar file; export exports a
+                                            container
+                                            filesystem. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker secret vs config? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Secret stores sensitive data; config stores
+                                            non-sensitive
+                                            configuration data. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker secrets create? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker secrets create adds a secret to the Swarm
+                                            cluster.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker secrets inspect? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker secrets inspect shows details of a specific
+                                            secret.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker secrets ls? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker secrets ls lists all secrets in the Swarm
+                                            cluster.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker secrets? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker secrets securely store sensitive data like
+                                            passwords
+                                            or API
+                                            keys for use in containers. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker security? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker security includes using least privilege scanning
+                                            images
+                                            securing secrets and isolating containers. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker service update? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker service update updates a running service in a
+                                            Swarm
+                                            cluster.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker service? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker service runs a container or group of containers
+                                            across a Swarm
+                                            cluster with scaling and update capabilities. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker stack? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker stack deploys a group of services defined in a
+                                            Compose file to
+                                            a Swarm cluster. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker Stack? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker Stack is used in Docker Swarm to deploy and
+                                            manage
+                                            multi-service applications defined in a Compose file. It supports scaling,
+                                            rolling
+                                            updates, and distributed deployment across nodes.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker stats? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker stats shows real-time resource usage (CPU memory
+                                            network) for
+                                            containers. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker stop and Docker kill? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker stop gracefully stops a container; Docker kill
+                                            forces
+                                            termination. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker swarm init? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker swarm init initializes a Docker host as a Swarm
+                                            manager.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker swarm join? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker swarm join adds a node to a Swarm cluster. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker Swarm? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker Swarm is a native clustering and orchestration
+                                            tool
+                                            for Docker
+                                            allowing management of multiple Docker hosts. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker system df? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker system df shows disk usage of images containers
+                                            volumes and
+                                            build cache. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker tag? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker tag assigns a new name or version to an image.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker top vs exec? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Top shows running processes; exec runs a new command in
+                                            container.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker top? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker top shows running processes inside a container.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker USER? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">USER sets the username or UID to run the container
+                                            process.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker volume create? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker volume create creates a new persistent volume for
+                                            containers.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker volume ls? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker volume ls lists all Docker volumes on the host.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker volume? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A Docker volume is a persistent storage mechanism to
+                                            store
+                                            data
+                                            outside the container filesystem. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker WORKDIR? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">WORKDIR sets the working directory for container
+                                            commands.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker is a platform that allows developers to build
+                                            ship
+                                            and run
+                                            applications in lightweight portable containers. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Docker? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Docker is a containerization platform that packages
+                                            applications and
+                                            dependencies into lightweight, portable containers. It ensures consistent
+                                            environments
+                                            across development, testing, and production. Docker improves deployment
+                                            speed,
+                                            scalability, and resource utilization.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Dockerfile used for? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A Dockerfile contains a set of instructions to build a
+                                            Docker image
+                                            automatically. It defines the base image, application code, dependencies,
+                                            environment
+                                            variables, and commands to run the app inside a container.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Dockerfile? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A Dockerfile is a text file containing instructions to
+                                            build
+                                            a Docker
+                                            image. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Kubernetes Namespaces? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Namespaces logically isolate clusters into multiple
+                                            virtual
+                                            environments. They help manage resources, security policies, and team
+                                            separation
+                                            in large
+                                            applications. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Kubernetes? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Kubernetes is an open-source container orchestration
+                                            system
+                                            for
+                                            automating deployment, scaling, and management of containerized applications
+                                            across
+                                            clusters. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Node in Kubernetes? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A node is a physical or virtual machine in the
+                                            Kubernetes
+                                            cluster
+                                            that runs application workloads. It contains kubelet, container runtime, and
+                                            networking
+                                            components.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Overlay network? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Overlay network connects containers across multiple
+                                            Docker
+                                            hosts in a
+                                            Swarm cluster. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Pod in Kubernetes? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">A pod is the smallest deployable unit containing one or
+                                            more
+                                            containers sharing storage, networking, and lifecycle. Kubernetes schedules
+                                            and
+                                            manages
+                                            pods rather than individual containers.</div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Rolling update in Docker? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">Rolling update updates service replicas gradually to
+                                            avoid
+                                            downtime.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question">Scenarios where Java developers use Docker? <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">Docker is used for creating consistent dev environments,
+                                            Microservices deployment, CI/CD pipelines, testing distributed systems,
+                                            isolating
+                                            services, and running different Java versions without conflicts. </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question"> What is Docker? <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p> ® Docker is a open-source platform that allows you to build ,ship ,and
+                                                run
+                                                applications inside containers. </p>
+                                            <p> · A container is a lightweight, standalone and portable environment that
+                                                include
+                                                everything your application needs to run --&gt; like code, runtime,
+                                                librraies and
+                                                dependencies. </p>
+                                            <p> · With docker, developers can ensure their applications runs the same
+                                                way
+                                                everywhere –
+                                                whether on their laptop, a testing server or in the cloud. </p>
+                                            <p> · It solves the problem of “It works on my machine” , </p>
+                                            <p>because containers carry all dependencies with them. </p>
+                                            <p> In Short </p>
+                                            <p> · Docker = Platform to create and manage containers. </p>
+                                            <p> · Container = Small, portable environment to run applications with all
+                                                dependencies.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question"> Restart Policy <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p>In Docker, when we talk about policy, it usually refers to the restart
+                                                policies of
+                                                containers. </p>
+                                            <p>These policies define what should happen to a container when it stops,
+                                                crashes, or when
+                                                Docker itself restarts. </p>
+                                            <p> Types of restart Policy </p>
+                                            <p> 1. No (default) </p>
+                                            <p> 2. Always </p>
+                                            <p> 3. On- failure </p>
+                                            <p> 4. Unless- stopped </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question"> Always policy:- <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p> If container manual is off and always policy is set to on then container
+                                                will only
+                                                start when &quot;docker daemon restart&quot; </p>
+                                            <p> Command-- &gt; </p>
+                                            <p> docker container run –d –-restart always httpd </p>
+                                            <p> Always Policy </p>
+                                            <p> <img class="zoomable" onclick="openImage(this)"
+                                                    src="assets/img/docker/image002.webp"> </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question"> Unless-stopped:- <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p> If a container is down due to an error and has an Unless-stopped policy,
+                                                it
+                                                will only
+                                                restart when you &quot;restart docker daemon&quot; </p>
+                                            <p> Command -- &gt; </p>
+                                            <p> docker container run –d –-restart unless-stopped httpd </p>
+                                            <p> Unless-stopped policy </p>
+                                            <p> <img class="zoomable" onclick="openImage(this)"
+                                                    src="assets/img/docker/image003.webp">
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question"> On-failure:- <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p> When a container shuts down due to an error and has a no-failure policy,
+                                                the
+                                                container
+                                                will restart itself. </p>
+                                            <p> Command -- &gt; </p>
+                                            <p> Docker container run –d –-restart on-failure httpd </p>
+                                            <p> On –failure police </p>
+                                            <p> <img class="zoomable" onclick="openImage(this)"
+                                                    src="assets/img/docker/image004.webp"> </p>
+                                            <p> <img class="zoomable" id="Image 5"
+                                                    src="assets/img/docker/image005.webp">
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question"> Max Retry in on-failure Policy (English) <div
+                                                class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p> When you use the on-failure restart policy in Docker, you can set a
+                                                maximum
+                                                retry
+                                                count. </p>
+                                            <p> · This tells Docker how many times it should try to restart a failed
+                                                container before
+                                                giving up. </p>
+                                            <p> · If the container keeps failing and reaches the retry limit, Docker
+                                                will
+                                                stop trying.
+                                            </p>
+                                            <p> docker run -d --restart=on-failure:5 myapp </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question"> Port Mapping <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p> ® Every Docker container has its own network namespace (like a
+                                                mini-computer). </p>
+                                            <p> ® By default, services inside a container are not accessible from
+                                                outside
+                                                the host
+                                                machine. </p>
+                                            <p> ® Port Mapping is the process of exposing a container’s internal port to
+                                                the
+                                                host
+                                                machine’s port so that external users can access it.</p>
+                                            <p> It uses the -p or --publish option:- </p>
+                                            <p> docker container run –d –p &lt;host port&gt;:&lt;container port&gt;
+                                                httpd
+                                            </p>
+                                            <p> <img class="zoomable" onclick="openImage(this)"
+                                                    src="assets/img/docker/image006.webp"> </p>
+                                            <p> <img class="zoomable" id="Group 7"
+                                                    src="assets/img/docker/image007.webp">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question"> Networking <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p>Docker networking is how containers communicate with each other, with the
+                                                host machine,
+                                                and with the outside world (internet). </p>
+                                            <p> When Docker is installed, it creates some default networks. Containers
+                                                can
+                                                be attached
+                                                to these networks depending on how you want them to communicate. </p>
+                                            <p> Default Docker Networks </p>
+                                            <p> 1. bridge (default) </p>
+                                            <p> a. If you run a container without specifying a network, it connects to
+                                                the
+                                                bridge
+                                                network. </p>
+                                            <p> b. Containers on the same bridge network can communicate using IP
+                                                addresses.
+                                            </p>
+                                            <p> c. You can also create your own user-defined bridge for name-based
+                                                communication. </p>
+                                            <p> 2. host </p>
+                                            <p> a. Removes the isolation between the container and the host network.
+                                            </p>
+                                            <p> b. Container uses the host’s network directly. </p>
+                                            <p> c. Example: If container exposes port 80, it will be directly available
+                                                on
+                                                host port
+                                                80. </p>
+                                            <p> 3. none </p>
+                                            <p> a. Completely isolates the container from all networks. </p>
+                                            <p> b. No internet, no container-to-container communication. </p>
+                                            <p> How Containers Communicate </p>
+                                            <p> · Container ↔ Container (same bridge network) → via </p>
+                                            <p>container name or IP. </p>
+                                            <p> · Container ↔ Host → via port mapping ( -p hostPort:containerPort ).
+                                            </p>
+                                            <p> · Container ↔ Internet → via NAT (Network Address </p>
+                                            <p>Translation) on the host. </p>
+                                            <p> Command --&gt; docker network ls </p>
+                                            <p> <img class="zoomable" id="Image 10"
+                                                    src="assets/img/docker/image008.webp">
+                                            </p>
+                                            <p> Create a network-- &gt; </p>
+                                            <p> docker network create – -driver bridge network name </p>
+                                            <p> <img class="zoomable" id="Image 11"
+                                                    src="assets/img/docker/image009.webp">
+                                            </p>
+                                            <p> Docker network create – -driver bridge – -subnet 1G8.68.0.0/16 mynetwork
+                                            </p>
+                                            <p> <img class="zoomable" onclick="openImage(this)"
+                                                    src="assets/img/docker/image010.webp">
+                                            <p> Craete a container in our custom network </p>
+                                            <p> <img class="zoomable" onclick="openImage(this)"
+                                                    src="assets/img/docker/image011.webp">
+                                            <p> docker container inspect container name </p>
+                                            <p> <img class="zoomable" id="Group 14"
+                                                    src="assets/img/docker/image012.webp">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question"> Volume <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p> ® By default, anything you save inside a container is temporary. </p>
+                                            <p> ® If the container is deleted, all data inside it is lost. </p>
+                                            <p> ® Volumes are Docker’s way to store data permanently </p>
+                                            <p>(persistent storage). </p>
+                                            <p>A Docker Volume is a storage location outside the container’s </p>
+                                            <p>filesystem but managed by Docker. </p>
+                                            <p>This way, data remains safe even if the container is removed or
+                                                recreated.
+                                            </p>
+                                            <p> Why Use Volumes? </p>
+                                            <p> 1. Data Persistence → Data won’t be lost if the container is </p>
+                                            <p> deleted. </p>
+                                            <p> 2. Sharing Data → Multiple containers can share the same </p>
+                                            <p> volume. </p>
+                                            <p> 3. Performance → Better than bind mounts for production </p>
+                                            <p> workloads. </p>
+                                            <p> Types of volume:- </p>
+                                            <p> 1 Bind volume </p>
+                                            <p> 2 Local Mount/ Volume mount </p>
+                                            <p> Bind Mount:- </p>
+                                            <p> ® A Bind Mount directly connects a host machine’s directory/file to a
+                                                container’s
+                                                directory. </p>
+                                            <p> ® This means whatever changes you make inside the container will reflect
+                                                on
+                                                the host,
+                                                and vice versa. </p>
+                                            <p> ® It’s different from a Volume because: </p>
+                                            <p> ® Volumes are managed by Docker (stored in </p>
+                                            <p> /var/lib/assets/img/docker/volumes/... ) </p>
+                                            <p> ® Bind mounts are managed by you (stored anywhere on your host). </p>
+                                            <p> Command :- </p>
+                                            <p> docker container run –d –p 80:80 –v </p>
+                                            <p> /directory_name:/usr/local/apache2/htdocs </p>
+                                            <p> <img class="zoomable" id="Image 18"
+                                                    src="assets/img/docker/image013.webp">
+                                            </p>
+                                            <p> <img class="zoomable" id="Group 19"
+                                                    src="assets/img/docker/image014.webp">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question"> Local mount Create a Volume <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p> Command:- </p>
+                                            <p> docker volume create my- vol </p>
+                                            <p> <img class="zoomable" onclick="openImage(this)"
+                                                    src="assets/img/docker/image015.webp"> </p>
+                                            <p> <img class="zoomable" id="Group 24"
+                                                    src="assets/img/docker/image016.webp">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question"> Docker Image <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p> ® A Docker Image is a blueprint (template) used to create Docker
+                                                containers.
+                                            </p>
+                                            <p> ® It contains: </p>
+                                            <p> ® Application code </p>
+                                            <p> ® Dependencies (libraries, packages) </p>
+                                            <p> ® Configuration files </p>
+                                            <p> ® Environment settings </p>
+                                            <p> ® You can think of an image like a snapshot or read-only template. </p>
+                                            <p> ® When you run an image → it becomes a container. </p>
+                                            <p> Docker pull nginx </p>
+                                            <p> <img class="zoomable" id="Image 28"
+                                                    src="assets/img/docker/image017.webp">
+                                            </p>
+                                            <p> Types of Image Creation </p>
+                                            <p> 1 Commit Method </p>
+                                            <p> 2 Dockerfile Method </p>
+                                            <p> Commit mehtod:- </p>
+                                            <p> ® The docker commit command is used to create a new image from an
+                                                existing
+                                                container.
+                                            </p>
+                                            <p> ® This is helpful when you: </p>
+                                            <p> ® Run a container </p>
+                                            <p> ® Make changes inside it (install packages, edit files, configure apps)
+                                            </p>
+                                            <p> ® Then save those changes as a new Docker Image. </p>
+                                            <p> Push the Image on your DockerHub Command :- </p>
+                                            <p> <img class="zoomable" onclick="openImage(this)"
+                                                    src="assets/img/docker/image018.webp"> docker login –u
+                                                username(dockerHub username) </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question"> Create a Image for Docker Commit Method Commands :-
+                                            <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p>Vim index.html </p>
+                                            <p>--&gt; this is my commit method </p>
+                                            <p> · Docker container run –d – name web httpd </p>
+                                            <p> · Docker container cp index.html web:/usr/local/apache2/htdocs </p>
+                                            <p> · Docker container commit –a “grras” web team:latest( team=image name )
+                                            </p>
+                                            <p> <img class="zoomable" onclick="openImage(this)"
+                                                    src="assets/img/docker/image019.webp"> </p>
+                                            <p> Create a new container from custom image and hit the IP on browser and
+                                                show
+                                                the
+                                                contant </p>
+                                            <p> <img class="zoomable" onclick="openImage(this)"
+                                                    src="assets/img/docker/image020.webp">
+                                            <p> <img class="zoomable" id="Group 33"
+                                                    src="assets/img/docker/image021.webp">
+                                            </p>
+                                            <p> Push the Image on DockerHub Command :- </p>
+                                            <p> docker image tag team:latest username/team </p>
+                                            <p> docker image push username/team:latest </p>
+                                            <p> <img class="zoomable" onclick="openImage(this)"
+                                                    src="assets/img/docker/image022.webp"> </p>
+                                            <p> <img class="zoomable" id="Image 37"
+                                                    src="assets/img/docker/image023.webp">
+                                            </p>
+                                            <p> <img class="zoomable" onclick="openImage(this)"
+                                                    src="assets/img/docker/image024.webp">
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question"> Dockerfile <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p> ® A Dockerfile is a text file that contains a set of instructions to
+                                                build a
+                                                Docker
+                                                Image. </p>
+                                            <p> ® Instead of making changes in a container and committing (using docker
+                                                commit ), we
+                                                write instructions </p>
+                                            <p> in a Dockerfile → so the image can be </p>
+                                            <p> built automatically and repeatedly. </p>
+                                            <p> ® It ensures consistency (same image every time you build). </p>
+                                            <p> Common Instructions in Dockerfile: </p>
+                                            <p> · FROM → Base image (e.g., ubuntu, alpine, </p>
+                                            <p> nginx) </p>
+                                            <p> · RUN → Run commands (install packages) </p>
+                                            <p> · COPY → Copy files from host to image </p>
+                                            <p> · WORKDIR → Set working directory </p>
+                                            <p> · CMD → Default command to run when </p>
+                                            <p> container starts </p>
+                                            <p> · EXPOSE → Inform which port container </p>
+                                            <p> will use </p>
+                                            <p> mkdir docker </p>
+                                            <p> cd docker </p>
+                                            <p> Vim index.html </p>
+                                            <p> <img class="zoomable" onclick="openImage(this)"
+                                                    src="assets/img/docker/image025.webp">
+                                            <p> Docker image build . tag web Docker container run –d web:test</p>
+                                            <p> <img class="zoomable" id="Image 42"
+                                                    src="assets/img/docker/image026.webp">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item active">
+                                        <div class="faq-question"> Complete Docker <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p> <img class="zoomable" onclick="openImage(this)"
+                                                    src="assets/img/docker/image027.webp"> </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
       <div id="footer-placeholder"></div> <a href="#" id="scroll-top"
             class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
       <div id="preloader"></div>
