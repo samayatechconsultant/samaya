@@ -224,9 +224,10 @@
 
 
 
-  document.querySelectorAll(".faq-question-title").forEach(q => {
-    q.addEventListener("click", () => {
-      q.parentElement.classList.toggle("active");
+  document.querySelectorAll('.faq-item-title .title-icon').forEach(icon => {
+    icon.addEventListener('click', function () {
+      const faqItem = this.closest('.faq-item-title');
+      faqItem.classList.toggle('active');
     });
   });
    document.querySelectorAll(".faq-question").forEach(q => {
