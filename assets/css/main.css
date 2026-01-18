@@ -65,7 +65,8 @@
    background: #fff !important;
    color: #eaeaea;
    line-height: 1.7;
-   margin: 0;
+   margin: 0;    
+   margin-bottom: 50px !important;
  }
 
  a {
