@@ -1500,9 +1500,9 @@
    background: #0d6efd;
  }
 
- .faq-item-title.active .icon {
+ /* .faq-item-title.active .icon {
    transform: rotate(45deg);
- }
+ } */
 
 
  .heading-title {
