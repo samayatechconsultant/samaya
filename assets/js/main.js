@@ -41,6 +41,18 @@
           e.stopImmediatePropagation();
         });
       });
+
+
+      const faq_item_title = document.querySelectorAll(".faq-item-title");
+      const tot = document.getElementById("toggleTitleContent");
+      if (faq_item_title.length > 0) {
+        debugger;
+        document.getElementById("toggleTitleContent").style.display = "flex";
+      } else {
+        debugger;
+        document.getElementById("toggleTitleContent").style.display = "none";
+      }
+      
     }).catch(err => console.error("Nav load failed", err));
 
 
@@ -224,6 +236,10 @@
 
 
 
+
+
+
+
   document.querySelectorAll('.faq-item-title .title-icon').forEach(icon => {
     icon.addEventListener('click', function () {
       const faqItem = this.closest('.faq-item-title');
@@ -311,6 +327,7 @@ function closeImage() {
 function goBack() {
   history.back();
 }
+
 function toggleTitleContent(el) {
 
   const faq_titles = document.querySelectorAll(".faq-item-title");
