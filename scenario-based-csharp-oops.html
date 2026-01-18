@@ -101,9 +101,9 @@
                                             <div class="icon">+</div>
                                         </div>
                                         <div class="faq-answer">
-                                            <p> A: Use Span<T>, Memory<T>, or streaming </p>
+                                            <p> A: Use Span&lt;T&gt;, Memory&lt;T&gt;, or streaming </p>
                                             <p> Avoid loading all data into memory </p>
-                                            <p> Use ArrayPool<T> to reuse buffers </p>
+                                            <p> Use ArrayPool&lt;T&gt; to reuse buffers </p>
                                         </div>
                                     </div>
                                     <div class="faq-item active">
@@ -347,7 +347,7 @@
                                         </div>
                                     </div>
                                     <div class="faq-item active">
-                                        <div class="faq-question"> 🔶 Scenario 22 — Using Lazy<T> for Expensive
+                                        <div class="faq-question"> 🔶 Scenario 22 — Using Lazy&lt;T&gt; for Expensive
                                                 Initialization <p> Q:
                                                     You have an expensive object to create, used only sometimes. </p>
                                                 <div class="icon">+</div>
@@ -417,7 +417,7 @@
                                         </div>
                                         <div class="faq-answer">
                                             <p> Return copies </p>
-                                            <p> Use IReadOnlyCollection<T>
+                                            <p> Use IReadOnlyCollection&lt;T&gt;
                                             </p>
                                         </div>
                                     </div>
@@ -474,7 +474,7 @@
                                         <div class="faq-question"> 🔶 Scenario 32 — Preventing Service Locators <p> Q:
                                                 Code
                                                 uses
-                                                serviceProvider.GetService<T>() everywhere. Why is this bad? </p>
+                                                serviceProvider.GetService&lt;T&gt;() everywhere. Why is this bad? </p>
                                             <div class="icon">+</div>
                                         </div>
                                         <div class="faq-answer">
@@ -783,7 +783,7 @@
                                         </div>
                                         <div class="faq-answer">
                                             <p> Cause: Large object creation. </p>
-                                            <p> Fix: Object pooling + Span<T>. </p>
+                                            <p> Fix: Object pooling + Span&lt;T&gt;. </p>
                                         </div>
                                     </div>
                                     <div class="faq-item active">
@@ -934,7 +934,7 @@
                                             </div>
                                         </div>
                                         <div class="faq-answer">
-                                            <p> Fix: Use ref struct or Span<T>. </p>
+                                            <p> Fix: Use ref struct or Span&lt;T&gt;. </p>
                                         </div>
                                     </div>
                                     <div class="faq-item active">
@@ -999,7 +999,7 @@
                                         <div class="faq-question"> 87. Producer-Consumer Queue <div class="icon">+</div>
                                         </div>
                                         <div class="faq-answer">
-                                            <p> Use Channel<T> or BlockingCollection<T>. </p>
+                                            <p> Use Channel&lt;T&gt; or BlockingCollection&lt;T&gt;. </p>
                                         </div>
                                     </div>
                                     <div class="faq-item active">
@@ -1912,7 +1912,7 @@
                                         </div>
                                     </div>
                                     <div class="faq-item active">
-                                        <div class="faq-question"> 210. Span<T> Stack-only Types <div class="icon">+
+                                        <div class="faq-question"> 210. Span&lt;T&gt; Stack-only Types <div class="icon">+
                                                 </div>
                                         </div>
                                         <div class="faq-answer">
@@ -3321,9 +3321,9 @@
                                         </div>
                                         <div class="faq-answer">
                                             <p> Use: </p>
-                                            <p> ImmutableList<T>
+                                            <p> ImmutableList&lt;T&gt;
                                             </p>
-                                            <p> ImmutableDictionary<T>
+                                            <p> ImmutableDictionary&lt;T&gt;
                                             </p>
                                             <p> Avoid mutation. </p>
                                         </div>
@@ -5116,7 +5116,7 @@
                                             <div class="icon">+</div>
                                         </div>
                                         <div class="faq-answer">
-                                            <p> Use Lazy<T> or double-checked locking singleton. </p>
+                                            <p> Use Lazy&lt;T&gt; or double-checked locking singleton. </p>
                                         </div>
                                     </div>
                                     <div class="faq-item active">
