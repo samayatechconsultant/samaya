@@ -1,29 +1,299 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-        <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <title>Samaya Tech Consultant</title>
-        <meta content="" name="description">
-        <meta content="" name="keywords">
-        <link href="/assets/img/favicon.png" rel="icon">
-        <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-        <link href="https://fonts.googleapis.com" rel="preconnect">
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-                rel="stylesheet">
-        <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-        <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
-        <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-        <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-        <link href="/assets/css/main.css" rel="stylesheet">
-    
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Samaya Tech Consultant</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link href="/assets/img/favicon.png" rel="icon">
+    <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #1e293b;
+            --accent: #38bdf8;
+            --text: #e5e7eb;
+        }
+
+        .topic-meenu-body {
+            margin: 0;
+            background: #fff !important;
+            color: var(--text);
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        }
+
+        .topic-meenu-section {
+            background: #fff !important;
+        }
+
+        header {
+            padding: 20px;
+            font-size: 22px;
+            font-weight: 600;
+            text-align: center;
+            color: var(--accent);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            padding: 16px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .card {
+            background: var(--nav-dropdown-background-color);
+            border-radius: 14px;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #fd7e14;
+            cursor: pointer;
+            transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+            border: 2px solid #00ffff;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, .35);
+            background: var(--bs-form-valid-border-color);
+        }
+
+        .icon-wrap {
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            display: flex;
+            place-items: center;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .icon-wrap i+i {
+            margin-left: -47px;
+            font-size: 50px;
+            opacity: .9;
+            color: #22c55e;
+            z-index: 1;
+        }
+
+        .icon-wrap i {
+            color: #fd7e14;
+            z-index: 2;
+            font-size: -webkit-xxx-large;
+        }
+
+        .title {
+            font-size: 15px;
+            line-height: 1.2;
+            font-weight: 500;
+        }
+
+        @media (max-width:480px) {
+            header {
+                font-size: 18px
+            }
+
+            .title {
+                font-size: 14px
+            }
+        }
+    </style>
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
-<body>
-        <div id="nav-placeholder"></div>
+<body class="topic-meenu-body">
+    <div id="nav-placeholder"></div>
+
+    <main class="container">
+        <section class="topic-meenu-section">
+            <div class="container section-title" data-aos="fade-up">
+                <h2> Technology Knowledge Hub
+                </h2>
+            </div>
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row g-3">
+                    <div class="grid" id="grid"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+    <div id="preloader"></div>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/php-email-form/validate.js"></script>
+    <script src="/assets/vendor/aos/aos.js"></script>
+    <script src="/assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="/assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script>
+        const items = [
+            ["All In One IQAs", ["fa-layer-group"], "all-in-one-iqas.html"],
+            ["Advanced Microservices Architecture Images", ["fa-cubes"], "advanced-microservices-architecture-images.html"],
+            ["Microservices Architecture", ["fa-cubes"], "microservices-architecture.html"],
+            ["Scenario Based Microservices", ["fa-cubes fa-circle-question"], "scenario-based_microservices.html"],
+            ["Agile Methodology", ["fa-people-arrows"], "agile-methodology.html"],
+            ["Architecture Documentation Diagrams", ["fa-diagram-project"], "architecture-documentation-diagrams.html"],
+            ["Architecture System Design", ["fa-city"], "architecture-system-design.html"],
+            ["Architecture", ["fa-building"], "architecture.html"],
+            ["Clean Architecture", ["fa-layer-group"], "clean-architecture.html"],
+            ["DDD Domain Driven Design", ["bi bi-bounding-box"], "ddd-domain-driven-design.html"],
+            ["Design Pattern", ["fa-puzzle-piece"], "design-pattern.html"],
+            ["Draw.io & Lucidchart", ["fa-pen-ruler"], "draw.io-lucidchart.html"],
+            ["Engineer To Architect", ["fa-diagram-project"], "engineer-to-architect.html"],
+            ["Image Notes", ["fa-image"], "image-notes.html"],
+            ["Scalable Maintainable Design Patterns", ["fa-expand"], "scalable-maintainable-design-patterns.html"],
+            ["Scalable Solution Design", ["fa-chart-simple"], "scalable-solution-design.html"],
+            ["Microsoft Visio", ["fa-diagram-project"], "visio-qa.html"],
+            ["Api First Architecture", ["fa-plug"], "api-first-architecture.html"],
+            ["Api Gateways Explained", ["fa-door-open"], "api-gateways-explained.html"],
+            ["APIs", ["fa-code-branch"], "apis.html"],
+            ["GraphQL", ["fa-project-diagram"], "graphql.html"],
+            ["Loging Monitoring", ["fa-chart-line"], "loging-monitoring.html"],
+            ["Performence Optimization", ["fa-gauge-high"], "performence-optimization.html"],
+            ["Restful APIs", ["fa-arrows-left-right"], "restful-apis.html"],
+            ["Web API", ["fa-globe"], "web-api.html"],
+            ["Advanced Principal Architect Interview Guide Dotnet Azure Images", ["fa-user-tie fa-cloud"], "advanced-principal-architect-interview-guide-dotnet-azure-images.html"],
+            ["Advanced Principal Architect Interview Guide Dotnet Azure Images Explained", ["fa-user-tie fa-lightbulb"], "advanced-principal-architect-interview-guide-dotnet-azure-Images_explained.html"],
+            ["Azure App Services", ["fa-cloud-arrow-up"], "azure-app-services.html"],
+            ["Azure Devops Azure Pipelines", ["fa-infinity"], "azure-devops-azure-pipelines.html"],
+            ["Azure Devops", ["fa-infinity"], "azure-devops.html"],
+            ["Azure Functions", ["fa-microchip"], "azure-functions.html"],
+            ["Azure Key Vault", ["fa-key"], "azure-key-vault.html"],
+            ["Azure Repos", ["fa-folder-tree"], "azure-repos.html"],
+            ["Azure Service Bus", ["fa-truck-fast"], "azure-service-bus.html"],
+            ["Microsoft Azure", ["fa-cloud"], "microsoft-azure.html"],
+            ["Scenario Based Azure  Azure Function Scenario", ["fa-cloud-bolt"], "scenario-based-azure -azure-function-scenario.html"],
+            ["100+ Devops Essential Concepts", ["fa-gears"], "100+ devops essential concepts.html"],
+            ["Devops Commands Cheat Sheet", ["fa-terminal"], "devops-commands-cheat-sheet.html"],
+            ["Devops Interviews Question And Answer", ["fa-circle-question"], "devops-interviews-question-and-answer.html"],
+            ["Devops Shack 200 Jenkins Scenario Based Question And Answer", ["fa-gears fa-circle-question"], "devops-shack-200-jenkins-scenario-based-question-and-answer.html"],
+            ["Everything About Devops", ["fa-toolbox"], "everything-about-devops.html"],
+            ["Authorisation Cloud Security", ["fa-shield-halved fa-cloud"], "authorisation-cloud-security.html"],
+            ["Bitbucket", ["fa-bucket"], "bitbucket.html"],
+            ["CI/CD", ["fa-arrows-rotate"], "ci-cd.html"],
+            ["Docker", ["fa-docker"], "docker.html"],
+            ["Jenkins", ["fa-gears"], "jenkins.html"],
+            ["Kubernet", ["fa-network-wired"], "kubernet.html"],
+            ["Kubernetes Commands", ["fa-terminal"], "kubernetes-commands.html"],
+            ["Teamcity", ["fa-city"], "teamcity.html"],
+            ["Terraform", ["fa-globe"], "terraform.html"],
+            ["Git Operations", ["fa-code-merge"], "git-operations.html"],
+            ["Git Tags Releases", ["fa-tag"], "git-tags-releases.html"],
+            ["Git", ["fa-git-alt"], "git.html"],
+            ["Github Actions", ["fa-bolt"], "github-actions.html"],
+            ["Github", ["fa-github"], "github.html"],
+            ["Gitlab CI/D", ["fa-arrows-rotate"], "gitlab-ci-cd.html"],
+            ["Gitlab", ["fa-gitlab"], "gitlab.html"],
+            ["Code Reviews", ["fa-eye"], "code-reviews.html"],
+            ["Project Management Details", ["fa-solid bi bi-kanban-fill"], "project-management-details.html"],
+            ["Technical Leadership Mentoring", ["fa-people-group"], "technical-leadership-mentoring.html"],
+            ["Angular", ["fa-angular"], "angular.html"],
+            ["Javscript Jquery Ajax", ["fa-js"], "javscript-jquery-ajax.html"],
+            ["Node.js", ["fa-node-js"], "node.js.html"],
+            ["React", ["fa-react"], "react.html"],
+            ["Typescript", ["fa-file-code"], "typescript.html"],
+            ["Webhook", ["fa-bolt"], "webhook.html"],
+            ["MongoDB", ["fa-leaf"], "mongodb.html"],
+            ["PostgreSQL", ["fa-database"], "postgresql.html"],
+            ["SQL Server", ["fa-database"], "sql-server.html"],
+            ["SQL", ["fa-database"], "sql.html"],
+            ["Creatio CRM", ["fa-users-gear"], "creatio-crm.html"],
+            ["Payment Gateway", ["fa-credit-card"], "payment-gateways.html"],
+            ["Umbraco CMS", ["fa-window-maximize"], "umbraco-cms.html"],
+            ["ADO.Net", ["fa-database"], "ado.net.html"],
+            ["C#", ["fa-code"], "csharp.html"],
+            ["Dot Net Core", ["fa-circle-dot"], "dot-net-core.html"],
+            ["Entity Framework", ["fa-table"], "entity-framework.html"],
+            ["LINQ", ["fa-filter"], "linq.html"],
+            ["OOPs", ["fa-object-group"], "oop.html"],
+            ["Scenario Based C# & OOPs", ["fa-code fa-circle-question"], "scenario-based-csharp-oops.html"],
+            ["Scenario Based LINQ Entity Framework SQL", ["fa-filter fa-database"], "scenario-based_linq_entity_ framework_sql.html"],
+            ["Solid Principles", ["fa-gem"], "solid-principles.html"],
+            ["Top 100 IQAs", ["fa-trophy"], "top-100-iqa.html"],
+            ["WCF", ["fa-link"], "wcf.html"],
+            ["WPF", ["fa-window-restore"], "wpf.html"],
+            ["Ai Advanced Technologies", ["fa-brain"], "ai-advanced-technologies.html"],
+            ["Cloud Infrastructure", ["fa-cloud"], "cloud-infrastructure.html"],
+            ["CRM CMS & Payment Gateway", ["fa-credit-card fa-users"], "crm-cms-payment-gatways.html"],
+            ["Databases", ["fa-database"], "databases.html"],
+            ["Documentation Learning Resources", ["fa-book-open"], "documentation-learning-resources.html"],
+            ["Frontend UI", ["fa-palette"], "frontend-ui.html"],
+            ["Monitoring Logging Observability", ["fa-eye fa-chart-line"], "monitoring-logging-observability.html"],
+            ["Programming Languages Frameworks", ["fa-laptop-code"], "programming-languages-frameworks.html"],
+            ["Project Process Management", ["fa-diagram-next"], "project-process-management.html"],
+            ["Technical Leadership", ["fa-user-gear"], "technical-leadership.html"],
+            ["Home", ["fa-house"], "index.html"]
+
+
+        ];
+
+        const grid = document.getElementById("grid");
+
+        items.forEach(it => {
+            const card = document.createElement("div");
+            card.className = "card";
+            card.onclick = () => location.href = it[2];
+
+            const iconWrap = document.createElement("div");
+            iconWrap.className = "icon-wrap";
+
+            it[1].forEach(cls => {
+                const i = document.createElement("i");
+                i.className = "fa-solid " + cls;
+                iconWrap.appendChild(i);
+            });
+
+            const title = document.createElement("div");
+            title.className = "title";
+            title.textContent = it[0];
+
+            card.appendChild(iconWrap);
+            card.appendChild(title);
+            grid.appendChild(card);
+        });
+
+
+
+
+        
+    </script>
+</body>
+
+<!-- <body>
+            <div id="nav-placeholder"></div>
+    <div class="back-btn" onclick="goBack()">
+        <i class="bi bi-arrow-left-circle-fill" style="color: #fd7e14;"></i>
+    </div>
+ 
+
         <main class="main">
                 <section class="section Custombody">
                         <div class="container section-title" data-aos="fade-up">
@@ -38,8 +308,7 @@
                                                         <div class="icon">+</div>
                                                 </div>
                                                 <div class="faq-answer" style="padding: 0 20px 0 45px;">
-                                                        <p class="file-item"><a
-                                                                        href="all-in-one-iqas.html"
+                                                        <p class="file-item"><a href="all-in-one-iqas.html"
                                                                         class="text-color">All in One IQAs</a><i
                                                                         class="bi bi-file-text-fill"></i></p>
                                                         <p class="file-item"><a
@@ -98,9 +367,10 @@
                                                         <div class="icon">+</div>
                                                 </div>
                                                 <div class="faq-answer" style="padding: 0 20px 0 45px;">
-                                                        
+
                                                         <p class="file-item"><a href="engineer-to-architect.html"
-                                                                        class="text-color">E𝐧𝐠𝐢𝐧𝐞𝐞𝐫 𝐭𝐨 A𝐫𝐜𝐡𝐢𝐭𝐞𝐜𝐭</a><i
+                                                                        class="text-color">E𝐧𝐠𝐢𝐧𝐞𝐞𝐫 𝐭𝐨
+                                                                        A𝐫𝐜𝐡𝐢𝐭𝐞𝐜𝐭</a><i
                                                                         class="bi bi-file-text-fill"></i></p>
                                                         <p class="file-item"><a href="dot-net-core.html"
                                                                         class="text-color"> .NET Core</a><i
@@ -445,10 +715,10 @@
                                         class="bi bi-file-text-fill"></i> <iframe id="pdfFrame"></iframe> </div>
                 </div>
         </main>
+
         <div id="footer-placeholder"></div>
-        <p class="file-item"><a href="#" id="scroll-top"
-                        class="scroll-top d-flex align-items-center justify-content-center"><i
-                                class="bi bi-arrow-up-short"></i></a><i class="bi bi-file-text-fill"></i></p>
+        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+                        class="bi bi-arrow-up-short"></i></a>
         <div id="preloader"></div>
         <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="/assets/vendor/php-email-form/validate.js"></script>
@@ -461,7 +731,11 @@
         <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
         <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
         <script src="/assets/js/main.js"></script>
-</body>
-<!-- <body> <div id="nav-placeholder"></div> <main class="main"> <section class="section Custombody"> <div class="container section-title" data-aos="fade-up"> <h2>Topics </h2> </div> <div class="container" data-aos="fade-up" data-aos-delay="100"> <div class="row g-3"> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>🧠 Architecture & Design</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="services/topic.html" style="color: antiquewhite;"> Topics </a> <a href="architecture.html" style="color: antiquewhite;"> Architecture </a> <a href="microservices-architecture.html" style="color: antiquewhite;">Microservices Architecture </a> <a href="api-first-architecture.html" style="color: antiquewhite;">API First Architecture </a> <a href="clean-architecture.html" style="color: antiquewhite;">Clean Architecture </a> <a href="scalable-solution-design.html" style="color: antiquewhite;">Scalable Solution Design </a> <a href="scalable-maintainable-design-patterns.html" style="color: antiquewhite;">Scalable & Maintainable Design Patterns </a> <a href="design-pattern.html" style="color: antiquewhite;">Design Pattern </a> <a href="ddd-domain-driven-design.html" style="color: antiquewhite;">DDD (Domain-Driven Design) </a> <a href="solid-principles.html" style="color: antiquewhite;">SOLID Principles </a> <a href="architecture-documentation-diagrams.html" style="color: antiquewhite;">Architecture Documentation & Diagrams </a> </div> </div> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>API & Integration Technologies</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="apis.html" style="color: antiquewhite;"> APIs</a> <a href="restful-apis.html" style="color: antiquewhite;"> RESTful APIs</a> <a href="web-api.html" style="color: antiquewhite;"> Web API</a> <a href="graphql.html" style="color: antiquewhite;"> GraphQL</a> <a href="webhook.html" style="color: antiquewhite;"> Webhook</a> <a href="payment-gateways.html" style="color: antiquewhite;"> Payment Gateways</a> </div> </div> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>☁️ Cloud & Microsoft Azure</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="microsoft-azure.html" style="color: antiquewhite;"> Microsoft Azure</a> <a href="azure-app-services.html" style="color: antiquewhite;"> Azure App Services</a> <a href="azure-functions.html" style="color: antiquewhite;"> Azure Functions</a> <a href="azure-devops.html" style="color: antiquewhite;"> Azure DevOps</a> <a href="azure-devops-azure-pipelines.html" style="color: antiquewhite;"> Azure DevOps (Azure Pipelines)</a> <a href="azure-repos.html" style="color: antiquewhite;"> Azure Repos</a> <a href="azure-service-bus.html" style="color: antiquewhite;"> Azure Service Bus</a> <a href="azure-key-vault.html" style="color: antiquewhite;"> Azure Key Vault</a> </div> </div> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>⚙️ DevOps, CI/CD & Automation</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="ci-cd.html" style="color: antiquewhite;"> CI/CD</a> <a href="jenkins.html" style="color: antiquewhite;"> Jenkins</a> <a href="gitlab-ci-cd.html" style="color: antiquewhite;"> GitHub Actions</a> <a href="git-tags-releases.html" style="color: antiquewhite;"> GitLab CI/CD</a> <a href="teamcity.html" style="color: antiquewhite;"> TeamCity</a> <a href="terraform.html" style="color: antiquewhite;"> Terraform</a> <a href="docker.html" style="color: antiquewhite;"> Docker</a> <a href="kubernet.html" style="color: antiquewhite;"> Kubernet</a> </div> </div> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>🧑‍💻 Programming Languages & Frameworks</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="dot-net-core.html" style="color: antiquewhite;"> .NET Core</a> <a href="csharp.html" style="color: antiquewhite;"> C#</a> <a href="wcf.html" style="color: antiquewhite;"> WCF</a> <a href="wpf.html" style="color: antiquewhite;"> WPF</a> </div> </div> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>🌐 Frontend Technologies</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="angular.html" style="color: antiquewhite;"> Angular</a> <a href="react.html" style="color: antiquewhite;"> React</a> <a href="javscript-jquery-ajax.html" style="color: antiquewhite;"> JavScript, jQuery & AJAX</a> <a href="typescript.html" style="color: antiquewhite;"> TypeScript</a> <a href="node.js.html" style="color: antiquewhite;"> Node.js</a> <a href="webhook.html" style="color: antiquewhite;"> Webhook</a> </div> </div> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>🗄️ Databases & Data Access</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="sql.html" style="color: antiquewhite;"> SQL</a> <a href="sql-server.html" style="color: antiquewhite;"> SQL Server</a> <a href="postgresql.html" style="color: antiquewhite;"> PostgreSQL</a> <a href="mongodb.html" style="color: antiquewhite;"> MongoDB</a> <a href="entity-framework.html" style="color: antiquewhite;"> Entity Framework</a> <a href="ado.net.html" style="color: antiquewhite;"> ADO.NET</a> <a href="linq.html" style="color: antiquewhite;"> LINQ</a> </div> </div> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>🔐 Security</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="authorisation-cloud-security.html" style="color: antiquewhite;"> Authorisation Cloud Security</a> </div> </div> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>📊 Monitoring, Performance & Quality</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="loging-monitoring.html" style="color: antiquewhite;"> Loging & Monitoring</a> <a href="performence-optimization.html" style="color: antiquewhite;"> Performence Optimization</a> <a href="code-reviews.html" style="color: antiquewhite;"> Code Reviews</a> <a href="top-100-iqa.html" style="color: antiquewhite;"> Top 100 IQA</a> <a href="visio-qa.html" style="color: antiquewhite;"> Visio QA</a> </div> </div> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>🔧 Version Control & Collaboration</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="git.html" style="color: antiquewhite;"> Git</a> <a href="github.html" style="color: antiquewhite;"> Git Operations</a> <a href="github-actions.html" style="color: antiquewhite;"> Git Tags & Releases</a> <a href="gitlab.html" style="color: antiquewhite;"> GitHub</a> <a href="git-operations.html" style="color: antiquewhite;"> GitLab</a> <a href="bitbucket.html" style="color: antiquewhite;"> Bitbucket</a> </div> </div> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>🧩 Development Practices & Methodologies</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="agile-methodology.html" style="color: antiquewhite;"> Agile methodology</a> <a href="oop.html" style="color: antiquewhite;"> OOP</a> <a href="technical-leadership-mentoring.html" style="color: antiquewhite;"> Technical Leadership & Mentoring</a> </div> </div> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>📐 Diagramming,Documentation Tools & CRM</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="draw.io-lucidchart.html" style="color: antiquewhite;"> Draw.io / Lucidchart</a> <a href="creatio-crm.html" style="color: antiquewhite;"> Creatio CRM</a> <a href="umbraco-cms.html" style="color: antiquewhite;"> Umbraco CMS</a> </div> </div> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>🧩IQAs PDF</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="scenario-based_microservices.html" style="color: antiquewhite;"> Scenario Based Microservices</a> <a href="scenario-based-azure -azure-function-scenario.html" style="color: antiquewhite;"> Scenario Based Azure & Azure Functions</a> <a href="scenario-based_linq_entity_ framework_sql.html" style="color: antiquewhite;"> Scenario Based LINQ Framework SQL</a> <a href="scenario-based-csharp-oops.html" style="color: antiquewhite;"> Scenario Based C# & OOPS</a> <a href="100+ devops essential concepts.html" style="color: antiquewhite;"> 100+ Devops Essential Concepts</a> <a href="devops-shack-200-jenkins-scenario-based-question-and-answer.html" style="color: antiquewhite;"> DevOps Shack 200 Jenkins Scenario Based Question and Answer</a> <a href="devops-interviews-question-and-answer.html" style="color: antiquewhite;"> Devops Interviews Question And Answer</a> <a href="everything-about-devops.html" style="color: antiquewhite;"> Everything About Devops</a> <a href="devops-commands-cheat-sheet.html" style="color: antiquewhite;"> Devops Commands Cheat Sheet</a> <a href="api-gateways-explained.html" style="color: antiquewhite;"> Api Gateways Explained</a> <a href="kubernetes-commands.html" style="color: antiquewhite;"> Kubernetes Commands</a> <p><span onclick="openPdf(this)" data-pdf="/assets/pdf/api-gateways-explained.pdf" style="color: antiquewhite;"> Api Gateways Explained.pdf</span></p> <p><span onclick="openPdf(this)" data-pdf="/assets/pdf/bash.pdf" style="color: antiquewhite;"> Bash</span> </p> <p><span onclick="openPdf(this)" data-pdf="/assets/pdf/devops-commands.pdf" style="color: antiquewhite;"> Devops Commands </span></p> <p><span onclick="openPdf(this)" data-pdf="/assets/pdf/devops-interview-questions.pdf" style="color: antiquewhite;"> Devops Interview Questions </span></p> <p><span onclick="openPdf(this)" data-pdf="/assets/pdf/devops.pdf" style="color: antiquewhite;"> Devops</span></p> <p><span onclick="openPdf(this)" data-pdf="/assets/pdf/docker.pdf" style="color: antiquewhite;"> Docker</span></p> <p><span onclick="openPdf(this)" data-pdf="/assets/pdf/kubernetes.pdf" style="color: antiquewhite;"> Kubernetes </span></p> <p><span onclick="openPdf(this)" data-pdf="/assets/pdf/kubernetes-commands.pdf" style="color: antiquewhite;"> Kubernetes Commands </span></p> <p><span onclick="openPdf(this)" data-pdf="/assets/pdf/llms.pdf" style="color: antiquewhite;"> Llms</span> </p> <p><span onclick="openPdf(this)" data-pdf="/assets/pdf/prometheus-notes.pdf" style="color: antiquewhite;"> Prometheus Notes</span></p> <p><span onclick="openPdf(this)" data-pdf="/assets/pdf/security-basics.pdf" style="color: antiquewhite;"> Security Basics </span></p> </div> </div> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>🖼️Visualised Info</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="project-management-details.html" style="color: antiquewhite;">Project Management Details </a> <a href="image-notes.html" style="color: antiquewhite;"> Image Notes </a> <a href="advanced-microservices-architecture-images.html" style="color: antiquewhite;">Advanced Microservices Architecture Images </a> <a href="advanced-principal-architect-interview-guide-dotnet-azure-images.html" style="color: antiquewhite;">Advanced Principal Architect Interview Guide DotNet Azure Images </a> </div> </div> </div> </div> </section> <div id="pdfModal" class="modal"> <div class="modal-content"> <span class="close" onclick="closePdf()">&times;</span> <iframe id="pdfFrame"></iframe> </div> </div> </main> <div id="footer-placeholder"></div> <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> <div id="preloader"></div> <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> <script src="/assets/vendor/php-email-form/validate.js"></script> <script src="/assets/vendor/aos/aos.js"></script> <script src="/assets/vendor/typed.js/typed.umd.js"></script> <script src="/assets/vendor/purecounter/purecounter_vanilla.js"></script> <script src="/assets/vendor/waypoints/noframework.waypoints.js"></script> <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script> <script src="/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script> <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script> <script src="/assets/js/main.js"></script> </body> -->
+</body> -->
+<!-- <body>     <div id="nav-placeholder"></div>
+    <div class="back-btn" onclick="goBack()">
+        <i class="bi bi-arrow-left-circle-fill" style="color: #fd7e14;"></i>
+    </div>
+  <main class="main"> <section class="section Custombody"> <div class="container section-title" data-aos="fade-up"> <h2>Topics </h2> </div> <div class="container" data-aos="fade-up" data-aos-delay="100"> <div class="row g-3"> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>🧠 Architecture & Design</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="services/topic.html" style="color: antiquewhite;"> Topics </a> <a href="architecture.html" style="color: antiquewhite;"> Architecture </a> <a href="microservices-architecture.html" style="color: antiquewhite;">Microservices Architecture </a> <a href="api-first-architecture.html" style="color: antiquewhite;">API First Architecture </a> <a href="clean-architecture.html" style="color: antiquewhite;">Clean Architecture </a> <a href="scalable-solution-design.html" style="color: antiquewhite;">Scalable Solution Design </a> <a href="scalable-maintainable-design-patterns.html" style="color: antiquewhite;">Scalable & Maintainable Design Patterns </a> <a href="design-pattern.html" style="color: antiquewhite;">Design Pattern </a> <a href="ddd-domain-driven-design.html" style="color: antiquewhite;">DDD (Domain-Driven Design) </a> <a href="solid-principles.html" style="color: antiquewhite;">SOLID Principles </a> <a href="architecture-documentation-diagrams.html" style="color: antiquewhite;">Architecture Documentation & Diagrams </a> </div> </div> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>API & Integration Technologies</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="apis.html" style="color: antiquewhite;"> APIs</a> <a href="restful-apis.html" style="color: antiquewhite;"> RESTful APIs</a> <a href="web-api.html" style="color: antiquewhite;"> Web API</a> <a href="graphql.html" style="color: antiquewhite;"> GraphQL</a> <a href="webhook.html" style="color: antiquewhite;"> Webhook</a> <a href="payment-gateways.html" style="color: antiquewhite;"> Payment Gateways</a> </div> </div> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>☁️ Cloud & Microsoft Azure</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="microsoft-azure.html" style="color: antiquewhite;"> Microsoft Azure</a> <a href="azure-app-services.html" style="color: antiquewhite;"> Azure App Services</a> <a href="azure-functions.html" style="color: antiquewhite;"> Azure Functions</a> <a href="azure-devops.html" style="color: antiquewhite;"> Azure DevOps</a> <a href="azure-devops-azure-pipelines.html" style="color: antiquewhite;"> Azure DevOps (Azure Pipelines)</a> <a href="azure-repos.html" style="color: antiquewhite;"> Azure Repos</a> <a href="azure-service-bus.html" style="color: antiquewhite;"> Azure Service Bus</a> <a href="azure-key-vault.html" style="color: antiquewhite;"> Azure Key Vault</a> </div> </div> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>⚙️ DevOps, CI/CD & Automation</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="ci-cd.html" style="color: antiquewhite;"> CI/CD</a> <a href="jenkins.html" style="color: antiquewhite;"> Jenkins</a> <a href="gitlab-ci-cd.html" style="color: antiquewhite;"> GitHub Actions</a> <a href="git-tags-releases.html" style="color: antiquewhite;"> GitLab CI/CD</a> <a href="teamcity.html" style="color: antiquewhite;"> TeamCity</a> <a href="terraform.html" style="color: antiquewhite;"> Terraform</a> <a href="docker.html" style="color: antiquewhite;"> Docker</a> <a href="kubernet.html" style="color: antiquewhite;"> Kubernet</a> </div> </div> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>🧑‍💻 Programming Languages & Frameworks</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="dot-net-core.html" style="color: antiquewhite;"> .NET Core</a> <a href="csharp.html" style="color: antiquewhite;"> C#</a> <a href="wcf.html" style="color: antiquewhite;"> WCF</a> <a href="wpf.html" style="color: antiquewhite;"> WPF</a> </div> </div> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>🌐 Frontend Technologies</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="angular.html" style="color: antiquewhite;"> Angular</a> <a href="react.html" style="color: antiquewhite;"> React</a> <a href="javscript-jquery-ajax.html" style="color: antiquewhite;"> JavScript, jQuery & AJAX</a> <a href="typescript.html" style="color: antiquewhite;"> TypeScript</a> <a href="node.js.html" style="color: antiquewhite;"> Node.js</a> <a href="webhook.html" style="color: antiquewhite;"> Webhook</a> </div> </div> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>🗄️ Databases & Data Access</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="sql.html" style="color: antiquewhite;"> SQL</a> <a href="sql-server.html" style="color: antiquewhite;"> SQL Server</a> <a href="postgresql.html" style="color: antiquewhite;"> PostgreSQL</a> <a href="mongodb.html" style="color: antiquewhite;"> MongoDB</a> <a href="entity-framework.html" style="color: antiquewhite;"> Entity Framework</a> <a href="ado.net.html" style="color: antiquewhite;"> ADO.NET</a> <a href="linq.html" style="color: antiquewhite;"> LINQ</a> </div> </div> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>🔐 Security</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="authorisation-cloud-security.html" style="color: antiquewhite;"> Authorisation Cloud Security</a> </div> </div> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>📊 Monitoring, Performance & Quality</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="loging-monitoring.html" style="color: antiquewhite;"> Loging & Monitoring</a> <a href="performence-optimization.html" style="color: antiquewhite;"> Performence Optimization</a> <a href="code-reviews.html" style="color: antiquewhite;"> Code Reviews</a> <a href="top-100-iqa.html" style="color: antiquewhite;"> Top 100 IQA</a> <a href="visio-qa.html" style="color: antiquewhite;"> Visio QA</a> </div> </div> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>🔧 Version Control & Collaboration</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="git.html" style="color: antiquewhite;"> Git</a> <a href="github.html" style="color: antiquewhite;"> Git Operations</a> <a href="github-actions.html" style="color: antiquewhite;"> Git Tags & Releases</a> <a href="gitlab.html" style="color: antiquewhite;"> GitHub</a> <a href="git-operations.html" style="color: antiquewhite;"> GitLab</a> <a href="bitbucket.html" style="color: antiquewhite;"> Bitbucket</a> </div> </div> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>🧩 Development Practices & Methodologies</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="agile-methodology.html" style="color: antiquewhite;"> Agile methodology</a> <a href="oop.html" style="color: antiquewhite;"> OOP</a> <a href="technical-leadership-mentoring.html" style="color: antiquewhite;"> Technical Leadership & Mentoring</a> </div> </div> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>📐 Diagramming,Documentation Tools & CRM</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="draw.io-lucidchart.html" style="color: antiquewhite;"> Draw.io / Lucidchart</a> <a href="creatio-crm.html" style="color: antiquewhite;"> Creatio CRM</a> <a href="umbraco-cms.html" style="color: antiquewhite;"> Umbraco CMS</a> </div> </div> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>🧩IQAs PDF</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="scenario-based_microservices.html" style="color: antiquewhite;"> Scenario Based Microservices</a> <a href="scenario-based-azure -azure-function-scenario.html" style="color: antiquewhite;"> Scenario Based Azure & Azure Functions</a> <a href="scenario-based_linq_entity_ framework_sql.html" style="color: antiquewhite;"> Scenario Based LINQ Framework SQL</a> <a href="scenario-based-csharp-oops.html" style="color: antiquewhite;"> Scenario Based C# & OOPS</a> <a href="100+ devops essential concepts.html" style="color: antiquewhite;"> 100+ Devops Essential Concepts</a> <a href="devops-shack-200-jenkins-scenario-based-question-and-answer.html" style="color: antiquewhite;"> DevOps Shack 200 Jenkins Scenario Based Question and Answer</a> <a href="devops-interviews-question-and-answer.html" style="color: antiquewhite;"> Devops Interviews Question And Answer</a> <a href="everything-about-devops.html" style="color: antiquewhite;"> Everything About Devops</a> <a href="devops-commands-cheat-sheet.html" style="color: antiquewhite;"> Devops Commands Cheat Sheet</a> <a href="api-gateways-explained.html" style="color: antiquewhite;"> Api Gateways Explained</a> <a href="kubernetes-commands.html" style="color: antiquewhite;"> Kubernetes Commands</a> <p><span onclick="openPdf(this)" data-pdf="/assets/pdf/api-gateways-explained.pdf" style="color: antiquewhite;"> Api Gateways Explained.pdf</span></p> <p><span onclick="openPdf(this)" data-pdf="/assets/pdf/bash.pdf" style="color: antiquewhite;"> Bash</span> </p> <p><span onclick="openPdf(this)" data-pdf="/assets/pdf/devops-commands.pdf" style="color: antiquewhite;"> Devops Commands </span></p> <p><span onclick="openPdf(this)" data-pdf="/assets/pdf/devops-interview-questions.pdf" style="color: antiquewhite;"> Devops Interview Questions </span></p> <p><span onclick="openPdf(this)" data-pdf="/assets/pdf/devops.pdf" style="color: antiquewhite;"> Devops</span></p> <p><span onclick="openPdf(this)" data-pdf="/assets/pdf/docker.pdf" style="color: antiquewhite;"> Docker</span></p> <p><span onclick="openPdf(this)" data-pdf="/assets/pdf/kubernetes.pdf" style="color: antiquewhite;"> Kubernetes </span></p> <p><span onclick="openPdf(this)" data-pdf="/assets/pdf/kubernetes-commands.pdf" style="color: antiquewhite;"> Kubernetes Commands </span></p> <p><span onclick="openPdf(this)" data-pdf="/assets/pdf/llms.pdf" style="color: antiquewhite;"> Llms</span> </p> <p><span onclick="openPdf(this)" data-pdf="/assets/pdf/prometheus-notes.pdf" style="color: antiquewhite;"> Prometheus Notes</span></p> <p><span onclick="openPdf(this)" data-pdf="/assets/pdf/security-basics.pdf" style="color: antiquewhite;"> Security Basics </span></p> </div> </div> <div class="faq-item"> <div class="faq-question col-md-6"><span> <h5>🖼️Visualised Info</h5> </span> <div class="icon">+</div> </div> <div class="faq-answer" style="padding: 0 20px 0 45px;"> <a href="project-management-details.html" style="color: antiquewhite;">Project Management Details </a> <a href="image-notes.html" style="color: antiquewhite;"> Image Notes </a> <a href="advanced-microservices-architecture-images.html" style="color: antiquewhite;">Advanced Microservices Architecture Images </a> <a href="advanced-principal-architect-interview-guide-dotnet-azure-images.html" style="color: antiquewhite;">Advanced Principal Architect Interview Guide DotNet Azure Images </a> </div> </div> </div> </div> </section> <div id="pdfModal" class="modal"> <div class="modal-content"> <span class="close" onclick="closePdf()">&times;</span> <iframe id="pdfFrame"></iframe> </div> </div> </main> <div id="footer-placeholder"></div> <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> <div id="preloader"></div> <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> <script src="/assets/vendor/php-email-form/validate.js"></script> <script src="/assets/vendor/aos/aos.js"></script> <script src="/assets/vendor/typed.js/typed.umd.js"></script> <script src="/assets/vendor/purecounter/purecounter_vanilla.js"></script> <script src="/assets/vendor/waypoints/noframework.waypoints.js"></script> <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script> <script src="/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script> <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script> <script src="/assets/js/main.js"></script> </body> -->
 
 </html>
