@@ -1,6 +1,2 @@
-Thanks for downloading this template!
-
-Template Name: MyResume
-Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Experienced .NET Architect / Technical Lead with 13+ years in enterprise solution development and 4+ years specializing in Creatio CRM and low-code automation. Strong background in architecting integrated multi-system platforms and driving digital transformation for clients across the USA, UK, Europe, Canada, and Australia.
+Enterprise Architecture & Solution Design | Creatio CRM Customization & Integrations | Microservices, Cloud & DevOps (Azure, Docker, Kubernetes) |Full-Stack Development (ASP.NET Core, C#, Angular, React) | Database Design & Optimization (SQL Server, PostgreSQL, MongoDB, Cosmos DB) | REST/SOAP/OData API Integrations | Leadership, Client Engagement & Technical Mentorship
