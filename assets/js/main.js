@@ -311,21 +311,21 @@ function closeImage() {
 function goBack() {
   history.back();
 }
-function toggleTitleContent(el) { 
-  const faqes = document.querySelectorAll(".faq-item");
+function toggleTitleContent(el) {
 
-  // If icon is right, we are going to OPEN all
+  const faq_titles = document.querySelectorAll(".faq-item-title");
   const willOpen = el.classList.contains("bi-eye-fill");
-
-  faqes.forEach(e => {
-    if (willOpen) {
-      e.classList.add("active");
-    } else {
-      e.classList.remove("active");
-    }
+  faq_titles.forEach(title => {
+    const faqes = title.querySelectorAll(".faq-item");
+    faqes.forEach(e => {
+      if (willOpen) {
+        e.classList.add("active");
+      } else {
+        e.classList.remove("active");
+      }
+    });
   });
 
-  // Update icon
   if (willOpen) {
     el.classList.remove("bi-eye-fill");
     el.classList.add("bi-eye-slash-fill");
