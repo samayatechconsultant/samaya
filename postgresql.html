@@ -28,7 +28,7 @@
 
     <main class="container" id="tab_content_52">
         <section class="iqas-section">
-            <div class="faq-item-title active">
+            <div class="faq-item-title">
                 <div class="faq-question-title">
                     <div class="container section-title" data-aos="fade-up">
                         <div class="faq-question-title">
@@ -38,7 +38,7 @@
                         <div class="faq-answer-title">
                             <div class="container" data-aos="fade-up" data-aos-delay="100">
                                 <div class="row">
-                                    <div class="faq-item active">
+                                    <div class="faq-item">
                                         <div class="faq-question">Concurrency managed? <div class="icon">+</div>
                                         </div>
                                         <div class="faq-answer">PostgreSQL uses MVCC (Multi-Version Concurrency Control)
@@ -46,14 +46,14 @@
                                             handle
                                             multiple transactions without locks, ensuring consistency.</div>
                                     </div>
-                                    <div class="faq-item active">
+                                    <div class="faq-item">
                                         <div class="faq-question">Constraints in PostgreSQL? <div class="icon">+</div>
                                         </div>
                                         <div class="faq-answer">Constraints enforce rules on data. Examples: NOT NULL,
                                             UNIQUE,
                                             PRIMARY KEY, FOREIGN KEY, CHECK.</div>
                                     </div>
-                                    <div class="faq-item active">
+                                    <div class="faq-item">
                                         <div class="faq-question">DiffBet DELETE and TRUNCATE in PostgreSQL? <div
                                                 class="icon">+
                                             </div>
@@ -62,7 +62,7 @@
                                             TRUNCATE removes
                                             all rows, is faster, and cannot be rolled back in older versions.</div>
                                     </div>
-                                    <div class="faq-item active">
+                                    <div class="faq-item">
                                         <div class="faq-question">DiffBet INNER JOIN and LEFT JOIN in PostgreSQL? <div
                                                 class="icon">+
                                             </div>
@@ -72,7 +72,7 @@
                                             table
                                             rows with NULL for unmatched right rows.</div>
                                     </div>
-                                    <div class="faq-item active">
+                                    <div class="faq-item">
                                         <div class="faq-question">DiffBet SERIAL and IDENTITY? <div class="icon">+</div>
                                         </div>
                                         <div class="faq-answer">SERIAL is a pseudo-type for auto-increment integers.
@@ -80,7 +80,7 @@
                                             SQL-standard and supported from PostgreSQL 10+ for sequence-generated IDs.
                                         </div>
                                     </div>
-                                    <div class="faq-item active">
+                                    <div class="faq-item">
                                         <div class="faq-question">DiffBet SQL Server and PostgreSQL? <div class="icon">+
                                             </div>
                                         </div>
@@ -90,7 +90,7 @@
                                             data types.
                                         </div>
                                     </div>
-                                    <div class="faq-item active">
+                                    <div class="faq-item">
                                         <div class="faq-question">DiffBet temporary and unlogged tables? <div
                                                 class="icon">+
                                             </div>
@@ -100,14 +100,14 @@
                                             Unlogged tables skip WAL logging for faster writes but are non-durable after
                                             crash.</div>
                                     </div>
-                                    <div class="faq-item active">
+                                    <div class="faq-item">
                                         <div class="faq-question">EXPLAIN in PostgreSQL? <div class="icon">+</div>
                                         </div>
                                         <div class="faq-answer">EXPLAIN shows the query execution plan for optimization.
                                             EXPLAIN
                                             ANALYZE runs the query and shows actual runtime stats.</div>
                                     </div>
-                                    <div class="faq-item active">
+                                    <div class="faq-item">
                                         <div class="faq-question">Function in PostgreSQL? <div class="icon">+</div>
                                         </div>
                                         <div class="faq-answer">A function is a reusable code block returning a value,
@@ -115,21 +115,21 @@
                                             stored procedures. Supports PL/pgSQL, SQL, and other procedural languages.
                                         </div>
                                     </div>
-                                    <div class="faq-item active">
+                                    <div class="faq-item">
                                         <div class="faq-question">Indexes in PostgreSQL? <div class="icon">+</div>
                                         </div>
                                         <div class="faq-answer">Indexes speed up query performance. Types: B-tree, Hash,
                                             GIN, GiST,
                                             BRIN. </div>
                                     </div>
-                                    <div class="faq-item active">
+                                    <div class="faq-item">
                                         <div class="faq-question">JSON support in PostgreSQL? <div class="icon">+</div>
                                         </div>
                                         <div class="faq-answer">PostgreSQL supports JSON and JSONB types for storing and
                                             querying
                                             structured data efficiently.</div>
                                     </div>
-                                    <div class="faq-item active">
+                                    <div class="faq-item">
                                         <div class="faq-question">Materialized view? <div class="icon">+</div>
                                         </div>
                                         <div class="faq-answer">Materialized view stores the result of a query
@@ -137,7 +137,7 @@
                                             Can be
                                             refreshed periodically for performance optimization.</div>
                                     </div>
-                                    <div class="faq-item active">
+                                    <div class="faq-item">
                                         <div class="faq-question">pgAdmin? <div class="icon">+</div>
                                         </div>
                                         <div class="faq-answer">pgAdmin is a web-based administration tool for
@@ -145,14 +145,14 @@
                                             databases.
                                         </div>
                                     </div>
-                                    <div class="faq-item active">
+                                    <div class="faq-item">
                                         <div class="faq-question">PostgreSQL data types? <div class="icon">+</div>
                                         </div>
                                         <div class="faq-answer">Common types: INTEGER, BIGINT, NUMERIC, VARCHAR, TEXT,
                                             BOOLEAN, DATE,
                                             JSON, UUID. </div>
                                     </div>
-                                    <div class="faq-item active">
+                                    <div class="faq-item">
                                         <div class="faq-question">PostgreSQL? <div class="icon">+</div>
                                         </div>
                                         <div class="faq-answer">PostgreSQL is an open-source object-relational database
@@ -160,21 +160,21 @@
                                             supporting SQL and advanced features like JSON, indexing, and concurrency
                                             control.</div>
                                     </div>
-                                    <div class="faq-item active">
+                                    <div class="faq-item">
                                         <div class="faq-question">Role in PostgreSQL? <div class="icon">+</div>
                                         </div>
                                         <div class="faq-answer">A role can be a user or a group, controlling access to
                                             databases,
                                             schemas, and tables.</div>
                                     </div>
-                                    <div class="faq-item active">
+                                    <div class="faq-item">
                                         <div class="faq-question">Schema in PostgreSQL? <div class="icon">+</div>
                                         </div>
                                         <div class="faq-answer">A schema is a namespace to group database objects like
                                             tables, views,
                                             and functions. It allows object organization and access control.</div>
                                     </div>
-                                    <div class="faq-item active">
+                                    <div class="faq-item">
                                         <div class="faq-question">Sequences in PostgreSQL? <div class="icon">+</div>
                                         </div>
                                         <div class="faq-answer">Sequences generate unique numeric identifiers, often
@@ -182,7 +182,7 @@
                                             for
                                             auto-increment primary keys.</div>
                                     </div>
-                                    <div class="faq-item active">
+                                    <div class="faq-item">
                                         <div class="faq-question">Triggers in PostgreSQL? <div class="icon">+</div>
                                         </div>
                                         <div class="faq-answer">Triggers automatically execute a function when a table
@@ -192,7 +192,7 @@
                                             languages.
                                         </div>
                                     </div>
-                                    <div class="faq-item active">
+                                    <div class="faq-item">
                                         <div class="faq-question">WAL (Write-Ahead Log)? <div class="icon">+</div>
                                         </div>
                                         <div class="faq-answer">WAL ensures durability and crash recovery. Changes are
