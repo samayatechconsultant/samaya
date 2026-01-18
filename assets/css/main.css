@@ -198,7 +198,7 @@
    cursor: pointer;
    position: fixed;
    top: 40px;
-   right: 15px;
+   right: -15px;
    z-index: 9999;
    transition: background-color 0.3s;
  }
@@ -1941,7 +1941,7 @@
     cursor: pointer;
     position: fixed;
     top: 90px;
-    right: 15px;
+    right: -15px;
     z-index: 9999;
     transition: background-color 0.3s;
  }
@@ -1963,7 +1963,7 @@
     cursor: pointer;
     position: fixed;
     top: 150px;
-    right: 15px;
+    right: -15px;
     z-index: 9999;
     transition: background-color 0.3s;
  }
