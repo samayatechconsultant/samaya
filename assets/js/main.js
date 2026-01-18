@@ -44,15 +44,12 @@
 
 
       const faq_item_title = document.querySelectorAll(".faq-item-title");
-      const tot = document.getElementById("toggleTitleContent");
-      if (faq_item_title.length > 0) {
-        debugger;
-        document.getElementById("toggleTitleContent").style.display = "flex";
-      } else {
-        debugger;
-        document.getElementById("toggleTitleContent").style.display = "none";
-      }
-      
+      const toggleTitleContent = document.getElementById("toggleTitleContent");
+      if (faq_item_title.length > 0)
+        toggleTitleContent.style.display = "flex";
+      else
+        toggleTitleContent.style.display = "none";
+
     }).catch(err => console.error("Nav load failed", err));
 
 
