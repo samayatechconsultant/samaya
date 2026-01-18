@@ -311,4 +311,27 @@ function closeImage() {
 function goBack() {
   history.back();
 }
+function toggleTitleContent(el) { 
+  const faqes = document.querySelectorAll(".faq-item");
+
+  // If icon is right, we are going to OPEN all
+  const willOpen = el.classList.contains("bi-eye-fill");
+
+  faqes.forEach(e => {
+    if (willOpen) {
+      e.classList.add("active");
+    } else {
+      e.classList.remove("active");
+    }
+  });
+
+  // Update icon
+  if (willOpen) {
+    el.classList.remove("bi-eye-fill");
+    el.classList.add("bi-eye-slash-fill");
+  } else {
+    el.classList.add("bi-eye-fill");
+    el.classList.remove("bi-eye-slash-fill");
+  }
+}
 
