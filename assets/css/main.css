@@ -494,7 +494,7 @@
    margin-bottom: 20px;
    padding-bottom: 20px;
    position: relative;
-   color: #0d6efd;
+   color:var(--bs-orange);
  }
 
  .section-title h2:before {
