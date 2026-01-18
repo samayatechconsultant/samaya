@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Searchable List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #fff;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+    }
+    input {
+      width: 100%;
+      padding: 12px;
+      border-radius: 6px;
+      border: none;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: #1e293b;
+      margin-bottom: 8px;
+      padding: 10px 14px;
+      border-radius: 6px;
+      border-left: 4px solid #38bdf8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Search Topics</h2>
+    <input type="text" id="searchInput" placeholder="Type to search...">
+
+    <ul id="itemList">
+      <li>Engineer to Architect</li>
+      <li>Microservices Architecture</li>
+      <li>API First Architecture</li>
+      <li>RESTful APIs</li>
+      <li>GraphQL</li>
+      <li>Azure Functions</li>
+      <li>Azure DevOps</li>
+      <li>Clean Architecture</li>
+      <li>DDD (Domain-Driven Design)</li>
+      <li>SOLID Principles</li>
+    </ul>
+  </div>
+
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const listItems = document.querySelectorAll("#itemList li");
+
+    searchInput.addEventListener("keyup", function () {
+      const filter = this.value.toLowerCase();
+
+      listItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(filter) ? "" : "none";
+      });
+    });
+  </script>
+</body>
+</html>
