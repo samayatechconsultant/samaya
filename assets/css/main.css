@@ -61,7 +61,8 @@
  /*-------------------------------------------------------------- # General Styling & Shared Classes --------------------------------------------------------------*/
  body {
    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
-   font-family: "Poppins", sans-serif;
+   /* font-family: "Poppins", sans-serif; */
+    font-family: "Josefin Sans !important";
    background: #fff !important;
    color: #eaeaea;
    line-height: 1.7;
@@ -1451,7 +1452,7 @@
 
  /*-------------------------------------------------------------- # JKM FAQ Template --------------------------------------------------------------*/
  .iqas-body {
-   font-family: "Poppins", sans-serif;
+   /* font-family: "Poppins", sans-serif; */
    background: var(--bs-white) !important;
    color: #000;
    line-height: 1.7;
