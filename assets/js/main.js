@@ -230,7 +230,7 @@
       faqItem.classList.toggle('active');
     });
   });
-   document.querySelectorAll(".faq-question").forEach(q => {
+  document.querySelectorAll(".faq-question").forEach(q => {
     q.addEventListener("click", () => {
       q.parentElement.classList.toggle("active");
     });
@@ -242,11 +242,24 @@
     });
 
 
+  // Save scroll position before leaving page
+  document.addEventListener("click", function () {
+    sessionStorage.setItem("scrollY", window.scrollY);
+  });
+
+  // Restore scroll position when coming back
+  window.addEventListener("load", function () {
+    const y = sessionStorage.getItem("scrollY");
+    if (y !== null) {
+      window.scrollTo(0, parseInt(y, 10));
+    }
+  });
+
 })();
 
- /**
-   * Page Functions Code
-   */
+/**
+  * Page Functions Code
+  */
 
 function openPdf(btn) {
   const pdfUrl = btn.getAttribute("data-pdf");
@@ -289,9 +302,13 @@ document.querySelectorAll('.btn-close').forEach(btn => {
 
 function openImage(img) {
   document.getElementById("imageModal").style.display = "flex";
-  document.getElementById("modalImg").src = img.src; 
+  document.getElementById("modalImg").src = img.src;
 }
 
 function closeImage() {
   document.getElementById("imageModal").style.display = "none";
 }
+function goBack() {
+  history.back();
+}
+
