@@ -1,9 +1,15 @@
-<header id="header" class="header d-flex flex-column justify-content-center"> 
-    <div id="floatingPanel">
-        <i class="header-toggle d-xl-none bi bi-list dragIcon"></i> 
-        <i class="bi bi-arrow-left-circle-fill back-btn dragIcon"  onclick="goBack()"></i>      
-        <i class="bi bi-eye-fill toggle-btn dragIcon" id="toggleTitleContent"  onclick="toggleTitleContent(this)"></i> 
-        <i class="bi bi-image-fill toggle-images dragIcon" id="toggleImages"  onclick="toggleImages(this)"></i> 
+<header id="header" class="header d-flex flex-column justify-content-center">
+
+
+    <div class="ms-wrapper closed" id="floatingPanel"> 
+            <i id="msArrow" class="bi bi-chevron-left arrow ms-header" onclick="togglePanel()"></i>
+            <div class="ms-body">
+                <i class="header-toggle d-xl-none bi bi-list dragIcon"></i>
+                <i class="bi bi-arrow-left-circle-fill back-btn dragIcon" onclick="goBack()"></i>
+                <i class="bi bi-eye-fill toggle-btn dragIcon" id="toggleTitleContent"
+                    onclick="toggleTitleContent(this)"></i>
+                <i class="bi bi-image-fill toggle-images dragIcon" id="toggleImages" onclick="toggleImages(this)"></i>
+            </div> 
     </div>
     <nav id="navmenu" class="navmenu">
         <ul>
@@ -16,12 +22,11 @@
             <li><a href="/index.html#products"><i class="bi bi-box-seam navicon"></i><span>Products</span></a></li>
             <li><a href="/index.html#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
             <li><a href="/service-details.html"><i class="bi bi-gear navicon"></i><span>Services</span></a></li>
-           <!--  <li><a href="/service-details-v2.html"><i class="bi bi-gear navicon"></i><span>Services-v2</span></a></li> -->
+            <!--  <li><a href="/service-details-v2.html"><i class="bi bi-gear navicon"></i><span>Services-v2</span></a></li> -->
             <li><a href="/index.html#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
         </ul>
     </nav>
 </header>
 <div id="loader">
     <img src="assets/img/favicon.png" alt="Loading...">
-  </div>
- 
+</div>
