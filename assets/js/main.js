@@ -50,6 +50,57 @@
       else
         toggleTitleContent.style.display = "none";
 
+
+      const panel = document.getElementById("floatingPanel");
+
+      let isDragging = false;
+      let offsetX = 0;
+      let offsetY = 0;
+
+      function startDrag(x, y) {
+        const rect = panel.getBoundingClientRect();
+        offsetX = x - rect.left;
+        offsetY = y - rect.top;
+        isDragging = true;
+        panel.style.userSelect = "none";
+      }
+
+      function moveDrag(x, y) {
+        if (!isDragging) return;
+        panel.style.left = (x - offsetX) + "px";
+        panel.style.top = (y - offsetY) + "px";
+      }
+
+      function endDrag() {
+        isDragging = false;
+      }
+
+      /* Desktop (Mouse) */
+      panel.addEventListener("mousedown", function (e) {
+        startDrag(e.clientX, e.clientY);
+      });
+
+      document.addEventListener("mousemove", function (e) {
+        moveDrag(e.clientX, e.clientY);
+      });
+
+      document.addEventListener("mouseup", endDrag);
+
+      /* Mobile (Touch) */
+      panel.addEventListener("touchstart", function (e) {
+        const t = e.touches[0];
+        startDrag(t.clientX, t.clientY);
+      }, { passive: true });
+
+      document.addEventListener("touchmove", function (e) {
+        if (!isDragging) return;
+        const t = e.touches[0];
+        moveDrag(t.clientX, t.clientY);
+      }, { passive: false });
+
+      document.addEventListener("touchend", endDrag);
+
+
     }).catch(err => console.error("Nav load failed", err));
 
 
