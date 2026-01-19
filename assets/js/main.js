@@ -377,26 +377,69 @@ function goBack() {
 }
 
 function toggleTitleContent(el) {
-
+  const loader = document.getElementById("loader");
   const faq_titles = document.querySelectorAll(".faq-item-title");
   const willOpen = el.classList.contains("bi-eye-fill");
-  faq_titles.forEach(title => {
-    const faqes = title.querySelectorAll(".faq-item");
-    faqes.forEach(e => {
-      if (willOpen) {
-        e.classList.add("active");
-      } else {
-        e.classList.remove("active");
-      }
+  // Show loader
+  loader.style.display = "flex";
+  setTimeout(() => {
+    faq_titles.forEach(title => {
+      const faqes = title.querySelectorAll(".faq-item");
+      faqes.forEach(e => {
+        if (willOpen) {
+          e.classList.add("active");
+        } else {
+          e.classList.remove("active");
+        }
+      });
     });
-  });
 
-  if (willOpen) {
-    el.classList.remove("bi-eye-fill");
-    el.classList.add("bi-eye-slash-fill");
-  } else {
-    el.classList.add("bi-eye-fill");
-    el.classList.remove("bi-eye-slash-fill");
-  }
+    if (willOpen) {
+      el.classList.remove("bi-eye-fill");
+      el.classList.add("bi-eye-slash-fill");
+    } else {
+      el.classList.add("bi-eye-fill");
+      el.classList.remove("bi-eye-slash-fill");
+    }
+    // Hide loader
+    loader.style.display = "none";
+  }, 50); // small delay to render loader
 }
 
+let isBig = false;
+
+function toggleImages() {
+  const loader = document.getElementById("loader");
+  const images = document.getElementsByClassName("zoomable");
+  const icon = document.getElementById("toggleImages");
+
+  // Show loader
+  loader.style.display = "flex";
+  setTimeout(() => {
+    isBig = !isBig;
+
+    for (let i = 0; i < images.length; i++) {
+      const img = images[i];
+
+      if (isBig) {
+        img.style.width = "auto";
+        img.style.height = "auto";
+        img.style.maxWidth = "100%";
+      } else {
+        img.style.width = "50px";
+        img.style.height = "50px";
+      }
+    }
+
+    // Change icon based on state
+    if (isBig) {
+      icon.classList.remove("bi-image-fill");
+      icon.classList.add("bi-slash-circle");
+    } else {
+      icon.classList.add("bi-image-fill");
+      icon.classList.remove("bi-slash-circle");
+    }
+    // Hide loader
+    loader.style.display = "none";
+  }, 50); // small delay to render loader
+} 
