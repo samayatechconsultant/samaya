@@ -449,4 +449,25 @@ function toggleImages() {
     // Hide loader
     loader.style.display = "none";
   }, 50); // small delay to render loader
-} 
+}
+
+let togglePanelOpen = false;
+
+function togglePanel() {
+  const wrapper = document.getElementById("floatingPanel");
+  const arrow = document.getElementById("msArrow");
+
+  togglePanelOpen = !togglePanelOpen;
+
+  if (togglePanelOpen) {
+    wrapper.classList.remove("closed");
+    wrapper.classList.add("open");
+    arrow.classList.remove("bi-chevron-left");
+    arrow.classList.add("bi-chevron-right");
+  } else {
+    wrapper.classList.add("closed");
+    wrapper.classList.remove("open");
+    arrow.classList.add("bi-chevron-left");
+    arrow.classList.remove("bi-chevron-right");
+  }
+}
