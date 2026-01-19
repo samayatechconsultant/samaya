@@ -101,6 +101,13 @@
       document.addEventListener("touchend", endDrag);
 
 
+      const zoomable = document.querySelectorAll(".zoomable");
+      const toggleImages = document.getElementById("toggleImages");
+      if (zoomable.length > 0)
+        toggleImages.style.display = "flex";
+      else
+        toggleImages.style.display = "none";
+
     }).catch(err => console.error("Nav load failed", err));
 
 
