@@ -4,11 +4,14 @@
     <div class="ms-wrapper closed" id="floatingPanel"> 
             <i id="msArrow" class="bi bi-chevron-left arrow ms-header" onclick="togglePanel()"></i>
             <div class="ms-body">
-                <i class="header-toggle d-xl-none bi bi-list dragIcon"></i>
-                <i class="bi bi-arrow-left-circle-fill back-btn dragIcon" onclick="goBack()"></i>
-                <i class="bi bi-eye-fill toggle-btn dragIcon" id="toggleTitleContent"
-                    onclick="toggleTitleContent(this)"></i>
-                <i class="bi bi-image-fill toggle-images dragIcon" id="toggleImages" onclick="toggleImages(this)"></i>
+                <i class="header-toggle d-xl-none bi bi-list dragIcon circle"></i>
+                <i class="bi bi-arrow-left-circle-fill back-btn dragIcon circle" onclick="goBack()"></i>
+                <i class="bi bi-eye-fill toggle-btn dragIcon circle" id="toggleTitle"
+                    onclick="toggleTitle(this)"></i>
+                 <i class="bi bi-eye-fill toggle-content-btn dragIcon circle" id="toggleTitleContent"
+                    onclick="toggleTitleContent(this)"></i>   
+                <i class="bi bi-image-fill toggle-images dragIcon circle" id="toggleImages" onclick="toggleImages(this)"></i>
+                <i class="bi bi-images show-images-slide dragIcon circle" id="toggleImagesSlider" onclick="openSlider()"></i>
             </div> 
     </div>
     <nav id="navmenu" class="navmenu">
@@ -29,4 +32,10 @@
 </header>
 <div id="loader">
     <img src="assets/img/favicon.png" alt="Loading...">
+</div>
+<div id="sliderPopup">
+  <span class="close" onclick="closeSlider()">✖</span>
+  <span class="nav-btn prev" onclick="changeSlide(-1)">❮</span>
+  <img id="sliderImage">
+  <span class="nav-btn next" onclick="changeSlide(1)">❯</span>
 </div>
