@@ -44,11 +44,11 @@
 
 
       const faq_item_title = document.querySelectorAll(".faq-item-title");
+      const toggleTitle = document.getElementById("toggleTitle");
       const toggleTitleContent = document.getElementById("toggleTitleContent");
-      if (faq_item_title.length > 0)
-        toggleTitleContent.style.display = "flex";
-      else
-        toggleTitleContent.style.display = "none";
+      if (faq_item_title.length > 0) { toggleTitleContent.style.display = "flex"; toggleTitle.style.display = "flex"; }
+
+      else { toggleTitleContent.style.display = "none"; toggleTitle.style.display = "none"; }
 
 
       const panel = document.getElementById("floatingPanel");
@@ -103,10 +103,10 @@
 
       const zoomable = document.querySelectorAll(".zoomable");
       const toggleImages = document.getElementById("toggleImages");
-      if (zoomable.length > 0)
-        toggleImages.style.display = "flex";
-      else
-        toggleImages.style.display = "none";
+      const toggleImagesSlider = document.getElementById("toggleImagesSlider");
+      if (zoomable.length > 0) { toggleImages.style.display = "flex"; toggleImagesSlider.style.display = "flex"; }
+      else { toggleImages.style.display = "none"; toggleImagesSlider.style.display = "none"; }
+
 
     }).catch(err => console.error("Nav load failed", err));
 
@@ -413,6 +413,33 @@ function toggleTitleContent(el) {
   }, 50); // small delay to render loader
 }
 
+function toggleTitle(el) {
+  const loader = document.getElementById("loader");
+  const faq_titles = document.querySelectorAll(".faq-item-title");
+  const willOpen = el.classList.contains("bi-eye-fill");
+  // Show loader
+  loader.style.display = "flex";
+  setTimeout(() => {
+    faq_titles.forEach(e => {
+      if (willOpen) {
+        e.classList.add("active");
+      } else {
+        e.classList.remove("active");
+      }
+    });
+
+    if (willOpen) {
+      el.classList.remove("bi-eye-fill");
+      el.classList.add("bi-eye-slash-fill");
+    } else {
+      el.classList.add("bi-eye-fill");
+      el.classList.remove("bi-eye-slash-fill");
+    }
+    // Hide loader
+    loader.style.display = "none";
+  }, 50); // small delay to render loader
+}
+
 let isBig = false;
 
 function toggleImages() {
@@ -451,6 +478,7 @@ function toggleImages() {
   }, 50); // small delay to render loader
 }
 
+
 let togglePanelOpen = false;
 
 function togglePanel() {
@@ -471,3 +499,34 @@ function togglePanel() {
     arrow.classList.remove("bi-chevron-right");
   }
 }
+
+
+let images = [];
+let currentIndex = 0;
+
+function openSlider() {
+  images = Array.from(document.querySelectorAll("img.zoomable"))
+    .filter(img => !img.closest("#sliderPopup"))
+    .map(img => img.src);
+
+  if (!images.length) return;
+
+  currentIndex = 0;
+  document.getElementById("sliderImage").src = images[currentIndex];
+  document.getElementById("sliderPopup").style.display = "flex";
+}
+
+function closeSlider() {
+  document.getElementById("sliderPopup").style.display = "none";
+}
+
+function changeSlide(step) {
+  currentIndex = (currentIndex + step + images.length) % images.length;
+  document.getElementById("sliderImage").src = images[currentIndex];
+}
+
+// Optional: click any page image to open slider from that image
+document.querySelectorAll("img").forEach((img, i) => {
+  img.style.cursor = "pointer";
+  img.addEventListener("click", () => openSlider(i));
+});
