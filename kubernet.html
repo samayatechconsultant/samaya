@@ -33,6 +33,7 @@
                     <div class="container section-title" data-aos="fade-up">
                         <div class="faq-question-title">
                             <h2 class="heading-title"> Kubernet </h2>
+                             
                             <div class="title-icon">+</div>
                         </div>
                         <div class="faq-answer-title">
@@ -1117,6 +1118,158 @@
                                         </div>
                                         <div class="faq-answer">Volume provides a way for containers in a pod to access
                                             storage.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main> <main class="container" id="tab_content_41">
+        <section class="iqas-section">
+            <div class="faq-item-title">
+                <div class="faq-question-title">
+                    <div class="container section-title" data-aos="fade-up">
+                        <div class="faq-question-title">
+                            <h2 class="heading-title">Kubernetes Commands</h2>
+                             
+                            <div class="title-icon">+</div>
+                        </div>
+                        <div class="faq-answer-title">
+                            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                                <div class="row g-4">
+                                    <div class="faq-item">
+                                        <div class="faq-question"> Working with Pods <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p> kubectl get pods -> # Lists all pods in the current namespace </p>
+                                            <p> kubectl get pods -A -> # Lists all pods across all namespaces </p>
+                                            <p> kubectl describe pod -> # Displays detailed info about a specific pod
+                                            </p>
+                                            <p> kubectl delete pod -> # Deletes a specific pod </p>
+                                            <p> kubectl logs -> # Displays logs for a specific pod </p>
+                                            <p> kubectl exec -it -- /bin/sh -> # Executes a shell inside a running pod
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item">
+                                        <div class="faq-question"> Working with Deployments <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p> kubectl get deployments -> # Lists all deployments </p>
+                                            <p> kubectl create deployment --image= -> # Creates a deployment </p>
+                                            <p> kubectl scale deployment --replicas= -> # Scales a deployment </p>
+                                            <p> kubectl rollout status deployment -> # Checks rollout status </p>
+                                            <p> kubectl rollout undo deployment -> # Rolls back the last deployment </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item">
+                                        <div class="faq-question"> Working with Services <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p> kubectl get services -> # Lists all services </p>
+                                            <p> kubectl describe svc -> # Displays detailed info about a service </p>
+                                            <p> kubectl expose deployment --port= --type= -> # Exposes a deployment as a
+                                                service </p>
+                                            <p> kubectl delete svc -> # Deletes a specific service </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item">
+                                        <div class="faq-question"> Working with ConflgMaps and Secrets <div
+                                                class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p> kubectl create configmap --from-literal=key=value -> # Creates a
+                                                ConfigMap
+                                            </p>
+                                            <p> kubectl get configmaps -> # Lists all ConfigMaps </p>
+                                            <p> kubectl describe configmap -> # Describes a ConfigMap </p>
+                                            <p> kubectl create secret generic --from-literal=key=value -> # Creates a
+                                                secret
+                                            </p>
+                                            <p> kubectl get secrets -> # Lists all secrets </p>
+                                            <p> kubectl describe secret -> # Describes a secret </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item">
+                                        <div class="faq-question"> Working with Namespaces <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p> kubectl get namespaces -> # Lists all namespaces </p>
+                                            <p> kubectl create namespace -> # Creates a new namespace </p>
+                                            <p> kubectl delete namespace -> # Deletes a namespace </p>
+                                            <p> kubectl config set-context --current --namespace= -> # Sets default
+                                                namespace for
+                                                current context </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item">
+                                        <div class="faq-question"> Managing Nodes <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p> kubectl get nodes -> # Lists all nodes in the cluster </p>
+                                            <p> kubectl describe node -> # Displays detailed info about a node </p>
+                                            <p> kubectl drain -> # Safely evicts pods from a node (for maintenance) </p>
+                                            <p> kubectl cordon -> # Marks node as unschedulable </p>
+                                            <p> kubectl uncordon -> # Marks node as schedulable again </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item">
+                                        <div class="faq-question"> Working with Persistent Volumes (PV) and Claims (PVC)
+                                            <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p> kubectl get pv -> # Lists all persistent volumes </p>
+                                            <p> kubectl get pvc -> # Lists all persistent volume claims </p>
+                                            <p> kubectl describe pv -> # Displays info about a persistent volume </p>
+                                            <p> kubectl describe pvc -> # Displays info about a persistent volume claim
+                                            </p>
+                                            <p> kubectl d T elete pvc -> # Deletes a specific PVC </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item">
+                                        <div class="faq-question"> Conflguring and Viewing Contexts <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p> kubectl config get-contexts -> # Lists all available contexts </p>
+                                            <p> kubectl config use-context -> # Switches to a specific context </p>
+                                            <p> kubectl config current-context -> # Displays the current context </p>
+                                            <p> kubectl config delete-context -> # Deletes a specific context </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item">
+                                        <div class="faq-question"> Debugging Resources <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p> kubectl describe -> # Describes any Kubernetes resource </p>
+                                            <p> kubectl logs -> # Displays logs of a pod </p>
+                                            <p> kubectl logs -f -> # Follows pod logs in real-time </p>
+                                            <p> kubectl get events -> # Lists cluster events </p>
+                                            <p> kubectl debug -> # Debugs a running pod </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item">
+                                        <div class="faq-question"> Managing Jobs and CronJobs <div class="icon">+</div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p> kubectl get jobs -> # Lists all jobs </p>
+                                            <p> kubectl delete job -> # Deletes a specific job </p>
+                                            <p> kubectl get cronjobs -> # Lists all cronjobs </p>
+                                            <p> kubectl delete cronjob -> # Deletes a specific cronjob </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item">
+                                        <div class="faq-question"> Applying and Deleting Manifests <div class="icon">+
+                                            </div>
+                                        </div>
+                                        <div class="faq-answer">
+                                            <p> kubectl apply -f -> # Applies configuration from a YAML file </p>
+                                            <p> kubectl delete -f -> # Deletes resources defined in a YAML file </p>
+                                            <p> kubectl diff -f -> # Shows differences before applying a YAML file </p>
                                         </div>
                                     </div>
                                 </div>
