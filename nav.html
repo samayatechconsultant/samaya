@@ -12,6 +12,7 @@
                     onclick="toggleTitleContent(this)"></i>   
                 <i class="bi bi-image-fill toggle-images dragIcon circle" id="toggleImages" onclick="toggleImages(this)"></i>
                 <i class="bi bi-images show-images-slide dragIcon circle" id="toggleImagesSlider" onclick="openSlider()"></i>
+                <i class="bi bi-sliders show-images-slide dragIcon circle" id="openTextGallery" onclick="openTextGallery()"></i>
             </div> 
     </div>
     <nav id="navmenu" class="navmenu">
@@ -24,18 +25,31 @@
             <li><a href="/index.html#clients"><i class="bi bi-people navicon"></i><span>Clients</span></a> </li>
             <li><a href="/index.html#products"><i class="bi bi-box-seam navicon"></i><span>Products</span></a></li>
             <li><a href="/index.html#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
-            <li><a href="/service-details.html"><i class="bi bi-gear navicon"></i><span>Services</span></a></li>
-            <!--  <li><a href="/service-details-v2.html"><i class="bi bi-gear navicon"></i><span>Services-v2</span></a></li> -->
+            <li><a href="/service-details.html"><i class="bi bi-gear navicon"></i><span>Services</span></a></li> 
             <li><a href="/index.html#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
         </ul>
     </nav>
 </header>
+ <!-- Popup Loader -->
 <div id="loader">
     <img src="assets/img/favicon.png" alt="Loading...">
 </div>
+ <!-- Popup Images Slider -->
 <div id="sliderPopup">
   <span class="close" onclick="closeSlider()">✖</span>
   <span class="nav-btn prev" onclick="changeSlide(-1)">❮</span>
   <img id="sliderImage">
   <span class="nav-btn next" onclick="changeSlide(1)">❯</span>
+</div>
+ <!-- Popup Text Slider -->
+<div id="sliderTextPopup">
+    <span class="close" onclick="closeTextSlider()">✕</span>
+    <span class="nav-btn prev" onclick="changeTextSlide(-1)">❮</span>
+
+    <div id="sliderBox">
+        <div id="sliderTitle"></div>
+        <div id="sliderTextContent"></div>
+    </div>
+
+    <span class="nav-btn next" onclick="changeTextSlide(1)">❯</span>
 </div>
