@@ -530,3 +530,46 @@ document.querySelectorAll("img").forEach((img, i) => {
   img.style.cursor = "pointer";
   img.addEventListener("click", () => openSlider(i));
 });
+
+
+//  Popup Text Slider 
+let tx_Pages = [];
+let tx_Titles = [];
+let tx_Index = 0;
+const tx_PAGE_SIZE = 50; // change to 5 if needed
+function openTextGallery() {
+  document.getElementById("sliderTextContent").innerHTML = "";
+     const items = Array.from(document.querySelectorAll(".faq-item"));
+
+    tx_Pages = [];
+    tx_Titles = [];
+
+    for(let i=0;i<items.length;i+=tx_PAGE_SIZE){
+        const group = items.slice(i,i+tx_PAGE_SIZE);
+
+        const html = group.map(div=>`<div class="faq-item active">${div.innerHTML}</div>`).join("");
+        tx_Pages.push(html);
+
+        // Find heading-title from first item in this group
+        const heading = group[0].closest("main")?.querySelector(".heading-title");
+        tx_Titles.push(heading ? heading.textContent.trim() : "");
+    }
+  openSlider(0);
+}
+function openSlider(i) {
+ tx_Index=i;
+    document.getElementById("sliderTitle").innerText = tx_Titles[tx_Index];
+    document.getElementById("sliderTextContent").innerHTML = tx_Pages[tx_Index];
+    document.getElementById("sliderTextPopup").style.display="flex";
+}
+function changeTextSlide(step) {
+     tx_Index+=step;
+    if(tx_Index<0) tx_Index=tx_Pages.length-1;
+    if(tx_Index>=tx_Pages.length) tx_Index=0;
+
+    document.getElementById("sliderTitle").innerText = tx_Titles[tx_Index];
+    document.getElementById("sliderTextContent").innerHTML = tx_Pages[tx_Index];
+}
+function closeTextSlider() {
+  document.getElementById("sliderTextPopup").style.display = "none";
+}
