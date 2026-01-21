@@ -336,7 +336,7 @@ function openPdf(btn) {
   const pdfUrl = btn.getAttribute("data-pdf");
   const iframe = document.getElementById("pdfFrame");
   iframe.src = pdfUrl + "#toolbar=0&navpanes=0";
-  document.getElementById("pdfModal").style.display = "block";
+  document.getElementById("pdfModal").style.display = "flex";
 }
 
 function closePdf() {
@@ -525,11 +525,11 @@ function changeSlide(step) {
   document.getElementById("sliderImage").src = images[currentIndex];
 }
 
-// Optional: click any page image to open slider from that image
+/* // Optional: click any page image to open slider from that image
 document.querySelectorAll("img").forEach((img, i) => {
   img.style.cursor = "pointer";
   img.addEventListener("click", () => openSlider(i));
-});
+}); */
 
 
 //  Popup Text Slider 
@@ -554,9 +554,9 @@ function openTextGallery() {
         const heading = group[0].closest("main")?.querySelector(".heading-title");
         tx_Titles.push(heading ? heading.textContent.trim() : "");
     }
-  openSlider(0);
+  openTextSlider(0);
 }
-function openSlider(i) {
+function openTextSlider(i) {
  tx_Index=i;
     document.getElementById("sliderTitle").innerText = tx_Titles[tx_Index];
     document.getElementById("sliderTextContent").innerHTML = tx_Pages[tx_Index];
