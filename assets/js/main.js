@@ -328,27 +328,6 @@
 
 })();
 
-/**
-  * Page Functions Code
-  */
-
-function openPdf(btn) {
-  const pdfUrl = btn.getAttribute("data-pdf");
-  const iframe = document.getElementById("pdfFrame");
-  iframe.src = pdfUrl + "#toolbar=0&navpanes=0";
-  document.getElementById("pdfModal").style.display = "flex";
-}
-
-function closePdf() {
-  document.getElementById("pdfFrame").src = "";
-  document.getElementById("pdfModal").style.display = "none";
-} // Close modal when clicking outside 
-window.onclick = function (e) {
-  const modal = document.getElementById("pdfModal");
-  if (e.target === modal) {
-    closePdf();
-  }
-};
 let lastFocusedElement = null;
 let lastScrollPosition = 0;
 
@@ -525,13 +504,6 @@ function changeSlide(step) {
   document.getElementById("sliderImage").src = images[currentIndex];
 }
 
-/* // Optional: click any page image to open slider from that image
-document.querySelectorAll("img").forEach((img, i) => {
-  img.style.cursor = "pointer";
-  img.addEventListener("click", () => openSlider(i));
-}); */
-
-
 //  Popup Text Slider 
 let tx_Pages = [];
 let tx_Titles = [];
@@ -539,37 +511,55 @@ let tx_Index = 0;
 const tx_PAGE_SIZE = 50; // change to 5 if needed
 function openTextGallery() {
   document.getElementById("sliderTextContent").innerHTML = "";
-     const items = Array.from(document.querySelectorAll(".faq-item"));
+  const items = Array.from(document.querySelectorAll(".faq-item"));
 
-    tx_Pages = [];
-    tx_Titles = [];
+  tx_Pages = [];
+  tx_Titles = [];
 
-    for(let i=0;i<items.length;i+=tx_PAGE_SIZE){
-        const group = items.slice(i,i+tx_PAGE_SIZE);
+  for (let i = 0; i < items.length; i += tx_PAGE_SIZE) {
+    const group = items.slice(i, i + tx_PAGE_SIZE);
 
-        const html = group.map(div=>`<div class="faq-item active">${div.innerHTML}</div>`).join("");
-        tx_Pages.push(html);
+    const html = group.map(div => `<div class="faq-item active">${div.innerHTML}</div>`).join("");
+    tx_Pages.push(html);
 
-        // Find heading-title from first item in this group
-        const heading = group[0].closest("main")?.querySelector(".heading-title");
-        tx_Titles.push(heading ? heading.textContent.trim() : "");
-    }
+    // Find heading-title from first item in this group
+    const heading = group[0].closest("main")?.querySelector(".heading-title");
+    tx_Titles.push(heading ? heading.textContent.trim() : "");
+  }
   openTextSlider(0);
 }
 function openTextSlider(i) {
- tx_Index=i;
-    document.getElementById("sliderTitle").innerText = tx_Titles[tx_Index];
-    document.getElementById("sliderTextContent").innerHTML = tx_Pages[tx_Index];
-    document.getElementById("sliderTextPopup").style.display="flex";
+  tx_Index = i;
+  document.getElementById("sliderTitle").innerText = tx_Titles[tx_Index];
+  document.getElementById("sliderTextContent").innerHTML = tx_Pages[tx_Index];
+  document.getElementById("sliderTextPopup").style.display = "flex";
 }
 function changeTextSlide(step) {
-     tx_Index+=step;
-    if(tx_Index<0) tx_Index=tx_Pages.length-1;
-    if(tx_Index>=tx_Pages.length) tx_Index=0;
+  tx_Index += step;
+  if (tx_Index < 0) tx_Index = tx_Pages.length - 1;
+  if (tx_Index >= tx_Pages.length) tx_Index = 0;
 
-    document.getElementById("sliderTitle").innerText = tx_Titles[tx_Index];
-    document.getElementById("sliderTextContent").innerHTML = tx_Pages[tx_Index];
+  document.getElementById("sliderTitle").innerText = tx_Titles[tx_Index];
+  document.getElementById("sliderTextContent").innerHTML = tx_Pages[tx_Index];
 }
 function closeTextSlider() {
   document.getElementById("sliderTextPopup").style.display = "none";
 }
+
+
+function openPdf(el) {
+  const pdfUrl = el.getAttribute("data-pdf");
+  document.getElementById("pdfFrame").src = pdfUrl;
+  document.getElementById("pdfPopup").style.display = "flex";
+}
+
+function closePdf() {
+  document.getElementById("pdfFrame").src = "";
+  document.getElementById("pdfPopup").style.display = "none";
+}
+window.onclick = function (e) {
+  const modal = document.getElementById("pdfModal");
+  if (e.target === modal) {
+    closePdf();
+  }
+};
