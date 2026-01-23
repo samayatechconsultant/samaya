@@ -505,10 +505,10 @@ function changeSlide(step) {
 }
 
 //  Popup Text Slider 
-let tx_Pages = [];
+/* let tx_Pages = [];
 let tx_Titles = [];
 let tx_Index = 0;
-const tx_PAGE_SIZE = 50; // change to 5 if needed
+const tx_PAGE_SIZE = 50;  
 function openTextGallery() {
   document.getElementById("sliderTextContent").innerHTML = "";
   const items = Array.from(document.querySelectorAll(".faq-item"));
@@ -520,9 +520,7 @@ function openTextGallery() {
     const group = items.slice(i, i + tx_PAGE_SIZE);
 
     const html = group.map(div => `<div class="faq-item active">${div.innerHTML}</div>`).join("");
-    tx_Pages.push(html);
-
-    // Find heading-title from first item in this group
+    tx_Pages.push(html); 
     const heading = group[0].closest("main")?.querySelector(".heading-title");
     tx_Titles.push(heading ? heading.textContent.trim() : "");
   }
@@ -534,6 +532,7 @@ function openTextSlider(i) {
   document.getElementById("sliderTextContent").innerHTML = tx_Pages[tx_Index];
   document.getElementById("sliderTextPopup").style.display = "flex";
 }
+
 function changeTextSlide(step) {
   tx_Index += step;
   if (tx_Index < 0) tx_Index = tx_Pages.length - 1;
@@ -544,8 +543,66 @@ function changeTextSlide(step) {
 }
 function closeTextSlider() {
   document.getElementById("sliderTextPopup").style.display = "none";
+} */
+
+let MAX_PER_TITLE = 50;
+let tx_Pages = [];
+let tx_Titles = []; 
+let tx_Index = 0;
+function buildTextPages(n) {
+  MAX_PER_TITLE=n==1?1:MAX_PER_TITLE;
+    tx_Pages = [];
+    tx_Titles = [];
+
+    const groupedByTitle = new Map(); 
+    document.querySelectorAll(".faq-item").forEach(item => { 
+        const heading = item
+            .closest(".faq-item-title")
+            ?.querySelector("h2.heading-title"); 
+        const titleText = heading ? heading.textContent.trim() : "General"; 
+        if (!groupedByTitle.has(titleText)) {
+            groupedByTitle.set(titleText, []);
+        } 
+        groupedByTitle.get(titleText).push(item);
+    }); 
+    groupedByTitle.forEach((items, title) => {
+        for (let i = 0; i < items.length; i += MAX_PER_TITLE) {
+            const chunk = items.slice(i, i + MAX_PER_TITLE);
+
+            const html = chunk
+                .map(div => `<div class="faq-item active">${div.innerHTML}</div>`)
+                .join("");
+
+            tx_Pages.push(html);
+            tx_Titles.push(title);
+        }
+    });
 }
 
+function openTextGallery(n) {
+
+    document.getElementById("sliderTextContent").innerHTML = "";
+    buildTextPages(n);
+    tx_Index = 0;
+    renderSlide();
+    document.getElementById("sliderTextPopup").style.display = "flex";
+}
+
+function renderSlide() {
+    document.getElementById("sliderTextContent").innerHTML = tx_Pages[tx_Index];
+    document.getElementById("sliderTitle").textContent = tx_Titles[tx_Index];
+}
+
+function changeTextSlide(dir) {
+    tx_Index += dir;
+    if (tx_Index < 0) tx_Index = tx_Pages.length - 1;
+    if (tx_Index >= tx_Pages.length) tx_Index = 0;
+    renderSlide();
+}
+
+function closeTextSlider() {
+    document.getElementById("sliderTextPopup").style.display = "none";
+}
 
 function openPdf(el) {
   const pdfUrl = el.getAttribute("data-pdf");
@@ -563,3 +620,32 @@ window.onclick = function (e) {
     closePdf();
   }
 };
+
+function toggleFullscreen() {
+    const box = document.getElementById("sliderBox");
+    const btn = document.getElementById("fsBtn");
+
+    if (!document.fullscreenElement) {
+        box.requestFullscreen();
+        btn.textContent = "🗗";  
+    } else {
+        document.exitFullscreen();
+        btn.textContent = "⛶";  
+    }
+}
+
+/* function toggleFullscreen() {
+ const box = document.getElementById("sliderBox");
+    const btn = document.getElementById("fsBtn");
+
+    box.classList.toggle("fullscreen");
+    btn.innerHTML = box.classList.contains("fullscreen") ? "🗗" : "⛶";
+} */
+
+/* Handle ESC fullscreen exit */
+document.addEventListener("fullscreenchange", () => {
+    const btn = document.getElementById("fsBtn");
+    if (!document.fullscreenElement) {
+        btn.textContent = "⛶";
+    }
+});
