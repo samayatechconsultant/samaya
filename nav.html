@@ -14,7 +14,9 @@
             <i class="bi bi-images show-images-slide dragIcon circle" id="toggleImagesSlider"
                 onclick="openSlider()"></i>
             <i class="bi bi-sliders show-images-slide dragIcon circle" id="openTextGallery"
-                onclick="openTextGallery()"></i>
+                onclick="openTextGallery(0)"></i>
+                <i class="bi bi-book-fill show-images-slide dragIcon circle" id="openTextGallery"
+                onclick="openTextGallery(1)" style="background: chartreuse;"></i>
         </div>
     </div>
     <nav id="navmenu" class="navmenu">
@@ -38,32 +40,75 @@
 </div>
 
 <!-- Popup pdfModal -->
-<div class="pdf-popup" id="pdfPopup">
-    <div class="pdf-popup-content">
-        <span class="pdf-close" onclick="closePdf()">×</span>
+<div class="pdf-popup" id="pdfPopup"> 
+    <div id="sliderBox"> 
+        <div id="sliderTitleBar">
+           
+            <div class="sliderTitle">PDF</div> 
+            <div class="title-controls">
+              <!--   <span id="fsBtn" onclick="toggleFullscreen()">⛶</span>  -->
+                <span onclick="closePdf()">✕</span>
+            </div>
+        </div>  <div class="scroll-content"> 
         <iframe id="pdfFrame"></iframe>
-    </div>
+    </div> </div>
 </div>
 
-<div class="modal" id="imageModal" onclick="closeImage()"> <span class="close-btn">&times;</span> <img loading="lazy"
-        onclick="openImage(this)" id="modalImg"> </div>
-<!-- Popup Images Slider -->
-<div id="sliderPopup">
-    <span class="close" onclick="closeSlider()">✖</span>
-    <span class="nav-btn prev" onclick="changeSlide(-1)">❮</span>
-    <img id="sliderImage">
-    <span class="nav-btn next" onclick="changeSlide(1)">❯</span>
-</div>
+<!-- Popup Single Image Popup -->
+<!--<div class="modal" id="imageModal" onclick="closeImage()"> 
+    <span class="close-btn">&times;</span> 
+    <img loading="lazy"
+        onclick="openImage(this)" id="modalImg"> 
+</div> -->
 
-<!-- Popup Text Slider -->
-<div id="sliderTextPopup">
-    <span class="close" onclick="closeTextSlider()">✕</span>
-    <span class="nav-btn prev" onclick="changeTextSlide(-1)">❮</span>
-
+ <div id="imageModal" onclick="closeImage()">
     <div id="sliderBox">
-        <div id="sliderTitle"></div>
-        <div id="sliderTextContent"></div>
+        <div id="sliderTitleBar"> 
+            <div  class="sliderTitle">Image Popup</div>
+            <div class="title-controls">
+                <!-- <span id="fsBtn" onclick="toggleFullscreen()">⛶</span>  -->
+                <span onclick="closeImage()">✕</span>
+            </div>
+        </div>
+         <div class="scroll-content"> 
+        <img loading="lazy" onclick="openImage(this)" id="modalImg">
+    </div> </div>
+</div> 
+<!-- Popup Images Slider -->
+<div id="sliderPopup"> 
+    <div id="sliderBox"> 
+        <div id="sliderTitleBar">
+            <div class="title-controls">
+                <span onclick="changeSlide(-1)">❮</span>
+            </div>  
+            <div  class="sliderTitle">Images Popup</div> 
+            <div class="title-controls">
+                <!-- <span id="fsBtn" onclick="toggleFullscreen()">⛶</span> -->
+              <span onclick="changeSlide(1)">❯</span> 
+                <span onclick="closeSlider()">✕</span>
+            </div>
+        </div> 
+        <div class="scroll-content"> 
+        <img id="sliderImage">
+        </div> </div> 
     </div>
-
-    <span class="nav-btn next" onclick="changeTextSlide(1)">❯</span>
 </div>
+
+<!-- Popup Text Slider --> 
+<div id="sliderTextPopup">
+    <div id="sliderBox"> 
+        <div id="sliderTitleBar">
+            <div class="title-controls">
+                <span onclick="changeTextSlide(-1)">❮</span>
+            </div> 
+            <div id="sliderTitle" class="sliderTitle"></div> 
+            <div class="title-controls">
+                <span id="fsBtn" onclick="toggleFullscreen()">⛶</span>
+                <span onclick="changeTextSlide(1)">❯</span>
+                <span onclick="closeTextSlider()">✕</span>
+            </div>
+        </div> 
+        <div id="sliderTextContent"> 
+        </div> 
+    </div>
+</div> 
