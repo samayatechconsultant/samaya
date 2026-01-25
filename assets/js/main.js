@@ -370,7 +370,11 @@ function toggleTitleContent(el) {
   loader.style.display = "flex";
   setTimeout(() => {
     faq_titles.forEach(title => {
-      const faqes = title.querySelectorAll(".faq-item");
+      let faqes = [];
+      if (title.querySelectorAll(".faq-item-new").length > 0)
+        faqes = title.querySelectorAll(".faq-item-new");
+      else
+        faqes = title.querySelectorAll(".faq-item");
       faqes.forEach(e => {
         if (willOpen) {
           e.classList.add("active");
@@ -547,61 +551,61 @@ function closeTextSlider() {
 
 let MAX_PER_TITLE = 50;
 let tx_Pages = [];
-let tx_Titles = []; 
+let tx_Titles = [];
 let tx_Index = 0;
 function buildTextPages(n) {
-  MAX_PER_TITLE=n==1?1:MAX_PER_TITLE;
-    tx_Pages = [];
-    tx_Titles = [];
+  MAX_PER_TITLE = n == 1 ? 1 : MAX_PER_TITLE;
+  tx_Pages = [];
+  tx_Titles = [];
 
-    const groupedByTitle = new Map(); 
-    document.querySelectorAll(".faq-item").forEach(item => { 
-        const heading = item
-            .closest(".faq-item-title")
-            ?.querySelector("h2.heading-title"); 
-        const titleText = heading ? heading.textContent.trim() : "General"; 
-        if (!groupedByTitle.has(titleText)) {
-            groupedByTitle.set(titleText, []);
-        } 
-        groupedByTitle.get(titleText).push(item);
-    }); 
-    groupedByTitle.forEach((items, title) => {
-        for (let i = 0; i < items.length; i += MAX_PER_TITLE) {
-            const chunk = items.slice(i, i + MAX_PER_TITLE);
+  const groupedByTitle = new Map();
+  document.querySelectorAll(".faq-item").forEach(item => {
+    const heading = item
+      .closest(".faq-item-title")
+      ?.querySelector("h2.heading-title");
+    const titleText = heading ? heading.textContent.trim() : "General";
+    if (!groupedByTitle.has(titleText)) {
+      groupedByTitle.set(titleText, []);
+    }
+    groupedByTitle.get(titleText).push(item);
+  });
+  groupedByTitle.forEach((items, title) => {
+    for (let i = 0; i < items.length; i += MAX_PER_TITLE) {
+      const chunk = items.slice(i, i + MAX_PER_TITLE);
 
-            const html = chunk
-                .map(div => `<div class="faq-item active">${div.innerHTML}</div>`)
-                .join("");
+      const html = chunk
+        .map(div => `<div class="faq-item active">${div.innerHTML}</div>`)
+        .join("");
 
-            tx_Pages.push(html);
-            tx_Titles.push(title);
-        }
-    });
+      tx_Pages.push(html);
+      tx_Titles.push(title);
+    }
+  });
 }
 
 function openTextGallery(n) {
 
-    document.getElementById("sliderTextContent").innerHTML = "";
-    buildTextPages(n);
-    tx_Index = 0;
-    renderSlide();
-    document.getElementById("sliderTextPopup").style.display = "flex";
+  document.getElementById("sliderTextContent").innerHTML = "";
+  buildTextPages(n);
+  tx_Index = 0;
+  renderSlide();
+  document.getElementById("sliderTextPopup").style.display = "flex";
 }
 
 function renderSlide() {
-    document.getElementById("sliderTextContent").innerHTML = tx_Pages[tx_Index];
-    document.getElementById("sliderTitle").textContent = tx_Titles[tx_Index];
+  document.getElementById("sliderTextContent").innerHTML = tx_Pages[tx_Index];
+  document.getElementById("sliderTitle").textContent = tx_Titles[tx_Index];
 }
 
 function changeTextSlide(dir) {
-    tx_Index += dir;
-    if (tx_Index < 0) tx_Index = tx_Pages.length - 1;
-    if (tx_Index >= tx_Pages.length) tx_Index = 0;
-    renderSlide();
+  tx_Index += dir;
+  if (tx_Index < 0) tx_Index = tx_Pages.length - 1;
+  if (tx_Index >= tx_Pages.length) tx_Index = 0;
+  renderSlide();
 }
 
 function closeTextSlider() {
-    document.getElementById("sliderTextPopup").style.display = "none";
+  document.getElementById("sliderTextPopup").style.display = "none";
 }
 
 function openPdf(el) {
@@ -622,16 +626,16 @@ window.onclick = function (e) {
 };
 
 function toggleFullscreen() {
-    const box = document.getElementById("sliderBox");
-    const btn = document.getElementById("fsBtn");
+  const box = document.getElementById("sliderBox");
+  const btn = document.getElementById("fsBtn");
 
-    if (!document.fullscreenElement) {
-        box.requestFullscreen();
-        btn.textContent = "🗗";  
-    } else {
-        document.exitFullscreen();
-        btn.textContent = "⛶";  
-    }
+  if (!document.fullscreenElement) {
+    box.requestFullscreen();
+    btn.textContent = "🗗";
+  } else {
+    document.exitFullscreen();
+    btn.textContent = "⛶";
+  }
 }
 
 /* function toggleFullscreen() {
@@ -644,8 +648,8 @@ function toggleFullscreen() {
 
 /* Handle ESC fullscreen exit */
 document.addEventListener("fullscreenchange", () => {
-    const btn = document.getElementById("fsBtn");
-    if (!document.fullscreenElement) {
-        btn.textContent = "⛶";
-    }
+  const btn = document.getElementById("fsBtn");
+  if (!document.fullscreenElement) {
+    btn.textContent = "⛶";
+  }
 });
