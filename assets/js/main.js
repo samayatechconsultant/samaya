@@ -328,6 +328,9 @@
 
 })();
 
+function openGridAnswer(et) { 
+  et.parentElement.classList.toggle("active"); 
+}
 let lastFocusedElement = null;
 let lastScrollPosition = 0;
 
