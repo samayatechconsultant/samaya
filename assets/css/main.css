@@ -67,7 +67,7 @@
    color: #eaeaea;
    line-height: 1.7;
    margin: 0;
-   margin-bottom: 50px !important;
+   /* margin-bottom: 50px !important; */
  }
 
  a {
@@ -2039,7 +2039,8 @@
  }
 
  #footer-placeholder {
-   position: fixed;
+   /* position: fixed; */
+    position: relative;
    bottom: 0;
    left: 0;
    width: 100%;
