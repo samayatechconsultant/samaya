@@ -328,8 +328,8 @@
 
 })();
 
-function openGridAnswer(et) { 
-  et.parentElement.classList.toggle("active"); 
+function openGridAnswer(et) {
+  et.parentElement.classList.toggle("active");
 }
 let lastFocusedElement = null;
 let lastScrollPosition = 0;
@@ -511,93 +511,80 @@ function changeSlide(step) {
   document.getElementById("sliderImage").src = images[currentIndex];
 }
 
-//  Popup Text Slider 
-/* let tx_Pages = [];
-let tx_Titles = [];
-let tx_Index = 0;
-const tx_PAGE_SIZE = 50;  
-function openTextGallery() {
-  document.getElementById("sliderTextContent").innerHTML = "";
-  const items = Array.from(document.querySelectorAll(".faq-item"));
-
-  tx_Pages = [];
-  tx_Titles = [];
-
-  for (let i = 0; i < items.length; i += tx_PAGE_SIZE) {
-    const group = items.slice(i, i + tx_PAGE_SIZE);
-
-    const html = group.map(div => `<div class="faq-item active">${div.innerHTML}</div>`).join("");
-    tx_Pages.push(html); 
-    const heading = group[0].closest("main")?.querySelector(".heading-title");
-    tx_Titles.push(heading ? heading.textContent.trim() : "");
-  }
-  openTextSlider(0);
-}
-function openTextSlider(i) {
-  tx_Index = i;
-  document.getElementById("sliderTitle").innerText = tx_Titles[tx_Index];
-  document.getElementById("sliderTextContent").innerHTML = tx_Pages[tx_Index];
-  document.getElementById("sliderTextPopup").style.display = "flex";
-}
-
-function changeTextSlide(step) {
-  tx_Index += step;
-  if (tx_Index < 0) tx_Index = tx_Pages.length - 1;
-  if (tx_Index >= tx_Pages.length) tx_Index = 0;
-
-  document.getElementById("sliderTitle").innerText = tx_Titles[tx_Index];
-  document.getElementById("sliderTextContent").innerHTML = tx_Pages[tx_Index];
-}
-function closeTextSlider() {
-  document.getElementById("sliderTextPopup").style.display = "none";
-} */
 
 let MAX_PER_TITLE = 50;
 let tx_Pages = [];
 let tx_Titles = [];
 let tx_Index = 0;
+
 function buildTextPages(n) {
   MAX_PER_TITLE = n == 1 ? 1 : MAX_PER_TITLE;
-  tx_Pages = [];
-  tx_Titles = [];
+
+  tx_Pages.length = 0;
+  tx_Titles.length = 0;
+
+  const loader = document.getElementById("loader");
+  loader.style.display = "flex";
+
+  // Cache selectors ONCE
+  const isNew = document.querySelector(".faq-item-new") !== null;
+  const faqItems = document.querySelectorAll(
+    isNew ? ".faq-item-new" : ".faq-item"
+  );
 
   const groupedByTitle = new Map();
-  document.querySelectorAll(".faq-item").forEach(item => {
+
+  // Group items
+  faqItems.forEach(item => {
     const heading = item
       .closest(".faq-item-title")
       ?.querySelector("h2.heading-title");
-    const titleText = heading ? heading.textContent.trim() : "General";
+
+    const titleText = heading?.textContent.trim() || "General";
+
     if (!groupedByTitle.has(titleText)) {
       groupedByTitle.set(titleText, []);
     }
     groupedByTitle.get(titleText).push(item);
   });
+
+  // Build pages using fragments (FAST)
   groupedByTitle.forEach((items, title) => {
     for (let i = 0; i < items.length; i += MAX_PER_TITLE) {
-      const chunk = items.slice(i, i + MAX_PER_TITLE);
+      const fragment = document.createDocumentFragment();
 
-      const html = chunk
-        .map(div => `<div class="faq-item active">${div.innerHTML}</div>`)
-        .join("");
+      items.slice(i, i + MAX_PER_TITLE).forEach(src => {
+        const div = document.createElement("div");
+        div.className = isNew
+          ? "faq-item-new active"
+          : "faq-item active";
 
-      tx_Pages.push(html);
+        div.innerHTML = src.innerHTML;
+        fragment.appendChild(div);
+      });
+
+      tx_Pages.push(fragment);
       tx_Titles.push(title);
     }
   });
+
+  loader.style.display = "none";
 }
 
 function openTextGallery(n) {
-
-  document.getElementById("sliderTextContent").innerHTML = "";
-  buildTextPages(n);
   tx_Index = 0;
+  buildTextPages(n);
   renderSlide();
   document.getElementById("sliderTextPopup").style.display = "flex";
 }
 
 function renderSlide() {
-  document.getElementById("sliderTextContent").innerHTML = tx_Pages[tx_Index];
-  document.getElementById("sliderTitle").textContent = tx_Titles[tx_Index];
+  const content = document.getElementById("sliderTextContent");
+  content.innerHTML = ""; // clear first
+  content.appendChild(tx_Pages[tx_Index]);
+
+  document.getElementById("sliderTitle").textContent =
+    tx_Titles[tx_Index];
 }
 
 function changeTextSlide(dir) {
