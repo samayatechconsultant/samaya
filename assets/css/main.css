@@ -2039,12 +2039,12 @@
  }
 
  #footer-placeholder {
-   /* position: fixed; */
+      position: fixed;
     /* position: relative; */
-   bottom: 0;
-   left: 0;
-   width: 100%;
-   z-index: 999;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
  }
     .iqas-section:empty {
             display: none;
