@@ -518,7 +518,8 @@ let tx_Titles = [];
 let tx_Index = 0;
 
 function buildTextPages(n) {
-  MAX_PER_TITLE = n == 1 ? 1 : MAX_PER_TITLE;
+ // MAX_PER_TITLE = n == 1 ? 1 : MAX_PER_TITLE;
+  MAX_PER_TITLE = n;
 
   tx_Pages.length = 0;
   tx_Titles.length = 0;
