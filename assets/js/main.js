@@ -643,3 +643,55 @@ document.addEventListener("fullscreenchange", () => {
     btn.textContent = "⛶";
   }
 });
+
+
+//Sorting 
+document.addEventListener("DOMContentLoaded", () => {
+
+  const container = document.querySelector(".faq-item-title")?.parentElement;
+  if (!container) return; 
+  // Collect sections with counts
+  const sections = Array.from(
+    document.querySelectorAll(".faq-item-title")
+  ).map(section => {
+
+    const heading = section.querySelector(".heading-title");
+    if (!heading) return null;
+
+    const questionCount = section.querySelectorAll(
+      ".faq-item-new .faq-question-new"
+    ).length;
+
+    return {
+      section,
+      heading,
+      questionCount
+    };
+  }).filter(Boolean);
+
+  // 🔽 Sort by questionCount (highest first)
+  sections.sort((a, b) => b.questionCount - a.questionCount);
+
+  // Batch DOM updates
+  const fragment = document.createDocumentFragment();
+
+  sections.forEach(({ section, heading, questionCount }) => {
+
+    // Avoid duplicate count
+    let countSpan = heading.querySelector(".faq-count");
+    if (!countSpan) {
+      countSpan = document.createElement("span");
+      countSpan.className = "faq-count";
+      heading.appendChild(countSpan);
+    }
+
+    countSpan.textContent = ` (@${questionCount})`;
+
+    fragment.appendChild(section);
+  });
+container.innerHTML = ""; 
+  container.appendChild(fragment);
+  document.querySelectorAll(".iqas-section").forEach(sec => {
+  if (!sec.children.length) sec.remove();
+});
+});
