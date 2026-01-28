@@ -538,6 +538,10 @@
    margin: auto;
  }
 
+ .section-title h2 span { 
+   color: blue;
+ } 
+
  .section-title p {
 
    margin-bottom: 0;
