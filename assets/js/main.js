@@ -518,7 +518,7 @@ let tx_Titles = [];
 let tx_Index = 0;
 
 function buildTextPages(n) {
- // MAX_PER_TITLE = n == 1 ? 1 : MAX_PER_TITLE;
+  // MAX_PER_TITLE = n == 1 ? 1 : MAX_PER_TITLE;
   MAX_PER_TITLE = n;
 
   tx_Pages.length = 0;
@@ -650,7 +650,7 @@ document.addEventListener("fullscreenchange", () => {
 document.addEventListener("DOMContentLoaded", () => {
 
   const container = document.querySelector(".faq-item-title")?.parentElement;
-  if (!container) return; 
+  if (!container) return;
   // Collect sections with counts
   const sections = Array.from(
     document.querySelectorAll(".faq-item-title")
@@ -685,14 +685,13 @@ document.addEventListener("DOMContentLoaded", () => {
       countSpan.className = "faq-count";
       heading.appendChild(countSpan);
     }
-
-    countSpan.textContent = ` (@${questionCount})`;
-
+    if (questionCount > 0)
+      countSpan.textContent = ` [ ${questionCount} ]`;
     fragment.appendChild(section);
   });
-container.innerHTML = ""; 
+  container.innerHTML = "";
   container.appendChild(fragment);
   document.querySelectorAll(".iqas-section").forEach(sec => {
-  if (!sec.children.length) sec.remove();
-});
+    if (!sec.children.length) sec.remove();
+  });
 });
