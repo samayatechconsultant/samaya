@@ -43,7 +43,7 @@
             color: #000;
         }
 
-     /*    .faq-item-new {
+        /*    .faq-item-new {
             position: relative;
             background: #fff;
            
@@ -53,16 +53,17 @@
             border: 1px solid #ff3c00;
             color: #000;
         } */
-.faq-item-new {
-    position: relative;
-    background: #fff; 
-    padding: 5px 5px 0px;
-    margin-bottom: 5px;
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
-    border: 1px solid #ff3c00;
-    color: #000;
-}
-     /*    .faq-item-new::before {
+        .faq-item-new {
+            position: relative;
+            background: #fff;
+            padding: 5px 5px 0px;
+            margin-bottom: 5px;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+            border: 1px solid #ff3c00;
+            color: #000;border-left: 0px;
+        }
+
+        /*    .faq-item-new::before {
             content: attr(data-topic);
             position: absolute;
             top: 0;
@@ -88,7 +89,7 @@
             top: 0;
             width: 5px;
             height: 100%;
-            background: #ff3c00;
+            background: #198754;
         }
 
 
@@ -104,14 +105,17 @@
             margin-bottom: 0px;
             display: flex;
             justify-content: left;
-            color: #000;    font-size: medium;    margin-left: 10px;
+            color: #000;
+            font-size: medium;
+            margin-left: 10px;
         }
 
         .faq-question-new>i {
-               color: #ff4013;
-    padding-right: 5px;
-    padding-left: 5px;
-    font-size: 15px; display: none;
+            color: #ff4013;
+            padding-right: 5px;
+            padding-left: 5px;
+            font-size: 15px;
+            display: none;
         }
 
         .faq-answer-new {
@@ -125,7 +129,8 @@
             color: var(--bs-black);
             text-align: left;
             display: block;
-            grid-column: 1 / -1;margin-left: 25px;
+            grid-column: 1 / -1;
+            margin-left: 25px;
         }
 
         .faq-item:has(.faq-toggle:checked) {
